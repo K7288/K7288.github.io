@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on K7288</title>
+    <link>https://K7288.github.io/categories/</link>
+    <description>Recent content in Categories on K7288</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 16 May 2021 10:35:13 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manual</title>
+      <link>https://K7288.github.io/categories/manual/</link>
+      <pubDate>Sun, 16 May 2021 10:35:13 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/categories/manual/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gait Analysis</title>
+      <link>https://K7288.github.io/categories/gait-analysis/</link>
+      <pubDate>Thu, 13 May 2021 10:44:02 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/categories/gait-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Literature Notes</title>
+      <link>https://K7288.github.io/categories/literature-notes/</link>
+      <pubDate>Thu, 13 May 2021 10:44:02 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/categories/literature-notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robotics</title>
+      <link>https://K7288.github.io/categories/robotics/</link>
+      <pubDate>Thu, 13 May 2021 10:44:02 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/categories/robotics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Notes</title>
+      <link>https://K7288.github.io/categories/notes/</link>
+      <pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/categories/notes/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

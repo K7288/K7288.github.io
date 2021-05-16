@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>K7288</title>
+        <link>https://K7288.github.io/</link>
+        <description>Recent content on K7288</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Sun, 16 May 2021 10:35:13 +0800</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Menu</title>
+        <link>https://K7288.github.io/posts/menu/</link>
+        <pubDate>Sun, 16 May 2021 10:35:13 +0800</pubDate>
+        
+        <guid>https://K7288.github.io/posts/menu/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%ae%9e%e7%8e%b0%e9%a1%b5%e5%86%85%e8%b7%b3%e8%bd%ac&#34; &gt;实现页内跳转&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%9f%ba%e6%9c%ac%e8%af%ad%e6%b3%95&#34; &gt;基本语法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a1%b9&#34; &gt;注意事项&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#a-subtitle-just-for-test&#34; &gt;A subtitle just for test&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e6%b5%8b%e8%af%95-a-a&#34; &gt;测试 a A&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e6%b5%8b%e8%af%95%e6%b5%8b%e8%af%95&#34; &gt;测试——测试&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e6%b5%8b%e8%af%95%e4%b8%80%e4%b8%aa%e6%b5%8b%e8%af%95&#34; &gt;测试:一个测试&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#1%e6%b5%8b%e8%af%95&#34; &gt;1.测试&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e7%9b%ae%e5%bd%95%e5%ae%9e%e7%8e%b0&#34; &gt;目录实现&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;实现页内跳转&#34;&gt;实现页内跳转&lt;/h2&gt;
+&lt;h3 id=&#34;基本语法&#34;&gt;基本语法&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;[&amp;lt;提示语&amp;gt;](#&amp;lt;目标内容&amp;gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;注意事项&#34;&gt;注意事项&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;若标题是英文，在&lt;code&gt;(#&amp;lt;目标内容&amp;gt;)&lt;/code&gt;中需要小写&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#a-subtitle-just-for-test&#34; &gt;例如&lt;/a&gt; &lt;code&gt;[例如](#a-subtitle-just-for-test)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;若标题中出现空格，需要用&lt;code&gt;-&lt;/code&gt;连接&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#%e6%b5%8b%e8%af%95-a-a&#34; &gt;例如&lt;/a&gt; &lt;code&gt;[例如](#测试-a-a)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;(#&amp;lt;目标内容&amp;gt;)&lt;/code&gt;中不能出现半角点(即英文中的句号)&lt;code&gt;.&lt;/code&gt;，似乎也不支持其他标点，&lt;code&gt;(#&amp;lt;目标内容&amp;gt;)&lt;/code&gt;中需要将标点删除&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#%e6%b5%8b%e8%af%95%e4%b8%80%e4%b8%aa%e6%b5%8b%e8%af%95&#34; &gt;测试:一个测试&lt;/a&gt; &lt;code&gt;[测试:一个测试](#测试一个测试)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#1%e6%b5%8b%e8%af%95&#34; &gt;1.测试&lt;/a&gt; &lt;code&gt;[1.测试](#1测试)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#%e6%b5%8b%e8%af%95%e6%b5%8b%e8%af%95&#34; &gt;测试——测试&lt;/a&gt; &lt;code&gt;[测试——测试](#测试测试)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;a-subtitle-just-for-test&#34;&gt;A subtitle just for test&lt;/h3&gt;
+&lt;h3 id=&#34;测试-a-a&#34;&gt;测试 a A&lt;/h3&gt;
+&lt;h4 id=&#34;测试测试&#34;&gt;测试——测试&lt;/h4&gt;
+&lt;h4 id=&#34;测试一个测试&#34;&gt;测试:一个测试&lt;/h4&gt;
+&lt;h3 id=&#34;1测试&#34;&gt;1.测试&lt;/h3&gt;
+&lt;h2 id=&#34;目录实现&#34;&gt;目录实现&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;VS code插件 Markdown All in One
+&lt;ul&gt;
+&lt;li&gt;ctrl+shift+p&lt;/li&gt;
+&lt;li&gt;Markdown All in One: Create Table of Contents&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;TODO 实现侧边目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;😂 已经出现了对“测”的完型崩坏&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>The effect of stride length on lower extremity joint kinetics at various gait speeds</title>
+        <link>https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/</link>
+        <pubDate>Thu, 13 May 2021 10:44:02 +0800</pubDate>
+        
+        <guid>https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/</guid>
+        <description>&lt;p&gt;The effect of stride length on lower extremity joint kinetics at various gait speeds&lt;/p&gt;
+&lt;h2 id=&#34;concepts&#34;&gt;Concepts&lt;/h2&gt;
+&lt;p&gt;sagittal plane矢状面，把身体分成左右两条，解剖学用来描述身体各部分位置（类似经线）&lt;/p&gt;
+&lt;p&gt;注意不只有中线&lt;/p&gt;
+&lt;p&gt;sagittal plane movement包括任何具有前后成分的运动&lt;/p&gt;
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;gait training devices that promote desired changes in gait&lt;/li&gt;
+&lt;li&gt;Challenges in developing such devices: limited understanding of human response to robotic input
+&lt;ul&gt;
+&lt;li&gt;比如机器人运动辅助会怎样影响gait speed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Possible method of controller formulation: control robot to apply the change in joint moment applied by human subjects when they achieve a gait feature of interest.&lt;/li&gt;
+&lt;li&gt;However, it is currently unclear how lower extremity joint moments are modulated by even basic gait spatio-temporal parameters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;research-question&#34;&gt;Research question&lt;/h2&gt;
+&lt;p&gt;In this study, we investigated how &lt;strong&gt;sagittal plane joint moments&lt;/strong&gt; are affected by a factorial modulation of two important gait parameters: &lt;strong&gt;gait speed and stride length&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;notations&#34;&gt;Notations&lt;/h2&gt;
+&lt;p&gt;GS: gait speed&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;GS correlated with anterior- posterior ground reaction force(the propulsive force of the foot against the ground)&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Furthermore, propulsive impulse, the propulsive force integrated over time, is associated with the posture of the trailing limb at push-off [6]. The&lt;/p&gt;
+&lt;p&gt;The posture of the trailing limb at push-off is quantified by one kinematic parameter, known as trailing limb angle (TLA), defined as the angle of the line connecting the hip joint center and foot center of pressure at the instant of peak propulsive force, relative to the global vertical axis最大推进力瞬时髋与足中心连线与竖直方向的夹角&lt;/p&gt;
+&lt;p&gt;GS gait speed&lt;/p&gt;
+&lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;采样：健侧大腿、小腿惯性测量单元于&lt;strong&gt;摆动相前期&lt;/strong&gt;所产生的运动&lt;strong&gt;时序数据&lt;/strong&gt;作为样本；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;数据处理：移动平均滤波器滤波去噪&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;特征提取：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;几何特征：根据两个传感器的加速度、角速度计算一维的膝关节角，FDA方法提取最值斜率&lt;/li&gt;
+&lt;li&gt;物理特征：加速度、角速度的均值、方差&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;均值、方差、最值斜率融合构成25维的特征基构建特征向量&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SVM分类&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210512213113697.png&#34; alt=&#34;image-20210512213113697&#34;  /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;gait speed&lt;/strong&gt; has a significant effect on the moment profiles in &lt;strong&gt;all joints&lt;/strong&gt; considered；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;stride length&lt;/strong&gt; has more localized effects on the &lt;strong&gt;knee moment during stance, and smaller effects observed for the hip joint moment during swing and ankle moment during the loading response&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TLA&lt;/strong&gt; Trailing limb angle, a parameter of interest in programs targeting propulsion at push-off, &lt;strong&gt;significantly correlated with stride length&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;As such, our study has generated candidate assistance strategies.
+&lt;ul&gt;
+&lt;li&gt;1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;highlights&#34;&gt;Highlights&lt;/h2&gt;
+&lt;p&gt;减少了传感器的数量及种类, 降低 了特征向量的维数降低了算法复杂度且避免了滞后性问题, 用加速度、 角速度及膝关节角三个参数共同对人体下肢运动的运动学特点进行表征。&lt;/p&gt;
+&lt;p&gt;在特征的提取上, 将FDA方法与统计方法相结合, 弥补了仅提取统计特征的不稳定性问题。&lt;/p&gt;
+&lt;h2 id=&#34;limitsfurther-work&#34;&gt;Limits/Further Work&lt;/h2&gt;
+&lt;p&gt;对于13种动作的识别率有待提高, 后期工作会集中于对类间相似性相对较强较难区分的动作进行分类, 如: 下楼与下坡, 走到下楼 与走到下坡等. 此外, 关节角度是一个可深度挖掘的几何信息, 如: 除膝关节外的髋关节与踝关节对下肢假肢运动意图中的作用有待进一步探究. 最后, 在分类策略如分类器上, 依然有改进的空间.&lt;/p&gt;
+&lt;h2 id=&#34;thoughtscomments&#34;&gt;Thoughts/Comments&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;实验对象的描述可参考。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;统计方法不稳定可以作为采用多种方式的依据。&lt;/li&gt;
+&lt;li&gt;联想到选题中“特征提取”，对“特征”的理解更清晰了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;本文特征提取：选定一个phase的时序信号，均值方差；那么可以用其他phase做类似处理得到更多指标，而不仅仅依赖原有数据。&lt;strong&gt;TODO 本文的去噪和特征工程方法可以参考。&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;了解了提取关节角的方法。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210512214045937.png&#34; alt=&#34;image-20210512214045937&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TODO&lt;/strong&gt; 具体公式待后续整理。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;根据行文是通过“实时传输解决滞后性问题解决”，是这样吗，主要矛盾是这里吗，那related work为什么不试试实时？后面可以看一下别人为什么会有滞后性问题&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;仅是识别（分类），没有提到识别后如何基于意图进行控制。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;See Also&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Bowden MG, Balasubramanian CK, Neptune RR, Kautz SA. Anterior-Posterior Ground Reaction Forces as a Measure of Paretic Leg Contribution in Hemiparetic Walking. Stroke. 2006; 37:872–877. &lt;a href=&#34;https://doi.org/10.1161/01.STR.0000204063.75779.8d&#34;&gt;https://doi.org/10.1161/01.STR.0000204063.75779.8d&lt;/a&gt; PMID: 16456121&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+        </item>
+        <item>
+        <title>步速估计综述整理</title>
+        <link>https://K7288.github.io/posts/%E6%AD%A5%E9%80%9F%E4%BC%B0%E8%AE%A1%E7%BB%BC%E8%BF%B0%E6%95%B4%E7%90%86/</link>
+        <pubDate>Wed, 12 May 2021 22:17:44 +0800</pubDate>
+        
+        <guid>https://K7288.github.io/posts/%E6%AD%A5%E9%80%9F%E4%BC%B0%E8%AE%A1%E7%BB%BC%E8%BF%B0%E6%95%B4%E7%90%86/</guid>
+        <description>&lt;h2 id=&#34;toward-pervasive-gait-analysis-with-wearable-sensors-a-systematic-review&#34;&gt;Toward Pervasive Gait Analysis With Wearable Sensors: A Systematic Review&lt;/h2&gt;
+&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;对当前的定量步态分析技术进行系统的综述，并提出关键指标，来评估&lt;strong&gt;现有的通过可穿戴传感器提取步态特征的方法&lt;/strong&gt;。它旨在突出这一快速发展的研究领域中的关键进展，并概述研究和临床应用的潜在未来方向。&lt;/p&gt;
+&lt;h3 id=&#34;section-iii-methods-for-extracting-relevant-gait-features-from-wearable-sensors&#34;&gt;SECTION III. Methods for Extracting Relevant Gait Features From Wearable Sensors&lt;/h3&gt;
+&lt;p&gt;A.文献检索&lt;/p&gt;
+&lt;p&gt;B. Kinematics&lt;/p&gt;
+&lt;p&gt;Kinematic information is a well-established set of gait measures in biomechanical analysis.&lt;/p&gt;
+&lt;p&gt;从惯性传感器获取运动学信息似乎很直观，但是要获得关于人体运动学的准确空间信息仍然很困难：全局失准和integration drift&lt;/p&gt;
+&lt;p&gt;C.时序特征&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;D.利用惯性传感器的步速提取&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Laudanski &lt;em&gt;et al.&lt;/em&gt; [104] reviewed the current research (16 papers in total) on gait speed estimation using inertial sensors, classifying the current gait speed estimation model into three categories: abstraction model (i.e., machine learning approach), human gait model, and numerical integration, shown in Fig. 5.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TODO&lt;/strong&gt;S. Chen and J. Lach, &amp;ldquo;Nonlinear feature for gait speed estimation using inertial sensors&amp;rdquo;, &lt;em&gt;Proc. 8th Int. Conf. Body Area Netw.&lt;/em&gt;, pp. 185-188, 2013.利用了生物力学提出了新的特征，自动特征选择算法&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/chen5-2608720-large.gif&#34; alt=&#34;img&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;E. Novel Features Extracted Using Nonlinear Analysis Techniques 步态稳定性和步态复杂性等&lt;/p&gt;
+&lt;p&gt;F. Kinetics and Muscle Activity&lt;/p&gt;
+&lt;p&gt;从惯性传感器提取步态特征&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/chen7-2608720-large.gif&#34; alt=&#34;img&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;从鞋垫压力传感器和EMG传感器提取步态特征&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/chen8-2608720-large.gif&#34; alt=&#34;img&#34;  /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;step-length-estimation-methods-based-on-inertial-sensors-a-review&#34;&gt;Step Length Estimation Methods Based on Inertial Sensors: A Review&lt;/h2&gt;
+&lt;p&gt;//根据Perry经典的阶段模型，利用传感器的时序信号可以进行步态周期的划分，可以估算出步频，使得步速可以推导出步幅。&lt;/p&gt;
+&lt;p&gt;由此步速和步幅/步长的估算类似。&lt;/p&gt;
+&lt;h2 id=&#34;deep-learning-for-monitoring-of-human-gait-a-review&#34;&gt;Deep Learning for Monitoring of Human Gait: A Review&lt;/h2&gt;
+</description>
+        </item>
+        <item>
+        <title>基于几何与物理特征融合的智能下肢假肢运动意图识别</title>
+        <link>https://K7288.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%87%A0%E4%BD%95%E4%B8%8E%E7%89%A9%E7%90%86%E7%89%B9%E5%BE%81%E8%9E%8D%E5%90%88%E7%9A%84%E6%99%BA%E8%83%BD%E4%B8%8B%E8%82%A2%E5%81%87%E8%82%A2%E8%BF%90%E5%8A%A8%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/</link>
+        <pubDate>Wed, 12 May 2021 20:52:44 +0800</pubDate>
+        
+        <guid>https://K7288.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%87%A0%E4%BD%95%E4%B8%8E%E7%89%A9%E7%90%86%E7%89%B9%E5%BE%81%E8%9E%8D%E5%90%88%E7%9A%84%E6%99%BA%E8%83%BD%E4%B8%8B%E8%82%A2%E5%81%87%E8%82%A2%E8%BF%90%E5%8A%A8%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/</guid>
+        <description>&lt;p&gt;基于几何与物理特征融合的智能下肢假肢运动意图识别Movement intention recognition of intelligent lower limb prosthesis based on the fusion of geometric and physical features&lt;/p&gt;
+&lt;h2 id=&#34;research-question&#34;&gt;Research question&lt;/h2&gt;
+&lt;p&gt;将&lt;strong&gt;关节角表示的几何特征&lt;/strong&gt;与&lt;strong&gt;加速度、角速度表示的物理特征&lt;/strong&gt;有机融合并应用于智能下肢假肢的运动意图识别&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;传统的意图识别方法所用传感器数量及种类较多, 特征向量维数偏高, 统计特征对短时样本具有不稳定性（在1.3 特征选择与提取有公式证明）。related work没有结合几何和物理。&lt;/p&gt;
+&lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;采样：健侧大腿、小腿惯性测量单元于&lt;strong&gt;摆动相前期&lt;/strong&gt;所产生的运动&lt;strong&gt;时序数据&lt;/strong&gt;作为样本；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;数据处理：移动平均滤波器滤波去噪&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;特征提取：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;几何特征：根据两个传感器的加速度、角速度计算一维的膝关节角，FDA方法提取最值斜率&lt;/li&gt;
+&lt;li&gt;物理特征：加速度、角速度的均值、方差&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;均值、方差、最值斜率融合构成25维的特征基构建特征向量&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SVM分类&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210512213113697.png&#34; alt=&#34;image-20210512213113697&#34;  /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;13种日常行为进行分类。实验结果：对5类稳态模式: 平地行走、上楼、下楼、上坡和 下坡的识别率达到96.9%, 对8类转换模式的识别率达到97.1%, 对13 种模式的识别率为94.3%。&lt;/p&gt;
+&lt;h2 id=&#34;highlights&#34;&gt;Highlights&lt;/h2&gt;
+&lt;p&gt;减少了传感器的数量及种类, 降低 了特征向量的维数降低了算法复杂度且避免了滞后性问题, 用加速度、 角速度及膝关节角三个参数共同对人体下肢运动的运动学特点进行表征。&lt;/p&gt;
+&lt;p&gt;在特征的提取上, 将FDA方法与统计方法相结合, 弥补了仅提取统计特征的不稳定性问题。&lt;/p&gt;
+&lt;h2 id=&#34;limitsfurther-work&#34;&gt;Limits/Further Work&lt;/h2&gt;
+&lt;p&gt;对于13种动作的识别率有待提高, 后期工作会集中于对类间相似性相对较强较难区分的动作进行分类, 如: 下楼与下坡, 走到下楼 与走到下坡等. 此外, 关节角度是一个可深度挖掘的几何信息, 如: 除膝关节外的髋关节与踝关节对下肢假肢运动意图中的作用有待进一步探究. 最后, 在分类策略如分类器上, 依然有改进的空间.&lt;/p&gt;
+&lt;h2 id=&#34;thoughtscomments&#34;&gt;Thoughts/Comments&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;项目申报相关：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;统计方法不稳定可以作为采用多种方式的依据。&lt;/li&gt;
+&lt;li&gt;联想到选题中“特征提取”，对“特征”的理解更清晰了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;本文特征提取：选定一个phase的时序信号，均值方差；那么可以用其他phase做类似处理得到更多指标，而不仅仅依赖原有数据。&lt;strong&gt;TODO 本文的去噪和特征工程方法可以参考。&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;了解了提取关节角的方法。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210512214045937.png&#34; alt=&#34;image-20210512214045937&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TODO&lt;/strong&gt; 具体公式待后续整理。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;根据行文是通过“实时传输解决滞后性问题解决”，是这样吗，主要矛盾是这里吗，那related work为什么不试试实时？后面可以看一下别人为什么会有滞后性问题&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;仅是识别（分类），没有提到识别后如何基于意图进行控制。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Gait Analysis Systems</title>
+        <link>https://K7288.github.io/posts/gait-analysis-systems/</link>
+        <pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://K7288.github.io/posts/gait-analysis-systems/</guid>
+        <description>&lt;p&gt;&lt;em&gt;&amp;ldquo;Section Four - Gait Analysis Systems&amp;rdquo; from Gait Analysis: Normal and Pathological Function&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Basically, there are 5 measurement systems.&lt;/p&gt;
+&lt;p&gt;Three of these focus on the specific events that constitute the act of walking.&lt;/p&gt;
+&lt;p&gt;行走各个阶段&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Motion analysis defines the magnitude and timing of individual joint action.&lt;/li&gt;
+&lt;li&gt;Dynamic electromyography iden­tifies the period and relative intensity of muscle function.&lt;/li&gt;
+&lt;li&gt;Force plate recordings display the functional demands being experienced during the weight-bearing period.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The two remaining gait analysis technics summarize the effects of the person&amp;rsquo;s gait mechanics.&lt;/p&gt;
+&lt;p&gt;行走整体效果&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;overall walking capability, one measures the patient&amp;rsquo;s stride char­acteristics&lt;/li&gt;
+&lt;li&gt;efficiency revealed by energy cost&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;span-idjumpmotion-analysis-运动分析span&#34;&gt;&lt;!-- raw HTML omitted --&gt;Motion analysis 运动分析&lt;!-- raw HTML omitted --&gt;&lt;/h2&gt;
+&lt;p&gt;Problems: the technical challenge of making the necessary measurements; the effect of out-of-plane movement on the amount of sagittal motion that is perceived.&amp;mdash;&amp;gt;placing a goniometer(测角仪) on the limb and using three-dimensional camera recording&lt;/p&gt;
+&lt;p&gt;获取数据$\rightarrow$标注关节&lt;/p&gt;
+&lt;p&gt;中立位确定（根据解剖学by the American Academy of Orthopaedic Surgeons）以及关节骨骼旋转方向正负的定义见原书&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;p374&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210510113634602.png&#34; alt=&#34;image-20210510113634602&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;Reference scales. The direction for graphing each motion of the individual joint is identified. &amp;ldquo;0&amp;rdquo; represents the &lt;strong&gt;neutral position for the motion&lt;/strong&gt;. Vertical axis indicates magnitude of motion. Arrow denotes increasing values for each direction. Horizontal axis represents the gait cycle time scale.&lt;/p&gt;
+&lt;h3 id=&#34;motion-data-interpretation&#34;&gt;Motion Data Interpretation&lt;/h3&gt;
+&lt;p&gt;The minimum information available from a motion record is the magnitude of the &lt;strong&gt;peak angles (high and low) experienced by the joint&lt;/strong&gt; being studied.&lt;/p&gt;
+&lt;p&gt;通过峰值划分motion，和正常状态下相比较（1️⃣magnitudes of joint motion 2️⃣ timing of the action 3️⃣ coordinating the motion patterns of the adjacent joints）&lt;/p&gt;
+&lt;h2 id=&#34;dynamic-electromyography-肌肉控制与动态肌电图&#34;&gt;Dynamic Electromyography 肌肉控制与动态肌电图&lt;/h2&gt;
+&lt;h3 id=&#34;emg-quantification-肌电图量化&#34;&gt;EMG Quantification 肌电图量化&lt;/h3&gt;
+&lt;p&gt;Manual (or descriptive); Electronic summation of the EMG signals; Computer quantification&lt;/p&gt;
+&lt;p&gt;采样频率2500Hz 但数据过多，一般取1000或500Hz&lt;/p&gt;
+&lt;p&gt;数字化，对信号进行全波整流（避免正负值在后续处理中相互抵消。整流包括将所有的负信号转置到零线的正侧）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210510191558532.png&#34; alt=&#34;image-20210510191558532&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;在一个适合的时间间隔进行累加；0.01秒interval(大约1% GC)被发现是最好的;3% interval: less variability in the EMG wave&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210510190913473.png&#34; alt=&#34;image-20210510190913473&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;归一化技术：将每个电极的功能数据作为参考值将同一电极产生的值转化为比率(通常以百分比表示)。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210510193311199.png&#34; alt=&#34;image-20210510193311199&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;adjusting the onset and cessation times of the individual quantified records to match the mean timing.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210510193906326.png&#34; alt=&#34;image-20210510193906326&#34;  /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;emg-interpretation&#34;&gt;EMG Interpretation&lt;/h3&gt;
+&lt;p&gt;timing与运动相 phases有关 用于判断当前运动状态&lt;/p&gt;
+&lt;p&gt;Relative Effort 运动越用力，振幅变大，图形密集&lt;/p&gt;
+&lt;p&gt;EMG和force相互推导&lt;/p&gt;
+&lt;h2 id=&#34;ground-reaction-force-and-vector-analysis-步态动力学地反力向量力矩功率和压力&#34;&gt;Ground Reaction Force and Vector Analysis 步态动力学——地反力、向量、力矩、功率和压力&lt;/h2&gt;
+&lt;p&gt;ground reaction forces (GRF)&lt;/p&gt;
+&lt;h3 id=&#34;vertical-load&#34;&gt;Vertical Load&lt;/h3&gt;
+&lt;h4 id=&#34;characteristics&#34;&gt;Characteristics&lt;/h4&gt;
+&lt;p&gt;Normal stance phase pattern of vertical forces generated by the customary walking speed of &lt;!-- raw HTML omitted --&gt;82m/ min&lt;!-- raw HTML omitted --&gt; has &lt;strong&gt;two peaks separated by a valley&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The force on the force plate changes with changing vertical acceleration.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210510155906470.png&#34; alt=&#34;image-20210510155906470&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;峰值值约为体重的110%，而谷值力约为体重的80%。第一个峰(F1)发生在MS的开始，此时身体的重心正在迅速下降。在MS后期，谷值(F2)是由身体向前滚过静止的脚时重心上升造成的。第二个峰值(F3)出现在TS后期，再次表明身体重心向前落在TS的前足上时重心下降。&lt;/p&gt;
+&lt;h4 id=&#34;vertical-force--speed&#34;&gt;Vertical force &amp;amp; Speed&lt;/h4&gt;
+&lt;p&gt;v减小，峰谷更平坦，反之亦然。&lt;/p&gt;
+&lt;p&gt;The magnitude of the vertical force changes with variations in gait speed. Walking at slower speeds (&amp;lt;60m/min) reduces the momentum, and therefore the vertical acceleration, with a corresponding decrease in both the peaks and valley deviations from body weight.&lt;/p&gt;
+&lt;p&gt;Conversely, fast walking speeds induce higher peaks and lower valleys. Running registers peaks 2.5 times body weight.&lt;/p&gt;
+&lt;h3 id=&#34;horizontal-shear&#34;&gt;Horizontal Shear&lt;/h3&gt;
+&lt;p&gt;The forces generated parallel to the wa1king surface are called shear.&lt;/p&gt;
+&lt;p&gt;Horizontal forces in the anterior-posterior (AP) plane: the ground reaction force vector deviates from the vertical.&lt;/p&gt;
+&lt;p&gt;Horizontal medial-lateral (ML  内侧 外侧 ) shear forces: the exchange of body weight from one limb to the&lt;/p&gt;
+&lt;p&gt;ML force is least, being less than 10% of body weight. Peak medial shear (5% BW) occurs in mid loading response. Lateral shear reaches a peak (7% BW) in terminal stance.&lt;/p&gt;
+&lt;p&gt;The AP shear force (also called fore-aft forces) is equivalent to less than 25%of body weight. At initial contact there often is a momentary aft shear (13% BW).&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Loading&lt;!-- raw HTML omitted --&gt; the limb rapidly introduces an &lt;!-- raw HTML omitted --&gt;anteriorly directed force&lt;!-- raw HTML omitted --&gt;, which reaches a peak (13% BW) at the end of the loading response phase. This is not sustained.&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Mid stance&lt;!-- raw HTML omitted --&gt; is an interval with minimal sagittal shear until just before heel rise, when a &lt;!-- raw HTML omitted --&gt;posterior shear begins&lt;!-- raw HTML omitted --&gt;. There is a rapid rise in the &lt;!-- raw HTML omitted --&gt;posterior force&lt;!-- raw HTML omitted --&gt; throughout &lt;!-- raw HTML omitted --&gt;terminal stance&lt;!-- raw HTML omitted --&gt;, with a final peak equaling 23%BW.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210510155411118.png&#34; alt=&#34;image-20210510155411118&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;⬆️ Normal ground reaction force pattern during stance.
+(a) Vertical force; (b) Lateral shear (horizontal); (c) Progressional shear (horizontal fore/aft).&lt;/p&gt;
+&lt;h3 id=&#34;vectors&#34;&gt;Vectors&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210510163811792.png&#34; alt=&#34;image-20210510163811792&#34;  /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;joint-torques&#34;&gt;Joint Torques&lt;/h3&gt;
+&lt;p&gt;Torque is defined as the product of the force and its lever arm T = FxL. The lever (or moment arm) for the joint torque presented by the body&amp;rsquo;s posture is the perpendicular distance between the line of action of the vector and the center of the joint. The vertical ground reaction is the determining force in stance. By combining motion and vector data the torques occurring throughout the stride can be calculated. Sagittal plane data define the flexion and extension torques. Coronal plane measurements identify the abduction and adduction demands. Transverse moments (torques) are calculated by combin­ing the fore-aft and mediolateral values.
+Calculation of joint torques from the vector and motion data, as just described, is technically easier, but the effects of gravity and inertia are not included. Studies comparing moment calculations with and without consider­ing the gravitational and inertial factors have shown no difference in the ankle data, but at the hip and knee there were intervals in the gait cycle where the simple vector data registered higher values The investigators have differed on the significance of these findings. Bressler and Frankel noted a brief increase in both the knee and hip values at the beginning loading response of approximately 20% and a similar difference in terminal stance for the hip. Mikosz et al noted the exaggeration of the sagittal knee and hip torques (expressed in units of percent body weight X stature) was 1 % each. These two groups of authors concluded that for most situations, use of the unmodified vector data was adequate. Wells , in contrast, felt the omission of the While very significant for understanding the logic of muscular action, the resulting numbers tend to be too abstract for most clinicians.&lt;/p&gt;
+&lt;p&gt;自重会带来影响但部分研究人员认为可以忽略。&lt;/p&gt;
+&lt;h3 id=&#34;center-of-pressure-cp&#34;&gt;Center of Pressure C/P&lt;/h3&gt;
+&lt;p&gt;base of the GRF vector lies within the foot, as that is the body segment in contact with the floor.&lt;/p&gt;
+&lt;p&gt;While the word pressure is in common use, it is not correct, as the area of contact is not considered in the calculation. Center of support would be more accurate.&lt;/p&gt;
+&lt;p&gt;Each C/P point represents the &lt;strong&gt;mean of the vertical forces on the four instrumented supporting posts of the force plate&lt;/strong&gt;. By also defining the location of the foot on the force plate, an anatomical correlation can be made. The center of pressure is related to the plantar outline of the foot, but its location &lt;strong&gt;does not necessarily identify that portion of the foot receiving the greatest pressure&lt;/strong&gt;. Only during the period of isolated heel support in loading response or the forefoot support interval in terminal stance will the C/P have any anatomical significance. Even then, the C/ P point represents an average of all the forces on either the heel or forefoot, not the site of maximum pressure.&lt;/p&gt;
+&lt;p&gt;The C/P is located in an anatomical area that makes little or no contact with the floor. C/P位于一个解剖区域，很少或没有接触地板。&lt;/p&gt;
+&lt;h3 id=&#34;intrinsic-foot-pressure&#34;&gt;Intrinsic Foot Pressure&lt;/h3&gt;
+&lt;p&gt;To determine the pressures experienced by the different structures within the foot&lt;/p&gt;
+&lt;h2 id=&#34;stride-characteristics-步幅分析&#34;&gt;Stride Characteristics 步幅分析&lt;/h2&gt;
+&lt;p&gt;The natural mix of joint mobility, muscle strength, neural control and energy leads to a customary walk­ing speed, stride length and step rate. These time and distance factors, in combination with the swing and stance times, constitute the person&amp;rsquo;s stride characteristics.&lt;/p&gt;
+&lt;p&gt;Normal persons, while able to voluntarily modify their gait velocity as needed, also have a 
+spontaneous rate that is called either free or customary walking speed (CWS). This free rate of travel designates the optimum functional balance of the person&amp;rsquo;s physical qualities.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Velocity = Stride Length x 0.5 Cadence&lt;/strong&gt;    Cadence (step rate)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210510184307167.png&#34; alt=&#34;image-20210510184307167&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210510184338275.png&#34; alt=&#34;image-20210510184338275&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210510185340733.png&#34; alt=&#34;image-20210510185340733&#34;  /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;normal-variability&#34;&gt;Normal Variability&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Normal adults&lt;/strong&gt; show a &lt;strong&gt;moderate variability&lt;/strong&gt; in their free walking velocity. One group of 60 subjects ages 20 to 65 years showed a 7% standard deviation during indoor testing following pretraining to a common cadence. Another 111 persons ages 20 to 80 tested on an outdoor track displayed a 4% deviation. Two identifiable sources of this variability are age and height (or limb length). 
+Age&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A notable difference in velocity (14%) when arthritis and other disabilities are allowed as natural events.&lt;/li&gt;
+&lt;li&gt;With healthy subjects the influence of age is less, but increases as years beyond 65 are added.&lt;/li&gt;
+&lt;li&gt;The decrease in mean velocity was just 3% for a 60- to 65-year-old group. This increased to 9% when the study group included ages 60 to 80; significant decline in walking ability began after age 70 years.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Limb Length 
+儿童中显著；成人腿长与步幅相关性不强($r^2$ = 0.21 ~ 0.28)&lt;/p&gt;
+&lt;h3 id=&#34;voluntary-variability&#34;&gt;Voluntary Variability&lt;/h3&gt;
+&lt;p&gt;Normal persons have a wide range of safe and relatively comfortable walking speeds.&lt;/p&gt;
+&lt;p&gt;the changes in stride length and cadence were about equal. (of similar percentage)&lt;/p&gt;
+&lt;p&gt;The standard deviations for normal free walking is approximately 10% of the mean value. The preceding data indicate 4% of this deviation is related to leg length. Age has no significance until the person is past 60 years. Thus, &lt;strong&gt;the larger factor appears to be spontaneous variability&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;energy-cost-能量消耗&#34;&gt;Energy Cost 能量消耗&lt;/h2&gt;
+&lt;p&gt;与实验无关，暂略&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;J. Perry, J.M. Burnfield Gait Analysis: Normal and Pathological Function(2nd ed.), SLACK Incorporated (2010)&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+        </item>
+        <item>
+        <title>Gait Analysis Fundamentals</title>
+        <link>https://K7288.github.io/posts/gait-analysis-fundamentals/</link>
+        <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://K7288.github.io/posts/gait-analysis-fundamentals/</guid>
+        <description>&lt;h2 id=&#34;gait-analysis-步态分析简述1&#34;&gt;Gait analysis 步态分析简述&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;factors-and-parameters-影响步态的因素&#34;&gt;Factors and parameters 影响步态的因素&lt;/h3&gt;
+&lt;p&gt;The gait analysis is modulated or modified by many factors, and changes in the normal gait pattern can be transient or permanent. The factors can be of various types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Extrinsic: such as terrain, footwear, clothing, cargo&lt;/li&gt;
+&lt;li&gt;Intrinsic: sex, weight, height, age, etc.&lt;/li&gt;
+&lt;li&gt;Physical: such as weight, height, physique&lt;/li&gt;
+&lt;li&gt;Psychological: personality type, emotions&lt;/li&gt;
+&lt;li&gt;Physiological: anthropometric characteristics, i.e., measurements and proportions of body&lt;/li&gt;
+&lt;li&gt;Pathological: for example trauma, neurological diseases, musculoskeletal anomalies, psychiatric disorders&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;parameters-描述步态的参数&#34;&gt;Parameters 描述步态的参数&lt;/h3&gt;
+&lt;p&gt;The parameters taken into account for the gait analysis are as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Step length 步长&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stride length 步幅&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cadence 节奏(Step rate; xx steps per minute)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Speed&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dynamic base&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Progression line 渐进线&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Foot angle&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hip angle&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Squat performance&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;gait-parameters一种分类2&#34;&gt;gait parameters：一种分类&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
+&lt;h4 id=&#34;joint-angles&#34;&gt;Joint angles&lt;/h4&gt;
+&lt;h4 id=&#34;gait-eventsgait-phases&#34;&gt;Gait events/Gait phases&lt;/h4&gt;
+&lt;p&gt;initial and end contact(most common)
+(IC) initial contact; (LR) loading response; (MS) mid stance; (TS) terminal stance; (PS) pre-swing; (EC) end contact; (SW) swing&lt;/p&gt;
+&lt;h4 id=&#34;spatiotemporal-parameters&#34;&gt;Spatiotemporal parameters&lt;/h4&gt;
+&lt;p&gt;Stride Time , Step time, Stance time, Gait velocity, Cadence, Stride symmetry&lt;/p&gt;
+&lt;h2 id=&#34;gait-analysis-three-basic-approaches3&#34;&gt;Gait Analysis: three basic approaches&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/h2&gt;
+&lt;p&gt;The simplest system subdivides the cycle accord­ing to the variations in reciprocal floor contact by the two feet. A second method uses the time and distance qualities of the stride. The third approach identifies the functional significance of the events within the gait cycle and designates these intervals as the functional phases of gait.&lt;/p&gt;
+&lt;h3 id=&#34;gait-cycle-gc&#34;&gt;Gait cycle (GC)&lt;/h3&gt;
+&lt;p&gt;One gait cycle (a single sequence of these functions by one limb) can be divided into two phases, &lt;strong&gt;stance&lt;/strong&gt; (&lt;strong&gt;ST&lt;/strong&gt;) and &lt;strong&gt;swing&lt;/strong&gt; (&lt;strong&gt;SW&lt;/strong&gt;), which can be subdivided into &lt;strong&gt;five and three phases&lt;/strong&gt;, respectively.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Stance&lt;/strong&gt; is the term used to designate the entire period during which &lt;strong&gt;the foot is on the ground&lt;/strong&gt;. Stance begins with initial contact.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Swing&lt;/strong&gt; applies to the time &lt;strong&gt;the foot is in the air for limb advancement&lt;/strong&gt;. Swing begins as the foot is lifted from the floor (toe-off).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210510082507492.png&#34; alt=&#34;image-20210510082507492&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;Stance is subdivided into &lt;strong&gt;three intervals according to the sequence of floor contact by the two feet&lt;/strong&gt;. Both the start and end of stance involve a period of bilateral foot contact with the floor (double stance), while the middle portion of stance has one foot contact.&lt;/p&gt;
+&lt;p&gt;Initial double stance(10%) begins the gait cycle. It is the time both feet are on the floor after initial contact. An alternate term is double limb support. This designation is to be avoided, however, as it implies an equal sharing of body weight by the two feet, which is not true during most of the double stance interval. 
+Single limb support(40%) begins when the opposite foot is lifted for swing. In keeping with the terminology for the double contact periods, this should be (and often is) called single stance. To emphasize the functional significance of floor contact by just one foot, the term support is preferred. During the single limb support interval the body&amp;rsquo;s entire weight is resting on that one extremity. The duration of single stance is the best index of the limb&amp;rsquo;s support capability. 
+Terminal double stance(10%) is the third subdivision. It begins with floor contact by the other foot (contralateral initial contact) and continues until the original stance limb is lifted for swing (ipsilateral toe-off). The term terminal double limb support has been avoided, as weight bearing is very asymmetrical.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210510082609418.png&#34; alt=&#34;image-20210510082609418&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;(根据两腿所在的运动相划分，与phase不同)&lt;/p&gt;
+&lt;h4 id=&#34;gait-cycle--speed&#34;&gt;&lt;strong&gt;Gait Cycle ＆ Speed&lt;/strong&gt;&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The precise duration of these gait cycle &lt;strong&gt;intervals varies with the person&amp;rsquo;s walking velocity&lt;/strong&gt;.  &lt;strong&gt;The duration of both gait periods shows an inverse relationship to walking speed&lt;/strong&gt;. That is, both total stance and swing times are shortened as gait velocity increases. The change in stance and swing times becomes progressively greater as speed slows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Among the &lt;strong&gt;subdivisions of stance&lt;/strong&gt; a different relationship exits. Walking faster proportionally lengthens single stance and shortens the two double stance intervals. The reverse is true as the person&amp;rsquo;s walking speed slows. This pattern of change also is curvilinear.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Having an interval when both feet are in contact with the ground for the limbs to exchange their support roles is a basic characteristic of walking. When double stance is omitted, the person has entered the running mode of locomotion.&lt;/p&gt;
+&lt;h3 id=&#34;stride-and-step&#34;&gt;Stride and Step&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Stride&lt;/strong&gt; is the equivalent of a gait cycle. It is based on the actions of &lt;strong&gt;one limb&lt;/strong&gt;.The duration of a stride is the interval between two sequential initial floor contacts by the same limb (i.e., right IC and the next right IC).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step&lt;/strong&gt; refers to the &lt;strong&gt;timing between the two limbs&lt;/strong&gt;. There are two steps in each stride (or gait cycle). At the midpoint of one stride the other foot contacts the ground to begin its next stance period. The interval between an initial contact by each foot is a step (i.e., left and then right). The same offset in timing will be repeated in reciprocal fashion throughout the walk.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210510085622226.png&#34; alt=&#34;image-20210510085622226&#34;  /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;gait-phases&#34;&gt;Gait Phases&lt;/h3&gt;
+&lt;p&gt;The phases of gait also provide a means for correlating the simultaneous actions of the individual joints into patterns of total limb function.  联系关节模式和运动&lt;/p&gt;
+&lt;h4 id=&#34;tasks&#34;&gt;Tasks&lt;/h4&gt;
+&lt;p&gt;weight acceptance (WA) Weight acceptance begins the stance period and uses the first two gait phases (initial contact and loading response).&lt;/p&gt;
+&lt;p&gt;Single limb support  (SLS) continues stance with the next two phases of gait (mid stance and terminal stance).&lt;/p&gt;
+&lt;p&gt;Limb advancement(LA) begins in the final phase of stance (pre-swing) and then continues through the three phases of swing (initial swing, midswing and terminal swing).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210510090047998.png&#34; alt=&#34;image-20210510090047998&#34;  /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;stance-st-支撑相&#34;&gt;Stance ST 支撑相&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;首次触地期（initial contact，IC）&lt;/li&gt;
+&lt;li&gt;承重反应期（loading response，LR）&lt;/li&gt;
+&lt;li&gt;支撑相中期（mid stance, MS）&lt;/li&gt;
+&lt;li&gt;支撑相末期（terminal stance, TS）&lt;/li&gt;
+&lt;li&gt;摆动前期（pre-swing, PS）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Corresponding to the beginning of the ST phase, the initial contact (IC) describes the moment when one part of the foot, in physiologic gait the heel, touches the ground. The loading response (LR) starts with the IC and ends with the contralateral toe-off. Subsequently, the mid stance (MS) lasts until the heel-off of the reference leg. The MS is followed by the terminal stance (TS), which ends with the contralateral IC. The ST phase terminates with the pre-swing (PS), which ends with the toe-off of the reference leg. &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;h4 id=&#34;sw-摆动相&#34;&gt;SW 摆动相&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;摆动相早期（initial swing，IS）&lt;/li&gt;
+&lt;li&gt;摆动相中期（mid swing，MS）&lt;/li&gt;
+&lt;li&gt;摆动相末期（terminal swing，TS）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Considering the SW phase, the initial swing follows the PS and terminates when the ankle joint of the reference leg crosses the supporting leg. This phase is followed by the mid swing, which ends with the tibia of the reference leg being vertical to the ground. The gait cycle is concluded by the terminal swing, which ends with the initial contact of the reference leg.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/1-s2.0-S0966636217302424-gr1.jpg&#34; alt=&#34;img&#34;  /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;basic-functionslocomotor-functions&#34;&gt;Basic Functions(Locomotor Functions)&lt;/h3&gt;
+&lt;p&gt;上身passenger 下面locomotor（涉及11个关节）&lt;/p&gt;
+&lt;p&gt;As the locomotor unit carries the body to its desired location each weight-bearing limb accomplishes four distinct functions. (1) A propulsive force is generated. (2) Upright stability is maintained, despite an ever-changing posture. (3) The shock of floor impact at the onset of each stride is minimized. (4) Energy is conserved by these functions being performed in a manner that reduces the amount of muscular effort required (Table 3.1). The accomplish­ment of each function depends on a distinct motion pattern. Each represents a complex series of interactions between the body mass and the two multiseg­mented lower limbs. During walking these blend into a single, three-dimen­sional pattern.&lt;/p&gt;
+&lt;p&gt;主要有4个Locomotor Functions: Propulsion, Stance Stability, Shock Absorption, Energy Conservation, 不同的function对应的重心位置和关节角不同，随phase的变化也不同，详见此书&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;p19-p47&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Gait_analysis#Markerless_gait_capture&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Gait analysis wikipedia&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636217302424&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Rafael Caldas, Marion Mundt, Wolfgang Potthast, Fernando Buarque de Lima Neto, Bernd Markert,A systematic review of gait analysis methods based on inertial sensors and adaptive algorithms,Gait &amp;amp; Posture,Volume 57,,2017&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;J. Perry, J.M. Burnfield, Gait Analysis: Normal and Pathological Function(2nd ed.), SLACK Incorporated (2010)&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+        </item>
+        <item>
+        <title>Hugo Guide</title>
+        <link>https://K7288.github.io/posts/hugo-guide/</link>
+        <pubDate>Sat, 01 May 2021 11:37:16 +0800</pubDate>
+        
+        <guid>https://K7288.github.io/posts/hugo-guide/</guid>
+        <description>&lt;h2 id=&#34;about-contents&#34;&gt;About Contents&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Add Some Content&lt;/strong&gt; &lt;code&gt;hugo new post/**.md&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The newly created content file will start with something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: &amp;quot;**&amp;quot;
+date: 2019-03-26T08:47:11+01:00
+draft: true
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Drafts do not get deployed; once you finish a post, update the header of the post to say &lt;code&gt;draft: false&lt;/code&gt;. More info &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/usage/#draft-future-and-expired-content&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: &amp;quot;Hugo Guide&amp;quot;
+date: 2021-05-01T08:47:11+01:00
+categories: [&amp;quot;Manual&amp;quot;]
+tags: [&amp;quot;Hugo&amp;quot;, &amp;quot;GitHub&amp;quot;]
+draft: false
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Add pictures&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/post/xxx.jpg&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;is actually &lt;code&gt;baseURL/post/xxx.jpg&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Put the picture as below&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.
+└── static
+    └── post
+        └── xxx.jpg
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;customize-the-theme&#34;&gt;Customize the Theme&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Start the Hugo server&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;▶ hugo server -D
+
+                   | EN
++------------------+----+
+  Pages            | 10
+  Paginator pages  |  0
+  Non-page files   |  0
+  Static files     |  3
+  Processed images |  0
+  Aliases          |  1
+  Sitemaps         |  1
+  Cleaned          |  0
+
+Total in 11 ms
+Watching for changes in /Users/bep/quickstart/{content,data,layouts,static,themes}
+Watching for config changes in /Users/bep/quickstart/config.toml
+Environment: &amp;quot;development&amp;quot;
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Navigate to your new site at http://localhost:1313/.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Site Configuration&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Open up &lt;code&gt;config.toml&lt;/code&gt; in a text editor:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;baseURL = &amp;quot;http://K7288.github.io&amp;quot;
+languageCode = &amp;quot;en-us&amp;quot;
+title = &amp;quot;K7288&amp;quot;
+theme = &amp;quot;cactus&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;For further theme customization, see &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/themes/customizing/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Customize a Theme&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;build-static-pages&#34;&gt;Build static pages&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;hugo -D
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Output will be in &lt;code&gt;./public/&lt;/code&gt; directory by default (&lt;code&gt;-d&lt;/code&gt;/&lt;code&gt;--destination&lt;/code&gt; flag to change it, or set &lt;code&gt;publishdir&lt;/code&gt; in the config file).&lt;/p&gt;
+&lt;p&gt;See Also&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/external-learning-resources/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;External Learning Resources&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/hugo-modules/use-modules/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Use Hugo Modules&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/usage/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Basic Usage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo Theme Stack&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Math</title>
+        <link>https://K7288.github.io/posts/math/</link>
+        <pubDate>Sat, 01 May 2021 11:37:16 +0800</pubDate>
+        
+        <guid>https://K7288.github.io/posts/math/</guid>
+        <description>&lt;p&gt;$$
+e^{ix}=\text{cos}x+i\text{sin}x
+$$&lt;/p&gt;
+&lt;p&gt;$$
+\left(C_{n+1, t+1}-C_{n, t}\right)-\left(C_{n, t+1}-C_{n-1, t}\right)=\frac{2}{n+1}
+$$&lt;/p&gt;
+&lt;p&gt;换行需要使用&lt;code&gt;\\\\&lt;/code&gt;
+$$
+\begin{aligned} C_{n+1, t+1}-C_{n, t} &amp;amp;=\frac{2}{n+1}+\frac{2}{n}+\cdots+\frac{2}{t+2}+C_{t+1, t+1}-C_{t, t} \\ &amp;amp;=2\left(H_{n+1}-H_{t+1}\right)+2-2 /(t+1)
+\end{aligned}
+$$&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>论文3篇泛读 1-&gt;measurement可靠性(方法比较奇怪或者没有) 2/3-&gt;步态参数拟合</title>
+        <link>https://K7288.github.io/posts/measurement%E5%8F%AF%E9%9D%A0%E6%80%A7%E6%96%B9%E6%B3%95%E6%AF%94%E8%BE%83%E5%A5%87%E6%80%AA%E6%88%96%E8%80%85%E6%B2%A1%E6%9C%89-%E6%AD%A5%E6%80%81%E5%8F%82%E6%95%B0%E6%8B%9F%E5%90%88/</link>
+        <pubDate>Sat, 01 May 2021 11:37:16 +0800</pubDate>
+        
+        <guid>https://K7288.github.io/posts/measurement%E5%8F%AF%E9%9D%A0%E6%80%A7%E6%96%B9%E6%B3%95%E6%AF%94%E8%BE%83%E5%A5%87%E6%80%AA%E6%88%96%E8%80%85%E6%B2%A1%E6%9C%89-%E6%AD%A5%E6%80%81%E5%8F%82%E6%95%B0%E6%8B%9F%E5%90%88/</guid>
+        <description>&lt;p&gt;&lt;em&gt;因为不熟悉心相关研究问题，之前做笔记的次数也少，这几篇Literature Notes结构不够清晰，而且过长，下次注意。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;三篇文献与选题的关联性差强人意，之后留意/请教一下如何有效查找文献。&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;1-reliability-of-centre-of-pressure-plantar-pressure-and-plantar-flexion-isometric-strength-measures-a-systematic-review&#34;&gt;1. Reliability of centre of pressure, plantar pressure, and plantar-flexion isometric strength measures: A systematic review&lt;/h2&gt;
+&lt;p&gt;COP PP PFisom 三种步态控制measurement 的可靠性&lt;/p&gt;
+&lt;p&gt;方法：对三个数据库实验进行同行评估 ICC&lt;/p&gt;
+&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
+&lt;p&gt;Centre of pressure (COP), plantar pressure (PP), and plantar-flexion isometric strength (PFisom) are often examined in relation to postural control and gait.&lt;/p&gt;
+&lt;h3 id=&#34;research-question&#34;&gt;Research question&lt;/h3&gt;
+&lt;p&gt;Our aim was to systematically review and quality appraise articles addressing the reliability of COP and PP measures in static stance and PFisom measures.&lt;/p&gt;
+&lt;h3 id=&#34;methods&#34;&gt;Methods&lt;/h3&gt;
+&lt;p&gt;Three electronic databases **(**SCOPUS®, SportDISCUS™, and PubMed) were searched and supplemented by a manual search. Peer-reviewed original research on the reliability of COP, PP, and PFisom in healthy adults (≥18 years) was included. Quality appraisal was done according to the updated COnsensus-based Standards for the selection of health Measurement INstruments reliability checklist. Data regarding study characteristics, test protocols, outcome measures, and reliability metrics were extracted.&lt;/p&gt;
+&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;
+&lt;p&gt;Forty articles met inclusion and were assessed for their methodological quality. Only four articles (10%) obtained uppermost quality scores. From the reviewed studies, the most reliable measures were: &lt;strong&gt;COP sway area and path length; PP mean pressure, percentage body weight distribution, and contact area; and PFisom peak torque and force.&lt;/strong&gt; Although these measures generally exhibited good-to-excellent relative reliability based on correlation coefficients, absolute reliability based on typical errors were not always optimal (variation &amp;gt; 10%). Literature on PP reliability was scarce (&lt;em&gt;n&lt;/em&gt; = 2).&lt;/p&gt;
+&lt;h2 id=&#34;2assessment-of-spatio-temporal-gait-parameters-from-trunk-accelerations-during-human-walking&#34;&gt;2.Assessment of spatio-temporal gait parameters from trunk accelerations during human walking&lt;/h2&gt;
+&lt;p&gt;基于加速度预测时空上的步态参数的可行性 spatio-temporal gait parameters&lt;/p&gt;
+&lt;h3 id=&#34;intro&#34;&gt;Intro&lt;/h3&gt;
+&lt;p&gt;Basic prerequisites for gait analysis are the assessment of spatio-temporal gait parameters and the analysis of movements within subsequent stride cycles. 后续步幅周期内运动&lt;/p&gt;
+&lt;p&gt;As a matter of convention, the stride cycle is defined as the interval between two subsequent right foot contacts. Hence, the stride starts with a left step, which is followed by a right step.&lt;/p&gt;
+&lt;p&gt;Some typical examples are the use of conducting foot switches [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;1]&lt;/a&gt;, pressure-sensitive foot switches [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;2]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB3&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;3]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB4&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;4]&lt;/a&gt;, ground reaction forces (GRFs) [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;5]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB6&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;6]&lt;/a&gt;, or the analysis of foot displacement patterns [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB7&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;7]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB8&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;8]&lt;/a&gt;. // 用其他装置测量其他信号&lt;/p&gt;
+&lt;p&gt;Although already in the 1970s the use of accelerometers for an analysis of human movement was suggested [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB9&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;9]&lt;/a&gt;, it is only recently that a number of studies have reported gait analyses based upon the use of accelerometers on trunk, thigh, shank or foot (for examples see Refs. [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB10&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;10]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB11&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;11]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB12&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;12]&lt;/a&gt;). Only few studies have addressed the relationships between measured accelerations and spatio-temporal gait parameters. Using neural networks, the speed and distance of walking can be estimated [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB13&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;13]&lt;/a&gt;. //加速度与运动关联的提出 一些相关实验&lt;/p&gt;
+&lt;p&gt;Average temporal characteristics like step or stride duration can be estimated from acceleration data (for example, by means of cross correlation functions or frequency analysis).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;feasibility&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A study by Zijlstra and Hof [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB16&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;16]&lt;/a&gt; demonstrated that three-dimensional (3D) displacements of the lower trunk during walking are predicted well by an inverted pendulum model（倒立摆模型） of the body&amp;rsquo;s centre of mass (CoM) trajectory.&lt;/li&gt;
+&lt;li&gt;In agreement with model predictions, the amplitude and timing of pelvic displacements depended on spatio-temporal parameters of the stride cycle. The inverted pendulum model also predicts a basic pattern of lower trunk acceleration during walking, and relationships between acceleration characteristics and spatio-temporal gait parameters. Hence, spatio-temporal gait parameters can possibly be determined from accelerations of the lower trunk. //倒立摆模型说明加速度和步态的时空参数有关联性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;主要工作&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Therefore, the present paper investigates the feasibility of an analysis of spatio-temporal gait parameters based upon accelerometry.&lt;/li&gt;
+&lt;li&gt;Specifically, it analyses the 3D-acceleration pattern of the lower trunk at different walking speeds, and it evaluates algorithms that were developed to determine the instant of foot contacts, to identify left and right foot contacts, and to estimate mean step length and walking speed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;method&#34;&gt;Method&lt;/h3&gt;
+&lt;p&gt;step length = $2\sqrt{2lh-h^2}$ //h重心偏移（本文中 向上加速度二重积分） l摆线长（腿长）&lt;/p&gt;
+&lt;p&gt;To avoid integration drift, position data were high-pass filtered (fourth-order zero-lag Butterworth filter at 0.1 Hz).&lt;/p&gt;
+&lt;p&gt;From the same 20 steps, mean step duration was calculated. For each subject and each belt speed condition, mean step length divided by mean step duration was used to estimate walking speed.&lt;/p&gt;
+&lt;h3 id=&#34;result&#34;&gt;Result&lt;/h3&gt;
+&lt;h4 id=&#34;accelerations-of-the-lower-trunk-during-treadmill-walking&#34;&gt;Accelerations of the lower trunk during treadmill walking&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/1-s2.0-S096663620200190X-gr1.gif&#34; alt=&#34;img&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;Vertical accelerations are adjusted by subtracting the acceleration due to gravity (9.81 m/
+s2). Solid lines represent mean patterns, and dashed lines represent +- 1 S.D. （标准差）The stride cycle starts (0%) and ends (100%) with a right foot contact, left foot contact is at 50%.&lt;/p&gt;
+&lt;p&gt;Closer inspection of these acceleration signals in relation to the GRF data showed that the timing of an additional peak or indention corresponded to the beginning or end of swing phases, respectively. In the mean data presented in Fig. 1, such an indention can be observed just preceding the peak acceleration at 50% of the stride cycle. The indention preceding foot contact could cause a short period of negative values in forward acceleration.附加峰值或凹陷的时间分别对应于摆动阶段的开始或结束。在图1中所示的平均数据中，可以观察到这种锯齿状刚好出现在步幅周期50%的峰值加速度之前。&lt;/p&gt;
+&lt;h4 id=&#34;foot-contact-detection-and-duration-of-the-stride-cycle&#34;&gt;Foot contact detection and duration of the stride cycle&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/1-s2.0-S096663620200190X-gr2.gif&#34; alt=&#34;img&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;Data traces represent a sample of the data of a male subject walking at a treadmill speed of 1.25 m/s.&lt;/p&gt;
+&lt;p&gt;The upper figure shows antero-posterior acceleration data as a solid grey line.&lt;/p&gt;
+&lt;p&gt;The lower figure shows &lt;strong&gt;right and left vertical GRFs (L/R-GRFs) divided by body weight (BW)&lt;/strong&gt;. Right GRFs are shown as a solid black line, and left GRFs as a dashed line. Arrows in the lower figure indicate the starts (and ends) of stride cycles, as identified by right GRFs.&lt;/p&gt;
+&lt;p&gt;Arrows in the lower figure indicate the starts (and ends) of stride cycles, as identified by right GRFs. In both figures, asterisks indicate the instant of foot contact as detected from left or right GRFs. Foot contacts detected from acceleration data are indicated in the upper figure by downward slopes of the block signal shown in black (zero-crossing method), and the open circles around peak acceleration values (peak detection method).&lt;/p&gt;
+&lt;h4 id=&#34;discrimination-between-left-and-right-steps&#34;&gt;Discrimination between left and right steps&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/1-s2.0-S096663620200190X-gr3.gif&#34; alt=&#34;img&#34;  /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3an-evaluation-of-measurement-systems-estimating-gait-speed-during-a-loaded-military-march-over-graded-terrain&#34;&gt;3.An evaluation of measurement systems estimating gait speed during a loaded military march over graded terrain&lt;/h2&gt;
+&lt;p&gt;Gait speed can be estimated using a single IMU (located at wrist or arm pit).&lt;/p&gt;
+&lt;p&gt;Correcting for confounders such as body size, load and shoe type is necessary.&lt;/p&gt;
+&lt;p&gt;Uphill and downhill walking both change gait parameters and walk ratio.&lt;/p&gt;
+&lt;p&gt;The change in walk ratio causes an overestimation of the gait speed.&lt;/p&gt;
+&lt;p&gt;Altimetry should be used to correct the estimation of gait speed in graded terrain.&lt;/p&gt;
+&lt;h3 id=&#34;methods-1&#34;&gt;Methods&lt;/h3&gt;
+&lt;h4 id=&#34;data-processing&#34;&gt;Data processing&lt;/h4&gt;
+&lt;p&gt;EQ-02 data was processed using Matlab (R2017a, The Mathworks Inc, Natick, MA). A custom-made algorithm using &lt;strong&gt;peak detection functions&lt;/strong&gt; was used to calculate the number of steps and counts (total and separate for the sagittal plane) from raw accelerometer output for each 200 m trial, and the trial time was derived from the EQ-02. From these parameters &lt;strong&gt;speed, cadence and counts per second were calculated&lt;/strong&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;nld模型&#34;&gt;NLD模型&lt;/h4&gt;
+&lt;p&gt;$$
+Walking speed [m/s] = 0.301*(step/s)2 + 0.011*counts/s \+ 0.687*height [m]− 0.003*body\ weight[kg] \+ 0.040*footwear_type [0\ for\ running\ shoes,\ 1\ for\ combat\ boots] − 0.958
+$$&lt;/p&gt;
+&lt;p&gt;$ (n = 266; R^2 = 0.968; R^2_{adjusted}= 0.968; \text{standard error of the estimate} = 0.082 m/s)$&lt;/p&gt;
+&lt;p&gt;$$
+Running speed [m/s] = 0.183*(step/s)2 + 0.028*counts/s \− 0.228*footwear_type \text{[0 for running shoes, 1 for combat boots]} \+ 0.017*counts_{sagitalplane}/s – 1.226
+$$
+(n = 160; R2 = 0.746; R2adjusted = 0.740; standard error of the estimate = 0.325 m s−1)&lt;/p&gt;
+&lt;p&gt;地形（上下坡）对步态的影响 数据校正(body size，负载和鞋子类型等)&lt;/p&gt;
+&lt;p&gt;女性的步伐比男性慢，步幅较小，步频更快[ [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0105&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;21]&lt;/a&gt;，[&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0110&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;22]&lt;/a&gt;，[&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0115&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;23]&lt;/a&gt; ]。这些性别差异仅归因于身高的不同，例如身高和体重[ [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0110&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;22]&lt;/a&gt;，[&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0120&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;24] &lt;/a&gt;]。身高和腿长与首选的步行速度和步幅呈正相关，但体重和&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/topics/medicine-and-dentistry/body-mass-index&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;体重指数&lt;/a&gt;对步态参数没有影响[ &lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0125&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;25&lt;/a&gt; ]。&lt;/p&gt;
+&lt;h4 id=&#34;坡度影响&#34;&gt;坡度影响&lt;/h4&gt;
+&lt;p&gt;在以前的研究中，受试者可以自由选择他们的步行速度，上坡步行导致速度，步长和步频降低[ [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0115&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;23]&lt;/a&gt;，[&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0130&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;26]&lt;/a&gt; ]。这些发现与本研究2的结果相符，在本研究中，发现与水平行走相比，在6.5％的坡度上进行上坡行走时行走速度降低（从1.47降至1.22 m s -1）。这种下降是由较低的节奏和较小的步长引起的。此外，观察到水平步行和上坡步行之间的步行比率变化，导致两种算法的步行速度都被高估。在较早的研究中，下坡步行导致步长减少[ [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0085&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;17]&lt;/a&gt;，[&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0115&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;23]&lt;/a&gt;，[&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0130&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;26]&lt;/a&gt;，[&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0135&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;27]&lt;/a&gt;]。节奏略有增加[ &lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0085&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;17&lt;/a&gt; ]或没有改变[ &lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0115&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;23&lt;/a&gt; ]。在研究2中，士兵们沿着5.5％的坡度行走。与水平步行相比，步行速度相同，步频更高，步长更短。步行率也发生了变化，导致两个模型的步行速度都被高估。&lt;/p&gt;
+&lt;p&gt;To mitigate the errors caused by walking uphill or downhill, a correction for grade should be implemented. This could be achieved by using barometer data to estimate the grade [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0140&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;28&lt;/a&gt;] or by using IMUs on the foot/shoe to estimate inclination for each step [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0095&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;19&lt;/a&gt;]. Given the location of the sensors, the algorithms discussed in this paper could be corrected using a barometer.&lt;/p&gt;
+&lt;h2 id=&#34;-1others&#34;&gt;-1.Others&lt;/h2&gt;
+&lt;h3 id=&#34;特征工程参考&#34;&gt;特征工程参考&lt;/h3&gt;
+&lt;h4 id=&#34;machine-learning-algorithms-can-classify-outdoor-terrain-types-during-running-using-accelerometry-data&#34;&gt;Machine learning algorithms can classify outdoor terrain types during running using accelerometry data&lt;/h4&gt;
+&lt;h3 id=&#34;无关变量的影响&#34;&gt;无关变量的影响&lt;/h3&gt;
+&lt;h4 id=&#34;detection-of-age-and-gender-differences-in-walking-using-mobile-wearable-sensors&#34;&gt;Detection of age and gender differences in walking using mobile wearable sensors&lt;/h4&gt;
+&lt;p&gt;使用移动可穿戴传感器检测步行中的年龄和性别差异&lt;/p&gt;
+&lt;h5 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h5&gt;
+&lt;p&gt;An interaction was present between gender and age group (p = 0.034) with the older females being younger than the older males (Female: 66.21 ± 5.29, Male: 71.00 ± 5.64) while there was no gender difference in age for the younger group (Female: 22.89 ± 3.14, Male: 21.64 ± 2.62). Gender had a significant impact on height and weight with men being taller (Male: 1.78 ± 0.07, Female: 1.68 ± 0.05, p &amp;lt; 0.001) and heavier (Male: 75.16 ± 9.47, Female: 67.79 ± 11.54, p = 0.009). The vGRF, LR and impulse **(**normalized to body weight, BW) for each condition along with the standard error of the mean, the Bland-Altman bias and LOA, and the ICC results are presented in &lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636221001399#tbl0010&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Table 2&lt;/a&gt;. The ICC values for all variables for all conditions were classified as excellent. The Bland-Altman plots are shown in &lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636221001399#fig0005&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Fig. 1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/1-s2.0-S0966636221001399-gr1.jpg&#34; alt=&#34;Bland-Altman&#34;  /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;a-systematic-review-of-gait-analysis-methods-based-on-inertial-sensors-and-adaptive-algorithms&#34;&gt;A systematic review of gait analysis methods based on inertial sensors and adaptive algorithms&lt;/h3&gt;
+&lt;p&gt;inertial measurement units (IMUs) consisting of gyroscopes, accelerometers, and magnetometers or parts of it to determine kinematic data&lt;/p&gt;
+&lt;p&gt;通过研究评估的方式证明了IMU系统可以获取步态运动学参数&lt;/p&gt;
+&lt;h3 id=&#34;adaptive-method-for-real-time-gait-phase-detection-based-on-ground-contact-forces&#34;&gt;Adaptive method for real-time gait phase detection based on ground contact forces&lt;/h3&gt;
+&lt;p&gt;(Motion phases during walking are characterized by the gait phases, and &lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636214007450#bib0005&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;strong&gt;each gait phase has a unique ground contact force (GCF) pattern&lt;/strong&gt; &lt;/a&gt;.)&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

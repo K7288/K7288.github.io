@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on K7288</title>
+    <link>https://K7288.github.io/posts/</link>
+    <description>Recent content in Posts on K7288</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 16 May 2021 10:35:13 +0800</lastBuildDate><atom:link href="https://K7288.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Menu</title>
+      <link>https://K7288.github.io/posts/menu/</link>
+      <pubDate>Sun, 16 May 2021 10:35:13 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/menu/</guid>
+      <description>实现页内跳转  基本语法 注意事项 A subtitle just for test 测试 a A  测试——测试 测试:一个测试   1.测试   目录实现  实现页内跳转 基本语法 [&amp;lt;提示语&amp;gt;](#&amp;lt;目标内容&amp;gt;) 注意事项   若标题是英文，在(#&amp;lt;目标内容&amp;gt;)中需要小写
+例如 [例如](#a-subtitle-just-for-test)
+  若标题中出现空格，需要用-连接
+例如 [例如](#测试-a-a)
+  (#&amp;lt;目标内容&amp;gt;)中不能出现半角点(即英文中的句号).，似乎也不支持其他标点，(#&amp;lt;目标内容&amp;gt;)中需要将标点删除
+测试:一个测试 [测试:一个测试](#测试一个测试)
+1.测试 [1.测试](#1测试)
+测试——测试 [测试——测试](#测试测试)
+  A subtitle just for test 测试 a A 测试——测试 测试:一个测试 1.测试 目录实现  VS code插件 Markdown All in One  ctrl+shift+p Markdown All in One: Create Table of Contents   TODO 实现侧边目录   😂 已经出现了对“测”的完型崩坏</description>
+    </item>
+    
+    <item>
+      <title>The effect of stride length on lower extremity joint kinetics at various gait speeds</title>
+      <link>https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/</link>
+      <pubDate>Thu, 13 May 2021 10:44:02 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/</guid>
+      <description>The effect of stride length on lower extremity joint kinetics at various gait speeds
+Concepts sagittal plane矢状面，把身体分成左右两条，解剖学用来描述身体各部分位置（类似经线）
+注意不只有中线
+sagittal plane movement包括任何具有前后成分的运动
+Background  gait training devices that promote desired changes in gait Challenges in developing such devices: limited understanding of human response to robotic input  比如机器人运动辅助会怎样影响gait speed   Possible method of controller formulation: control robot to apply the change in joint moment applied by human subjects when they achieve a gait feature of interest.</description>
+    </item>
+    
+    <item>
+      <title>步速估计综述整理</title>
+      <link>https://K7288.github.io/posts/%E6%AD%A5%E9%80%9F%E4%BC%B0%E8%AE%A1%E7%BB%BC%E8%BF%B0%E6%95%B4%E7%90%86/</link>
+      <pubDate>Wed, 12 May 2021 22:17:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/%E6%AD%A5%E9%80%9F%E4%BC%B0%E8%AE%A1%E7%BB%BC%E8%BF%B0%E6%95%B4%E7%90%86/</guid>
+      <description>Toward Pervasive Gait Analysis With Wearable Sensors: A Systematic Review Abstract 对当前的定量步态分析技术进行系统的综述，并提出关键指标，来评估现有的通过可穿戴传感器提取步态特征的方法。它旨在突出这一快速发展的研究领域中的关键进展，并概述研究和临床应用的潜在未来方向。
+SECTION III. Methods for Extracting Relevant Gait Features From Wearable Sensors A.文献检索
+B. Kinematics
+Kinematic information is a well-established set of gait measures in biomechanical analysis.
+从惯性传感器获取运动学信息似乎很直观，但是要获得关于人体运动学的准确空间信息仍然很困难：全局失准和integration drift
+C.时序特征
+D.利用惯性传感器的步速提取
+Laudanski et al. [104] reviewed the current research (16 papers in total) on gait speed estimation using inertial sensors, classifying the current gait speed estimation model into three categories: abstraction model (i.</description>
+    </item>
+    
+    <item>
+      <title>基于几何与物理特征融合的智能下肢假肢运动意图识别</title>
+      <link>https://K7288.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%87%A0%E4%BD%95%E4%B8%8E%E7%89%A9%E7%90%86%E7%89%B9%E5%BE%81%E8%9E%8D%E5%90%88%E7%9A%84%E6%99%BA%E8%83%BD%E4%B8%8B%E8%82%A2%E5%81%87%E8%82%A2%E8%BF%90%E5%8A%A8%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/</link>
+      <pubDate>Wed, 12 May 2021 20:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%87%A0%E4%BD%95%E4%B8%8E%E7%89%A9%E7%90%86%E7%89%B9%E5%BE%81%E8%9E%8D%E5%90%88%E7%9A%84%E6%99%BA%E8%83%BD%E4%B8%8B%E8%82%A2%E5%81%87%E8%82%A2%E8%BF%90%E5%8A%A8%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/</guid>
+      <description>基于几何与物理特征融合的智能下肢假肢运动意图识别Movement intention recognition of intelligent lower limb prosthesis based on the fusion of geometric and physical features
+Research question 将关节角表示的几何特征与加速度、角速度表示的物理特征有机融合并应用于智能下肢假肢的运动意图识别
+Introduction 传统的意图识别方法所用传感器数量及种类较多, 特征向量维数偏高, 统计特征对短时样本具有不稳定性（在1.3 特征选择与提取有公式证明）。related work没有结合几何和物理。
+Methods   采样：健侧大腿、小腿惯性测量单元于摆动相前期所产生的运动时序数据作为样本；
+  数据处理：移动平均滤波器滤波去噪
+  特征提取：
+ 几何特征：根据两个传感器的加速度、角速度计算一维的膝关节角，FDA方法提取最值斜率 物理特征：加速度、角速度的均值、方差  均值、方差、最值斜率融合构成25维的特征基构建特征向量
+  SVM分类
+  Results 13种日常行为进行分类。实验结果：对5类稳态模式: 平地行走、上楼、下楼、上坡和 下坡的识别率达到96.9%, 对8类转换模式的识别率达到97.1%, 对13 种模式的识别率为94.3%。
+Highlights 减少了传感器的数量及种类, 降低 了特征向量的维数降低了算法复杂度且避免了滞后性问题, 用加速度、 角速度及膝关节角三个参数共同对人体下肢运动的运动学特点进行表征。
+在特征的提取上, 将FDA方法与统计方法相结合, 弥补了仅提取统计特征的不稳定性问题。
+Limits/Further Work 对于13种动作的识别率有待提高, 后期工作会集中于对类间相似性相对较强较难区分的动作进行分类, 如: 下楼与下坡, 走到下楼 与走到下坡等. 此外, 关节角度是一个可深度挖掘的几何信息, 如: 除膝关节外的髋关节与踝关节对下肢假肢运动意图中的作用有待进一步探究.</description>
+    </item>
+    
+    <item>
+      <title>Gait Analysis Systems</title>
+      <link>https://K7288.github.io/posts/gait-analysis-systems/</link>
+      <pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/gait-analysis-systems/</guid>
+      <description>&amp;ldquo;Section Four - Gait Analysis Systems&amp;rdquo; from Gait Analysis: Normal and Pathological Function1
+Basically, there are 5 measurement systems.
+Three of these focus on the specific events that constitute the act of walking.
+行走各个阶段
+ Motion analysis defines the magnitude and timing of individual joint action. Dynamic electromyography iden­tifies the period and relative intensity of muscle function. Force plate recordings display the functional demands being experienced during the weight-bearing period.  The two remaining gait analysis technics summarize the effects of the person&amp;rsquo;s gait mechanics.</description>
+    </item>
+    
+    <item>
+      <title>Gait Analysis Fundamentals</title>
+      <link>https://K7288.github.io/posts/gait-analysis-fundamentals/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/gait-analysis-fundamentals/</guid>
+      <description>Gait analysis 步态分析简述1 Factors and parameters 影响步态的因素 The gait analysis is modulated or modified by many factors, and changes in the normal gait pattern can be transient or permanent. The factors can be of various types:
+ Extrinsic: such as terrain, footwear, clothing, cargo Intrinsic: sex, weight, height, age, etc. Physical: such as weight, height, physique Psychological: personality type, emotions Physiological: anthropometric characteristics, i.e., measurements and proportions of body Pathological: for example trauma, neurological diseases, musculoskeletal anomalies, psychiatric disorders  Parameters 描述步态的参数 The parameters taken into account for the gait analysis are as follows:</description>
+    </item>
+    
+    <item>
+      <title>Hugo Guide</title>
+      <link>https://K7288.github.io/posts/hugo-guide/</link>
+      <pubDate>Sat, 01 May 2021 11:37:16 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/hugo-guide/</guid>
+      <description>About Contents Add Some Content hugo new post/**.md
+The newly created content file will start with something like this:
+--- title: &amp;quot;**&amp;quot; date: 2019-03-26T08:47:11+01:00 draft: true --- Drafts do not get deployed; once you finish a post, update the header of the post to say draft: false. More info here.
+--- title: &amp;quot;Hugo Guide&amp;quot; date: 2021-05-01T08:47:11+01:00 categories: [&amp;quot;Manual&amp;quot;] tags: [&amp;quot;Hugo&amp;quot;, &amp;quot;GitHub&amp;quot;] draft: false --- Add pictures
+/post/xxx.jpg
+is actually baseURL/post/xxx.jpg</description>
+    </item>
+    
+    <item>
+      <title>Math</title>
+      <link>https://K7288.github.io/posts/math/</link>
+      <pubDate>Sat, 01 May 2021 11:37:16 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/math/</guid>
+      <description>$$ e^{ix}=\text{cos}x+i\text{sin}x $$
+$$ \left(C_{n+1, t+1}-C_{n, t}\right)-\left(C_{n, t+1}-C_{n-1, t}\right)=\frac{2}{n+1} $$
+换行需要使用\\\\ $$ \begin{aligned} C_{n+1, t+1}-C_{n, t} &amp;amp;=\frac{2}{n+1}+\frac{2}{n}+\cdots+\frac{2}{t+2}+C_{t+1, t+1}-C_{t, t} \\ &amp;amp;=2\left(H_{n+1}-H_{t+1}\right)+2-2 /(t+1) \end{aligned} $$</description>
+    </item>
+    
+    <item>
+      <title>论文3篇泛读 1-&gt;measurement可靠性(方法比较奇怪或者没有) 2/3-&gt;步态参数拟合</title>
+      <link>https://K7288.github.io/posts/measurement%E5%8F%AF%E9%9D%A0%E6%80%A7%E6%96%B9%E6%B3%95%E6%AF%94%E8%BE%83%E5%A5%87%E6%80%AA%E6%88%96%E8%80%85%E6%B2%A1%E6%9C%89-%E6%AD%A5%E6%80%81%E5%8F%82%E6%95%B0%E6%8B%9F%E5%90%88/</link>
+      <pubDate>Sat, 01 May 2021 11:37:16 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/measurement%E5%8F%AF%E9%9D%A0%E6%80%A7%E6%96%B9%E6%B3%95%E6%AF%94%E8%BE%83%E5%A5%87%E6%80%AA%E6%88%96%E8%80%85%E6%B2%A1%E6%9C%89-%E6%AD%A5%E6%80%81%E5%8F%82%E6%95%B0%E6%8B%9F%E5%90%88/</guid>
+      <description>因为不熟悉心相关研究问题，之前做笔记的次数也少，这几篇Literature Notes结构不够清晰，而且过长，下次注意。
+三篇文献与选题的关联性差强人意，之后留意/请教一下如何有效查找文献。
+1. Reliability of centre of pressure, plantar pressure, and plantar-flexion isometric strength measures: A systematic review COP PP PFisom 三种步态控制measurement 的可靠性
+方法：对三个数据库实验进行同行评估 ICC
+Background Centre of pressure (COP), plantar pressure (PP), and plantar-flexion isometric strength (PFisom) are often examined in relation to postural control and gait.
+Research question Our aim was to systematically review and quality appraise articles addressing the reliability of COP and PP measures in static stance and PFisom measures.</description>
+    </item>
+    
+  </channel>
+</rss>

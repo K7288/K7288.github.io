@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='The effect of stride length on lower extremity joint kinetics at various gait speeds
+Concepts sagittal plane矢状面，把身体分成左右两条，解剖学用来描述身体各部分位置（类似经线）
+注意不只有中线
+sagittal plane movement包括任何具有前后成分的运动
+Background  gait training devices that promote desired changes in gait Challenges in developing such devices: limited understanding of human response to robotic input  比如机器人运动辅助会怎样影响gait speed   Possible method of controller formulation: control robot to apply the change in joint moment applied by human subjects when they achieve a gait feature of interest.'><title>The effect of stride length on lower extremity joint kinetics at various gait speeds</title>
+
+<link rel='canonical' href='https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='The effect of stride length on lower extremity joint kinetics at various gait speeds'>
+<meta property='og:description' content='The effect of stride length on lower extremity joint kinetics at various gait speeds
+Concepts sagittal plane矢状面，把身体分成左右两条，解剖学用来描述身体各部分位置（类似经线）
+注意不只有中线
+sagittal plane movement包括任何具有前后成分的运动
+Background  gait training devices that promote desired changes in gait Challenges in developing such devices: limited understanding of human response to robotic input  比如机器人运动辅助会怎样影响gait speed   Possible method of controller formulation: control robot to apply the change in joint moment applied by human subjects when they achieve a gait feature of interest.'>
+<meta property='og:url' content='https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/'>
+<meta property='og:site_name' content='K7288'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Gait Analysis' /><meta property='article:tag' content='望道' /><meta property='article:tag' content='特征提取' /><meta property='article:published_time' content='2021-05-13T10:44:02&#43;08:00'/><meta property='article:modified_time' content='2021-05-13T10:44:02&#43;08:00'/>
+<meta name="twitter:title" content="The effect of stride length on lower extremity joint kinetics at various gait speeds">
+<meta name="twitter:description" content="The effect of stride length on lower extremity joint kinetics at various gait speeds
+Concepts sagittal plane矢状面，把身体分成左右两条，解剖学用来描述身体各部分位置（类似经线）
+注意不只有中线
+sagittal plane movement包括任何具有前后成分的运动
+Background  gait training devices that promote desired changes in gait Challenges in developing such devices: limited understanding of human response to robotic input  比如机器人运动辅助会怎样影响gait speed   Possible method of controller formulation: control robot to apply the change in joint moment applied by human subjects when they achieve a gait feature of interest.">
+</head>
+
+<body class="article-page keep-sidebar">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div
+        class="container main-container flex on-phone--column extended ">
+        <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu911cf87b738465eac3058d27e079f2ed_224006_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://K7288.github.io">K7288</a></h1>
+        <h2 class="site-description"></h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Posts</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/tags'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+                
+                <span>Tags</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+        <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/robotics/" >
+                Robotics
+            </a>
+        
+            <a href="/categories/literature-notes/" >
+                Literature Notes
+            </a>
+        
+            <a href="/categories/gait-analysis/" >
+                Gait Analysis
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/">The effect of stride length on lower extremity joint kinetics at various gait speeds</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">2021-05-13</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <p>The effect of stride length on lower extremity joint kinetics at various gait speeds</p>
+<h2 id="concepts">Concepts</h2>
+<p>sagittal plane矢状面，把身体分成左右两条，解剖学用来描述身体各部分位置（类似经线）</p>
+<p>注意不只有中线</p>
+<p>sagittal plane movement包括任何具有前后成分的运动</p>
+<h2 id="background">Background</h2>
+<ul>
+<li>gait training devices that promote desired changes in gait</li>
+<li>Challenges in developing such devices: limited understanding of human response to robotic input
+<ul>
+<li>比如机器人运动辅助会怎样影响gait speed</li>
+</ul>
+</li>
+<li>Possible method of controller formulation: control robot to apply the change in joint moment applied by human subjects when they achieve a gait feature of interest.</li>
+<li>However, it is currently unclear how lower extremity joint moments are modulated by even basic gait spatio-temporal parameters.</li>
+</ul>
+<h2 id="research-question">Research question</h2>
+<p>In this study, we investigated how <strong>sagittal plane joint moments</strong> are affected by a factorial modulation of two important gait parameters: <strong>gait speed and stride length</strong>.</p>
+<h2 id="notations">Notations</h2>
+<p>GS: gait speed</p>
+<h2 id="introduction">Introduction</h2>
+<p>GS correlated with anterior- posterior ground reaction force(the propulsive force of the foot against the ground)<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>Furthermore, propulsive impulse, the propulsive force integrated over time, is associated with the posture of the trailing limb at push-off [6]. The</p>
+<p>The posture of the trailing limb at push-off is quantified by one kinematic parameter, known as trailing limb angle (TLA), defined as the angle of the line connecting the hip joint center and foot center of pressure at the instant of peak propulsive force, relative to the global vertical axis最大推进力瞬时髋与足中心连线与竖直方向的夹角</p>
+<p>GS gait speed</p>
+<h2 id="methods">Methods</h2>
+<ol>
+<li>
+<p>采样：健侧大腿、小腿惯性测量单元于<strong>摆动相前期</strong>所产生的运动<strong>时序数据</strong>作为样本；</p>
+</li>
+<li>
+<p>数据处理：移动平均滤波器滤波去噪</p>
+</li>
+<li>
+<p>特征提取：</p>
+<ul>
+<li>几何特征：根据两个传感器的加速度、角速度计算一维的膝关节角，FDA方法提取最值斜率</li>
+<li>物理特征：加速度、角速度的均值、方差</li>
+</ul>
+<p>均值、方差、最值斜率融合构成25维的特征基构建特征向量</p>
+</li>
+<li>
+<p>SVM分类</p>
+</li>
+</ol>
+<p><img src="/assets/image-20210512213113697.png" alt="image-20210512213113697"  /></p>
+<h2 id="results">Results</h2>
+<ul>
+<li><strong>gait speed</strong> has a significant effect on the moment profiles in <strong>all joints</strong> considered；</li>
+<li><strong>stride length</strong> has more localized effects on the <strong>knee moment during stance, and smaller effects observed for the hip joint moment during swing and ankle moment during the loading response</strong>.</li>
+<li><strong>TLA</strong> Trailing limb angle, a parameter of interest in programs targeting propulsion at push-off, <strong>significantly correlated with stride length</strong>.</li>
+<li>As such, our study has generated candidate assistance strategies.
+<ul>
+<li>1</li>
+</ul>
+</li>
+</ul>
+<h2 id="highlights">Highlights</h2>
+<p>减少了传感器的数量及种类, 降低 了特征向量的维数降低了算法复杂度且避免了滞后性问题, 用加速度、 角速度及膝关节角三个参数共同对人体下肢运动的运动学特点进行表征。</p>
+<p>在特征的提取上, 将FDA方法与统计方法相结合, 弥补了仅提取统计特征的不稳定性问题。</p>
+<h2 id="limitsfurther-work">Limits/Further Work</h2>
+<p>对于13种动作的识别率有待提高, 后期工作会集中于对类间相似性相对较强较难区分的动作进行分类, 如: 下楼与下坡, 走到下楼 与走到下坡等. 此外, 关节角度是一个可深度挖掘的几何信息, 如: 除膝关节外的髋关节与踝关节对下肢假肢运动意图中的作用有待进一步探究. 最后, 在分类策略如分类器上, 依然有改进的空间.</p>
+<h2 id="thoughtscomments">Thoughts/Comments</h2>
+<ul>
+<li>
+<p>实验对象的描述可参考。</p>
+<ul>
+<li>统计方法不稳定可以作为采用多种方式的依据。</li>
+<li>联想到选题中“特征提取”，对“特征”的理解更清晰了。</li>
+</ul>
+</li>
+<li>
+<p>本文特征提取：选定一个phase的时序信号，均值方差；那么可以用其他phase做类似处理得到更多指标，而不仅仅依赖原有数据。<strong>TODO 本文的去噪和特征工程方法可以参考。</strong></p>
+</li>
+<li>
+<p>了解了提取关节角的方法。</p>
+<p><img src="/assets/image-20210512214045937.png" alt="image-20210512214045937"  /></p>
+<p><strong>TODO</strong> 具体公式待后续整理。</p>
+</li>
+<li>
+<p>根据行文是通过“实时传输解决滞后性问题解决”，是这样吗，主要矛盾是这里吗，那related work为什么不试试实时？后面可以看一下别人为什么会有滞后性问题</p>
+</li>
+<li>
+<p>仅是识别（分类），没有提到识别后如何基于意图进行控制。</p>
+</li>
+</ul>
+<p><strong>See Also</strong></p>
+<hr>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Bowden MG, Balasubramanian CK, Neptune RR, Kautz SA. Anterior-Posterior Ground Reaction Forces as a Measure of Paretic Leg Contribution in Hemiparetic Walking. Stroke. 2006; 37:872–877. <a href="https://doi.org/10.1161/01.STR.0000204063.75779.8d">https://doi.org/10.1161/01.STR.0000204063.75779.8d</a> PMID: 16456121&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/gait-analysis/">Gait Analysis</a>
+        
+            <a href="/tags/%E6%9C%9B%E9%81%93/">望道</a>
+        
+            <a href="/tags/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/">特征提取</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+     
+        
+    <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css" />
+
+<div id="vssue"></div>
+
+<script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+<script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
+
+<script>
+    new Vue({
+        el: "#vssue",
+        render: (h) =>
+            h("Vssue", {
+                props: {
+                    title: "The effect of stride length on lower extremity joint kinetics at various gait speeds",
+                    options: {
+                        proxy: (url) => "https://cors-anywhere.azm.workers.dev/" + url,
+                        owner: "K7288",
+                        repo: "K7288.github.io",
+                        clientId: "5983b8490feaac79bca3",
+                        clientSecret: "5bf636663572a7fd99da378f6aee7c3e95099024",
+                    },
+                },
+            }),
+    });
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2021 K7288
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+        </main>
+    </div>
+    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+    <script>addBackToTop({
+            diameter: 56,
+            backgroundColor: 'ddd',
+            textColor: '#ddd'
+        })</script>
+    <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+</body>
+
+</html>

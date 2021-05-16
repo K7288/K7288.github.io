@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Latex on K7288</title>
+    <link>https://K7288.github.io/tags/latex/</link>
+    <description>Recent content in Latex on K7288</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 01 May 2021 11:37:16 +0800</lastBuildDate><atom:link href="https://K7288.github.io/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Math</title>
+      <link>https://K7288.github.io/posts/math/</link>
+      <pubDate>Sat, 01 May 2021 11:37:16 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/math/</guid>
+      <description>$$ e^{ix}=\text{cos}x+i\text{sin}x $$
+$$ \left(C_{n+1, t+1}-C_{n, t}\right)-\left(C_{n, t+1}-C_{n-1, t}\right)=\frac{2}{n+1} $$
+换行需要使用\\\\ $$ \begin{aligned} C_{n+1, t+1}-C_{n, t} &amp;amp;=\frac{2}{n+1}+\frac{2}{n}+\cdots+\frac{2}{t+2}+C_{t+1, t+1}-C_{t, t} \\ &amp;amp;=2\left(H_{n+1}-H_{t+1}\right)+2-2 /(t+1) \end{aligned} $$</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub on K7288</title>
+    <link>https://K7288.github.io/tags/github/</link>
+    <description>Recent content in GitHub on K7288</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 16 May 2021 10:35:13 +0800</lastBuildDate><atom:link href="https://K7288.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Menu</title>
+      <link>https://K7288.github.io/posts/menu/</link>
+      <pubDate>Sun, 16 May 2021 10:35:13 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/menu/</guid>
+      <description>实现页内跳转  基本语法 注意事项 A subtitle just for test 测试 a A  测试——测试 测试:一个测试   1.测试   目录实现  实现页内跳转 基本语法 [&amp;lt;提示语&amp;gt;](#&amp;lt;目标内容&amp;gt;) 注意事项   若标题是英文，在(#&amp;lt;目标内容&amp;gt;)中需要小写
+例如 [例如](#a-subtitle-just-for-test)
+  若标题中出现空格，需要用-连接
+例如 [例如](#测试-a-a)
+  (#&amp;lt;目标内容&amp;gt;)中不能出现半角点(即英文中的句号).，似乎也不支持其他标点，(#&amp;lt;目标内容&amp;gt;)中需要将标点删除
+测试:一个测试 [测试:一个测试](#测试一个测试)
+1.测试 [1.测试](#1测试)
+测试——测试 [测试——测试](#测试测试)
+  A subtitle just for test 测试 a A 测试——测试 测试:一个测试 1.测试 目录实现  VS code插件 Markdown All in One  ctrl+shift+p Markdown All in One: Create Table of Contents   TODO 实现侧边目录   😂 已经出现了对“测”的完型崩坏</description>
+    </item>
+    
+    <item>
+      <title>Hugo Guide</title>
+      <link>https://K7288.github.io/posts/hugo-guide/</link>
+      <pubDate>Sat, 01 May 2021 11:37:16 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/hugo-guide/</guid>
+      <description>About Contents Add Some Content hugo new post/**.md
+The newly created content file will start with something like this:
+--- title: &amp;quot;**&amp;quot; date: 2019-03-26T08:47:11+01:00 draft: true --- Drafts do not get deployed; once you finish a post, update the header of the post to say draft: false. More info here.
+--- title: &amp;quot;Hugo Guide&amp;quot; date: 2021-05-01T08:47:11+01:00 categories: [&amp;quot;Manual&amp;quot;] tags: [&amp;quot;Hugo&amp;quot;, &amp;quot;GitHub&amp;quot;] draft: false --- Add pictures
+/post/xxx.jpg
+is actually baseURL/post/xxx.jpg</description>
+    </item>
+    
+    <item>
+      <title>Math</title>
+      <link>https://K7288.github.io/posts/math/</link>
+      <pubDate>Sat, 01 May 2021 11:37:16 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/math/</guid>
+      <description>$$ e^{ix}=\text{cos}x+i\text{sin}x $$
+$$ \left(C_{n+1, t+1}-C_{n, t}\right)-\left(C_{n, t+1}-C_{n-1, t}\right)=\frac{2}{n+1} $$
+换行需要使用\\\\ $$ \begin{aligned} C_{n+1, t+1}-C_{n, t} &amp;amp;=\frac{2}{n+1}+\frac{2}{n}+\cdots+\frac{2}{t+2}+C_{t+1, t+1}-C_{t, t} \\ &amp;amp;=2\left(H_{n+1}-H_{t+1}\right)+2-2 /(t+1) \end{aligned} $$</description>
+    </item>
+    
+  </channel>
+</rss>

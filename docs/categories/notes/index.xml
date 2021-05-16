@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on K7288</title>
+    <link>https://K7288.github.io/categories/notes/</link>
+    <description>Recent content in Notes on K7288</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 08 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gait Analysis Systems</title>
+      <link>https://K7288.github.io/posts/gait-analysis-systems/</link>
+      <pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/gait-analysis-systems/</guid>
+      <description>&amp;ldquo;Section Four - Gait Analysis Systems&amp;rdquo; from Gait Analysis: Normal and Pathological Function1
+Basically, there are 5 measurement systems.
+Three of these focus on the specific events that constitute the act of walking.
+行走各个阶段
+ Motion analysis defines the magnitude and timing of individual joint action. Dynamic electromyography iden­tifies the period and relative intensity of muscle function. Force plate recordings display the functional demands being experienced during the weight-bearing period.  The two remaining gait analysis technics summarize the effects of the person&amp;rsquo;s gait mechanics.</description>
+    </item>
+    
+    <item>
+      <title>Gait Analysis Fundamentals</title>
+      <link>https://K7288.github.io/posts/gait-analysis-fundamentals/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/gait-analysis-fundamentals/</guid>
+      <description>Gait analysis 步态分析简述1 Factors and parameters 影响步态的因素 The gait analysis is modulated or modified by many factors, and changes in the normal gait pattern can be transient or permanent. The factors can be of various types:
+ Extrinsic: such as terrain, footwear, clothing, cargo Intrinsic: sex, weight, height, age, etc. Physical: such as weight, height, physique Psychological: personality type, emotions Physiological: anthropometric characteristics, i.e., measurements and proportions of body Pathological: for example trauma, neurological diseases, musculoskeletal anomalies, psychiatric disorders  Parameters 描述步态的参数 The parameters taken into account for the gait analysis are as follows:</description>
+    </item>
+    
+  </channel>
+</rss>
