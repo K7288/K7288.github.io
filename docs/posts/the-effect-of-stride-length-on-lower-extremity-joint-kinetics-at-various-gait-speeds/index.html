@@ -3,28 +3,22 @@
 
 <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='The effect of stride length on lower extremity joint kinetics at various gait speeds
-Concepts sagittal plane矢状面，把身体分成左右两条，解剖学用来描述身体各部分位置（类似经线）
-注意不只有中线
-sagittal plane movement包括任何具有前后成分的运动
-Background  gait training devices that promote desired changes in gait Challenges in developing such devices: limited understanding of human response to robotic input  比如机器人运动辅助会怎样影响gait speed   Possible method of controller formulation: control robot to apply the change in joint moment applied by human subjects when they achieve a gait feature of interest.'><title>The effect of stride length on lower extremity joint kinetics at various gait speeds</title>
+Research question In this study, we investigated how sagittal plane joint moments are affected by a factorial modulation of two important gait parameters: gait speed and stride length.
+We designed an experimental study to establish the effects of GS and SL on the resulting hip, knee, and ankle joint moments. The findings are intended to inform the design of a robotic controller that delivers pulses of torque to the lower extremity joints with optimal timing and amplitude to induce desirable modulations of GS and SL, and of associated spatiotemporal parameters.'><title>The effect of stride length on lower extremity joint kinetics at various gait speeds</title>
 
 <link rel='canonical' href='https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/'>
 
 <link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='The effect of stride length on lower extremity joint kinetics at various gait speeds'>
 <meta property='og:description' content='The effect of stride length on lower extremity joint kinetics at various gait speeds
-Concepts sagittal plane矢状面，把身体分成左右两条，解剖学用来描述身体各部分位置（类似经线）
-注意不只有中线
-sagittal plane movement包括任何具有前后成分的运动
-Background  gait training devices that promote desired changes in gait Challenges in developing such devices: limited understanding of human response to robotic input  比如机器人运动辅助会怎样影响gait speed   Possible method of controller formulation: control robot to apply the change in joint moment applied by human subjects when they achieve a gait feature of interest.'>
+Research question In this study, we investigated how sagittal plane joint moments are affected by a factorial modulation of two important gait parameters: gait speed and stride length.
+We designed an experimental study to establish the effects of GS and SL on the resulting hip, knee, and ankle joint moments. The findings are intended to inform the design of a robotic controller that delivers pulses of torque to the lower extremity joints with optimal timing and amplitude to induce desirable modulations of GS and SL, and of associated spatiotemporal parameters.'>
 <meta property='og:url' content='https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/'>
 <meta property='og:site_name' content='K7288'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Gait Analysis' /><meta property='article:tag' content='望道' /><meta property='article:tag' content='特征提取' /><meta property='article:published_time' content='2021-05-13T10:44:02&#43;08:00'/><meta property='article:modified_time' content='2021-05-13T10:44:02&#43;08:00'/>
 <meta name="twitter:title" content="The effect of stride length on lower extremity joint kinetics at various gait speeds">
 <meta name="twitter:description" content="The effect of stride length on lower extremity joint kinetics at various gait speeds
-Concepts sagittal plane矢状面，把身体分成左右两条，解剖学用来描述身体各部分位置（类似经线）
-注意不只有中线
-sagittal plane movement包括任何具有前后成分的运动
-Background  gait training devices that promote desired changes in gait Challenges in developing such devices: limited understanding of human response to robotic input  比如机器人运动辅助会怎样影响gait speed   Possible method of controller formulation: control robot to apply the change in joint moment applied by human subjects when they achieve a gait feature of interest.">
+Research question In this study, we investigated how sagittal plane joint moments are affected by a factorial modulation of two important gait parameters: gait speed and stride length.
+We designed an experimental study to establish the effects of GS and SL on the resulting hip, knee, and ankle joint moments. The findings are intended to inform the design of a robotic controller that delivers pulses of torque to the lower extremity joints with optimal timing and amplitude to induce desirable modulations of GS and SL, and of associated spatiotemporal parameters.">
 </head>
 
 <body class="article-page keep-sidebar">
@@ -242,51 +236,61 @@ Background  gait training devices that promote desired changes in gait Challenge
 
     <section class="article-content">
     <p>The effect of stride length on lower extremity joint kinetics at various gait speeds</p>
+<h2 id="research-question">Research question</h2>
+<p>In this study, we investigated how <strong>sagittal plane joint moments</strong> are affected by a factorial modulation of two important gait parameters: <strong>gait speed and stride length</strong>.</p>
+<p>We designed an experimental study to establish the effects of GS and SL on the resulting hip, knee, and ankle joint moments. The findings are intended to inform the design of a robotic controller that delivers pulses of torque to the lower extremity joints with optimal timing and amplitude to induce desirable modulations of GS and SL, and of associated spatiotemporal parameters.</p>
 <h2 id="concepts">Concepts</h2>
-<p>sagittal plane矢状面，把身体分成左右两条，解剖学用来描述身体各部分位置（类似经线）</p>
-<p>注意不只有中线</p>
+<p>sagittal plane矢状面，把身体分成左右两条，解剖学用来描述身体各部分位置（类似经线）N.B.不只有中线</p>
 <p>sagittal plane movement包括任何具有前后成分的运动</p>
+<h2 id="notations">Notations</h2>
+<p>GS: gait speed</p>
+<p>TLA: trailing limb angle</p>
+<p>SL: stride length</p>
+<p>SL for cycle k was defined based on the right heel strike time t and anteroposterior coordinate in the laboratory frame x and constant velocity of the treadmill v</p>
+<p>$SL_{(k)}=x_{(k+1)}-x_{(k)}+v(t_{(k+1)}-t_{(k)})$</p>
 <h2 id="background">Background</h2>
 <ul>
-<li>gait training devices that promote desired changes in gait</li>
-<li>Challenges in developing such devices: limited understanding of human response to robotic input
+<li>
+<p>gait training devices</p>
+<ul>
+<li>
+<p>that promote desired changes in gait</p>
+</li>
+<li>
+<p>Challenges in developing such devices: limited understanding of human response to robotic input</p>
 <ul>
 <li>比如机器人运动辅助会怎样影响gait speed</li>
 </ul>
 </li>
-<li>Possible method of controller formulation: control robot to apply the change in joint moment applied by human subjects when they achieve a gait feature of interest.</li>
-<li>However, it is currently unclear how lower extremity joint moments are modulated by even basic gait spatio-temporal parameters.</li>
+<li>
+<p>Possible method of controller formulation: control robot to apply the change in joint moment applied by human subjects when they achieve a gait feature of interest.</p>
+</li>
+<li>
+<p>However, it is currently unclear how lower extremity joint moments are modulated by even basic gait spatio-temporal parameters.</p>
+</li>
 </ul>
-<h2 id="research-question">Research question</h2>
-<p>In this study, we investigated how <strong>sagittal plane joint moments</strong> are affected by a factorial modulation of two important gait parameters: <strong>gait speed and stride length</strong>.</p>
-<h2 id="notations">Notations</h2>
-<p>GS: gait speed</p>
-<h2 id="introduction">Introduction</h2>
+</li>
+<li>
+<p>GS $\leftrightarrow$ propulsive force + Propulsive impulse $\leftrightarrow$ TLA $\Rightarrow$ GS  $\leftrightarrow$ TLA</p>
 <p>GS correlated with anterior- posterior ground reaction force(the propulsive force of the foot against the ground)<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
-<p>Furthermore, propulsive impulse, the propulsive force integrated over time, is associated with the posture of the trailing limb at push-off [6]. The</p>
-<p>The posture of the trailing limb at push-off is quantified by one kinematic parameter, known as trailing limb angle (TLA), defined as the angle of the line connecting the hip joint center and foot center of pressure at the instant of peak propulsive force, relative to the global vertical axis最大推进力瞬时髋与足中心连线与竖直方向的夹角</p>
-<p>GS gait speed</p>
-<h2 id="methods">Methods</h2>
-<ol>
-<li>
-<p>采样：健侧大腿、小腿惯性测量单元于<strong>摆动相前期</strong>所产生的运动<strong>时序数据</strong>作为样本；</p>
+<p>Propulsive impulse冲量(the propulsive force integrated over time), is associated with the posture of the trailing limb at push-off.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> The posture of the trailing limb at push-off is quantified by one kinematic parameter, known as trailing limb angle (TLA), defined as the angle of the line connecting the hip joint center and foot center of pressure at the instant of peak propulsive force, relative to the global vertical axis最大推进力瞬时髋与足中心连线与竖直方向的夹角</p>
+<p>When increasing GS, the increase in TLA contributes twice as much as the increase in ankle moment to the resulting increase in propulsive force. In older adults exposed to a biofeedback paradigm for increasing propulsive force, increased TLA and decreased hip flexor power were the primary means by which they increased propulsive force.</p>
 </li>
 <li>
-<p>数据处理：移动平均滤波器滤波去噪</p>
+<p>A possible method of controller formulation can be derived from the principle of bio-inspiration, where a robot is controlled to apply the difference in joint moment applied by human subjects when they achieve a desired gait feature (in this case modulation of TLA), relative to their normal walking condition. 控制思路：检测TLA变化，根据正常行走时的关系调整辅助系统的关节运动</p>
 </li>
 <li>
-<p>特征提取：</p>
-<ul>
-<li>几何特征：根据两个传感器的加速度、角速度计算一维的膝关节角，FDA方法提取最值斜率</li>
-<li>物理特征：加速度、角速度的均值、方差</li>
+<p>Since TLA has not been a primary measure ofinterest in the biome- chanics literature, we extended our search to a more common variable, likely correlated to TLA, such as stride length (SL).</p>
+</li>
+<li>
+<p>GS modulation和magnitude of peak joint moments的关系研究得比较多，hip knee ankle和变化的先后关系、出现的phase等；However, fewer investigations have focused on the joint kinetics associated with the modulation of spatiotemporal parameters such as SL or TLA, and studied this effect at multiple GS values.又列举了一些证明SL和关节动力学有关的研究；Thus far, the factorial modulation ofboth GS and SL and resulting hip, knee, and ankle kinetics has not been investigated; as such it is unclear how lower extremity joint moments are modulated by both gait parameters.</p>
+</li>
 </ul>
-<p>均值、方差、最值斜率融合构成25维的特征基构建特征向量</p>
-</li>
-<li>
-<p>SVM分类</p>
-</li>
+<h2 id="materials-and-methods">Materials and Methods</h2>
+<ol>
+<li>准备：跑步机；36 reflective spherical markers (4 on the pelvis, 4 per thigh, 4 per shank, 2 per knee, and 6 on ankle/foot；摄像头动捕；Marker data were acquired at 100 Hz, while the treadmill analog force/torque data were acquired at 2 kHz；biofeedback 显示当前SL使被试进行调整</li>
+<li>采样：GS 5 * SL 3 = 15种场景；</li>
 </ol>
-<p><img src="/assets/image-20210512213113697.png" alt="image-20210512213113697"  /></p>
 <h2 id="results">Results</h2>
 <ul>
 <li><strong>gait speed</strong> has a significant effect on the moment profiles in <strong>all joints</strong> considered；</li>
@@ -299,41 +303,23 @@ Background  gait training devices that promote desired changes in gait Challenge
 </li>
 </ul>
 <h2 id="highlights">Highlights</h2>
-<p>减少了传感器的数量及种类, 降低 了特征向量的维数降低了算法复杂度且避免了滞后性问题, 用加速度、 角速度及膝关节角三个参数共同对人体下肢运动的运动学特点进行表征。</p>
-<p>在特征的提取上, 将FDA方法与统计方法相结合, 弥补了仅提取统计特征的不稳定性问题。</p>
 <h2 id="limitsfurther-work">Limits/Further Work</h2>
-<p>对于13种动作的识别率有待提高, 后期工作会集中于对类间相似性相对较强较难区分的动作进行分类, 如: 下楼与下坡, 走到下楼 与走到下坡等. 此外, 关节角度是一个可深度挖掘的几何信息, 如: 除膝关节外的髋关节与踝关节对下肢假肢运动意图中的作用有待进一步探究. 最后, 在分类策略如分类器上, 依然有改进的空间.</p>
 <h2 id="thoughtscomments">Thoughts/Comments</h2>
 <ul>
 <li>
 <p>实验对象的描述可参考。</p>
-<ul>
-<li>统计方法不稳定可以作为采用多种方式的依据。</li>
-<li>联想到选题中“特征提取”，对“特征”的理解更清晰了。</li>
-</ul>
-</li>
-<li>
-<p>本文特征提取：选定一个phase的时序信号，均值方差；那么可以用其他phase做类似处理得到更多指标，而不仅仅依赖原有数据。<strong>TODO 本文的去噪和特征工程方法可以参考。</strong></p>
-</li>
-<li>
-<p>了解了提取关节角的方法。</p>
-<p><img src="/assets/image-20210512214045937.png" alt="image-20210512214045937"  /></p>
-<p><strong>TODO</strong> 具体公式待后续整理。</p>
-</li>
-<li>
-<p>根据行文是通过“实时传输解决滞后性问题解决”，是这样吗，主要矛盾是这里吗，那related work为什么不试试实时？后面可以看一下别人为什么会有滞后性问题</p>
-</li>
-<li>
-<p>仅是识别（分类），没有提到识别后如何基于意图进行控制。</p>
+<p>Subjects 20 healthy adults (10 males, 10 females) were recruited to participate in this study (protocol approved by the University of Delaware Institutional Review Board, protocol no. 619724). Subjects—age (mean ± std) 21.55 ± 2.50 yrs, height 1.73 ± 0.08 m, body mass 69.20 ± 8.73 kg— were naive to the purpose of the study, and free of orthopedic or neurological disorders affecting walking function. Subjects were required to wear their own comfortable athletic shoes and lightweight clothing for the walking experiment.</p>
 </li>
 </ul>
-<p><strong>See Also</strong></p>
-<hr>
+<h2 id="references">References</h2>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
 <p>Bowden MG, Balasubramanian CK, Neptune RR, Kautz SA. Anterior-Posterior Ground Reaction Forces as a Measure of Paretic Leg Contribution in Hemiparetic Walking. Stroke. 2006; 37:872–877. <a href="https://doi.org/10.1161/01.STR.0000204063.75779.8d">https://doi.org/10.1161/01.STR.0000204063.75779.8d</a> PMID: 16456121&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Peterson CL, Cheng J, Kautz SA, Neptune RR. Leg extension is an important predictor of paretic leg propulsion in hemiparetic walking. Gait &amp; Posture. 2010; 32(4):451–456. <a href="https://doi.org/10.1016/j">https://doi.org/10.1016/j</a>. gaitpost.2010.06.014&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
@@ -416,7 +402,6 @@ Background  gait training devices that promote desired changes in gait Challenge
                         repo: "blog-repos",
                         clientId: "ac393ff5fd371a96eda1",
                         clientSecret: "e9c2b32500e90b7d0e374ecf8481b97819b8012c",
-                        autoCreateIssue: true,
                         perPage: 5
                     },
                 },

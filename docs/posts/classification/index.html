@@ -2,38 +2,56 @@
 <html lang="en">
 
 <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Toward Pervasive Gait Analysis With Wearable Sensors: A Systematic Review Abstract 对当前的定量步态分析技术进行系统的综述，并提出关键指标，来评估现有的通过可穿戴传感器提取步态特征的方法。它旨在突出这一快速发展的研究领域中的关键进展，并概述研究和临床应用的潜在未来方向。
-SECTION III. Methods for Extracting Relevant Gait Features From Wearable Sensors A.文献检索
-B. Kinematics
-Kinematic information is a well-established set of gait measures in biomechanical analysis.
-从惯性传感器获取运动学信息似乎很直观，但是要获得关于人体运动学的准确空间信息仍然很困难：全局失准和integration drift
-C.时序特征
-D.利用惯性传感器的步速提取
-Laudanski et al. [104] reviewed the current research (16 papers in total) on gait speed estimation using inertial sensors, classifying the current gait speed estimation model into three categories: abstraction model (i.'><title>步速估计综述整理</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='分类Classification Production Rules产生式规则 $\leftarrow$专家系统重要内容
+​	if 条件, then 结论/Action
+​	符号模型（深度学习：统计模型）
+准确率评价 $$ precision=\frac{n(correct)}{n(hit)} $$
+基于规则的问题：
+ 命中多条规则 规则的分类结果不同 规则的级联/枚举 $\rightarrow$ 规则的爆炸  从决策树中挖掘规则
+序列化覆盖算法
+​	找到覆盖（正）样本最广的规则
+​	问题：没有考虑负样本
+Rule Generation
+​	foil-gain
+​	思想：考虑负样本；不断强化规则
+​	FOIL_Gain 既考虑precision准确率的提升，又考虑coverage（pos&#39;）
+Classifier Evaluation Metrics 分类评估方法 Confusion Maxtrix    Actual class \ Pre $C_1$ $\neg C_1$      $C_1$ TP FN P   $\neg C_1$ FP TN N    P&#39; N&#39; ALL    Classifier Accuracy $$ \frac{TP&#43;TN}{ALL} $$'><title>Classification</title>
 
-<link rel='canonical' href='https://K7288.github.io/posts/%E6%AD%A5%E9%80%9F%E4%BC%B0%E8%AE%A1%E7%BB%BC%E8%BF%B0%E6%95%B4%E7%90%86/'>
+<link rel='canonical' href='https://K7288.github.io/posts/classification/'>
 
-<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='步速估计综述整理'>
-<meta property='og:description' content='Toward Pervasive Gait Analysis With Wearable Sensors: A Systematic Review Abstract 对当前的定量步态分析技术进行系统的综述，并提出关键指标，来评估现有的通过可穿戴传感器提取步态特征的方法。它旨在突出这一快速发展的研究领域中的关键进展，并概述研究和临床应用的潜在未来方向。
-SECTION III. Methods for Extracting Relevant Gait Features From Wearable Sensors A.文献检索
-B. Kinematics
-Kinematic information is a well-established set of gait measures in biomechanical analysis.
-从惯性传感器获取运动学信息似乎很直观，但是要获得关于人体运动学的准确空间信息仍然很困难：全局失准和integration drift
-C.时序特征
-D.利用惯性传感器的步速提取
-Laudanski et al. [104] reviewed the current research (16 papers in total) on gait speed estimation using inertial sensors, classifying the current gait speed estimation model into three categories: abstraction model (i.'>
-<meta property='og:url' content='https://K7288.github.io/posts/%E6%AD%A5%E9%80%9F%E4%BC%B0%E8%AE%A1%E7%BB%BC%E8%BF%B0%E6%95%B4%E7%90%86/'>
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Classification'>
+<meta property='og:description' content='分类Classification Production Rules产生式规则 $\leftarrow$专家系统重要内容
+​	if 条件, then 结论/Action
+​	符号模型（深度学习：统计模型）
+准确率评价 $$ precision=\frac{n(correct)}{n(hit)} $$
+基于规则的问题：
+ 命中多条规则 规则的分类结果不同 规则的级联/枚举 $\rightarrow$ 规则的爆炸  从决策树中挖掘规则
+序列化覆盖算法
+​	找到覆盖（正）样本最广的规则
+​	问题：没有考虑负样本
+Rule Generation
+​	foil-gain
+​	思想：考虑负样本；不断强化规则
+​	FOIL_Gain 既考虑precision准确率的提升，又考虑coverage（pos&#39;）
+Classifier Evaluation Metrics 分类评估方法 Confusion Maxtrix    Actual class \ Pre $C_1$ $\neg C_1$      $C_1$ TP FN P   $\neg C_1$ FP TN N    P&#39; N&#39; ALL    Classifier Accuracy $$ \frac{TP&#43;TN}{ALL} $$'>
+<meta property='og:url' content='https://K7288.github.io/posts/classification/'>
 <meta property='og:site_name' content='K7288'>
-<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Gait Analysis' /><meta property='article:tag' content='望道' /><meta property='article:tag' content='特征提取' /><meta property='article:published_time' content='2021-05-12T22:17:44&#43;08:00'/><meta property='article:modified_time' content='2021-05-12T22:17:44&#43;08:00'/>
-<meta name="twitter:title" content="步速估计综述整理">
-<meta name="twitter:description" content="Toward Pervasive Gait Analysis With Wearable Sensors: A Systematic Review Abstract 对当前的定量步态分析技术进行系统的综述，并提出关键指标，来评估现有的通过可穿戴传感器提取步态特征的方法。它旨在突出这一快速发展的研究领域中的关键进展，并概述研究和临床应用的潜在未来方向。
-SECTION III. Methods for Extracting Relevant Gait Features From Wearable Sensors A.文献检索
-B. Kinematics
-Kinematic information is a well-established set of gait measures in biomechanical analysis.
-从惯性传感器获取运动学信息似乎很直观，但是要获得关于人体运动学的准确空间信息仍然很困难：全局失准和integration drift
-C.时序特征
-D.利用惯性传感器的步速提取
-Laudanski et al. [104] reviewed the current research (16 papers in total) on gait speed estimation using inertial sensors, classifying the current gait speed estimation model into three categories: abstraction model (i.">
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2021-05-17T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-05-17T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="Classification">
+<meta name="twitter:description" content="分类Classification Production Rules产生式规则 $\leftarrow$专家系统重要内容
+​	if 条件, then 结论/Action
+​	符号模型（深度学习：统计模型）
+准确率评价 $$ precision=\frac{n(correct)}{n(hit)} $$
+基于规则的问题：
+ 命中多条规则 规则的分类结果不同 规则的级联/枚举 $\rightarrow$ 规则的爆炸  从决策树中挖掘规则
+序列化覆盖算法
+​	找到覆盖（正）样本最广的规则
+​	问题：没有考虑负样本
+Rule Generation
+​	foil-gain
+​	思想：考虑负样本；不断强化规则
+​	FOIL_Gain 既考虑precision准确率的提升，又考虑coverage（pos&#39;）
+Classifier Evaluation Metrics 分类评估方法 Confusion Maxtrix    Actual class \ Pre $C_1$ $\neg C_1$      $C_1$ TP FN P   $\neg C_1$ FP TN N    P&#39; N&#39; ALL    Classifier Accuracy $$ \frac{TP&#43;TN}{ALL} $$">
 </head>
 
 <body class="article-page keep-sidebar">
@@ -217,23 +235,19 @@ Laudanski et al. [104] reviewed the current research (16 papers in total) on gai
     
     <header class="article-category">
         
-            <a href="/categories/robotics/" >
-                Robotics
+            <a href="/categories/data-mining/" >
+                Data Mining
             </a>
         
-            <a href="/categories/literature-notes/" >
-                Literature Notes
-            </a>
-        
-            <a href="/categories/gait-analysis/" >
-                Gait Analysis
+            <a href="/categories/notes/" >
+                Notes
             </a>
         
     </header>
     
 
     <h2 class="article-title">
-        <a href="/posts/%E6%AD%A5%E9%80%9F%E4%BC%B0%E8%AE%A1%E7%BB%BC%E8%BF%B0%E6%95%B4%E7%90%86/">步速估计综述整理</a>
+        <a href="/posts/classification/">Classification</a>
     </h2>
 
     <footer class="article-time">
@@ -245,50 +259,95 @@ Laudanski et al. [104] reviewed the current research (16 papers in total) on gai
 
 
 
-        <time class="article-time--published">2021-05-12</time>
+        <time class="article-time--published">2021-05-17</time>
     </footer></div>
 </header>
 
     <section class="article-content">
-    <h2 id="toward-pervasive-gait-analysis-with-wearable-sensors-a-systematic-review">Toward Pervasive Gait Analysis With Wearable Sensors: A Systematic Review</h2>
-<h3 id="abstract">Abstract</h3>
-<p>对当前的定量步态分析技术进行系统的综述，并提出关键指标，来评估<strong>现有的通过可穿戴传感器提取步态特征的方法</strong>。它旨在突出这一快速发展的研究领域中的关键进展，并概述研究和临床应用的潜在未来方向。</p>
-<h3 id="section-iii-methods-for-extracting-relevant-gait-features-from-wearable-sensors">SECTION III. Methods for Extracting Relevant Gait Features From Wearable Sensors</h3>
-<p>A.文献检索</p>
-<p>B. Kinematics</p>
-<p>Kinematic information is a well-established set of gait measures in biomechanical analysis.</p>
-<p>从惯性传感器获取运动学信息似乎很直观，但是要获得关于人体运动学的准确空间信息仍然很困难：全局失准和integration drift</p>
-<p>C.时序特征</p>
-<p><strong>D.利用惯性传感器的步速提取</strong></p>
-<p>Laudanski <em>et al.</em> [104] reviewed the current research (16 papers in total) on gait speed estimation using inertial sensors, classifying the current gait speed estimation model into three categories: abstraction model (i.e., machine learning approach), human gait model, and numerical integration, shown in Fig. 5.</p>
-<p><strong>TODO</strong>S. Chen and J. Lach, &ldquo;Nonlinear feature for gait speed estimation using inertial sensors&rdquo;, <em>Proc. 8th Int. Conf. Body Area Netw.</em>, pp. 185-188, 2013.利用了生物力学提出了新的特征，自动特征选择算法</p>
-<p><img src="/assets/chen5-2608720-large.gif" alt="img"  /></p>
-<p>E. Novel Features Extracted Using Nonlinear Analysis Techniques 步态稳定性和步态复杂性等</p>
-<p>F. Kinetics and Muscle Activity</p>
-<p>从惯性传感器提取步态特征</p>
-<p><img src="/assets/chen7-2608720-large.gif" alt="img"  /></p>
-<p>从鞋垫压力传感器和EMG传感器提取步态特征</p>
-<p><img src="/assets/chen8-2608720-large.gif" alt="img"  /></p>
-<h2 id="step-length-estimation-methods-based-on-inertial-sensors-a-review">Step Length Estimation Methods Based on Inertial Sensors: A Review</h2>
-<p>//根据Perry经典的阶段模型，利用传感器的时序信号可以进行步态周期的划分，可以估算出步频，使得步速可以推导出步幅。</p>
-<p>由此步速和步幅/步长的估算类似。</p>
-<h2 id="deep-learning-for-monitoring-of-human-gait-a-review">Deep Learning for Monitoring of Human Gait: A Review</h2>
+    <h2 id="分类classification">分类Classification</h2>
+<p>Production Rules产生式规则 $\leftarrow$专家系统重要内容</p>
+<p>​	if 条件, then 结论/Action</p>
+<p>​	符号模型（深度学习：统计模型）</p>
+<p>准确率评价
+$$
+precision=\frac{n(correct)}{n(hit)}
+$$</p>
+<p>基于规则的问题：</p>
+<ol>
+<li>命中多条规则</li>
+<li>规则的分类结果不同</li>
+<li>规则的级联/枚举 $\rightarrow$ 规则的爆炸</li>
+</ol>
+<p>从决策树中挖掘规则</p>
+<p>序列化覆盖算法</p>
+<p>​	找到覆盖（正）样本最广的规则</p>
+<p>​	问题：没有考虑负样本</p>
+<p>Rule Generation</p>
+<p>​	foil-gain</p>
+<p>​	思想：考虑负样本；不断强化规则</p>
+<p>​	FOIL_Gain 既考虑precision准确率的提升，又考虑coverage（pos'）</p>
+<h2 id="classifier-evaluation-metrics-分类评估方法">Classifier Evaluation Metrics 分类评估方法</h2>
+<h3 id="confusion-maxtrix">Confusion Maxtrix</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Actual class \ Pre</th>
+<th style="text-align:center">$C_1$</th>
+<th style="text-align:center">$\neg  C_1$</th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$C_1$</td>
+<td style="text-align:center">TP</td>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">P</td>
+</tr>
+<tr>
+<td style="text-align:center">$\neg  C_1$</td>
+<td style="text-align:center">FP</td>
+<td style="text-align:center">TN</td>
+<td style="text-align:center">N</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">P'</td>
+<td style="text-align:center">N'</td>
+<td style="text-align:center">ALL</td>
+</tr>
+</tbody>
+</table>
+<h4 id="classifier-accuracy">Classifier Accuracy</h4>
+<p>$$
+\frac{TP+TN}{ALL}
+$$</p>
+<h4 id="error-rate">Error Rate</h4>
+<p>$$
+\frac{FP+FN}{ALL}
+$$</p>
+<h4 id="sensitivity">Sensitivity</h4>
+<p>$$
+\frac{TP}{P}
+$$</p>
+<p>代价：假阳性；用于代价不同的情况（如新冠检测）</p>
+<h4 id="sen">Sen</h4>
+<p>$$
+\frac{TP+TN}{}
+$$</p>
+<p>BBN 概率图模型</p>
+<p>纯概率级联复杂度$2^{\delta}(E/\delta)$  O(|E|) CPT降低复杂度 $O(2^{|V|})$</p>
+<p>inference</p>
+<p>​	某些值固定</p>
+<p>Structure Learning</p>
+<p>​	只给定数据，学习概率图结构</p>
+<p>Probalistic Graphical Model Dalphne Koller</p>
 
 </section>
 
 
     <footer class="article-footer">
     
-    <section class="article-tags">
-        
-            <a href="/tags/gait-analysis/">Gait Analysis</a>
-        
-            <a href="/tags/%E6%9C%9B%E9%81%93/">望道</a>
-        
-            <a href="/tags/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/">特征提取</a>
-        
-    </section>
-
 
     
     <section class="article-copyright">
@@ -345,7 +404,7 @@ Laudanski et al. [104] reviewed the current research (16 papers in total) on gai
         render: (h) =>
             h("Vssue", {
                 props: {
-                    title: "步速估计综述整理",
+                    title: "Classification",
                     options: {
                         proxy: (url) => "https://cors-anywhere.azm.workers.dev/" + url,
                         owner: "K7288",

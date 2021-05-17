@@ -6,7 +6,93 @@
         <description>Recent content on K7288</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sun, 16 May 2021 10:35:13 +0800</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 17 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Classification</title>
+        <link>https://K7288.github.io/posts/classification/</link>
+        <pubDate>Mon, 17 May 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://K7288.github.io/posts/classification/</guid>
+        <description>&lt;h2 id=&#34;分类classification&#34;&gt;分类Classification&lt;/h2&gt;
+&lt;p&gt;Production Rules产生式规则 $\leftarrow$专家系统重要内容&lt;/p&gt;
+&lt;p&gt;​	if 条件, then 结论/Action&lt;/p&gt;
+&lt;p&gt;​	符号模型（深度学习：统计模型）&lt;/p&gt;
+&lt;p&gt;准确率评价
+$$
+precision=\frac{n(correct)}{n(hit)}
+$$&lt;/p&gt;
+&lt;p&gt;基于规则的问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;命中多条规则&lt;/li&gt;
+&lt;li&gt;规则的分类结果不同&lt;/li&gt;
+&lt;li&gt;规则的级联/枚举 $\rightarrow$ 规则的爆炸&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;从决策树中挖掘规则&lt;/p&gt;
+&lt;p&gt;序列化覆盖算法&lt;/p&gt;
+&lt;p&gt;​	找到覆盖（正）样本最广的规则&lt;/p&gt;
+&lt;p&gt;​	问题：没有考虑负样本&lt;/p&gt;
+&lt;p&gt;Rule Generation&lt;/p&gt;
+&lt;p&gt;​	foil-gain&lt;/p&gt;
+&lt;p&gt;​	思想：考虑负样本；不断强化规则&lt;/p&gt;
+&lt;p&gt;​	FOIL_Gain 既考虑precision准确率的提升，又考虑coverage（pos&#39;）&lt;/p&gt;
+&lt;h2 id=&#34;classifier-evaluation-metrics-分类评估方法&#34;&gt;Classifier Evaluation Metrics 分类评估方法&lt;/h2&gt;
+&lt;h3 id=&#34;confusion-maxtrix&#34;&gt;Confusion Maxtrix&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Actual class \ Pre&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;$C_1$&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;$\neg  C_1$&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$C_1$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;TP&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;FN&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;P&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$\neg  C_1$&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;FP&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;TN&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;N&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;P&#39;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;N&#39;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;ALL&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;classifier-accuracy&#34;&gt;Classifier Accuracy&lt;/h4&gt;
+&lt;p&gt;$$
+\frac{TP+TN}{ALL}
+$$&lt;/p&gt;
+&lt;h4 id=&#34;error-rate&#34;&gt;Error Rate&lt;/h4&gt;
+&lt;p&gt;$$
+\frac{FP+FN}{ALL}
+$$&lt;/p&gt;
+&lt;h4 id=&#34;sensitivity&#34;&gt;Sensitivity&lt;/h4&gt;
+&lt;p&gt;$$
+\frac{TP}{P}
+$$&lt;/p&gt;
+&lt;p&gt;代价：假阳性；用于代价不同的情况（如新冠检测）&lt;/p&gt;
+&lt;h4 id=&#34;sen&#34;&gt;Sen&lt;/h4&gt;
+&lt;p&gt;$$
+\frac{TP+TN}{}
+$$&lt;/p&gt;
+&lt;p&gt;BBN 概率图模型&lt;/p&gt;
+&lt;p&gt;纯概率级联复杂度$2^{\delta}(E/\delta)$  O(|E|) CPT降低复杂度 $O(2^{|V|})$&lt;/p&gt;
+&lt;p&gt;inference&lt;/p&gt;
+&lt;p&gt;​	某些值固定&lt;/p&gt;
+&lt;p&gt;Structure Learning&lt;/p&gt;
+&lt;p&gt;​	只给定数据，学习概率图结构&lt;/p&gt;
+&lt;p&gt;Probalistic Graphical Model Dalphne Koller&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Menu</title>
         <link>https://K7288.github.io/posts/menu/</link>
         <pubDate>Sun, 16 May 2021 10:35:13 +0800</pubDate>
@@ -75,51 +161,61 @@
         
         <guid>https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/</guid>
         <description>&lt;p&gt;The effect of stride length on lower extremity joint kinetics at various gait speeds&lt;/p&gt;
+&lt;h2 id=&#34;research-question&#34;&gt;Research question&lt;/h2&gt;
+&lt;p&gt;In this study, we investigated how &lt;strong&gt;sagittal plane joint moments&lt;/strong&gt; are affected by a factorial modulation of two important gait parameters: &lt;strong&gt;gait speed and stride length&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;We designed an experimental study to establish the effects of GS and SL on the resulting hip, knee, and ankle joint moments. The findings are intended to inform the design of a robotic controller that delivers pulses of torque to the lower extremity joints with optimal timing and amplitude to induce desirable modulations of GS and SL, and of associated spatiotemporal parameters.&lt;/p&gt;
 &lt;h2 id=&#34;concepts&#34;&gt;Concepts&lt;/h2&gt;
-&lt;p&gt;sagittal plane矢状面，把身体分成左右两条，解剖学用来描述身体各部分位置（类似经线）&lt;/p&gt;
-&lt;p&gt;注意不只有中线&lt;/p&gt;
+&lt;p&gt;sagittal plane矢状面，把身体分成左右两条，解剖学用来描述身体各部分位置（类似经线）N.B.不只有中线&lt;/p&gt;
 &lt;p&gt;sagittal plane movement包括任何具有前后成分的运动&lt;/p&gt;
+&lt;h2 id=&#34;notations&#34;&gt;Notations&lt;/h2&gt;
+&lt;p&gt;GS: gait speed&lt;/p&gt;
+&lt;p&gt;TLA: trailing limb angle&lt;/p&gt;
+&lt;p&gt;SL: stride length&lt;/p&gt;
+&lt;p&gt;SL for cycle k was defined based on the right heel strike time t and anteroposterior coordinate in the laboratory frame x and constant velocity of the treadmill v&lt;/p&gt;
+&lt;p&gt;$SL_{(k)}=x_{(k+1)}-x_{(k)}+v(t_{(k+1)}-t_{(k)})$&lt;/p&gt;
 &lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;gait training devices that promote desired changes in gait&lt;/li&gt;
-&lt;li&gt;Challenges in developing such devices: limited understanding of human response to robotic input
+&lt;li&gt;
+&lt;p&gt;gait training devices&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;that promote desired changes in gait&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Challenges in developing such devices: limited understanding of human response to robotic input&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;比如机器人运动辅助会怎样影响gait speed&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Possible method of controller formulation: control robot to apply the change in joint moment applied by human subjects when they achieve a gait feature of interest.&lt;/li&gt;
-&lt;li&gt;However, it is currently unclear how lower extremity joint moments are modulated by even basic gait spatio-temporal parameters.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Possible method of controller formulation: control robot to apply the change in joint moment applied by human subjects when they achieve a gait feature of interest.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;However, it is currently unclear how lower extremity joint moments are modulated by even basic gait spatio-temporal parameters.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;research-question&#34;&gt;Research question&lt;/h2&gt;
-&lt;p&gt;In this study, we investigated how &lt;strong&gt;sagittal plane joint moments&lt;/strong&gt; are affected by a factorial modulation of two important gait parameters: &lt;strong&gt;gait speed and stride length&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;notations&#34;&gt;Notations&lt;/h2&gt;
-&lt;p&gt;GS: gait speed&lt;/p&gt;
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GS $\leftrightarrow$ propulsive force + Propulsive impulse $\leftrightarrow$ TLA $\Rightarrow$ GS  $\leftrightarrow$ TLA&lt;/p&gt;
 &lt;p&gt;GS correlated with anterior- posterior ground reaction force(the propulsive force of the foot against the ground)&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;Furthermore, propulsive impulse, the propulsive force integrated over time, is associated with the posture of the trailing limb at push-off [6]. The&lt;/p&gt;
-&lt;p&gt;The posture of the trailing limb at push-off is quantified by one kinematic parameter, known as trailing limb angle (TLA), defined as the angle of the line connecting the hip joint center and foot center of pressure at the instant of peak propulsive force, relative to the global vertical axis最大推进力瞬时髋与足中心连线与竖直方向的夹角&lt;/p&gt;
-&lt;p&gt;GS gait speed&lt;/p&gt;
-&lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;采样：健侧大腿、小腿惯性测量单元于&lt;strong&gt;摆动相前期&lt;/strong&gt;所产生的运动&lt;strong&gt;时序数据&lt;/strong&gt;作为样本；&lt;/p&gt;
+&lt;p&gt;Propulsive impulse冲量(the propulsive force integrated over time), is associated with the posture of the trailing limb at push-off.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; The posture of the trailing limb at push-off is quantified by one kinematic parameter, known as trailing limb angle (TLA), defined as the angle of the line connecting the hip joint center and foot center of pressure at the instant of peak propulsive force, relative to the global vertical axis最大推进力瞬时髋与足中心连线与竖直方向的夹角&lt;/p&gt;
+&lt;p&gt;When increasing GS, the increase in TLA contributes twice as much as the increase in ankle moment to the resulting increase in propulsive force. In older adults exposed to a biofeedback paradigm for increasing propulsive force, increased TLA and decreased hip flexor power were the primary means by which they increased propulsive force.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;数据处理：移动平均滤波器滤波去噪&lt;/p&gt;
+&lt;p&gt;A possible method of controller formulation can be derived from the principle of bio-inspiration, where a robot is controlled to apply the difference in joint moment applied by human subjects when they achieve a desired gait feature (in this case modulation of TLA), relative to their normal walking condition. 控制思路：检测TLA变化，根据正常行走时的关系调整辅助系统的关节运动&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;特征提取：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;几何特征：根据两个传感器的加速度、角速度计算一维的膝关节角，FDA方法提取最值斜率&lt;/li&gt;
-&lt;li&gt;物理特征：加速度、角速度的均值、方差&lt;/li&gt;
+&lt;p&gt;Since TLA has not been a primary measure ofinterest in the biome- chanics literature, we extended our search to a more common variable, likely correlated to TLA, such as stride length (SL).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GS modulation和magnitude of peak joint moments的关系研究得比较多，hip knee ankle和变化的先后关系、出现的phase等；However, fewer investigations have focused on the joint kinetics associated with the modulation of spatiotemporal parameters such as SL or TLA, and studied this effect at multiple GS values.又列举了一些证明SL和关节动力学有关的研究；Thus far, the factorial modulation ofboth GS and SL and resulting hip, knee, and ankle kinetics has not been investigated; as such it is unclear how lower extremity joint moments are modulated by both gait parameters.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;均值、方差、最值斜率融合构成25维的特征基构建特征向量&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;SVM分类&lt;/p&gt;
-&lt;/li&gt;
+&lt;h2 id=&#34;materials-and-methods&#34;&gt;Materials and Methods&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;准备：跑步机；36 reflective spherical markers (4 on the pelvis, 4 per thigh, 4 per shank, 2 per knee, and 6 on ankle/foot；摄像头动捕；Marker data were acquired at 100 Hz, while the treadmill analog force/torque data were acquired at 2 kHz；biofeedback 显示当前SL使被试进行调整&lt;/li&gt;
+&lt;li&gt;采样：GS 5 * SL 3 = 15种场景；&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210512213113697.png&#34; alt=&#34;image-20210512213113697&#34;  /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;gait speed&lt;/strong&gt; has a significant effect on the moment profiles in &lt;strong&gt;all joints&lt;/strong&gt; considered；&lt;/li&gt;
@@ -132,41 +228,23 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;highlights&#34;&gt;Highlights&lt;/h2&gt;
-&lt;p&gt;减少了传感器的数量及种类, 降低 了特征向量的维数降低了算法复杂度且避免了滞后性问题, 用加速度、 角速度及膝关节角三个参数共同对人体下肢运动的运动学特点进行表征。&lt;/p&gt;
-&lt;p&gt;在特征的提取上, 将FDA方法与统计方法相结合, 弥补了仅提取统计特征的不稳定性问题。&lt;/p&gt;
 &lt;h2 id=&#34;limitsfurther-work&#34;&gt;Limits/Further Work&lt;/h2&gt;
-&lt;p&gt;对于13种动作的识别率有待提高, 后期工作会集中于对类间相似性相对较强较难区分的动作进行分类, 如: 下楼与下坡, 走到下楼 与走到下坡等. 此外, 关节角度是一个可深度挖掘的几何信息, 如: 除膝关节外的髋关节与踝关节对下肢假肢运动意图中的作用有待进一步探究. 最后, 在分类策略如分类器上, 依然有改进的空间.&lt;/p&gt;
 &lt;h2 id=&#34;thoughtscomments&#34;&gt;Thoughts/Comments&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;实验对象的描述可参考。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;统计方法不稳定可以作为采用多种方式的依据。&lt;/li&gt;
-&lt;li&gt;联想到选题中“特征提取”，对“特征”的理解更清晰了。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;本文特征提取：选定一个phase的时序信号，均值方差；那么可以用其他phase做类似处理得到更多指标，而不仅仅依赖原有数据。&lt;strong&gt;TODO 本文的去噪和特征工程方法可以参考。&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;了解了提取关节角的方法。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210512214045937.png&#34; alt=&#34;image-20210512214045937&#34;  /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TODO&lt;/strong&gt; 具体公式待后续整理。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;根据行文是通过“实时传输解决滞后性问题解决”，是这样吗，主要矛盾是这里吗，那related work为什么不试试实时？后面可以看一下别人为什么会有滞后性问题&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;仅是识别（分类），没有提到识别后如何基于意图进行控制。&lt;/p&gt;
+&lt;p&gt;Subjects 20 healthy adults (10 males, 10 females) were recruited to participate in this study (protocol approved by the University of Delaware Institutional Review Board, protocol no. 619724). Subjects—age (mean ± std) 21.55 ± 2.50 yrs, height 1.73 ± 0.08 m, body mass 69.20 ± 8.73 kg— were naive to the purpose of the study, and free of orthopedic or neurological disorders affecting walking function. Subjects were required to wear their own comfortable athletic shoes and lightweight clothing for the walking experiment.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;See Also&lt;/strong&gt;&lt;/p&gt;
-&lt;hr&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;Bowden MG, Balasubramanian CK, Neptune RR, Kautz SA. Anterior-Posterior Ground Reaction Forces as a Measure of Paretic Leg Contribution in Hemiparetic Walking. Stroke. 2006; 37:872–877. &lt;a href=&#34;https://doi.org/10.1161/01.STR.0000204063.75779.8d&#34;&gt;https://doi.org/10.1161/01.STR.0000204063.75779.8d&lt;/a&gt; PMID: 16456121&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Peterson CL, Cheng J, Kautz SA, Neptune RR. Leg extension is an important predictor of paretic leg propulsion in hemiparetic walking. Gait &amp;amp; Posture. 2010; 32(4):451–456. &lt;a href=&#34;https://doi.org/10.1016/j&#34;&gt;https://doi.org/10.1016/j&lt;/a&gt;. gaitpost.2010.06.014&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;

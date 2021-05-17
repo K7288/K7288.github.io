@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Mining on K7288</title>
+    <link>https://K7288.github.io/categories/data-mining/</link>
+    <description>Recent content in Data Mining on K7288</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 17 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/data-mining/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Classification</title>
+      <link>https://K7288.github.io/posts/classification/</link>
+      <pubDate>Mon, 17 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/classification/</guid>
+      <description>分类Classification Production Rules产生式规则 $\leftarrow$专家系统重要内容
+​	if 条件, then 结论/Action
+​	符号模型（深度学习：统计模型）
+准确率评价 $$ precision=\frac{n(correct)}{n(hit)} $$
+基于规则的问题：
+ 命中多条规则 规则的分类结果不同 规则的级联/枚举 $\rightarrow$ 规则的爆炸  从决策树中挖掘规则
+序列化覆盖算法
+​	找到覆盖（正）样本最广的规则
+​	问题：没有考虑负样本
+Rule Generation
+​	foil-gain
+​	思想：考虑负样本；不断强化规则
+​	FOIL_Gain 既考虑precision准确率的提升，又考虑coverage（pos&#39;）
+Classifier Evaluation Metrics 分类评估方法 Confusion Maxtrix    Actual class \ Pre $C_1$ $\neg C_1$      $C_1$ TP FN P   $\neg C_1$ FP TN N    P&#39; N&#39; ALL    Classifier Accuracy $$ \frac{TP+TN}{ALL} $$</description>
+    </item>
+    
+  </channel>
+</rss>

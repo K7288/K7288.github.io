@@ -14,10 +14,8 @@
       
       <guid>https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/</guid>
       <description>The effect of stride length on lower extremity joint kinetics at various gait speeds
-Concepts sagittal plane矢状面，把身体分成左右两条，解剖学用来描述身体各部分位置（类似经线）
-注意不只有中线
-sagittal plane movement包括任何具有前后成分的运动
-Background  gait training devices that promote desired changes in gait Challenges in developing such devices: limited understanding of human response to robotic input  比如机器人运动辅助会怎样影响gait speed   Possible method of controller formulation: control robot to apply the change in joint moment applied by human subjects when they achieve a gait feature of interest.</description>
+Research question In this study, we investigated how sagittal plane joint moments are affected by a factorial modulation of two important gait parameters: gait speed and stride length.
+We designed an experimental study to establish the effects of GS and SL on the resulting hip, knee, and ankle joint moments. The findings are intended to inform the design of a robotic controller that delivers pulses of torque to the lower extremity joints with optimal timing and amplitude to induce desirable modulations of GS and SL, and of associated spatiotemporal parameters.</description>
     </item>
     
     <item>
