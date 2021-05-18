@@ -6,13 +6,40 @@
     <description>Recent content in Categories on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 May 2021 10:35:13 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 May 2021 11:23:29 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Manual</title>
       <link>https://K7288.github.io/categories/manual/</link>
-      <pubDate>Sun, 16 May 2021 10:35:13 +0800</pubDate>
+      <pubDate>Tue, 18 May 2021 11:23:29 +0800</pubDate>
       
       <guid>https://K7288.github.io/categories/manual/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computer Vision</title>
+      <link>https://K7288.github.io/categories/computer-vision/</link>
+      <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/categories/computer-vision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Course Notes</title>
+      <link>https://K7288.github.io/categories/course-notes/</link>
+      <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/categories/course-notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Image Processing</title>
+      <link>https://K7288.github.io/categories/image-processing/</link>
+      <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/categories/image-processing/</guid>
       <description></description>
     </item>
     

@@ -6,7 +6,17 @@
     <description>Recent content in Manual on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 May 2021 10:35:13 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/manual/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 May 2021 11:23:29 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/manual/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tricks</title>
+      <link>https://K7288.github.io/posts/tricks/</link>
+      <pubDate>Tue, 18 May 2021 11:23:29 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/tricks/</guid>
+      <description> 原生html支持 hugo采用goldmark作为默认渲染器，需要在config中开启   markup: goldmark: renderer: unsafe: true html 图片需要绝对路径，形式如下：  &amp;lt;img src=&amp;quot;/assets/image-20210416142714352.png&amp;quot; alt=&amp;quot;image-20210416142714352&amp;quot; style=&amp;quot;zoom:33%;&amp;quot; /&amp;gt; 而不能是src=&amp;quot;assets\ 所以也不太支持网络图片&amp;hellip;&amp;hellip;
+****好像不能出现。  </description>
+    </item>
+    
     <item>
       <title>Menu</title>
       <link>https://K7288.github.io/posts/menu/</link>

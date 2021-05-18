@@ -3,27 +3,51 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://K7288.github.io/categories/</loc>
-    <lastmod>2021-05-16T10:35:13+08:00</lastmod>
+    <lastmod>2021-05-18T11:23:29+08:00</lastmod>
   </url><url>
-    <loc>https://K7288.github.io/tags/github/</loc>
-    <lastmod>2021-05-16T10:35:13+08:00</lastmod>
+    <loc>https://K7288.github.io/tags/hugo/</loc>
+    <lastmod>2021-05-18T11:23:29+08:00</lastmod>
   </url><url>
     <loc>https://K7288.github.io/</loc>
-    <lastmod>2021-05-16T10:35:13+08:00</lastmod>
+    <lastmod>2021-05-18T11:23:29+08:00</lastmod>
   </url><url>
     <loc>https://K7288.github.io/categories/manual/</loc>
+    <lastmod>2021-05-18T11:23:29+08:00</lastmod>
+  </url><url>
+    <loc>https://K7288.github.io/posts/</loc>
+    <lastmod>2021-05-18T11:23:29+08:00</lastmod>
+  </url><url>
+    <loc>https://K7288.github.io/tags/</loc>
+    <lastmod>2021-05-18T11:23:29+08:00</lastmod>
+  </url><url>
+    <loc>https://K7288.github.io/posts/tricks/</loc>
+    <lastmod>2021-05-18T11:23:29+08:00</lastmod>
+  </url><url>
+    <loc>https://K7288.github.io/tags/computer-vision/</loc>
+    <lastmod>2021-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://K7288.github.io/categories/computer-vision/</loc>
+    <lastmod>2021-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://K7288.github.io/categories/course-notes/</loc>
+    <lastmod>2021-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://K7288.github.io/tags/image-processing/</loc>
+    <lastmod>2021-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://K7288.github.io/categories/image-processing/</loc>
+    <lastmod>2021-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://K7288.github.io/posts/image-processing-and-computer-vision/</loc>
+    <lastmod>2021-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://K7288.github.io/tags/github/</loc>
     <lastmod>2021-05-16T10:35:13+08:00</lastmod>
   </url><url>
     <loc>https://K7288.github.io/tags/markdown/</loc>
     <lastmod>2021-05-16T10:35:13+08:00</lastmod>
   </url><url>
     <loc>https://K7288.github.io/posts/menu/</loc>
-    <lastmod>2021-05-16T10:35:13+08:00</lastmod>
-  </url><url>
-    <loc>https://K7288.github.io/posts/</loc>
-    <lastmod>2021-05-16T10:35:13+08:00</lastmod>
-  </url><url>
-    <loc>https://K7288.github.io/tags/</loc>
     <lastmod>2021-05-16T10:35:13+08:00</lastmod>
   </url><url>
     <loc>https://K7288.github.io/tags/gait-analysis/</loc>
@@ -61,9 +85,6 @@
   </url><url>
     <loc>https://K7288.github.io/posts/gait-analysis-fundamentals/</loc>
     <lastmod>2021-05-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://K7288.github.io/tags/hugo/</loc>
-    <lastmod>2021-05-01T11:37:16+08:00</lastmod>
   </url><url>
     <loc>https://K7288.github.io/posts/hugo-guide/</loc>
     <lastmod>2021-05-01T11:37:16+08:00</lastmod>
