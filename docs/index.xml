@@ -219,7 +219,7 @@ hugo采用goldmark作为默认渲染器，需要在config中开启&lt;/li&gt;
 &lt;p&gt;图像是一个二维亮度函数；&lt;/p&gt;
 &lt;p&gt;模拟图像：一幅活动、彩色、立体的图像——$I=f(x,y,z,λ,t)$，三维空间+波谱上+时间上连续，想象中的虚拟图像&lt;/p&gt;
 &lt;p&gt;数字图像：数字图像是由模拟图象数字化得到的，以像素为基本元素、可以用数字计算机或数字电路存储和处理的图像。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;//assets/image-20210416141649190.png&#34; alt=&#34;image-20210416141649190&#34; style=&#34;zoom:80%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210416141649190.png&#34; alt=&#34;image-20210416141649190&#34; style=&#34;zoom:80%;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;把一幅图画分割成如图所示的一个个小区域（像素），并将各小区域灰度用整数来表示，形成一幅点阵式的数字图像。它包括&lt;strong&gt;采样&lt;/strong&gt;和&lt;strong&gt;量化&lt;/strong&gt;两个过程。像素的位置和灰度就是像素的属性。&lt;/p&gt;
 &lt;h3 id=&#34;12-图像数字化&#34;&gt;1.2 图像数字化&lt;/h3&gt;
 &lt;p&gt;图像数字化:将模拟图像经过离散化之后，得到用数字表示的图像。&lt;/p&gt;
@@ -618,14 +618,8 @@ $$&lt;/p&gt;
 &lt;h6 id=&#34;ii-基于移动平均&#34;&gt;(ii) 基于移动平均&lt;/h6&gt;
 &lt;p&gt;一维数组 序列信息 沿一幅图像的扫描行计算平均&lt;/p&gt;
 &lt;p&gt;z形扫描$(m_{ij})_{n\times n}$ 得到 $[m_{11},m_{12},&amp;hellip;,m_{1n},m_{2n},m_{2n-1}]$&lt;/p&gt;
-&lt;p&gt;第$k+1$次扫描遇到的点的灰度：
-$$
-m(k+1)=
-\begin{cases}&lt;/p&gt;
-&lt;p&gt;&amp;amp; \frac{1}{n}z_{k+1}, k\leq n-1\ 
-&amp;amp; m(k)+\frac{1}{n}(z_{n+1}−z_{n−k}),  k\geq n+1
-\end{cases}
-$$&lt;/p&gt;
+&lt;p&gt;第$k+1$次扫描遇到的点的灰度：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210518121255049.png&#34; alt=&#34;image-20210518121255049&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;阈值$T_{xy}=c\times m_{xy}$&lt;/p&gt;
 &lt;h3 id=&#34;64-区域分割法&#34;&gt;6.4 区域分割法&lt;/h3&gt;
 &lt;h4 id=&#34;641-区域生长-bottom-up&#34;&gt;6.4.1 区域生长 Bottom-up&lt;/h4&gt;
