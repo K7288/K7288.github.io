@@ -45,7 +45,7 @@ hugo采用goldmark作为默认渲染器，需要在config中开启
       
       <guid>https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/</guid>
       <description>The effect of stride length on lower extremity joint kinetics at various gait speeds
- Research question Concepts Notations Background Materials and Methods  Data analysis  1. 数据处理 2. Protocol validation 3. Continuum analysis  main effect analysis SL   4. Torque pulse approximation     Results  Protocol validation Continuum analysis   Conclusion Highlights Limits/Further Work Thoughts/Comments  Research question In this study, we investigated how sagittal plane joint moments are affected by a factorial modulation of two important gait parameters: gait speed and stride length.</description>
+ Research question Concepts Notations Background Materials and Methods  Data analysis  1. 数据处理 2. Protocol validation 3. Continuum analysis  main effect analysis SL   4. Torque pulse approximation     Results  Protocol validation Continuum analysis Torque pulse approximation   Conclusion Limits/Further Work Thoughts/Comments  Research question In this study, we investigated how sagittal plane joint moments are affected by a factorial modulation of two important gait parameters: gait speed and stride length.</description>
     </item>
     
     <item>
