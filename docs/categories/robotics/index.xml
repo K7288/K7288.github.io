@@ -6,16 +6,15 @@
     <description>Recent content in Robotics on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 May 2021 10:44:02 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/robotics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 May 2021 10:44:02 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/robotics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The effect of stride length on lower extremity joint kinetics at various gait speeds</title>
       <link>https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/</link>
-      <pubDate>Thu, 13 May 2021 10:44:02 +0800</pubDate>
+      <pubDate>Sun, 16 May 2021 10:44:02 +0800</pubDate>
       
       <guid>https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/</guid>
       <description>The effect of stride length on lower extremity joint kinetics at various gait speeds
-Research question In this study, we investigated how sagittal plane joint moments are affected by a factorial modulation of two important gait parameters: gait speed and stride length.
-We designed an experimental study to establish the effects of GS and SL on the resulting hip, knee, and ankle joint moments. The findings are intended to inform the design of a robotic controller that delivers pulses of torque to the lower extremity joints with optimal timing and amplitude to induce desirable modulations of GS and SL, and of associated spatiotemporal parameters.</description>
+ Research question Concepts Notations Background Materials and Methods  Data analysis  1. 数据处理 2. Protocol validation     - 基于12证明实验计划可以显著改变SL和GS，所以可以进行统计学分析  3. Continuum analysis  main effect analysis SL   4. Torque pulse approximation   Results  Protocol validation Continuum analysis   Conclusion Highlights Limits/Further Work Thoughts/Comments  Research question In this study, we investigated how sagittal plane joint moments are affected by a factorial modulation of two important gait parameters: gait speed and stride length.</description>
     </item>
     
     <item>

@@ -8,6 +8,9 @@
     <loc>https://K7288.github.io/tags/hugo/</loc>
     <lastmod>2021-05-18T11:23:29+08:00</lastmod>
   </url><url>
+    <loc>https://K7288.github.io/posts/hugo-html-tips/</loc>
+    <lastmod>2021-05-18T11:23:29+08:00</lastmod>
+  </url><url>
     <loc>https://K7288.github.io/</loc>
     <lastmod>2021-05-18T11:23:29+08:00</lastmod>
   </url><url>
@@ -20,8 +23,8 @@
     <loc>https://K7288.github.io/tags/</loc>
     <lastmod>2021-05-18T11:23:29+08:00</lastmod>
   </url><url>
-    <loc>https://K7288.github.io/posts/tricks/</loc>
-    <lastmod>2021-05-18T11:23:29+08:00</lastmod>
+    <loc>https://K7288.github.io/posts/draftimage-processing-and-computer-vision/</loc>
+    <lastmod>2021-05-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://K7288.github.io/tags/computer-vision/</loc>
     <lastmod>2021-05-18T00:00:00+00:00</lastmod>
@@ -38,8 +41,29 @@
     <loc>https://K7288.github.io/categories/image-processing/</loc>
     <lastmod>2021-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://K7288.github.io/posts/image-processing-and-computer-vision/</loc>
-    <lastmod>2021-05-18T00:00:00+00:00</lastmod>
+    <loc>https://K7288.github.io/posts/f-scan/</loc>
+    <lastmod>2021-05-17T14:21:37+08:00</lastmod>
+  </url><url>
+    <loc>https://K7288.github.io/tags/gait-analysis/</loc>
+    <lastmod>2021-05-17T14:21:37+08:00</lastmod>
+  </url><url>
+    <loc>https://K7288.github.io/categories/gait-analysis/</loc>
+    <lastmod>2021-05-17T14:21:37+08:00</lastmod>
+  </url><url>
+    <loc>https://K7288.github.io/categories/literature-notes/</loc>
+    <lastmod>2021-05-16T10:44:02+08:00</lastmod>
+  </url><url>
+    <loc>https://K7288.github.io/categories/robotics/</loc>
+    <lastmod>2021-05-16T10:44:02+08:00</lastmod>
+  </url><url>
+    <loc>https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/</loc>
+    <lastmod>2021-05-16T10:44:02+08:00</lastmod>
+  </url><url>
+    <loc>https://K7288.github.io/tags/%E6%9C%9B%E9%81%93/</loc>
+    <lastmod>2021-05-16T10:44:02+08:00</lastmod>
+  </url><url>
+    <loc>https://K7288.github.io/tags/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/</loc>
+    <lastmod>2021-05-16T10:44:02+08:00</lastmod>
   </url><url>
     <loc>https://K7288.github.io/tags/github/</loc>
     <lastmod>2021-05-16T10:35:13+08:00</lastmod>
@@ -49,27 +73,6 @@
   </url><url>
     <loc>https://K7288.github.io/posts/menu/</loc>
     <lastmod>2021-05-16T10:35:13+08:00</lastmod>
-  </url><url>
-    <loc>https://K7288.github.io/tags/gait-analysis/</loc>
-    <lastmod>2021-05-13T10:44:02+08:00</lastmod>
-  </url><url>
-    <loc>https://K7288.github.io/categories/gait-analysis/</loc>
-    <lastmod>2021-05-13T10:44:02+08:00</lastmod>
-  </url><url>
-    <loc>https://K7288.github.io/categories/literature-notes/</loc>
-    <lastmod>2021-05-13T10:44:02+08:00</lastmod>
-  </url><url>
-    <loc>https://K7288.github.io/categories/robotics/</loc>
-    <lastmod>2021-05-13T10:44:02+08:00</lastmod>
-  </url><url>
-    <loc>https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/</loc>
-    <lastmod>2021-05-13T10:44:02+08:00</lastmod>
-  </url><url>
-    <loc>https://K7288.github.io/tags/%E6%9C%9B%E9%81%93/</loc>
-    <lastmod>2021-05-13T10:44:02+08:00</lastmod>
-  </url><url>
-    <loc>https://K7288.github.io/tags/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/</loc>
-    <lastmod>2021-05-13T10:44:02+08:00</lastmod>
   </url><url>
     <loc>https://K7288.github.io/posts/%E6%AD%A5%E9%80%9F%E4%BC%B0%E8%AE%A1%E7%BB%BC%E8%BF%B0%E6%95%B4%E7%90%86/</loc>
     <lastmod>2021-05-12T22:17:44+08:00</lastmod>

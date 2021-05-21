@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='参考书目 Digital Image Processing by Rafael C. Gonzalez, Richard E. Woods, 3rd Edition
+ 第一章 数字图像的采集方式以及特性  1.1 图像概述 1.2 图像数字化  1.2.1图像数字化——采样  一维连续信号的采样 二维连续图像信号的采样  二维Nyquist条件 亚采样     1.2.2图像数字化——量化   1.3 数字图像基本要素  1.3.1基本要素 1.3.2图像质量 1.3.3图像颜色：红、绿、蓝三基色 1.3.4图像的描述：灰度/黑白/彩色图像、链表、拓扑结构、距离 1.3.5图像的矩阵特性：距离、邻域、临接、连通 1.3.6图像文件格式   1.4 数字图像处理意义及内容 1.5 数字图像处理系统及应用  1.5.1数字图像特性：图像/显示分辨率/打印机分辨率 像素深度 位面数量 1.5.2数字图像处理系统     第二章 数字图像预处理方法  2.1 灰度化  2.1.1灰度化主要方法 2.1.2图像二值化  1.全局二值化 2.'><title>(Draft)Image Processing and Computer Vision</title>
+
+<link rel='canonical' href='https://K7288.github.io/posts/draftimage-processing-and-computer-vision/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='(Draft)Image Processing and Computer Vision'>
+<meta property='og:description' content='参考书目 Digital Image Processing by Rafael C. Gonzalez, Richard E. Woods, 3rd Edition
+ 第一章 数字图像的采集方式以及特性  1.1 图像概述 1.2 图像数字化  1.2.1图像数字化——采样  一维连续信号的采样 二维连续图像信号的采样  二维Nyquist条件 亚采样     1.2.2图像数字化——量化   1.3 数字图像基本要素  1.3.1基本要素 1.3.2图像质量 1.3.3图像颜色：红、绿、蓝三基色 1.3.4图像的描述：灰度/黑白/彩色图像、链表、拓扑结构、距离 1.3.5图像的矩阵特性：距离、邻域、临接、连通 1.3.6图像文件格式   1.4 数字图像处理意义及内容 1.5 数字图像处理系统及应用  1.5.1数字图像特性：图像/显示分辨率/打印机分辨率 像素深度 位面数量 1.5.2数字图像处理系统     第二章 数字图像预处理方法  2.1 灰度化  2.1.1灰度化主要方法 2.1.2图像二值化  1.全局二值化 2.'>
+<meta property='og:url' content='https://K7288.github.io/posts/draftimage-processing-and-computer-vision/'>
+<meta property='og:site_name' content='K7288'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Image Processing' /><meta property='article:tag' content='Computer Vision' /><meta property='article:published_time' content='2021-05-18T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-05-18T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="(Draft)Image Processing and Computer Vision">
+<meta name="twitter:description" content="参考书目 Digital Image Processing by Rafael C. Gonzalez, Richard E. Woods, 3rd Edition
+ 第一章 数字图像的采集方式以及特性  1.1 图像概述 1.2 图像数字化  1.2.1图像数字化——采样  一维连续信号的采样 二维连续图像信号的采样  二维Nyquist条件 亚采样     1.2.2图像数字化——量化   1.3 数字图像基本要素  1.3.1基本要素 1.3.2图像质量 1.3.3图像颜色：红、绿、蓝三基色 1.3.4图像的描述：灰度/黑白/彩色图像、链表、拓扑结构、距离 1.3.5图像的矩阵特性：距离、邻域、临接、连通 1.3.6图像文件格式   1.4 数字图像处理意义及内容 1.5 数字图像处理系统及应用  1.5.1数字图像特性：图像/显示分辨率/打印机分辨率 像素深度 位面数量 1.5.2数字图像处理系统     第二章 数字图像预处理方法  2.1 灰度化  2.1.1灰度化主要方法 2.1.2图像二值化  1.全局二值化 2.">
+</head>
+
+<body class="article-page keep-sidebar">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div
+        class="container main-container flex on-phone--column extended ">
+        <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu911cf87b738465eac3058d27e079f2ed_224006_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://K7288.github.io">K7288</a></h1>
+        <h2 class="site-description"></h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Posts</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/tags'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+                
+                <span>Tags</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+        <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/course-notes/" >
+                Course Notes
+            </a>
+        
+            <a href="/categories/image-processing/" >
+                Image Processing
+            </a>
+        
+            <a href="/categories/computer-vision/" >
+                Computer Vision
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/draftimage-processing-and-computer-vision/">(Draft)Image Processing and Computer Vision</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">2021-05-18</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <p>参考书目 Digital Image Processing by Rafael C. Gonzalez, Richard E. Woods, 3rd Edition</p>
+<ul>
+<li><a class="link" href="#%e7%ac%ac%e4%b8%80%e7%ab%a0-%e6%95%b0%e5%ad%97%e5%9b%be%e5%83%8f%e7%9a%84%e9%87%87%e9%9b%86%e6%96%b9%e5%bc%8f%e4%bb%a5%e5%8f%8a%e7%89%b9%e6%80%a7" >第一章 数字图像的采集方式以及特性</a>
+<ul>
+<li><a class="link" href="#11-%e5%9b%be%e5%83%8f%e6%a6%82%e8%bf%b0" >1.1 图像概述</a></li>
+<li><a class="link" href="#12-%e5%9b%be%e5%83%8f%e6%95%b0%e5%ad%97%e5%8c%96" >1.2 图像数字化</a>
+<ul>
+<li><a class="link" href="#121%e5%9b%be%e5%83%8f%e6%95%b0%e5%ad%97%e5%8c%96%e9%87%87%e6%a0%b7" >1.2.1图像数字化——采样</a>
+<ul>
+<li><a class="link" href="#%e4%b8%80%e7%bb%b4%e8%bf%9e%e7%bb%ad%e4%bf%a1%e5%8f%b7%e7%9a%84%e9%87%87%e6%a0%b7" >一维连续信号的采样</a></li>
+<li><a class="link" href="#%e4%ba%8c%e7%bb%b4%e8%bf%9e%e7%bb%ad%e5%9b%be%e5%83%8f%e4%bf%a1%e5%8f%b7%e7%9a%84%e9%87%87%e6%a0%b7" >二维连续图像信号的采样</a>
+<ul>
+<li><a class="link" href="#%e4%ba%8c%e7%bb%b4nyquist%e6%9d%a1%e4%bb%b6" >二维Nyquist条件</a></li>
+<li><a class="link" href="#%e4%ba%9a%e9%87%87%e6%a0%b7" >亚采样</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="link" href="#122%e5%9b%be%e5%83%8f%e6%95%b0%e5%ad%97%e5%8c%96%e9%87%8f%e5%8c%96" >1.2.2图像数字化——量化</a></li>
+</ul>
+</li>
+<li><a class="link" href="#13-%e6%95%b0%e5%ad%97%e5%9b%be%e5%83%8f%e5%9f%ba%e6%9c%ac%e8%a6%81%e7%b4%a0" >1.3 数字图像基本要素</a>
+<ul>
+<li><a class="link" href="#131%e5%9f%ba%e6%9c%ac%e8%a6%81%e7%b4%a0" >1.3.1基本要素</a></li>
+<li><a class="link" href="#132%e5%9b%be%e5%83%8f%e8%b4%a8%e9%87%8f" >1.3.2图像质量</a></li>
+<li><a class="link" href="#133%e5%9b%be%e5%83%8f%e9%a2%9c%e8%89%b2%e7%ba%a2%e7%bb%bf%e8%93%9d%e4%b8%89%e5%9f%ba%e8%89%b2" >1.3.3图像颜色：红、绿、蓝三基色</a></li>
+<li><a class="link" href="#134%e5%9b%be%e5%83%8f%e7%9a%84%e6%8f%8f%e8%bf%b0%e7%81%b0%e5%ba%a6%e9%bb%91%e7%99%bd%e5%bd%a9%e8%89%b2%e5%9b%be%e5%83%8f%e9%93%be%e8%a1%a8%e6%8b%93%e6%89%91%e7%bb%93%e6%9e%84%e8%b7%9d%e7%a6%bb" >1.3.4图像的描述：灰度/黑白/彩色图像、链表、拓扑结构、距离</a></li>
+<li><a class="link" href="#135%e5%9b%be%e5%83%8f%e7%9a%84%e7%9f%a9%e9%98%b5%e7%89%b9%e6%80%a7%e8%b7%9d%e7%a6%bb%e9%82%bb%e5%9f%9f%e4%b8%b4%e6%8e%a5%e8%bf%9e%e9%80%9a" >1.3.5图像的矩阵特性：距离、邻域、临接、连通</a></li>
+<li><a class="link" href="#136%e5%9b%be%e5%83%8f%e6%96%87%e4%bb%b6%e6%a0%bc%e5%bc%8f" >1.3.6图像文件格式</a></li>
+</ul>
+</li>
+<li><a class="link" href="#14-%e6%95%b0%e5%ad%97%e5%9b%be%e5%83%8f%e5%a4%84%e7%90%86%e6%84%8f%e4%b9%89%e5%8f%8a%e5%86%85%e5%ae%b9" >1.4 数字图像处理意义及内容</a></li>
+<li><a class="link" href="#15-%e6%95%b0%e5%ad%97%e5%9b%be%e5%83%8f%e5%a4%84%e7%90%86%e7%b3%bb%e7%bb%9f%e5%8f%8a%e5%ba%94%e7%94%a8" >1.5 数字图像处理系统及应用</a>
+<ul>
+<li><a class="link" href="#151%e6%95%b0%e5%ad%97%e5%9b%be%e5%83%8f%e7%89%b9%e6%80%a7%e5%9b%be%e5%83%8f%e6%98%be%e7%a4%ba%e5%88%86%e8%be%a8%e7%8e%87%e6%89%93%e5%8d%b0%e6%9c%ba%e5%88%86%e8%be%a8%e7%8e%87-%e5%83%8f%e7%b4%a0%e6%b7%b1%e5%ba%a6-%e4%bd%8d%e9%9d%a2%e6%95%b0%e9%87%8f" >1.5.1数字图像特性：图像/显示分辨率/打印机分辨率 像素深度 位面数量</a></li>
+<li><a class="link" href="#152%e6%95%b0%e5%ad%97%e5%9b%be%e5%83%8f%e5%a4%84%e7%90%86%e7%b3%bb%e7%bb%9f" >1.5.2数字图像处理系统</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="link" href="#%e7%ac%ac%e4%ba%8c%e7%ab%a0-%e6%95%b0%e5%ad%97%e5%9b%be%e5%83%8f%e9%a2%84%e5%a4%84%e7%90%86%e6%96%b9%e6%b3%95" >第二章 数字图像预处理方法</a>
+<ul>
+<li><a class="link" href="#21-%e7%81%b0%e5%ba%a6%e5%8c%96" >2.1 灰度化</a>
+<ul>
+<li><a class="link" href="#211%e7%81%b0%e5%ba%a6%e5%8c%96%e4%b8%bb%e8%a6%81%e6%96%b9%e6%b3%95" >2.1.1灰度化主要方法</a></li>
+<li><a class="link" href="#212%e5%9b%be%e5%83%8f%e4%ba%8c%e5%80%bc%e5%8c%96" >2.1.2图像二值化</a>
+<ul>
+<li><a class="link" href="#1%e5%85%a8%e5%b1%80%e4%ba%8c%e5%80%bc%e5%8c%96" >1.全局二值化</a></li>
+<li><a class="link" href="#2%e5%b1%80%e9%83%a8%e4%ba%8c%e5%80%bc%e5%8c%96" >2.局部二值化</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="link" href="#22%e5%9b%be%e5%83%8f%e5%99%aa%e5%a3%b0" >2.2图像噪声</a>
+<ul>
+<li><a class="link" href="#221%e5%88%86%e7%b1%bb" >2.2.1分类</a>
+<ul>
+<li><a class="link" href="#2211%e5%9f%ba%e4%ba%8e%e7%bb%9f%e8%ae%a1%e5%90%8e%e7%9a%84%e6%a6%82%e7%8e%87%e5%af%86%e5%ba%a6%e5%87%bd%e6%95%b0%e7%9a%84%e5%99%aa%e5%a3%b0%e5%88%86%e7%b1%bb%e5%8f%8a%e5%85%b6%e6%b6%88%e9%99%a4%e6%96%b9%e5%bc%8f" >2.2.1.1基于统计后的概率密度函数的噪声分类及其消除方式</a></li>
+</ul>
+</li>
+<li><a class="link" href="#222%e5%9b%be%e5%83%8f%e8%bf%87%e6%bb%a4%e5%99%aa%e5%a3%b0-%e7%a9%ba%e9%97%b4%e5%9f%9f%e6%bb%a4%e6%b3%a2-%e9%a2%91%e7%8e%87%e5%9f%9f%e6%bb%a4%e6%b3%a2-%e5%bd%a2%e6%80%81%e5%ad%a6%e8%bf%90%e7%ae%97" >2.2.2图像过滤噪声 空间域滤波 频率域滤波 形态学运算</a>
+<ul>
+<li><a class="link" href="#%e4%b8%ad%e5%80%bc%e6%bb%a4%e6%b3%a2%e5%99%a8" >中值滤波器</a></li>
+<li><a class="link" href="#%e8%b6%85%e9%99%90%e4%b8%ad%e5%80%bc%e6%bb%a4%e6%b3%a2%e6%b3%95" >超限中值滤波法</a></li>
+<li><a class="link" href="#%e5%9d%87%e5%80%bc%e6%bb%a4%e6%b3%a2%e9%82%bb%e5%9f%9f%e5%b9%b3%e5%9d%87%e6%b3%95" >均值滤波/邻域平均法</a></li>
+<li><a class="link" href="#%e8%b6%85%e9%99%90%e9%82%bb%e5%9f%9f%e5%b9%b3%e5%9d%87%e6%b3%95" >超限邻域平均法</a></li>
+<li><a class="link" href="#%e9%ab%98%e6%96%af%e6%bb%a4%e6%b3%a2" >高斯滤波</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="link" href="#%e7%ac%ac%e4%b8%89%e7%ab%a0-%e5%9b%be%e5%83%8f%e5%a2%9e%e5%bc%ba" >第三章 图像增强</a>
+<ul>
+<li><a class="link" href="#31-%e5%9b%be%e5%83%8f%e5%a2%9e%e5%bc%ba%e6%a6%82%e8%bf%b0" >3.1 图像增强概述</a>
+<ul>
+<li><a class="link" href="#311-%e5%ae%9a%e4%b9%89" >3.1.1 定义</a></li>
+<li><a class="link" href="#312-%e5%ba%94%e7%94%a8" >3.1.2 应用</a></li>
+</ul>
+</li>
+<li><a class="link" href="#32-%e5%9b%be%e5%83%8f%e5%a2%9e%e5%bc%ba%e6%96%b9%e6%b3%95" >3.2 图像增强方法</a></li>
+<li><a class="link" href="#33-%e7%81%b0%e5%ba%a6%e5%8f%98%e6%8d%a2%e7%82%b9%e8%bf%90%e7%ae%97" >3.3 灰度变换/点运算</a>
+<ul>
+<li><a class="link" href="#331%e7%ba%bf%e6%80%a7%e7%81%b0%e5%ba%a6%e5%8f%98%e6%8d%a2" >3.3.1线性灰度变换</a>
+<ul>
+<li><a class="link" href="#%e5%8a%a0%e5%b8%b8%e6%95%b0" >加常数</a></li>
+<li><a class="link" href="#%e5%9b%be%e5%83%8f%e5%8f%8d%e8%bd%ac%e5%8f%8d%e8%89%b2" >图像反转（反色）</a></li>
+<li><a class="link" href="#%e4%b9%98%e5%b8%b8%e6%95%b0" >乘常数</a></li>
+<li><a class="link" href="#%e4%b8%80%e8%88%ac%e5%bd%a2%e5%bc%8f" >一般形式</a></li>
+</ul>
+</li>
+<li><a class="link" href="#332-%e5%88%86%e6%ae%b5%e7%ba%bf%e6%80%a7%e7%81%b0%e5%ba%a6%e5%8f%98%e6%8d%a2" >3.3.2 分段线性灰度变换</a>
+<ul>
+<li><a class="link" href="#%e5%af%b9%e6%af%94%e5%ba%a6%e6%8b%89%e4%bc%b8%e6%8b%93%e5%b1%95" >对比度拉伸/拓展</a></li>
+<li><a class="link" href="#%e5%89%8a%e6%b3%a2" >削波</a></li>
+<li><a class="link" href="#%e9%98%88%e5%80%bc%e5%8c%96" >阈值化</a></li>
+<li><a class="link" href="#%e7%81%b0%e5%ba%a6%e7%ba%a7%e5%88%86%e5%b1%82%e7%81%b0%e5%ba%a6%e7%aa%97%e5%8f%a3%e5%8f%98%e6%8d%a2%e7%81%b0%e5%ba%a6%e5%88%87%e5%88%86" >灰度级分层/灰度窗口变换/灰度切分</a></li>
+<li><a class="link" href="#%e4%bd%8d%e5%9b%be%e5%88%87%e5%89%b2%e6%af%94%e7%89%b9%e5%b9%b3%e9%9d%a2%e5%88%86%e5%b1%82" >位图切割/比特平面分层</a></li>
+</ul>
+</li>
+<li><a class="link" href="#333-%e9%9d%9e%e7%ba%bf%e6%80%a7%e7%81%b0%e5%ba%a6%e5%8f%98%e6%8d%a2" >3.3.3 非线性灰度变换</a>
+<ul>
+<li><a class="link" href="#%e6%8c%87%e6%95%b0%e5%87%bd%e6%95%b0%e5%8f%98%e6%8d%a2" >指数函数变换</a></li>
+<li><a class="link" href="#%e5%af%b9%e6%95%b0%e5%87%bd%e6%95%b0%e5%8f%98%e6%8d%a2" >对数函数变换</a></li>
+<li><a class="link" href="#%e5%b9%82%e5%87%bd%e6%95%b0%e5%8f%98%e6%8d%a2%e4%bc%bd%e9%a9%ac%e5%8f%98%e6%8d%a2" >幂函数变换/伽马变换</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="link" href="#34-%e5%9f%ba%e4%ba%8e%e7%9b%b4%e6%96%b9%e5%9b%be%e7%9a%84%e5%9b%be%e5%83%8f%e5%a2%9e%e5%bc%ba" >3.4 基于直方图的图像增强</a>
+<ul>
+<li><a class="link" href="#341-%e7%81%b0%e5%ba%a6%e7%9b%b4%e6%96%b9%e5%9b%be%e7%ae%80%e7%a7%b0%e7%9b%b4%e6%96%b9%e5%9b%be" >3.4.1 灰度直方图（简称直方图）</a></li>
+<li><a class="link" href="#342-%e7%9b%b4%e6%96%b9%e5%9b%be%e5%9d%87%e8%a1%a1%e5%8c%96" >3.4.2 直方图均衡化</a>
+<ul>
+<li><a class="link" href="#%e7%9b%b4%e6%96%b9%e5%9b%be%e5%9d%87%e8%a1%a1%e5%8c%96%e7%81%b0%e5%ba%a6%e5%8f%98%e6%8d%a2%e5%87%bd%e6%95%b0%e7%9a%84%e6%9d%a1%e4%bb%b6" >直方图均衡化灰度变换函数的条件</a></li>
+<li><a class="link" href="#%e7%9b%b4%e6%96%b9%e5%9b%be%e5%9d%87%e8%a1%a1%e5%8c%96%e6%ad%a5%e9%aa%a4" >直方图均衡化步骤</a></li>
+<li><a class="link" href="#%e7%bc%ba%e7%82%b9" >缺点</a></li>
+</ul>
+</li>
+<li><a class="link" href="#343-%e7%9b%b4%e6%96%b9%e5%9b%be%e5%8c%b9%e9%85%8d%e8%a7%84%e5%ae%9a%e5%8c%96" >3.4.3 直方图匹配/规定化</a>
+<ul>
+<li><a class="link" href="#%e7%ae%97%e6%b3%95%e8%ae%be%e8%ae%a1" >算法设计</a>
+<ul>
+<li><a class="link" href="#%e8%bf%9e%e7%bb%ad%e7%81%b0%e5%ba%a6%e7%ba%a7%e6%83%85%e5%86%b5" >连续灰度级情况</a></li>
+<li><a class="link" href="#%e7%a6%bb%e6%95%a3%e7%81%b0%e5%ba%a6%e7%ba%a7%e6%83%85%e5%86%b5" >离散灰度级情况</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="link" href="#344-%e5%9f%ba%e4%ba%8e%e7%9b%b4%e6%96%b9%e5%9b%be%e7%bb%9f%e8%ae%a1%e7%89%b9%e6%80%a7%e7%9a%84%e5%a2%9e%e5%bc%ba%e5%b1%80%e9%83%a8%e5%a2%9e%e5%bc%ba" >3.4.4 基于直方图统计特性的增强/局部增强</a>
+<ul>
+<li><a class="link" href="#%e7%9b%b4%e6%96%b9%e5%9b%be%e7%bb%9f%e8%ae%a1%e7%89%b9%e6%80%a7" >直方图统计特性</a></li>
+<li><a class="link" href="#%e5%b1%80%e9%83%a8%e5%a2%9e%e5%bc%ba" >局部增强</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="link" href="#35-%e5%bd%a9%e8%89%b2%e5%9b%be%e5%83%8f%e5%a2%9e%e5%bc%ba" >3.5 彩色图像增强</a>
+<ul>
+<li><a class="link" href="#351-%e5%bd%a9%e8%89%b2%e6%a8%a1%e5%9e%8b%e9%a2%9c%e8%89%b2%e7%a9%ba%e9%97%b4" >3.5.1 彩色模型（颜色空间）</a>
+<ul>
+<li><a class="link" href="#rgb" >RGB</a></li>
+<li><a class="link" href="#hsi-%e8%89%b2%e8%b0%83%e9%a5%b1%e5%92%8c%e5%ba%a6%e4%ba%ae%e5%ba%a6" >HSI (色调、饱和度、亮度）</a></li>
+<li><a class="link" href="#yuv" >YUV</a></li>
+<li><a class="link" href="#ycbcr" >YCbCr</a></li>
+<li><a class="link" href="#%e5%bd%a9%e8%89%b2%e7%a9%ba%e9%97%b4%e8%bd%ac%e6%8d%a2" >彩色空间转换</a></li>
+<li><a class="link" href="#%e9%a2%9c%e8%89%b2%e5%b9%b3%e8%a1%a1" >颜色平衡</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="link" href="#%e7%ac%ac%e5%85%ad%e7%ab%a0-%e5%9b%be%e5%83%8f%e5%88%86%e5%89%b2" >第六章 图像分割</a>
+<ul>
+<li><a class="link" href="#61--%e5%9b%be%e5%83%8f%e5%88%86%e5%89%b2%e5%9f%ba%e6%9c%ac%e4%bb%8b%e7%bb%8d" >6.1  图像分割基本介绍</a></li>
+<li><a class="link" href="#62-%e8%be%b9%e7%bc%98%e6%a3%80%e6%b5%8b" >6.2 边缘检测</a></li>
+<li><a class="link" href="#63--%e9%98%88%e5%80%bc%e5%88%86%e5%89%b2%e6%b3%95" >6.3  阈值分割法</a>
+<ul>
+<li><a class="link" href="#631-%e9%98%88%e5%80%bc%e5%88%86%e5%89%b2%e5%8e%9f%e7%90%86" >6.3.1 阈值分割原理</a></li>
+<li><a class="link" href="#632-%e9%98%88%e5%80%bc%e5%a4%84%e7%90%86" >6.3.2 阈值处理</a>
+<ul>
+<li><a class="link" href="#6321-%e5%9f%ba%e6%9c%ac%e5%85%a8%e5%b1%80%e9%98%88%e5%80%bc%e5%a4%84%e7%90%86" >6.3.2.1 基本全局阈值处理</a></li>
+<li><a class="link" href="#6322-todo-otus%e6%96%b9%e6%b3%95%e7%9a%84%e5%85%a8%e5%b1%80%e9%98%88%e5%80%bc%e5%a4%84%e7%90%86%e7%b1%bb%e9%97%b4%e6%9c%80%e5%a4%a7%e6%96%b9%e5%b7%ae%e6%b3%95" >6.3.2.2 <strong>TODO</strong> Otus方法的全局阈值处理/类间最大方差法</a></li>
+</ul>
+</li>
+<li><a class="link" href="#633-%e6%94%b9%e8%bf%9b" >6.3.3 改进</a>
+<ul>
+<li><a class="link" href="#a-%e5%9b%be%e5%83%8f%e5%b9%b3%e6%bb%91%e6%94%b9%e8%bf%9b" >a 图像平滑改进</a></li>
+<li><a class="link" href="#b-%e8%be%b9%e7%bc%98%e6%94%b9%e8%bf%9b" >b 边缘改进</a></li>
+<li><a class="link" href="#c-%e5%8f%af%e5%8f%98%e9%98%88%e5%80%bc%e5%a4%84%e7%90%86" >c 可变阈值处理</a>
+<ul>
+<li><a class="link" href="#i-%e5%9f%ba%e4%ba%8e%e5%b1%80%e9%83%a8%e5%9b%be%e5%83%8f%e6%80%a7%e8%b4%a8" >(i) 基于局部图像性质</a></li>
+<li><a class="link" href="#ii-%e5%9f%ba%e4%ba%8e%e7%a7%bb%e5%8a%a8%e5%b9%b3%e5%9d%87" >(ii) 基于移动平均</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="link" href="#64-%e5%8c%ba%e5%9f%9f%e5%88%86%e5%89%b2%e6%b3%95" >6.4 区域分割法</a>
+<ul>
+<li><a class="link" href="#641-%e5%8c%ba%e5%9f%9f%e7%94%9f%e9%95%bf-bottom-up" >6.4.1 区域生长 Bottom-up</a></li>
+<li><a class="link" href="#642-%e5%8c%ba%e5%9f%9f%e5%88%86%e7%a6%bb%e4%b8%8e%e8%81%9a%e5%90%88-up-down" >6.4.2 区域分离与聚合 Up-down</a></li>
+<li><a class="link" href="#643-%e7%a9%ba%e9%97%b4%e8%81%9a%e7%b1%bbk%e5%9d%87%e5%80%bc%e8%81%9a%e7%b1%bb" >6.4.3 空间聚类/K均值聚类</a></li>
+<li><a class="link" href="#644-%e8%b6%85%e5%83%8f%e7%b4%a0%e7%9a%84%e5%8c%ba%e5%9f%9f%e5%88%86%e5%89%b2" >6.4.4 超像素的区域分割</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="link" href="#%e7%ac%ac%e4%b8%83%e7%ab%a0-%e5%9b%be%e5%83%8f%e7%9a%84%e7%89%b9%e5%be%81%e6%8f%90%e5%8f%96" >第七章 图像的特征提取</a>
+<ul>
+<li><a class="link" href="#71-%e8%83%8c%e6%99%af%e7%9f%a5%e8%af%86" >7.1 背景知识</a></li>
+<li><a class="link" href="#72-todo%e8%be%b9%e7%95%8c%e9%a2%84%e5%a4%84%e7%90%86" >7.2 <strong>TODO</strong>边界预处理</a>
+<ul>
+<li><a class="link" href="#721-%e5%8c%ba%e5%9f%9f%e9%aa%a8%e6%9e%b6%e6%8a%bd%e5%8f%96" >7.2.1 区域骨架抽取</a></li>
+</ul>
+</li>
+<li><a class="link" href="#73-todo%e7%89%b9%e5%be%81%e6%8f%8f%e8%bf%b0%e5%ad%90" >7.3 <strong>TODO</strong>特征描述子</a>
+<ul>
+<li><a class="link" href="#731-%e8%be%b9%e7%95%8c%e7%89%b9%e5%be%81%e6%8f%8f%e8%bf%b0%e5%ad%90" >7.3.1 边界特征描述子</a></li>
+<li><a class="link" href="#732-%e5%8c%ba%e5%9f%9f%e7%89%b9%e5%be%81%e6%8f%8f%e8%bf%b0%e5%ad%90" >7.3.2 区域特征描述子</a>
+<ul>
+<li><a class="link" href="#7321-%e5%9f%ba%e6%9c%ac%e6%8f%8f%e8%bf%b0%e5%ad%90" >7.3.2.1 基本描述子</a></li>
+<li><a class="link" href="#7322-%e7%ba%b9%e7%90%86%e6%8f%8f%e8%bf%b0%e5%9f%ba%e4%ba%8e%e7%9b%b4%e6%96%b9%e5%9b%be%e5%9f%ba%e4%ba%8e%e7%bb%9f%e8%ae%a1%e6%96%b9%e6%b3%95%e5%9f%ba%e4%ba%8e%e8%b0%b1%e6%96%b9%e6%b3%95" >7.3.2.2 纹理描述(基于直方图、基于统计方法、基于谱方法)</a></li>
+</ul>
+</li>
+<li><a class="link" href="#733-%e7%89%b9%e5%be%81%e6%8f%8f%e8%bf%b0%e5%ad%90%e7%9a%84%e4%b8%bb%e5%88%86%e9%87%8f" >7.3.3 特征描述子的主分量</a></li>
+</ul>
+</li>
+<li><a class="link" href="#74%e5%b0%ba%e5%ba%a6%e4%b8%8d%e5%8f%98%e7%89%b9%e5%be%81%e5%8f%98%e6%8d%a2-sift-scale-invariant-feature-transform" >7.4尺度不变特征变换 SIFT Scale-invariant feature transform</a></li>
+</ul>
+</li>
+</ul>
+<div style="page-break-after:always;"></div>
+<h1 id="第一章-数字图像的采集方式以及特性">第一章 数字图像的采集方式以及特性</h1>
+<h2 id="11-图像概述">1.1 图像概述</h2>
+<p>图像是一个二维亮度函数；</p>
+<p>模拟图像：一幅活动、彩色、立体的图像——$I=f(x,y,z,λ,t)$，三维空间+波谱上+时间上连续，想象中的虚拟图像</p>
+<p>数字图像：数字图像是由模拟图象数字化得到的，以像素为基本元素、可以用数字计算机或数字电路存储和处理的图像。</p>
+<p><img src="/assets/image-20210416141649190.png" alt="image-20210416141649190" style="zoom:80%;" /></p>
+<p>把一幅图画分割成如图所示的一个个小区域（像素），并将各小区域灰度用整数来表示，形成一幅点阵式的数字图像。它包括<strong>采样</strong>和<strong>量化</strong>两个过程。像素的位置和灰度就是像素的属性。</p>
+<h2 id="12-图像数字化">1.2 图像数字化</h2>
+<p>图像数字化:将模拟图像经过离散化之后，得到用数字表示的图像。</p>
+<p>一幅模拟图像的坐标及幅度都是连续的，为了把它转换为数字形式，必须对坐标和幅度都作离散化操作。<strong>数字化坐标值称为采样</strong>，它确定了图像的<strong>空间分辨率</strong>；<strong>数字化幅度值称为量化</strong>，它确定了图像的<strong>幅度分辨率</strong>。</p>
+<h3 id="121图像数字化采样">1.2.1图像数字化——采样</h3>
+<p>（1）图像的采样：将在空间上连续的图像转换成离散的采样点（即像素）集的操作</p>
+<p><img src="/assets/image-20210416142714352.png" alt="image-20210416142714352" style="zoom:33%;" />
+<code>z=f(x,y), x∈[0,a], y∈[0,b], z∈[0,c]</code> $\rightarrow$ <code>z=f(x,y), x=0,1,…,N-1,y=0,1,…,M-1, z=0,1,…,L-1</code></p>
+<p>采样间隔太小，则增大数据量；太大，则会发生信息的混叠，导致细节无法辨认。</p>
+<h4 id="一维连续信号的采样">一维连续信号的采样</h4>
+<p>在工程中的许多信号，实际上都是连续信号，或者称为连续时间函数，记为x(t)，t的取值是从$-\infty$ 连续变化到$+ \infty $ 。但是，用计算机处理这些信号，必须首先对连续信号进行采样，即按一定的时间间隔Ts进行取值：
+$$
+𝑥_𝑑 (𝑛)=𝑥(𝑛𝑇_𝑠)   , 𝑛=…−1,0,1…
+$$
+$T_s$为采样间隔，$ x_d (n)$为离散信号或时间序列</p>
+<p>连续信号x(t)和频谱X(f)的具体关系为：
+$$
+X(f)=\int _{−\infty}^\infty x(t)e^{−j2\pi ft} dt\\\\x(t)=\int _{−\infty}^\infty X(f)e^{j2\pi ft} df
+$$</p>
+<p>一维空间采样的Nyquist条件：$X(f)$有截频$ f_c$，即当$|f|≥ f_c$时, $X(f)=0$；$T_s≤\frac{1}{2f_c}$ 或$2f_c≤f_s$</p>
+<p>如果信号不是有限带宽信号，采样频率或采样间隔不满足Nyquist条件，就会产生混叠现象。</p>
+<p>在满足Nyquist条件下，从离散信号$x(nT_s)$可恢复连续信号$x(t)$
+$$
+x(t)=\Sigma_{n=−\infty}^{+\infty}x(nT_s)sinc(\frac{\pi}{T_s} (t-nT_s))
+$$</p>
+<p>$sinc(x)=\frac{sinx}{x}$<img src="/assets/image-20210416152431983-1621304859786.png" alt="img"  /></p>
+<h4 id="二维连续图像信号的采样">二维连续图像信号的采样</h4>
+<p>设图像f(x,y)是一连续二维信号，其空间频谱$F(f_x,f_y )$在x方向具有截止频率$f_xc$ ，在y方向具有截止频率$f_yc$ 。所谓采样是对f(x,y)乘以空间采样函数：
+$$
+s(x,y)=\Sigma_{i=−\infty }^{+\infty }∑_{j=−\infty }^{+\infty }\delta(x−i\Delta x,y−i\Delta y)
+$$
+式中Δx和Δy为x、y两个方向的采样间隔，上式为脉冲函数δ(x,y)沿x、y两个方向的展开。</p>
+<p><img src="/assets/image-20210416155641596.png" alt="img"  /></p>
+<p>//脉冲函数：<img src="/assets/09fa513d269759ee348f4897bffb43166c22df8a" alt="img"  /></p>
+<p>经过采样以后所得的信号为：
+$$
+f_s (x,y)=f(x,y)∙ s(x,y)\\=∑_{i=−\infty }^{+\infty }∑_{j=−\infty }^{+\infty }f(i\Delta x,j\Delta y)\sigma(x−i\Delta x,y−j\Delta y)
+$$</p>
+<h5 id="二维nyquist条件">二维Nyquist条件</h5>
+<p>为使采样以后的信号$f_s (x,y)$能完全恢复原来连续信号f(x,y) ，采样间隔Δx和Δy就必须满足$∆x≤1/(2f_{xc} ) ,∆y≤1/(2f_{yc})$，即在x和y方向的采样频率必须大于图像在x和y方向最高频率的两倍</p>
+<p>二维信号重建</p>
+<p><img src="/assets/image-20210416160057963.png" alt="image-20210416160057963" style="zoom:50%;" /></p>
+<h5 id="亚采样">亚采样</h5>
+<p>（1）降低采样频率</p>
+<p>（2）将按采样定理获得的图像再抽样，即每隔K个像素，保留1个像素，其余的丢掉，重构时用内插法恢复丢失的数据。256×256每隔2个像素，保留1个像素-&gt;128×128</p>
+<h3 id="122图像数字化量化">1.2.2图像数字化——量化</h3>
+<p><img src="/assets/image-20210416160641526.png" alt="image-20210416160641526" style="zoom:50%;" /></p>
+<p>L在<strong>3bit以下</strong>的量化，会出现伪轮廓现象（画面平场区域出现明显的类似于等高线的不连续过渡带，从而对于画面感观质量造成影响的现象）。</p>
+<p>均匀量化：简单地在灰度范围内等间隔量化。</p>
+<p>非均匀量化：对像素出现频度少的部分量化间隔取大，而对频度大的量化间隔取小。</p>
+<h2 id="13-数字图像基本要素">1.3 数字图像基本要素</h2>
+<h3 id="131基本要素">1.3.1基本要素</h3>
+<p>像素是数字图像最小的单位</p>
+<p>图像尺寸——一幅数字图像矩阵的大小</p>
+<p>像素坐标系——对图像分布进行二维空间采样</p>
+<p>像数值—对单个像素灰度值进行数字化采样（k bits/pixel）</p>
+<h3 id="132图像质量">1.3.2图像质量</h3>
+<p>灰度：表示图像<strong>像素明暗程度</strong>的数值</p>
+<p>灰度级——表明图象中<strong>不同灰度的最大数量</strong></p>
+<p>对比度=最大灰度值/最小灰度值 ——反映一幅图像中灰度方差的大小</p>
+<h3 id="133图像颜色红绿蓝三基色">1.3.3图像颜色：红、绿、蓝三基色</h3>
+<h3 id="134图像的描述灰度黑白彩色图像链表拓扑结构距离">1.3.4图像的描述：灰度/黑白/彩色图像、链表、拓扑结构、距离</h3>
+<p>灰度图像</p>
+<ul>
+<li>图像中每个像素的信息由一个量化的灰度级来描述，没有彩色信息。</li>
+<li>当一幅图像有2<em>k</em>灰度级时，通常称该图像是<em>k</em>比特图像。</li>
+<li>灰度图像像素的灰度级通常为8 Bits，即0~255。“0”表示纯黑色，“255”表示纯白色。</li>
+</ul>
+<p>黑白图像（二值图像）</p>
+<ul>
+<li>像素值为0、1。二值图像通常用于文字、线条图的扫描识别(OCR)和掩模图像的存储。</li>
+</ul>
+<p>彩色图像</p>
+<ul>
+<li>三维矩阵，可用<em>M</em>×<em>N</em>×3表示，<em>M</em>、<em>N</em>分别表示图像的行、列数，三个<em>M</em>×<em>N</em>的二维矩阵分别表示各个像素的R、G、B三个颜色分量。每个颜色分量的数据类型一般为8位无符号整型。</li>
+</ul>
+<p>链表—描述目标物体的边界</p>
+<p>拓扑结构——描述一组图形及其相互关系</p>
+<p>距离—描述图像中像素之间的接近程度</p>
+<p><img src="/assets/image-20210416161847144.png" alt="image-20210416161847144" style="zoom:50%;" /></p>
+<p>欧氏、曼哈顿（城区）（坐标差绝对值相加）、棋盘（坐标差绝对值最大的那个）</p>
+<h3 id="135图像的矩阵特性距离邻域临接连通">1.3.5图像的矩阵特性：距离、邻域、临接、连通</h3>
+<p><strong>邻域</strong>—描述与像素相邻的其他像素</p>
+<p><img src="/assets/image-20210416162246265.png" alt="image-20210416162246265" style="zoom:50%;" /></p>
+<p><strong>邻接</strong></p>
+<p>像素间邻接的两个必要条件：①一个像素在另一个像素的<strong>邻域</strong>中；②两个像素的灰度值满足特定的<strong>相似准则</strong>。</p>
+<p>令V表示关于邻接的灰度值集合(相似准则)。</p>
+<p>①4-邻接 像素<em>p</em>和<em>q</em>的灰度值都属于<em>V</em>，且<em>q</em>在p的4-邻域集合**$N_4(p)$**中，则称像素*p*和*q*是4-邻接的。</p>
+<p>②8-邻接 像素<em>p</em>和<em>q</em>的灰度值都属于<em>V</em>，且<em>q</em>在集合$N_8(p)$中，则称像素<em>p</em>和<em>q</em>是8-邻接的。</p>
+<p>③m-邻接 像素<em>p</em>和<em>q</em>的灰度值都属于<em>V</em>，若满足下列条件<strong>之一</strong>：</p>
+<p>•<em>q</em>在集合$N_4(p)$中；</p>
+<p>•<em>q</em>在集合$N_D(p)$中（对角邻域）,且集合$N_4(p)\cap N_4(q)$中的像素的灰度值不属于<em>V</em>。</p>
+<p>则称像素<em>p</em>和<em>q</em>是m-邻接的。</p>
+<p><strong>像素间的通路</strong></p>
+<p>从坐标为$(x_0,y_0 )$的像素<em>p</em>到坐标为$(x_n,y_n )$的像素<em>q</em>的一条通路由像素序列组成对应坐标序列为:</p>
+<p>$ (x_0,y_0 ) ,(x_1,y_1 ), ⋯,(x_i,y_i ) ⋯,(x_n,y_n ) $，这里$(x_i,y_i )$与$(x_{i-1},y_{i-1} )$相邻接，n为通路长度。</p>
+<p>若$(x_0,y_0 )=(x_n,y_n )$则该通路是闭合通路。<strong>根据不同的邻接类型，可以得到不同的通路，如4-通路，8-通路和<em>m</em>-通路。</strong></p>
+<p><strong>连通</strong></p>
+<p>若像素p和q之间存在着一条通路，则称p和q是连通的，即像素间的连通。反之，若两个像素间是连通的，那么至少存在一条通路，也可能存在多条通路。<strong>根据通路的类型，像素间的连通可分为4-连通，8-连通和m-连通</strong>。</p>
+<h3 id="136图像文件格式">1.3.6图像文件格式</h3>
+<p>每一种图像文件均有一个<strong>文件头</strong>，在文件头之后是<strong>图像数据</strong>。文件头的内容一般包括<strong>文件类型、版本号、文件大小等</strong>内容。各种图像文件的制作还涉及到图像文件的压缩方式和存储效率等。常用的图像文件存储格式主要有：BMP格式、JPEG格式、GIF格式、TIFF格式等。</p>
+<p><strong>BMP</strong>(bitmap)图像文件也称位图文件，其文件结构如下：</p>
+<p>a) BITMAPFILEHEADER：BMP文件头或表头；b) BITMAPINFOHEADER：BMP文件信息头；</p>
+<p>c) RGBQUAD：BMP文件调色板或位图信息；d) BITMAP DATA：BMP文件数据或位图阵列；</p>
+<p>位图文件头长度为固定的54个字节，给出了文件的类型、大小和位图阵列的起始位置等信息。位图文件信息头基本上包含图像的所有信息，包括宽度、高度、每像素的位数、压缩方法、目标设备的水平和垂直分辨率等信息。位图文件调色板是BMP所包含的颜色表，接在BITMAPINFOHEADER结构之后含有位图中每种颜色的RGB信息。BMP文件数据是以连续行的形式存储的。</p>
+<p><strong>JPEG</strong> (Joint Photographic Experts Group)的文件后辍名为“.jpg”或“.jpeg”。有损压缩格式，支持24位颜色，并保留照片和其他连续色调图像中存在的亮度和色相的显著和细微的变化。</p>
+<p><strong>GIF</strong> (Graphics Interchange Format)的文件后缀名为“.gif”。GIF格式的特点是其在一个GIF文件中可以存多幅彩色图像，如果把存于一个文件中的多幅图像数据逐幅读出并显示到屏幕上，就可构成一种最简单的动画。</p>
+<p><strong>TIFF</strong> (Tag Image File Format)的文件后缀名为“.tif”或“.tiff”。TIFF文件一般可分为文件头、参数指针表、参数数据表的偏移。参数指针表由一系列参数块构成，它们描写图像的压缩种类、长度、彩色数、扫描分辨率等许多参数。参数数据表中存放的是实际参数数据。最后一部分是图像数据。</p>
+<h2 id="14-数字图像处理意义及内容">1.4 数字图像处理意义及内容</h2>
+<p><strong>数字图像处理</strong></p>
+<p>（1）利用计算机对数字图像进行各种目的的处理</p>
+<p>（2）将一幅图像变为另一幅经过加工的图像，图像到图像的过程</p>
+<p>（3）将一幅图像转化为一种非图像的表示，分析、识别与理解的过程</p>
+<p><strong>目的</strong></p>
+<p>1.提高图像视觉质量，提供人眼主观满意或较满意的效果；2.提取目标某些特征，以便于后续分析或识别；3.图像压缩，便于存储和传输庞大的图像和视频信息。4.信息的可视化，以便于人们观察、分析、研究、理解大规模数据和许多复杂现象5.信息安全需要，如数字图像水印和图像信息隐藏</p>
+<p>•数字图像处理是利用计算机的计算，实现与光学系统模拟处理相同效果的过程。</p>
+<p><strong>特点</strong></p>
+<p>(1)再现性好。数字化，存储，传输或复制不会退化图像质量.(2)处理精度高。灰度等级量化为16位(3)适用面宽。多种信息源：可见光，波谱（X射线，R射线，超声或红外）客观实体尺度：电子显微、航空、遥感、天文图像(4)灵活性高。线性处理，非线性处理。凡是可以用数学公式或逻辑关系来表示的一切运算均可用数字图像处理实现。</p>
+<p><strong>主要内容</strong></p>
+<p>（1）几何处理：坐标变换、图像放大、缩小、旋转、移动；多个图像的配准、全景畸变校正、扭曲校正；计算周长、面积、体积</p>
+<p>（2）算数处理：对图像进行加减乘除运算，与、或等逻辑运算；主要针对像素医学图像的减影处理</p>
+<p>（3）图像增强：突出图像中感兴趣的信息，去掉或削弱不感兴趣的信息，使其在特定的应用中更便于解释和识别提高图像质量（去除噪声、提高图像的清晰度）；方法：灰度修正、平滑、几何校正、图像锐化、频域增强、维纳滤波、卡尔曼滤波…</p>
+<p>（4）图像复原：去掉干扰和污染，恢复图像的本来面目；1)图像噪声：随机点、相干噪声(网纹干扰)2)模糊：透镜散光、相对运动3)遥感：大气流、云层遮挡；主要方法：维纳滤波、卡尔曼滤波、逆滤波、同态滤波等</p>
+<p>（5）图像重建：从数据到图像的过程，CT、x-ray、NMR（核磁共振）、超声CT、ECT；•成像方法：代数法、迭代法、傅里叶反投影法、卷积三维重建-用于虚拟现实、科学可视化技术</p>
+<p>（6）图像编码：运用图像信号的统计特性以及视觉的生理学和心理学特性实现高效编码 ；目的：I.减少数据存储空间II.降低数据率、减少传输带宽III.压缩信息、提取特征，以便识别</p>
+<p>（7）图像识别：方法：统计识别（特征）、句法结构（结构基元）、模糊识别(模糊学习、人的思维方法)</p>
+<p>（8）图像理解：利用客观世界的知识，使计算机进行联想、思考、推论，从而理解图像表现的内容（景物理解）</p>
+<p>（9）图像分割：提取出感兴趣的对象，为进一步理解识别做准备；灰度阀值分割、基于纹理的分割、区域生长法</p>
+<h2 id="15-数字图像处理系统及应用">1.5 数字图像处理系统及应用</h2>
+<h3 id="151数字图像特性图像显示分辨率打印机分辨率-像素深度-位面数量">1.5.1数字图像特性：图像/显示分辨率/打印机分辨率 像素深度 位面数量</h3>
+<p>图像分别率：指组成一幅图像的像素密度，即图幅参数。单位：像素*像素</p>
+<p>e.g.数码相机指标：640*480=307200,30万像素</p>
+<p>显示分辨率:指显示屏上能够显示出的像素数目。例如，显示分辨率为640x480表示显示屏分成480行，每行显示640个像素。整个显示屏就含有307200个显像点。</p>
+<p>打印机、扫描仪分辨率：dpi（display pixels/incj）每英寸显示的线数</p>
+<p>像素深度：存储每个像素所用的位数，它也是用来度量图像的分辨率</p>
+<p>位面数量：组成图像的像素矩阵维数。</p>
+<h3 id="152数字图像处理系统">1.5.2数字图像处理系统</h3>
+<p><img src="/assets/image-20210416165102682.png" alt="image-20210416165102682" style="zoom:80%;" /></p>
+<p>图像采集系统将模拟图像转换成适合数字计算机处理的数字图像，包括1.数码摄像机：它通过接口电路与计算机连接，在有关软件的控制下将图像数据输入计算机2.数码照相机：与数码摄像机的区别在于没有连续获取图像的能力3.扫描仪：它可以将胶片上的摄影图像或纸质载体上的文字、图形、表格扫描成数字信息直接载入计算机</p>
+<p>计算机执行数字图像处理；•安装有各种图像处理软件，如Ps，Matlab中的图像处理工具箱; 图像处理软件接受来自图像采集系统的数字图像并执行所需的操作，如图像增强、图像复原、图像压缩编码、图像分析等操作，最后输出处理结果</p>
+<p>图像输出设备主要指喷墨打印机、激光打印机、图像监视器、视频拷贝仪等，它们的发展趋势是高速、真彩色</p>
+<div style="page-break-after:always;"></div>
+<h1 id="第二章-数字图像预处理方法">第二章 数字图像预处理方法</h1>
+<p>主要目的：</p>
+<p>•消除图像中无关的信息，恢复有用的真实信息。</p>
+<p>•增强有关信息的可检测性、最大限度地简化数据，从而改进特征提取、图像分割、匹配和识别的可靠性。</p>
+<p><strong>步骤：1.灰度化 2.去噪声</strong></p>
+<h2 id="21-灰度化">2.1 灰度化</h2>
+<p>图像灰度化的原理就是在RGB模型中，假定三个通道的值相等，然后用统一的灰度值表征该点的色彩信息，灰度值的范围是0到255。</p>
+<p>像素点矩阵中的每一个像素点都满足下面的关系：R=G=B，此时的这个值叫做灰度值。</p>
+<h3 id="211灰度化主要方法">2.1.1灰度化主要方法</h3>
+<p>1）分量法：将彩色图像中的三分量RGB的亮度作为三个灰度图像的灰度值，可根据应用需要选取三种中的一种灰度图像。</p>
+<p>2）最大值法：将彩色图像中的三分量亮度的最大值作为灰度图的灰度值。</p>
+<p>3）平均值法：将彩色图像中的三分量亮度求平均得到一个灰度图。</p>
+<p>4）加权平均法：根据重要性及其它指标，将三个分量以不同的权值进行加权平均。</p>
+<p>由于人眼对绿色的敏感最高，对蓝色敏感最低。Gray=0.11B+0.59G+0.3R；OpenCV开放库所采用的灰度权值 Gray=0.072169B+0.715160G+0.212671R</p>
+<h3 id="212图像二值化">2.1.2图像二值化</h3>
+<p>p二值化通用方法：选择某个阈值T，将原始图像变为二值图像：</p>
+<p>当f(x,y)≥T时， f(x,y)=1</p>
+<p>当f(x,y) ≤T时， f(x,y)=0</p>
+<p><strong>如同其他图像分割算法一样，没有一个现有方法对各种各样的图像都能得到令人满意的结果。</strong></p>
+<p>几种阈值确定办法：</p>
+<h4 id="1全局二值化">1.全局二值化</h4>
+<p>目的：从多值的数字图像中直接提取出目标物体）设定一个全局的阈值T，用T将图像的数据分成两部分：大于T的像素群和小于T的像素群。将大于T的像素群的像素值设定为白色（或者黑色），小于T的像素群的像素值设定为黑色（或者白色）。</p>
+<p><strong>a)</strong> 取阀值为127（相当于0~255的中数），让灰度值小于等于127的变 为0（黑色），灰度值大于127的变为255（白色），这样做的好处是计算量小速度快，但是缺点也是很明显的，因为这个阀值在不同的图片中均为127，但是不同的图片，他们的颜色分布差别很大，所以用127做阀值，白菜萝卜一刀切，效果肯定是不好的。</p>
+<p>b)计算像素点矩阵中的所有像素点的<strong>灰度值的平均值K</strong>。然后让每一个像素点与K一 一比较，小于等于K的像素点就为0（黑色）大于K的 像素点为255（白色），这样做比方法1好一些。但是使用平均值作为二值化阈值同样有个致命的缺点，可能导致部分对象像素或者背景像素丢失。二值化结果不能真实反映源图像信息。</p>
+<p>c)使用<strong>直方图方法</strong>（也叫双峰法）来寻找二值化阀值直方图是图像的重要特质。直方图方法认为图像由前景和背景组成，在<strong>灰度直方图上，前景和背景都形成高峰</strong>，在双峰之间的最低，谷处就是阀值所在。取到阀值之后再一 一比较就可以了</p>
+<p><strong>直方图</strong>：表示数字图像中每一灰度级像素出现的频次（该灰度级的像素数目）。</p>
+<p>$p(k)=n_{k }$或 $p(k)=\frac{n_{k }}{n}$  $n_{k}$:&ldquo;图像中第k个灰度级的像素总数 &ldquo;，$n$:图像的像素总数</p>
+<p>直方图性质：1.无空间信息；2.直方图与图像一对多关系；3.可叠加性（全图与子图像）</p>
+<p>直方图反映了图像清晰程度。直方图均匀分布时，图像最清晰。<strong>判断一幅图像是否清晰，查看是否合理的利用了全部被允许的灰度级</strong> 一幅图像应该尽可能利用全部可能的灰度级。</p>
+<p>直方图也反映图像对比度和亮度。</p>
+<p><img src="/assets/image-20210416184148236.png" alt="image-20210416184148236" style="zoom:50%;" /><img src="/assets/image-20210416184156275.png" alt="image-20210416184156275" style="zoom:40%;" /><img src="/assets/image-20210416184227637.png" alt="image-20210416184227637" style="zoom:50%;" /></p>
+<p>直方图分为四个基本类型：RGB直方图、通道直方图、明度直方图和颜色直方图。</p>
+<p>通道直方图：R G B通道分别画直方图。RGB直方图就是通道直方图的叠加。</p>
+<p>明度直方图是复合计算单个像素之后绘制的直方图，相对RGB更能反映一张照片的亮度分布趋势。</p>
+<p>•只有当一个像素中的R、G、B值同时为0 的时候，明度直方图的最左端才有凸起，而RGB直方图只要有任意一个像素中的任意一个R、G、B值为0，它的最左端就有凸起。</p>
+<p>颜色直方图，可以理解为加了颜色的RGB直方图。</p>
+<p><strong>d)<strong>一种使用</strong>近似一维Means方法</strong>寻找二值化阈值：</p>
+<p>①初始化一个阈值T，可以自己设置或者根据随机方法生成。</p>
+<p>②根据阈值图将每个像素数据P(n,m)分为对象像素数据G1与背景像素数据G2。(n为行，m为列)</p>
+<p>③G1的平均值是m1, G2的平均值是m2</p>
+<p>④一个新的阈值T^′=(m1+m2)/2</p>
+<p>⑤回到第二步，用新的阈值继续分像素数据为对象与背景像素数据，继续2～4步，</p>
+<p>⑥直到计算出来的新阈值等于上一次阈值。</p>
+<h4 id="2局部二值化">2.局部二值化</h4>
+<p>全局二值化在表现<strong>图像细节</strong>方面存在很大缺陷。为了弥补这个缺陷，出现了局部二值化方法。</p>
+<p>•局部二值化的方法就是按照一定的规则将整幅图像**划分为N个窗口，<strong>对这N个窗口中的</strong>每一个窗口再按照一个统一的阈值$T_i$**将该窗口内的像素划分为两部分，进行二值化处理。</p>
+<p><strong>3.局部自适应二值化</strong></p>
+<p>局部二值化值是没有经过合理的运算得来，一般是取该窗口的平局值。这就导致在每一个窗口内仍然出现的是全局二值化的缺陷。为了解决这个问题，就出现了局部自适应二值化方法。</p>
+<p>•局部自适应二值化的阈值是通过对该窗口像素的平均值E，像素之间的差平方P，像素之间的均方根值Q等各种<strong>局部特征</strong>，设定一个参数方程进行阈值的计算，例如：T=a*E+b*P+c*Q，其中a,b,c是自由参数。这样得出来的二值化图像就更能表现出二值化图像中的细节。</p>
+<h2 id="22图像噪声">2.2图像噪声</h2>
+<p>•图像噪声是指存在于图像数据中的不必要的或多余的干扰信息。 图像中各种妨碍人们对其信息接受的因素即可称为图像噪声 。</p>
+<p>•噪声在图像上<strong>常表现为</strong>一<strong>引起较强视觉效果</strong>的<strong>孤立像素点或像素块</strong>。是图像信息或者像素亮度的随机变化。一般，噪声信号与要研究的对象不相关，它以<strong>无用的信息</strong>形式出现，扰乱图像的可观测信息。通俗的说就是噪声让图像不清楚</p>
+<p><strong>来源</strong>1.图像获取过程中，图像传感器CCD和CMOS采集图像过程中受传感器材料属性、工作环境、电子元器件和电路结构等影响，会引入各种噪声2.图像信号传输过程中，传输介质和记录设备等的不完善，数字图像在其传输记录过程中往往会受到多种噪声的污染。</p>
+<p><strong>影响</strong>•对于数字图像信号，噪声表为或大或小的极值，这些极值通过加减作用于图像像素的真实灰度值上，对图像造成亮、暗点干扰，极大降低了图像质量，影响图像复原、分割、特征提取、图像识别等后继工作的进行。</p>
+<p><strong>脉冲噪声模型</strong></p>
+<p><img src="/assets/image-20210416190134462.png" alt="image-20210416190134462" style="zoom:40%;" /></p>
+<h3 id="221分类">2.2.1分类</h3>
+<p><strong>基于产生原因</strong>：<strong>外部噪声</strong>，即指系统外部干扰以电磁波或经电源串进系统内部而引起的噪声。如外部电气设备产生的电磁波干扰、天体放电产生的脉冲干扰等。由系统电气设备内部引起的噪声为内部噪声，如内部电路的相互干扰。<strong>内部噪声</strong>一般又可分为以下四种：(1)由光和电的基本性质所引起的噪声。(2)电器的机械运动产生的噪声。(3)器材材料本身引起的噪声。(4)系统内部设备电路所引起的噪声。</p>
+<p><strong>基于噪声与信号的关系</strong></p>
+<p>a)<strong>加性噪声</strong>g=f+n：加性噪声和图像信号强度是不相关的和</p>
+<p>b)<strong>乘性嗓声</strong>g=f+fn：乘性嗓声和图像信号是相关的，往往随图像信号的变化而变化，载送每一个象素信息的载体的变化而产生的噪声受信息本身调制。在某些情况下，如信号变化很小，噪声也不大。为了分析处理方便，常常将乘性噪声近似认为是加性噪声，而且总是假定信号和噪声是互相统计独立。</p>
+<p><strong>基于统计后的概率密度函数</strong>：比较重要；引入数学模型，就有助于运用数学手段去除噪声。在不同场景下噪声的施加方式都不同，由于<strong>在外界的某种条件下，噪声下图像-原图像（没有噪声时）的概率密度函数（统计结果）服从某种分布函数，就把它归类为相应的噪声。</strong></p>
+<h4 id="2211基于统计后的概率密度函数的噪声分类及其消除方式">2.2.1.1基于统计后的概率密度函数的噪声分类及其消除方式</h4>
+<p><strong>高斯噪声</strong>是指它的概率密度函数服从高斯分布（即正态分布）的一类噪声。如果一个噪声的幅度分布服从高斯分布，而它的功率谱密度又是均匀分布的，则称它为高斯白噪声。<strong>高斯白噪声的二阶矩不相关，一阶矩为常数，是指先后信号在时间上的相关性。</strong></p>
+<p><img src="/assets/image-20210416190707039.png" alt="image-20210416190707039" style="zoom:70%;" />其中x表示灰度值，μ表示x的平均值或期望值，σ表示x的标准差。</p>
+<p>•产生原因：a)电路各元器图像传感器在拍摄时市场不够明亮、亮度不够均匀；b)件自身噪声和相互影响；</p>
+<p>c)图像传感器长期工作，温度过高。</p>
+<p>•噪声对原图像的影响是随机的，直方图呈现的分布形式是基于统计的结果。直方图表示了（归一化后）灰度值的概率密度分布，因此可以使用直方图来表示灰度值的概率密度。</p>
+<p><strong>瑞利噪声</strong><img src="/assets/image-20210416191359199.png" alt="image-20210416191359199" style="zoom:50%;" /></p>
+<p><strong>伽马（爱尔兰）噪声</strong><img src="/assets/image-20210416191444291.png" alt="image-20210416191444291" style="zoom:50%;" />，其中 α称为形状参数（shape parameter），主要决定了分布曲线的形状，而 β称为 rate parameter（或叫 inverse scale parameter， 1/β称为scale parameter），主要决定曲线有多陡。</p>
+<p><strong>脉冲（椒盐）噪声</strong> <img src="/assets/image-20210416191636444.png" alt="image-20210416191636444" style="zoom:50%;" />一种随机出现的白点或者黑点，可能是亮的区域有黑色像素或是在暗的区域有白色像素（或是两者皆有）。成因可能是影像讯号受到突如其来的强烈干扰而产生、类比数位转换器或位元传输错误等。例如失效的感应器导致像素值为最小值，饱和的感应器导致像素值为最大值。</p>
+<p>如果b&gt;a，灰度值b在图像中将显示为一个亮点，相反，a的值将显示为一个暗点。若Pa或Pb为零，则脉冲噪声称为单极脉冲。如果Pa和Pb均不可能为零，尤其是它们近似相等时，脉冲噪声值将类似于随机分布在图像上的胡椒和盐粉微粒。由于这个原因，双极脉冲噪声也称为椒盐噪声。同时，它们有时也称为散粒和尖峰噪声。</p>
+<p><img src="/assets/image-20210416191556048.png" alt="image-20210416191556048" style="zoom:67%;" /></p>
+<p><strong>椒盐噪声是惟一一种引起退化的视觉可见的噪声类型</strong>。其他的虽然直方图相似但也很难看出区别。</p>
+<p>直方图和概率密度函数有对应关系。</p>
+<p><img src="/assets/20160629115825424.png" alt="img" style="zoom:50%;" /><img src="/assets/20160629115835408.png" alt="img" style="zoom:63%;" /></p>
+<h3 id="222图像过滤噪声-空间域滤波-频率域滤波-形态学运算">2.2.2图像过滤噪声 空间域滤波 频率域滤波 形态学运算</h3>
+<p>空间域滤波是指直接通过原图像中像素点的灰度值进行数据运算去除噪声的方法,常见的空间域滤波方法主要有均值滤波、中值滤波、高斯低通滤波等；</p>
+<p>//线性 非线性 fo(x,y)= T[ fi(x,y) ]，T是线性/非线性算子</p>
+<h4 id="中值滤波器">中值滤波器</h4>
+<p>非线性平滑滤波器，将图像中以某像素点为中心的窗口范围内的所有像素点的灰度值(包括该中心像素点)进行排序,然后将灰度序列的中间值赋给该中心像素点。</p>
+<p>其他线性滤波考量每个像素，中值滤波会忽略那些相对邻域(此处设为n*n窗口)内大部分像素点而言,亮度偏暗或偏亮,且所占区域小于总像素点一半(即n/2)的像素点的影响,从而有效滤除孤立的噪声点。</p>
+<p>中值滤波法对于某些类型的随机噪声，如图像扫描噪声等等，具有良好的去噪效果，特别是在滤除噪声的同时，能够保护信号的边缘，使之不被模糊。这些优良特性是线性滤波方法所不具有的。中值滤波的算法比较简单，也易于用硬件实现。</p>
+<h4 id="超限中值滤波法">超限中值滤波法</h4>
+<p>相对中值滤波保留图像细节</p>
+<p>•基于个数的中值滤波法：通过设定阈值<strong>T限制</strong>邻域内像素点与中心像素点灰度差绝对值<strong>的范围，从而将含噪图像中的像素点的属性划分为</strong>平坦区域、图像边缘、噪点三类。</p>
+<h4 id="均值滤波邻域平均法">均值滤波/邻域平均法</h4>
+<p><strong>线性滤波</strong>算法，它是指在图像上对目标像素给一个模板，该模板包括了其周围的临近像素（以目标象素为中心的周围8个像素，构成一个滤波模板，即去掉目标像素本身），再用模板中的全体像素的平均值来代替原来像素值。</p>
+<p>对噪声图像特别是有大的孤立点的图像非常敏感，即使有极少数量点存在较大差异也会导致平均值的明显波动。不能很好地保护图像细节，在图像去噪的同时也破坏了图像的细节部分，从而使图像变得模糊，模糊程度与邻域半径成正比不能很好地去除噪声点。特别是椒盐噪声。</p>
+<h4 id="超限邻域平均法">超限邻域平均法</h4>
+<p>如果某个像素的灰度值大于其邻域像素的平均值，且达到了一定水平，则判断该像素为噪声，继而用邻域像素的均值取代这一像素值</p>
+<p><img src="/assets/image-20210416193522476.png" alt="image-20210416193522476" style="zoom:67%;" /></p>
+<p>一般的,“超限邻域平均法”比一般邻域平均法的效果要好</p>
+<p>在操作中对窗口的大小及门限的选择要慎重，T太小，噪声消除不干净；T太大，易使图像模糊</p>
+<p>在实际应用中一般选用3×3窗口加权均值滤波器</p>
+<p><img src="/assets/image-20210416193638514.png" alt="image-20210416193638514" style="zoom:50%;" /></p>
+<h4 id="高斯滤波">高斯滤波</h4>
+<p>1、定义 <strong>线性滤波器</strong>，适用于消除高斯噪声，广泛应用于图像处理的减噪过程。</p>
+<p>2、作用原理 和均值滤波器类似，用一个模板（或称<strong>卷积</strong>、掩模）扫描图像中的每一个像素，用模板确定的<strong>邻域内像素的加权平均灰度值</strong>去<strong>替代模板中心像素点</strong>的值。</p>
+<p>3、系数特征 均值滤波器的模板系数都是1；而高斯滤波器的模板系数，则<strong>随着距离模板中心的增大而系数减小</strong>（高斯分布）。所以，高斯滤波器相比于均值滤波器对图像个模糊程度较小。</p>
+<p><strong>卷积核：高斯核</strong> 理论上，高斯分布在所有定义域上都有非负值，这就需要一个无限大的卷积核。实际上，仅需要取均值周围3倍标准差内的值，以外部份直接去掉即可。</p>
+<p><img src="/assets/image-20210416194507618.png" alt="image-20210416194507618" style="zoom:60%;" /></p>
+<p>4、真实图像在空间内的像素是缓慢变化的，因此临近点的像素变化不会很明显，所以高斯滤波在保留信号的条件下减少噪声。这种方法<strong>在接近边缘处无效</strong>，因此高斯滤波会破平边缘。但是，高斯平滑滤波器对于抑制服从正态分布的噪声仍非常有效。</p>
+<p>5、性质 （1）二维高斯函数具有<strong>旋转对称性</strong>，即<strong>滤波器在各个方向上的平滑程度相同</strong>一般来说，一幅图像的边缘方向是事先不知道的，因此，在滤波前是无法确定一个方向上比另一方向上需要更多的平滑．旋转对称性意味着高斯平滑滤波器在后续<strong>边缘检测中不会偏向任一方向</strong>（2）高斯函数是<strong>单值函数</strong>，高斯滤波器用像素邻域的加权均值来代替该点的像素值，而每一邻域像素点权值是随该点与中心点的距离单调增减的（3）高斯函数的傅立叶变换频谱是单瓣的；既能保留低频分量，又能保留高频分量，因此能比较好地保留图像的低频和高频信息，并在保留图像信息和滤出噪声之间找到一个平衡点。（4）高斯<strong>滤波器宽度(决定着平滑程度)<strong>是由</strong>参数σ</strong>表征的。σ越大，高斯滤波器的频带就越宽，平滑程度就越好。通过调节平滑程度参数σ，可在图像特征过分模糊(过平滑)与平滑图像中由于噪声和细纹理所引起的过多的不希望突变量(欠平滑)之间取得折衷（5）由于<strong>高斯函数的可分离性</strong>，较大尺寸的高斯滤波器可以得以有效地实现．<strong>二维高斯函数卷积可以分两步来进行</strong>，首先将图像与一维高斯函数进行卷积，然后将卷积结果与方向垂直的相同一维高斯函数卷积．因此，二维高斯滤波的<strong>计算量随滤波模板宽度成线性增长</strong>而不是成平方增长．</p>
+<p>6、特征</p>
+<p>1)一个高斯函数跟另外一个高斯函数的卷积仍然是一个高斯函数，A*B=C  C的标准差的平方是A和B的标准差的平方和，也就是说卷积后的高斯函数更宽，模糊的效果更明显（直观上看，连续做高斯模糊运算，图像会越来越模糊） 2)高斯函数的傅立叶变换仍然是一个高斯函数，如果原来的高斯函数越宽（标准差越大），变换后的高斯函数就越窄（标准差越小），也就是说一个越宽的高斯函数，低通（高阻）滤波的效果越明显，处理后的图像的细节就越不清楚（更模糊）</p>
+<div style="page-break-after:always;"></div>
+<h1 id="第三章-图像增强">第三章 图像增强</h1>
+<h2 id="31-图像增强概述">3.1 图像增强概述</h2>
+<h3 id="311-定义">3.1.1 定义</h3>
+<p>图像增强(Image enhancement)是图像处理的基本内容之一。图像增强是指按特定的需要突出一幅图像中的某些信息，同时，削弱(weaken)或去除(eliminate)某些不需要的信息。这类处理是为了某种应用目的去改善图像质量，处理的结果更适合于人的视觉特性或机器识别系统。增强处理并<strong>不能增加原始图像的信息</strong>，而只能<strong>增强对某种信息的辨识能力</strong>，并且这种处理有<strong>可能损失一些其它信息</strong>。</p>
+<h3 id="312-应用">3.1.2 应用</h3>
+<p>第一类是改善图像的视觉效果；第二是突出图像的特征，便于计算机处理</p>
+<p>图像在生成、获取、传输等过程中,往往会发生质量的损伤，造成<strong>图像质量的损坏的因素</strong>有：
+图像传输等过程中,由于信道带宽的限制所造成的图像模糊；图像中的噪声干扰
+信号减弱，对比度下降；成象条件的欠缺，获取图像的清晰度偏低</p>
+<p><strong>图像质量退化的原因</strong>
+对比度问题：对比度局部或全部偏低,影响图像视觉
+噪声干扰问题：使图像蒙受干扰和破坏
+清晰度下降问题,使图像模糊不清,甚至严重失真</p>
+<p>图像增强并<strong>不去估计图像实际退化的过程和实际退化的因素</strong>而加以矫正，而<strong>只考虑图像退化的一般性质</strong>，加以修正，以求得一般的或平均地图像质量的改进。例如，边缘锐化去模糊、平滑去噪声、直方图修正对比度增强等</p>
+<h2 id="32-图像增强方法">3.2 图像增强方法</h2>
+<p><img src="/assets/image-20210518093527644.png" alt="image-20210518093527644"  /></p>
+<h2 id="33-灰度变换点运算">3.3 灰度变换/点运算</h2>
+<p>空间域处理 $g(x,y)=T[f(x,y)]$</p>
+<p>当每次处理只基于一点 $s=T(r)$，$s,r$为该点像素值——点运算</p>
+<p>应用场景：曝光不足或过度，或由于成像设备的非线性和图像记录设备动态范围太窄等因素，会产生对比度不足的弊病，使图像中的细节分辨不清可以使用灰度变换方法解决这些问题</p>
+<p>灰度变换定义：将一个灰度区间映射到另一个灰度区间的变换称为灰度变换</p>
+<p>在图像增强方面的作用：使图像动态范围加大，图像对比度扩展，图像清晰，特征明显</p>
+<p>灰度级变换的应用：亮度调整——加亮、减暗图像；对比度拉伸——提高、降低对比度；灰度级切片，主要用于突出某个特定的灰度范围，从而增强某个专门的特征</p>
+<h3 id="331线性灰度变换">3.3.1线性灰度变换</h3>
+<h4 id="加常数">加常数</h4>
+<p>作用：压缩动态范围，降低对比度</p>
+<p><img src="/assets/image-20210518095726076.png" alt="image-20210518095726076"  /></p>
+<h4 id="图像反转反色">图像反转（反色）</h4>
+<p>灰度级范围为$[0,L-1]$的图像：$s=L-1-r$</p>
+<h4 id="乘常数">乘常数</h4>
+<p>动态范围压缩/扩展</p>
+<p><img src="/assets/image-20210518100201061.png" alt="image-20210518100201061"  /></p>
+<h4 id="一般形式">一般形式</h4>
+<p><img src="/assets/image-20210518100246602.png" alt="image-20210518100246602" style="zoom:50%;" /></p>
+<p><img src="/assets/image-20210518100329461.png" alt="image-20210518100329461" style="zoom:50%;" /></p>
+<h3 id="332-分段线性灰度变换">3.3.2 分段线性灰度变换</h3>
+<h4 id="对比度拉伸拓展">对比度拉伸/拓展</h4>
+<p>将感兴趣的灰度范围线性拓展，相对抑制不感兴趣的灰度区域。</p>
+<p><img src="/assets/image-20210518100429289.png" alt="image-20210518100429289" style="zoom:50%;" /></p>
+<h4 id="削波">削波</h4>
+<p>削波(cliping)可以看做是对比度拓展的一个特例。</p>
+<p><img src="/assets/image-20210518100904729.png" alt="image-20210518100904729" style="zoom:80%;" /></p>
+<h4 id="阈值化">阈值化</h4>
+<p>阈值化（thresholding）可以看作是削波的一个特例。</p>
+<p><img src="/assets/image-20210518100925182.png" alt="image-20210518100925182" style="zoom:67%;" /></p>
+<p>得到二值黑白图像</p>
+<h4 id="灰度级分层灰度窗口变换灰度切分">灰度级分层/灰度窗口变换/灰度切分</h4>
+<p>将某一区间的灰度级和其它部分（背景）分开。</p>
+<p><img src="/assets/image-20210518122509164.png" alt="image-20210518122509164" style="zoom:33%;" /></p>
+<p>将兴趣区域显示为一个值，其他区域另一个值；或背景不变，兴趣区域灰度变亮/变暗。</p>
+<h4 id="位图切割比特平面分层">位图切割/比特平面分层</h4>
+<p><img src="/assets/image-20210518194648999.png" alt="image-20210518194648999" style="zoom:40%;" /></p>
+<p>高比特平面包含视觉上重要的大多数数据；低比特平面贡献更精细的灰度细节。</p>
+<p>分层方式：灰度信息由n个比特位存储的图像，根据每个二进制位的取值(0/1)得到n个层；其实就是将比特深度将图像矩阵“切开”</p>
+<h3 id="333-非线性灰度变换">3.3.3 非线性灰度变换</h3>
+<p><img src="/assets/image-20210518200656670.png" alt="image-20210518200656670"  /></p>
+<h4 id="指数函数变换">指数函数变换</h4>
+<h4 id="对数函数变换">对数函数变换</h4>
+<p><img src="/assets/image-20210518201054849.png" alt="image-20210518201054849" align="left" style="zoom:20%;" />通用形式：$s=clog(1+r)$</p>
+<p>图中对数变换：将输入中范围较窄的低灰度值映射为输出中较宽范围的灰度值；扩展暗像素，<strong>压缩高灰度值的动态范围</strong>。</p>
+<p>应用：标定傅里叶频谱（图像显示系统一般显示不出来动态范围大的图像）</p>
+<h4 id="幂函数变换伽马变换">幂函数变换/伽马变换</h4>
+<p>通用形式：$s=cr^{\gamma}$ 用于压缩和扩展灰度值范围</p>
+<p><em>lookup</em> <em>table</em> (<em>LUT)</em> 查找表 灰度级变换定义了输入像素值与输出像素之间的映射关系，通常通过查表实现。可用户自定义转换（一般功能包括直方图均衡化,伽马校正,对数修正,指数修正）</p>
+<h2 id="34-基于直方图的图像增强">3.4 基于直方图的图像增强</h2>
+<h3 id="341-灰度直方图简称直方图">3.4.1 灰度直方图（简称直方图）</h3>
+<p>定义：对一幅数字图像，若对应于每一灰度值，统计出具有该灰度值的象素数，并据此绘出象素数-灰度值图形。有时直方图亦采用某一灰度值的象素数占全图总象素数的百分比作为纵坐标。</p>
+<p>性质：1. 直方图只包含概率，丢失了位置信息。 2.图像与直方图是<strong>多对一</strong>的映射关系。3. 一幅图像各子区的直方图之和就等于该图全图的直方图。</p>
+<p>直方图修正：通过灰度映射函数，$G_{new}=T(G_{old})$将原灰度直方图改造成所希望的直方图。</p>
+<h3 id="342-直方图均衡化">3.4.2 直方图均衡化</h3>
+<p>给定图像的分布$\Rightarrow$均匀直方图分布；均衡化后，图像直方图是平直的，即各灰度级具有相同的出现频次，或各灰度级具有均匀的概率分布。图像看起来就更清晰了（<strong>图像对比度增强</strong>）。</p>
+<h4 id="直方图均衡化灰度变换函数的条件">直方图均衡化灰度变换函数的条件</h4>
+<p>$$
+s=T(r),0\leq r \leq L-1
+$$</p>
+<p>(a) $T(r)$在区间$0\leq r \leq L-1$严格递增$\Rightarrow$ 1️⃣保证输出灰度值不少于输入2️⃣保证反函数存在，即s到r的反映射一一对应，消除二义性</p>
+<p>(b)$0\leq r \leq L-1$时 $0\leq T(r) \leq L-1$
+灰度变换不影响像素的位置分布，也不会增减像素数目：</p>
+<p><img src="/assets/image-20210518205025301.png" align='middle' alt="image-20210518205025301" style="zoom:50%;" /></p>
+<h4 id="直方图均衡化步骤">直方图均衡化步骤</h4>
+<p>1.求出原图f的灰度直方图h</p>
+<p>2.求出图像f的总体像素个数，$N_f=n×m$</p>
+<p>3.计算每个灰度$r_k$的像素个数在整个图像中出现的概率 $p (r_k),k=0,1…L-1$</p>
+<p>4.理论灰度变换函数</p>
+<p>\\连续情况：$s=T(r)=(L-1)\int_0^r p(w)dw $</p>
+<p>离散：$s_k=T(r_k)=(L-1)\Sigma_{j=0}^kp(r_j),k=0,1,2,&hellip;,L-1$</p>
+<p>5.将s近似到最接近的整数</p>
+<p><strong>N.B.</strong> $r_k$可能被归一化为$r_k/(L-1)$，此时s近似到最近的$r_k$，在实际计算中请注意。</p>
+<h4 id="缺点">缺点</h4>
+<p>1.不能用于交互方式的图像增强应用，因为直方图均衡化只能产生唯一一个结果，恒定值直方图近似</p>
+<p>2.并不总是能产生希望的结果。尤其当原始图像的直方图十分集中时，直方图均衡后将可能产生假边沿或区域，同时增强图像的条纹或斑点</p>
+<h3 id="343-直方图匹配规定化">3.4.3 直方图匹配/规定化</h3>
+<p>令$r_k$为原始图像的灰度密度函数，$ z_k$是期望通过匹配的图像灰度密度函数</p>
+<p>目标：找到一个灰度变换H $z=H(r)$</p>
+<p>使得经过H对原图像进行灰度变换后，结果图像z具有期望的直方图</p>
+<h4 id="算法设计">算法设计</h4>
+<h5 id="连续灰度级情况">连续灰度级情况</h5>
+<p>1.直方图均衡化<img src="/assets/image-20210518212718078.png" alt="image-20210518212718078" style="zoom:50%;" /></p>
+<p>2.$z=G^{-1}(u)$</p>
+<p>3.根据均衡化概念，s, u的直方图都是常量，由此可用s替代u进行上述逆变换：$z=G^{-1}(s)=G^{-1}(T(r))\Rightarrow H$</p>
+<h5 id="离散灰度级情况">离散灰度级情况</h5>
+<p>1.直方图均衡化；可计算得到两张映射表：r→s；u→z</p>
+<p>2.从s, u中选取最接近的一对$s_j,u_k$，使$u_k \approx s_j$</p>
+<p>3.在从两张表中查得对应的$r_j, z_k$</p>
+<p>4.由此建立从r到z的映射关系r→z，实现数字图像的直方图匹配</p>
+<h3 id="344-基于直方图统计特性的增强局部增强">3.4.4 基于直方图统计特性的增强/局部增强</h3>
+<h5 id="直方图统计特性">直方图统计特性</h5>
+<p>令$p(r) $为原始图象的灰度密度函数</p>
+<p>统计特性：均值m；n阶中心矩$\mu_n(r)=\Sigma_{i=0}^{L-1}(r_i-m)^np(r_i)$</p>
+<p>m平均灰度； 方差$\sigma^2$平均对比度</p>
+<h5 id="局部增强">局部增强</h5>
+<p>利用均值、方差的前述特性，通过对图像局部区域亮度、对比度的判断，实现有选择性地增强</p>
+<p>1️⃣在当前像素r(x,y)周围，确定一个邻域范围S(x,y) $\rightarrow$ 2️⃣统计该局部区域的统计特性 p m $\sigma^2$ $\rightarrow$ 3️⃣ 确定算法<img src="/assets/image-20210518214531130.png" alt="image-20210518214531130" style="zoom:67%;" /></p>
+<p>$M_G$：整幅图像的灰度平均值； $D_G$ ：整幅图像的灰度级方差 $k0, k1, k2$：局部增强加权因子，用以确定是否对当前像素f(x,y)进行增强</p>
+<h2 id="35-彩色图像增强">3.5 彩色图像增强</h2>
+<h3 id="351-彩色模型颜色空间">3.5.1 彩色模型（颜色空间）</h3>
+<h4 id="rgb">RGB</h4>
+<p>CCD技术直接感知R,G,B三个分量；是图像成像、显示、打印等设备的基础</p>
+<h4 id="hsi-色调饱和度亮度">HSI (色调、饱和度、亮度）</h4>
+<p>I分量与图像的彩色信息无关，H和S分量与人感受颜色的方式是紧密相连的</p>
+<p>将亮度(I)与色调（H）和饱和度（S）分开，避免颜色受到光照明暗(I)等条件的干扰，仅仅分析反映色彩本质的色调和饱和度</p>
+<p>广泛用于计算机视觉、图像检索和视频检索</p>
+<h4 id="yuv">YUV</h4>
+<p>Y指亮度(Brightness),即灰度值；U和V指色调</p>
+<p>Y分量可提供黑白电视机的所有影像信息；用于彩色电视广播，被欧洲的电视系统所采用（属于PAL系统）</p>
+<h4 id="ycbcr">YCbCr</h4>
+<p>Y指亮度,与YUV的Y相同；Cb和Cr由U和V调整得到；JPEG采用的彩色空间</p>
+<h4 id="彩色空间转换">彩色空间转换</h4>
+<p><strong>RGB $\rightarrow$ HSI</strong></p>
+<p><img src="/assets/image-20210518215210711.png" alt="image-20210518215210711" style="zoom:50%;" /></p>
+<p><strong>HSI $\rightarrow$ RGB</strong></p>
+<p><img src="/assets/image-20210518215223907.png" alt="image-20210518215223907" style="zoom:50%;" /></p>
+<p><strong>RGB $\rightarrow$ YUV</strong></p>
+<p><img src="/assets/image-20210518215328057.png" alt="image-20210518215328057" style="zoom:40%;" /></p>
+<p><strong>RGB $\rightarrow$ YCbCr</strong></p>
+<p><img src="/assets/image-20210518215403470.png" alt="image-20210518215403470" style="zoom:50%;" /></p>
+<h4 id="颜色平衡">颜色平衡</h4>
+<p><strong>灰度平衡</strong>：使RGB彩色设备的彩色分量混合后，颜色失去色调和饱和度产生灰色，这种颜色混合效果被称为灰度平衡，一般情况下，等量的RGB产生灰色。</p>
+<p><strong>彩色平衡</strong>：纠正偏色的过程；通过调整灰平衡，使偏色区域恢复成灰色实现；当灰色的亮度达到一定程度时，显现为白色，因此有时亦称之为白平衡调整</p>
+<p><strong>判断偏色</strong>：1️⃣ 检查图像的灰平衡（白平衡）情况，即检查在现实中应该是灰色（白色）的物体，在图像中是否是灰色（白色）；2️⃣ 检查高饱和度的颜色是否正常，即检查在现实中应该是纯色的物体，在图像中是否有偏色</p>
+<p><em>e.g.某黑色区域的平均取值是：R = 0 ，G = 12，B = 7说明有青色色偏</em></p>
+<div style="page-break-after:always;"></div>
+<h1 id="第六章-图像分割">第六章 图像分割</h1>
+<h2 id="61--图像分割基本介绍">6.1  图像分割基本介绍</h2>
+<ol>
+<li>图像处理过程</li>
+</ol>
+<p><img src="/assets/image-20210419100146477.png" alt="image-20210419100146477" style="zoom:60%;" /></p>
+<ol start="2">
+<li>图像分割的方法：</li>
+</ol>
+<ul>
+<li>基于<strong>边缘检测</strong>的方法（基于<strong>灰度值的不连续性</strong>）</li>
+</ul>
+<p>先找出局部特性的不连续性，再将它们连成边界，边界将图像分成不同区域（通过连通边界进行区域分割）。</p>
+<p>如：边缘检测分割法、Hough变换等。</p>
+<ul>
+<li>基于<strong>区域生成</strong>的方法（基于<strong>灰度值的相似性</strong>）</li>
+</ul>
+<p>将像素分成不同的区域（通过同质性基元的聚类进行区域分割）</p>
+<p>如：<strong>阈值分割法，区域生长</strong>、分裂合并、形态学分割等。</p>
+<h2 id="62-边缘检测">6.2 边缘检测</h2>
+<p>1、滤波
+边缘检测的算法主要是基于图像强度的一阶和二阶导数，导数对噪声很敏感，因此必须采用滤波器来改善。主要有高斯滤波，采用离散化的高斯函数产生一组归一化的高斯核，然后基于高斯核函数对图像灰度矩阵的每一个点进行加权求和。
+2、增强
+增强边缘的基础是确定图像各点邻域强度的变化值。增强算法可以将图像灰度点邻域强度值有显著变化的点凸显出来，通过计算梯度幅值来确定 。通常我们用小区域模板进行卷积来计算，有 Sobel 算子、 Roberts 算子、 Prewitt 算子等。
+3、检测
+经过增强的图像，往往邻域中有很多点的梯度值比较大，所以采用某种方法对这些点进行取舍， 常</p>
+<h2 id="63--阈值分割法">6.3  阈值分割法</h2>
+<p><strong>阈值分割是直接对灰度图进行计算的分割方法。</strong></p>
+<h3 id="631-阈值分割原理">6.3.1 阈值分割原理</h3>
+<ul>
+<li>
+<p>通式$g(x,y)=\begin{cases}  &amp;Z_E     ,\ f(x,y)∈Z\ 
+&amp; Z_B, \ else
+\end{cases}$	$Z_E=f(x,y)\rightarrow$半阈值化</p>
+</li>
+<li>
+<p>类间最大方差原则：取最佳阈值时，两部分之间的差别最大，此时错分概率最小</p>
+</li>
+</ul>
+<p><img src="/assets/image-20210419111349334.png" alt="image-20210419111349334" style="zoom:33%;aligned" />如图所示，若物体暗，背景亮。门限选双峰间的凹谷</p>
+<ul>
+<li>分类</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>阈值类型</th>
+<th>适用情况</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全局阈值</td>
+<td>图像中目标和背景有明显差别，而且这种差别在图像中的任何位置都几乎相同。</td>
+</tr>
+<tr>
+<td>局部阈值</td>
+<td>目标和背景的对比度随着位置的不同可能有较大变化(比如光照不均)。</td>
+</tr>
+<tr>
+<td>单阈值</td>
+<td>图像中只有单个目标和单个背景的情况，或者只对图像进行简单的划分。</td>
+</tr>
+<tr>
+<td>多阈值</td>
+<td>图像中存在多个目标或多个背景的情形，或者对图像进行多个层次的划分。</td>
+</tr>
+<tr>
+<td>直接阈值</td>
+<td>对比度较大的图像，图像中在区域内部灰度基本一致，而不同区域之间灰度有较大的差异。</td>
+</tr>
+<tr>
+<td>间接阈值</td>
+<td>图像中的目标和背景差别不是很大，如果不作处理直接选取阈值的话，用这个阈值不能很好地分割图像。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="632-阈值处理">6.3.2 阈值处理</h3>
+<h4 id="6321-基本全局阈值处理">6.3.2.1 基本全局阈值处理</h4>
+<p>1、为全局阈值T选取一个初始估计值</p>
+<p>2、分割图像。产生两组像素G1和G2</p>
+<p>3、对G1和G2中的像素分别计算平均灰度值（均值）m1和m2</p>
+<p>4、在m1和m2之间计算新的阈值 $T=\frac{1}{2}(m_1+m_2)$</p>
+<p>5、重复2-4，直到连续迭代中的两个T的差小于预定义的ΔT</p>
+<h4 id="6322-todo-otus方法的全局阈值处理类间最大方差法">6.3.2.2 <strong>TODO</strong> Otus方法的全局阈值处理/类间最大方差法</h4>
+<p>基本思想：经过适当的阈值化的两个类，就其像素灰度值而言，应当是截然不同的。同理，就其灰度值而言，给出最佳类间分离的阈值将是最佳的阈值。</p>
+<p>求解过程<strong>不需要人为设定其他参数</strong>，完全由计算机自动选取。它不仅适用于两个区域的分割，也可以推广到多个区域的情形。</p>
+<h3 id="633-改进">6.3.3 改进</h3>
+<h4 id="a-图像平滑改进">a 图像平滑改进</h4>
+<p>噪声会将简单的阈值处理问题变得不可解决，当噪声不能在源头减少，并且需要用阈值处理分割图像时，通常在阈值处理之前平滑图像，以增强阈值处理的性能。</p>
+<h4 id="b-边缘改进">b 边缘改进</h4>
+<p>边界明显，但是整体灰度值相近：求梯度，根据梯度幅度图像得到的模板图像P，原图像和P相乘得到的结果进行处理</p>
+<h4 id="c-可变阈值处理">c 可变阈值处理</h4>
+<h5 id="i-基于局部图像性质">(i) 基于局部图像性质</h5>
+<p>在图像的每个点(x,y)，根据坐标的一个<strong>邻域</strong>的一条或多条规定性质计算阈值。</p>
+<p>$T_{xy}=aσ_{xy}+bm_{xy}=aσ_{xy}+bm_G$，其中a、b大于0</p>
+<h5 id="ii-基于移动平均">(ii) 基于移动平均</h5>
+<p>一维数组 序列信息 沿一幅图像的扫描行计算平均</p>
+<p>z形扫描$(m_{ij})_{n\times n}$ 得到 $[m_{11},m_{12},&hellip;,m_{1n},m_{2n},m_{2n-1}]$</p>
+<p>第$k+1$次扫描遇到的点的灰度：</p>
+<p><img src="/assets/image-20210518121255049.png" alt="image-20210518121255049" style="zoom:50%;" /></p>
+<p>阈值$T_{xy}=c\times m_{xy}$</p>
+<h2 id="64-区域分割法">6.4 区域分割法</h2>
+<h3 id="641-区域生长-bottom-up">6.4.1 区域生长 Bottom-up</h3>
+<p><strong>步骤</strong>
+1、种子像素作为生长的起点；
+2、确定一个相似性标准（评判是否合并的条件）；
+3、按照相似性标准，将种子像素的邻域中具有与种子相同和相似性质的像素，合并到种子的区域中；
+4、将新像素当作新的种子像素继续进行上面的过程，直到再没满足条件的像素可被包括进来为止，这样就完成了一个区域的生长；
+5、按此方法，完成其它区域的生长，直到将整幅图像完全分割。</p>
+<p><strong>关键</strong></p>
+<ul>
+<li>
+<p>种子选取（利用特征或先验知识）
+最亮的像素；直方图极大值；聚类中心处像素</p>
+</li>
+<li>
+<p>相似性准则(生长准则)确定
+区域灰度差；区域内灰度分布特性；颜色、纹理、尺寸形状等。</p>
+</li>
+<li>
+<p>生长停止条件确定
+区域大小；区域与候选像素相似性；正在增长区域的形状。</p>
+</li>
+</ul>
+<p><strong>优点</strong>
+计算简单，通常能将具有相同特征的联通区域分割出来。在没有先验知识可以利用时，可以取得最佳的性能</p>
+<p><strong>缺点</strong>
+对噪音敏感，导致抽取的区域有空洞</p>
+<h3 id="642-区域分离与聚合-up-down">6.4.2 区域分离与聚合 Up-down</h3>
+<p><strong>步骤</strong>
+1、进行一次分裂；
+2、考察所有相邻区域是否可以合并，若可以，则将其一一合并；
+3、重复步骤1、2的分裂合并过程，直到分裂和合并都不能再进行为止。</p>
+<p>注意：合并时一般先考虑同一个父节点下的4个区域，之后再扩展到其它父节点下同层次的区域。</p>
+<p><strong>难点</strong>
+分裂与合并的准则不好判断。分裂的准则又称为均匀性测试准则，用于判断该块图像是否需要分裂。
+当均匀性测试准则选择不当时，很容易会引起“方块效应”。</p>
+<h3 id="643-空间聚类k均值聚类">6.4.3 空间聚类/K均值聚类</h3>
+<p>将观测集合Q划分为k个满足如下最优准则的不想交的聚类集合$𝐶={𝐶_1,𝐶_2,…𝐶_𝑘}$:<img src="/assets/image-20210419113324691.png" alt="image-20210419113324691" style="zoom:33%; " /></p>
+<p>1、初始化算法：规定一组初始均值$m_i (1),i=1,2,…,k$</p>
+<p>2、将样本分配给聚类：将每个样本分配给均值最接近的聚类集合（关系被任意求解，但样本只分配给一个聚类）：</p>
+<p>$z_q→C_i$,如果$‖z_q-m_i^2 ‖&lt;‖z_q-m_j ‖^2$,$j=1,2,…,k(j≠i);q=1,2,…,Q$</p>
+<p>3、更新聚类中心（均值）：</p>
+<p>$m_i=1/|C_i | ∑129_(z∈C_i)▒z,i=1,2,…,k$</p>
+<p>4、完备性检验：计算当前步骤和前几步中平均向量之间的差的欧几里得范数。计算残差E，即k个范数之和。若E≤T，其中T是一个规定的非负阈值，则停止。否则，返回步骤2.</p>
+<h3 id="644-超像素的区域分割">6.4.4 超像素的区域分割</h3>
+<div style="page-break-after:always;"></div>
+<h1 id="第七章-图像的特征提取">第七章 图像的特征提取</h1>
+<p>定位 初始关键点 localize where to describe features 描述 如何描述这些区域/点</p>
+<h2 id="71-背景知识">7.1 背景知识</h2>
+<p>图像分析系统的基本构成</p>
+<p><img src="/assets/image-20210429143954884.png" alt="image-20210429143954884" style="zoom:30%;" /></p>
+<p>在图像分割后，为了进一步的处理，分割后的图像一般要进行形式化的表达和描述。
+解决形式化表达问题一般有两种选择：
+1、根据区域的外部特征来进行形式化表示
+2、根据区域的内部特征（比较区域内部的象素值）来进行形式化表示</p>
+<p>选择表达方式，要本着使数据变得更有利于下一步的计算工作。下一步工作是基于所选的表达方式描述这个区域，一般情况下：
+1、如果关注的焦点是形状特性，选择外部表示方式
+2、如果关注的焦点是反射率特性，如颜色、纹理时，选择内部表示方式。
+3、所选表示方式，应该对尺寸、变换、旋转等变量尽可能的不敏感</p>
+<h2 id="72-todo边界预处理">7.2 <strong>TODO</strong>边界预处理</h2>
+<h3 id="721-区域骨架抽取">7.2.1 区域骨架抽取</h3>
+<p>1、Blum的中轴变换方法（MAT：Medial Axis Transform）
+设:𝑅是一个区域，𝐵为𝑅的边界，在𝑅中寻找点𝑝(x, y)，使𝑝最接近于B。如果𝑝有多这个这样的临点（最近邻点&gt;=2），则𝑝点形成的轨迹为R的中轴（骨架）。
+存在问题：计算量大</p>
+<h2 id="73-todo特征描述子">7.3 <strong>TODO</strong>特征描述子</h2>
+<h3 id="731-边界特征描述子">7.3.1 边界特征描述子</h3>
+<h3 id="732-区域特征描述子">7.3.2 区域特征描述子</h3>
+<h4 id="7321-基本描述子">7.3.2.1 基本描述子</h4>
+<h4 id="7322-纹理描述基于直方图基于统计方法基于谱方法">7.3.2.2 纹理描述(基于直方图、基于统计方法、基于谱方法)</h4>
+<p><strong>1、定义</strong> 纹理特征刻画了图像中重复出现的局部模式与他们的排列规则，常用于图像分类和场景识别。</p>
+<p><strong>2、特点</strong> 反映物体表面的特性，无法完全反映出物体的本质属性，所以仅用纹理特征无法获得图像的高层次内容。</p>
+<p><strong>3、基于直方图的纹理测度</strong></p>
+<p>令z是一个表示灰度的随机变量，$𝑝(𝑧_i), i = 0,1,2…𝐿$是对应的<strong>归一化</strong>直方图，其中𝐿是不同灰度级的数量</p>
+<ul>
+<li>均值 $m=\sum_{i=0}^{L-1}z_ip(z_i) $</li>
+<li>𝑍相对于平均值的𝑛阶矩 $\mu_n=\sum_{i=0}^{L-1}(z_i-m)^np(z_i) $</li>
+<li>一致性测度  $U=\sum_{i=0}^{L-1}p^2(z_i) $</li>
+<li>方差 $\sigma^2(z)=\mu_2(z)$</li>
+<li>相关性测度 $R=1-\frac{1}{1+\sigma^2(z)},$其中$\sigma^2(z)$最好除以$(L-1)^2$进行归一化。</li>
+<li>熵  $e(z)=-\sum_{i=0}^{L-1}p(z_i)log_2p(z_i)$</li>
+</ul>
+<p>U对所有灰度级都相等的图像有最大值（极大 一致性） ， 并从最大值开始降低。熵是可变性的测度，对恒定图像其为零。</p>
+<p><strong>4、基于统计方法的纹理描述</strong></p>
+<p><strong>（1）灰度共生矩阵</strong>(GLCM, Gray-level co-occurrence matrix)通过计算灰度图像得到它的共生矩阵，然后再计算所得到的共生矩阵的部分特征值，来分别代表图像的某些纹理特征。</p>
+<p><strong>（2）作用</strong> 灰度共生矩阵能反映图像灰度<strong>关于方向、相邻间隔、变化幅度</strong>等综合信息（直方图无法体现），它是分析图像的<strong>局部模式</strong>和它们<strong>排列规则的基础</strong>。</p>
+<p><strong>（3）灰度共生矩阵构建方法</strong>
+1、矩阵$G$大小为灰度级的数量。
+8比特(256灰度级）大小为256x256。为减少计算量，也会采取将灰度级量化，减小数据量
+2、$g_{ij}$表示灰度为$z_i$和$z_j$的像素对在Q规定的位置上出现的次数。Q是定义两个像素的相对位置的算子</p>
+<p><strong>（4）共生矩阵特性描述</strong>
+$$
+p_{ij}=\frac{g_{ij}}{n}
+$$</p>
+<p>$n$满足Q的像素对的总数（G元素加和）</p>
+<p><img src="/assets/image-20210429141308597-1619676790611.png" alt="image-20210429141308597"  /></p>
+<table>
+<thead>
+<tr>
+<th><img src="/assets/image-20210429141802556.png" alt="image-20210429141802556" style="zoom:53%;" /></th>
+<th><img src="/assets/image-20210429141848754-1619677130509.png" alt="image-20210429141848754" style="zoom:33%;" /></th>
+<th><img src="/assets/image-20210429141924483.png" alt="image-20210429141924483" style="zoom:33%;" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>随机图像的共生矩阵为随机矩阵</td>
+<td>正弦波的对称性，像素对𝑧i, 𝑧j 的数量与产生对称共生矩阵的像素对𝑧j,𝑧i 数量相同</td>
+<td>很多值沿主对角线也是分组的，但是分布比G2密集，这一性质表明图像的灰度值变化很大</td>
+</tr>
+</tbody>
+</table>
+<p><strong>4、谱方法</strong>（了解）
+傅里叶谱非常适合描述图像中周期或半周期二维模式的方向性。这样的全局纹理模式很容易区分为谱中高能量的集中爆发。</p>
+<p>用于纹理描述的傅里叶谱的特点
+1、谱中的突出峰给出纹理模式的主方向
+2、频率平面上的峰值位置给出纹理模式的基本空间周期
+3、通过滤波可以消除任何周期分量</p>
+<p>谱特征的检测和解释</p>
+<p>通常可在极坐标中将谱表示为函数𝑆(𝑟, 𝜃)。对于每个方向𝜃，𝑆(𝑟, 𝜃)可表示为一维函数$𝑆_{\theta}(𝑟)$
+𝜃固定时，分析$𝑆_{\theta}(𝑟)$得到从原点到径向的方向的谱的特性（如峰的出现）<img src="/assets/image-20210429144759934.png" alt="image-20210429144759934" style="zoom:43%;" /></p>
+<p>𝑟固定时，分析得到一个以原点为圆心的圆上谱的特性<img src="/assets/image-20210429144832467.png" alt="image-20210429144832467" style="zoom:43%;" /></p>
+<h3 id="733-特征描述子的主分量">7.3.3 特征描述子的主分量</h3>
+<p>假设有n幅配准（目标通过图像变换重合）的图像，那么所有图像中相同空间位置的对应图像可以排列为一个n维向量$\bold{x}= [𝑥_1 ,𝑥_2 ⋯𝑥_n]^T$</p>
+<ul>
+<li>
+<p>总体平均向量 $\bold{m_x}=E(\bold{x})$     比如每幅图像都是524*524,就是524*524个n维向量求均值</p>
+</li>
+<li>
+<p>协方差矩阵 <img src="/assets/image-20210429145742090.png" alt="image-20210429145742090" style="zoom:43%;" /></p>
+</li>
+<li>
+<p><strong>霍特林变换</strong> <img src="/assets/image-20210429145928863.png" alt="image-20210429145928863" style="zoom:43%;" /><img src="/assets/image-20210429150041193.png" alt="image-20210429150041193" style="zoom:43%;" /></p>
+<p>其中A为一个矩阵，这个矩阵的各行由𝑪𝒙的特征向量构成，并按特征值降序排列</p>
+</li>
+</ul>
+<p><strong>性质</strong></p>
+<p>𝑪𝒚是对角阵，主对角元素是𝑪𝒙的特征值</p>
+<p><img src="/assets/image-20210429150144822.png" alt="image-20210429150144822" style="zoom:50%;" /></p>
+<p>LDA PCA 特征值由x维度决定</p>
+<h2 id="74尺度不变特征变换-sift-scale-invariant-feature-transform">7.4尺度不变特征变换 SIFT Scale-invariant feature transform</h2>
+<p>1、构建尺度空间</p>
+<p><img src="/assets/image-20210506135051482.png" alt="image-20210506135051482" style="zoom:50%;" /></p>
+<p>Octave1 images smoothed using Gaussian lowpass kernels (k&gt;1) （$\sigma$越大越模糊）</p>
+<p>Octave2 Octave1下采样</p>
+<h1 id="第九章-图像分类">第九章 图像分类</h1>
+<p>面临的困难和挑战：视角变化 尺度条件 变形 遮挡 光照条件 背景杂乱 类内差异</p>
+<h2 id="原型匹配模式分类">原型匹配模式分类</h2>
+<h3 id="最小距离分类器">最小距离分类器</h3>
+<p>使用最广泛且最简单的原型匹配分类方法之一</p>
+<p>它在未知模式向量X和每类原型之前计算一个基于距离的测度d，然后将未知模式赋予最接近的原始类。是一种<strong>聚类分析</strong></p>
+<ol>
+<li>
+<p>计算每个类别对应特征的均值</p>
+<p><img src="/assets/image-20210520143033690.png" alt="image-20210520143033690" style="zoom: 33%;" /></p>
+<p>$n_j$ 第j个类别的样本数，$c_j$第j个类别，$N_c$类别总数</p>
+</li>
+<li>
+<p>最小分类器计算距离</p>
+<p>$D_j(x) = \left |  \boldsymbol{x}-\boldsymbol{m_j} \right |$</p>
+<p>$d_j(x)=\boldsymbol{m}_j^T\boldsymbol{x}-\frac{1}{2}\boldsymbol{m}_j^T\boldsymbol{m}_j$</p>
+</li>
+<li>
+<p>决策函数/判别函数</p>
+<p><img src="/assets/image-20210520143527980.png" alt="image-20210520143527980" style="zoom:33%;" /></p>
+</li>
+<li>
+<p>决策边界（与两类特征点等距）</p>
+<p><img src="/assets/image-20210520143850991.png" alt="image-20210520143850991"  /></p>
+</li>
+</ol>
+<p>优点：原理简单、计算速度快
+缺点：分类精度不高</p>
+<p>e.g.<img src="/assets/image-20210520144256479.png" alt="image-20210520144256479"  /></p>
+<h3 id="最优贝叶斯统计分类器">最优（贝叶斯）统计分类器</h3>
+<p><img src="/assets/image-20210520150332263.png" alt="image-20210520150332263" style="zoom:50%;" /></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/image-processing/">Image Processing</a>
+        
+            <a href="/tags/computer-vision/">Computer Vision</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+     
+        
+    <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css" />
+
+<div id="vssue"></div>
+
+<script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+<script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
+
+<script>
+    new Vue({
+        el: "#vssue",
+        render: (h) =>
+            h("Vssue", {
+                props: {
+                    title: "(Draft)Image Processing and Computer Vision",
+                    options: {
+                        proxy: (url) => "https://cors-anywhere.azm.workers.dev/" + url,
+                        owner: "K7288",
+                        repo: "blog-repos",
+                        clientId: "ac393ff5fd371a96eda1",
+                        clientSecret: "e9c2b32500e90b7d0e374ecf8481b97819b8012c",
+                        perPage: 5
+                    },
+                },
+            }),
+    });
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2021 K7288
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+        </main>
+    </div>
+    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+    <script>addBackToTop({
+            diameter: 56,
+            backgroundColor: 'ddd',
+            textColor: '#ddd'
+        })</script>
+    <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+</body>
+
+</html>

@@ -8,22 +8,44 @@
     <language>en</language>
     <lastBuildDate>Tue, 18 May 2021 11:23:29 +0800</lastBuildDate><atom:link href="https://K7288.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Tricks</title>
-      <link>https://K7288.github.io/posts/tricks/</link>
+      <title>Hugo HTML Tips</title>
+      <link>https://K7288.github.io/posts/hugo-html-tips/</link>
       <pubDate>Tue, 18 May 2021 11:23:29 +0800</pubDate>
       
-      <guid>https://K7288.github.io/posts/tricks/</guid>
-      <description> 原生html支持 hugo采用goldmark作为默认渲染器，需要在config中开启   markup: goldmark: renderer: unsafe: true html 图片需要绝对路径，形式如下：  &amp;lt;img src=&amp;quot;/assets/image-20210416142714352.png&amp;quot; alt=&amp;quot;image-20210416142714352&amp;quot; style=&amp;quot;zoom:33%;&amp;quot; /&amp;gt; 而不能是src=&amp;quot;assets\ 所以也不太支持网络图片&amp;hellip;&amp;hellip;
+      <guid>https://K7288.github.io/posts/hugo-html-tips/</guid>
+      <description>  原生html支持
+hugo采用goldmark作为默认渲染器，需要在config中开启
+   markup: goldmark: renderer: unsafe: true html 图片需要绝对路径，形式如下：  &amp;lt;img src=&amp;quot;/assets/image-20210416142714352.png&amp;quot; alt=&amp;quot;image-20210416142714352&amp;quot; style=&amp;quot;zoom:33%;&amp;quot; /&amp;gt; 而不能是src=&amp;quot;assets\ 所以也不太支持网络图片&amp;hellip;&amp;hellip;
 ****好像不能出现。  </description>
     </item>
     
     <item>
-      <title>Image Processing and Computer Vision</title>
-      <link>https://K7288.github.io/posts/image-processing-and-computer-vision/</link>
+      <title>(Draft)Image Processing and Computer Vision</title>
+      <link>https://K7288.github.io/posts/draftimage-processing-and-computer-vision/</link>
       <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://K7288.github.io/posts/image-processing-and-computer-vision/</guid>
-      <description>第一章 数字图像的采集方式以及特性  1.1 图像概述 1.2 图像数字化  1.2.1图像数字化——采样  一维连续信号的采样 二维连续图像信号的采样  二维Nyquist条件 亚采样   1.2.2图像数字化——量化     1.3 数字图像基本要素  1.3.1基本要素 1.3.2图像质量 1.3.3图像颜色：红、绿、蓝三基色 1.3.4图像的描述：灰度/黑白/彩色图像、链表、拓扑结构、距离  1.3.5图像的矩阵特性：距离、邻域、临接、连通 1.3.6图像文件格式     1.4 数字图像处理意义及内容 1.5 数字图像处理系统及应用  1.5.1数字图像特性：图像/显示分辨率/打印机分辨率 像素深度 位面数量 1.5.2数字图像处理系统     第二章 数字图像预处理方法  2.1 灰度化  2.1.1灰度化主要方法 2.1.2图像二值化  1.全局二值化 2.局部二值化     2.2图像噪声  2.2.1分类  2.2.1.1基于统计后的概率密度函数的噪声分类及其消除方式   2.</description>
+      <guid>https://K7288.github.io/posts/draftimage-processing-and-computer-vision/</guid>
+      <description>参考书目 Digital Image Processing by Rafael C. Gonzalez, Richard E. Woods, 3rd Edition
+ 第一章 数字图像的采集方式以及特性  1.1 图像概述 1.2 图像数字化  1.2.1图像数字化——采样  一维连续信号的采样 二维连续图像信号的采样  二维Nyquist条件 亚采样     1.2.2图像数字化——量化   1.3 数字图像基本要素  1.3.1基本要素 1.3.2图像质量 1.3.3图像颜色：红、绿、蓝三基色 1.3.4图像的描述：灰度/黑白/彩色图像、链表、拓扑结构、距离 1.3.5图像的矩阵特性：距离、邻域、临接、连通 1.3.6图像文件格式   1.4 数字图像处理意义及内容 1.5 数字图像处理系统及应用  1.5.1数字图像特性：图像/显示分辨率/打印机分辨率 像素深度 位面数量 1.5.2数字图像处理系统     第二章 数字图像预处理方法  2.1 灰度化  2.1.1灰度化主要方法 2.1.2图像二值化  1.全局二值化 2.</description>
+    </item>
+    
+    <item>
+      <title>F-Scan</title>
+      <link>https://K7288.github.io/posts/f-scan/</link>
+      <pubDate>Mon, 17 May 2021 14:21:37 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/f-scan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The effect of stride length on lower extremity joint kinetics at various gait speeds</title>
+      <link>https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/</link>
+      <pubDate>Sun, 16 May 2021 10:44:02 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/</guid>
+      <description>The effect of stride length on lower extremity joint kinetics at various gait speeds
+ Research question Concepts Notations Background Materials and Methods  Data analysis  1. 数据处理 2. Protocol validation     - 基于12证明实验计划可以显著改变SL和GS，所以可以进行统计学分析  3. Continuum analysis  main effect analysis SL   4. Torque pulse approximation   Results  Protocol validation Continuum analysis   Conclusion Highlights Limits/Further Work Thoughts/Comments  Research question In this study, we investigated how sagittal plane joint moments are affected by a factorial modulation of two important gait parameters: gait speed and stride length.</description>
     </item>
     
     <item>
@@ -41,17 +63,6 @@
 1.测试 [1.测试](#1测试)
 测试——测试 [测试——测试](#测试测试)
   A subtitle just for test 测试 a A 测试——测试 测试:一个测试 1.测试 目录实现  VS code插件 Markdown All in One  ctrl+shift+p Markdown All in One: Create Table of Contents   TODO 实现侧边目录   😂 已经出现了对“测”的完型崩坏</description>
-    </item>
-    
-    <item>
-      <title>The effect of stride length on lower extremity joint kinetics at various gait speeds</title>
-      <link>https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/</link>
-      <pubDate>Thu, 13 May 2021 10:44:02 +0800</pubDate>
-      
-      <guid>https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/</guid>
-      <description>The effect of stride length on lower extremity joint kinetics at various gait speeds
-Research question In this study, we investigated how sagittal plane joint moments are affected by a factorial modulation of two important gait parameters: gait speed and stride length.
-We designed an experimental study to establish the effects of GS and SL on the resulting hip, knee, and ankle joint moments. The findings are intended to inform the design of a robotic controller that delivers pulses of torque to the lower extremity joints with optimal timing and amplitude to induce desirable modulations of GS and SL, and of associated spatiotemporal parameters.</description>
     </item>
     
     <item>
