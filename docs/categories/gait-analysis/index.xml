@@ -6,14 +6,28 @@
     <description>Recent content in Gait Analysis on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 17 May 2021 14:21:37 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/gait-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 May 2021 14:21:37 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/gait-analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>F-Scan</title>
       <link>https://K7288.github.io/posts/f-scan/</link>
-      <pubDate>Mon, 17 May 2021 14:21:37 +0800</pubDate>
+      <pubDate>Tue, 18 May 2021 14:21:37 +0800</pubDate>
       
       <guid>https://K7288.github.io/posts/f-scan/</guid>
-      <description></description>
+      <description>Details 采样频率：$50\text{Hz}$
+测力点尺寸：$5.1\times5.1(\text{mm})$
+翻译问题：
+ 力度 $\Rightarrow$ 力 压力 $\Rightarrow$ 压强  测力片无所谓正反
+流程 裁剪（只要不剪断横向线路即可）
+部署（信号采集/通信装置用魔力贴固定在小腿，插上测力片）
+校准（需要被试单脚站立各5s）
+数据导出 1.完整数据：选中相应fsx窗口在“文件”中导出
+格式：每一帧的全部测力点所测压强（包括灰色边界&amp;quot;B&amp;quot;和剪去的测力点）
+单位：自选，会在导出的csv文件头列出
+写了计算每一帧总压力的代码，也可用采样区选中整个区域得到总压力
+2.取样区
+所在窗格右键“对象”导出 或者直接在生成的图线上ctrl+c粘贴到excel
+格式：不保留每个采样点信息，只有整体数据（这一个区域的总压力/压强等）
+在右键&amp;quot;属性&amp;quot;中可以更改采样区显示的信息</description>
     </item>
     
     <item>

@@ -6,7 +6,42 @@
         <description>Recent content on K7288</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Tue, 18 May 2021 11:23:29 +0800</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 18 May 2021 14:21:37 +0800</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>F-Scan</title>
+        <link>https://K7288.github.io/posts/f-scan/</link>
+        <pubDate>Tue, 18 May 2021 14:21:37 +0800</pubDate>
+        
+        <guid>https://K7288.github.io/posts/f-scan/</guid>
+        <description>&lt;h2 id=&#34;details&#34;&gt;Details&lt;/h2&gt;
+&lt;p&gt;采样频率：$50\text{Hz}$&lt;/p&gt;
+&lt;p&gt;测力点尺寸：$5.1\times5.1(\text{mm})$&lt;/p&gt;
+&lt;p&gt;翻译问题：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;力度 $\Rightarrow$ 力&lt;/li&gt;
+&lt;li&gt;压力 $\Rightarrow$ 压强&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;测力片无所谓正反&lt;/p&gt;
+&lt;h2 id=&#34;流程&#34;&gt;流程&lt;/h2&gt;
+&lt;p&gt;裁剪（只要不剪断横向线路即可）&lt;/p&gt;
+&lt;p&gt;部署（信号采集/通信装置用魔力贴固定在小腿，插上测力片）&lt;/p&gt;
+&lt;p&gt;校准（需要被试单脚站立各5s）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210522080806900.png&#34; alt=&#34;image-20210522080806900&#34;  /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;数据导出&#34;&gt;数据导出&lt;/h2&gt;
+&lt;p&gt;1.完整数据：选中相应fsx窗口在“文件”中导出&lt;/p&gt;
+&lt;p&gt;格式：每一帧的全部测力点所测压强（包括灰色边界&amp;quot;B&amp;quot;和剪去的测力点）&lt;/p&gt;
+&lt;p&gt;单位：自选，会在导出的csv文件头列出&lt;/p&gt;
+&lt;p&gt;写了计算每一帧总压力的代码，也可用采样区选中整个区域得到总压力&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210522081309612.png&#34; alt=&#34;image-20210522081309612&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;2.取样区&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210522081558082.png&#34; alt=&#34;image-20210522081558082&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;所在窗格右键“对象”导出 或者直接在生成的图线上ctrl+c粘贴到excel&lt;/p&gt;
+&lt;p&gt;格式：不保留每个采样点信息，只有整体数据（这一个区域的总压力/压强等）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210522081702659.png&#34; alt=&#34;image-20210522081702659&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;在右键&amp;quot;属性&amp;quot;中可以更改采样区显示的信息&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210522082516227.png&#34; alt=&#34;image-20210522082516227&#34;  /&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Hugo HTML Tips</title>
         <link>https://K7288.github.io/posts/hugo-html-tips/</link>
         <pubDate>Tue, 18 May 2021 11:23:29 +0800</pubDate>
@@ -931,14 +966,6 @@ $$&lt;/p&gt;
 &lt;h3 id=&#34;最优贝叶斯统计分类器&#34;&gt;最优（贝叶斯）统计分类器&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210520150332263.png&#34; alt=&#34;image-20210520150332263&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
 </description>
-        </item>
-        <item>
-        <title>F-Scan</title>
-        <link>https://K7288.github.io/posts/f-scan/</link>
-        <pubDate>Mon, 17 May 2021 14:21:37 +0800</pubDate>
-        
-        <guid>https://K7288.github.io/posts/f-scan/</guid>
-        <description></description>
         </item>
         <item>
         <title>The effect of stride length on lower extremity joint kinetics at various gait speeds</title>
