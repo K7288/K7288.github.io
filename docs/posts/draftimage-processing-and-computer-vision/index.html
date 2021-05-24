@@ -474,14 +474,46 @@
 <ul>
 <li><a class="link" href="#%e6%9c%80%e8%bf%91%e9%82%bb%e6%8f%92%e5%80%bc%e6%b3%95" >最近邻插值法</a></li>
 <li><a class="link" href="#%e5%8f%8c%e7%ba%bf%e6%80%a7%e6%8f%92%e5%80%bc%e6%b3%95" >双线性插值法</a></li>
+<li><a class="link" href="#%e5%8f%8c%e7%ba%bf%e6%80%a7%e6%8f%92%e5%80%bc%e6%b3%95%e4%b8%80%e9%98%b6%e6%8f%92%e5%80%bc" >双线性插值法（一阶插值）</a></li>
+<li><a class="link" href="#%e6%9c%80%e4%bd%b3%e6%8f%92%e5%80%bc%e5%87%bd%e6%95%b0" >最佳插值函数</a></li>
+<li><a class="link" href="#%e9%ab%98%e9%98%b6%e6%8f%92%e5%80%bc" >高阶插值</a></li>
+<li><a class="link" href="#%e4%b8%89%e6%ac%a1%e5%8d%b7%e7%a7%af%e6%8f%92%e5%80%bc%e7%ae%97%e6%b3%95" >三次卷积插值算法</a></li>
+<li><a class="link" href="#%e5%86%85%e6%8f%92%e6%96%b9%e6%b3%95%e9%80%89%e6%8b%a9" >内插方法选择</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li><a class="link" href="#42-%e9%a2%91%e5%9f%9f%e5%8f%98%e6%8d%a2" >4.2 频域变换</a>
 <ul>
-<li><a class="link" href="#421-%e9%a2%91%e5%9f%9f%e5%8f%98%e6%8d%a2%e6%a6%82%e8%bf%b0" >4.2.1 频域变换概述</a></li>
-<li><a class="link" href="#422-%e5%82%85%e7%ab%8b%e5%8f%b6%e5%8f%98%e6%8d%a2" >4.2.2 傅立叶变换</a></li>
+<li><a class="link" href="#421-%e9%a2%91%e5%9f%9f%e5%8f%98%e6%8d%a2%e6%a6%82%e8%bf%b0" >4.2.1 频域变换概述</a>
+<ul>
+<li><a class="link" href="#%e5%8d%b7%e7%a7%af" >卷积</a></li>
+<li><a class="link" href="#%e7%9b%b8%e5%85%b3%e5%87%bd%e6%95%b0" >相关函数</a></li>
+<li><a class="link" href="#%e6%ad%a3%e4%ba%a4%e5%8f%98%e6%8d%a2" >正交变换</a></li>
+<li><a class="link" href="#%e5%8f%af%e8%bf%9b%e8%a1%8c%e5%9b%be%e5%83%8f%e5%8f%98%e6%8d%a2%e7%9a%84%e5%9f%ba%e6%9c%ac%e6%9d%a1%e4%bb%b6%e6%ad%a3%e4%ba%a4%e5%ae%8c%e5%a4%87" >可进行图像变换的基本条件：正交、完备</a></li>
+</ul>
+</li>
+<li><a class="link" href="#422-%e5%82%85%e7%ab%8b%e5%8f%b6%e5%8f%98%e6%8d%a2" >4.2.2 傅立叶变换</a>
+<ul>
+<li><a class="link" href="#%e8%b0%83%e8%b0%90%e4%bf%a1%e5%8f%b7%e6%ac%a7%e6%8b%89%e5%85%ac%e5%bc%8f" >调谐信号(欧拉公式)</a></li>
+<li><a class="link" href="#%e5%82%85%e7%ab%8b%e5%8f%b6%e7%a7%af%e5%88%86" >傅立叶积分</a></li>
+<li><a class="link" href="#%e4%b8%80%e7%bb%b4%e5%82%85%e7%ab%8b%e5%8f%b6%e5%8f%98%e6%8d%a2" >一维傅立叶变换</a></li>
+<li><a class="link" href="#%e4%b8%80%e7%bb%b4%e7%a6%bb%e6%95%a3%e5%82%85%e7%ab%8b%e5%8f%b6%e5%8f%98%e6%8d%a2" >一维离散傅立叶变换</a></li>
+<li><a class="link" href="#%e4%ba%8c%e7%bb%b4%e5%82%85%e7%ab%8b%e5%8f%b6%e5%8f%98%e6%8d%a2" >二维傅立叶变换</a></li>
+<li><a class="link" href="#%e4%ba%8c%e7%bb%b4%e7%a6%bb%e6%95%a3%e5%82%85%e7%ab%8b%e5%8f%b6%e5%8f%98%e6%8d%a2" >二维离散傅立叶变换</a></li>
+<li><a class="link" href="#%e5%82%85%e7%ab%8b%e5%8f%b6%e5%8f%98%e6%8d%a2%e7%9a%84%e6%80%a7%e8%b4%a8" >傅立叶变换的性质</a>
+<ul>
+<li><a class="link" href="#1-%e7%ba%bf%e6%80%a7%e6%80%a7%e8%b4%a8%e5%8a%a0%e6%b3%95%e5%ae%9a%e7%90%86" >1. 线性性质（加法定理）</a></li>
+<li><a class="link" href="#2-%e6%af%94%e4%be%8b%e6%80%a7%e8%b4%a8%e7%9b%b8%e4%bc%bc%e6%80%a7%e5%ae%9a%e7%90%86" >2. 比例性质（相似性定理）：</a></li>
+<li><a class="link" href="#3-%e5%8f%af%e5%88%86%e7%a6%bb%e6%80%a7" >3. 可分离性：</a></li>
+<li><a class="link" href="#4-%e7%a9%ba%e9%97%b4%e4%bd%8d%e7%a7%bb%e6%80%a7" >4. 空间位移性</a></li>
+<li><a class="link" href="#5-%e9%a2%91%e7%a7%bb%e6%80%a7" >5. 频移性</a></li>
+<li><a class="link" href="#6-%e5%91%a8%e6%9c%9f%e6%80%a7" >6. 周期性</a></li>
+<li><a class="link" href="#7-%e5%85%b1%e8%bd%ad%e5%af%b9%e7%a7%b0%e6%80%a7" >7. 共轭对称性</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a class="link" href="#423-%e5%bf%ab%e9%80%9f%e5%82%85%e7%ab%8b%e5%8f%b6%e5%8f%98%e6%8d%a2" >4.2.3 快速傅立叶变换</a></li>
 <li><a class="link" href="#424-%e7%a6%bb%e6%95%a3%e4%bd%99%e5%bc%a6%e5%8f%98%e6%8d%a2" >4.2.4 离散余弦变换</a></li>
 <li><a class="link" href="#425-%e6%b2%83%e5%b0%94%e4%bb%80%e5%93%88%e8%be%be%e7%8e%9b%e5%8f%98%e6%8d%a2" >4.2.5 沃尔什—哈达玛变换</a></li>
@@ -552,10 +584,26 @@
 </li>
 <li><a class="link" href="#%e7%ac%ac%e4%b9%9d%e7%ab%a0-%e5%9b%be%e5%83%8f%e5%88%86%e7%b1%bb" >第九章 图像分类</a>
 <ul>
-<li><a class="link" href="#%e5%8e%9f%e5%9e%8b%e5%8c%b9%e9%85%8d%e6%a8%a1%e5%bc%8f%e5%88%86%e7%b1%bb" >原型匹配模式分类</a>
+<li><a class="link" href="#91-%e5%8e%9f%e5%9e%8b%e5%8c%b9%e9%85%8d%e6%a8%a1%e5%bc%8f%e5%88%86%e7%b1%bb" >9.1 原型匹配模式分类</a>
 <ul>
 <li><a class="link" href="#%e6%9c%80%e5%b0%8f%e8%b7%9d%e7%a6%bb%e5%88%86%e7%b1%bb%e5%99%a8" >最小距离分类器</a></li>
-<li><a class="link" href="#%e6%9c%80%e4%bc%98%e8%b4%9d%e5%8f%b6%e6%96%af%e7%bb%9f%e8%ae%a1%e5%88%86%e7%b1%bb%e5%99%a8" >最优（贝叶斯）统计分类器</a></li>
+</ul>
+</li>
+<li><a class="link" href="#92-%e6%9c%80%e4%bc%98%e8%b4%9d%e5%8f%b6%e6%96%af%e7%bb%9f%e8%ae%a1%e5%88%86%e7%b1%bb%e5%99%a8" >9.2 最优（贝叶斯）统计分类器</a>
+<ul>
+<li><a class="link" href="#%e8%b4%9d%e5%8f%b6%e6%96%af%e5%86%b3%e7%ad%96%e5%87%bd%e6%95%b0" >贝叶斯决策函数</a></li>
+</ul>
+</li>
+<li><a class="link" href="#93-%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c%e5%88%86%e7%b1%bb" >9.3 神经网络分类</a>
+<ul>
+<li><a class="link" href="#lenet" >LeNet</a></li>
+<li><a class="link" href="#vgg16" >VGG16</a></li>
+<li><a class="link" href="#wide-resnets" >Wide ResNets</a></li>
+<li><a class="link" href="#resnext" >ResNeXt</a></li>
+<li><a class="link" href="#densenet" >DenseNet</a></li>
+<li><a class="link" href="#densenet-bc" >DenseNet-BC</a></li>
+<li><a class="link" href="#squeeze-and-excitation-networks-senet" >Squeeze-and-Excitation Networks (SENet)</a></li>
+<li><a class="link" href="#mobilenet" >MobileNet</a></li>
 </ul>
 </li>
 </ul>
@@ -1671,7 +1719,7 @@ $$</p>
 <p>Octave2 Octave1下采样</p>
 <h1 id="第九章-图像分类">第九章 图像分类</h1>
 <p>面临的困难和挑战：视角变化 尺度条件 变形 遮挡 光照条件 背景杂乱 类内差异</p>
-<h2 id="原型匹配模式分类">原型匹配模式分类</h2>
+<h2 id="91-原型匹配模式分类">9.1 原型匹配模式分类</h2>
 <h3 id="最小距离分类器">最小距离分类器</h3>
 <p>使用最广泛且最简单的原型匹配分类方法之一</p>
 <p>它在未知模式向量X和每类原型之前计算一个基于距离的测度d，然后将未知模式赋予最接近的原始类。是一种<strong>聚类分析</strong></p>
@@ -1698,10 +1746,10 @@ $$</p>
 <p>优点：原理简单、计算速度快
 缺点：分类精度不高</p>
 <p>e.g.<img src="/assets/image-20210520144256479.png" alt="image-20210520144256479"  /></p>
-<h3 id="最优贝叶斯统计分类器">最优（贝叶斯）统计分类器</h3>
+<h2 id="92-最优贝叶斯统计分类器">9.2 最优（贝叶斯）统计分类器</h2>
 <p><img src="/assets/image-20210520150332263.png" alt="image-20210520150332263" style="zoom:20%;" /></p>
 <p>有监督的学习算法</p>
-<h4 id="贝叶斯决策函数">贝叶斯决策函数</h4>
+<h3 id="贝叶斯决策函数">贝叶斯决策函数</h3>
 <p><img src="/assets/image-20210524101311087.png" alt="image-20210524101311087" style="zoom:50%;" /></p>
 <p>乘式取对数</p>
 <p><img src="/assets/image-20210524101338324.png" alt="image-20210524101338324" style="zoom:50%;" /></p>
@@ -1711,6 +1759,56 @@ $$</p>
 <li>由于该算法以自变量之间的独立（条件特征独立）性和连续变量的正态性假设为前提，会导致算法精度在某种程度上受影响。</li>
 <li>除了均值方差，还有更精准的模式/统计特性（特征值、特征向量$\Rightarrow$ 表征哪个方向变化剧烈）</li>
 </ol>
+<h2 id="93-神经网络分类">9.3 神经网络分类</h2>
+<p>robust（图像变换后不影响类别等较宏观特征的提取）和sensitive（判断具体图像变换）之间的trade-off：网络到一定深度后分开，一部分robust，另一部分sensitive，结合完成任务</p>
+<p><strong>N.B.</strong> filter的最大的特点是其深度与输入层的深度是一致的。输入层是单通道，单个filter也是单通道。 输入层是三通道，单个filter也是三通道</p>
+<h3 id="lenet">LeNet</h3>
+<p><img src="/assets/image-20210524104903557.png" alt="image-20210524104903557"  /></p>
+<h3 id="vgg16">VGG16</h3>
+<p><img src="/assets/image-20210524105012485.png" alt="image-20210524105012485"  /></p>
+<h3 id="wide-resnets">Wide ResNets</h3>
+<p>ResNet的跳连接，导致了只有少量的残差块学到了有用信息，于是出现了一种新的网络WideResNet（在ResNet的基础上减小深度，增加宽度）。</p>
+<p><img src="/assets/image-20210524105240443.png" alt="image-20210524105240443"  /></p>
+<p><img src="/assets/image-20210524105442212.png" alt="image-20210524105442212"  /></p>
+<h3 id="resnext">ResNeXt</h3>
+<p>ResNeXt 结构基于VGG的“堆叠”与Inception系列网络的“split-transform-merge”思想，可以在不增加参数复杂度的前提下提高准确率，减少了超参数的数量</p>
+<p><img src="/assets/image-20210524105513030.png" alt="image-20210524105513030"  /></p>
+<p><code>256,1x1,64</code> 256维输入经过64个1x1(x256)filter降维到64维</p>
+<p><img src="/assets/image-20210524110307163.png" alt="image-20210524110307163"  /></p>
+<p>a,b,c三个子图结构是等价的，最后一个子图用了<strong>分组卷积</strong>技术使得结构更加紧凑简洁，模型实现使用的是最后一个子图的结构</p>
+<h3 id="densenet">DenseNet</h3>
+<p>在保证网络中层与层之间最大程度的信息传输的前提下，让网络每一层和前面所有的层连接起来</p>
+<p><img src="/assets/image-20210524110405574.png" alt="image-20210524110405574"  /></p>
+<p>因为feature map大小不同的时候concat会出现size问题，DenseNet把网络分成了几个Dense Block，中间用transition layer（用来改变feature map大小）连接起来</p>
+<p><img src="/assets/image-20210524110415948.png" alt="image-20210524110415948"  /></p>
+<h3 id="densenet-bc">DenseNet-BC</h3>
+<p><img src="/assets/image-20210524110644386.png" alt="image-20210524110644386"  /></p>
+<p>B表示bottleneck结构，把3x3conv替换成(1x1, 3x3)conv；
+C表示压缩，在transition层设一个参数𝜃来减小特征图个数</p>
+<p><strong>实验结果</strong></p>
+<p><img src="/assets/image-20210524111332338.png" alt="image-20210524111332338"  /></p>
+<p>#parameters越大，计算量/模型文件大小/加载时间都变大</p>
+<p>DenseNet网络复杂，参数量大，学习/收敛能力强，但也更快达到瓶颈</p>
+<h3 id="squeeze-and-excitation-networks-senet">Squeeze-and-Excitation Networks (SENet)</h3>
+<p><img src="/assets/image-20210524110731565.png" alt="image-20210524110731565"  /></p>
+<p>squeeze与注意力机制相似，判断不同特征层重要性</p>
+<p><img src="/assets/image-20210524111043877.png" alt="image-20210524111043877" style="zoom:43%;" /></p>
+<p>激活后加权到原特征层</p>
+<p>SE block并不是一个完整的网络结构，而是一个子结构，可以嵌到其他分类或检测模型中</p>
+<p><img src="/assets/image-20210524112443273.png" alt="image-20210524112443273"  /></p>
+<h3 id="mobilenet">MobileNet</h3>
+<p>卷积神经网络越来越复杂，内存与响应速度问题使得在某些真实的应用场景如移动或者嵌入式设备，如此大而复杂的模型是难以被应用的</p>
+<p><img src="/assets/image-20210524113534842.png" alt="image-20210524113534842" style="zoom:80%;" /></p>
+<p>基本单元：深度级可分离卷积
+（depthwise separable convolution）</p>
+<p><img src="/assets/image-20210524113512941.png" alt="image-20210524113512941" align="right" style="zoom:50%;" /></p>
+<ol>
+<li>depthwise convolution:针对每个
+输入通道采用不同的卷积核</li>
+<li>pointwise convolution:采用
+1x1的卷积核的普通卷积（<strong>通道整合</strong>）</li>
+</ol>
+<p>但是降低flops（计算复杂度）后时间不一定减少，还和硬件计算方式有关。MobileNet频繁调度各个channel的filter</p>
 
 </section>
 

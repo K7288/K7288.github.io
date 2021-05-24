@@ -6,7 +6,18 @@
     <description>Recent content in Robotics on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 May 2021 10:44:02 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/robotics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/robotics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Froude Numbers</title>
+      <link>https://K7288.github.io/posts/froude-numbers/</link>
+      <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/froude-numbers/</guid>
+      <description>The Gaits of Bipedal and Quadrupedal Animals Alexander R. The gaits of bipedal and quadrupedal animals. The International Journal of Robotics Research. 1984;
+mammals of different sizes tend to move in dynamically similar fashion whenever their Froude numbers $u^2 /gh$ are equal: here u is speed, g is the acceleration of free fall, and h is the height of the hip joint from the ground.
+Research Problem description of the gaits of two- and four-legged animals and some of the important optimization criteria(e.</description>
+    </item>
+    
     <item>
       <title>The effect of stride length on lower extremity joint kinetics at various gait speeds</title>
       <link>https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/</link>

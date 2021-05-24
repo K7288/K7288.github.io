@@ -6,7 +6,42 @@
         <description>Recent content on K7288</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Tue, 18 May 2021 14:21:37 +0800</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 22 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Froude Numbers</title>
+        <link>https://K7288.github.io/posts/froude-numbers/</link>
+        <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://K7288.github.io/posts/froude-numbers/</guid>
+        <description>&lt;h1 id=&#34;the-gaits-of-bipedal-and-quadrupedal-animals&#34;&gt;The Gaits of Bipedal and Quadrupedal Animals&lt;/h1&gt;
+&lt;p&gt;Alexander R. The gaits of bipedal and quadrupedal animals. The International Journal of Robotics Research. 1984;&lt;/p&gt;
+&lt;p&gt;mammals of different sizes tend to move &lt;strong&gt;in dynamically similar fashion whenever their Froude numbers $u^2 /gh$ are equal&lt;/strong&gt;: here u is speed, g is the acceleration of free fall, and h is the height of the hip joint from the ground.&lt;/p&gt;
+&lt;h2 id=&#34;research-problem&#34;&gt;Research Problem&lt;/h2&gt;
+&lt;p&gt;description of the gaits of two- and four-legged animals and some of the important optimization criteria(e.g. cost, reliability, and maneuverability).&lt;/p&gt;
+&lt;h2 id=&#34;hypothesis&#34;&gt;Hypothesis&lt;/h2&gt;
+&lt;p&gt;dynamic similarity is possible only if the
+motions have equal Froude numbers  $u^2 /gh$ (Duncan1953).&lt;/p&gt;
+&lt;p&gt;The dynamic similarity hypothesis&lt;/p&gt;
+&lt;h2 id=&#34;result&#34;&gt;Result&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210524120558263.png&#34; alt=&#34;image-20210524120558263&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;四足哺乳动物之间、两足与四足哺乳动物之间、鸟类和两足哺乳动物之间 相似的运动状态和相似的Froude number对应&lt;/p&gt;
+&lt;h1 id=&#34;humans-geometric-similarity-and-the-froude-number-is-reasonably-close-really-close-enough&#34;&gt;Humans, geometric similarity and the Froude number: is ‘‘reasonably close’’ really close enough?&lt;/h1&gt;
+&lt;p&gt;William Froude developed the Froude number in the context of his simulation of ships with the goal of creating similar wave patterns (Vaughan and O&amp;rsquo;Malley, 2005) with drag as the feature of importance (Langhaar, 1951), but his concept has been extended to other mechanical phenomena that are driven by gravity and inertia (Duncan, 1953)&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;（针对不同物种）size does not affect mass-specific mechanical cost of transport (Alexander and Jayes, 1983). The known shape differences among modern humans are, however, sufficiently large to account for much of the observed variation in metabolic energy expenditure and we expect this to be the case for any group that is of similar size but different shape. Unfortunately, we currently do not have a simple method to control or adjust for size–shape differences in individuals that are not geometrically similar. Musculoskeletal modeling is the only method that accounts for both size and shape. Those shape differences that are “reasonably close” at the mouse-to-elephant level may become “grossly different” for within-species energetic comparisons.目前尚没有一种简单的方法来控制或调整几何上不相似的个体的大小-形状差异。&lt;/p&gt;
+&lt;h1 id=&#34;the-energetics-of-human-walking-is-froude-number-fr-useful-for-meta--bolic-comparisons&#34;&gt;The energetics of human walking: Is Froude number (Fr) useful for meta- bolic comparisons?&lt;/h1&gt;
+&lt;p&gt;Kramer PA, Sarton-Miller I. The energetics of human walking: Is Froude number (Fr) useful for meta- bolic comparisons? Gait &amp;amp; Posture. 2008; 27(2):209–215. &lt;a href=&#34;https://doi.org/10.1016/j.gaitpost.2007.03.009&#34;&gt;https://doi.org/10.1016/j.gaitpost.2007.03.009&lt;/a&gt; PMID: 17459708&lt;/p&gt;
+&lt;p&gt;回归分析，速度、速度平方、Fr或LiMb的预测能力没有显著差异，所以Fr和LiMb都不能补偿腿长的影响。腿的长度确实影响行走的人的能量消耗&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Duncan W. J. (1953). Physical Similarity And Dimensional Analysis: An Elementary Treatise London: Edward Arnold and Company.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+        </item>
+        <item>
         <title>F-Scan</title>
         <link>https://K7288.github.io/posts/f-scan/</link>
         <pubDate>Tue, 18 May 2021 14:21:37 +0800</pubDate>
@@ -320,14 +355,46 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e6%9c%80%e8%bf%91%e9%82%bb%e6%8f%92%e5%80%bc%e6%b3%95&#34; &gt;最近邻插值法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%8f%8c%e7%ba%bf%e6%80%a7%e6%8f%92%e5%80%bc%e6%b3%95&#34; &gt;双线性插值法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%8f%8c%e7%ba%bf%e6%80%a7%e6%8f%92%e5%80%bc%e6%b3%95%e4%b8%80%e9%98%b6%e6%8f%92%e5%80%bc&#34; &gt;双线性插值法（一阶插值）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e6%9c%80%e4%bd%b3%e6%8f%92%e5%80%bc%e5%87%bd%e6%95%b0&#34; &gt;最佳插值函数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e9%ab%98%e9%98%b6%e6%8f%92%e5%80%bc&#34; &gt;高阶插值&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e4%b8%89%e6%ac%a1%e5%8d%b7%e7%a7%af%e6%8f%92%e5%80%bc%e7%ae%97%e6%b3%95&#34; &gt;三次卷积插值算法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%86%85%e6%8f%92%e6%96%b9%e6%b3%95%e9%80%89%e6%8b%a9&#34; &gt;内插方法选择&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#42-%e9%a2%91%e5%9f%9f%e5%8f%98%e6%8d%a2&#34; &gt;4.2 频域变换&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#421-%e9%a2%91%e5%9f%9f%e5%8f%98%e6%8d%a2%e6%a6%82%e8%bf%b0&#34; &gt;4.2.1 频域变换概述&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#422-%e5%82%85%e7%ab%8b%e5%8f%b6%e5%8f%98%e6%8d%a2&#34; &gt;4.2.2 傅立叶变换&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#421-%e9%a2%91%e5%9f%9f%e5%8f%98%e6%8d%a2%e6%a6%82%e8%bf%b0&#34; &gt;4.2.1 频域变换概述&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%8d%b7%e7%a7%af&#34; &gt;卷积&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e7%9b%b8%e5%85%b3%e5%87%bd%e6%95%b0&#34; &gt;相关函数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e6%ad%a3%e4%ba%a4%e5%8f%98%e6%8d%a2&#34; &gt;正交变换&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%8f%af%e8%bf%9b%e8%a1%8c%e5%9b%be%e5%83%8f%e5%8f%98%e6%8d%a2%e7%9a%84%e5%9f%ba%e6%9c%ac%e6%9d%a1%e4%bb%b6%e6%ad%a3%e4%ba%a4%e5%ae%8c%e5%a4%87&#34; &gt;可进行图像变换的基本条件：正交、完备&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#422-%e5%82%85%e7%ab%8b%e5%8f%b6%e5%8f%98%e6%8d%a2&#34; &gt;4.2.2 傅立叶变换&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e8%b0%83%e8%b0%90%e4%bf%a1%e5%8f%b7%e6%ac%a7%e6%8b%89%e5%85%ac%e5%bc%8f&#34; &gt;调谐信号(欧拉公式)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%82%85%e7%ab%8b%e5%8f%b6%e7%a7%af%e5%88%86&#34; &gt;傅立叶积分&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e4%b8%80%e7%bb%b4%e5%82%85%e7%ab%8b%e5%8f%b6%e5%8f%98%e6%8d%a2&#34; &gt;一维傅立叶变换&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e4%b8%80%e7%bb%b4%e7%a6%bb%e6%95%a3%e5%82%85%e7%ab%8b%e5%8f%b6%e5%8f%98%e6%8d%a2&#34; &gt;一维离散傅立叶变换&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e4%ba%8c%e7%bb%b4%e5%82%85%e7%ab%8b%e5%8f%b6%e5%8f%98%e6%8d%a2&#34; &gt;二维傅立叶变换&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e4%ba%8c%e7%bb%b4%e7%a6%bb%e6%95%a3%e5%82%85%e7%ab%8b%e5%8f%b6%e5%8f%98%e6%8d%a2&#34; &gt;二维离散傅立叶变换&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%82%85%e7%ab%8b%e5%8f%b6%e5%8f%98%e6%8d%a2%e7%9a%84%e6%80%a7%e8%b4%a8&#34; &gt;傅立叶变换的性质&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#1-%e7%ba%bf%e6%80%a7%e6%80%a7%e8%b4%a8%e5%8a%a0%e6%b3%95%e5%ae%9a%e7%90%86&#34; &gt;1. 线性性质（加法定理）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#2-%e6%af%94%e4%be%8b%e6%80%a7%e8%b4%a8%e7%9b%b8%e4%bc%bc%e6%80%a7%e5%ae%9a%e7%90%86&#34; &gt;2. 比例性质（相似性定理）：&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#3-%e5%8f%af%e5%88%86%e7%a6%bb%e6%80%a7&#34; &gt;3. 可分离性：&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#4-%e7%a9%ba%e9%97%b4%e4%bd%8d%e7%a7%bb%e6%80%a7&#34; &gt;4. 空间位移性&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#5-%e9%a2%91%e7%a7%bb%e6%80%a7&#34; &gt;5. 频移性&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#6-%e5%91%a8%e6%9c%9f%e6%80%a7&#34; &gt;6. 周期性&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#7-%e5%85%b1%e8%bd%ad%e5%af%b9%e7%a7%b0%e6%80%a7&#34; &gt;7. 共轭对称性&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#423-%e5%bf%ab%e9%80%9f%e5%82%85%e7%ab%8b%e5%8f%b6%e5%8f%98%e6%8d%a2&#34; &gt;4.2.3 快速傅立叶变换&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#424-%e7%a6%bb%e6%95%a3%e4%bd%99%e5%bc%a6%e5%8f%98%e6%8d%a2&#34; &gt;4.2.4 离散余弦变换&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#425-%e6%b2%83%e5%b0%94%e4%bb%80%e5%93%88%e8%be%be%e7%8e%9b%e5%8f%98%e6%8d%a2&#34; &gt;4.2.5 沃尔什—哈达玛变换&lt;/a&gt;&lt;/li&gt;
@@ -398,10 +465,26 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e7%ac%ac%e4%b9%9d%e7%ab%a0-%e5%9b%be%e5%83%8f%e5%88%86%e7%b1%bb&#34; &gt;第九章 图像分类&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%8e%9f%e5%9e%8b%e5%8c%b9%e9%85%8d%e6%a8%a1%e5%bc%8f%e5%88%86%e7%b1%bb&#34; &gt;原型匹配模式分类&lt;/a&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#91-%e5%8e%9f%e5%9e%8b%e5%8c%b9%e9%85%8d%e6%a8%a1%e5%bc%8f%e5%88%86%e7%b1%bb&#34; &gt;9.1 原型匹配模式分类&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e6%9c%80%e5%b0%8f%e8%b7%9d%e7%a6%bb%e5%88%86%e7%b1%bb%e5%99%a8&#34; &gt;最小距离分类器&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e6%9c%80%e4%bc%98%e8%b4%9d%e5%8f%b6%e6%96%af%e7%bb%9f%e8%ae%a1%e5%88%86%e7%b1%bb%e5%99%a8&#34; &gt;最优（贝叶斯）统计分类器&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#92-%e6%9c%80%e4%bc%98%e8%b4%9d%e5%8f%b6%e6%96%af%e7%bb%9f%e8%ae%a1%e5%88%86%e7%b1%bb%e5%99%a8&#34; &gt;9.2 最优（贝叶斯）统计分类器&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e8%b4%9d%e5%8f%b6%e6%96%af%e5%86%b3%e7%ad%96%e5%87%bd%e6%95%b0&#34; &gt;贝叶斯决策函数&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#93-%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c%e5%88%86%e7%b1%bb&#34; &gt;9.3 神经网络分类&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#lenet&#34; &gt;LeNet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#vgg16&#34; &gt;VGG16&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#wide-resnets&#34; &gt;Wide ResNets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#resnext&#34; &gt;ResNeXt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#densenet&#34; &gt;DenseNet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#densenet-bc&#34; &gt;DenseNet-BC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#squeeze-and-excitation-networks-senet&#34; &gt;Squeeze-and-Excitation Networks (SENet)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#mobilenet&#34; &gt;MobileNet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -1517,7 +1600,7 @@ $$&lt;/p&gt;
 &lt;p&gt;Octave2 Octave1下采样&lt;/p&gt;
 &lt;h1 id=&#34;第九章-图像分类&#34;&gt;第九章 图像分类&lt;/h1&gt;
 &lt;p&gt;面临的困难和挑战：视角变化 尺度条件 变形 遮挡 光照条件 背景杂乱 类内差异&lt;/p&gt;
-&lt;h2 id=&#34;原型匹配模式分类&#34;&gt;原型匹配模式分类&lt;/h2&gt;
+&lt;h2 id=&#34;91-原型匹配模式分类&#34;&gt;9.1 原型匹配模式分类&lt;/h2&gt;
 &lt;h3 id=&#34;最小距离分类器&#34;&gt;最小距离分类器&lt;/h3&gt;
 &lt;p&gt;使用最广泛且最简单的原型匹配分类方法之一&lt;/p&gt;
 &lt;p&gt;它在未知模式向量X和每类原型之前计算一个基于距离的测度d，然后将未知模式赋予最接近的原始类。是一种&lt;strong&gt;聚类分析&lt;/strong&gt;&lt;/p&gt;
@@ -1544,10 +1627,10 @@ $$&lt;/p&gt;
 &lt;p&gt;优点：原理简单、计算速度快
 缺点：分类精度不高&lt;/p&gt;
 &lt;p&gt;e.g.&lt;img src=&#34;https://K7288.github.io/assets/image-20210520144256479.png&#34; alt=&#34;image-20210520144256479&#34;  /&gt;&lt;/p&gt;
-&lt;h3 id=&#34;最优贝叶斯统计分类器&#34;&gt;最优（贝叶斯）统计分类器&lt;/h3&gt;
+&lt;h2 id=&#34;92-最优贝叶斯统计分类器&#34;&gt;9.2 最优（贝叶斯）统计分类器&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210520150332263.png&#34; alt=&#34;image-20210520150332263&#34; style=&#34;zoom:20%;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;有监督的学习算法&lt;/p&gt;
-&lt;h4 id=&#34;贝叶斯决策函数&#34;&gt;贝叶斯决策函数&lt;/h4&gt;
+&lt;h3 id=&#34;贝叶斯决策函数&#34;&gt;贝叶斯决策函数&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210524101311087.png&#34; alt=&#34;image-20210524101311087&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;乘式取对数&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210524101338324.png&#34; alt=&#34;image-20210524101338324&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
@@ -1557,6 +1640,56 @@ $$&lt;/p&gt;
 &lt;li&gt;由于该算法以自变量之间的独立（条件特征独立）性和连续变量的正态性假设为前提，会导致算法精度在某种程度上受影响。&lt;/li&gt;
 &lt;li&gt;除了均值方差，还有更精准的模式/统计特性（特征值、特征向量$\Rightarrow$ 表征哪个方向变化剧烈）&lt;/li&gt;
 &lt;/ol&gt;
+&lt;h2 id=&#34;93-神经网络分类&#34;&gt;9.3 神经网络分类&lt;/h2&gt;
+&lt;p&gt;robust（图像变换后不影响类别等较宏观特征的提取）和sensitive（判断具体图像变换）之间的trade-off：网络到一定深度后分开，一部分robust，另一部分sensitive，结合完成任务&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;N.B.&lt;/strong&gt; filter的最大的特点是其深度与输入层的深度是一致的。输入层是单通道，单个filter也是单通道。 输入层是三通道，单个filter也是三通道&lt;/p&gt;
+&lt;h3 id=&#34;lenet&#34;&gt;LeNet&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210524104903557.png&#34; alt=&#34;image-20210524104903557&#34;  /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;vgg16&#34;&gt;VGG16&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210524105012485.png&#34; alt=&#34;image-20210524105012485&#34;  /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;wide-resnets&#34;&gt;Wide ResNets&lt;/h3&gt;
+&lt;p&gt;ResNet的跳连接，导致了只有少量的残差块学到了有用信息，于是出现了一种新的网络WideResNet（在ResNet的基础上减小深度，增加宽度）。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210524105240443.png&#34; alt=&#34;image-20210524105240443&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210524105442212.png&#34; alt=&#34;image-20210524105442212&#34;  /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;resnext&#34;&gt;ResNeXt&lt;/h3&gt;
+&lt;p&gt;ResNeXt 结构基于VGG的“堆叠”与Inception系列网络的“split-transform-merge”思想，可以在不增加参数复杂度的前提下提高准确率，减少了超参数的数量&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210524105513030.png&#34; alt=&#34;image-20210524105513030&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;256,1x1,64&lt;/code&gt; 256维输入经过64个1x1(x256)filter降维到64维&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210524110307163.png&#34; alt=&#34;image-20210524110307163&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;a,b,c三个子图结构是等价的，最后一个子图用了&lt;strong&gt;分组卷积&lt;/strong&gt;技术使得结构更加紧凑简洁，模型实现使用的是最后一个子图的结构&lt;/p&gt;
+&lt;h3 id=&#34;densenet&#34;&gt;DenseNet&lt;/h3&gt;
+&lt;p&gt;在保证网络中层与层之间最大程度的信息传输的前提下，让网络每一层和前面所有的层连接起来&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210524110405574.png&#34; alt=&#34;image-20210524110405574&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;因为feature map大小不同的时候concat会出现size问题，DenseNet把网络分成了几个Dense Block，中间用transition layer（用来改变feature map大小）连接起来&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210524110415948.png&#34; alt=&#34;image-20210524110415948&#34;  /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;densenet-bc&#34;&gt;DenseNet-BC&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210524110644386.png&#34; alt=&#34;image-20210524110644386&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;B表示bottleneck结构，把3x3conv替换成(1x1, 3x3)conv；
+C表示压缩，在transition层设一个参数𝜃来减小特征图个数&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;实验结果&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210524111332338.png&#34; alt=&#34;image-20210524111332338&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;#parameters越大，计算量/模型文件大小/加载时间都变大&lt;/p&gt;
+&lt;p&gt;DenseNet网络复杂，参数量大，学习/收敛能力强，但也更快达到瓶颈&lt;/p&gt;
+&lt;h3 id=&#34;squeeze-and-excitation-networks-senet&#34;&gt;Squeeze-and-Excitation Networks (SENet)&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210524110731565.png&#34; alt=&#34;image-20210524110731565&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;squeeze与注意力机制相似，判断不同特征层重要性&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210524111043877.png&#34; alt=&#34;image-20210524111043877&#34; style=&#34;zoom:43%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;激活后加权到原特征层&lt;/p&gt;
+&lt;p&gt;SE block并不是一个完整的网络结构，而是一个子结构，可以嵌到其他分类或检测模型中&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210524112443273.png&#34; alt=&#34;image-20210524112443273&#34;  /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;mobilenet&#34;&gt;MobileNet&lt;/h3&gt;
+&lt;p&gt;卷积神经网络越来越复杂，内存与响应速度问题使得在某些真实的应用场景如移动或者嵌入式设备，如此大而复杂的模型是难以被应用的&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210524113534842.png&#34; alt=&#34;image-20210524113534842&#34; style=&#34;zoom:80%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;基本单元：深度级可分离卷积
+（depthwise separable convolution）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210524113512941.png&#34; alt=&#34;image-20210524113512941&#34; align=&#34;right&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;depthwise convolution:针对每个
+输入通道采用不同的卷积核&lt;/li&gt;
+&lt;li&gt;pointwise convolution:采用
+1x1的卷积核的普通卷积（&lt;strong&gt;通道整合&lt;/strong&gt;）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;但是降低flops（计算复杂度）后时间不一定减少，还和硬件计算方式有关。MobileNet频繁调度各个channel的filter&lt;/p&gt;
 </description>
         </item>
         <item>
