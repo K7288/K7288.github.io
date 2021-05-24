@@ -1546,6 +1546,17 @@ $$&lt;/p&gt;
 &lt;p&gt;e.g.&lt;img src=&#34;https://K7288.github.io/assets/image-20210520144256479.png&#34; alt=&#34;image-20210520144256479&#34;  /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;最优贝叶斯统计分类器&#34;&gt;最优（贝叶斯）统计分类器&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210520150332263.png&#34; alt=&#34;image-20210520150332263&#34; style=&#34;zoom:20%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;有监督的学习算法&lt;/p&gt;
+&lt;h4 id=&#34;贝叶斯决策函数&#34;&gt;贝叶斯决策函数&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210524101311087.png&#34; alt=&#34;image-20210524101311087&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;乘式取对数&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210524101338324.png&#34; alt=&#34;image-20210524101338324&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;优点&lt;/strong&gt; 原理简单、学习效率高&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;缺点/不足&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;由于该算法以自变量之间的独立（条件特征独立）性和连续变量的正态性假设为前提，会导致算法精度在某种程度上受影响。&lt;/li&gt;
+&lt;li&gt;除了均值方差，还有更精准的模式/统计特性（特征值、特征向量$\Rightarrow$ 表征哪个方向变化剧烈）&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         </item>
         <item>
@@ -1854,7 +1865,7 @@ Upon comparing nested model Akaike information criterion (AIC) values, the lowes
 &lt;p&gt;Peterson CL, Cheng J, Kautz SA, Neptune RR. Leg extension is an important predictor of paretic leg propulsion in hemiparetic walking. Gait &amp;amp; Posture. 2010; 32(4):451–456. &lt;a href=&#34;https://doi.org/10.1016/j.gaitpost.2010.06.014&#34;&gt;https://doi.org/10.1016/j.gaitpost.2010.06.014&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Kramer PA, Sarton-Miller I. The energetics of human walking: Is Froude number (Fr) useful for meta- bolic comparisons? Gait &amp;amp; Posture. 2008; 27(2):209–215. &lt;a href=&#34;https://doi.org/10.1016/j.gaitpost.2007.03.009&#34;&gt;https://doi.org/10.1016/j.gaitpost.2007.03.009&lt;/a&gt; PMID: 17459708&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Kramer PA, Sarton-Miller I. The energetics of human walking: Is Froude number (Fr) useful for meta- bolic comparisons? Gait &amp;amp; Posture. 2008; 27(2):209–215. &lt;a href=&#34;https://doi.org/10.1016/j.gaitpost.2007.03.009&#34;&gt;https://doi.org/10.1016/j.gaitpost.2007.03.009&lt;/a&gt; PMID: 17459708; Alexander R. The gaits of bipedal and quadrupedal animals. The International Journal of Robotics Research. 1984;.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;Pataky TC, Vanrenterghem J, Robinson MA. The probability of false positives in zero-dimensional analyses of one-dimensional kinematic, force and EMG trajectories. Journal of Biomechanics. 2016; 49 (9):1468–1476. &lt;a href=&#34;https://doi.org/10.1016/j.jbiomech.2016.03.032&#34;&gt;https://doi.org/10.1016/j.jbiomech.2016.03.032&lt;/a&gt; PMID: 27067363&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
