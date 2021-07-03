@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intention Recognition on K7288</title>
+    <link>https://K7288.github.io/tags/intention-recognition/</link>
+    <description>Recent content in Intention Recognition on K7288</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 29 Jun 2021 20:52:44 +0800</lastBuildDate><atom:link href="https://K7288.github.io/tags/intention-recognition/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intention Recognition in Physical Human-Robot Interaction Based on Radial Basis Function Neural Network</title>
+      <link>https://K7288.github.io/posts/intention-recognition-in-physical-human-robot-interaction-based-on-radial-basis-function-neural-network/</link>
+      <pubDate>Tue, 29 Jun 2021 20:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/intention-recognition-in-physical-human-robot-interaction-based-on-radial-basis-function-neural-network/</guid>
+      <description>Intention Recognition in Physical Human-Robot Interaction Based on Radial Basis Function Neural Network
+Research question a method based on radial basis function neural network (RBFNN) model is presented to identify the motion intention of collaborator.
+Here, the human intention is defined as the desired velocity in human limb model, of which the estimation is obtained in real time based on interaction force and the contact point movement characteristics (current position and velocity of the robot) by the trained RBFNN model.</description>
+    </item>
+    
+  </channel>
+</rss>

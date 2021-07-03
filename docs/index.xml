@@ -6,7 +6,159 @@
         <description>Recent content on K7288</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sat, 22 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Terms</title>
+        <link>https://K7288.github.io/posts/terms/</link>
+        <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://K7288.github.io/posts/terms/</guid>
+        <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Terms&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Definition&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;inertia matrix, damping matrix, and stiffness matrix&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Cartesian coordinate&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;mass-damper-spring model&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;impedance control&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;time-varying, adaptive compensation term&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Intention Recognition in Physical Human-Robot Interaction Based on Radial Basis Function Neural Network</title>
+        <link>https://K7288.github.io/posts/intention-recognition-in-physical-human-robot-interaction-based-on-radial-basis-function-neural-network/</link>
+        <pubDate>Tue, 29 Jun 2021 20:52:44 +0800</pubDate>
+        
+        <guid>https://K7288.github.io/posts/intention-recognition-in-physical-human-robot-interaction-based-on-radial-basis-function-neural-network/</guid>
+        <description>&lt;p&gt;Intention Recognition in Physical Human-Robot Interaction Based on Radial Basis Function Neural Network&lt;/p&gt;
+&lt;h2 id=&#34;research-question&#34;&gt;Research question&lt;/h2&gt;
+&lt;p&gt;a method based on radial basis function neural network (&lt;strong&gt;RBFNN&lt;/strong&gt;) model is presented to &lt;strong&gt;identify the motion intention of collaborator&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Here, the &lt;strong&gt;human intention is defined as the desired velocity&lt;/strong&gt; in human limb model, of which the estimation is obtained in real time based on interaction force and the contact point movement characteristics (current position and velocity of the robot) by the trained RBFNN model.&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Kazuhiro Kosuge and Norihide Kazamura proposed several algorithms to generate the motion based on the intentional force and experimentally compare them, including method of force augmentation type, method of position control type, and method of velocity control type [8].&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dylan P. Losey et al. provided a unifying view of human and robot sharing task execution. They defined &lt;strong&gt;three key themes that emerge in shared control scenarios&lt;/strong&gt;, namely, &lt;strong&gt;intent detection, arbitration, and feedback&lt;/strong&gt; [9].&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Definition of intent in this paper: In many physical human-robot interaction (pHRI) applications, the intent can be defined in a binary way. It is often ascertained from a brain-machine interface (BMI), as seen in[10]. In other applications, user intent is defined in terms of a velocity or position trajectory, the predicted forward path of the user and/or robot.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;human intention recognition based on myographic signals 肌电信号&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;pattern recognition&lt;/p&gt;
+&lt;p&gt;The pattern recognition approach is to map patterns of any number of signal features to desired prosthesis poses, grasps, or functions. The way in which control algorithms learn this mapping varies, but common approaches are LDA, SVMs, and artificial neural networks (ANNs) [11, 12, 15].&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;mapping to continuous effort.&lt;/p&gt;
+&lt;p&gt;control systems that learn the mapping between EMG signals and user’s desired joint torque, e.g. relationship between the root-mean square (RMS) of measured EMG signals and the estimated user’s desired torques [16].&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;human intention recognition based on interaction force&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;dynamics model
+&lt;ul&gt;
+&lt;li&gt;Pehlivanet al. use an &lt;strong&gt;inverse dynamics model of the robot&lt;/strong&gt; to estimate the user force applied to the robot from the robot encoder measurements [17].&lt;/li&gt;
+&lt;li&gt;In [20–22], human intentions are predicted by establishing a dynamic model of collaborator. Passenberg C. uses human models and jerk models to recognize human intention with extended Kalman filtering method [23]. These estimation methods based on the &lt;strong&gt;human body model&lt;/strong&gt; are very difficult because the impedance parameters of the human body are variable and can be hardly obtained [24].&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;NN method
+&lt;ul&gt;
+&lt;li&gt;the motion intention of the human partner is defined as the desired trajectory in the employed human limb model; difficult to obtain in practice.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Hidden Markov Model
+&lt;ul&gt;
+&lt;li&gt;very complex and difficult to establish a model of intention recognition.&lt;/li&gt;
+&lt;li&gt;C. Lee uses the Baum-Welch algorithm to train Hidden Markov Model, which predicts
+the collaborator&amp;rsquo;s intention by learning the meaning of the collaborators’ gestures. However, this method does not really realize the purpose of identifying partner intention [19].&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;In addition, the measured interaction force can be used to estimate other forms of motion intention. For example, the interaction forces measured in the handles to predict possible walking modes or the walker’s forward path in [25, 26].&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
+&lt;p&gt;assumption: the end effector of robot physically interacts with the human hand and there is only one interaction point.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;in order to &lt;strong&gt;obtain training data and test data&lt;/strong&gt; of neural network, the adaptive impedance control method is used to collect sample data.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;basis neural network model is established after mapping sample data.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;data matching&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;K-means method used to define the number of the hidden layer nodes. Weighted mean value (Wmv) parameter (as follows) of cluster radius to determine K value.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;img src=&#34;assets/image-20210703115112299.png&#34; alt=&#34;image-20210703115112299&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;the intention of the collaborator is identified through online prediction.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In order to verify the validity of the RBFNN method in this paper, the robot’s contact point speed and interaction force are analyzed by comparing with the corresponding experimental parameters values from the adaptive impedance control algorithm.
+&lt;img src=&#34;https://K7288.github.io/assets/4141269.fig.002.svgz&#34; align=&#34;center&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;thoughtscomments&#34;&gt;Thoughts/Comments&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;K-means是怎么用在hidden layer nodes数量的确定上的？？(p5)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;先有鸡还是现有蛋&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;有时间看一下&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;这个自适应方法是怎么得出的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;assets/image-20210701181613356.png&#34; alt=&#34;image-20210701181613356&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;质量-弹簧-阻尼器系统等（Dr. F毕业论文那里好像有张图）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;assets/image-20210701181822246.png&#34; alt=&#34;image-20210701181822246&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>Froude Numbers</title>
         <link>https://K7288.github.io/posts/froude-numbers/</link>
         <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
@@ -395,10 +547,58 @@ motions have equal Froude numbers  $u^2 /gh$ (Duncan1953).&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#423-%e5%bf%ab%e9%80%9f%e5%82%85%e7%ab%8b%e5%8f%b6%e5%8f%98%e6%8d%a2&#34; &gt;4.2.3 快速傅立叶变换&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#423-%e5%bf%ab%e9%80%9f%e5%82%85%e7%ab%8b%e5%8f%b6%e5%8f%98%e6%8d%a2-%e8%a7%81%e5%a4%8d%e5%8d%b0%e4%bb%b6&#34; &gt;4.2.3 快速傅立叶变换 见复印件&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#424-%e7%a6%bb%e6%95%a3%e4%bd%99%e5%bc%a6%e5%8f%98%e6%8d%a2&#34; &gt;4.2.4 离散余弦变换&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#425-%e6%b2%83%e5%b0%94%e4%bb%80%e5%93%88%e8%be%be%e7%8e%9b%e5%8f%98%e6%8d%a2&#34; &gt;4.2.5 沃尔什—哈达玛变换&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#426-%e5%b0%8f%e6%b3%a2%e5%8f%98%e6%8d%a2&#34; &gt;4.2.6 小波变换&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e7%ac%ac%e4%ba%94%e7%ab%a0-%e5%9b%be%e5%83%8f%e5%8e%8b%e7%bc%a9-%e8%a7%81%e5%a4%8d%e5%8d%b0%e4%bb%b6&#34; &gt;第五章 图像压缩 见复印件&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#51-%e5%9b%be%e5%83%8f%e5%8e%8b%e7%bc%a9%e6%a6%82%e8%bf%b0&#34; &gt;5.1 图像压缩概述&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#52-%e6%97%a0%e6%8d%9f%e5%8e%8b%e7%bc%a9&#34; &gt;5.2 无损压缩&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e7%86%b5%e7%bc%96%e7%a0%81-%e9%9c%8d%e5%a4%ab%e6%9b%bc%e7%bc%96%e7%a0%81-huffman&#34; &gt;熵编码 霍夫曼编码 (Huffman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e7%86%b5%e7%bc%96%e7%a0%81-%e7%ae%97%e6%9c%af%e7%bc%96%e7%a0%81%e5%93%88%e5%a4%ab%e6%9b%bc%e7%bc%96%e7%a0%81%e7%9a%84%e6%94%b9%e8%bf%9b&#34; &gt;熵编码 算术编码：哈夫曼编码的改进&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%9f%ba%e4%ba%8e%e5%ad%97%e5%85%b8%e7%9a%84%e7%bc%96%e7%a0%81-dictionary&#34; &gt;基于字典的编码 (dictionary&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e8%a1%8c%e7%a8%8b%e7%bc%96%e7%a0%81-run-length-encoding&#34; &gt;行程编码 Run Length Encoding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#lzw-%e7%bc%96%e7%a0%81%e6%96%b9%e5%bc%8f&#34; &gt;LZW 编码方式&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#53-%e6%9c%89%e6%8d%9f%e5%8e%8b%e7%bc%a9&#34; &gt;5.3 有损压缩&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e9%a2%84%e6%b5%8b%e7%bc%96%e7%a0%81&#34; &gt;预测编码&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#dpcm-differential-pulse-code-modulation-%e7%bc%96%e7%a0%81&#34; &gt;DPCM (Differential Pulse Code Modulation) 编码&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#dm-delta-modulation-%e7%bc%96%e7%a0%81&#34; &gt;DM Delta Modulation 编码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%8f%98%e6%8d%a2%e7%bc%96%e7%a0%81&#34; &gt;变换编码&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#dct-%e5%8f%98%e6%8d%a2%e7%bc%96%e7%a0%81&#34; &gt;DCT 变换编码&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%8f%98%e6%8d%a2%e7%bc%96%e7%a0%81-1&#34; &gt;变换编码&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%b0%8f%e6%b3%a2%e5%8f%98%e6%8d%a2%e7%bc%96%e7%a0%81&#34; &gt;小波变换编码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#65-%e5%9b%be%e5%83%8f%e5%88%86%e5%89%b2%e5%9f%ba%e4%ba%8e%e8%be%b9%e7%bc%98%e6%a3%80%e6%b5%8b%e7%9a%84%e6%96%b9%e6%b3%95&#34; &gt;6.5 图像分割——基于边缘检测的方法&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e8%83%8c%e6%99%af%e7%9f%a5%e8%af%86-%e8%a7%81%e5%a4%8d%e5%8d%b0%e4%bb%b6&#34; &gt;背景知识 见复印件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e8%be%b9%e7%bc%98%e6%a3%80%e6%b5%8b-%e8%a7%81%e5%a4%8d%e5%8d%b0%e4%bb%b6&#34; &gt;边缘检测 见复印件&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%8e%9f%e7%90%86-%e8%a7%81%e5%a4%8d%e5%8d%b0%e4%bb%b6&#34; &gt;原理 见复印件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e8%be%b9%e7%bc%98%e6%a3%80%e6%b5%8b%e7%ae%97%e5%ad%90-%e8%a7%81%e5%a4%8d%e5%8d%b0%e4%bb%b6&#34; &gt;边缘检测算子 见复印件&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e9%9c%8d%e5%a4%ab%e5%8f%98%e6%8d%a2-%e8%a7%81%e5%a4%8d%e5%8d%b0%e4%bb%b6&#34; &gt;霍夫变换 见复印件&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%9f%ba%e6%9c%ac%e5%8e%9f%e7%90%86-%e8%a7%81%e5%a4%8d%e5%8d%b0%e4%bb%b6&#34; &gt;基本原理 见复印件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e7%ae%97%e6%b3%95%e5%ae%9e%e7%8e%b0-%e8%a7%81%e5%a4%8d%e5%8d%b0%e4%bb%b6&#34; &gt;算法实现 见复印件&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -413,7 +613,12 @@ motions have equal Froude numbers  $u^2 /gh$ (Duncan1953).&lt;/p&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#632-%e9%98%88%e5%80%bc%e5%a4%84%e7%90%86&#34; &gt;6.3.2 阈值处理&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#6321-%e5%9f%ba%e6%9c%ac%e5%85%a8%e5%b1%80%e9%98%88%e5%80%bc%e5%a4%84%e7%90%86&#34; &gt;6.3.2.1 基本全局阈值处理&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#6322-tod0-otus%e6%96%b9%e6%b3%95%e7%9a%84%e5%85%a8%e5%b1%80%e9%98%88%e5%80%bc%e5%a4%84%e7%90%86%e7%b1%bb%e9%97%b4%e6%9c%80%e5%a4%a7%e6%96%b9%e5%b7%ae%e6%b3%95&#34; &gt;6.3.2.2 &lt;strong&gt;TOD0&lt;/strong&gt; Otus方法的全局阈值处理/类间最大方差法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#6322-otus%e6%96%b9%e6%b3%95%e7%9a%84%e5%85%a8%e5%b1%80%e9%98%88%e5%80%bc%e5%a4%84%e7%90%86%e7%b1%bb%e9%97%b4%e6%9c%80%e5%a4%a7%e6%96%b9%e5%b7%ae%e6%b3%95&#34; &gt;6.3.2.2 Otus方法的全局阈值处理/类间最大方差法&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#otus%e7%ae%97%e6%b3%95%e5%ae%9e%e7%8e%b0%e6%b5%81%e7%a8%8b&#34; &gt;Otus算法实现流程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#otus%e6%96%b9%e6%b3%95%e7%b1%bb%e9%97%b4%e6%96%b9%e5%b7%ae%e5%85%ac%e5%bc%8f%e6%8e%a8%e5%af%bc&#34; &gt;Otus方法类间方差公式推导&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#633-%e6%94%b9%e8%bf%9b&#34; &gt;6.3.3 改进&lt;/a&gt;
@@ -435,7 +640,15 @@ motions have equal Froude numbers  $u^2 /gh$ (Duncan1953).&lt;/p&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#641-%e5%8c%ba%e5%9f%9f%e7%94%9f%e9%95%bf-bottom-up&#34; &gt;6.4.1 区域生长 Bottom-up&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#642-%e5%8c%ba%e5%9f%9f%e5%88%86%e7%a6%bb%e4%b8%8e%e8%81%9a%e5%90%88-up-down&#34; &gt;6.4.2 区域分离与聚合 Up-down&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#643-%e7%a9%ba%e9%97%b4%e8%81%9a%e7%b1%bbk%e5%9d%87%e5%80%bc%e8%81%9a%e7%b1%bb&#34; &gt;6.4.3 空间聚类/K均值聚类&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#644-%e8%b6%85%e5%83%8f%e7%b4%a0%e7%9a%84%e5%8c%ba%e5%9f%9f%e5%88%86%e5%89%b2&#34; &gt;6.4.4 超像素的区域分割&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#644-%e8%b6%85%e5%83%8f%e7%b4%a0%e7%9a%84%e5%8c%ba%e5%9f%9f%e5%88%86%e5%89%b2&#34; &gt;6.4.4 超像素的区域分割&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%9f%ba%e6%9c%ac%e6%80%9d%e6%83%b3&#34; &gt;基本思想&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#slic-%e8%b6%85%e5%83%8f%e7%b4%a0%e7%ae%97%e6%b3%95&#34; &gt;SLIC 超像素算法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%85%b7%e4%bd%93%e6%ad%a5%e9%aa%a4&#34; &gt;具体步骤&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e4%bc%98%e7%82%b9&#34; &gt;优点&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e6%80%bb%e7%bb%93&#34; &gt;总结&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -443,24 +656,24 @@ motions have equal Froude numbers  $u^2 /gh$ (Duncan1953).&lt;/p&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e7%ac%ac%e4%b8%83%e7%ab%a0-%e5%9b%be%e5%83%8f%e7%9a%84%e7%89%b9%e5%be%81%e6%8f%90%e5%8f%96&#34; &gt;第七章 图像的特征提取&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#71-%e8%83%8c%e6%99%af%e7%9f%a5%e8%af%86&#34; &gt;7.1 背景知识&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#72-tod0%e8%be%b9%e7%95%8c%e9%a2%84%e5%a4%84%e7%90%86&#34; &gt;7.2 &lt;strong&gt;TOD0&lt;/strong&gt;边界预处理&lt;/a&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#72-%e8%be%b9%e7%95%8c%e9%a2%84%e5%a4%84%e7%90%86&#34; &gt;7.2 边界预处理&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#721-%e5%8c%ba%e5%9f%9f%e9%aa%a8%e6%9e%b6%e6%8a%bd%e5%8f%96&#34; &gt;7.2.1 区域骨架抽取&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#721-%e5%8c%ba%e5%9f%9f%e9%aa%a8%e6%9e%b6%e6%8a%bd%e5%8f%96-%e8%a7%81%e5%a4%8d%e5%8d%b0%e4%bb%b6&#34; &gt;7.2.1 区域骨架抽取 见复印件&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#73-tod0%e7%89%b9%e5%be%81%e6%8f%8f%e8%bf%b0%e5%ad%90&#34; &gt;7.3 &lt;strong&gt;TOD0&lt;/strong&gt;特征描述子&lt;/a&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#73-%e7%89%b9%e5%be%81%e6%8f%8f%e8%bf%b0%e5%ad%90&#34; &gt;7.3 特征描述子&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#731-%e8%be%b9%e7%95%8c%e7%89%b9%e5%be%81%e6%8f%8f%e8%bf%b0%e5%ad%90&#34; &gt;7.3.1 边界特征描述子&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#731-%e8%be%b9%e7%95%8c%e7%89%b9%e5%be%81%e6%8f%8f%e8%bf%b0%e5%ad%90-%e8%a7%81%e5%a4%8d%e5%8d%b0%e4%bb%b6&#34; &gt;7.3.1 边界特征描述子 见复印件&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#732-%e5%8c%ba%e5%9f%9f%e7%89%b9%e5%be%81%e6%8f%8f%e8%bf%b0%e5%ad%90&#34; &gt;7.3.2 区域特征描述子&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#7321-%e5%9f%ba%e6%9c%ac%e6%8f%8f%e8%bf%b0%e5%ad%90&#34; &gt;7.3.2.1 基本描述子&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#7321-%e5%9f%ba%e6%9c%ac%e6%8f%8f%e8%bf%b0%e5%ad%90-%e8%a7%81%e5%a4%8d%e5%8d%b0%e4%bb%b6&#34; &gt;7.3.2.1 基本描述子 见复印件&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#7322-%e7%ba%b9%e7%90%86%e6%8f%8f%e8%bf%b0%e5%9f%ba%e4%ba%8e%e7%9b%b4%e6%96%b9%e5%9b%be%e5%9f%ba%e4%ba%8e%e7%bb%9f%e8%ae%a1%e6%96%b9%e6%b3%95%e5%9f%ba%e4%ba%8e%e8%b0%b1%e6%96%b9%e6%b3%95&#34; &gt;7.3.2.2 纹理描述(基于直方图、基于统计方法、基于谱方法)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#733-%e7%89%b9%e5%be%81%e6%8f%8f%e8%bf%b0%e5%ad%90%e7%9a%84%e4%b8%bb%e5%88%86%e9%87%8f&#34; &gt;7.3.3 特征描述子的主分量&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#74%e5%b0%ba%e5%ba%a6%e4%b8%8d%e5%8f%98%e7%89%b9%e5%be%81%e5%8f%98%e6%8d%a2-sift-scale-invariant-feature-transform&#34; &gt;7.4尺度不变特征变换 SIFT Scale-invariant feature transform&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#74%e5%b0%ba%e5%ba%a6%e4%b8%8d%e5%8f%98%e7%89%b9%e5%be%81%e5%8f%98%e6%8d%a2-sift-scale-invariant-feature-transform-%e8%a7%81%e5%a4%8d%e5%8d%b0%e4%bb%b6&#34; &gt;7.4尺度不变特征变换 SIFT Scale-invariant feature transform 见复印件&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e7%ac%ac%e4%b9%9d%e7%ab%a0-%e5%9b%be%e5%83%8f%e5%88%86%e7%b1%bb&#34; &gt;第九章 图像分类&lt;/a&gt;
@@ -1341,16 +1554,43 @@ $$&lt;/p&gt;
 &lt;p&gt;一个&lt;strong&gt;二维傅立叶变换可分解为两步进行，其中每一步都是一个一维傅立叶变换&lt;/strong&gt;。 先对f(x,y)按行进行傅立叶变换得到F(x,v)，再对F(x,v)按列进行傅立叶变换，便可得到f(x,y)的傅立叶变换结果F(u,v) 。显然先列再行也可行。&lt;/p&gt;
 &lt;h5 id=&#34;4-空间位移性&#34;&gt;4. 空间位移性&lt;/h5&gt;
 &lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210523233707152.png&#34; alt=&#34;image-20210523233707152&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上式N代表图像为NxN&lt;/p&gt;
+&lt;p&gt;若为MxN，则：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210529215413681.png&#34; alt=&#34;image-20210529215413681&#34;  /&gt;&lt;/p&gt;
 &lt;h5 id=&#34;5-频移性&#34;&gt;5. 频移性&lt;/h5&gt;
 &lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210523233741297.png&#34; alt=&#34;image-20210523233741297&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
 &lt;h5 id=&#34;6-周期性&#34;&gt;6. 周期性&lt;/h5&gt;
 &lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210523233855182.png&#34; alt=&#34;image-20210523233855182&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
 &lt;h5 id=&#34;7-共轭对称性&#34;&gt;7. 共轭对称性&lt;/h5&gt;
 &lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210523233924573.png&#34; alt=&#34;image-20210523233924573&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
-&lt;h3 id=&#34;423-快速傅立叶变换&#34;&gt;4.2.3 快速傅立叶变换&lt;/h3&gt;
+&lt;h3 id=&#34;423-快速傅立叶变换-见复印件&#34;&gt;4.2.3 快速傅立叶变换 见复印件&lt;/h3&gt;
 &lt;h3 id=&#34;424-离散余弦变换&#34;&gt;4.2.4 离散余弦变换&lt;/h3&gt;
 &lt;h3 id=&#34;425-沃尔什哈达玛变换&#34;&gt;4.2.5 沃尔什—哈达玛变换&lt;/h3&gt;
 &lt;h3 id=&#34;426-小波变换&#34;&gt;4.2.6 小波变换&lt;/h3&gt;
+&lt;h1 id=&#34;第五章-图像压缩-见复印件&#34;&gt;第五章 图像压缩 见复印件&lt;/h1&gt;
+&lt;h2 id=&#34;51-图像压缩概述&#34;&gt;5.1 图像压缩概述&lt;/h2&gt;
+&lt;h2 id=&#34;52-无损压缩&#34;&gt;5.2 无损压缩&lt;/h2&gt;
+&lt;h3 id=&#34;熵编码-霍夫曼编码-huffman&#34;&gt;熵编码 霍夫曼编码 (Huffman&lt;/h3&gt;
+&lt;h3 id=&#34;熵编码-算术编码哈夫曼编码的改进&#34;&gt;熵编码 算术编码：哈夫曼编码的改进&lt;/h3&gt;
+&lt;h3 id=&#34;基于字典的编码-dictionary&#34;&gt;基于字典的编码 (dictionary&lt;/h3&gt;
+&lt;h3 id=&#34;行程编码-run-length-encoding&#34;&gt;行程编码 Run Length Encoding&lt;/h3&gt;
+&lt;h3 id=&#34;lzw-编码方式&#34;&gt;LZW 编码方式&lt;/h3&gt;
+&lt;h2 id=&#34;53-有损压缩&#34;&gt;5.3 有损压缩&lt;/h2&gt;
+&lt;h3 id=&#34;预测编码&#34;&gt;预测编码&lt;/h3&gt;
+&lt;h4 id=&#34;dpcm-differential-pulse-code-modulation-编码&#34;&gt;DPCM (Differential Pulse Code Modulation) 编码&lt;/h4&gt;
+&lt;h4 id=&#34;dm-delta-modulation-编码&#34;&gt;DM Delta Modulation 编码&lt;/h4&gt;
+&lt;h3 id=&#34;变换编码&#34;&gt;变换编码&lt;/h3&gt;
+&lt;h4 id=&#34;dct-变换编码&#34;&gt;DCT 变换编码&lt;/h4&gt;
+&lt;h4 id=&#34;变换编码-1&#34;&gt;变换编码&lt;/h4&gt;
+&lt;h4 id=&#34;小波变换编码&#34;&gt;小波变换编码&lt;/h4&gt;
+&lt;h2 id=&#34;65-图像分割基于边缘检测的方法&#34;&gt;6.5 图像分割——基于边缘检测的方法&lt;/h2&gt;
+&lt;h3 id=&#34;背景知识-见复印件&#34;&gt;背景知识 见复印件&lt;/h3&gt;
+&lt;h3 id=&#34;边缘检测-见复印件&#34;&gt;边缘检测 见复印件&lt;/h3&gt;
+&lt;h4 id=&#34;原理-见复印件&#34;&gt;原理 见复印件&lt;/h4&gt;
+&lt;h4 id=&#34;边缘检测算子-见复印件&#34;&gt;边缘检测算子 见复印件&lt;/h4&gt;
+&lt;h3 id=&#34;霍夫变换-见复印件&#34;&gt;霍夫变换 见复印件&lt;/h3&gt;
+&lt;h4 id=&#34;基本原理-见复印件&#34;&gt;基本原理 见复印件&lt;/h4&gt;
+&lt;h4 id=&#34;算法实现-见复印件&#34;&gt;算法实现 见复印件&lt;/h4&gt;
 &lt;div style=&#34;page-break-after:always;&#34;&gt;&lt;/div&gt;
 &lt;h1 id=&#34;第六章-图像分割&#34;&gt;第六章 图像分割&lt;/h1&gt;
 &lt;h2 id=&#34;61--图像分割基本介绍&#34;&gt;6.1  图像分割基本介绍&lt;/h2&gt;
@@ -1436,9 +1676,26 @@ $$&lt;/p&gt;
 &lt;p&gt;3、对G1和G2中的像素分别计算平均灰度值（均值）m1和m2&lt;/p&gt;
 &lt;p&gt;4、在m1和m2之间计算新的阈值 $T=\frac{1}{2}(m_1+m_2)$&lt;/p&gt;
 &lt;p&gt;5、重复2-4，直到连续迭代中的两个T的差小于预定义的ΔT&lt;/p&gt;
-&lt;h4 id=&#34;6322-tod0-otus方法的全局阈值处理类间最大方差法&#34;&gt;6.3.2.2 &lt;strong&gt;TOD0&lt;/strong&gt; Otus方法的全局阈值处理/类间最大方差法&lt;/h4&gt;
+&lt;h4 id=&#34;6322-otus方法的全局阈值处理类间最大方差法&#34;&gt;6.3.2.2 Otus方法的全局阈值处理/类间最大方差法&lt;/h4&gt;
 &lt;p&gt;基本思想：经过适当的阈值化的两个类，就其像素灰度值而言，应当是截然不同的。同理，就其灰度值而言，给出最佳类间分离的阈值将是最佳的阈值。&lt;/p&gt;
 &lt;p&gt;求解过程&lt;strong&gt;不需要人为设定其他参数&lt;/strong&gt;，完全由计算机自动选取。它不仅适用于两个区域的分割，也可以推广到多个区域的情形。&lt;/p&gt;
+&lt;h5 id=&#34;otus算法实现流程&#34;&gt;Otus算法实现流程&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;计算输入图像（大小MxN，有L个不同灰度级[0, 1, 2, &amp;hellip;, L-1]）的归一化直方图，使用$p_i$表示直方图各个分量，其中$i=0,1,2,&amp;hellip;,L-1$&lt;/li&gt;
+&lt;li&gt;计算全局灰度均值$m_G$&lt;/li&gt;
+&lt;li&gt;计算累积和$P_1(k)=\sum\limits_{i=0}^kp_i,k=0,1,2,&amp;hellip;,L-1$&lt;/li&gt;
+&lt;li&gt;计算累积均值$m(k)=\sum\limits_{i=0}^kip_i,k=0,1,2,&amp;hellip;,L-1$&lt;/li&gt;
+&lt;li&gt;计算类间方差$\sigma^2_B(k)=\frac{m_GP_1(k)-m(k)}{P_1(1-P_1)}$&lt;/li&gt;
+&lt;li&gt;Otus阈值$k^*=\max\limits_{0\leq k\leq L-1} \sigma^2_B(k)$ 若最大值不唯一，用对应的各个$k$的均值作为$k^*$&lt;/li&gt;
+&lt;li&gt;*计算可分性度量$\eta^*=\frac{\sigma^2_B(k)}{\sigma^2_G}$,其中$\sigma^2_G=\sum\limits_{i=0}^{L-1}(i-m_G)^2p_i$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;由于$P_1(k),m(k),\sigma^2_G$均为累加值，可以在遍历各个灰度级的同时进行递推计算，即$P_1(k)=P_1(k-1)+p_{k},k=0,1,2,&amp;hellip;,L-1$，其中$P_1(-1)$记为0。&lt;/p&gt;
+&lt;h5 id=&#34;otus方法类间方差公式推导&#34;&gt;Otus方法类间方差公式推导&lt;/h5&gt;
+&lt;p&gt;其中$m_1(k)=\frac{1}{P_1(k)}\sum\limits_{i=0}^kip_i,k=0,1,2,&amp;hellip;,L-1$&lt;/p&gt;
+&lt;p&gt;1、&lt;img src=&#34;https://K7288.github.io/assets/image-20210619170902579.png&#34; alt=&#34;image-20210619170902579&#34; style=&#34;zoom:25%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210619170845722.png&#34; alt=&#34;image-20210619170845722&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;2、&lt;img src=&#34;https://K7288.github.io/assets/image-20210619191957635.png&#34; alt=&#34;image-20210619191957635&#34; style=&#34;zoom:33%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210619191934163.png&#34; alt=&#34;image-20210619191934163&#34; style=&#34;zoom:70%;&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;633-改进&#34;&gt;6.3.3 改进&lt;/h3&gt;
 &lt;h4 id=&#34;a-图像平滑改进&#34;&gt;a 图像平滑改进&lt;/h4&gt;
 &lt;p&gt;噪声会将简单的阈值处理问题变得不可解决，当噪声不能在源头减少，并且需要用阈值处理分割图像时，通常在阈值处理之前平滑图像，以增强阈值处理的性能。&lt;/p&gt;
@@ -1499,6 +1756,28 @@ $$&lt;/p&gt;
 &lt;p&gt;$m_i=1/|C_i | ∑129_(z∈C_i)▒z,i=1,2,…,k$&lt;/p&gt;
 &lt;p&gt;4、完备性检验：计算当前步骤和前几步中平均向量之间的差的欧几里得范数。计算残差E，即k个范数之和。若E≤T，其中T是一个规定的非负阈值，则停止。否则，返回步骤2.&lt;/p&gt;
 &lt;h3 id=&#34;644-超像素的区域分割&#34;&gt;6.4.4 超像素的区域分割&lt;/h3&gt;
+&lt;h4 id=&#34;基本思想&#34;&gt;基本思想&lt;/h4&gt;
+&lt;p&gt;通过将像素组合到比各个像素更有感知意义的原始区域来取代标准原始图像 。
+超像素分割的目的是减小计算开销并通过减少不相关的细节来提高分割算法的性能 。&lt;/p&gt;
+&lt;h4 id=&#34;slic-超像素算法&#34;&gt;SLIC 超像素算法&lt;/h4&gt;
+&lt;p&gt;简单线性迭代聚类SLIC 是 k 均值分割算法的一种改进 。 与其它超像素算法相比 原理简单 具有计算优势和其他性能优势 。&lt;/p&gt;
+&lt;h4 id=&#34;具体步骤&#34;&gt;具体步骤&lt;/h4&gt;
+&lt;p&gt;1、初始化算法：以规则步长 S 对图像取样 计算初始的超像素聚类中心 𝒎𝑖=[𝑟𝑖,𝑔𝑖,𝑏𝑖,𝑥𝑖,𝑦𝑖] ,𝑖=1,2,…,$n_{sp}$&lt;/p&gt;
+&lt;p&gt;2、在种子点的 n*n 邻域内重新选择种子点 一般取 n= 3 。 具体方法为：计算该邻域内所有像素点的梯度值 将种子点移到该邻域内梯度最小的地方&lt;/p&gt;
+&lt;p&gt;3、计算距离测度&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210619170219160.png&#34; alt=&#34;image-20210619170219160&#34; style=&#34;zoom:30%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;4、将样本分配给聚类中心：在每个种子点周围的邻域内为每个像素点分配类标签 即属于哪个聚类中心 。 和标准的 k means 在整张图中搜索不同 SLIC 的搜索范围限制为 2 S* 2 S 可以加速算法收敛 如下图 。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210619170345573.png&#34; alt=&#34;image-20210619170345573&#34; style=&#34;zoom:30%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;5、更新聚类中心
+6、收敛性检验：计算当前步骤和前几步中平均向量之间的差的欧几里得范数 。 计算残差 E 即 k 个范数之和 。 若 𝐸 𝑇 其中 T 是一个规定的非负阈值 则停止 。 否则 返回步骤 2
+7、后处理超像素区域：将每个区域中的所有超像素替换为他们的平均值&lt;/p&gt;
+&lt;h4 id=&#34;优点&#34;&gt;优点&lt;/h4&gt;
+&lt;p&gt;1、生成的超像素如同细胞一般紧凑整齐 邻域特征比较容易表达 。
+2、不仅可以分割彩色图 也可以兼容分割灰度图 。
+3、需要设置的参数非常少 默认情况下只需要设置一个预分割的超像素的数量 。
+4、相比其他的超像素分割方法 SLIC 在运行速度 、 生成超像素的紧凑度 、 轮廓保持方面都比较理想&lt;/p&gt;
+&lt;h4 id=&#34;总结&#34;&gt;总结&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210619170737920.png&#34; alt=&#34;image-20210619170737920&#34;  /&gt;&lt;/p&gt;
 &lt;div style=&#34;page-break-after:always;&#34;&gt;&lt;/div&gt;
 &lt;h1 id=&#34;第七章-图像的特征提取&#34;&gt;第七章 图像的特征提取&lt;/h1&gt;
 &lt;p&gt;定位 初始关键点 localize where to describe features 描述 如何描述这些区域/点&lt;/p&gt;
@@ -1513,15 +1792,17 @@ $$&lt;/p&gt;
 1、如果关注的焦点是形状特性，选择外部表示方式
 2、如果关注的焦点是反射率特性，如颜色、纹理时，选择内部表示方式。
 3、所选表示方式，应该对尺寸、变换、旋转等变量尽可能的不敏感&lt;/p&gt;
-&lt;h2 id=&#34;72-tod0边界预处理&#34;&gt;7.2 &lt;strong&gt;TOD0&lt;/strong&gt;边界预处理&lt;/h2&gt;
-&lt;h3 id=&#34;721-区域骨架抽取&#34;&gt;7.2.1 区域骨架抽取&lt;/h3&gt;
+&lt;h2 id=&#34;72-边界预处理&#34;&gt;7.2 边界预处理&lt;/h2&gt;
+&lt;h3 id=&#34;721-区域骨架抽取-见复印件&#34;&gt;7.2.1 区域骨架抽取 见复印件&lt;/h3&gt;
 &lt;p&gt;1、Blum的中轴变换方法（MAT：Medial Axis Transform）
-设:𝑅是一个区域，𝐵为𝑅的边界，在𝑅中寻找点𝑝(x, y)，使𝑝最接近于B。如果𝑝有多这个这样的临点（最近邻点&amp;gt;=2），则𝑝点形成的轨迹为R的中轴（骨架）。
-存在问题：计算量大&lt;/p&gt;
-&lt;h2 id=&#34;73-tod0特征描述子&#34;&gt;7.3 &lt;strong&gt;TOD0&lt;/strong&gt;特征描述子&lt;/h2&gt;
-&lt;h3 id=&#34;731-边界特征描述子&#34;&gt;7.3.1 边界特征描述子&lt;/h3&gt;
+设:𝑅是一个区域，𝐵为𝑅的边界，在𝑅中寻找点𝑝(x, y)，使𝑝最接近于B。如果𝑝有多这个这样的临点（&lt;strong&gt;最近邻点&amp;gt;=2&lt;/strong&gt;)，则𝑝点形成的轨迹为R的中轴（骨架）。
+存在问题：计算量大
+在保证产生正确的骨架的同时，改进算法的效率。比较典型的是一类细化算法，它们不断删去边缘，但保证删除满足：
+1、不移去端点 2、不破坏连通性 3、不引起区域的过度腐蚀&lt;/p&gt;
+&lt;h2 id=&#34;73-特征描述子&#34;&gt;7.3 特征描述子&lt;/h2&gt;
+&lt;h3 id=&#34;731-边界特征描述子-见复印件&#34;&gt;7.3.1 边界特征描述子 见复印件&lt;/h3&gt;
 &lt;h3 id=&#34;732-区域特征描述子&#34;&gt;7.3.2 区域特征描述子&lt;/h3&gt;
-&lt;h4 id=&#34;7321-基本描述子&#34;&gt;7.3.2.1 基本描述子&lt;/h4&gt;
+&lt;h4 id=&#34;7321-基本描述子-见复印件&#34;&gt;7.3.2.1 基本描述子 见复印件&lt;/h4&gt;
 &lt;h4 id=&#34;7322-纹理描述基于直方图基于统计方法基于谱方法&#34;&gt;7.3.2.2 纹理描述(基于直方图、基于统计方法、基于谱方法)&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;1、定义&lt;/strong&gt; 纹理特征刻画了图像中重复出现的局部模式与他们的排列规则，常用于图像分类和场景识别。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2、特点&lt;/strong&gt; 反映物体表面的特性，无法完全反映出物体的本质属性，所以仅用纹理特征无法获得图像的高层次内容。&lt;/p&gt;
@@ -1593,7 +1874,7 @@ $$&lt;/p&gt;
 &lt;p&gt;𝑪𝒚是对角阵，主对角元素是𝑪𝒙的特征值&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210429150144822.png&#34; alt=&#34;image-20210429150144822&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;LDA PCA 特征值由x维度决定&lt;/p&gt;
-&lt;h2 id=&#34;74尺度不变特征变换-sift-scale-invariant-feature-transform&#34;&gt;7.4尺度不变特征变换 SIFT Scale-invariant feature transform&lt;/h2&gt;
+&lt;h2 id=&#34;74尺度不变特征变换-sift-scale-invariant-feature-transform-见复印件&#34;&gt;7.4尺度不变特征变换 SIFT Scale-invariant feature transform 见复印件&lt;/h2&gt;
 &lt;p&gt;1、构建尺度空间&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210506135051482.png&#34; alt=&#34;image-20210506135051482&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Octave1 images smoothed using Gaussian lowpass kernels (k&amp;gt;1) （$\sigma$越大越模糊）&lt;/p&gt;
