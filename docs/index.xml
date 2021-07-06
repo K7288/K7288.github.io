@@ -16,9 +16,13 @@
 &lt;p&gt;intention定义: walk/stand&lt;/p&gt;
 &lt;h2 id=&#34;assistance-exoskeleton-system&#34;&gt;assistance exoskeleton system&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;支持4种state: L swing, R swing, Double stance(L), Double stance(R)&lt;/li&gt;
-&lt;li&gt;control
-&lt;img src=&#34;https://K7288.github.io/assets/image-20210706151917632.png&#34; alt=&#34;image-20210706151917632&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;支持4种state: L swing, R swing, Double stance(L), Double stance(R)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;control&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210706151917632.png&#34; alt=&#34;image-20210706151917632&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
 &lt;p&gt;online SVM; features: ZMP(Zero Moment Point)&lt;/p&gt;
@@ -75,6 +79,109 @@ p_{x} &amp;amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\
 &lt;h2 id=&#34;thoughtscomments&#34;&gt;Thoughts/Comments&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;TODO ZMP之后应该用得上，这个推导可以看一眼&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>A lower limb exoskeleton based on recognition of lower limb walking intention</title>
+        <link>https://K7288.github.io/posts/a-lower-limb-exoskeleton-based-on-recognition-of-lower-limb-walking-intention/</link>
+        <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://K7288.github.io/posts/a-lower-limb-exoskeleton-based-on-recognition-of-lower-limb-walking-intention/</guid>
+        <description>&lt;p&gt;A lower limb exoskeleton based on recognition of lower limb walking intention&lt;/p&gt;
+&lt;p&gt;intention定义: step initiation $\Leftarrow$ intersection event, continuous walking (normal step velocity $\Leftarrow$ push-off impulse time), acceleration, deceleration, and step termination&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;assets/image-20210706212640448.png&#34; alt=&#34;image-20210706212640448&#34; style=&#34;zoom:40%;&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Key technologies in lower limb exoskeletons are actuator, mechanical design, control, sensor, recognition of the driver’s intention, and human–robot interface.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;three representative lower limb exoskeletons: Berkeley Lower Extremity Exoskeleton (BLEEX), Hybrid Assistive Leg (HAL), and ReWalk.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;BLEEX
+&lt;ul&gt;
+&lt;li&gt;intention定义: step initiation, step velocity, and step termination&lt;/li&gt;
+&lt;li&gt;sensors: more than 40; including encoders, linear accelerometers, force sensors, and an inclinometer&lt;/li&gt;
+&lt;li&gt;actuators: hydraulic actuators&lt;/li&gt;
+&lt;li&gt;intention recognition the driver by using foot switch sensors, encoders, and force sensors to monitor toe-off movement, joint movement, or force variability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;HAL
+&lt;ul&gt;
+&lt;li&gt;sensors: potentiometers, floor reaction force sensors, accelerometers, a gyroscope, and electromyography (EMG) sensors&lt;/li&gt;
+&lt;li&gt;actuators: DC motors with a harmonic drive directly placed on the hip and knee joints&lt;/li&gt;
+&lt;li&gt;intention recognition: faster than BLEEX, using bio-signals from EMG sensors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ReWalk
+&lt;ul&gt;
+&lt;li&gt;intention recognition: with forearm crutches, installing buttons, and torso angles; slower than recognition of walking intention in real time using sensors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;specifications&#34;&gt;specifications&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Sensors: insole-type FSRs(force sensing resistors) and three axis F/T sensors&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;actuators: four DC motors (two at each hip and each knee)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210706195312079.png&#34; alt=&#34;image-20210706195312079&#34; style=&#34;zoom:33%;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;system&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210706195358285.png&#34; alt=&#34;image-20210706195358285&#34; style=&#34;zoom:33%;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;control&#34;&gt;Control&lt;/h2&gt;
+&lt;p&gt;Flowchart of control strategy&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210706200803466.png&#34; alt=&#34;image-20210706200803466&#34;  /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;step initiation: using the insole-type FSRs with two particular GRF events before visible movement occurs, such as heel off, toe off, or knee flexion&lt;/li&gt;
+&lt;li&gt;after step initiation: reference torque(reference torque for each hip and each knee were calculated from gait pattern analysis using the &lt;strong&gt;inverse dynamics model&lt;/strong&gt;.) $\rightarrow$ motion controller&lt;/li&gt;
+&lt;li&gt;push-off impulse time $\Leftarrow$ three axis F/T sensors.
+&lt;ul&gt;
+&lt;li&gt;&lt;a id=&#34;dependence&#34;&gt;&lt;/a&gt;We found that &lt;strong&gt;push-off impulse time depends on step velocity&lt;/strong&gt;, using gait analysis based on force plates. shorter at faster step velocity, longer at slower step velocity, and rapidly minimized at step termination.&lt;/li&gt;
+&lt;li&gt;measured from heel strike time to push-off time by the trailing leg.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;intention-recognition&#34;&gt;Intention Recognition&lt;/h2&gt;
+&lt;p&gt;Moore Automation for Robot Behavior(MARB) (Konig et al. 2009).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210706203132337.png&#34; alt=&#34;image-20210706203132337&#34; style=&#34;zoom:60%;&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;thoughtscomments&#34;&gt;Thoughts/Comments&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href = &#34;#dependence&#34;&gt;TODO gait analysis&lt;/a&gt; $\Rightarrow$ push-off impulse time depends on step velocity&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;这个结果还是通过基于force plates的gait analysis得来的，可能有借鉴意义&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210706212616125.png&#34; alt=&#34;image-20210706212616125&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;最开始看的那篇生物统计的也用到了impulse但是现在不太记得具体内容了XD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TODO 这个里面因为速度和push-off impulse time统计相关所以用push-off impulse time估计速度，用的方式是最直观的将速度划分成区间&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The mean push-off impulse time of normal step velocity from three axis F/T sensors was
+0.45 s (SD 0.05), of faster step velocity was 0.225 s (SD 0.05), and of slower step velocity was 0.75 s (SD 0.01). The mean push-off impulse time of normal step velocity from force plates was 0.35 s (SD 0.05), of faster step velocity was 0.15 s (SD 0.05), and of slower step velocity was 0.67 s (SD 0.01). The results clearly indicate that UTRCEXO recognized the walking intentions of drivers for acceleration, deceleration, and step termination with different push-off impulse times of drivers at three different velocities and step termination.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210706213607461.png&#34; alt=&#34;image-20210706213607461&#34;  /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;为什么用的说法很多都是pilot driver❓&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TODO EMG数据处理：高通滤波(二阶巴特沃思，20hz截止频率)，整流，然后低通滤波(二阶巴特沃思，3hz截止频率)。然后采用方差分析(ANOVA)比较安装UTRCEXO与未安装UTRCEXO的肌肉活动，采用SPSS 19.0软件对肌肉活动进行归一化处理，显著性水平为0.05。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Electrodes were placed on the anatomical locations of the rectus femoris muscle, gastrocnemius muscle, and abdominal muscle, based on guidelines from previous research (Gallagher et al. 2011). The EMG sensor had a 1 KHz sampling rate and 8–500 Hz band- width, and was low-pass filtered at 500 Hz by the EMG recording system. The EMG signals were collected and used to record muscle activity during stance phase and swing phase. The EMG signal was high-pass filtered        (second-order Butterworth, 20 Hz cut-off frequency), rectified, and then low-pass filtered (second-order Butterworth, 3 Hz cut-off frequency). Then ANOVA was conducted to compare the muscle activity of drivers equipped and not equipped with UTRCEXO, normalizing muscle activity using SPSS version 19.0 software based on a significance level of0.05. The ANOVA results are shown in Table 6.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;他们用的这个MARB没太看懂&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>
@@ -262,7 +369,11 @@ p_{x} &amp;amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;push-off impulse time&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;transition function&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;

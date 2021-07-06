@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='A lower limb exoskeleton based on recognition of lower limb walking intention
+intention定义: step initiation $\Leftarrow$ intersection event, continuous walking (normal step velocity $\Leftarrow$ push-off impulse time), acceleration, deceleration, and step termination
+Introduction   Key technologies in lower limb exoskeletons are actuator, mechanical design, control, sensor, recognition of the driver’s intention, and human–robot interface.
+  three representative lower limb exoskeletons: Berkeley Lower Extremity Exoskeleton (BLEEX), Hybrid Assistive Leg (HAL), and ReWalk.'><title>A lower limb exoskeleton based on recognition of lower limb walking intention</title>
+
+<link rel='canonical' href='https://K7288.github.io/posts/a-lower-limb-exoskeleton-based-on-recognition-of-lower-limb-walking-intention/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='A lower limb exoskeleton based on recognition of lower limb walking intention'>
+<meta property='og:description' content='A lower limb exoskeleton based on recognition of lower limb walking intention
+intention定义: step initiation $\Leftarrow$ intersection event, continuous walking (normal step velocity $\Leftarrow$ push-off impulse time), acceleration, deceleration, and step termination
+Introduction   Key technologies in lower limb exoskeletons are actuator, mechanical design, control, sensor, recognition of the driver’s intention, and human–robot interface.
+  three representative lower limb exoskeletons: Berkeley Lower Extremity Exoskeleton (BLEEX), Hybrid Assistive Leg (HAL), and ReWalk.'>
+<meta property='og:url' content='https://K7288.github.io/posts/a-lower-limb-exoskeleton-based-on-recognition-of-lower-limb-walking-intention/'>
+<meta property='og:site_name' content='K7288'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2021-07-06T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-07-06T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="A lower limb exoskeleton based on recognition of lower limb walking intention">
+<meta name="twitter:description" content="A lower limb exoskeleton based on recognition of lower limb walking intention
+intention定义: step initiation $\Leftarrow$ intersection event, continuous walking (normal step velocity $\Leftarrow$ push-off impulse time), acceleration, deceleration, and step termination
+Introduction   Key technologies in lower limb exoskeletons are actuator, mechanical design, control, sensor, recognition of the driver’s intention, and human–robot interface.
+  three representative lower limb exoskeletons: Berkeley Lower Extremity Exoskeleton (BLEEX), Hybrid Assistive Leg (HAL), and ReWalk.">
+</head>
+
+<body class="article-page keep-sidebar">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div
+        class="container main-container flex on-phone--column extended ">
+        <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu911cf87b738465eac3058d27e079f2ed_224006_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://K7288.github.io">K7288</a></h1>
+        <h2 class="site-description"></h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Posts</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/tags'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+                
+                <span>Tags</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+        <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/literature-notes/" >
+                Literature Notes
+            </a>
+        
+            <a href="/categories/intention-recognition/" >
+                Intention Recognition
+            </a>
+        
+            <a href="/categories/gait-analysis/" >
+                Gait Analysis
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/a-lower-limb-exoskeleton-based-on-recognition-of-lower-limb-walking-intention/">A lower limb exoskeleton based on recognition of lower limb walking intention</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">2021-07-06</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <p>A lower limb exoskeleton based on recognition of lower limb walking intention</p>
+<p>intention定义: step initiation $\Leftarrow$ intersection event, continuous walking (normal step velocity $\Leftarrow$ push-off impulse time), acceleration, deceleration, and step termination</p>
+<p><img src="assets/image-20210706212640448.png" alt="image-20210706212640448" style="zoom:40%;" /></p>
+<h2 id="introduction">Introduction</h2>
+<ul>
+<li>
+<p>Key technologies in lower limb exoskeletons are actuator, mechanical design, control, sensor, recognition of the driver’s intention, and human–robot interface.</p>
+</li>
+<li>
+<p>three representative lower limb exoskeletons: Berkeley Lower Extremity Exoskeleton (BLEEX), Hybrid Assistive Leg (HAL), and ReWalk.</p>
+<ul>
+<li>BLEEX
+<ul>
+<li>intention定义: step initiation, step velocity, and step termination</li>
+<li>sensors: more than 40; including encoders, linear accelerometers, force sensors, and an inclinometer</li>
+<li>actuators: hydraulic actuators</li>
+<li>intention recognition the driver by using foot switch sensors, encoders, and force sensors to monitor toe-off movement, joint movement, or force variability</li>
+</ul>
+</li>
+<li>HAL
+<ul>
+<li>sensors: potentiometers, floor reaction force sensors, accelerometers, a gyroscope, and electromyography (EMG) sensors</li>
+<li>actuators: DC motors with a harmonic drive directly placed on the hip and knee joints</li>
+<li>intention recognition: faster than BLEEX, using bio-signals from EMG sensors</li>
+</ul>
+</li>
+<li>ReWalk
+<ul>
+<li>intention recognition: with forearm crutches, installing buttons, and torso angles; slower than recognition of walking intention in real time using sensors</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="specifications">specifications</h2>
+<ul>
+<li>
+<p>Sensors: insole-type FSRs(force sensing resistors) and three axis F/T sensors</p>
+</li>
+<li>
+<p>actuators: four DC motors (two at each hip and each knee)</p>
+<p><img src="/assets/image-20210706195312079.png" alt="image-20210706195312079" style="zoom:33%;" /></p>
+</li>
+<li>
+<p>system</p>
+<p><img src="/assets/image-20210706195358285.png" alt="image-20210706195358285" style="zoom:33%;" /></p>
+</li>
+</ul>
+<h2 id="control">Control</h2>
+<p>Flowchart of control strategy</p>
+<p><img src="/assets/image-20210706200803466.png" alt="image-20210706200803466"  /></p>
+<ul>
+<li>step initiation: using the insole-type FSRs with two particular GRF events before visible movement occurs, such as heel off, toe off, or knee flexion</li>
+<li>after step initiation: reference torque(reference torque for each hip and each knee were calculated from gait pattern analysis using the <strong>inverse dynamics model</strong>.) $\rightarrow$ motion controller</li>
+<li>push-off impulse time $\Leftarrow$ three axis F/T sensors.
+<ul>
+<li><a id="dependence"></a>We found that <strong>push-off impulse time depends on step velocity</strong>, using gait analysis based on force plates. shorter at faster step velocity, longer at slower step velocity, and rapidly minimized at step termination.</li>
+<li>measured from heel strike time to push-off time by the trailing leg.</li>
+</ul>
+</li>
+</ul>
+<h2 id="intention-recognition">Intention Recognition</h2>
+<p>Moore Automation for Robot Behavior(MARB) (Konig et al. 2009).</p>
+<p><img src="/assets/image-20210706203132337.png" alt="image-20210706203132337" style="zoom:60%;" /></p>
+<h2 id="thoughtscomments">Thoughts/Comments</h2>
+<ul>
+<li>
+<p><a class="link" href = "#dependence">TODO gait analysis</a> $\Rightarrow$ push-off impulse time depends on step velocity</p>
+<ul>
+<li>这个结果还是通过基于force plates的gait analysis得来的，可能有借鉴意义</li>
+<li><img src="/assets/image-20210706212616125.png" alt="image-20210706212616125" style="zoom:50%;" /></li>
+<li>最开始看的那篇生物统计的也用到了impulse但是现在不太记得具体内容了XD</li>
+</ul>
+</li>
+<li>
+<p>TODO 这个里面因为速度和push-off impulse time统计相关所以用push-off impulse time估计速度，用的方式是最直观的将速度划分成区间</p>
+<blockquote>
+<p>The mean push-off impulse time of normal step velocity from three axis F/T sensors was
+0.45 s (SD 0.05), of faster step velocity was 0.225 s (SD 0.05), and of slower step velocity was 0.75 s (SD 0.01). The mean push-off impulse time of normal step velocity from force plates was 0.35 s (SD 0.05), of faster step velocity was 0.15 s (SD 0.05), and of slower step velocity was 0.67 s (SD 0.01). The results clearly indicate that UTRCEXO recognized the walking intentions of drivers for acceleration, deceleration, and step termination with different push-off impulse times of drivers at three different velocities and step termination.</p>
+</blockquote>
+<p><img src="/assets/image-20210706213607461.png" alt="image-20210706213607461"  /></p>
+</li>
+<li>
+<p>为什么用的说法很多都是pilot driver❓</p>
+</li>
+<li>
+<p>TODO EMG数据处理：高通滤波(二阶巴特沃思，20hz截止频率)，整流，然后低通滤波(二阶巴特沃思，3hz截止频率)。然后采用方差分析(ANOVA)比较安装UTRCEXO与未安装UTRCEXO的肌肉活动，采用SPSS 19.0软件对肌肉活动进行归一化处理，显著性水平为0.05。</p>
+<blockquote>
+<p>Electrodes were placed on the anatomical locations of the rectus femoris muscle, gastrocnemius muscle, and abdominal muscle, based on guidelines from previous research (Gallagher et al. 2011). The EMG sensor had a 1 KHz sampling rate and 8–500 Hz band- width, and was low-pass filtered at 500 Hz by the EMG recording system. The EMG signals were collected and used to record muscle activity during stance phase and swing phase. The EMG signal was high-pass filtered        (second-order Butterworth, 20 Hz cut-off frequency), rectified, and then low-pass filtered (second-order Butterworth, 3 Hz cut-off frequency). Then ANOVA was conducted to compare the muscle activity of drivers equipped and not equipped with UTRCEXO, normalizing muscle activity using SPSS version 19.0 software based on a significance level of0.05. The ANOVA results are shown in Table 6.</p>
+</blockquote>
+</li>
+<li>
+<p>他们用的这个MARB没太看懂</p>
+</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+     
+        
+    <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css" />
+
+<div id="vssue"></div>
+
+<script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+<script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
+
+<script>
+    new Vue({
+        el: "#vssue",
+        render: (h) =>
+            h("Vssue", {
+                props: {
+                    title: "A lower limb exoskeleton based on recognition of lower limb walking intention",
+                    options: {
+                        proxy: (url) => "https://cors-anywhere.azm.workers.dev/" + url,
+                        owner: "K7288",
+                        repo: "blog-repos",
+                        clientId: "ac393ff5fd371a96eda1",
+                        clientSecret: "e9c2b32500e90b7d0e374ecf8481b97819b8012c",
+                        perPage: 5
+                    },
+                },
+            }),
+    });
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2021 K7288
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+        </main>
+    </div>
+    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+    <script>addBackToTop({
+            diameter: 56,
+            backgroundColor: 'ddd',
+            textColor: '#ddd'
+        })</script>
+    <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+</body>
+
+</html>

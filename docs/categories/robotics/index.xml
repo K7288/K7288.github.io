@@ -15,11 +15,12 @@
       <guid>https://K7288.github.io/posts/intention-recognition-for-exoskeleton/</guid>
       <description>Intention Recgonition for Exoskeleton
 intention定义: walk/stand
-assistance exoskeleton system  支持4种state: L swing, R swing, Double stance(L), Double stance(R) control   Methods online SVM; features: ZMP(Zero Moment Point)
+assistance exoskeleton system   支持4种state: L swing, R swing, Double stance(L), Double stance(R)
+  control
+  Methods online SVM; features: ZMP(Zero Moment Point)
   ZMP
   concept: The distributed floor reaction force can be replaced by a single force R acts on ZMP.
-  ZMP can be obtained from ground reaction force (GRF) measurement or inverse dynamics of system.
-  calculation</description>
+  ZMP can be obtained from ground reaction force (GRF) measurement or inverse dynamics of system.</description>
     </item>
     
     <item>
@@ -40,7 +41,7 @@ Introduction  assistive rehabilitation robots: PAMM, Walking Helper, HAL, Omni R
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://K7288.github.io/posts/terms/</guid>
-      <description>Terms Definition     inertia matrix, damping matrix, and stiffness matrix    Cartesian coordinate    mass-damper-spring model    impedance control    admittance control         time-varying, adaptive compensation term, manifold, coarse/fine-grained level granularity, an inertial frame,</description>
+      <description>Terms Definition     inertia matrix, damping matrix, and stiffness matrix    Cartesian coordinate    mass-damper-spring model    impedance control    admittance control    push-off impulse time    transition function     time-varying, adaptive compensation term, manifold, coarse/fine-grained level granularity, an inertial frame,</description>
     </item>
     
     <item>

@@ -6,7 +6,19 @@
     <description>Recent content in Gait Analysis on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/gait-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/gait-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A lower limb exoskeleton based on recognition of lower limb walking intention</title>
+      <link>https://K7288.github.io/posts/a-lower-limb-exoskeleton-based-on-recognition-of-lower-limb-walking-intention/</link>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/a-lower-limb-exoskeleton-based-on-recognition-of-lower-limb-walking-intention/</guid>
+      <description>A lower limb exoskeleton based on recognition of lower limb walking intention
+intention定义: step initiation $\Leftarrow$ intersection event, continuous walking (normal step velocity $\Leftarrow$ push-off impulse time), acceleration, deceleration, and step termination
+Introduction   Key technologies in lower limb exoskeletons are actuator, mechanical design, control, sensor, recognition of the driver’s intention, and human–robot interface.
+  three representative lower limb exoskeletons: Berkeley Lower Extremity Exoskeleton (BLEEX), Hybrid Assistive Leg (HAL), and ReWalk.</description>
+    </item>
+    
     <item>
       <title>Froude Numbers</title>
       <link>https://K7288.github.io/posts/froude-numbers/</link>

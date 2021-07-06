@@ -15,11 +15,12 @@
       <guid>https://K7288.github.io/posts/intention-recognition-for-exoskeleton/</guid>
       <description>Intention Recgonition for Exoskeleton
 intention定义: walk/stand
-assistance exoskeleton system  支持4种state: L swing, R swing, Double stance(L), Double stance(R) control   Methods online SVM; features: ZMP(Zero Moment Point)
+assistance exoskeleton system   支持4种state: L swing, R swing, Double stance(L), Double stance(R)
+  control
+  Methods online SVM; features: ZMP(Zero Moment Point)
   ZMP
   concept: The distributed floor reaction force can be replaced by a single force R acts on ZMP.
-  ZMP can be obtained from ground reaction force (GRF) measurement or inverse dynamics of system.
-  calculation</description>
+  ZMP can be obtained from ground reaction force (GRF) measurement or inverse dynamics of system.</description>
     </item>
     
     <item>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intention Recognition on K7288</title>
+    <link>https://K7288.github.io/categories/intention-recognition/</link>
+    <description>Recent content in Intention Recognition on K7288</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 06 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/intention-recognition/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A lower limb exoskeleton based on recognition of lower limb walking intention</title>
+      <link>https://K7288.github.io/posts/a-lower-limb-exoskeleton-based-on-recognition-of-lower-limb-walking-intention/</link>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/a-lower-limb-exoskeleton-based-on-recognition-of-lower-limb-walking-intention/</guid>
+      <description>A lower limb exoskeleton based on recognition of lower limb walking intention
+intention定义: step initiation $\Leftarrow$ intersection event, continuous walking (normal step velocity $\Leftarrow$ push-off impulse time), acceleration, deceleration, and step termination
+Introduction   Key technologies in lower limb exoskeletons are actuator, mechanical design, control, sensor, recognition of the driver’s intention, and human–robot interface.
+  three representative lower limb exoskeletons: Berkeley Lower Extremity Exoskeleton (BLEEX), Hybrid Assistive Leg (HAL), and ReWalk.</description>
+    </item>
+    
+  </channel>
+</rss>
