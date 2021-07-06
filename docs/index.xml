@@ -90,7 +90,7 @@ p_{x} &amp;amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\
         <guid>https://K7288.github.io/posts/a-lower-limb-exoskeleton-based-on-recognition-of-lower-limb-walking-intention/</guid>
         <description>&lt;p&gt;A lower limb exoskeleton based on recognition of lower limb walking intention&lt;/p&gt;
 &lt;p&gt;intention定义: step initiation $\Leftarrow$ intersection event, continuous walking (normal step velocity $\Leftarrow$ push-off impulse time), acceleration, deceleration, and step termination&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;assets/image-20210706212640448.png&#34; alt=&#34;image-20210706212640448&#34; style=&#34;zoom:40%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210706212640448.png&#34; alt=&#34;image-20210706212640448&#34; style=&#34;zoom:40%;&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -183,6 +183,22 @@ p_{x} &amp;amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\
 &lt;p&gt;他们用的这个MARB没太看懂&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study</title>
+        <link>https://K7288.github.io/posts/0-literature-notes-template-%E5%89%AF%E6%9C%AC/</link>
+        <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://K7288.github.io/posts/0-literature-notes-template-%E5%89%AF%E6%9C%AC/</guid>
+        <description>&lt;p&gt;Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study&lt;/p&gt;
+&lt;h2 id=&#34;research-question&#34;&gt;Research question&lt;/h2&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;h2 id=&#34;highlights&#34;&gt;Highlights&lt;/h2&gt;
+&lt;h2 id=&#34;limitsfurther-work&#34;&gt;Limits/Further Work&lt;/h2&gt;
+&lt;h2 id=&#34;thoughtscomments&#34;&gt;Thoughts/Comments&lt;/h2&gt;
 </description>
         </item>
         <item>
