@@ -6,22 +6,40 @@
     <description>Recent content in Tags on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 29 Jun 2021 20:52:44 +0800</lastBuildDate><atom:link href="https://K7288.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Gait Analysis</title>
-      <link>https://K7288.github.io/tags/gait-analysis/</link>
-      <pubDate>Tue, 29 Jun 2021 20:52:44 +0800</pubDate>
+      <title>Intention Recognition</title>
+      <link>https://K7288.github.io/tags/intention-recognition/</link>
+      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://K7288.github.io/tags/gait-analysis/</guid>
+      <guid>https://K7288.github.io/tags/intention-recognition/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Intention Recognition</title>
-      <link>https://K7288.github.io/tags/intention-recognition/</link>
-      <pubDate>Tue, 29 Jun 2021 20:52:44 +0800</pubDate>
+      <title>特征提取</title>
+      <link>https://K7288.github.io/tags/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/</link>
+      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://K7288.github.io/tags/intention-recognition/</guid>
+      <guid>https://K7288.github.io/tags/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Activity Recognition</title>
+      <link>https://K7288.github.io/tags/activity-recognition/</link>
+      <pubDate>Thu, 01 Jul 2021 00:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/tags/activity-recognition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gait Analysis</title>
+      <link>https://K7288.github.io/tags/gait-analysis/</link>
+      <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/tags/gait-analysis/</guid>
       <description></description>
     </item>
     
@@ -58,15 +76,6 @@
       <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://K7288.github.io/tags/image-processing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>特征提取</title>
-      <link>https://K7288.github.io/tags/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/</link>
-      <pubDate>Sun, 16 May 2021 10:44:02 +0800</pubDate>
-      
-      <guid>https://K7288.github.io/tags/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/</guid>
       <description></description>
     </item>
     

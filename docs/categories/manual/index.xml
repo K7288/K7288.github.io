@@ -6,7 +6,21 @@
     <description>Recent content in Manual on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 18 May 2021 14:21:37 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/manual/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Jul 2021 16:52:26 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/manual/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>页内跳转</title>
+      <link>https://K7288.github.io/posts/%E9%A1%B5%E5%86%85%E8%B7%B3%E8%BD%AC/</link>
+      <pubDate>Mon, 05 Jul 2021 16:52:26 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/%E9%A1%B5%E5%86%85%E8%B7%B3%E8%BD%AC/</guid>
+      <description>这是一段文字，我想跳转到这里。
+⏬
+⏬
+⏬
+我实现了跳转。
+&amp;lt;a id=&amp;#34;series&amp;#34;&amp;gt;&amp;lt;/a&amp;gt;这是一段文字，我想跳转到这里。 ⏬ ⏬ ⏬ &amp;lt;a class=&amp;#34;link&amp;#34; href=&amp;#34;#series&amp;#34;&amp;gt;我实现了跳转。&amp;lt;/a&amp;gt; </description>
+    </item>
+    
     <item>
       <title>F-Scan</title>
       <link>https://K7288.github.io/posts/f-scan/</link>

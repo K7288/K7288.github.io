@@ -6,11 +6,20 @@
     <description>Recent content in Categories on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Jul 2021 16:52:26 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manual</title>
+      <link>https://K7288.github.io/categories/manual/</link>
+      <pubDate>Mon, 05 Jul 2021 16:52:26 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/categories/manual/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Literature Notes</title>
       <link>https://K7288.github.io/categories/literature-notes/</link>
-      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://K7288.github.io/categories/literature-notes/</guid>
       <description></description>
@@ -19,7 +28,7 @@
     <item>
       <title>Robotics</title>
       <link>https://K7288.github.io/categories/robotics/</link>
-      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 04 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://K7288.github.io/categories/robotics/</guid>
       <description></description>
@@ -28,18 +37,9 @@
     <item>
       <title>Gait Analysis</title>
       <link>https://K7288.github.io/categories/gait-analysis/</link>
-      <pubDate>Tue, 29 Jun 2021 20:52:44 +0800</pubDate>
+      <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://K7288.github.io/categories/gait-analysis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Manual</title>
-      <link>https://K7288.github.io/categories/manual/</link>
-      <pubDate>Tue, 18 May 2021 14:21:37 +0800</pubDate>
-      
-      <guid>https://K7288.github.io/categories/manual/</guid>
       <description></description>
     </item>
     

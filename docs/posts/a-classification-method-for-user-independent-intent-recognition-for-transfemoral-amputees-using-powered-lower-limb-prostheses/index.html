@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='A Classification Method for User-Independent Intent Recognition for Transfemoral Amputees Using Powered Lower Limb Prostheses
+Research question to develop a user-independent intent recognition system capable of recognizing level-ground walking, slopes, and stairs and to compare this system with a user-dependent intent recognition system.
+Introduction  Prior studies in which pattern recognition algorithms: current methods to initiate transitions between modes, such as visual, audio, or compensatory movement commands, are unintuitive and impose a cognitive burden.'><title>A Classification Method for User-Independent Intent Recognition for Transfemoral Amputees Using Powered Lower Limb Prostheses</title>
+
+<link rel='canonical' href='https://K7288.github.io/posts/a-classification-method-for-user-independent-intent-recognition-for-transfemoral-amputees-using-powered-lower-limb-prostheses/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='A Classification Method for User-Independent Intent Recognition for Transfemoral Amputees Using Powered Lower Limb Prostheses'>
+<meta property='og:description' content='A Classification Method for User-Independent Intent Recognition for Transfemoral Amputees Using Powered Lower Limb Prostheses
+Research question to develop a user-independent intent recognition system capable of recognizing level-ground walking, slopes, and stairs and to compare this system with a user-dependent intent recognition system.
+Introduction  Prior studies in which pattern recognition algorithms: current methods to initiate transitions between modes, such as visual, audio, or compensatory movement commands, are unintuitive and impose a cognitive burden.'>
+<meta property='og:url' content='https://K7288.github.io/posts/a-classification-method-for-user-independent-intent-recognition-for-transfemoral-amputees-using-powered-lower-limb-prostheses/'>
+<meta property='og:site_name' content='K7288'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Intention Recognition' /><meta property='article:tag' content='特征提取' /><meta property='article:published_time' content='2021-07-05T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-07-05T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="A Classification Method for User-Independent Intent Recognition for Transfemoral Amputees Using Powered Lower Limb Prostheses">
+<meta name="twitter:description" content="A Classification Method for User-Independent Intent Recognition for Transfemoral Amputees Using Powered Lower Limb Prostheses
+Research question to develop a user-independent intent recognition system capable of recognizing level-ground walking, slopes, and stairs and to compare this system with a user-dependent intent recognition system.
+Introduction  Prior studies in which pattern recognition algorithms: current methods to initiate transitions between modes, such as visual, audio, or compensatory movement commands, are unintuitive and impose a cognitive burden.">
+</head>
+
+<body class="article-page keep-sidebar">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div
+        class="container main-container flex on-phone--column extended ">
+        <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu911cf87b738465eac3058d27e079f2ed_224006_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://K7288.github.io">K7288</a></h1>
+        <h2 class="site-description"></h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Posts</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/tags'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+                
+                <span>Tags</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+        <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/literature-notes/" >
+                Literature Notes
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/a-classification-method-for-user-independent-intent-recognition-for-transfemoral-amputees-using-powered-lower-limb-prostheses/">A Classification Method for User-Independent Intent Recognition for Transfemoral Amputees Using Powered Lower Limb Prostheses</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">2021-07-05</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <p>A Classification Method for <strong>User-Independent</strong> Intent Recognition for Transfemoral Amputees Using Powered Lower Limb Prostheses</p>
+<h2 id="research-question">Research question</h2>
+<p>to develop a user-independent intent recognition system capable of recognizing level-ground walking, slopes, and stairs and to compare this system with a user-dependent intent recognition system.</p>
+<h2 id="introduction">Introduction</h2>
+<ul>
+<li>Prior studies in which pattern recognition algorithms: current methods to initiate transitions between modes, such as visual, audio, or compensatory movement commands, are <strong>unintuitive</strong> and impose a <strong>cognitive burden</strong>. An inherent disadvantage of pattern recognition-based intent recognition systems is that a considerable <strong>amount of training data</strong> must be collected.</li>
+<li>previous able-bodied gait studies with accelerometer data: by pooling data from a large subject group(e.g. n = 52), high accuracies (~96% ) of gait mode identification for a novel subject can be obtained for level-ground walking, slopes, and stairs. In addition, <strong>to obtain these high accuracies for novel subjects, group gait features were normalized to the novel subject’s level-ground walking data</strong>.</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li>
+<p>Experimental testing factors</p>
+<p><img src="/assets/7061495-table-1-source-large.gif" alt="img" style="zoom:50%;" /></p>
+<ul>
+<li>
+<p>training and testing: A group of eight transfemoral amputees walked over different terrains using a powered knee and ankle prosthesis. We created a pooled classifier using data from all subjects except one: data from this single subject was withheld from the pool and used to test how well the pooled classifier generalized to that subject in an offline analysis.</p>
+</li>
+<li>
+<p><a id="partially-dependent"></a>the partially-dependent classification system: including data from some of the novel subject’s steady-state level-ground walking in the training pool, to determine whether generalization to that subject improved.</p>
+</li>
+<li>
+<p>mode-specific: having a separate classifier active for each locomotion mode. The previous locomotion mode determines the classifier model used for predicting the next stop. Each “mode specific” classifier was trained using the steady-state locomotion mode, and only the relevant transitions leaving the current locomotion mode. This enabled each transition to be statistically classified as a separate class, and to only be considered at the appropriate times.</p>
+<p><img src="assets/7061495-fig-3-source-large.gif" alt="img" style="zoom:50%;" /></p>
+</li>
+<li>
+<p>DBN: dynamic Bayesian network</p>
+</li>
+<li>
+<p>LDA: linear discriminant analysis (LDA)</p>
+</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>Experimental Protocol</li>
+<li>Signal Processing
+<ul>
+<li>Sensors: potentiometers and encoders at the knee and ankle, an axial load cell, and a six-axis IMU on the shank; Sensor signals were generated for knee and ankle positions, velocity and torque, axial force, and shank three-directional accelerations and rotational velocities.</li>
+<li>normalization; 数据迁移到另一侧截肢的被试</li>
+<li>划窗 segmented into analysis windows of 300ms at eight different points for each stride</li>
+<li>特征提取 From each analysis window, six features were extracted: the signal mean and standard deviation, the minimum and maximum signal values over the window, and the starting and ending signal values</li>
+</ul>
+</li>
+<li>Signal Classification Strategies
+<ul>
+<li>Baseline Configuration: LDA</li>
+<li>Time History Configuration: DBN to integrate information over the gait cycle to include time history (TH) information.</li>
+<li>Mode-Specific Configuration</li>
+<li>Mode Specific + Time History Configuration</li>
+</ul>
+</li>
+<li>Classification Procedure</li>
+<li>Performance Evaluation
+<ul>
+<li>intent recognition error rate, averaged across all steps for each subject, as our primary performance metric.</li>
+<li>statistical analyses
+<ul>
+<li>two-way ANOVAs transitional and steady-state errors with subject as a random factor. Classification condition (user-independent, partially dependent, and user-dependent) and classifier configuration were included as fixed factors.</li>
+<li>a post hoc Bonferronni test on significant factors to determine specific differences ($\alpha$=0.05).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="results">Results</h2>
+<p>For both user-dependent and user-independent classification, mode-specific classification reduced error (p &lt; 0.05) on transitional steps by 50 without affecting steady-state classification. Incorporating sensor time history and level-ground walking data from the novel subject into the training data resulted in decreasing errors (p &lt; 0.05) on steady-state classification by over 60% without affecting transitional error.</p>
+<h2 id="thoughtscomments">Thoughts/Comments</h2>
+<ul>
+<li>为什么<a class="link" href="#partially-dependent">partially-dependent </a>可以判断generalization to that subject是否improve</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/intention-recognition/">Intention Recognition</a>
+        
+            <a href="/tags/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/">特征提取</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+     
+        
+    <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css" />
+
+<div id="vssue"></div>
+
+<script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+<script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
+
+<script>
+    new Vue({
+        el: "#vssue",
+        render: (h) =>
+            h("Vssue", {
+                props: {
+                    title: "A Classification Method for User-Independent Intent Recognition for Transfemoral Amputees Using Powered Lower Limb Prostheses",
+                    options: {
+                        proxy: (url) => "https://cors-anywhere.azm.workers.dev/" + url,
+                        owner: "K7288",
+                        repo: "blog-repos",
+                        clientId: "ac393ff5fd371a96eda1",
+                        clientSecret: "e9c2b32500e90b7d0e374ecf8481b97819b8012c",
+                        perPage: 5
+                    },
+                },
+            }),
+    });
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2021 K7288
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+        </main>
+    </div>
+    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+    <script>addBackToTop({
+            diameter: 56,
+            backgroundColor: 'ddd',
+            textColor: '#ddd'
+        })</script>
+    <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+</body>
+
+</html>

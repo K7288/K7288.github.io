@@ -6,7 +6,154 @@
         <description>Recent content on K7288</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 05 Jul 2021 16:52:26 +0800</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>页内跳转</title>
+        <link>https://K7288.github.io/posts/%E9%A1%B5%E5%86%85%E8%B7%B3%E8%BD%AC/</link>
+        <pubDate>Mon, 05 Jul 2021 16:52:26 +0800</pubDate>
+        
+        <guid>https://K7288.github.io/posts/%E9%A1%B5%E5%86%85%E8%B7%B3%E8%BD%AC/</guid>
+        <description>&lt;p&gt;&lt;a id=&#34;series&#34;&gt;&lt;/a&gt;这是一段文字，我想跳转到这里。&lt;/p&gt;
+&lt;p&gt;⏬&lt;/p&gt;
+&lt;p&gt;⏬&lt;/p&gt;
+&lt;p&gt;⏬&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#series&#34;&gt;我实现了跳转。&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;series&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;这是一段文字，我想跳转到这里。
+
+⏬
+
+⏬
+
+⏬
+
+&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;link&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;#series&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;我实现了跳转。&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>A Classification Method for User-Independent Intent Recognition for Transfemoral Amputees Using Powered Lower Limb Prostheses</title>
+        <link>https://K7288.github.io/posts/a-classification-method-for-user-independent-intent-recognition-for-transfemoral-amputees-using-powered-lower-limb-prostheses/</link>
+        <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://K7288.github.io/posts/a-classification-method-for-user-independent-intent-recognition-for-transfemoral-amputees-using-powered-lower-limb-prostheses/</guid>
+        <description>&lt;p&gt;A Classification Method for &lt;strong&gt;User-Independent&lt;/strong&gt; Intent Recognition for Transfemoral Amputees Using Powered Lower Limb Prostheses&lt;/p&gt;
+&lt;h2 id=&#34;research-question&#34;&gt;Research question&lt;/h2&gt;
+&lt;p&gt;to develop a user-independent intent recognition system capable of recognizing level-ground walking, slopes, and stairs and to compare this system with a user-dependent intent recognition system.&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Prior studies in which pattern recognition algorithms: current methods to initiate transitions between modes, such as visual, audio, or compensatory movement commands, are &lt;strong&gt;unintuitive&lt;/strong&gt; and impose a &lt;strong&gt;cognitive burden&lt;/strong&gt;. An inherent disadvantage of pattern recognition-based intent recognition systems is that a considerable &lt;strong&gt;amount of training data&lt;/strong&gt; must be collected.&lt;/li&gt;
+&lt;li&gt;previous able-bodied gait studies with accelerometer data: by pooling data from a large subject group(e.g. n = 52), high accuracies (~96% ) of gait mode identification for a novel subject can be obtained for level-ground walking, slopes, and stairs. In addition, &lt;strong&gt;to obtain these high accuracies for novel subjects, group gait features were normalized to the novel subject’s level-ground walking data&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Experimental testing factors&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/7061495-table-1-source-large.gif&#34; alt=&#34;img&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;training and testing: A group of eight transfemoral amputees walked over different terrains using a powered knee and ankle prosthesis. We created a pooled classifier using data from all subjects except one: data from this single subject was withheld from the pool and used to test how well the pooled classifier generalized to that subject in an offline analysis.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a id=&#34;partially-dependent&#34;&gt;&lt;/a&gt;the partially-dependent classification system: including data from some of the novel subject’s steady-state level-ground walking in the training pool, to determine whether generalization to that subject improved.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;mode-specific: having a separate classifier active for each locomotion mode. The previous locomotion mode determines the classifier model used for predicting the next stop. Each “mode specific” classifier was trained using the steady-state locomotion mode, and only the relevant transitions leaving the current locomotion mode. This enabled each transition to be statistically classified as a separate class, and to only be considered at the appropriate times.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;assets/7061495-fig-3-source-large.gif&#34; alt=&#34;img&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DBN: dynamic Bayesian network&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LDA: linear discriminant analysis (LDA)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Experimental Protocol&lt;/li&gt;
+&lt;li&gt;Signal Processing
+&lt;ul&gt;
+&lt;li&gt;Sensors: potentiometers and encoders at the knee and ankle, an axial load cell, and a six-axis IMU on the shank; Sensor signals were generated for knee and ankle positions, velocity and torque, axial force, and shank three-directional accelerations and rotational velocities.&lt;/li&gt;
+&lt;li&gt;normalization; 数据迁移到另一侧截肢的被试&lt;/li&gt;
+&lt;li&gt;划窗 segmented into analysis windows of 300ms at eight different points for each stride&lt;/li&gt;
+&lt;li&gt;特征提取 From each analysis window, six features were extracted: the signal mean and standard deviation, the minimum and maximum signal values over the window, and the starting and ending signal values&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Signal Classification Strategies
+&lt;ul&gt;
+&lt;li&gt;Baseline Configuration: LDA&lt;/li&gt;
+&lt;li&gt;Time History Configuration: DBN to integrate information over the gait cycle to include time history (TH) information.&lt;/li&gt;
+&lt;li&gt;Mode-Specific Configuration&lt;/li&gt;
+&lt;li&gt;Mode Specific + Time History Configuration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Classification Procedure&lt;/li&gt;
+&lt;li&gt;Performance Evaluation
+&lt;ul&gt;
+&lt;li&gt;intent recognition error rate, averaged across all steps for each subject, as our primary performance metric.&lt;/li&gt;
+&lt;li&gt;statistical analyses
+&lt;ul&gt;
+&lt;li&gt;two-way ANOVAs transitional and steady-state errors with subject as a random factor. Classification condition (user-independent, partially dependent, and user-dependent) and classifier configuration were included as fixed factors.&lt;/li&gt;
+&lt;li&gt;a post hoc Bonferronni test on significant factors to determine specific differences ($\alpha$=0.05).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;For both user-dependent and user-independent classification, mode-specific classification reduced error (p &amp;lt; 0.05) on transitional steps by 50 without affecting steady-state classification. Incorporating sensor time history and level-ground walking data from the novel subject into the training data resulted in decreasing errors (p &amp;lt; 0.05) on steady-state classification by over 60% without affecting transitional error.&lt;/p&gt;
+&lt;h2 id=&#34;thoughtscomments&#34;&gt;Thoughts/Comments&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;为什么&lt;a class=&#34;link&#34; href=&#34;#partially-dependent&#34;&gt;partially-dependent &lt;/a&gt;可以判断generalization to that subject是否improve&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Multi-sensor based human motion intention recognition algorithm for walking-aid robot</title>
+        <link>https://K7288.github.io/posts/multi-sensor-based-human-motion-intention-recognition-algorithm-for-walking-aid-robot/</link>
+        <pubDate>Sun, 04 Jul 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://K7288.github.io/posts/multi-sensor-based-human-motion-intention-recognition-algorithm-for-walking-aid-robot/</guid>
+        <description>&lt;p&gt;Multi-sensor based human motion intention recognition algorithm for walking-aid robot&lt;/p&gt;
+&lt;h2 id=&#34;research-question&#34;&gt;Research question&lt;/h2&gt;
+&lt;p&gt;A multi-sensor(force sensors and LRF; for both lower and upper limbs) based human motion intention recognition algorithm for walking-aid robot.&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;assistive rehabilitation robots: PAMM, Walking Helper, HAL, Omni RT Walker-II (ORTW-II)&lt;/li&gt;
+&lt;li&gt;简略说了一些human motion estimation methods&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Sensors: push-pull force sensors and LRF(Laser Range Finder)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;LRF: Range Segmentation, Identification of Circle, Leg detection, Intention detection&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;using the center position of line segment which consists of two legs position to estimate human motion intention:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210705140247777.png&#34; alt=&#34;image-20210705140247777&#34; style=&#34;zoom:33%;&#34; /&gt; {h} and {r} are local coordinate systems, which are fixed on the human and robot respectively.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210705110528352.png&#34; alt=&#34;image-20210705110528352&#34; align=&#34;right&#34; style=&#34;zoom:33%;&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Define intentional motion (IM) to describe the human walking intention during using the walking-aid robot&lt;/p&gt;
+&lt;p&gt;$S_{I M}(n)= \{\dot{\theta}_{I M}(n), \rho_{I M}(n), v_{I M}(n)\}$（角速度、线速度）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210705141414587.png&#34; alt=&#34;image-20210705141414587&#34; style=&#34;zoom:33%;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Multi-sensor fusion: Kalman filter&lt;/p&gt;
+&lt;p&gt;$^h \mathbf{V}_{H} $ $^h \mathbf{V}_{L}$: human intent motion velocities estimated by force sensors and laser ranger finder respectively; input of Kalman filter&lt;/p&gt;
+&lt;p&gt;$\mathbf{V}_{R}=[\dot{x}_{R}\  \dot{y}_{R} ]^{T} $: output of Kalman filter; filtered human motion intention&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Online Estimation of the IM: different dimension of conventional Kalman filter&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210705143709665.png&#34; alt=&#34;image-20210705143709665&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210705142524600.png&#34; alt=&#34;image-20210705142524600&#34; style=&#34;zoom:43%;&#34; /&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Terms</title>
         <link>https://K7288.github.io/posts/terms/</link>
         <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
@@ -37,7 +184,7 @@
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;admittance control&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -46,7 +193,35 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;time-varying, adaptive compensation term&lt;/p&gt;
+&lt;p&gt;time-varying, adaptive compensation term, manifold, coarse/fine-grained level granularity, an inertial frame,&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>行文常见说法</title>
+        <link>https://K7288.github.io/posts/%E8%A1%8C%E6%96%87%E5%B8%B8%E8%A7%81%E8%AF%B4%E6%B3%95/</link>
+        <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://K7288.github.io/posts/%E8%A1%8C%E6%96%87%E5%B8%B8%E8%A7%81%E8%AF%B4%E6%B3%95/</guid>
+        <description>&lt;p&gt;prior studies/research&lt;/p&gt;
+&lt;p&gt;Experimental Protocol&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>A review of human activity recognition methods</title>
+        <link>https://K7288.github.io/posts/a-review-of-human-activity-recognition-methods/</link>
+        <pubDate>Thu, 01 Jul 2021 00:52:44 +0800</pubDate>
+        
+        <guid>https://K7288.github.io/posts/a-review-of-human-activity-recognition-methods/</guid>
+        <description>&lt;p&gt;A review of human activity recognition methods&lt;/p&gt;
+&lt;p&gt;Recognizing human activities &lt;strong&gt;from video sequences or still images&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Usually, the terms “activity” and “behavior” are used interchangeably in the literature (Castellano et al., 2007; Song et al., 2012a). In this survey, we differentiate between these two terms in the sense that the term “activity” is used to describe a sequence of actions that correspond to specific body motion. On the other hand, the term “behavior” is used to characterize both activities and events that are associated with gestures, emotional states, facial expressions, and auditory cues of a single person. Some&lt;/p&gt;
+&lt;h2 id=&#34;decomposition-of-human-activities-depending-on-complexity&#34;&gt;Decomposition of human activities (depending on complexity)&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210703164104152.png&#34; alt=&#34;image-20210703164104152&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;summary-of-previous-surveys&#34;&gt;Summary of previous surveys&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210703144744639.png&#34; alt=&#34;image-20210703144744639&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;proposed-hierarchical-categorization-of-human-activity-recognition-methods&#34;&gt;Proposed hierarchical categorization of human activity recognition methods&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210703164133523.png&#34; alt=&#34;image-20210703164133523&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;Unimodal methods represent human activities from data of a single modality, such as images.&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -110,6 +285,7 @@ the collaborator&amp;rsquo;s intention by learning the meaning of the collaborat
 &lt;/ul&gt;
 &lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
 &lt;p&gt;assumption: the end effector of robot physically interacts with the human hand and there is only one interaction point.&lt;/p&gt;
+&lt;p&gt;sensor: Six-Dimensional Force Sensor&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;in order to &lt;strong&gt;obtain training data and test data&lt;/strong&gt; of neural network, the adaptive impedance control method is used to collect sample data.&lt;/p&gt;
@@ -133,7 +309,7 @@ the collaborator&amp;rsquo;s intention by learning the meaning of the collaborat
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;In order to verify the validity of the RBFNN method in this paper, the robot’s contact point speed and interaction force are analyzed by comparing with the corresponding experimental parameters values from the adaptive impedance control algorithm.
-&lt;img src=&#34;https://K7288.github.io/assets/4141269.fig.002.svgz&#34; align=&#34;center&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://K7288.github.io/assets/4141269.fig.002.svg&#34; align=&#34;center&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;thoughtscomments&#34;&gt;Thoughts/Comments&lt;/h2&gt;

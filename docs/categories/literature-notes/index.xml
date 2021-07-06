@@ -6,14 +6,57 @@
     <description>Recent content in Literature Notes on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/literature-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/literature-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Classification Method for User-Independent Intent Recognition for Transfemoral Amputees Using Powered Lower Limb Prostheses</title>
+      <link>https://K7288.github.io/posts/a-classification-method-for-user-independent-intent-recognition-for-transfemoral-amputees-using-powered-lower-limb-prostheses/</link>
+      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/a-classification-method-for-user-independent-intent-recognition-for-transfemoral-amputees-using-powered-lower-limb-prostheses/</guid>
+      <description>A Classification Method for User-Independent Intent Recognition for Transfemoral Amputees Using Powered Lower Limb Prostheses
+Research question to develop a user-independent intent recognition system capable of recognizing level-ground walking, slopes, and stairs and to compare this system with a user-dependent intent recognition system.
+Introduction  Prior studies in which pattern recognition algorithms: current methods to initiate transitions between modes, such as visual, audio, or compensatory movement commands, are unintuitive and impose a cognitive burden.</description>
+    </item>
+    
+    <item>
+      <title>Multi-sensor based human motion intention recognition algorithm for walking-aid robot</title>
+      <link>https://K7288.github.io/posts/multi-sensor-based-human-motion-intention-recognition-algorithm-for-walking-aid-robot/</link>
+      <pubDate>Sun, 04 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/multi-sensor-based-human-motion-intention-recognition-algorithm-for-walking-aid-robot/</guid>
+      <description>Multi-sensor based human motion intention recognition algorithm for walking-aid robot
+Research question A multi-sensor(force sensors and LRF; for both lower and upper limbs) based human motion intention recognition algorithm for walking-aid robot.
+Introduction  assistive rehabilitation robots: PAMM, Walking Helper, HAL, Omni RT Walker-II (ORTW-II) 简略说了一些human motion estimation methods  Methods  Sensors: push-pull force sensors and LRF(Laser Range Finder)    LRF: Range Segmentation, Identification of Circle, Leg detection, Intention detection</description>
+    </item>
+    
     <item>
       <title>Terms</title>
       <link>https://K7288.github.io/posts/terms/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://K7288.github.io/posts/terms/</guid>
-      <description>Terms Definition     inertia matrix, damping matrix, and stiffness matrix    Cartesian coordinate    mass-damper-spring model    impedance control             time-varying, adaptive compensation term</description>
+      <description>Terms Definition     inertia matrix, damping matrix, and stiffness matrix    Cartesian coordinate    mass-damper-spring model    impedance control    admittance control         time-varying, adaptive compensation term, manifold, coarse/fine-grained level granularity, an inertial frame,</description>
+    </item>
+    
+    <item>
+      <title>行文常见说法</title>
+      <link>https://K7288.github.io/posts/%E8%A1%8C%E6%96%87%E5%B8%B8%E8%A7%81%E8%AF%B4%E6%B3%95/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/%E8%A1%8C%E6%96%87%E5%B8%B8%E8%A7%81%E8%AF%B4%E6%B3%95/</guid>
+      <description>prior studies/research
+Experimental Protocol</description>
+    </item>
+    
+    <item>
+      <title>A review of human activity recognition methods</title>
+      <link>https://K7288.github.io/posts/a-review-of-human-activity-recognition-methods/</link>
+      <pubDate>Thu, 01 Jul 2021 00:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/a-review-of-human-activity-recognition-methods/</guid>
+      <description>A review of human activity recognition methods
+Recognizing human activities from video sequences or still images
+Usually, the terms “activity” and “behavior” are used interchangeably in the literature (Castellano et al., 2007; Song et al., 2012a). In this survey, we differentiate between these two terms in the sense that the term “activity” is used to describe a sequence of actions that correspond to specific body motion. On the other hand, the term “behavior” is used to characterize both activities and events that are associated with gestures, emotional states, facial expressions, and auditory cues of a single person.</description>
     </item>
     
     <item>
