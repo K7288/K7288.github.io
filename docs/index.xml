@@ -6,7 +6,79 @@
         <description>Recent content on K7288</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Mon, 05 Jul 2021 16:52:26 +0800</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 06 Jul 2021 13:52:44 +0800</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Intention Recgonition for Exoskeleton</title>
+        <link>https://K7288.github.io/posts/intention-recognition-for-exoskeleton/</link>
+        <pubDate>Tue, 06 Jul 2021 13:52:44 +0800</pubDate>
+        
+        <guid>https://K7288.github.io/posts/intention-recognition-for-exoskeleton/</guid>
+        <description>&lt;p&gt;Intention Recgonition for Exoskeleton&lt;/p&gt;
+&lt;p&gt;intention定义: walk/stand&lt;/p&gt;
+&lt;h2 id=&#34;assistance-exoskeleton-system&#34;&gt;assistance exoskeleton system&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;支持4种state: L swing, R swing, Double stance(L), Double stance(R)&lt;/li&gt;
+&lt;li&gt;control
+&lt;img src=&#34;https://K7288.github.io/assets/image-20210706151917632.png&#34; alt=&#34;image-20210706151917632&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
+&lt;p&gt;online SVM; features: ZMP(Zero Moment Point)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ZMP&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;concept: The distributed floor reaction force can be replaced by a single force R acts on ZMP.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ZMP can be obtained from ground reaction force (GRF) measurement or inverse dynamics of system.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;calculation&lt;/p&gt;
+&lt;p&gt;$r=[\delta\ \varepsilon\ 0]$  is a vector on the ground and $ \rho(\delta, \varepsilon) $ is the vertical force acted on unit area at point $ r$. So the sum of vertical force is like $f_{z}=\int_{s} \rho(\delta, \varepsilon) d S$&lt;/p&gt;
+&lt;p&gt;torque at  $p=\left[p_{x}\ p_{y}\ 0\right]$  is  $\tau_{n}(p) $.&lt;/p&gt;
+&lt;p&gt;$\begin{aligned}
+\tau_{nx} &amp;amp;=\int_{S}(\delta-p_{x}) \rho(\delta, \varepsilon) d S  \\
+\tau_{ny} &amp;amp;=\int_{S}(\varepsilon-p_{y}) \rho(\delta, \varepsilon) d S  \\
+\tau_{nz} &amp;amp;=0
+\end{aligned}$&lt;/p&gt;
+&lt;p&gt;At ZMP  $\tau_{n x}=0, \tau_{n y}=0$ , we can get&lt;/p&gt;
+&lt;p&gt;$\begin{aligned}
+p_{x} &amp;amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\delta, \varepsilon)}\\p_{y} &amp;amp;=\frac{\int_{S} \varepsilon \rho(\delta, \varepsilon)}{\int_{S}\rho(\delta, \varepsilon)}\end{aligned}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;As $\rho(\delta, \varepsilon) $ is the distribution of reaction force on foot, ZMP  p  is also the center of pressure(COP).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;ZMP for one foot&lt;/th&gt;
+&lt;th&gt;ZMP of system&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$P_{l x} =\frac{\sum_{i=1}^{7} p_{i}^{x} f_{i}}{\sum_{i=1}^{7} f_{i}}$&lt;br&gt;&lt;br/&gt;$ P_{l y} =\frac{\sum_{i=1}^{7} p_{i}^{y} f_{i}}{\sum_{i=1}^{7} f_{i}}$&lt;br&gt;&lt;br/&gt;$F_{l} =\sum_{i=1}^{7} f_{i}$&lt;/td&gt;
+&lt;td&gt;$Z M P_{x} =\frac{P_{l x} F_{l}+P_{r x} F_{r}}{F_{l}+F_{R}}$&lt;br/&gt;&lt;br/&gt;$Z M P_{y} =\frac{P_{l y} F_{l}+P_{r y} F_{r}}{F_{l}+F_{R}}$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;SVM&lt;/p&gt;
+&lt;p&gt;polynomial kernel; Gaussian kernel&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210706161222476.png&#34; alt=&#34;image-20210706161222476&#34; style=&#34;zoom:40%;&#34; /&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210706161235490.png&#34; alt=&#34;image-20210706161235490&#34; style=&#34;zoom:40%;&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;thoughtscomments&#34;&gt;Thoughts/Comments&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;TODO ZMP之后应该用得上，这个推导可以看一眼&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>页内跳转</title>
         <link>https://K7288.github.io/posts/%E9%A1%B5%E5%86%85%E8%B7%B3%E8%BD%AC/</link>
         <pubDate>Mon, 05 Jul 2021 16:52:26 +0800</pubDate>
@@ -35,6 +107,7 @@
         
         <guid>https://K7288.github.io/posts/a-classification-method-for-user-independent-intent-recognition-for-transfemoral-amputees-using-powered-lower-limb-prostheses/</guid>
         <description>&lt;p&gt;A Classification Method for &lt;strong&gt;User-Independent&lt;/strong&gt; Intent Recognition for Transfemoral Amputees Using Powered Lower Limb Prostheses&lt;/p&gt;
+&lt;p&gt;intention定义—locomotion modes: level walking, ramp ascent, ramp descent, stair ascent, and stair descent&lt;/p&gt;
 &lt;h2 id=&#34;research-question&#34;&gt;Research question&lt;/h2&gt;
 &lt;p&gt;to develop a user-independent intent recognition system capable of recognizing level-ground walking, slopes, and stairs and to compare this system with a user-dependent intent recognition system.&lt;/p&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -113,6 +186,7 @@
         
         <guid>https://K7288.github.io/posts/multi-sensor-based-human-motion-intention-recognition-algorithm-for-walking-aid-robot/</guid>
         <description>&lt;p&gt;Multi-sensor based human motion intention recognition algorithm for walking-aid robot&lt;/p&gt;
+&lt;p&gt;intention定义：velocity; 这里表征为一个自定概念IM&lt;/p&gt;
 &lt;h2 id=&#34;research-question&#34;&gt;Research question&lt;/h2&gt;
 &lt;p&gt;A multi-sensor(force sensors and LRF; for both lower and upper limbs) based human motion intention recognition algorithm for walking-aid robot.&lt;/p&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -204,6 +278,7 @@
         <guid>https://K7288.github.io/posts/%E8%A1%8C%E6%96%87%E5%B8%B8%E8%A7%81%E8%AF%B4%E6%B3%95/</guid>
         <description>&lt;p&gt;prior studies/research&lt;/p&gt;
 &lt;p&gt;Experimental Protocol&lt;/p&gt;
+&lt;p&gt;Representative diagram&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -214,6 +289,7 @@
         <guid>https://K7288.github.io/posts/a-review-of-human-activity-recognition-methods/</guid>
         <description>&lt;p&gt;A review of human activity recognition methods&lt;/p&gt;
 &lt;p&gt;Recognizing human activities &lt;strong&gt;from video sequences or still images&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;intention定义: activity; 一个描述性词&lt;/p&gt;
 &lt;p&gt;Usually, the terms “activity” and “behavior” are used interchangeably in the literature (Castellano et al., 2007; Song et al., 2012a). In this survey, we differentiate between these two terms in the sense that the term “activity” is used to describe a sequence of actions that correspond to specific body motion. On the other hand, the term “behavior” is used to characterize both activities and events that are associated with gestures, emotional states, facial expressions, and auditory cues of a single person. Some&lt;/p&gt;
 &lt;h2 id=&#34;decomposition-of-human-activities-depending-on-complexity&#34;&gt;Decomposition of human activities (depending on complexity)&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210703164104152.png&#34; alt=&#34;image-20210703164104152&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
@@ -222,6 +298,7 @@
 &lt;h2 id=&#34;proposed-hierarchical-categorization-of-human-activity-recognition-methods&#34;&gt;Proposed hierarchical categorization of human activity recognition methods&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210703164133523.png&#34; alt=&#34;image-20210703164133523&#34;  /&gt;&lt;/p&gt;
 &lt;p&gt;Unimodal methods represent human activities from data of a single modality, such as images.&lt;/p&gt;
+&lt;p&gt;其实是一个纯CV问题，应该用不到，后面一半就没看了&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -231,6 +308,7 @@
         
         <guid>https://K7288.github.io/posts/intention-recognition-in-physical-human-robot-interaction-based-on-radial-basis-function-neural-network/</guid>
         <description>&lt;p&gt;Intention Recognition in Physical Human-Robot Interaction Based on Radial Basis Function Neural Network&lt;/p&gt;
+&lt;p&gt;intention定义：velocity+trajectory; 只涉及到一个接触点&lt;/p&gt;
 &lt;h2 id=&#34;research-question&#34;&gt;Research question&lt;/h2&gt;
 &lt;p&gt;a method based on radial basis function neural network (&lt;strong&gt;RBFNN&lt;/strong&gt;) model is presented to &lt;strong&gt;identify the motion intention of collaborator&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Here, the &lt;strong&gt;human intention is defined as the desired velocity&lt;/strong&gt; in human limb model, of which the estimation is obtained in real time based on interaction force and the contact point movement characteristics (current position and velocity of the robot) by the trained RBFNN model.&lt;/p&gt;
@@ -2564,6 +2642,7 @@ Upon comparing nested model Akaike information criterion (AIC) values, the lowes
         
         <guid>https://K7288.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%87%A0%E4%BD%95%E4%B8%8E%E7%89%A9%E7%90%86%E7%89%B9%E5%BE%81%E8%9E%8D%E5%90%88%E7%9A%84%E6%99%BA%E8%83%BD%E4%B8%8B%E8%82%A2%E5%81%87%E8%82%A2%E8%BF%90%E5%8A%A8%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/</guid>
         <description>&lt;p&gt;基于几何与物理特征融合的智能下肢假肢运动意图识别Movement intention recognition of intelligent lower limb prosthesis based on the fusion of geometric and physical features&lt;/p&gt;
+&lt;p&gt;intention定义—locomotion modes 5类稳态模式: 平地行走、上楼、下楼、上坡和 下坡，8类转换模式&lt;/p&gt;
 &lt;h2 id=&#34;research-question&#34;&gt;Research question&lt;/h2&gt;
 &lt;p&gt;将&lt;strong&gt;关节角表示的几何特征&lt;/strong&gt;与&lt;strong&gt;加速度、角速度表示的物理特征&lt;/strong&gt;有机融合并应用于智能下肢假肢的运动意图识别&lt;/p&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -2959,9 +3038,19 @@ $$&lt;/p&gt;
 $$&lt;/p&gt;
 &lt;p&gt;换行需要使用&lt;code&gt;\\\\&lt;/code&gt;
 $$
-\begin{aligned} C_{n+1, t+1}-C_{n, t} &amp;amp;=\frac{2}{n+1}+\frac{2}{n}+\cdots+\frac{2}{t+2}+C_{t+1, t+1}-C_{t, t} \\ &amp;amp;=2\left(H_{n+1}-H_{t+1}\right)+2-2 /(t+1)
+\begin{aligned}
+C_{n+1, t+1}-C_{n, t} &amp;amp;=\frac{2}{n+1}+\frac{2}{n}+\cdots+\frac{2}{t+2}
++C_{t+1, t+1}-C_{t, t} \\
+&amp;amp;=2\left(H_{n+1}-H_{t+1}\right)+2-2 /(t+1)
 \end{aligned}
 $$&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Latex&#34; data-lang=&#34;Latex&#34;&gt;&lt;span class=&#34;k&#34;&gt;\begin&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;aligned&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; 
+C&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;n+1, t+1&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;-C&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;n, t&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;&amp;amp;&lt;/span&gt;=&lt;span class=&#34;k&#34;&gt;\frac&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;2&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;n+1&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;+&lt;span class=&#34;k&#34;&gt;\frac&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;2&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;n&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;+&lt;span class=&#34;k&#34;&gt;\cdots&lt;/span&gt;+&lt;span class=&#34;k&#34;&gt;\frac&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;2&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;t+2&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
++C&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;t+1, t+1&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;-C&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;t, t&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\\\\&lt;/span&gt; 
+&lt;span class=&#34;nb&#34;&gt;&amp;amp;&lt;/span&gt;=2&lt;span class=&#34;k&#34;&gt;\left&lt;/span&gt;(H&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;n+1&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;-H&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;t+1&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\right&lt;/span&gt;)+2-2 /(t+1) 
+&lt;span class=&#34;k&#34;&gt;\end&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;aligned&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;\begin{aligned}&lt;/code&gt;和&lt;code&gt;\end{aligned}&lt;/code&gt;之间不能有空行&lt;/p&gt;
+&lt;p&gt;不支持&lt;code&gt;\left[&lt;/code&gt;，&lt;code&gt;\right)&lt;/code&gt;等&lt;/p&gt;
 </description>
         </item>
         <item>

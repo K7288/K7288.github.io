@@ -2,29 +2,35 @@
 <html lang="en">
 
 <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='$$ e^{ix}=\text{cos}x&#43;i\text{sin}x $$
-$$ \left(C_{n&#43;1, t&#43;1}-C_{n, t}\right)-\left(C_{n, t&#43;1}-C_{n-1, t}\right)=\frac{2}{n&#43;1} $$
-换行需要使用\\\\ $$ \begin{aligned} C_{n&#43;1, t&#43;1}-C_{n, t} &amp;amp;=\frac{2}{n&#43;1}&#43;\frac{2}{n}&#43;\cdots&#43;\frac{2}{t&#43;2} &#43;C_{t&#43;1, t&#43;1}-C_{t, t} \\ &amp;amp;=2\left(H_{n&#43;1}-H_{t&#43;1}\right)&#43;2-2 /(t&#43;1) \end{aligned} $$
-\begin{aligned} C_{n&#43;1, t&#43;1}-C_{n, t} &amp;amp;=\frac{2}{n&#43;1}&#43;\frac{2}{n}&#43;\cdots&#43;\frac{2}{t&#43;2} &#43;C_{t&#43;1, t&#43;1}-C_{t, t} \\\\ &amp;amp;=2\left(H_{n&#43;1}-H_{t&#43;1}\right)&#43;2-2 /(t&#43;1) \end{aligned} \begin{aligned}和\end{aligned}之间不能有空行
-不支持\left[，\right)等'><title>Math</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Intention Recgonition for Exoskeleton
+intention定义: walk/stand
+assistance exoskeleton system  支持4种state: L swing, R swing, Double stance(L), Double stance(R) control   Methods online SVM; features: ZMP(Zero Moment Point)
+  ZMP
+  concept: The distributed floor reaction force can be replaced by a single force R acts on ZMP.
+  ZMP can be obtained from ground reaction force (GRF) measurement or inverse dynamics of system.
+  calculation'><title>Intention Recgonition for Exoskeleton</title>
 
-<link rel='canonical' href='https://K7288.github.io/posts/math/'>
+<link rel='canonical' href='https://K7288.github.io/posts/intention-recognition-for-exoskeleton/'>
 
-<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Math'>
-<meta property='og:description' content='$$ e^{ix}=\text{cos}x&#43;i\text{sin}x $$
-$$ \left(C_{n&#43;1, t&#43;1}-C_{n, t}\right)-\left(C_{n, t&#43;1}-C_{n-1, t}\right)=\frac{2}{n&#43;1} $$
-换行需要使用\\\\ $$ \begin{aligned} C_{n&#43;1, t&#43;1}-C_{n, t} &amp;amp;=\frac{2}{n&#43;1}&#43;\frac{2}{n}&#43;\cdots&#43;\frac{2}{t&#43;2} &#43;C_{t&#43;1, t&#43;1}-C_{t, t} \\ &amp;amp;=2\left(H_{n&#43;1}-H_{t&#43;1}\right)&#43;2-2 /(t&#43;1) \end{aligned} $$
-\begin{aligned} C_{n&#43;1, t&#43;1}-C_{n, t} &amp;amp;=\frac{2}{n&#43;1}&#43;\frac{2}{n}&#43;\cdots&#43;\frac{2}{t&#43;2} &#43;C_{t&#43;1, t&#43;1}-C_{t, t} \\\\ &amp;amp;=2\left(H_{n&#43;1}-H_{t&#43;1}\right)&#43;2-2 /(t&#43;1) \end{aligned} \begin{aligned}和\end{aligned}之间不能有空行
-不支持\left[，\right)等'>
-<meta property='og:url' content='https://K7288.github.io/posts/math/'>
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Intention Recgonition for Exoskeleton'>
+<meta property='og:description' content='Intention Recgonition for Exoskeleton
+intention定义: walk/stand
+assistance exoskeleton system  支持4种state: L swing, R swing, Double stance(L), Double stance(R) control   Methods online SVM; features: ZMP(Zero Moment Point)
+  ZMP
+  concept: The distributed floor reaction force can be replaced by a single force R acts on ZMP.
+  ZMP can be obtained from ground reaction force (GRF) measurement or inverse dynamics of system.
+  calculation'>
+<meta property='og:url' content='https://K7288.github.io/posts/intention-recognition-for-exoskeleton/'>
 <meta property='og:site_name' content='K7288'>
-<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Latex' /><meta property='article:tag' content='Markdown' /><meta property='article:tag' content='GitHub' /><meta property='article:published_time' content='2021-05-01T11:37:16&#43;08:00'/><meta property='article:modified_time' content='2021-05-01T11:37:16&#43;08:00'/>
-<meta name="twitter:title" content="Math">
-<meta name="twitter:description" content="$$ e^{ix}=\text{cos}x&#43;i\text{sin}x $$
-$$ \left(C_{n&#43;1, t&#43;1}-C_{n, t}\right)-\left(C_{n, t&#43;1}-C_{n-1, t}\right)=\frac{2}{n&#43;1} $$
-换行需要使用\\\\ $$ \begin{aligned} C_{n&#43;1, t&#43;1}-C_{n, t} &amp;amp;=\frac{2}{n&#43;1}&#43;\frac{2}{n}&#43;\cdots&#43;\frac{2}{t&#43;2} &#43;C_{t&#43;1, t&#43;1}-C_{t, t} \\ &amp;amp;=2\left(H_{n&#43;1}-H_{t&#43;1}\right)&#43;2-2 /(t&#43;1) \end{aligned} $$
-\begin{aligned} C_{n&#43;1, t&#43;1}-C_{n, t} &amp;amp;=\frac{2}{n&#43;1}&#43;\frac{2}{n}&#43;\cdots&#43;\frac{2}{t&#43;2} &#43;C_{t&#43;1, t&#43;1}-C_{t, t} \\\\ &amp;amp;=2\left(H_{n&#43;1}-H_{t&#43;1}\right)&#43;2-2 /(t&#43;1) \end{aligned} \begin{aligned}和\end{aligned}之间不能有空行
-不支持\left[，\right)等">
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Intention Recognition' /><meta property='article:tag' content='特征提取' /><meta property='article:published_time' content='2021-07-06T13:52:44&#43;08:00'/><meta property='article:modified_time' content='2021-07-06T13:52:44&#43;08:00'/>
+<meta name="twitter:title" content="Intention Recgonition for Exoskeleton">
+<meta name="twitter:description" content="Intention Recgonition for Exoskeleton
+intention定义: walk/stand
+assistance exoskeleton system  支持4种state: L swing, R swing, Double stance(L), Double stance(R) control   Methods online SVM; features: ZMP(Zero Moment Point)
+  ZMP
+  concept: The distributed floor reaction force can be replaced by a single force R acts on ZMP.
+  ZMP can be obtained from ground reaction force (GRF) measurement or inverse dynamics of system.
+  calculation">
 </head>
 
 <body class="article-page keep-sidebar">
@@ -208,15 +214,19 @@ $$ \left(C_{n&#43;1, t&#43;1}-C_{n, t}\right)-\left(C_{n, t&#43;1}-C_{n-1, t}\ri
     
     <header class="article-category">
         
-            <a href="/categories/manual/" >
-                Manual
+            <a href="/categories/robotics/" >
+                Robotics
+            </a>
+        
+            <a href="/categories/literature-notes/" >
+                Literature Notes
             </a>
         
     </header>
     
 
     <h2 class="article-title">
-        <a href="/posts/math/">Math</a>
+        <a href="/posts/intention-recognition-for-exoskeleton/">Intention Recgonition for Exoskeleton</a>
     </h2>
 
     <footer class="article-time">
@@ -228,32 +238,75 @@ $$ \left(C_{n&#43;1, t&#43;1}-C_{n, t}\right)-\left(C_{n, t&#43;1}-C_{n-1, t}\ri
 
 
 
-        <time class="article-time--published">2021-05-01</time>
+        <time class="article-time--published">2021-07-06</time>
     </footer></div>
 </header>
 
     <section class="article-content">
-    <p>$$
-e^{ix}=\text{cos}x+i\text{sin}x
-$$</p>
-<p>$$
-\left(C_{n+1, t+1}-C_{n, t}\right)-\left(C_{n, t+1}-C_{n-1, t}\right)=\frac{2}{n+1}
-$$</p>
-<p>换行需要使用<code>\\\\</code>
-$$
-\begin{aligned}
-C_{n+1, t+1}-C_{n, t} &amp;=\frac{2}{n+1}+\frac{2}{n}+\cdots+\frac{2}{t+2}
-+C_{t+1, t+1}-C_{t, t} \\
-&amp;=2\left(H_{n+1}-H_{t+1}\right)+2-2 /(t+1)
-\end{aligned}
-$$</p>
-<div class="highlight"><pre class="chroma"><code class="language-Latex" data-lang="Latex"><span class="k">\begin</span><span class="nb">{</span>aligned<span class="nb">}</span> 
-C<span class="nb">_{</span>n+1, t+1<span class="nb">}</span>-C<span class="nb">_{</span>n, t<span class="nb">}</span> <span class="nb">&amp;</span>=<span class="k">\frac</span><span class="nb">{</span>2<span class="nb">}{</span>n+1<span class="nb">}</span>+<span class="k">\frac</span><span class="nb">{</span>2<span class="nb">}{</span>n<span class="nb">}</span>+<span class="k">\cdots</span>+<span class="k">\frac</span><span class="nb">{</span>2<span class="nb">}{</span>t+2<span class="nb">}</span>
-+C<span class="nb">_{</span>t+1, t+1<span class="nb">}</span>-C<span class="nb">_{</span>t, t<span class="nb">}</span> <span class="k">\\\\</span> 
-<span class="nb">&amp;</span>=2<span class="k">\left</span>(H<span class="nb">_{</span>n+1<span class="nb">}</span>-H<span class="nb">_{</span>t+1<span class="nb">}</span><span class="k">\right</span>)+2-2 /(t+1) 
-<span class="k">\end</span><span class="nb">{</span>aligned<span class="nb">}</span>
-</code></pre></div><p><code>\begin{aligned}</code>和<code>\end{aligned}</code>之间不能有空行</p>
-<p>不支持<code>\left[</code>，<code>\right)</code>等</p>
+    <p>Intention Recgonition for Exoskeleton</p>
+<p>intention定义: walk/stand</p>
+<h2 id="assistance-exoskeleton-system">assistance exoskeleton system</h2>
+<ul>
+<li>支持4种state: L swing, R swing, Double stance(L), Double stance(R)</li>
+<li>control
+<img src="/assets/image-20210706151917632.png" alt="image-20210706151917632" style="zoom:50%;" /></li>
+</ul>
+<h2 id="methods">Methods</h2>
+<p>online SVM; features: ZMP(Zero Moment Point)</p>
+<ul>
+<li>
+<p>ZMP</p>
+<ul>
+<li>
+<p>concept: The distributed floor reaction force can be replaced by a single force R acts on ZMP.</p>
+</li>
+<li>
+<p>ZMP can be obtained from ground reaction force (GRF) measurement or inverse dynamics of system.</p>
+</li>
+<li>
+<p>calculation</p>
+<p>$r=[\delta\ \varepsilon\ 0]$  is a vector on the ground and $ \rho(\delta, \varepsilon) $ is the vertical force acted on unit area at point $ r$. So the sum of vertical force is like $f_{z}=\int_{s} \rho(\delta, \varepsilon) d S$</p>
+<p>torque at  $p=\left[p_{x}\ p_{y}\ 0\right]$  is  $\tau_{n}(p) $.</p>
+<p>$\begin{aligned}
+\tau_{nx} &amp;=\int_{S}(\delta-p_{x}) \rho(\delta, \varepsilon) d S  \\
+\tau_{ny} &amp;=\int_{S}(\varepsilon-p_{y}) \rho(\delta, \varepsilon) d S  \\
+\tau_{nz} &amp;=0
+\end{aligned}$</p>
+<p>At ZMP  $\tau_{n x}=0, \tau_{n y}=0$ , we can get</p>
+<p>$\begin{aligned}
+p_{x} &amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\delta, \varepsilon)}\\p_{y} &amp;=\frac{\int_{S} \varepsilon \rho(\delta, \varepsilon)}{\int_{S}\rho(\delta, \varepsilon)}\end{aligned}$</p>
+</li>
+<li>
+<p>As $\rho(\delta, \varepsilon) $ is the distribution of reaction force on foot, ZMP  p  is also the center of pressure(COP).</p>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>ZMP for one foot</th>
+<th>ZMP of system</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P_{l x} =\frac{\sum_{i=1}^{7} p_{i}^{x} f_{i}}{\sum_{i=1}^{7} f_{i}}$<br><br/>$ P_{l y} =\frac{\sum_{i=1}^{7} p_{i}^{y} f_{i}}{\sum_{i=1}^{7} f_{i}}$<br><br/>$F_{l} =\sum_{i=1}^{7} f_{i}$</td>
+<td>$Z M P_{x} =\frac{P_{l x} F_{l}+P_{r x} F_{r}}{F_{l}+F_{R}}$<br/><br/>$Z M P_{y} =\frac{P_{l y} F_{l}+P_{r y} F_{r}}{F_{l}+F_{R}}$</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>SVM</p>
+<p>polynomial kernel; Gaussian kernel</p>
+</li>
+</ul>
+<p><img src="/assets/image-20210706161222476.png" alt="image-20210706161222476" style="zoom:40%;" /><img src="/assets/image-20210706161235490.png" alt="image-20210706161235490" style="zoom:40%;" /></p>
+<h2 id="thoughtscomments">Thoughts/Comments</h2>
+<ul>
+<li>TODO ZMP之后应该用得上，这个推导可以看一眼</li>
+</ul>
 
 </section>
 
@@ -262,11 +315,9 @@ C<span class="nb">_{</span>n+1, t+1<span class="nb">}</span>-C<span class="nb">_
     
     <section class="article-tags">
         
-            <a href="/tags/latex/">Latex</a>
+            <a href="/tags/intention-recognition/">Intention Recognition</a>
         
-            <a href="/tags/markdown/">Markdown</a>
-        
-            <a href="/tags/github/">GitHub</a>
+            <a href="/tags/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/">特征提取</a>
         
     </section>
 
@@ -326,7 +377,7 @@ C<span class="nb">_{</span>n+1, t+1<span class="nb">}</span>-C<span class="nb">_
         render: (h) =>
             h("Vssue", {
                 props: {
-                    title: "Math",
+                    title: "Intention Recgonition for Exoskeleton",
                     options: {
                         proxy: (url) => "https://cors-anywhere.azm.workers.dev/" + url,
                         owner: "K7288",

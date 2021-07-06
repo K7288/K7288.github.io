@@ -46,7 +46,9 @@ is actually baseURL/post/xxx.jpg</description>
       <guid>https://K7288.github.io/posts/math/</guid>
       <description>$$ e^{ix}=\text{cos}x+i\text{sin}x $$
 $$ \left(C_{n+1, t+1}-C_{n, t}\right)-\left(C_{n, t+1}-C_{n-1, t}\right)=\frac{2}{n+1} $$
-换行需要使用\\\\ $$ \begin{aligned} C_{n+1, t+1}-C_{n, t} &amp;amp;=\frac{2}{n+1}+\frac{2}{n}+\cdots+\frac{2}{t+2}+C_{t+1, t+1}-C_{t, t} \\ &amp;amp;=2\left(H_{n+1}-H_{t+1}\right)+2-2 /(t+1) \end{aligned} $$</description>
+换行需要使用\\\\ $$ \begin{aligned} C_{n+1, t+1}-C_{n, t} &amp;amp;=\frac{2}{n+1}+\frac{2}{n}+\cdots+\frac{2}{t+2} +C_{t+1, t+1}-C_{t, t} \\ &amp;amp;=2\left(H_{n+1}-H_{t+1}\right)+2-2 /(t+1) \end{aligned} $$
+\begin{aligned} C_{n+1, t+1}-C_{n, t} &amp;amp;=\frac{2}{n+1}+\frac{2}{n}+\cdots+\frac{2}{t+2} +C_{t+1, t+1}-C_{t, t} \\\\ &amp;amp;=2\left(H_{n+1}-H_{t+1}\right)+2-2 /(t+1) \end{aligned} \begin{aligned}和\end{aligned}之间不能有空行
+不支持\left[，\right)等</description>
     </item>
     
   </channel>

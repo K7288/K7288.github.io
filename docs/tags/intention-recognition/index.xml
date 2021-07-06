@@ -6,7 +6,22 @@
     <description>Recent content in Intention Recognition on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/tags/intention-recognition/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Jul 2021 13:52:44 +0800</lastBuildDate><atom:link href="https://K7288.github.io/tags/intention-recognition/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intention Recgonition for Exoskeleton</title>
+      <link>https://K7288.github.io/posts/intention-recognition-for-exoskeleton/</link>
+      <pubDate>Tue, 06 Jul 2021 13:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/intention-recognition-for-exoskeleton/</guid>
+      <description>Intention Recgonition for Exoskeleton
+intention定义: walk/stand
+assistance exoskeleton system  支持4种state: L swing, R swing, Double stance(L), Double stance(R) control   Methods online SVM; features: ZMP(Zero Moment Point)
+  ZMP
+  concept: The distributed floor reaction force can be replaced by a single force R acts on ZMP.
+  ZMP can be obtained from ground reaction force (GRF) measurement or inverse dynamics of system.
+  calculation</description>
+    </item>
+    
     <item>
       <title>A Classification Method for User-Independent Intent Recognition for Transfemoral Amputees Using Powered Lower Limb Prostheses</title>
       <link>https://K7288.github.io/posts/a-classification-method-for-user-independent-intent-recognition-for-transfemoral-amputees-using-powered-lower-limb-prostheses/</link>
@@ -14,6 +29,7 @@
       
       <guid>https://K7288.github.io/posts/a-classification-method-for-user-independent-intent-recognition-for-transfemoral-amputees-using-powered-lower-limb-prostheses/</guid>
       <description>A Classification Method for User-Independent Intent Recognition for Transfemoral Amputees Using Powered Lower Limb Prostheses
+intention定义—locomotion modes: level walking, ramp ascent, ramp descent, stair ascent, and stair descent
 Research question to develop a user-independent intent recognition system capable of recognizing level-ground walking, slopes, and stairs and to compare this system with a user-dependent intent recognition system.
 Introduction  Prior studies in which pattern recognition algorithms: current methods to initiate transitions between modes, such as visual, audio, or compensatory movement commands, are unintuitive and impose a cognitive burden.</description>
     </item>
@@ -25,6 +41,7 @@ Introduction  Prior studies in which pattern recognition algorithms: current met
       
       <guid>https://K7288.github.io/posts/multi-sensor-based-human-motion-intention-recognition-algorithm-for-walking-aid-robot/</guid>
       <description>Multi-sensor based human motion intention recognition algorithm for walking-aid robot
+intention定义：velocity; 这里表征为一个自定概念IM
 Research question A multi-sensor(force sensors and LRF; for both lower and upper limbs) based human motion intention recognition algorithm for walking-aid robot.
 Introduction  assistive rehabilitation robots: PAMM, Walking Helper, HAL, Omni RT Walker-II (ORTW-II) 简略说了一些human motion estimation methods  Methods  Sensors: push-pull force sensors and LRF(Laser Range Finder)    LRF: Range Segmentation, Identification of Circle, Leg detection, Intention detection</description>
     </item>
@@ -37,6 +54,7 @@ Introduction  assistive rehabilitation robots: PAMM, Walking Helper, HAL, Omni R
       <guid>https://K7288.github.io/posts/a-review-of-human-activity-recognition-methods/</guid>
       <description>A review of human activity recognition methods
 Recognizing human activities from video sequences or still images
+intention定义: activity; 一个描述性词
 Usually, the terms “activity” and “behavior” are used interchangeably in the literature (Castellano et al., 2007; Song et al., 2012a). In this survey, we differentiate between these two terms in the sense that the term “activity” is used to describe a sequence of actions that correspond to specific body motion. On the other hand, the term “behavior” is used to characterize both activities and events that are associated with gestures, emotional states, facial expressions, and auditory cues of a single person.</description>
     </item>
     
@@ -47,6 +65,7 @@ Usually, the terms “activity” and “behavior” are used interchangeably in
       
       <guid>https://K7288.github.io/posts/intention-recognition-in-physical-human-robot-interaction-based-on-radial-basis-function-neural-network/</guid>
       <description>Intention Recognition in Physical Human-Robot Interaction Based on Radial Basis Function Neural Network
+intention定义：velocity+trajectory; 只涉及到一个接触点
 Research question a method based on radial basis function neural network (RBFNN) model is presented to identify the motion intention of collaborator.
 Here, the human intention is defined as the desired velocity in human limb model, of which the estimation is obtained in real time based on interaction force and the contact point movement characteristics (current position and velocity of the robot) by the trained RBFNN model.</description>
     </item>
@@ -58,6 +77,7 @@ Here, the human intention is defined as the desired velocity in human limb model
       
       <guid>https://K7288.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%87%A0%E4%BD%95%E4%B8%8E%E7%89%A9%E7%90%86%E7%89%B9%E5%BE%81%E8%9E%8D%E5%90%88%E7%9A%84%E6%99%BA%E8%83%BD%E4%B8%8B%E8%82%A2%E5%81%87%E8%82%A2%E8%BF%90%E5%8A%A8%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/</guid>
       <description>基于几何与物理特征融合的智能下肢假肢运动意图识别Movement intention recognition of intelligent lower limb prosthesis based on the fusion of geometric and physical features
+intention定义—locomotion modes 5类稳态模式: 平地行走、上楼、下楼、上坡和 下坡，8类转换模式
 Research question 将关节角表示的几何特征与加速度、角速度表示的物理特征有机融合并应用于智能下肢假肢的运动意图识别
 Introduction 传统的意图识别方法所用传感器数量及种类较多, 特征向量维数偏高, 统计特征对短时样本具有不稳定性（在1.3 特征选择与提取有公式证明）。related work没有结合几何和物理。
 Methods   采样：健侧大腿、小腿惯性测量单元于摆动相前期所产生的运动时序数据作为样本；
@@ -68,7 +88,7 @@ Methods   采样：健侧大腿、小腿惯性测量单元于摆动相前期所�
   Results 13种日常行为进行分类。实验结果：对5类稳态模式: 平地行走、上楼、下楼、上坡和 下坡的识别率达到96.9%, 对8类转换模式的识别率达到97.1%, 对13 种模式的识别率为94.3%。
 Highlights 减少了传感器的数量及种类, 降低 了特征向量的维数降低了算法复杂度且避免了滞后性问题, 用加速度、 角速度及膝关节角三个参数共同对人体下肢运动的运动学特点进行表征。
 在特征的提取上, 将FDA方法与统计方法相结合, 弥补了仅提取统计特征的不稳定性问题。
-Limits/Further Work 对于13种动作的识别率有待提高, 后期工作会集中于对类间相似性相对较强较难区分的动作进行分类, 如: 下楼与下坡, 走到下楼 与走到下坡等. 此外, 关节角度是一个可深度挖掘的几何信息, 如: 除膝关节外的髋关节与踝关节对下肢假肢运动意图中的作用有待进一步探究.</description>
+Limits/Further Work 对于13种动作的识别率有待提高, 后期工作会集中于对类间相似性相对较强较难区分的动作进行分类, 如: 下楼与下坡, 走到下楼 与走到下坡等.</description>
     </item>
     
   </channel>

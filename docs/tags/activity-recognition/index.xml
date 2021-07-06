@@ -15,6 +15,7 @@
       <guid>https://K7288.github.io/posts/a-review-of-human-activity-recognition-methods/</guid>
       <description>A review of human activity recognition methods
 Recognizing human activities from video sequences or still images
+intention定义: activity; 一个描述性词
 Usually, the terms “activity” and “behavior” are used interchangeably in the literature (Castellano et al., 2007; Song et al., 2012a). In this survey, we differentiate between these two terms in the sense that the term “activity” is used to describe a sequence of actions that correspond to specific body motion. On the other hand, the term “behavior” is used to characterize both activities and events that are associated with gestures, emotional states, facial expressions, and auditory cues of a single person.</description>
     </item>
     
