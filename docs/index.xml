@@ -46,17 +46,25 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;gait pattern classification: without machine learning techniques: rule-based&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;assets/image-20210707105303376.png&#34; alt=&#34;image-20210707105303376&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210707105303376.png&#34; alt=&#34;image-20210707105303376&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;$a c c_{c a l i b}$和 $diff_{\text {calib }}$通过1分钟的校准得到&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210707111045296.png&#34; alt=&#34;image-20210707111045296&#34;  /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;assets/image-20210707111756100.png&#34; alt=&#34;image-20210707111756100&#34; style=&#34;zoom:57%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210707111756100.png&#34; alt=&#34;image-20210707111756100&#34; style=&#34;zoom:57%;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;There is an offset between the heel strikes detected by the IDGR and VICON system which is carried forward throughout the plot, see fig. 4. This offset occurs because the gait events detected in IDGR and the motion capture system is due to the kinetics at the FSR and kinematics of the heel and toe trajectories with respect to the sacrum, respectively. Therefore, the heel strike detected by the VICON system occurs before those of the IDGR system.&lt;/p&gt;
 &lt;h2 id=&#34;thoughtscomments&#34;&gt;Thoughts/Comments&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#gait_detection&#34;&gt;校准，通过力传感器检测步态event，确定stance time和swing time&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#gait_detection&#34;&gt;校准，通过力传感器检测步态event，确定stance time和swing time&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TODO Several works have classified gait pattern using machine learning methods like the random forest [25], support vector machines (SVM) [26] or using spectral feature analysis like the Gaussian Mixture Model [27].&lt;/p&gt;
+&lt;p&gt;[25] Casale, P., Pujol, O., &amp;amp; Radeva, P. (2011, June). Human activity recognition from accelerometer data using a wearable device. In Iberian Conference on Pattern Recognition and Image Analysis (pp. 289-296). Springer, Berlin, Heidelberg.
+[26] Prasertsung, P., &amp;amp; Horanont, T. (2016, December). A classification of accelerometer data to differentiate pedestrian state. In 2016 International Computer Science and Engineering Conference (ICSEC) (pp. 1-5). IEEE.
+[27] Ibrahim, R. K., Ambikairajah, E., Celler, B., Lovell, N. H., &amp;amp; Kilmartin, L. (2008). Gait patterns classification using spectral features.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>

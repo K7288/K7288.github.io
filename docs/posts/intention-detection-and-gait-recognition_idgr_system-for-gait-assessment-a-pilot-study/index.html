@@ -271,17 +271,25 @@ Hardware Algorithm   gait adaptation: detect in which phase of the gait cycle th
 </li>
 <li>
 <p>gait pattern classification: without machine learning techniques: rule-based</p>
-<p><img src="assets/image-20210707105303376.png" alt="image-20210707105303376" style="zoom:50%;" /></p>
+<p><img src="/assets/image-20210707105303376.png" alt="image-20210707105303376" style="zoom:50%;" /></p>
 <p>$a c c_{c a l i b}$和 $diff_{\text {calib }}$通过1分钟的校准得到</p>
 </li>
 </ul>
 <h2 id="results">Results</h2>
 <p><img src="/assets/image-20210707111045296.png" alt="image-20210707111045296"  /></p>
-<p><img src="assets/image-20210707111756100.png" alt="image-20210707111756100" style="zoom:57%;" /></p>
+<p><img src="/assets/image-20210707111756100.png" alt="image-20210707111756100" style="zoom:57%;" /></p>
 <p>There is an offset between the heel strikes detected by the IDGR and VICON system which is carried forward throughout the plot, see fig. 4. This offset occurs because the gait events detected in IDGR and the motion capture system is due to the kinetics at the FSR and kinematics of the heel and toe trajectories with respect to the sacrum, respectively. Therefore, the heel strike detected by the VICON system occurs before those of the IDGR system.</p>
 <h2 id="thoughtscomments">Thoughts/Comments</h2>
 <ul>
-<li><a class="link" href="#gait_detection">校准，通过力传感器检测步态event，确定stance time和swing time</a></li>
+<li>
+<p><a class="link" href="#gait_detection">校准，通过力传感器检测步态event，确定stance time和swing time</a></p>
+</li>
+<li>
+<p>TODO Several works have classified gait pattern using machine learning methods like the random forest [25], support vector machines (SVM) [26] or using spectral feature analysis like the Gaussian Mixture Model [27].</p>
+<p>[25] Casale, P., Pujol, O., &amp; Radeva, P. (2011, June). Human activity recognition from accelerometer data using a wearable device. In Iberian Conference on Pattern Recognition and Image Analysis (pp. 289-296). Springer, Berlin, Heidelberg.
+[26] Prasertsung, P., &amp; Horanont, T. (2016, December). A classification of accelerometer data to differentiate pedestrian state. In 2016 International Computer Science and Engineering Conference (ICSEC) (pp. 1-5). IEEE.
+[27] Ibrahim, R. K., Ambikairajah, E., Celler, B., Lovell, N. H., &amp; Kilmartin, L. (2008). Gait patterns classification using spectral features.</p>
+</li>
 </ul>
 
 </section>
