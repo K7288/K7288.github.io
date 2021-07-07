@@ -6,13 +6,40 @@
     <description>Recent content in Categories on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Jul 2021 13:52:44 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Jul 2021 22:52:44 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intention Regconition</title>
+      <link>https://K7288.github.io/categories/intention-regconition/</link>
+      <pubDate>Tue, 06 Jul 2021 22:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/categories/intention-regconition/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Literature Notes</title>
       <link>https://K7288.github.io/categories/literature-notes/</link>
-      <pubDate>Tue, 06 Jul 2021 13:52:44 +0800</pubDate>
+      <pubDate>Tue, 06 Jul 2021 22:52:44 +0800</pubDate>
       
       <guid>https://K7288.github.io/categories/literature-notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gait Analysis</title>
+      <link>https://K7288.github.io/categories/gait-analysis/</link>
+      <pubDate>Tue, 06 Jul 2021 16:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/categories/gait-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intention Recognition</title>
+      <link>https://K7288.github.io/categories/intention-recognition/</link>
+      <pubDate>Tue, 06 Jul 2021 16:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/categories/intention-recognition/</guid>
       <description></description>
     </item>
     
@@ -22,33 +49,6 @@
       <pubDate>Tue, 06 Jul 2021 13:52:44 +0800</pubDate>
       
       <guid>https://K7288.github.io/categories/robotics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gait Analysis</title>
-      <link>https://K7288.github.io/categories/gait-analysis/</link>
-      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://K7288.github.io/categories/gait-analysis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Intention Recognition</title>
-      <link>https://K7288.github.io/categories/intention-recognition/</link>
-      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://K7288.github.io/categories/intention-recognition/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Intention Regconition</title>
-      <link>https://K7288.github.io/categories/intention-regconition/</link>
-      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://K7288.github.io/categories/intention-regconition/</guid>
       <description></description>
     </item>
     

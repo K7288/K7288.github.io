@@ -2,38 +2,29 @@
 <html lang="en">
 
 <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Intention Recgonition for Exoskeleton
-intention定义: walk/stand
-assistance exoskeleton system   支持4种state: L swing, R swing, Double stance(L), Double stance(R)
-  control
-  Methods online SVM; features: ZMP(Zero Moment Point), IMU
-  ZMP
-  concept: The distributed floor reaction force can be replaced by a single force R acts on ZMP.
-  ZMP can be obtained from ground reaction force (GRF) measurement or inverse dynamics of system.'><title>Intention Recgonition for Exoskeleton</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study
+intention定义: standing still(stationary), walking or ascending the stairs
+Hardware Algorithm   gait adaptation: detect in which phase of the gait cycle the subject is
+  adaptive frequency oscillators (AFO) $\Leftarrow$ Since the human gait cycle is periodic, the acceleration signals obtained from the pelvis unit is also periodic in nature.
+ $\epsilon$: the coupling strength $\nu$: amplitude-learning factor $f_{\min }$: initial frequency value a set of three oscillators ($\mathrm{M}=3$) to generate a learning signal, $\hat{\theta} $, with the vertical acceleration of ADXL345 as the teaching signal, $\theta_{d}$ .'><title>Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study</title>
 
-<link rel='canonical' href='https://K7288.github.io/posts/intention-recognition-for-exoskeleton/'>
+<link rel='canonical' href='https://K7288.github.io/posts/intention-detection-and-gait-recognition_idgr_system-for-gait-assessment-a-pilot-study/'>
 
-<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Intention Recgonition for Exoskeleton'>
-<meta property='og:description' content='Intention Recgonition for Exoskeleton
-intention定义: walk/stand
-assistance exoskeleton system   支持4种state: L swing, R swing, Double stance(L), Double stance(R)
-  control
-  Methods online SVM; features: ZMP(Zero Moment Point), IMU
-  ZMP
-  concept: The distributed floor reaction force can be replaced by a single force R acts on ZMP.
-  ZMP can be obtained from ground reaction force (GRF) measurement or inverse dynamics of system.'>
-<meta property='og:url' content='https://K7288.github.io/posts/intention-recognition-for-exoskeleton/'>
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study'>
+<meta property='og:description' content='Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study
+intention定义: standing still(stationary), walking or ascending the stairs
+Hardware Algorithm   gait adaptation: detect in which phase of the gait cycle the subject is
+  adaptive frequency oscillators (AFO) $\Leftarrow$ Since the human gait cycle is periodic, the acceleration signals obtained from the pelvis unit is also periodic in nature.
+ $\epsilon$: the coupling strength $\nu$: amplitude-learning factor $f_{\min }$: initial frequency value a set of three oscillators ($\mathrm{M}=3$) to generate a learning signal, $\hat{\theta} $, with the vertical acceleration of ADXL345 as the teaching signal, $\theta_{d}$ .'>
+<meta property='og:url' content='https://K7288.github.io/posts/intention-detection-and-gait-recognition_idgr_system-for-gait-assessment-a-pilot-study/'>
 <meta property='og:site_name' content='K7288'>
-<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Intention Recognition' /><meta property='article:tag' content='特征提取' /><meta property='article:published_time' content='2021-07-06T13:52:44&#43;08:00'/><meta property='article:modified_time' content='2021-07-06T13:52:44&#43;08:00'/>
-<meta name="twitter:title" content="Intention Recgonition for Exoskeleton">
-<meta name="twitter:description" content="Intention Recgonition for Exoskeleton
-intention定义: walk/stand
-assistance exoskeleton system   支持4种state: L swing, R swing, Double stance(L), Double stance(R)
-  control
-  Methods online SVM; features: ZMP(Zero Moment Point), IMU
-  ZMP
-  concept: The distributed floor reaction force can be replaced by a single force R acts on ZMP.
-  ZMP can be obtained from ground reaction force (GRF) measurement or inverse dynamics of system.">
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2021-07-06T22:52:44&#43;08:00'/><meta property='article:modified_time' content='2021-07-06T22:52:44&#43;08:00'/>
+<meta name="twitter:title" content="Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study">
+<meta name="twitter:description" content="Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study
+intention定义: standing still(stationary), walking or ascending the stairs
+Hardware Algorithm   gait adaptation: detect in which phase of the gait cycle the subject is
+  adaptive frequency oscillators (AFO) $\Leftarrow$ Since the human gait cycle is periodic, the acceleration signals obtained from the pelvis unit is also periodic in nature.
+ $\epsilon$: the coupling strength $\nu$: amplitude-learning factor $f_{\min }$: initial frequency value a set of three oscillators ($\mathrm{M}=3$) to generate a learning signal, $\hat{\theta} $, with the vertical acceleration of ADXL345 as the teaching signal, $\theta_{d}$ .">
 </head>
 
 <body class="article-page keep-sidebar">
@@ -217,19 +208,19 @@ assistance exoskeleton system   支持4种state: L swing, R swing, Double stance
     
     <header class="article-category">
         
-            <a href="/categories/robotics/" >
-                Robotics
-            </a>
-        
             <a href="/categories/literature-notes/" >
                 Literature Notes
+            </a>
+        
+            <a href="/categories/intention-regconition/" >
+                Intention Regconition
             </a>
         
     </header>
     
 
     <h2 class="article-title">
-        <a href="/posts/intention-recognition-for-exoskeleton/">Intention Recgonition for Exoskeleton</a>
+        <a href="/posts/intention-detection-and-gait-recognition_idgr_system-for-gait-assessment-a-pilot-study/">Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study</a>
     </h2>
 
     <footer class="article-time">
@@ -246,73 +237,51 @@ assistance exoskeleton system   支持4种state: L swing, R swing, Double stance
 </header>
 
     <section class="article-content">
-    <p>Intention Recgonition for Exoskeleton</p>
-<p>intention定义: walk/stand</p>
-<h2 id="assistance-exoskeleton-system">assistance exoskeleton system</h2>
+    <p>Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study</p>
+<p>intention定义: standing still(stationary), walking or ascending the stairs</p>
+<h2 id="hardware">Hardware</h2>
+<p><img src="/assets/image-20210707085802763.png" alt="image-20210707085802763" style="zoom:40%;" /></p>
+<h2 id="algorithm">Algorithm</h2>
 <ul>
 <li>
-<p>支持4种state: L swing, R swing, Double stance(L), Double stance(R)</p>
-</li>
-<li>
-<p>control</p>
-<p><img src="/assets/image-20210706151917632.png" alt="image-20210706151917632" style="zoom:50%;" /></p>
-</li>
-</ul>
-<h2 id="methods">Methods</h2>
-<p>online SVM; features: ZMP(Zero Moment Point), IMU</p>
+<p>gait adaptation: detect in which phase of the gait cycle the subject is</p>
 <ul>
 <li>
-<p>ZMP</p>
+<p>adaptive frequency oscillators (AFO) $\Leftarrow$ Since the human gait cycle is periodic, the <strong>acceleration</strong> signals obtained from the pelvis unit is also <strong>periodic</strong> in nature.</p>
+<img src="/assets/image-20210707090629072.png" alt="image-20210707090629072" style="zoom:35%;" align="right"/>
 <ul>
-<li>
-<p>concept: The distributed floor reaction force can be replaced by a single force R acts on ZMP.</p>
-</li>
-<li>
-<p>ZMP can be obtained from ground reaction force (GRF) measurement or inverse dynamics of system.</p>
-</li>
-<li>
-<p>calculation</p>
-<p>$r=[\delta\ \varepsilon\ 0]$  is a vector on the ground and $ \rho(\delta, \varepsilon) $ is the vertical force acted on unit area at point $ r$. So the sum of vertical force is like $f_{z}=\int_{s} \rho(\delta, \varepsilon) d S$</p>
-<p>torque at  $p=\left[p_{x}\ p_{y}\ 0\right]$  is  $\tau_{n}(p) $.</p>
-<p>$\begin{aligned}
-\tau_{nx} &amp;=\int_{S}(\delta-p_{x}) \rho(\delta, \varepsilon) d S  \\
-\tau_{ny} &amp;=\int_{S}(\varepsilon-p_{y}) \rho(\delta, \varepsilon) d S  \\
-\tau_{nz} &amp;=0
-\end{aligned}$</p>
-<p>At ZMP  $\tau_{n x}=0, \tau_{n y}=0$ , we can get</p>
-<p>$\begin{aligned}
-p_{x} &amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\delta, \varepsilon)}\\p_{y} &amp;=\frac{\int_{S} \varepsilon \rho(\delta, \varepsilon)}{\int_{S}\rho(\delta, \varepsilon)}\end{aligned}$</p>
-</li>
-<li>
-<p>As $\rho(\delta, \varepsilon) $ is the distribution of reaction force on foot, ZMP  p  is also the center of pressure(COP).</p>
-</li>
+<li>$\epsilon$: the coupling strength</li>
+<li>$\nu$: amplitude-learning factor</li>
+<li>$f_{\min }$: initial frequency value</li>
+<li>a set of three oscillators  ($\mathrm{M}=3$)  to generate a learning signal,  $\hat{\theta} $, with the vertical acceleration of ADXL345 as the teaching signal,  $\theta_{d}$ .</li>
+<li>The Y matrix of order ($2 \mathrm{M}+2 \times 1$)  describes the state of the oscillator at any given instant of time.</li>
+<li>$ \phi_{i}$ and $\alpha_{i}  $ are the phase and amplitude of the  $i^{t h}$  oscillator, respectively.</li>
+<li>$ \omega$  is the fundamental angular frequency of the oscillator</li>
+<li>$ \beta $ sets the offset of the learned signal.</li>
+<li>$ \dot{\theta} $: estimated rate of change of learning signal, which plays a significant role in the classification of gait patterns.</li>
 </ul>
 </li>
 </ul>
-<table>
-<thead>
-<tr>
-<th>ZMP for one foot</th>
-<th>ZMP of system</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$P_{l x} =\frac{\sum_{i=1}^{7} p_{i}^{x} f_{i}}{\sum_{i=1}^{7} f_{i}}$<br><br/>$ P_{l y} =\frac{\sum_{i=1}^{7} p_{i}^{y} f_{i}}{\sum_{i=1}^{7} f_{i}}$<br><br/>$F_{l} =\sum_{i=1}^{7} f_{i}$</td>
-<td>$Z M P_{x} =\frac{P_{l x} F_{l}+P_{r x} F_{r}}{F_{l}+F_{R}}$<br/><br/>$Z M P_{y} =\frac{P_{l y} F_{l}+P_{r y} F_{r}}{F_{l}+F_{R}}$</td>
-</tr>
-</tbody>
-</table>
-<ul>
+</li>
 <li>
-<p>SVM</p>
-<p>polynomial kernel; Gaussian kernel</p>
+<p><a id="gait_detection"></a>gait event detection (GED): detect the heel strike (HS) and toe-offs (TO) of each foot.</p>
+<p>1️⃣ calibration(store maximum &amp; minimum);2️⃣ max-min normalization;3️⃣ the previous normalized value of the heel FSR less than a specified upper limit (UL) and the current normalized value is greater than UL $\Rightarrow$ a heel strike (normalized value of the toe FSR greater than a specified lower limit (LL) and the current normalized value is less than LL $\Rightarrow$ a toe off)</p>
+<p>A good estimate for gait event detection is obtained when the UL and LL is taken to be 80% and 20%.</p>
+<p>With the knowledge of HS, TO and $\phi_{1}$ of the first oscillator, we calculate the phase,  $\phi_{G C}$, of the gait cycle of each foot **in percentage**. When $ \phi_{G C} $ is plotted with other temporal data of the gait cycle, it gives us the information about the subject&rsquo;s state at each gait phase. The **stance time** of the gait cycle is calculated as the time duration from the HS of one foot to the TO of the same foot whereas the **swing time** is the time between the TO of one foot to the HS of the same foot.</p>
+</li>
+<li>
+<p>gait pattern classification: without machine learning techniques: rule-based</p>
+<p><img src="assets/image-20210707105303376.png" alt="image-20210707105303376" style="zoom:50%;" /></p>
+<p>$a c c_{c a l i b}$和 $diff_{\text {calib }}$通过1分钟的校准得到</p>
 </li>
 </ul>
-<p><img src="/assets/image-20210706161222476.png" alt="image-20210706161222476" style="zoom:40%;" /><img src="/assets/image-20210706161235490.png" alt="image-20210706161235490" style="zoom:40%;" /></p>
+<h2 id="results">Results</h2>
+<p><img src="/assets/image-20210707111045296.png" alt="image-20210707111045296"  /></p>
+<p><img src="assets/image-20210707111756100.png" alt="image-20210707111756100" style="zoom:57%;" /></p>
+<p>There is an offset between the heel strikes detected by the IDGR and VICON system which is carried forward throughout the plot, see fig. 4. This offset occurs because the gait events detected in IDGR and the motion capture system is due to the kinetics at the FSR and kinematics of the heel and toe trajectories with respect to the sacrum, respectively. Therefore, the heel strike detected by the VICON system occurs before those of the IDGR system.</p>
 <h2 id="thoughtscomments">Thoughts/Comments</h2>
 <ul>
-<li>TODO ZMP之后应该用得上，这个推导可以看一眼</li>
+<li><a class="link" href="#gait_detection">校准，通过力传感器检测步态event，确定stance time和swing time</a></li>
 </ul>
 
 </section>
@@ -320,14 +289,6 @@ p_{x} &amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\delt
 
     <footer class="article-footer">
     
-    <section class="article-tags">
-        
-            <a href="/tags/intention-recognition/">Intention Recognition</a>
-        
-            <a href="/tags/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/">特征提取</a>
-        
-    </section>
-
 
     
     <section class="article-copyright">
@@ -384,7 +345,7 @@ p_{x} &amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\delt
         render: (h) =>
             h("Vssue", {
                 props: {
-                    title: "Intention Recgonition for Exoskeleton",
+                    title: "Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study",
                     options: {
                         proxy: (url) => "https://cors-anywhere.azm.workers.dev/" + url,
                         owner: "K7288",

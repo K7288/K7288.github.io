@@ -6,15 +6,18 @@
     <description>Recent content in Intention Regconition on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/intention-regconition/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Jul 2021 22:52:44 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/intention-regconition/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study</title>
-      <link>https://K7288.github.io/posts/0-literature-notes-template-%E5%89%AF%E6%9C%AC/</link>
-      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      <link>https://K7288.github.io/posts/intention-detection-and-gait-recognition_idgr_system-for-gait-assessment-a-pilot-study/</link>
+      <pubDate>Tue, 06 Jul 2021 22:52:44 +0800</pubDate>
       
-      <guid>https://K7288.github.io/posts/0-literature-notes-template-%E5%89%AF%E6%9C%AC/</guid>
+      <guid>https://K7288.github.io/posts/intention-detection-and-gait-recognition_idgr_system-for-gait-assessment-a-pilot-study/</guid>
       <description>Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study
-Research question Introduction Methods Results Highlights Limits/Further Work Thoughts/Comments </description>
+intention定义: standing still(stationary), walking or ascending the stairs
+Hardware Algorithm   gait adaptation: detect in which phase of the gait cycle the subject is
+  adaptive frequency oscillators (AFO) $\Leftarrow$ Since the human gait cycle is periodic, the acceleration signals obtained from the pelvis unit is also periodic in nature.
+ $\epsilon$: the coupling strength $\nu$: amplitude-learning factor $f_{\min }$: initial frequency value a set of three oscillators ($\mathrm{M}=3$) to generate a learning signal, $\hat{\theta} $, with the vertical acceleration of ADXL345 as the teaching signal, $\theta_{d}$ .</description>
     </item>
     
   </channel>

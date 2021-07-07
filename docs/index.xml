@@ -6,86 +6,64 @@
         <description>Recent content on K7288</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Tue, 06 Jul 2021 13:52:44 +0800</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Intention Recgonition for Exoskeleton</title>
-        <link>https://K7288.github.io/posts/intention-recognition-for-exoskeleton/</link>
-        <pubDate>Tue, 06 Jul 2021 13:52:44 +0800</pubDate>
+        <lastBuildDate>Tue, 06 Jul 2021 22:52:44 +0800</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study</title>
+        <link>https://K7288.github.io/posts/intention-detection-and-gait-recognition_idgr_system-for-gait-assessment-a-pilot-study/</link>
+        <pubDate>Tue, 06 Jul 2021 22:52:44 +0800</pubDate>
         
-        <guid>https://K7288.github.io/posts/intention-recognition-for-exoskeleton/</guid>
-        <description>&lt;p&gt;Intention Recgonition for Exoskeleton&lt;/p&gt;
-&lt;p&gt;intention定义: walk/stand&lt;/p&gt;
-&lt;h2 id=&#34;assistance-exoskeleton-system&#34;&gt;assistance exoskeleton system&lt;/h2&gt;
+        <guid>https://K7288.github.io/posts/intention-detection-and-gait-recognition_idgr_system-for-gait-assessment-a-pilot-study/</guid>
+        <description>&lt;p&gt;Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study&lt;/p&gt;
+&lt;p&gt;intention定义: standing still(stationary), walking or ascending the stairs&lt;/p&gt;
+&lt;h2 id=&#34;hardware&#34;&gt;Hardware&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210707085802763.png&#34; alt=&#34;image-20210707085802763&#34; style=&#34;zoom:40%;&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;algorithm&#34;&gt;Algorithm&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;支持4种state: L swing, R swing, Double stance(L), Double stance(R)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;control&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210706151917632.png&#34; alt=&#34;image-20210706151917632&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
-&lt;p&gt;online SVM; features: ZMP(Zero Moment Point)&lt;/p&gt;
+&lt;p&gt;gait adaptation: detect in which phase of the gait cycle the subject is&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;ZMP&lt;/p&gt;
+&lt;p&gt;adaptive frequency oscillators (AFO) $\Leftarrow$ Since the human gait cycle is periodic, the &lt;strong&gt;acceleration&lt;/strong&gt; signals obtained from the pelvis unit is also &lt;strong&gt;periodic&lt;/strong&gt; in nature.&lt;/p&gt;
+&lt;img src=&#34;https://K7288.github.io/assets/image-20210707090629072.png&#34; alt=&#34;image-20210707090629072&#34; style=&#34;zoom:35%;&#34; align=&#34;right&#34;/&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;concept: The distributed floor reaction force can be replaced by a single force R acts on ZMP.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;ZMP can be obtained from ground reaction force (GRF) measurement or inverse dynamics of system.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;calculation&lt;/p&gt;
-&lt;p&gt;$r=[\delta\ \varepsilon\ 0]$  is a vector on the ground and $ \rho(\delta, \varepsilon) $ is the vertical force acted on unit area at point $ r$. So the sum of vertical force is like $f_{z}=\int_{s} \rho(\delta, \varepsilon) d S$&lt;/p&gt;
-&lt;p&gt;torque at  $p=\left[p_{x}\ p_{y}\ 0\right]$  is  $\tau_{n}(p) $.&lt;/p&gt;
-&lt;p&gt;$\begin{aligned}
-\tau_{nx} &amp;amp;=\int_{S}(\delta-p_{x}) \rho(\delta, \varepsilon) d S  \\
-\tau_{ny} &amp;amp;=\int_{S}(\varepsilon-p_{y}) \rho(\delta, \varepsilon) d S  \\
-\tau_{nz} &amp;amp;=0
-\end{aligned}$&lt;/p&gt;
-&lt;p&gt;At ZMP  $\tau_{n x}=0, \tau_{n y}=0$ , we can get&lt;/p&gt;
-&lt;p&gt;$\begin{aligned}
-p_{x} &amp;amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\delta, \varepsilon)}\\p_{y} &amp;amp;=\frac{\int_{S} \varepsilon \rho(\delta, \varepsilon)}{\int_{S}\rho(\delta, \varepsilon)}\end{aligned}$&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;As $\rho(\delta, \varepsilon) $ is the distribution of reaction force on foot, ZMP  p  is also the center of pressure(COP).&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;$\epsilon$: the coupling strength&lt;/li&gt;
+&lt;li&gt;$\nu$: amplitude-learning factor&lt;/li&gt;
+&lt;li&gt;$f_{\min }$: initial frequency value&lt;/li&gt;
+&lt;li&gt;a set of three oscillators  ($\mathrm{M}=3$)  to generate a learning signal,  $\hat{\theta} $, with the vertical acceleration of ADXL345 as the teaching signal,  $\theta_{d}$ .&lt;/li&gt;
+&lt;li&gt;The Y matrix of order ($2 \mathrm{M}+2 \times 1$)  describes the state of the oscillator at any given instant of time.&lt;/li&gt;
+&lt;li&gt;$ \phi_{i}$ and $\alpha_{i}  $ are the phase and amplitude of the  $i^{t h}$  oscillator, respectively.&lt;/li&gt;
+&lt;li&gt;$ \omega$  is the fundamental angular frequency of the oscillator&lt;/li&gt;
+&lt;li&gt;$ \beta $ sets the offset of the learned signal.&lt;/li&gt;
+&lt;li&gt;$ \dot{\theta} $: estimated rate of change of learning signal, which plays a significant role in the classification of gait patterns.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;ZMP for one foot&lt;/th&gt;
-&lt;th&gt;ZMP of system&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;$P_{l x} =\frac{\sum_{i=1}^{7} p_{i}^{x} f_{i}}{\sum_{i=1}^{7} f_{i}}$&lt;br&gt;&lt;br/&gt;$ P_{l y} =\frac{\sum_{i=1}^{7} p_{i}^{y} f_{i}}{\sum_{i=1}^{7} f_{i}}$&lt;br&gt;&lt;br/&gt;$F_{l} =\sum_{i=1}^{7} f_{i}$&lt;/td&gt;
-&lt;td&gt;$Z M P_{x} =\frac{P_{l x} F_{l}+P_{r x} F_{r}}{F_{l}+F_{R}}$&lt;br/&gt;&lt;br/&gt;$Z M P_{y} =\frac{P_{l y} F_{l}+P_{r y} F_{r}}{F_{l}+F_{R}}$&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;ul&gt;
+&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;SVM&lt;/p&gt;
-&lt;p&gt;polynomial kernel; Gaussian kernel&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;gait_detection&#34;&gt;&lt;/a&gt;gait event detection (GED): detect the heel strike (HS) and toe-offs (TO) of each foot.&lt;/p&gt;
+&lt;p&gt;1️⃣ calibration(store maximum &amp;amp; minimum);2️⃣ max-min normalization;3️⃣ the previous normalized value of the heel FSR less than a specified upper limit (UL) and the current normalized value is greater than UL $\Rightarrow$ a heel strike (normalized value of the toe FSR greater than a specified lower limit (LL) and the current normalized value is less than LL $\Rightarrow$ a toe off)&lt;/p&gt;
+&lt;p&gt;A good estimate for gait event detection is obtained when the UL and LL is taken to be 80% and 20%.&lt;/p&gt;
+&lt;p&gt;With the knowledge of HS, TO and $\phi_{1}$ of the first oscillator, we calculate the phase,  $\phi_{G C}$, of the gait cycle of each foot **in percentage**. When $ \phi_{G C} $ is plotted with other temporal data of the gait cycle, it gives us the information about the subject&amp;rsquo;s state at each gait phase. The **stance time** of the gait cycle is calculated as the time duration from the HS of one foot to the TO of the same foot whereas the **swing time** is the time between the TO of one foot to the HS of the same foot.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;gait pattern classification: without machine learning techniques: rule-based&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;assets/image-20210707105303376.png&#34; alt=&#34;image-20210707105303376&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;$a c c_{c a l i b}$和 $diff_{\text {calib }}$通过1分钟的校准得到&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210706161222476.png&#34; alt=&#34;image-20210706161222476&#34; style=&#34;zoom:40%;&#34; /&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210706161235490.png&#34; alt=&#34;image-20210706161235490&#34; style=&#34;zoom:40%;&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210707111045296.png&#34; alt=&#34;image-20210707111045296&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;assets/image-20210707111756100.png&#34; alt=&#34;image-20210707111756100&#34; style=&#34;zoom:57%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;There is an offset between the heel strikes detected by the IDGR and VICON system which is carried forward throughout the plot, see fig. 4. This offset occurs because the gait events detected in IDGR and the motion capture system is due to the kinetics at the FSR and kinematics of the heel and toe trajectories with respect to the sacrum, respectively. Therefore, the heel strike detected by the VICON system occurs before those of the IDGR system.&lt;/p&gt;
 &lt;h2 id=&#34;thoughtscomments&#34;&gt;Thoughts/Comments&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;TODO ZMP之后应该用得上，这个推导可以看一眼&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#gait_detection&#34;&gt;校准，通过力传感器检测步态event，确定stance time和swing time&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>
         <item>
         <title>A lower limb exoskeleton based on recognition of lower limb walking intention</title>
         <link>https://K7288.github.io/posts/a-lower-limb-exoskeleton-based-on-recognition-of-lower-limb-walking-intention/</link>
-        <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+        <pubDate>Tue, 06 Jul 2021 16:52:44 +0800</pubDate>
         
         <guid>https://K7288.github.io/posts/a-lower-limb-exoskeleton-based-on-recognition-of-lower-limb-walking-intention/</guid>
         <description>&lt;p&gt;A lower limb exoskeleton based on recognition of lower limb walking intention&lt;/p&gt;
@@ -186,19 +164,79 @@ p_{x} &amp;amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\
 </description>
         </item>
         <item>
-        <title>Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study</title>
-        <link>https://K7288.github.io/posts/0-literature-notes-template-%E5%89%AF%E6%9C%AC/</link>
-        <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+        <title>Intention Recgonition for Exoskeleton</title>
+        <link>https://K7288.github.io/posts/intention-recognition-for-exoskeleton/</link>
+        <pubDate>Tue, 06 Jul 2021 13:52:44 +0800</pubDate>
         
-        <guid>https://K7288.github.io/posts/0-literature-notes-template-%E5%89%AF%E6%9C%AC/</guid>
-        <description>&lt;p&gt;Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study&lt;/p&gt;
-&lt;h2 id=&#34;research-question&#34;&gt;Research question&lt;/h2&gt;
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+        <guid>https://K7288.github.io/posts/intention-recognition-for-exoskeleton/</guid>
+        <description>&lt;p&gt;Intention Recgonition for Exoskeleton&lt;/p&gt;
+&lt;p&gt;intention定义: walk/stand&lt;/p&gt;
+&lt;h2 id=&#34;assistance-exoskeleton-system&#34;&gt;assistance exoskeleton system&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;支持4种state: L swing, R swing, Double stance(L), Double stance(R)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;control&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210706151917632.png&#34; alt=&#34;image-20210706151917632&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
-&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
-&lt;h2 id=&#34;highlights&#34;&gt;Highlights&lt;/h2&gt;
-&lt;h2 id=&#34;limitsfurther-work&#34;&gt;Limits/Further Work&lt;/h2&gt;
+&lt;p&gt;online SVM; features: ZMP(Zero Moment Point), IMU&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ZMP&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;concept: The distributed floor reaction force can be replaced by a single force R acts on ZMP.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ZMP can be obtained from ground reaction force (GRF) measurement or inverse dynamics of system.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;calculation&lt;/p&gt;
+&lt;p&gt;$r=[\delta\ \varepsilon\ 0]$  is a vector on the ground and $ \rho(\delta, \varepsilon) $ is the vertical force acted on unit area at point $ r$. So the sum of vertical force is like $f_{z}=\int_{s} \rho(\delta, \varepsilon) d S$&lt;/p&gt;
+&lt;p&gt;torque at  $p=\left[p_{x}\ p_{y}\ 0\right]$  is  $\tau_{n}(p) $.&lt;/p&gt;
+&lt;p&gt;$\begin{aligned}
+\tau_{nx} &amp;amp;=\int_{S}(\delta-p_{x}) \rho(\delta, \varepsilon) d S  \\
+\tau_{ny} &amp;amp;=\int_{S}(\varepsilon-p_{y}) \rho(\delta, \varepsilon) d S  \\
+\tau_{nz} &amp;amp;=0
+\end{aligned}$&lt;/p&gt;
+&lt;p&gt;At ZMP  $\tau_{n x}=0, \tau_{n y}=0$ , we can get&lt;/p&gt;
+&lt;p&gt;$\begin{aligned}
+p_{x} &amp;amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\delta, \varepsilon)}\\p_{y} &amp;amp;=\frac{\int_{S} \varepsilon \rho(\delta, \varepsilon)}{\int_{S}\rho(\delta, \varepsilon)}\end{aligned}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;As $\rho(\delta, \varepsilon) $ is the distribution of reaction force on foot, ZMP  p  is also the center of pressure(COP).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;ZMP for one foot&lt;/th&gt;
+&lt;th&gt;ZMP of system&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$P_{l x} =\frac{\sum_{i=1}^{7} p_{i}^{x} f_{i}}{\sum_{i=1}^{7} f_{i}}$&lt;br&gt;&lt;br/&gt;$ P_{l y} =\frac{\sum_{i=1}^{7} p_{i}^{y} f_{i}}{\sum_{i=1}^{7} f_{i}}$&lt;br&gt;&lt;br/&gt;$F_{l} =\sum_{i=1}^{7} f_{i}$&lt;/td&gt;
+&lt;td&gt;$Z M P_{x} =\frac{P_{l x} F_{l}+P_{r x} F_{r}}{F_{l}+F_{R}}$&lt;br/&gt;&lt;br/&gt;$Z M P_{y} =\frac{P_{l y} F_{l}+P_{r y} F_{r}}{F_{l}+F_{R}}$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;SVM&lt;/p&gt;
+&lt;p&gt;polynomial kernel; Gaussian kernel&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210706161222476.png&#34; alt=&#34;image-20210706161222476&#34; style=&#34;zoom:40%;&#34; /&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210706161235490.png&#34; alt=&#34;image-20210706161235490&#34; style=&#34;zoom:40%;&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;thoughtscomments&#34;&gt;Thoughts/Comments&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;TODO ZMP之后应该用得上，这个推导可以看一眼&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
@@ -390,6 +428,10 @@ p_{x} &amp;amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;transition function&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;adaptive frequency oscillators&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;

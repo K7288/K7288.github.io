@@ -6,7 +6,32 @@
     <description>Recent content in Literature Notes on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Jul 2021 13:52:44 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/literature-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Jul 2021 22:52:44 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/literature-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study</title>
+      <link>https://K7288.github.io/posts/intention-detection-and-gait-recognition_idgr_system-for-gait-assessment-a-pilot-study/</link>
+      <pubDate>Tue, 06 Jul 2021 22:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/intention-detection-and-gait-recognition_idgr_system-for-gait-assessment-a-pilot-study/</guid>
+      <description>Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study
+intention定义: standing still(stationary), walking or ascending the stairs
+Hardware Algorithm   gait adaptation: detect in which phase of the gait cycle the subject is
+  adaptive frequency oscillators (AFO) $\Leftarrow$ Since the human gait cycle is periodic, the acceleration signals obtained from the pelvis unit is also periodic in nature.
+ $\epsilon$: the coupling strength $\nu$: amplitude-learning factor $f_{\min }$: initial frequency value a set of three oscillators ($\mathrm{M}=3$) to generate a learning signal, $\hat{\theta} $, with the vertical acceleration of ADXL345 as the teaching signal, $\theta_{d}$ .</description>
+    </item>
+    
+    <item>
+      <title>A lower limb exoskeleton based on recognition of lower limb walking intention</title>
+      <link>https://K7288.github.io/posts/a-lower-limb-exoskeleton-based-on-recognition-of-lower-limb-walking-intention/</link>
+      <pubDate>Tue, 06 Jul 2021 16:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/a-lower-limb-exoskeleton-based-on-recognition-of-lower-limb-walking-intention/</guid>
+      <description>A lower limb exoskeleton based on recognition of lower limb walking intention
+intention定义: step initiation $\Leftarrow$ intersection event, continuous walking (normal step velocity $\Leftarrow$ push-off impulse time), acceleration, deceleration, and step termination
+Introduction   Key technologies in lower limb exoskeletons are actuator, mechanical design, control, sensor, recognition of the driver’s intention, and human–robot interface.
+  three representative lower limb exoskeletons: Berkeley Lower Extremity Exoskeleton (BLEEX), Hybrid Assistive Leg (HAL), and ReWalk.</description>
+    </item>
+    
     <item>
       <title>Intention Recgonition for Exoskeleton</title>
       <link>https://K7288.github.io/posts/intention-recognition-for-exoskeleton/</link>
@@ -17,32 +42,10 @@
 intention定义: walk/stand
 assistance exoskeleton system   支持4种state: L swing, R swing, Double stance(L), Double stance(R)
   control
-  Methods online SVM; features: ZMP(Zero Moment Point)
+  Methods online SVM; features: ZMP(Zero Moment Point), IMU
   ZMP
   concept: The distributed floor reaction force can be replaced by a single force R acts on ZMP.
   ZMP can be obtained from ground reaction force (GRF) measurement or inverse dynamics of system.</description>
-    </item>
-    
-    <item>
-      <title>A lower limb exoskeleton based on recognition of lower limb walking intention</title>
-      <link>https://K7288.github.io/posts/a-lower-limb-exoskeleton-based-on-recognition-of-lower-limb-walking-intention/</link>
-      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://K7288.github.io/posts/a-lower-limb-exoskeleton-based-on-recognition-of-lower-limb-walking-intention/</guid>
-      <description>A lower limb exoskeleton based on recognition of lower limb walking intention
-intention定义: step initiation $\Leftarrow$ intersection event, continuous walking (normal step velocity $\Leftarrow$ push-off impulse time), acceleration, deceleration, and step termination
-Introduction   Key technologies in lower limb exoskeletons are actuator, mechanical design, control, sensor, recognition of the driver’s intention, and human–robot interface.
-  three representative lower limb exoskeletons: Berkeley Lower Extremity Exoskeleton (BLEEX), Hybrid Assistive Leg (HAL), and ReWalk.</description>
-    </item>
-    
-    <item>
-      <title>Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study</title>
-      <link>https://K7288.github.io/posts/0-literature-notes-template-%E5%89%AF%E6%9C%AC/</link>
-      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://K7288.github.io/posts/0-literature-notes-template-%E5%89%AF%E6%9C%AC/</guid>
-      <description>Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study
-Research question Introduction Methods Results Highlights Limits/Further Work Thoughts/Comments </description>
     </item>
     
     <item>
@@ -75,7 +78,7 @@ Introduction  assistive rehabilitation robots: PAMM, Walking Helper, HAL, Omni R
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://K7288.github.io/posts/terms/</guid>
-      <description>Terms Definition     inertia matrix, damping matrix, and stiffness matrix    Cartesian coordinate    mass-damper-spring model    impedance control    admittance control    push-off impulse time    transition function     time-varying, adaptive compensation term, manifold, coarse/fine-grained level granularity, an inertial frame,</description>
+      <description>Terms Definition     inertia matrix, damping matrix, and stiffness matrix    Cartesian coordinate    mass-damper-spring model    impedance control    admittance control    push-off impulse time    transition function    adaptive frequency oscillators     time-varying, adaptive compensation term, manifold, coarse/fine-grained level granularity, an inertial frame,</description>
     </item>
     
     <item>
