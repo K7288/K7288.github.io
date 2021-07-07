@@ -15,9 +15,9 @@
       <guid>https://K7288.github.io/posts/intention-detection-and-gait-recognition_idgr_system-for-gait-assessment-a-pilot-study/</guid>
       <description>Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study
 intention定义: standing still(stationary), walking or ascending the stairs
-Hardware Algorithm   gait adaptation: detect in which phase of the gait cycle the subject is
-  adaptive frequency oscillators (AFO) $\Leftarrow$ Since the human gait cycle is periodic, the acceleration signals obtained from the pelvis unit is also periodic in nature.
- $\epsilon$: the coupling strength $\nu$: amplitude-learning factor $f_{\min }$: initial frequency value a set of three oscillators ($\mathrm{M}=3$) to generate a learning signal, $\hat{\theta} $, with the vertical acceleration of ADXL345 as the teaching signal, $\theta_{d}$ .</description>
+Hardware sensors: ADXL345 (an accelerometer; in pelvis unit) and four FSRs (two in each foot for heel and toe respectively)
+Algorithm   gait adaptation: detect in which phase of the gait cycle the subject is
+  adaptive frequency oscillators (AFO) $\Leftarrow$ Since the human gait cycle is periodic, the acceleration signals obtained from the pelvis unit is also periodic in nature.</description>
     </item>
     
   </channel>
