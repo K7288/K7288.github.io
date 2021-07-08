@@ -6,7 +6,134 @@
         <description>Recent content on K7288</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Tue, 06 Jul 2021 22:52:44 +0800</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 07 Jul 2021 17:00:00 +0800</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Daily Locomotion Recognition and Prediction: A Kinematic Data-Based Machine Learning Approach</title>
+        <link>https://K7288.github.io/posts/daily-locomotion-recognition-and-prediction-a-kinematic-data-based-machine-learning-approach/</link>
+        <pubDate>Wed, 07 Jul 2021 17:00:00 +0800</pubDate>
+        
+        <guid>https://K7288.github.io/posts/daily-locomotion-recognition-and-prediction-a-kinematic-data-based-machine-learning-approach/</guid>
+        <description>&lt;p&gt;Daily Locomotion Recognition and Prediction: A Kinematic Data-Based Machine Learning Approach&lt;/p&gt;
+&lt;p&gt;intention定义: locomotion modes (LMs; walking direction, level-ground walking, ascend and descend stairs, and ascend and descend ramps) and respective locomotion mode transitions(LMTs).&lt;/p&gt;
+&lt;h2 id=&#34;research-question&#34;&gt;Research question&lt;/h2&gt;
+&lt;p&gt;to propose an automatic, &lt;strong&gt;user-independent&lt;/strong&gt; recognition and prediction tool using easily wearable kinematic motion sensors for innovatively classifying several LMs (walking direction, level-ground walking, ascend and descend stairs, and ascend and descend ramps) and respective LMTs.&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;EMG的一些drawback&lt;/li&gt;
+&lt;li&gt;之前的一些人的分类工作&lt;/li&gt;
+&lt;li&gt;它说预测的少，而且很少有达到“预”测&lt;/li&gt;
+&lt;li&gt;一些工作规定被试用a predefined limb进行transition&lt;/li&gt;
+&lt;li&gt;a set of challenges&lt;/li&gt;
+&lt;li&gt;总之就是说这个工作前面做的人少而且有challenges并且没人只用kinematic data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
+&lt;p&gt;Sensors: 7 IMUs&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210707192136762.png&#34; alt=&#34;image-20210707192136762&#34; style=&#34;zoom:43%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210707194610843.png&#34; alt=&#34;image-20210707194610843&#34; style=&#34;zoom:40%;&#34; /&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210707193002245.png&#34; alt=&#34;image-20210707193002245&#34; style=&#34;zoom:45%;&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;数据滤波: 1st order low- pass filter (exponential smoothing) with 0.5 as the smoothing factor and a cut-off of 10 Hz [13]. 一阶低通滤波器(指数平滑)，平滑因子为0.5，截止频率为10hz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;feature-calculation&#34;&gt;feature calculation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;feature是一个窗口的；也探究window size的影响&lt;/li&gt;
+&lt;li&gt;feature两腿都有；两种方式：左腿右腿；前腿后腿the leading and opposite legs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;pre-processing&#34;&gt;pre-processing&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;normalization: compared different normalization techniques, namely centering, z-score standardization, and min-max scaling&lt;/li&gt;
+&lt;li&gt;filter feature selection: minimum-redundancy maximum-relevancy (mRMR) algorithm to rank features in descending order according to their relevance [19]. Then, we used the ANOVA, starting on the highest-ranked feature, to assess which classes are distinguishable for the feature considering the feature’s mean and variance per class. This procedure was done until there are a set of features that distinguish between all classes. mRMR找强关联项; ANOVA去除冗余特征&lt;/li&gt;
+&lt;li&gt;feature extraction: principal component analysis (PCA) considering the Horn’s Parallel Analysis as a cut-off criterium&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-labeling&#34;&gt;data labeling&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210707202933670.png&#34; alt=&#34;image-20210707202933670&#34; style=&#34;zoom:47%;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;model-building&#34;&gt;model building&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;wrapper methods: mRMR排序，由高到低依次检验，如果有提升则加到feature set里; ‘‘forward selection plus backward selection’’,类似剪枝&lt;/li&gt;
+&lt;li&gt;hyperparameter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210707210012031.png&#34; alt=&#34;image-20210707210012031&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;实验&#34;&gt;实验&lt;/h3&gt;
+&lt;p&gt;Mathew’s correlation coefficient (MCC) for both comparison and reporting of model’s performances due to its good representative properties of &lt;strong&gt;unbalanced classes&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;assets/image-20210707210104931.png&#34; alt=&#34;image-20210707210104931&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The most effective machine learning configuration includes min-max scaling in [−1;1] interval and ‘‘mRMR plus forward selection algorithm’’ for feature normalization and dimensionality reduction, respectively, and Gaussian SVM classifier.&lt;/p&gt;
+&lt;h3 id=&#34;feature-calculation-analysis&#34;&gt;FEATURE CALCULATION ANALYSIS&lt;/h3&gt;
+&lt;p&gt;识别: 使用左/右方法的全步幅最优；预测: leading/opposite approach and 1/4 fraction of gait stride
+yielded the best results&lt;/p&gt;
+&lt;p&gt;the interval from 1/4 stride’s fraction to the toe-off event (likely from terminal stance phase to preswing phase) contains relevant information for the user’s motion prediction.&lt;/p&gt;
+&lt;h3 id=&#34;feature-normalization-analysis&#34;&gt;FEATURE NORMALIZATION ANALYSIS&lt;/h3&gt;
+&lt;p&gt;min-max scaling with the interval [−1;1] yielded the best results for recognition and
+prediction.&lt;/p&gt;
+&lt;h3 id=&#34;feature-selection-and-extraction-analysis&#34;&gt;FEATURE SELECTION AND EXTRACTION ANALYSIS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;performed better in recognition than in the prediction&lt;/li&gt;
+&lt;li&gt;an adequate dimensionality reduction method improved the effectiveness of the classifier com-
+pared to the inclusion of the entire dataset.&lt;/li&gt;
+&lt;li&gt;mRMR was faster and more effective than the ‘‘forward selection’’ and ‘‘backward selection’’ methods&lt;/li&gt;
+&lt;li&gt;the ANOVA was less effective due to the low number of selected features (2 to 3 features) to discern between the classes&lt;/li&gt;
+&lt;li&gt;dimensionality reduction methods that depend on the built model outperformed the ones (as ANOV A and PCA) that consider neither the classification model nor the classification goal.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;model-building-analysis&#34;&gt;model building analysis&lt;/h3&gt;
+&lt;p&gt;SVM classifier with a Gaussian kernel is an effective classifier to yield a benchmark tool for both recognition and prediction purposes, despite the higher computational burden than other classifiers.&lt;/p&gt;
+&lt;h2 id=&#34;thoughtscomments&#34;&gt;Thoughts/Comments&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;EMG sensors present some drawbacks when compared to kinematic sensors, such as the lengthy and expert-based installation, difficulty for keeping them attached during the user’s daily locomotion, and the shifting electrodes may change EMG patterns and degrade the classification over time [2], [4], [6].&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;确实！👎&lt;/p&gt;
+&lt;p&gt;这种控制变量的形式应该之后也要用&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Motion control for a walking companion robot with a novel human–robot interface</title>
+        <link>https://K7288.github.io/posts/motion-control-for-a-walking-companion-robot-with-a-novel-humanrobot-interface/</link>
+        <pubDate>Wed, 07 Jul 2021 14:00:00 +0800</pubDate>
+        
+        <guid>https://K7288.github.io/posts/motion-control-for-a-walking-companion-robot-with-a-novel-humanrobot-interface/</guid>
+        <description>&lt;p&gt;Motion control for a walking companion robot with a novel human–robot interface&lt;/p&gt;
+&lt;h2 id=&#34;research-question&#34;&gt;Research question&lt;/h2&gt;
+&lt;p&gt;A walking companion robot is presented for rehabilitation from dyskinesia of lower limbs and its motion control algorithms.&lt;/p&gt;
+&lt;p&gt;A new human– robot interface (HRI) adopts one-axis force sensor and potentiometer connector to detect the motion of the user with the common motions classified into two elemental motion states.&lt;/p&gt;
+&lt;p&gt;mathematical model-based control method and force control method $\Leftarrow$ distinction of motion states&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;sensors&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;cost&#34;&gt;&lt;/a&gt;The design of human–robot interface involves two difficulties: &lt;strong&gt;the selected variables of body should fully reflect the motion state of the user&lt;/strong&gt; and the sensors adopt to effectively measure the selected variables.&lt;/p&gt;
+&lt;p&gt;介绍了信息充分性和成本之间的trade-off&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;control&lt;/p&gt;
+&lt;p&gt;Admittance control algorithm and variant of admittance-based control algorithm are widely used in the walker robot. $ { }^{4,7,8,10,11,13} $ Fuzzy control is also widely used. $ ^{12,15,18,22}  $Other control algorithms such as learning algorithm,$  ^{23}  $ smooth control,$  { }^{24} $ and Bayesian Networks mode$ { }^{16} $ are also adopted to the walker robot.&lt;/p&gt;
+&lt;p&gt;The precise motion control highly depends on the design of HRI.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
+&lt;h3 id=&#34;recognition-of-elemental-motion-state&#34;&gt;Recognition of elemental motion state&lt;/h3&gt;
+&lt;p&gt;因为是辅助病人的，所以涉及的运动模式很有限，这篇文章只针对直行和转体两种。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210707154707714.png&#34; alt=&#34;image-20210707154707714&#34; style=&#34;zoom:33%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;A rule-based method with fuzzy threshold rules&lt;/p&gt;
+&lt;p&gt;Rule set (rule-based method)
+If $ \Delta F_{Y F}&amp;gt;0 $ and $ \Delta F_{Y F} \leq 0 $ and $ F_{Y B}&amp;gt;F_{Y F} $, then $ \Delta d y_{\text {user }}&amp;gt;0, \Delta  angle  _{\text {user }}=0 $&lt;/p&gt;
+&lt;p&gt;If $ \Delta F_{Y B}&amp;gt;0 $ and $ \Delta F_{Y F}&amp;gt;0 $ and $ F_{Y B} \approx F_{Y F} $ and $ P_{F}&amp;gt;   P_{M_{F}} $ and $ P_{B}&amp;gt;P_{M_{B}} $, then $ \Delta d y_{\text {user }}&amp;gt;0, \Delta  angle  _{\text {user }}&amp;gt;0 $&lt;/p&gt;
+&lt;p&gt;If $ \Delta F_{Y B}&amp;gt;0 $ and $ \Delta F_{Y F}&amp;gt;0 $ and $ F_{Y B} \approx F_{Y F} $ and $ P_{F}&amp;lt;P_{M_{F}} $ and $ P_{B}&amp;lt;P_{M_{B}} $, then $ \Delta d y_{\text {user }}&amp;gt;0, \Delta  angle  _{\text {user }}&amp;lt;0 $&lt;/p&gt;
+&lt;h3 id=&#34;mathematical-model-based-control-method&#34;&gt;Mathematical model-based control method&lt;/h3&gt;
+&lt;p&gt;Motion Ⅰ&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210707161517517.png&#34; alt=&#34;image-20210707161517517&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;Motion Ⅱ 类似&lt;/p&gt;
+&lt;h3 id=&#34;fc-method&#34;&gt;FC method&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210707161722146.png&#34; alt=&#34;image-20210707161722146&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;The force sensor data serve as the feedback of the control system rather than the input of control system.&lt;/p&gt;
+&lt;p&gt;The FC basic concept is: when the real-time force sensor data equals to the initial state force sensor data, it indicates that robot moves at the same pace or rotate at the same angle with user. The robot is seen as a stable system and the motion of user is seen as the disturbance, the initial output of the force sensor is seen as the reference input. The control objective is to make the real- time output of force sensors equal to the initial one-axis force sensor data by adjust the motion of robot.&lt;/p&gt;
+&lt;h3 id=&#34;stability-analysis&#34;&gt;Stability analysis&lt;/h3&gt;
+&lt;p&gt;MMBC: close- loop transfer function; the characteristic equation of the system; roots of characteristic equation&lt;/p&gt;
+&lt;p&gt;FC: the open-loop transfer function; the characteristic polynomial; poles of the system&lt;/p&gt;
+&lt;h2 id=&#34;thoughtscomments&#34;&gt;Thoughts/Comments&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;TODO 项目相关：所以从&lt;a class=&#34;link&#34; href=&#34;#cost&#34;&gt;这方面&lt;/a&gt;来看也能体现我这个工作的意义，选择显著相关的variable就可能降低对传感器的要求&lt;/li&gt;
+&lt;li&gt;TODO 数据处理相关 the six- axis force/torque sensors or 3-D force sensors are required to remove noise (Kalman filters and G-h filters)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study</title>
         <link>https://K7288.github.io/posts/intention-detection-and-gait-recognition_idgr_system-for-gait-assessment-a-pilot-study/</link>
         <pubDate>Tue, 06 Jul 2021 22:52:44 +0800</pubDate>
@@ -158,7 +285,7 @@
 &lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210706213607461.png&#34; alt=&#34;image-20210706213607461&#34;  /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;为什么用的说法很多都是pilot driver❓&lt;/p&gt;
+&lt;p&gt;为什么佩戴者被描述成pilot driver❓ 都这么用吗​&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;TODO EMG数据处理：高通滤波(二阶巴特沃思，20hz截止频率)，整流，然后低通滤波(二阶巴特沃思，3hz截止频率)。然后采用方差分析(ANOVA)比较安装UTRCEXO与未安装UTRCEXO的肌肉活动，采用SPSS 19.0软件对肌肉活动进行归一化处理，显著性水平为0.05。&lt;/p&gt;
@@ -167,7 +294,7 @@
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;他们用的这个MARB没太看懂&lt;/p&gt;
+&lt;p&gt;他们用的这个MARB讲得也太不清楚了，没太看懂&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
@@ -412,7 +539,19 @@ p_{x} &amp;amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;inertia matrix, damping matrix, and stiffness matrix&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;inertia matrix&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;damping matrix&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;stiffness matrix&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;centripetal and Coriolis matrix&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -428,7 +567,7 @@ p_{x} &amp;amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;admittance control&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;admittance control 导纳控制&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -457,6 +596,8 @@ p_{x} &amp;amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\
         <description>&lt;p&gt;prior studies/research&lt;/p&gt;
 &lt;p&gt;Experimental Protocol&lt;/p&gt;
 &lt;p&gt;Representative diagram&lt;/p&gt;
+&lt;p&gt;the integrated design&lt;/p&gt;
+&lt;p&gt;cognitive effort&lt;/p&gt;
 </description>
         </item>
         <item>

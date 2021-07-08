@@ -6,7 +6,30 @@
     <description>Recent content in Literature Notes on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Jul 2021 22:52:44 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/literature-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Jul 2021 17:00:00 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/literature-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daily Locomotion Recognition and Prediction: A Kinematic Data-Based Machine Learning Approach</title>
+      <link>https://K7288.github.io/posts/daily-locomotion-recognition-and-prediction-a-kinematic-data-based-machine-learning-approach/</link>
+      <pubDate>Wed, 07 Jul 2021 17:00:00 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/daily-locomotion-recognition-and-prediction-a-kinematic-data-based-machine-learning-approach/</guid>
+      <description>Daily Locomotion Recognition and Prediction: A Kinematic Data-Based Machine Learning Approach
+intention定义: locomotion modes (LMs; walking direction, level-ground walking, ascend and descend stairs, and ascend and descend ramps) and respective locomotion mode transitions(LMTs).
+Research question to propose an automatic, user-independent recognition and prediction tool using easily wearable kinematic motion sensors for innovatively classifying several LMs (walking direction, level-ground walking, ascend and descend stairs, and ascend and descend ramps) and respective LMTs.</description>
+    </item>
+    
+    <item>
+      <title>Motion control for a walking companion robot with a novel human–robot interface</title>
+      <link>https://K7288.github.io/posts/motion-control-for-a-walking-companion-robot-with-a-novel-humanrobot-interface/</link>
+      <pubDate>Wed, 07 Jul 2021 14:00:00 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/motion-control-for-a-walking-companion-robot-with-a-novel-humanrobot-interface/</guid>
+      <description>Motion control for a walking companion robot with a novel human–robot interface
+Research question A walking companion robot is presented for rehabilitation from dyskinesia of lower limbs and its motion control algorithms.
+A new human– robot interface (HRI) adopts one-axis force sensor and potentiometer connector to detect the motion of the user with the common motions classified into two elemental motion states.
+mathematical model-based control method and force control method $\Leftarrow$ distinction of motion states</description>
+    </item>
+    
     <item>
       <title>Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study</title>
       <link>https://K7288.github.io/posts/intention-detection-and-gait-recognition_idgr_system-for-gait-assessment-a-pilot-study/</link>
@@ -78,7 +101,7 @@ Introduction  assistive rehabilitation robots: PAMM, Walking Helper, HAL, Omni R
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://K7288.github.io/posts/terms/</guid>
-      <description>Terms Definition     inertia matrix, damping matrix, and stiffness matrix    Cartesian coordinate    mass-damper-spring model    impedance control    admittance control    push-off impulse time    transition function    adaptive frequency oscillators     time-varying, adaptive compensation term, manifold, coarse/fine-grained level granularity, an inertial frame,</description>
+      <description>Terms Definition     inertia matrix    damping matrix    stiffness matrix    centripetal and Coriolis matrix    Cartesian coordinate    mass-damper-spring model    impedance control    admittance control 导纳控制    push-off impulse time    transition function    adaptive frequency oscillators     time-varying, adaptive compensation term, manifold, coarse/fine-grained level granularity, an inertial frame,</description>
     </item>
     
     <item>
@@ -89,7 +112,9 @@ Introduction  assistive rehabilitation robots: PAMM, Walking Helper, HAL, Omni R
       <guid>https://K7288.github.io/posts/%E8%A1%8C%E6%96%87%E5%B8%B8%E8%A7%81%E8%AF%B4%E6%B3%95/</guid>
       <description>prior studies/research
 Experimental Protocol
-Representative diagram</description>
+Representative diagram
+the integrated design
+cognitive effort</description>
     </item>
     
     <item>
