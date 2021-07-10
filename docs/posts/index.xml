@@ -6,7 +6,45 @@
     <description>Recent content in Posts on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 07 Jul 2021 17:00:00 +0800</lastBuildDate><atom:link href="https://K7288.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Jul 2021 22:00:09 +0800</lastBuildDate><atom:link href="https://K7288.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Before Taking A Recording</title>
+      <link>https://K7288.github.io/posts/before-taking-a-recording/</link>
+      <pubDate>Fri, 09 Jul 2021 22:00:09 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/before-taking-a-recording/</guid>
+      <description>Before Taking A Recording * means &amp;ldquo;optinal&amp;rdquo;; 此处的定义和步骤均参考Tekscan的F-Scan User Manual
+Preparing the Patient trim the sensor; set up the testing area; set up the system hardware; weigh the patient; outfit the patient.
+*Zeroing the Sensor 当整个实验过程中鞋垫上始终有额外压力时使用；类似称重的去皮
+Equilibration 在鞋垫上放置均匀重物；这个版本的软件上并没有这个功能哈😅；不过新影片都是白色目前应该还没有出现过需要平衡的情况。
+Calibration Point Calibration 校准时间取决于实际行走过程，快的人1s，慢的2s
+先抬起待校准脚，放下同时重量全部集中在该脚上，放下后很快（间隔1s）实验人员点击校准
+Extended Calibration 是点校准的延伸；默认开启；在两个均采用点校准的sensor测量完成后基于体重调整两sensor的校准（by an equal amount）to correct for the differing &amp;ldquo;drift&amp;rdquo; times that occur between your calibration and the actual test.
+进行此校准要求两脚均必须满3steps $\Rightarrow$ 不然会提示“步态扩展不足”
+Step Calibration To initiate Step calibration, initially, the subject stands entirely on the foot to be off-loaded.</description>
+    </item>
+    
+    <item>
+      <title>A Real-Time Stability Control Method Through sEMG Interface for Lower Extremity Rehabilitation Exoskeletons</title>
+      <link>https://K7288.github.io/posts/a-real-time-stability-control-method-through-semg-interface-for-lower-extremity-rehabilitation-exoskeletons/</link>
+      <pubDate>Thu, 08 Jul 2021 14:29:01 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/a-real-time-stability-control-method-through-semg-interface-for-lower-extremity-rehabilitation-exoskeletons/</guid>
+      <description>A Real-Time Stability Control Method Through sEMG Interface for Lower Extremity Rehabilitation Exoskeletons
+Research question  analysis of gait planning based on a human kinematics model and real-time motion stability based on the zero-moment point (ZMP). a neural interface based on sEMG to achieve motion intention recognition and muscle fatigue estimation. to verify the stability of human–exoskeleton system and ergonomic effects of the proposed gait switching method by organized experiments.  Introduction   一些商用外骨骼</description>
+    </item>
+    
+    <item>
+      <title>A novel motion intention recognition approach for soft exoskeleton via IMU</title>
+      <link>https://K7288.github.io/posts/a-novel-motion-intention-recognition-approach-for-soft-exoskeleton-via-imu/</link>
+      <pubDate>Thu, 08 Jul 2021 09:05:01 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/a-novel-motion-intention-recognition-approach-for-soft-exoskeleton-via-imu/</guid>
+      <description>A novel motion intention recognition approach for soft exoskeleton via IMU
+intention定义: the classic five kinds of terrains(including walking on flat ground, going up and downstairs, and up and down slopes) &amp;amp; transformed terrains
+   Abbreviation Definition Abbreviation Definition     IMU Inertial measurement unit SA Stair ascent   DDLMI DNN-based deep locomotion mode identification SD Stair decent   ISR Identification success rate RA Ramp ascent   LW Level-ground walking RD Ramp decent    Research question to propose a recognition method with historical information based on neural network to recognize different terrain and add the pattern transformation recognition, trying to predict the next motion mode in advance.</description>
+    </item>
+    
     <item>
       <title>Daily Locomotion Recognition and Prediction: A Kinematic Data-Based Machine Learning Approach</title>
       <link>https://K7288.github.io/posts/daily-locomotion-recognition-and-prediction-a-kinematic-data-based-machine-learning-approach/</link>
@@ -115,7 +153,7 @@ Introduction  assistive rehabilitation robots: PAMM, Walking Helper, HAL, Omni R
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://K7288.github.io/posts/terms/</guid>
-      <description>Terms Definition     inertia matrix    damping matrix    stiffness matrix    centripetal and Coriolis matrix    Cartesian coordinate    mass-damper-spring model    impedance control    admittance control 导纳控制    push-off impulse time    transition function    adaptive frequency oscillators     time-varying, adaptive compensation term, manifold, coarse/fine-grained level granularity, an inertial frame,</description>
+      <description>Terms Definition     inertia matrix    damping matrix    stiffness matrix    centripetal and Coriolis matrix    Cartesian coordinate    mass-damper-spring model    impedance control    admittance control 导纳控制    push-off impulse time    transition function    adaptive frequency oscillators    one-way ANOVA    two-way ANOVA    a neural interface     time-varying, adaptive compensation term, manifold, coarse/fine-grained level granularity, an inertial frame,</description>
     </item>
     
     <item>
@@ -128,7 +166,8 @@ Introduction  assistive rehabilitation robots: PAMM, Walking Helper, HAL, Omni R
 Experimental Protocol
 Representative diagram
 the integrated design
-cognitive effort</description>
+cognitive effort
+methodology</description>
     </item>
     
     <item>
@@ -199,7 +238,7 @@ Research Problem description of the gaits of two- and four-legged animals and so
       <guid>https://K7288.github.io/posts/hugo-html-tips/</guid>
       <description>  原生html支持
 hugo采用goldmark作为默认渲染器，需要在config中开启
-   markup: goldmark: renderer: unsafe: true html 图片需要绝对路径，形式如下：  &amp;lt;img src=&amp;quot;/assets/image-20210416142714352.png&amp;quot; alt=&amp;quot;image-20210416142714352&amp;quot; style=&amp;quot;zoom:33%;&amp;quot; /&amp;gt; 而不能是src=&amp;quot;assets\ 所以也不太支持网络图片&amp;hellip;&amp;hellip;
+   markup:goldmark:renderer:unsafe: truehtml 图片需要绝对路径，形式如下：  &amp;lt;img src=&amp;quot;/assets/image-20210416142714352.png&amp;quot; alt=&amp;quot;image-20210416142714352&amp;quot; style=&amp;quot;zoom:33%;&amp;quot; /&amp;gt;而不能是src=&amp;quot;assets\ 所以也不太支持网络图片&amp;hellip;&amp;hellip;
 ****好像不能出现。  </description>
     </item>
     
@@ -229,7 +268,7 @@ hugo采用goldmark作为默认渲染器，需要在config中开启
       <pubDate>Sun, 16 May 2021 10:35:13 +0800</pubDate>
       
       <guid>https://K7288.github.io/posts/menu/</guid>
-      <description>实现页内跳转  基本语法 注意事项 A subtitle just for test 测试 a A  测试——测试 测试:一个测试   1.测试   目录实现  实现页内跳转 基本语法 [&amp;lt;提示语&amp;gt;](#&amp;lt;目标内容&amp;gt;) 注意事项   若标题是英文，在(#&amp;lt;目标内容&amp;gt;)中需要小写
+      <description>实现页内跳转  基本语法 注意事项 A subtitle just for test 测试 a A  测试——测试 测试:一个测试   1.测试   目录实现  实现页内跳转 基本语法 [&amp;lt;提示语&amp;gt;](#&amp;lt;目标内容&amp;gt;)注意事项   若标题是英文，在(#&amp;lt;目标内容&amp;gt;)中需要小写
 例如 [例如](#a-subtitle-just-for-test)
   若标题中出现空格，需要用-连接
 例如 [例如](#测试-a-a)
@@ -308,8 +347,8 @@ Three of these focus on the specific events that constitute the act of walking.
       <guid>https://K7288.github.io/posts/hugo-guide/</guid>
       <description>About Contents Add Some Content hugo new post/**.md
 The newly created content file will start with something like this:
---- title: &amp;quot;**&amp;quot; date: 2019-03-26T08:47:11+01:00 draft: true --- Drafts do not get deployed; once you finish a post, update the header of the post to say draft: false. More info here.
---- title: &amp;quot;Hugo Guide&amp;quot; date: 2021-05-01T08:47:11+01:00 categories: [&amp;quot;Manual&amp;quot;] tags: [&amp;quot;Hugo&amp;quot;, &amp;quot;GitHub&amp;quot;] draft: false --- Add pictures
+---title: &amp;quot;**&amp;quot;date: 2019-03-26T08:47:11+01:00draft: true---Drafts do not get deployed; once you finish a post, update the header of the post to say draft: false. More info here.
+---title: &amp;quot;Hugo Guide&amp;quot;date: 2021-05-01T08:47:11+01:00categories: [&amp;quot;Manual&amp;quot;]tags: [&amp;quot;Hugo&amp;quot;, &amp;quot;GitHub&amp;quot;]draft: false---Add pictures
 /post/xxx.jpg
 is actually baseURL/post/xxx.jpg</description>
     </item>
@@ -321,10 +360,13 @@ is actually baseURL/post/xxx.jpg</description>
       
       <guid>https://K7288.github.io/posts/math/</guid>
       <description>$$ e^{ix}=\text{cos}x+i\text{sin}x $$
-$$ \left(C_{n+1, t+1}-C_{n, t}\right)-\left(C_{n, t+1}-C_{n-1, t}\right)=\frac{2}{n+1} $$
-换行需要使用\\\\ $$ \begin{aligned} C_{n+1, t+1}-C_{n, t} &amp;amp;=\frac{2}{n+1}+\frac{2}{n}+\cdots+\frac{2}{t+2} +C_{t+1, t+1}-C_{t, t} \\ &amp;amp;=2\left(H_{n+1}-H_{t+1}\right)+2-2 /(t+1) \end{aligned} $$
-\begin{aligned} C_{n+1, t+1}-C_{n, t} &amp;amp;=\frac{2}{n+1}+\frac{2}{n}+\cdots+\frac{2}{t+2} +C_{t+1, t+1}-C_{t, t} \\\\ &amp;amp;=2\left(H_{n+1}-H_{t+1}\right)+2-2 /(t+1) \end{aligned} \begin{aligned}和\end{aligned}之间不能有空行
-不支持\left[，\right)等</description>
+  $$ \left(C_{n+1, t+1}-C_{n, t}\right)-\left(C_{n, t+1}-C_{n-1, t}\right)=\frac{2}{n+1} $$
+  $$ \begin{aligned} C_{n+1, t+1}-C_{n, t} &amp;amp;=\frac{2}{n+1}+\frac{2}{n}+\cdots+\frac{2}{t+2} +C_{t+1, t+1}-C_{t, t} \\ &amp;amp;=2\left(H_{n+1}-H_{t+1}\right)+2-2 /(t+1) \end{aligned} $$
+\begin{aligned} C_{n+1, t+1}-C_{n, t} &amp;amp;=\frac{2}{n+1}+\frac{2}{n}+\cdots+\frac{2}{t+2} +C_{t+1, t+1}-C_{t, t} \\\\ &amp;amp;=2\left(H_{n+1}-H_{t+1}\right)+2-2 /(t+1) \end{aligned} 换行需要使用\\\\
+\begin{aligned}和\end{aligned}之间不能有空行
+不支持\left[，\right)等
+  $$ \begin{cases}\begin{array}{l} \theta_{i}(t-j)^{\prime}=\frac{1}{3} \Sigma_{1}^{-1} \theta_{i}(t-j),\\ a_{i}(t-j)^{\prime}=\frac{1}{3} \sum_{1}^{-1} a_{i}(t-j), i=\{r h,l h, r k, l k\}\\w_{i}(t-j)^{\prime}=\frac{1}{3} \Sigma_{1}^{-1} w_{i}(t-j)\end{array}\end{cases} $$
+\begin{cases}\begin{array}{l} \theta_{i}(t-j)^{\prime}=\frac{13} \Sigma_{1}^{-1} \theta_{i}(t-j),\\\\ a_{i}(t-j)^{\prime}=\frac{1}{3} \sum_{1}^{-1} a_{i}(t-j), i=\\{r h,l h, r k, l k\\}\\\\w_{i}(t-j)^{\prime}=\frac{1}{3} \Sigma_{1}^{-1} w_{i}(t-j)\end{array}\end{cases} \begin{array}和\end{array}之间不能换行😅</description>
     </item>
     
     <item>

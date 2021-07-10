@@ -6,7 +6,28 @@
     <description>Recent content in Intention Recognition on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 07 Jul 2021 17:00:00 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/intention-recognition/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Jul 2021 14:29:01 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/intention-recognition/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Real-Time Stability Control Method Through sEMG Interface for Lower Extremity Rehabilitation Exoskeletons</title>
+      <link>https://K7288.github.io/posts/a-real-time-stability-control-method-through-semg-interface-for-lower-extremity-rehabilitation-exoskeletons/</link>
+      <pubDate>Thu, 08 Jul 2021 14:29:01 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/a-real-time-stability-control-method-through-semg-interface-for-lower-extremity-rehabilitation-exoskeletons/</guid>
+      <description>A Real-Time Stability Control Method Through sEMG Interface for Lower Extremity Rehabilitation Exoskeletons
+Research question  analysis of gait planning based on a human kinematics model and real-time motion stability based on the zero-moment point (ZMP). a neural interface based on sEMG to achieve motion intention recognition and muscle fatigue estimation. to verify the stability of human–exoskeleton system and ergonomic effects of the proposed gait switching method by organized experiments.  Introduction   一些商用外骨骼</description>
+    </item>
+    
+    <item>
+      <title>A novel motion intention recognition approach for soft exoskeleton via IMU</title>
+      <link>https://K7288.github.io/posts/a-novel-motion-intention-recognition-approach-for-soft-exoskeleton-via-imu/</link>
+      <pubDate>Thu, 08 Jul 2021 09:05:01 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/a-novel-motion-intention-recognition-approach-for-soft-exoskeleton-via-imu/</guid>
+      <description>A novel motion intention recognition approach for soft exoskeleton via IMU
+intention定义: the classic five kinds of terrains(including walking on flat ground, going up and downstairs, and up and down slopes) &amp;amp; transformed terrains
+   Abbreviation Definition Abbreviation Definition     IMU Inertial measurement unit SA Stair ascent   DDLMI DNN-based deep locomotion mode identification SD Stair decent   ISR Identification success rate RA Ramp ascent   LW Level-ground walking RD Ramp decent    Research question to propose a recognition method with historical information based on neural network to recognize different terrain and add the pattern transformation recognition, trying to predict the next motion mode in advance.</description>
+    </item>
+    
     <item>
       <title>Daily Locomotion Recognition and Prediction: A Kinematic Data-Based Machine Learning Approach</title>
       <link>https://K7288.github.io/posts/daily-locomotion-recognition-and-prediction-a-kinematic-data-based-machine-learning-approach/</link>
