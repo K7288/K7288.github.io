@@ -49,12 +49,14 @@
         
         <guid>https://K7288.github.io/posts/a-real-time-stability-control-method-through-semg-interface-for-lower-extremity-rehabilitation-exoskeletons/</guid>
         <description>&lt;p&gt;A Real-Time Stability Control Method Through sEMG Interface for Lower Extremity Rehabilitation Exoskeletons&lt;/p&gt;
+&lt;p&gt;intention定义: walk/stride across/stop state&lt;/p&gt;
 &lt;h2 id=&#34;research-question&#34;&gt;Research question&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;analysis of gait planning based on a human kinematics model and real-time motion stability based on the zero-moment point (ZMP).&lt;/li&gt;
 &lt;li&gt;a neural interface based on sEMG to achieve motion intention recognition and muscle fatigue estimation.&lt;/li&gt;
 &lt;li&gt;to verify the stability of human–exoskeleton system and ergonomic effects of the proposed gait switching method by organized experiments.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210710143319290-1625899646300.png&#34; alt=&#34;image-20210710143319290&#34;  /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -71,10 +73,17 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
 &lt;h3 id=&#34;gait-planning&#34;&gt;Gait Planning&lt;/h3&gt;
+&lt;p&gt;We initially treat these two joints as two points and draw the trajectories of these points during the walking process to determine the trajectory approximating the sine function (Chen et al., 2019)&lt;/p&gt;
+&lt;h3 id=&#34;motion-intention-recognition&#34;&gt;Motion Intention Recognition&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210710163446929.png&#34; alt=&#34;image-20210710163446929&#34;  /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;muscle-fatigue-estimation&#34;&gt;Muscle Fatigue Estimation&lt;/h3&gt;
+&lt;p&gt;the wavelet packet energy entropy (WPEE)&lt;/p&gt;
 &lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
-&lt;h2 id=&#34;highlights&#34;&gt;Highlights&lt;/h2&gt;
-&lt;h2 id=&#34;limitsfurther-work&#34;&gt;Limits/Further Work&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210710165904286.png&#34; alt=&#34;image-20210710165904286&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210710170024701.png&#34; alt=&#34;image-20210710170024701&#34;  /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;thoughtscomments&#34;&gt;Thoughts/Comments&lt;/h2&gt;
+&lt;p&gt;这个虽然用到了COP/ZMP，但是因为是康复外骨骼有俩拐杖应该不能直接用它这个公式，但是计算方法可以看一下&lt;/p&gt;
+&lt;p&gt;这通篇读下来也没看出来哪里control了啊，就三个模式检测出来直接上对应的机器状态，不愧是康复型&lt;/p&gt;
 </description>
         </item>
         <item>
