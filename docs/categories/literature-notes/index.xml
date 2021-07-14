@@ -123,7 +123,7 @@ Introduction  assistive rehabilitation robots: PAMM, Walking Helper, HAL, Omni R
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://K7288.github.io/posts/terms/</guid>
-      <description>Terms Definition     inertia matrix    damping matrix    stiffness matrix    centripetal and Coriolis matrix    Cartesian coordinate    mass-damper-spring model    impedance control    admittance control 导纳控制    push-off impulse time    transition function    adaptive frequency oscillators    one-way ANOVA    two-way ANOVA    a neural interface     time-varying, adaptive compensation term, manifold, coarse/fine-grained level granularity, an inertial frame,</description>
+      <description>Terms Definition     inertia matrix    damping matrix    stiffness matrix    centripetal and Coriolis matrix    Cartesian coordinate    mass-damper-spring model    impedance control    admittance control 导纳控制    push-off impulse time    transition function    adaptive frequency oscillators    one-way ANOVA    two-way ANOVA    a neural interface    linear discriminant analysis    drift(signal/integral/zero/integral/temperature drift)     time-varying, adaptive compensation term, manifold, coarse/fine-grained level granularity, an inertial frame, oscillator, denominator,</description>
     </item>
     
     <item>

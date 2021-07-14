@@ -790,9 +790,17 @@ p_{x} &amp;amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\
 &lt;td style=&#34;text-align:center&#34;&gt;a neural interface&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;linear discriminant analysis&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;drift(signal/integral/zero/integral/temperature drift)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;time-varying, adaptive compensation term, manifold, coarse/fine-grained level granularity, an inertial frame,&lt;/p&gt;
+&lt;p&gt;time-varying, adaptive compensation term, manifold, coarse/fine-grained level granularity, an inertial frame, oscillator, denominator,&lt;/p&gt;
 </description>
         </item>
         <item>
