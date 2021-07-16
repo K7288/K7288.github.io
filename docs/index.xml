@@ -13,7 +13,29 @@
         
         <guid>https://K7288.github.io/posts/sensors-for-gait-analysis/</guid>
         <description>&lt;h1 id=&#34;sensors-for-gait-analysis&#34;&gt;Sensors for Gait Analysis&lt;/h1&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#sensors-for-gait-analysis&#34; &gt;Sensors for Gait Analysis&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#sensors&#34; &gt;Sensors&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#inertial-measurement-units&#34; &gt;Inertial Measurement Units&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#sensor-placement&#34; &gt;Sensor placement&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#preference-in-literature&#34; &gt;Preference in literature&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#inter--and-intra-segments-to-choose&#34; &gt;(inter- and intra=) Segments to choose&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#filter&#34; &gt;Filter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#application&#34; &gt;Application&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#insole-pressure-sensors&#34; &gt;Insole pressure sensors&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;sensors&#34;&gt;Sensors&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -24,7 +46,7 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;img src=&#34;https://K7288.github.io/assets/sensors-21-02727-g005_2.jpg&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src=&#34;https://K7288.github.io/assets/sensors-21-02727-g005_2.jpg&#34; style=&#34;zoom:30%;&#34; /&gt;&lt;/td&gt;
 &lt;td&gt;&lt;img src=&#34;https://K7288.github.io/assets/sensors-21-02727-g005_3.jpg&#34; style=&#34;zoom:30%;&#34; /&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
