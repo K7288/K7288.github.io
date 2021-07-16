@@ -259,9 +259,9 @@
 </table>
 <h2 id="holgate-et-al2009">Holgate et al.,2009</h2>
 <p>Holgate et al.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>: The polar angle between the <strong>tibia angle</strong> and its <strong>scaled angular velocity</strong> has an invertible relationship with the gait phase and is not subject-dependent.</p>
-<p><img src="assets/5152565-fig-4-source-large.gif" style="zoom:40%;" /></p>
+<p><img src="/assets/5152565-fig-4-source-large.gif" style="zoom:60%;" /></p>
 <p>Tibia angular velocity multiplied by a scaling factor versus tibia angle. The closer the curve is to the origin, the shorter the stride length. Polar angle $\Phi$ represents the progression around the curve based on gait percent. $r$ is the polar radius and is related to the stride length of the particular curve.</p>
-<p><img src="assets/5152565-fig-3-source-large.gif" alt="img" style="zoom:40%;" /></p>
+<p><img src="/assets/5152565-fig-3-source-large.gif" alt="img" style="zoom:60%;" /></p>
 <p>Tibia angle profile for able bodied human gait. Each curve represents a different stride length. The closer the curve is to the zero degree axis, the shorter the stride length.</p>
 <h2 id="villarreal-et-al2017">Villarreal et al.,2017</h2>
 <p>The phase portrait was scaled by a factor estimated by the ratio of difference in maximum phase angle and minimum phase angle to the difference in the first derivative of the same, so as to improve the monotonicity and linearity. These properties were further improved by filtering, at the expense of some delay. <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
@@ -270,7 +270,7 @@
 <blockquote>
 <p>The raw thigh orbit (raw) compared to the interpolated filtered, shifted/scaled thigh orbit (interp + shift/scale) in the phase plane for 20 continuous strides at 3 mph. Applying the shift and scale algorithm produces a circular orbit shape, in contrast to the raw non-circular orbit.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
 </blockquote>
-<p><img src="/assets/8062565-fig-4-source-large.gif" alt=""  /></p>
+<p><img src="/assets/8062565-fig-4-source-large.gif" style="zoom:120%; "  /></p>
 <blockquote>
 <p>The phase portrait of $\dot\theta_y(t)$ vs. $θ_x(t)$ across various treadmill speeds (1–9 mph) each having 20 consecutive gait strides. The polar radius $r$ can be correlated to the subject&rsquo;s gait speed. speeds &lt; 4mph produced a circular orbit from 0 to 2$\pi$ (i.e., 0% to 100% gait cycle). At 5 mph, the subject transitioned from fast walking to running, where more forceful ground impacts can be observed in the IMU measurements due to the flight phase. this produced a non-circular form after impact with intersection of other orbits at different speeds, as shown in the first quadrant for 5–6 mph.</p>
 </blockquote>
@@ -279,21 +279,21 @@
 <p>Quintero et al.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>: <strong>thigh angular position</strong> and its corresponding <strong>integral</strong> to form a well-defined thigh orbit.</p>
 <p>A phase angle $ \vartheta (t) $ is computed by utilizing thigh angular position $\phi(t)$ and its integral $\Phi(t)=\int ^t_0\phi(τ)dτ $in the following way:
 $$
-\begin{equation} \vartheta (t) = \mathrm{atan2}((\Phi (t) + \Gamma)z, (\phi (t) +\gamma)) \end{equation}
+\vartheta (t) =\mathrm{atan2}((\Phi (t) + \Gamma)z, (\phi (t) +\gamma)) 
 $$
 where the scale factor z, the thigh angle shift γ, and the thigh integral shift Γ are given by
 $$
-\begin{eqnarray*} z &amp;&amp;= \frac{|\phi _{\rm max} - \phi _{\rm min}|}{|\Phi _{\rm max} - \Phi _{\rm min}|}, ; \ \gamma &amp;&amp;= -\left(\frac{\phi _{\rm max} + \phi _{\rm min}}{2}\right), ; \ \ \Gamma = -\left(\frac{\Phi _{\rm max} + \Phi _{\rm min}}{2}\right). \end{eqnarray*}
+z= \frac{|\phi _{\rm max} - \phi _{\rm min}|}{|\Phi _{\rm max} - \Phi _{\rm min}|}, \gamma = -(\frac{\phi _{\rm max} + \phi _{\rm min}}{2}), \ \ \Gamma = -(\frac{\Phi _{\rm max} + \Phi _{\rm min}}{2}).
 $$</p>
 <blockquote>
 <p>Phase plane of the thigh angle ϕ(t) vs. its integral Φ(t) during prosthetic leg experiments (see Section IV). The phase plane has been scaled by z and shifted by (γ,Γ) to achieve a circular orbit across the stride, which improves the linearity of the phase variable ϑ(t).</p>
 </blockquote>
-<p><img src="https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/8860/8375153/8302866/gregg3-2794536-large.gif" alt="img" style="zoom:40%;" /></p>
+<p><img src="/assets/gregg3-2794536-large.gif" alt="img" style="zoom:60%;" /></p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>M. A. Holgate, T. G. Sugar, and A. W. Bohler, “A novel control algorithm for wearable robotics using phase plane invariants,” in 2009 IEEE International Conference on Robotics and Automation, pp. 3845–3850, Kobe, Japan, 2009.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>M. A. Holgate, T. G. Sugar, and A. W. Bohler, “A novel control algorithm for wearable robotics using phase plane invariants,” in 2009 IEEE International Conference on Robotics and Automation, pp. 3845–3850, Kobe, Japan, 2009.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
 <p>D. J. Villarreal, H. A. Poonawala and R. D. Gregg, &ldquo;A Robust Parameterization of Human Gait Patterns Across Phase-Shifting Perturbations,&rdquo; in <em>IEEE Transactions on Neural Systems and Rehabilitation Engineering</em>, vol. 25, no. 3, pp. 265-278, March 2017, doi: 10.1109/TNSRE.2016.2569019.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
