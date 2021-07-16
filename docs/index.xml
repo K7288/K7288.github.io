@@ -7,6 +7,95 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <lastBuildDate>Fri, 16 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Phase Portraits</title>
+        <link>https://K7288.github.io/posts/phase-portrait/</link>
+        <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://K7288.github.io/posts/phase-portrait/</guid>
+        <description>&lt;h2 id=&#34;studies-using-phase-portraits&#34;&gt;Studies using phase portraits&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Authors and year&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Axes&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Task&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;#holgate-et-al2009&#34; &gt;Holgate et al. 2009&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Tibia angle &amp;amp; tibia scaled angular velocity&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Continuous gait phase estimation&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;#villarreal-et-al2017&#34; &gt;Villarreal et al.,2017&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Thigh angle &amp;amp; its derivative(estimated thigh velocity)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Continuous gait phase estimation&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;#quintero-et-al2017&#34; &gt;Quintero et al.,2017&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Thigh angle &amp;amp; its derivative(estimated thigh velocity)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Continuous gait phase estimation; gait speed estimation(as a byproduct)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;#quintero-et-al2018&#34; &gt;Quintero et al. 2018&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Thigh angle &amp;amp; its integral&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Continuous gait phase estimation&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;holgate-et-al2009&#34;&gt;Holgate et al.,2009&lt;/h2&gt;
+&lt;p&gt;Holgate et al.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;: The polar angle between the &lt;strong&gt;tibia angle&lt;/strong&gt; and its &lt;strong&gt;scaled angular velocity&lt;/strong&gt; has an invertible relationship with the gait phase and is not subject-dependent.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;assets/5152565-fig-4-source-large.gif&#34; style=&#34;zoom:40%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Tibia angular velocity multiplied by a scaling factor versus tibia angle. The closer the curve is to the origin, the shorter the stride length. Polar angle $\Phi$ represents the progression around the curve based on gait percent. $r$ is the polar radius and is related to the stride length of the particular curve.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;assets/5152565-fig-3-source-large.gif&#34; alt=&#34;img&#34; style=&#34;zoom:40%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Tibia angle profile for able bodied human gait. Each curve represents a different stride length. The closer the curve is to the zero degree axis, the shorter the stride length.&lt;/p&gt;
+&lt;h2 id=&#34;villarreal-et-al2017&#34;&gt;Villarreal et al.,2017&lt;/h2&gt;
+&lt;p&gt;The phase portrait was scaled by a factor estimated by the ratio of difference in maximum phase angle and minimum phase angle to the difference in the first derivative of the same, so as to improve the monotonicity and linearity. These properties were further improved by filtering, at the expense of some delay. &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/gregg2-2569019-large.gif&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;quintero-et-al2017&#34;&gt;Quintero et al.,2017&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The raw thigh orbit (raw) compared to the interpolated filtered, shifted/scaled thigh orbit (interp + shift/scale) in the phase plane for 20 continuous strides at 3 mph. Applying the shift and scale algorithm produces a circular orbit shape, in contrast to the raw non-circular orbit.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/8062565-fig-4-source-large.gif&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The phase portrait of $\dot\theta_y(t)$ vs. $θ_x(t)$ across various treadmill speeds (1–9 mph) each having 20 consecutive gait strides. The polar radius $r$ can be correlated to the subject&amp;rsquo;s gait speed. speeds &amp;lt; 4mph produced a circular orbit from 0 to 2$\pi$ (i.e., 0% to 100% gait cycle). At 5 mph, the subject transitioned from fast walking to running, where more forceful ground impacts can be observed in the IMU measurements due to the flight phase. this produced a non-circular form after impact with intersection of other orbits at different speeds, as shown in the first quadrant for 5–6 mph.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/8062565-fig-6-source-small.gif&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;quintero-et-al2018&#34;&gt;Quintero et al.,2018&lt;/h2&gt;
+&lt;p&gt;Quintero et al.&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;: &lt;strong&gt;thigh angular position&lt;/strong&gt; and its corresponding &lt;strong&gt;integral&lt;/strong&gt; to form a well-defined thigh orbit.&lt;/p&gt;
+&lt;p&gt;A phase angle $ \vartheta (t) $ is computed by utilizing thigh angular position $\phi(t)$ and its integral $\Phi(t)=\int ^t_0\phi(τ)dτ $in the following way:
+$$
+\begin{equation} \vartheta (t) = \mathrm{atan2}((\Phi (t) + \Gamma)z, (\phi (t) +\gamma)) \end{equation}
+$$
+where the scale factor z, the thigh angle shift γ, and the thigh integral shift Γ are given by
+$$
+\begin{eqnarray*} z &amp;amp;&amp;amp;= \frac{|\phi _{\rm max} - \phi _{\rm min}|}{|\Phi _{\rm max} - \Phi _{\rm min}|}, ; \ \gamma &amp;amp;&amp;amp;= -\left(\frac{\phi _{\rm max} + \phi _{\rm min}}{2}\right), ; \ \ \Gamma = -\left(\frac{\Phi _{\rm max} + \Phi _{\rm min}}{2}\right). \end{eqnarray*}
+$$&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Phase plane of the thigh angle ϕ(t) vs. its integral Φ(t) during prosthetic leg experiments (see Section IV). The phase plane has been scaled by z and shifted by (γ,Γ) to achieve a circular orbit across the stride, which improves the linearity of the phase variable ϑ(t).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/8860/8375153/8302866/gregg3-2794536-large.gif&#34; alt=&#34;img&#34; style=&#34;zoom:40%;&#34; /&gt;&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;M. A. Holgate, T. G. Sugar, and A. W. Bohler, “A novel control algorithm for wearable robotics using phase plane invariants,” in 2009 IEEE International Conference on Robotics and Automation, pp. 3845–3850, Kobe, Japan, 2009.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;D. J. Villarreal, H. A. Poonawala and R. D. Gregg, &amp;ldquo;A Robust Parameterization of Human Gait Patterns Across Phase-Shifting Perturbations,&amp;rdquo; in &lt;em&gt;IEEE Transactions on Neural Systems and Rehabilitation Engineering&lt;/em&gt;, vol. 25, no. 3, pp. 265-278, March 2017, doi: 10.1109/TNSRE.2016.2569019.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;D. Quintero, D. J. Lambert, D. J. Villarreal and R. D. Gregg, &amp;ldquo;Real-Time continuous gait phase and speed estimation from a single sensor,&amp;rdquo; &lt;em&gt;2017 IEEE Conference on Control Technology and Applications (CCTA)&lt;/em&gt;, 2017, pp. 847-852, doi: 10.1109/CCTA.2017.8062565.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;D. Quintero, D. J. Villarreal, D. J. Lambert, S. Kapp, and R. D. Gregg, “Continuous-phase control of a powered knee-ankle prosthesis: amputee experiments across speeds and inclines,” IEEE Transactions on Robotics, vol. 34, no. 3, pp. 686–701, 2018.&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+        </item>
+        <item>
         <title>Sensors for Gait Analysis</title>
         <link>https://K7288.github.io/posts/sensors-for-gait-analysis/</link>
         <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>

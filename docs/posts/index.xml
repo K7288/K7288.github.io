@@ -8,6 +8,15 @@
     <language>en</language>
     <lastBuildDate>Fri, 16 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Phase Portraits</title>
+      <link>https://K7288.github.io/posts/phase-portrait/</link>
+      <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/phase-portrait/</guid>
+      <description>Studies using phase portraits    Authors and year Axes Task     Holgate et al. 2009 Tibia angle &amp;amp; tibia scaled angular velocity Continuous gait phase estimation   Villarreal et al.,2017 Thigh angle &amp;amp; its derivative(estimated thigh velocity) Continuous gait phase estimation   Quintero et al.,2017 Thigh angle &amp;amp; its derivative(estimated thigh velocity) Continuous gait phase estimation; gait speed estimation(as a byproduct)   Quintero et al.</description>
+    </item>
+    
+    <item>
       <title>Sensors for Gait Analysis</title>
       <link>https://K7288.github.io/posts/sensors-for-gait-analysis/</link>
       <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>
