@@ -41,7 +41,7 @@
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;&lt;div style=&#34;width:30 0px&#34;&gt;Distribution of studies based on the type of wearable sensors used&lt;/div&gt;&lt;/th&gt;
-&lt;th&gt;&lt;div style=&#34;width:300px&#34;&gt;Distribution of studies based on the type of sensors used for ==ground-truth validation of IMU==-based gait analysis. Absolute number of studies in each category is listed within parentheses. &lt;em&gt;IMU—inertial measurement unit, IPS—insole pressure sensor, EMG—electromyography sensor.&lt;/em&gt;&lt;/div&gt;&lt;/th&gt;
+&lt;th&gt;&lt;div style=&#34;width:300px&#34;&gt;Distribution of studies based on the type of sensors used for &lt;code&gt;ground-truth validation of IMU&lt;/code&gt;-based gait analysis. Absolute number of studies in each category is listed within parentheses.&lt;/div&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
@@ -51,6 +51,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;p&gt;&lt;em&gt;IMU—inertial measurement unit, IPS—insole pressure sensor, EMG—electromyography sensor.&lt;/em&gt;&lt;/p&gt;
 &lt;div style=&#34;page-break-after:always;&#34;&gt;&lt;/div&gt;
 &lt;h3 id=&#34;inertial-measurement-units&#34;&gt;Inertial Measurement Units&lt;/h3&gt;
 &lt;h4 id=&#34;sensor-placement&#34;&gt;Sensor placement&lt;/h4&gt;
