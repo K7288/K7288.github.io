@@ -83,7 +83,8 @@
 &lt;blockquote&gt;
 &lt;p&gt;39 out of 69 studies at least used a preprocessing filter, 31 of which used a low-pass filter among which 15 used the Butterworth low-pass filter. Note that preprocessing filters add to the latency in data processing, which is undesirable in a real-time system.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&#34;application&#34;&gt;Application&lt;/h4&gt;
+&lt;h4 id=&#34;applicationhttpsk7288githubioassetsimage-20210716105523059png&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://k7288.github.io/assets/image-20210716105523059.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Application&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210716105523059.png&#34; alt=&#34;image-20210716105523059&#34;  /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;insole-pressure-sensors&#34;&gt;Insole pressure sensors&lt;/h3&gt;
 &lt;p&gt;Only six out of 28 studies related to IPS used any sort of preprocessing/filtering. Instead, these studies relied directly on the raw signal from the IPS, likely contributing to shorter latency, an advantage when it comes to real-time systems.&lt;/p&gt;
