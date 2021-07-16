@@ -6,7 +6,17 @@
     <description>Recent content in Literature Notes on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 08 Jul 2021 14:29:01 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/literature-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/literature-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sensors for Gait Analysis</title>
+      <link>https://K7288.github.io/posts/sensors-for-gait-analysis/</link>
+      <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/sensors-for-gait-analysis/</guid>
+      <description>Sensors for Gait Analysis [TOC]
+Sensors    Distribution of studies based on the type of wearable sensors used Distribution of studies based on the type of sensors used for ==ground-truth validation of IMU==-based gait analysis. Absolute number of studies in each category is listed within parentheses. IMU—inertial measurement unit, IPS—insole pressure sensor, EMG—electromyography sensor.          Inertial Measurement Units Sensor placement Preference in literature  Number of studies using inertial measurement units (IMUs) that placed the sensor(s) on specific anatomical locations.</description>
+    </item>
+    
     <item>
       <title>A Real-Time Stability Control Method Through sEMG Interface for Lower Extremity Rehabilitation Exoskeletons</title>
       <link>https://K7288.github.io/posts/a-real-time-stability-control-method-through-semg-interface-for-lower-extremity-rehabilitation-exoskeletons/</link>
@@ -123,7 +133,7 @@ Introduction  assistive rehabilitation robots: PAMM, Walking Helper, HAL, Omni R
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://K7288.github.io/posts/terms/</guid>
-      <description>Terms Definition     inertia matrix    damping matrix    stiffness matrix    centripetal and Coriolis matrix    Cartesian coordinate    mass-damper-spring model    impedance control    admittance control 导纳控制    push-off impulse time    transition function    adaptive frequency oscillators    one-way ANOVA    two-way ANOVA    a neural interface    linear discriminant analysis    drift(signal/integral/zero/integral/temperature drift)     time-varying, adaptive compensation term, manifold, coarse/fine-grained level granularity, an inertial frame, oscillator, denominator,</description>
+      <description>Terms Definition     inertia matrix    damping matrix    stiffness matrix    centripetal and Coriolis matrix    Cartesian coordinate    mass-damper-spring model    impedance control    admittance control 导纳控制    push-off impulse time    transition function    adaptive frequency oscillators    one-way ANOVA    two-way ANOVA    a neural interface    linear discriminant analysis    drift(signal/integral/zero/integral/temperature drift)    a rigid body 刚体    time-varying, adaptive compensation term, manifold, coarse/fine-grained level granularity, an inertial frame, oscillator, denominator,</description>
     </item>
     
     <item>

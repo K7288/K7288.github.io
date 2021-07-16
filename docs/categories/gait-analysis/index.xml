@@ -6,7 +6,17 @@
     <description>Recent content in Gait Analysis on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Jul 2021 16:52:44 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/gait-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/gait-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sensors for Gait Analysis</title>
+      <link>https://K7288.github.io/posts/sensors-for-gait-analysis/</link>
+      <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/sensors-for-gait-analysis/</guid>
+      <description>Sensors for Gait Analysis [TOC]
+Sensors    Distribution of studies based on the type of wearable sensors used Distribution of studies based on the type of sensors used for ==ground-truth validation of IMU==-based gait analysis. Absolute number of studies in each category is listed within parentheses. IMU—inertial measurement unit, IPS—insole pressure sensor, EMG—electromyography sensor.          Inertial Measurement Units Sensor placement Preference in literature  Number of studies using inertial measurement units (IMUs) that placed the sensor(s) on specific anatomical locations.</description>
+    </item>
+    
     <item>
       <title>A lower limb exoskeleton based on recognition of lower limb walking intention</title>
       <link>https://K7288.github.io/posts/a-lower-limb-exoskeleton-based-on-recognition-of-lower-limb-walking-intention/</link>

@@ -6,7 +6,106 @@
         <description>Recent content on K7288</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Fri, 09 Jul 2021 22:00:09 +0800</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 16 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Sensors for Gait Analysis</title>
+        <link>https://K7288.github.io/posts/sensors-for-gait-analysis/</link>
+        <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://K7288.github.io/posts/sensors-for-gait-analysis/</guid>
+        <description>&lt;h1 id=&#34;sensors-for-gait-analysis&#34;&gt;Sensors for Gait Analysis&lt;/h1&gt;
+&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2 id=&#34;sensors&#34;&gt;Sensors&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;div style=&#34;width:30 0px&#34;&gt;Distribution of studies based on the type of wearable sensors used&lt;/div&gt;&lt;/th&gt;
+&lt;th&gt;&lt;div style=&#34;width:300px&#34;&gt;Distribution of studies based on the type of sensors used for ==ground-truth validation of IMU==-based gait analysis. Absolute number of studies in each category is listed within parentheses. &lt;em&gt;IMU—inertial measurement unit, IPS—insole pressure sensor, EMG—electromyography sensor.&lt;/em&gt;&lt;/div&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img src=&#34;https://K7288.github.io/assets/sensors-21-02727-g005_2.jpg&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src=&#34;https://K7288.github.io/assets/sensors-21-02727-g005_3.jpg&#34; style=&#34;zoom:30%;&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div style=&#34;page-break-after:always;&#34;&gt;&lt;/div&gt;
+&lt;h3 id=&#34;inertial-measurement-units&#34;&gt;Inertial Measurement Units&lt;/h3&gt;
+&lt;h4 id=&#34;sensor-placement&#34;&gt;Sensor placement&lt;/h4&gt;
+&lt;h5 id=&#34;preference-in-literature&#34;&gt;Preference in literature&lt;/h5&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Number of studies using inertial measurement units (IMUs) that placed the sensor(s) on specific anatomical locations. Single placement contains studies where sensor(s) were placed only in one anatomical location. Placement combinations’ columns indicate studies where sensor(s) were placed in more than one location. Each relevant location is marked by a shaded cell and the number of studies using this combination is indicated at the bottom of the column. The total indicates the sum of studies where the sensor(s) were placed on that given anatomical location.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mdpi.com/sensors/sensors-21-02727/article_deploy/html/images/sensors-21-02727-g006.png&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;h5 id=&#34;inter--and-intra-segments-to-choose&#34;&gt;(inter- and intra=) Segments to choose&lt;/h5&gt;
+&lt;p&gt;Foot&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Li et al., 2016&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;: compared IMU signals from the thigh, the shank and the foot, based on the &lt;u&gt;stability of “energy of acceleration”&lt;/u&gt; which is the norm of raw acceleration minus gravity&lt;/li&gt;
+&lt;li&gt;Jasiewicz et al., 2006&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;: significantly more accuracy in &lt;u&gt;gait event detection&lt;/u&gt; methods&lt;/li&gt;
+&lt;li&gt;Taborri et al., 2014&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;: better accuracy of a HMM-based classifier for &lt;u&gt;gait event detection&lt;/u&gt; when using data of the foot.&lt;/li&gt;
+&lt;li&gt;Wenger, N. et al., 2015&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;: &lt;u&gt;neuro-behavioral experiments&lt;/u&gt; suggesting that limb endpoints are the primary variables used to coordinate locomotion in animals and humans&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Shank&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bejarano et al., 2013&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;: the root mean square error between each cycle (as well as the average)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Irrelevant (in some tasks)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mazilu et al., 2012&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;: in the context of freezing of gait&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Intra-segment&lt;/p&gt;
+&lt;p&gt;​	mount/socket; Anwary et al.&lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;: the medial arch followed by the Achilles tendon(also the centre point of foot length; location 1 🔽); based on accuracy of extracted features: Number of Strides, Distance, Speed, Stride Length, Stride Period, Stance Length, Stance Period, Swing Length, Swing Period and ratio of stance and swing&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/7361/8299495/8246577/yu2-2786587-large.gif&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;filter&#34;&gt;Filter&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;39 out of 69 studies at least used a preprocessing filter, 31 of which used a low-pass filter among which 15 used the Butterworth low-pass filter. Note that preprocessing filters add to the latency in data processing, which is undesirable in a real-time system.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;application&#34;&gt;Application&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210716105523059.png&#34; alt=&#34;image-20210716105523059&#34;  /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;insole-pressure-sensors&#34;&gt;Insole pressure sensors&lt;/h3&gt;
+&lt;p&gt;Only six out of 28 studies related to IPS used any sort of preprocessing/filtering. Instead, these studies relied directly on the raw signal from the IPS, likely contributing to shorter latency, an advantage when it comes to real-time systems.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Li, F.; Liu, G.; Liu, J.; Chen, X.; Ma, X. 3D Tracking via Shoe Sensing. &lt;em&gt;Sensors&lt;/em&gt; &lt;strong&gt;2016&lt;/strong&gt;, &lt;em&gt;16&lt;/em&gt;, 1809. [&lt;a class=&#34;link&#34; href=&#34;https://scholar.google.com/scholar_lookup?title=3D&amp;#43;Tracking&amp;#43;via&amp;#43;Shoe&amp;#43;Sensing&amp;amp;author=Li,&amp;#43;F.&amp;amp;author=Liu,&amp;#43;G.&amp;amp;author=Liu,&amp;#43;J.&amp;amp;author=Chen,&amp;#43;X.&amp;amp;author=Ma,&amp;#43;X.&amp;amp;publication_year=2016&amp;amp;journal=Sensors&amp;amp;volume=16&amp;amp;pages=1809&amp;amp;doi=10.3390/s16111809&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Google Scholar&lt;/a&gt;] [&lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.3390/s16111809&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CrossRef&lt;/a&gt;]&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Jasiewicz, J.M.; Allum, J.H.; Middleton, J.W.; Barriskill, A.; Condie, P.; Purcell, B.; Li, R.C.T. Gait event detection using linear accelerometers or angular velocity transducers in able-bodied and spinal-cord injured individuals. &lt;em&gt;Gait Posture&lt;/em&gt; &lt;strong&gt;2006&lt;/strong&gt;, &lt;em&gt;24&lt;/em&gt;, 502–509. [&lt;a class=&#34;link&#34; href=&#34;https://scholar.google.com/scholar_lookup?title=Gait&amp;#43;event&amp;#43;detection&amp;#43;using&amp;#43;linear&amp;#43;accelerometers&amp;#43;or&amp;#43;angular&amp;#43;velocity&amp;#43;transducers&amp;#43;in&amp;#43;able-bodied&amp;#43;and&amp;#43;spinal-cord&amp;#43;injured&amp;#43;individuals&amp;amp;author=Jasiewicz,&amp;#43;J.M.&amp;amp;author=Allum,&amp;#43;J.H.&amp;amp;author=Middleton,&amp;#43;J.W.&amp;amp;author=Barriskill,&amp;#43;A.&amp;amp;author=Condie,&amp;#43;P.&amp;amp;author=Purcell,&amp;#43;B.&amp;amp;author=Li,&amp;#43;R.C.T.&amp;amp;publication_year=2006&amp;amp;journal=Gait&amp;#43;Posture&amp;amp;volume=24&amp;amp;pages=502%e2%80%93509&amp;amp;doi=10.1016/j.gaitpost.2005.12.017&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Google Scholar&lt;/a&gt;] [&lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/j.gaitpost.2005.12.017&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CrossRef&lt;/a&gt;]&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Taborri, J.; Rossi, S.; Palermo, E.; Patanè, F.; Cappa, P. A novel HMM distributed classifier for the detection of gait phases by means of a wearable inertial sensor network. &lt;em&gt;Sensors&lt;/em&gt; &lt;strong&gt;2014&lt;/strong&gt;, &lt;em&gt;14&lt;/em&gt;, 16212–16234. [&lt;a class=&#34;link&#34; href=&#34;https://scholar.google.com/scholar_lookup?title=A&amp;#43;novel&amp;#43;HMM&amp;#43;distributed&amp;#43;classifier&amp;#43;for&amp;#43;the&amp;#43;detection&amp;#43;of&amp;#43;gait&amp;#43;phases&amp;#43;by&amp;#43;means&amp;#43;of&amp;#43;a&amp;#43;wearable&amp;#43;inertial&amp;#43;sensor&amp;#43;network&amp;amp;author=Taborri,&amp;#43;J.&amp;amp;author=Rossi,&amp;#43;S.&amp;amp;author=Palermo,&amp;#43;E.&amp;amp;author=Patan%c3%a8,&amp;#43;F.&amp;amp;author=Cappa,&amp;#43;P.&amp;amp;publication_year=2014&amp;amp;journal=Sensors&amp;amp;volume=14&amp;amp;pages=16212%e2%80%9316234&amp;amp;doi=10.3390/s140916212&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Google Scholar&lt;/a&gt;] [&lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.3390/s140916212&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CrossRef&lt;/a&gt;]&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Wenger, N.; Moraud, E.M.; Raspopovic, S.; Bonizzato, M.; DiGiovanna, J.; Musienko, P.; Morari, M.; Micera, S.; Courtine, G. Closed-loop neuromodulation of spinal sensorimotor circuits controls refined locomotion after complete spinal cord injury. &lt;em&gt;Sci. Transl. Med.&lt;/em&gt; &lt;strong&gt;2014&lt;/strong&gt;, &lt;em&gt;6&lt;/em&gt;, 255ra133. [&lt;a class=&#34;link&#34; href=&#34;https://scholar.google.com/scholar_lookup?title=Closed-loop&amp;#43;neuromodulation&amp;#43;of&amp;#43;spinal&amp;#43;sensorimotor&amp;#43;circuits&amp;#43;controls&amp;#43;refined&amp;#43;locomotion&amp;#43;after&amp;#43;complete&amp;#43;spinal&amp;#43;cord&amp;#43;injury&amp;amp;author=Wenger,&amp;#43;N.&amp;amp;author=Moraud,&amp;#43;E.M.&amp;amp;author=Raspopovic,&amp;#43;S.&amp;amp;author=Bonizzato,&amp;#43;M.&amp;amp;author=DiGiovanna,&amp;#43;J.&amp;amp;author=Musienko,&amp;#43;P.&amp;amp;author=Morari,&amp;#43;M.&amp;amp;author=Micera,&amp;#43;S.&amp;amp;author=Courtine,&amp;#43;G.&amp;amp;publication_year=2014&amp;amp;journal=Sci.&amp;#43;Transl.&amp;#43;Med.&amp;amp;volume=6&amp;amp;pages=255ra133&amp;amp;doi=10.1126/scitranslmed.3008325&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Google Scholar&lt;/a&gt;] [&lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1126/scitranslmed.3008325&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CrossRef&lt;/a&gt;]&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Bejarano, N.C.; Ambrosini, E.; Pedrocchi, A.; Ferrigno, G.; Monticone, M.; Ferrante, S. An adaptive real-time algorithm to detect gait events using inertial sensors. In Proceedings of the XIII Mediterranean Conference on Medical and Biological Engineering and Computing 2013, Seville, Spain, 25–28 September 2013; pp. 1799–1802. [&lt;a class=&#34;link&#34; href=&#34;https://scholar.google.com/scholar_lookup?title=An&amp;#43;adaptive&amp;#43;real-time&amp;#43;algorithm&amp;#43;to&amp;#43;detect&amp;#43;gait&amp;#43;events&amp;#43;using&amp;#43;inertial&amp;#43;sensors&amp;amp;conference=Proceedings&amp;#43;of&amp;#43;the&amp;#43;XIII&amp;#43;Mediterranean&amp;#43;Conference&amp;#43;on&amp;#43;Medical&amp;#43;and&amp;#43;Biological&amp;#43;Engineering&amp;#43;and&amp;#43;Computing&amp;#43;2013&amp;amp;author=Bejarano,&amp;#43;N.C.&amp;amp;author=Ambrosini,&amp;#43;E.&amp;amp;author=Pedrocchi,&amp;#43;A.&amp;amp;author=Ferrigno,&amp;#43;G.&amp;amp;author=Monticone,&amp;#43;M.&amp;amp;author=Ferrante,&amp;#43;S.&amp;amp;publication_year=2013&amp;amp;pages=1799%e2%80%931802&amp;amp;doi=10.1007/978-3-319-00846-2_444&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Google Scholar&lt;/a&gt;] [&lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1007/978-3-319-00846-2_444&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CrossRef&lt;/a&gt;]&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Mazilu, S.; Hardegger, M.; Zhu, Z.; Roggen, D.; Troster, G.; Plotnik, M.; Hausdorff, J.M. Online detection of freezing of gait with smartphones and machine learning techniques. In Proceedings of the 2012 6th International Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth), San Diego, CA, USA, 21–24 May 2012; pp. 123–130. [&lt;a class=&#34;link&#34; href=&#34;https://scholar.google.com/scholar_lookup?title=Online&amp;#43;detection&amp;#43;of&amp;#43;freezing&amp;#43;of&amp;#43;gait&amp;#43;with&amp;#43;smartphones&amp;#43;and&amp;#43;machine&amp;#43;learning&amp;#43;techniques&amp;amp;conference=Proceedings&amp;#43;of&amp;#43;the&amp;#43;2012&amp;#43;6th&amp;#43;International&amp;#43;Conference&amp;#43;on&amp;#43;Pervasive&amp;#43;Computing&amp;#43;Technologies&amp;#43;for&amp;#43;Healthcare&amp;#43;%28PervasiveHealth%29&amp;amp;author=Mazilu,&amp;#43;S.&amp;amp;author=Hardegger,&amp;#43;M.&amp;amp;author=Zhu,&amp;#43;Z.&amp;amp;author=Roggen,&amp;#43;D.&amp;amp;author=Troster,&amp;#43;G.&amp;amp;author=Plotnik,&amp;#43;M.&amp;amp;author=Hausdorff,&amp;#43;J.M.&amp;amp;publication_year=2012&amp;amp;pages=123%e2%80%93130&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Google Scholar&lt;/a&gt;]&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Anwary, A.R.; Yu, H.; Vassallo, M. Optimal foot location for placing wearable IMU sensors and automatic feature extraction for gait analysis. &lt;em&gt;IEEE Sens. J.&lt;/em&gt; &lt;strong&gt;2017&lt;/strong&gt;, &lt;em&gt;18&lt;/em&gt;, 2555–2567. [&lt;a class=&#34;link&#34; href=&#34;https://scholar.google.com/scholar_lookup?title=Optimal&amp;#43;foot&amp;#43;location&amp;#43;for&amp;#43;placing&amp;#43;wearable&amp;#43;IMU&amp;#43;sensors&amp;#43;and&amp;#43;automatic&amp;#43;feature&amp;#43;extraction&amp;#43;for&amp;#43;gait&amp;#43;analysis&amp;amp;author=Anwary,&amp;#43;A.R.&amp;amp;author=Yu,&amp;#43;H.&amp;amp;author=Vassallo,&amp;#43;M.&amp;amp;publication_year=2017&amp;amp;journal=IEEE&amp;#43;Sens.&amp;#43;J.&amp;amp;volume=18&amp;amp;pages=2555%e2%80%932567&amp;amp;doi=10.1109/JSEN.2017.2786587&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Google Scholar&lt;/a&gt;] [&lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1109/JSEN.2017.2786587&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CrossRef&lt;/a&gt;]&amp;#160;&lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+        </item>
+        <item>
         <title>Before Taking A Recording</title>
         <link>https://K7288.github.io/posts/before-taking-a-recording/</link>
         <pubDate>Fri, 09 Jul 2021 22:00:09 +0800</pubDate>
@@ -798,9 +897,48 @@ p_{x} &amp;amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\
 &lt;td style=&#34;text-align:center&#34;&gt;drift(signal/integral/zero/integral/temperature drift)&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;a rigid body&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;刚体&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;time-varying, adaptive compensation term, manifold, coarse/fine-grained level granularity, an inertial frame, oscillator, denominator,&lt;/p&gt;
+&lt;p&gt;Kinematic Kinetic&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Difference Between Kinetics and Kinematics&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Kinetics&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Kinematics&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Studies the cause for the motions of the object&lt;/td&gt;
+&lt;td&gt;Studies the position, acceleration, speed of an object&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;The mass of the object is taken into consideration&lt;/td&gt;
+&lt;td&gt;The mass of the object is not taken into consideration&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Its application lies in the design of automobiles&lt;/td&gt;
+&lt;td&gt;It is applied to study the movement of celestial bodies&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Force is considered&lt;/td&gt;
+&lt;td&gt;Force is not considered&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;It does not involve any mathematical expressions&lt;/td&gt;
+&lt;td&gt;It involves mathematical expressions&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 </description>
         </item>
         <item>
