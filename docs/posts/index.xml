@@ -401,17 +401,5 @@ Background Centre of pressure (COP), plantar pressure (PP), and plantar-flexion 
 Research question Our aim was to systematically review and quality appraise articles addressing the reliability of COP and PP measures in static stance and PFisom measures.</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>https://K7288.github.io/posts/gait-event-detection-threshold/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://K7288.github.io/posts/gait-event-detection-threshold/</guid>
-      <description>Threshold Desicion Method for Gait Event Detection Gait events: heel strike (HS), toe strike (TS), heel-off (HO), and toe-off (TO)
-1.1 Signals: shank angle(given in the sagittal plane measured counterclockwise with respect to gravity), shank angular velocity, and axial acceleration
-acceleration spikes for HS and TO, negative angular velocity during stance, high shank angle at HS, and low shank angle at TO.
-THR detects gait events from observable, physical signal features, where a signal crosses certain thresholds.</description>
-    </item>
-    
   </channel>
 </rss>
