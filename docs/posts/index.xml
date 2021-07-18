@@ -36,7 +36,9 @@ Preparing the Patient trim the sensor; set up the testing area; set up the syste
 *Zeroing the Sensor 当整个实验过程中鞋垫上始终有额外压力时使用；类似称重的去皮；不过新影片都是白色目前应该还没有出现过需要平衡的情况。
 *Equilibration 在鞋垫上放置均匀重物；
 Calibration Point Calibration 校准时间取决于实际行走过程，快的人1s，慢的2s
-先抬起待校准脚，放下同时重量全部集中在该脚上，放下后很快（间隔1s）实验人员点击校准
+先抬起待校准脚，放下同时重量全部集中在该脚上，放下后很快（间隔1s）实验人员点击校准（实测这样不行，还是要稍微稳定一下再开始标定。）
+可以用手指在竖直墙面上轻点辅助稳定。（实测+官方文档）
+稳定后传感器压力持续上升，可以只看前n秒来判断标定是否正确。(n=5~10)
 Extended Calibration 是点校准的延伸；默认开启；在两个均采用点校准的sensor测量完成后基于体重调整两sensor的校准（by an equal amount）to correct for the differing &amp;ldquo;drift&amp;rdquo; times that occur between your calibration and the actual test.
 进行此校准要求两脚均必须满3steps $\Rightarrow$ 不然会提示“步态扩展不足”打✔️开启Step Calibration To initiate Step calibration, initially, the subject stands entirely on the foot to be off-loaded.</description>
     </item>
@@ -256,7 +258,7 @@ Research Problem description of the gaits of two- and four-legged animals and so
       <guid>https://K7288.github.io/posts/hugo-html-tips/</guid>
       <description>  原生html支持
 hugo采用goldmark作为默认渲染器，需要在config中开启
-   markup:goldmark:renderer:unsafe: truehtml 图片需要绝对路径，形式如下：  &amp;lt;img src=&amp;quot;/assets/image-20210416142714352.png&amp;quot; alt=&amp;quot;image-20210416142714352&amp;quot; style=&amp;quot;zoom:33%;&amp;quot; /&amp;gt;而不能是src=&amp;quot;assets\ 所以也不太支持网络图片&amp;hellip;&amp;hellip;
+   markup: goldmark: renderer: unsafe: true html 图片需要绝对路径，形式如下：  &amp;lt;img src=&amp;quot;/assets/image-20210416142714352.png&amp;quot; alt=&amp;quot;image-20210416142714352&amp;quot; style=&amp;quot;zoom:33%;&amp;quot; /&amp;gt; 而不能是src=&amp;quot;assets\ 所以也不太支持网络图片&amp;hellip;&amp;hellip;
 ****好像不能出现。  </description>
     </item>
     
@@ -286,7 +288,7 @@ hugo采用goldmark作为默认渲染器，需要在config中开启
       <pubDate>Sun, 16 May 2021 10:35:13 +0800</pubDate>
       
       <guid>https://K7288.github.io/posts/menu/</guid>
-      <description>实现页内跳转  基本语法 注意事项 A subtitle just for test 测试 a A  测试——测试 测试:一个测试   1.测试   目录实现  实现页内跳转 基本语法 [&amp;lt;提示语&amp;gt;](#&amp;lt;目标内容&amp;gt;)注意事项   若标题是英文，在(#&amp;lt;目标内容&amp;gt;)中需要小写
+      <description>实现页内跳转  基本语法 注意事项 A subtitle just for test 测试 a A  测试——测试 测试:一个测试   1.测试   目录实现  实现页内跳转 基本语法 [&amp;lt;提示语&amp;gt;](#&amp;lt;目标内容&amp;gt;) 注意事项   若标题是英文，在(#&amp;lt;目标内容&amp;gt;)中需要小写
 例如 [例如](#a-subtitle-just-for-test)
   若标题中出现空格，需要用-连接
 例如 [例如](#测试-a-a)
@@ -365,8 +367,8 @@ Three of these focus on the specific events that constitute the act of walking.
       <guid>https://K7288.github.io/posts/hugo-guide/</guid>
       <description>About Contents Add Some Content hugo new post/**.md
 The newly created content file will start with something like this:
----title: &amp;quot;**&amp;quot;date: 2019-03-26T08:47:11+01:00draft: true---Drafts do not get deployed; once you finish a post, update the header of the post to say draft: false. More info here.
----title: &amp;quot;Hugo Guide&amp;quot;date: 2021-05-01T08:47:11+01:00categories: [&amp;quot;Manual&amp;quot;]tags: [&amp;quot;Hugo&amp;quot;, &amp;quot;GitHub&amp;quot;]draft: false---Add pictures
+--- title: &amp;quot;**&amp;quot; date: 2019-03-26T08:47:11+01:00 draft: true --- Drafts do not get deployed; once you finish a post, update the header of the post to say draft: false. More info here.
+--- title: &amp;quot;Hugo Guide&amp;quot; date: 2021-05-01T08:47:11+01:00 categories: [&amp;quot;Manual&amp;quot;] tags: [&amp;quot;Hugo&amp;quot;, &amp;quot;GitHub&amp;quot;] draft: false --- Add pictures
 /post/xxx.jpg
 is actually baseURL/post/xxx.jpg</description>
     </item>
