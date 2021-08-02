@@ -232,13 +232,15 @@ $$&lt;/p&gt;
 &lt;h2 id=&#34;preparing-the-patient&#34;&gt;Preparing the Patient&lt;/h2&gt;
 &lt;p&gt;trim the sensor; set up the testing area; set up the system hardware; weigh the patient; outfit the patient.&lt;/p&gt;
 &lt;h2 id=&#34;zeroing-the-sensor&#34;&gt;*Zeroing the Sensor&lt;/h2&gt;
-&lt;p&gt;当整个实验过程中鞋垫上始终有额外压力时使用；类似称重的去皮；不过新影片都是白色目前应该还没有出现过需要平衡的情况。&lt;/p&gt;
+&lt;p&gt;当整个实验过程中鞋垫上始终有额外压力时使用；类似称重的去皮；&lt;/p&gt;
 &lt;h2 id=&#34;equilibration&#34;&gt;*Equilibration&lt;/h2&gt;
 &lt;p&gt;在鞋垫上放置均匀重物；&lt;/p&gt;
 &lt;h2 id=&#34;calibration&#34;&gt;Calibration&lt;/h2&gt;
 &lt;h3 id=&#34;point-calibration&#34;&gt;Point Calibration&lt;/h3&gt;
 &lt;p&gt;校准时间取决于实际行走过程，快的人1s，慢的2s&lt;/p&gt;
-&lt;p&gt;先抬起待校准脚，放下同时重量全部集中在该脚上，放下后很快（间隔1s）实验人员点击校准&lt;/p&gt;
+&lt;p&gt;先抬起待校准脚，放下同时重量全部集中在该脚上，放下后很快（间隔1s）实验人员点击校准（实测这样不行，还是要稍微稳定一下再开始标定。）&lt;/p&gt;
+&lt;p&gt;可以用手指在竖直墙面上轻点辅助稳定。（实测+官方文档）&lt;/p&gt;
+&lt;p&gt;稳定后传感器压力持续上升，可以只看前n秒来判断标定是否正确。(n=5~10)&lt;/p&gt;
 &lt;h3 id=&#34;extended-calibration&#34;&gt;Extended Calibration&lt;/h3&gt;
 &lt;p&gt;是点校准的延伸；默认开启；在两个均采用点校准的sensor测量完成后基于体重调整两sensor的校准（by an equal amount）to correct for the differing &amp;ldquo;drift&amp;rdquo; times that occur between your calibration and the actual test.&lt;/p&gt;
 &lt;p&gt;进行此校准要求两脚均必须满3steps $\Rightarrow$ 不然会提示“步态扩展不足”&lt;img src=&#34;https://K7288.github.io/assets/image-20210712093930692.png&#34; alt=&#34;image-20210712093930692&#34; style=&#34;zoom:33%;&#34; /&gt;&lt;/p&gt;
@@ -744,9 +746,9 @@ If $ \Delta F_{Y F}&amp;gt;0 $ and $ \Delta F_{Y F} \leq 0 $ and $ F_{Y B}&amp;g
 &lt;p&gt;calculation&lt;/p&gt;
 &lt;p&gt;$r=[\delta\ \varepsilon\ 0]$  is a vector on the ground and $ \rho(\delta, \varepsilon) $ is the vertical force acted on unit area at point $ r$. So the sum of vertical force is like $f_{z}=\int_{s} \rho(\delta, \varepsilon) d S$&lt;/p&gt;
 &lt;p&gt;torque at  $p=\left[p_{x}\ p_{y}\ 0\right]$  is  $\tau_{n}(p) $.&lt;/p&gt;
-&lt;p&gt;$\begin{aligned} 
-\tau_{nx} &amp;amp;=\int_{S}(\delta-p_{x}) \rho(\delta, \varepsilon) d S  \\ 
-\tau_{ny} &amp;amp;=\int_{S}(\varepsilon-p_{y}) \rho(\delta, \varepsilon) d S  \\ 
+&lt;p&gt;$\begin{aligned}
+\tau_{nx} &amp;amp;=\int_{S}(\delta-p_{x}) \rho(\delta, \varepsilon) d S  \\
+\tau_{ny} &amp;amp;=\int_{S}(\varepsilon-p_{y}) \rho(\delta, \varepsilon) d S  \\
 \tau_{nz} &amp;amp;=0
 \end{aligned}$&lt;/p&gt;
 &lt;p&gt;At ZMP  $\tau_{n x}=0, \tau_{n y}=0$ , we can get&lt;/p&gt;
@@ -1176,7 +1178,7 @@ the collaborator&amp;rsquo;s intention by learning the meaning of the collaborat
 &lt;p&gt;the intention of the collaborator is identified through online prediction.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;In order to verify the validity of the RBFNN method in this paper, the robot’s contact point speed and interaction force are analyzed by comparing with the corresponding experimental parameters values from the adaptive impedance control algorithm. 
+&lt;p&gt;In order to verify the validity of the RBFNN method in this paper, the robot’s contact point speed and interaction force are analyzed by comparing with the corresponding experimental parameters values from the adaptive impedance control algorithm.
 &lt;img src=&#34;https://K7288.github.io/assets/4141269.fig.002.svg&#34; align=&#34;center&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -3836,10 +3838,10 @@ $$&lt;/p&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;$$
-\begin{aligned} 
+\begin{aligned}
 C_{n+1, t+1}-C_{n, t} &amp;amp;=\frac{2}{n+1}+\frac{2}{n}+\cdots+\frac{2}{t+2}
-+C_{t+1, t+1}-C_{t, t} \\ 
-&amp;amp;=2\left(H_{n+1}-H_{t+1}\right)+2-2 /(t+1) 
++C_{t+1, t+1}-C_{t, t} \\
+&amp;amp;=2\left(H_{n+1}-H_{t+1}\right)+2-2 /(t+1)
 \end{aligned}
 $$&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Latex&#34; data-lang=&#34;Latex&#34;&gt;&lt;span class=&#34;k&#34;&gt;\begin&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;aligned&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; 

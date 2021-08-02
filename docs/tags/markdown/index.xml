@@ -13,7 +13,7 @@
       <pubDate>Sun, 16 May 2021 10:35:13 +0800</pubDate>
       
       <guid>https://K7288.github.io/posts/menu/</guid>
-      <description>实现页内跳转  基本语法 注意事项 A subtitle just for test 测试 a A  测试——测试 测试:一个测试   1.测试   目录实现  实现页内跳转 基本语法 [&amp;lt;提示语&amp;gt;](#&amp;lt;目标内容&amp;gt;)注意事项   若标题是英文，在(#&amp;lt;目标内容&amp;gt;)中需要小写
+      <description>实现页内跳转  基本语法 注意事项 A subtitle just for test 测试 a A  测试——测试 测试:一个测试   1.测试   目录实现  实现页内跳转 基本语法 [&amp;lt;提示语&amp;gt;](#&amp;lt;目标内容&amp;gt;) 注意事项   若标题是英文，在(#&amp;lt;目标内容&amp;gt;)中需要小写
 例如 [例如](#a-subtitle-just-for-test)
   若标题中出现空格，需要用-连接
 例如 [例如](#测试-a-a)
