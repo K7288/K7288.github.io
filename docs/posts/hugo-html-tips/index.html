@@ -3,7 +3,7 @@
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='  原生html支持
 hugo采用goldmark作为默认渲染器，需要在config中开启
-   markup:goldmark:renderer:unsafe: truehtml 图片需要绝对路径，形式如下：  &amp;lt;img src=&amp;quot;/assets/image-20210416142714352.png&amp;quot; alt=&amp;quot;image-20210416142714352&amp;quot; style=&amp;quot;zoom:33%;&amp;quot; /&amp;gt;而不能是src=&amp;quot;assets\ 所以也不太支持网络图片&amp;hellip;&amp;hellip;
+  markup: goldmark: renderer: unsafe: true html 图片需要绝对路径，形式如下：  &amp;lt;img src=&amp;#34;/assets/image-20210416142714352.png&amp;#34; alt=&amp;#34;image-20210416142714352&amp;#34; style=&amp;#34;zoom:33%;&amp;#34; /&amp;gt; 而不能是src=&amp;quot;assets\ 所以也不太支持网络图片&amp;hellip;&amp;hellip;
 ****好像不能出现。  '><title>Hugo HTML Tips</title>
 
 <link rel='canonical' href='https://K7288.github.io/posts/hugo-html-tips/'>
@@ -11,7 +11,7 @@ hugo采用goldmark作为默认渲染器，需要在config中开启
 <link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Hugo HTML Tips'>
 <meta property='og:description' content='  原生html支持
 hugo采用goldmark作为默认渲染器，需要在config中开启
-   markup:goldmark:renderer:unsafe: truehtml 图片需要绝对路径，形式如下：  &amp;lt;img src=&amp;quot;/assets/image-20210416142714352.png&amp;quot; alt=&amp;quot;image-20210416142714352&amp;quot; style=&amp;quot;zoom:33%;&amp;quot; /&amp;gt;而不能是src=&amp;quot;assets\ 所以也不太支持网络图片&amp;hellip;&amp;hellip;
+  markup: goldmark: renderer: unsafe: true html 图片需要绝对路径，形式如下：  &amp;lt;img src=&amp;#34;/assets/image-20210416142714352.png&amp;#34; alt=&amp;#34;image-20210416142714352&amp;#34; style=&amp;#34;zoom:33%;&amp;#34; /&amp;gt; 而不能是src=&amp;quot;assets\ 所以也不太支持网络图片&amp;hellip;&amp;hellip;
 ****好像不能出现。  '>
 <meta property='og:url' content='https://K7288.github.io/posts/hugo-html-tips/'>
 <meta property='og:site_name' content='K7288'>
@@ -19,7 +19,7 @@ hugo采用goldmark作为默认渲染器，需要在config中开启
 <meta name="twitter:title" content="Hugo HTML Tips">
 <meta name="twitter:description" content="  原生html支持
 hugo采用goldmark作为默认渲染器，需要在config中开启
-   markup:goldmark:renderer:unsafe: truehtml 图片需要绝对路径，形式如下：  &amp;lt;img src=&amp;quot;/assets/image-20210416142714352.png&amp;quot; alt=&amp;quot;image-20210416142714352&amp;quot; style=&amp;quot;zoom:33%;&amp;quot; /&amp;gt;而不能是src=&amp;quot;assets\ 所以也不太支持网络图片&amp;hellip;&amp;hellip;
+  markup: goldmark: renderer: unsafe: true html 图片需要绝对路径，形式如下：  &amp;lt;img src=&amp;#34;/assets/image-20210416142714352.png&amp;#34; alt=&amp;#34;image-20210416142714352&amp;#34; style=&amp;#34;zoom:33%;&amp;#34; /&amp;gt; 而不能是src=&amp;quot;assets\ 所以也不太支持网络图片&amp;hellip;&amp;hellip;
 ****好像不能出现。  ">
     </head>
     <body class="
@@ -249,16 +249,16 @@ hugo采用goldmark作为默认渲染器，需要在config中开启
 <p>hugo采用goldmark作为默认渲染器，需要在config中开启</p>
 </li>
 </ol>
-<pre><code>   markup:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">   markup:
     goldmark:
         renderer:
             unsafe: true
-</code></pre><ol start="2">
+</code></pre></div><ol start="2">
 <li>html
 图片需要绝对路径，形式如下：</li>
 </ol>
-<pre><code>&lt;img src=&quot;/assets/image-20210416142714352.png&quot; alt=&quot;image-20210416142714352&quot; style=&quot;zoom:33%;&quot; /&gt;
-</code></pre><p>而不能是<code>src=&quot;assets\</code>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-HTML" data-lang="HTML"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/assets/image-20210416142714352.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;image-20210416142714352&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;zoom:33%;&#34;</span> <span class="p">/&gt;</span>
+</code></pre></div><p>而不能是<code>src=&quot;assets\</code>
 所以也不太支持网络图片&hellip;&hellip;</p>
 <ol start="3">
 <li><code>****</code>好像不能出现<code>。</code></li>

@@ -1630,16 +1630,16 @@ motions have equal Froude numbers  $u^2 /gh$ (Duncan1953).&lt;/p&gt;
 &lt;p&gt;hugo采用goldmark作为默认渲染器，需要在config中开启&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;   markup:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;   markup:
     goldmark:
         renderer:
             unsafe: true
-&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;html
 图片需要绝对路径，形式如下：&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;img src=&amp;quot;/assets/image-20210416142714352.png&amp;quot; alt=&amp;quot;image-20210416142714352&amp;quot; style=&amp;quot;zoom:33%;&amp;quot; /&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;而不能是&lt;code&gt;src=&amp;quot;assets\&lt;/code&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-HTML&#34; data-lang=&#34;HTML&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/assets/image-20210416142714352.png&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;alt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;image-20210416142714352&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;zoom:33%;&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;而不能是&lt;code&gt;src=&amp;quot;assets\&lt;/code&gt;
 所以也不太支持网络图片&amp;hellip;&amp;hellip;&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;&lt;code&gt;****&lt;/code&gt;好像不能出现&lt;code&gt;。&lt;/code&gt;&lt;/li&gt;
@@ -3704,8 +3704,8 @@ Upon comparing nested model Akaike information criterion (AIC) values, the lowes
 &lt;/ul&gt;
 &lt;h2 id=&#34;实现页内跳转&#34;&gt;实现页内跳转&lt;/h2&gt;
 &lt;h3 id=&#34;基本语法&#34;&gt;基本语法&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;[&amp;lt;提示语&amp;gt;](#&amp;lt;目标内容&amp;gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;注意事项&#34;&gt;注意事项&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;[&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;提示语&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;](#&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;目标内容&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;注意事项&#34;&gt;注意事项&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;若标题是英文，在&lt;code&gt;(#&amp;lt;目标内容&amp;gt;)&lt;/code&gt;中需要小写&lt;/p&gt;
@@ -4091,31 +4091,31 @@ Terminal double stance(10%) is the third subdivision. It begins with floor conta
         <description>&lt;h2 id=&#34;about-contents&#34;&gt;About Contents&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Add Some Content&lt;/strong&gt; &lt;code&gt;hugo new post/**.md&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;The newly created content file will start with something like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-title: &amp;quot;**&amp;quot;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;---
+title: &amp;#34;**&amp;#34;
 date: 2019-03-26T08:47:11+01:00
 draft: true
 ---
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Drafts do not get deployed; once you finish a post, update the header of the post to say &lt;code&gt;draft: false&lt;/code&gt;. More info &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/usage/#draft-future-and-expired-content&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Drafts do not get deployed; once you finish a post, update the header of the post to say &lt;code&gt;draft: false&lt;/code&gt;. More info &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/usage/#draft-future-and-expired-content&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-title: &amp;quot;Hugo Guide&amp;quot;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;---
+title: &amp;#34;Hugo Guide&amp;#34;
 date: 2021-05-01T08:47:11+01:00
-categories: [&amp;quot;Manual&amp;quot;]
-tags: [&amp;quot;Hugo&amp;quot;, &amp;quot;GitHub&amp;quot;]
+categories: [&amp;#34;Manual&amp;#34;]
+tags: [&amp;#34;Hugo&amp;#34;, &amp;#34;GitHub&amp;#34;]
 draft: false
 ---
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Add pictures&lt;/strong&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Add pictures&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;/post/xxx.jpg&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;is actually &lt;code&gt;baseURL/post/xxx.jpg&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Put the picture as below&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;.
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;.
 └── static
     └── post
         └── xxx.jpg
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;customize-the-theme&#34;&gt;Customize the Theme&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;customize-the-theme&#34;&gt;Customize the Theme&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Start the Hugo server&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;▶ hugo server -D
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;▶ hugo server -D
 
                    | EN
 +------------------+----+
@@ -4131,23 +4131,23 @@ draft: false
 Total in 11 ms
 Watching for changes in /Users/bep/quickstart/{content,data,layouts,static,themes}
 Watching for config changes in /Users/bep/quickstart/config.toml
-Environment: &amp;quot;development&amp;quot;
+Environment: &amp;#34;development&amp;#34;
 Serving pages from memory
 Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
 Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Navigate to your new site at http://localhost:1313/.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Navigate to your new site at http://localhost:1313/.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Site Configuration&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Open up &lt;code&gt;config.toml&lt;/code&gt; in a text editor:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;baseURL = &amp;quot;http://K7288.github.io&amp;quot;
-languageCode = &amp;quot;en-us&amp;quot;
-title = &amp;quot;K7288&amp;quot;
-theme = &amp;quot;stack&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;For further theme customization, see &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/themes/customizing/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;baseURL = &amp;#34;http://K7288.github.io&amp;#34;
+languageCode = &amp;#34;en-us&amp;#34;
+title = &amp;#34;K7288&amp;#34;
+theme = &amp;#34;stack&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;For further theme customization, see &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/themes/customizing/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Customize a Theme&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;build-static-pages&#34;&gt;Build static pages&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;hugo -D
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Output will be in &lt;code&gt;./public/&lt;/code&gt; directory by default (&lt;code&gt;-d&lt;/code&gt;/&lt;code&gt;--destination&lt;/code&gt; flag to change it, or set &lt;code&gt;publishdir&lt;/code&gt; in the config file).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;hugo -D
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output will be in &lt;code&gt;./public/&lt;/code&gt; directory by default (&lt;code&gt;-d&lt;/code&gt;/&lt;code&gt;--destination&lt;/code&gt; flag to change it, or set &lt;code&gt;publishdir&lt;/code&gt; in the config file).&lt;/p&gt;
 &lt;p&gt;See Also&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/external-learning-resources/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -4209,134 +4209,6 @@ $$&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;\begin{array}&lt;/code&gt;和&lt;code&gt;\end{array}&lt;/code&gt;之间不能换行😅&lt;/p&gt;
 &lt;p&gt;大括号只能用&lt;code&gt;\begin{cases}&lt;/code&gt; &lt;code&gt;\end{cases}&lt;/code&gt;实现了&lt;/p&gt;
 &lt;p&gt;花括号要这样&lt;code&gt;\\}&lt;/code&gt;才能打出来$\}$&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>论文3篇泛读 1-&gt;measurement可靠性(方法比较奇怪或者没有) 2/3-&gt;步态参数拟合</title>
-        <link>https://K7288.github.io/posts/measurement%E5%8F%AF%E9%9D%A0%E6%80%A7%E6%96%B9%E6%B3%95%E6%AF%94%E8%BE%83%E5%A5%87%E6%80%AA%E6%88%96%E8%80%85%E6%B2%A1%E6%9C%89-%E6%AD%A5%E6%80%81%E5%8F%82%E6%95%B0%E6%8B%9F%E5%90%88/</link>
-        <pubDate>Sat, 01 May 2021 11:37:16 +0800</pubDate>
-        
-        <guid>https://K7288.github.io/posts/measurement%E5%8F%AF%E9%9D%A0%E6%80%A7%E6%96%B9%E6%B3%95%E6%AF%94%E8%BE%83%E5%A5%87%E6%80%AA%E6%88%96%E8%80%85%E6%B2%A1%E6%9C%89-%E6%AD%A5%E6%80%81%E5%8F%82%E6%95%B0%E6%8B%9F%E5%90%88/</guid>
-        <description>&lt;p&gt;&lt;em&gt;因为不熟悉心相关研究问题，之前做笔记的次数也少，这几篇Literature Notes结构不够清晰，而且过长，下次注意。&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;三篇文献与选题的关联性差强人意，之后留意/请教一下如何有效查找文献。&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&#34;1-reliability-of-centre-of-pressure-plantar-pressure-and-plantar-flexion-isometric-strength-measures-a-systematic-review&#34;&gt;1. Reliability of centre of pressure, plantar pressure, and plantar-flexion isometric strength measures: A systematic review&lt;/h2&gt;
-&lt;p&gt;COP PP PFisom 三种步态控制measurement 的可靠性&lt;/p&gt;
-&lt;p&gt;方法：对三个数据库实验进行同行评估 ICC&lt;/p&gt;
-&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
-&lt;p&gt;Centre of pressure (COP), plantar pressure (PP), and plantar-flexion isometric strength (PFisom) are often examined in relation to postural control and gait.&lt;/p&gt;
-&lt;h3 id=&#34;research-question&#34;&gt;Research question&lt;/h3&gt;
-&lt;p&gt;Our aim was to systematically review and quality appraise articles addressing the reliability of COP and PP measures in static stance and PFisom measures.&lt;/p&gt;
-&lt;h3 id=&#34;methods&#34;&gt;Methods&lt;/h3&gt;
-&lt;p&gt;Three electronic databases **(**SCOPUS®, SportDISCUS™, and PubMed) were searched and supplemented by a manual search. Peer-reviewed original research on the reliability of COP, PP, and PFisom in healthy adults (≥18 years) was included. Quality appraisal was done according to the updated COnsensus-based Standards for the selection of health Measurement INstruments reliability checklist. Data regarding study characteristics, test protocols, outcome measures, and reliability metrics were extracted.&lt;/p&gt;
-&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;
-&lt;p&gt;Forty articles met inclusion and were assessed for their methodological quality. Only four articles (10%) obtained uppermost quality scores. From the reviewed studies, the most reliable measures were: &lt;strong&gt;COP sway area and path length; PP mean pressure, percentage body weight distribution, and contact area; and PFisom peak torque and force.&lt;/strong&gt; Although these measures generally exhibited good-to-excellent relative reliability based on correlation coefficients, absolute reliability based on typical errors were not always optimal (variation &amp;gt; 10%). Literature on PP reliability was scarce (&lt;em&gt;n&lt;/em&gt; = 2).&lt;/p&gt;
-&lt;h2 id=&#34;2assessment-of-spatio-temporal-gait-parameters-from-trunk-accelerations-during-human-walking&#34;&gt;2.Assessment of spatio-temporal gait parameters from trunk accelerations during human walking&lt;/h2&gt;
-&lt;p&gt;基于加速度预测时空上的步态参数的可行性 spatio-temporal gait parameters&lt;/p&gt;
-&lt;h3 id=&#34;intro&#34;&gt;Intro&lt;/h3&gt;
-&lt;p&gt;Basic prerequisites for gait analysis are the assessment of spatio-temporal gait parameters and the analysis of movements within subsequent stride cycles. 后续步幅周期内运动&lt;/p&gt;
-&lt;p&gt;As a matter of convention, the stride cycle is defined as the interval between two subsequent right foot contacts. Hence, the stride starts with a left step, which is followed by a right step.&lt;/p&gt;
-&lt;p&gt;Some typical examples are the use of conducting foot switches [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;1]&lt;/a&gt;, pressure-sensitive foot switches [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;2]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB3&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;3]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB4&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;4]&lt;/a&gt;, ground reaction forces (GRFs) [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;5]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB6&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;6]&lt;/a&gt;, or the analysis of foot displacement patterns [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB7&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;7]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB8&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;8]&lt;/a&gt;. // 用其他装置测量其他信号&lt;/p&gt;
-&lt;p&gt;Although already in the 1970s the use of accelerometers for an analysis of human movement was suggested [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB9&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;9]&lt;/a&gt;, it is only recently that a number of studies have reported gait analyses based upon the use of accelerometers on trunk, thigh, shank or foot (for examples see Refs. [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB10&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;10]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB11&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;11]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB12&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;12]&lt;/a&gt;). Only few studies have addressed the relationships between measured accelerations and spatio-temporal gait parameters. Using neural networks, the speed and distance of walking can be estimated [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB13&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;13]&lt;/a&gt;. //加速度与运动关联的提出 一些相关实验&lt;/p&gt;
-&lt;p&gt;Average temporal characteristics like step or stride duration can be estimated from acceleration data (for example, by means of cross correlation functions or frequency analysis).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;feasibility&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A study by Zijlstra and Hof [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620200190X#BIB16&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;16]&lt;/a&gt; demonstrated that three-dimensional (3D) displacements of the lower trunk during walking are predicted well by an inverted pendulum model（倒立摆模型） of the body&amp;rsquo;s centre of mass (CoM) trajectory.&lt;/li&gt;
-&lt;li&gt;In agreement with model predictions, the amplitude and timing of pelvic displacements depended on spatio-temporal parameters of the stride cycle. The inverted pendulum model also predicts a basic pattern of lower trunk acceleration during walking, and relationships between acceleration characteristics and spatio-temporal gait parameters. Hence, spatio-temporal gait parameters can possibly be determined from accelerations of the lower trunk. //倒立摆模型说明加速度和步态的时空参数有关联性&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;主要工作&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Therefore, the present paper investigates the feasibility of an analysis of spatio-temporal gait parameters based upon accelerometry.&lt;/li&gt;
-&lt;li&gt;Specifically, it analyses the 3D-acceleration pattern of the lower trunk at different walking speeds, and it evaluates algorithms that were developed to determine the instant of foot contacts, to identify left and right foot contacts, and to estimate mean step length and walking speed.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;method&#34;&gt;Method&lt;/h3&gt;
-&lt;p&gt;step length = $2\sqrt{2lh-h^2}$ //h重心偏移（本文中 向上加速度二重积分） l摆线长（腿长）&lt;/p&gt;
-&lt;p&gt;To avoid integration drift, position data were high-pass filtered (fourth-order zero-lag Butterworth filter at 0.1 Hz).&lt;/p&gt;
-&lt;p&gt;From the same 20 steps, mean step duration was calculated. For each subject and each belt speed condition, mean step length divided by mean step duration was used to estimate walking speed.&lt;/p&gt;
-&lt;h3 id=&#34;result&#34;&gt;Result&lt;/h3&gt;
-&lt;h4 id=&#34;accelerations-of-the-lower-trunk-during-treadmill-walking&#34;&gt;Accelerations of the lower trunk during treadmill walking&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/1-s2.0-S096663620200190X-gr1.gif&#34; alt=&#34;img&#34;  /&gt;&lt;/p&gt;
-&lt;p&gt;Vertical accelerations are adjusted by subtracting the acceleration due to gravity (9.81 m/
-s2). Solid lines represent mean patterns, and dashed lines represent +- 1 S.D. （标准差）The stride cycle starts (0%) and ends (100%) with a right foot contact, left foot contact is at 50%.&lt;/p&gt;
-&lt;p&gt;Closer inspection of these acceleration signals in relation to the GRF data showed that the timing of an additional peak or indention corresponded to the beginning or end of swing phases, respectively. In the mean data presented in Fig. 1, such an indention can be observed just preceding the peak acceleration at 50% of the stride cycle. The indention preceding foot contact could cause a short period of negative values in forward acceleration.附加峰值或凹陷的时间分别对应于摆动阶段的开始或结束。在图1中所示的平均数据中，可以观察到这种锯齿状刚好出现在步幅周期50%的峰值加速度之前。&lt;/p&gt;
-&lt;h4 id=&#34;foot-contact-detection-and-duration-of-the-stride-cycle&#34;&gt;Foot contact detection and duration of the stride cycle&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/1-s2.0-S096663620200190X-gr2.gif&#34; alt=&#34;img&#34;  /&gt;&lt;/p&gt;
-&lt;p&gt;Data traces represent a sample of the data of a male subject walking at a treadmill speed of 1.25 m/s.&lt;/p&gt;
-&lt;p&gt;The upper figure shows antero-posterior acceleration data as a solid grey line.&lt;/p&gt;
-&lt;p&gt;The lower figure shows &lt;strong&gt;right and left vertical GRFs (L/R-GRFs) divided by body weight (BW)&lt;/strong&gt;. Right GRFs are shown as a solid black line, and left GRFs as a dashed line. Arrows in the lower figure indicate the starts (and ends) of stride cycles, as identified by right GRFs.&lt;/p&gt;
-&lt;p&gt;Arrows in the lower figure indicate the starts (and ends) of stride cycles, as identified by right GRFs. In both figures, asterisks indicate the instant of foot contact as detected from left or right GRFs. Foot contacts detected from acceleration data are indicated in the upper figure by downward slopes of the block signal shown in black (zero-crossing method), and the open circles around peak acceleration values (peak detection method).&lt;/p&gt;
-&lt;h4 id=&#34;discrimination-between-left-and-right-steps&#34;&gt;Discrimination between left and right steps&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/1-s2.0-S096663620200190X-gr3.gif&#34; alt=&#34;img&#34;  /&gt;&lt;/p&gt;
-&lt;h2 id=&#34;3an-evaluation-of-measurement-systems-estimating-gait-speed-during-a-loaded-military-march-over-graded-terrain&#34;&gt;3.An evaluation of measurement systems estimating gait speed during a loaded military march over graded terrain&lt;/h2&gt;
-&lt;p&gt;Gait speed can be estimated using a single IMU (located at wrist or arm pit).&lt;/p&gt;
-&lt;p&gt;Correcting for confounders such as body size, load and shoe type is necessary.&lt;/p&gt;
-&lt;p&gt;Uphill and downhill walking both change gait parameters and walk ratio.&lt;/p&gt;
-&lt;p&gt;The change in walk ratio causes an overestimation of the gait speed.&lt;/p&gt;
-&lt;p&gt;Altimetry should be used to correct the estimation of gait speed in graded terrain.&lt;/p&gt;
-&lt;h3 id=&#34;methods-1&#34;&gt;Methods&lt;/h3&gt;
-&lt;h4 id=&#34;data-processing&#34;&gt;Data processing&lt;/h4&gt;
-&lt;p&gt;EQ-02 data was processed using Matlab (R2017a, The Mathworks Inc, Natick, MA). A custom-made algorithm using &lt;strong&gt;peak detection functions&lt;/strong&gt; was used to calculate the number of steps and counts (total and separate for the sagittal plane) from raw accelerometer output for each 200 m trial, and the trial time was derived from the EQ-02. From these parameters &lt;strong&gt;speed, cadence and counts per second were calculated&lt;/strong&gt;.&lt;/p&gt;
-&lt;h4 id=&#34;nld模型&#34;&gt;NLD模型&lt;/h4&gt;
-&lt;p&gt;$$
-Walking speed [m/s] = 0.301*(step/s)2 + 0.011*counts/s \+ 0.687*height [m]− 0.003*body\ weight[kg] \+ 0.040*footwear_type [0\ for\ running\ shoes,\ 1\ for\ combat\ boots] − 0.958
-$$&lt;/p&gt;
-&lt;p&gt;$ (n = 266; R^2 = 0.968; R^2_{adjusted}= 0.968; \text{standard error of the estimate} = 0.082 m/s)$&lt;/p&gt;
-&lt;p&gt;$$
-Running speed [m/s] = 0.183*(step/s)2 + 0.028*counts/s \− 0.228*footwear_type \text{[0 for running shoes, 1 for combat boots]} \+ 0.017*counts_{sagitalplane}/s – 1.226
-$$
-(n = 160; R2 = 0.746; R2adjusted = 0.740; standard error of the estimate = 0.325 m s−1)&lt;/p&gt;
-&lt;p&gt;地形（上下坡）对步态的影响 数据校正(body size，负载和鞋子类型等)&lt;/p&gt;
-&lt;p&gt;女性的步伐比男性慢，步幅较小，步频更快[ [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0105&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;21]&lt;/a&gt;，[&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0110&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;22]&lt;/a&gt;，[&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0115&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;23]&lt;/a&gt; ]。这些性别差异仅归因于身高的不同，例如身高和体重[ [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0110&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;22]&lt;/a&gt;，[&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0120&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;24] &lt;/a&gt;]。身高和腿长与首选的步行速度和步幅呈正相关，但体重和&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/topics/medicine-and-dentistry/body-mass-index&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;体重指数&lt;/a&gt;对步态参数没有影响[ &lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0125&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;25&lt;/a&gt; ]。&lt;/p&gt;
-&lt;h4 id=&#34;坡度影响&#34;&gt;坡度影响&lt;/h4&gt;
-&lt;p&gt;在以前的研究中，受试者可以自由选择他们的步行速度，上坡步行导致速度，步长和步频降低[ [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0115&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;23]&lt;/a&gt;，[&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0130&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;26]&lt;/a&gt; ]。这些发现与本研究2的结果相符，在本研究中，发现与水平行走相比，在6.5％的坡度上进行上坡行走时行走速度降低（从1.47降至1.22 m s -1）。这种下降是由较低的节奏和较小的步长引起的。此外，观察到水平步行和上坡步行之间的步行比率变化，导致两种算法的步行速度都被高估。在较早的研究中，下坡步行导致步长减少[ [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0085&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;17]&lt;/a&gt;，[&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0115&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;23]&lt;/a&gt;，[&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0130&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;26]&lt;/a&gt;，[&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0135&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;27]&lt;/a&gt;]。节奏略有增加[ &lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0085&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;17&lt;/a&gt; ]或没有改变[ &lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0115&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;23&lt;/a&gt; ]。在研究2中，士兵们沿着5.5％的坡度行走。与水平步行相比，步行速度相同，步频更高，步长更短。步行率也发生了变化，导致两个模型的步行速度都被高估。&lt;/p&gt;
-&lt;p&gt;To mitigate the errors caused by walking uphill or downhill, a correction for grade should be implemented. This could be achieved by using barometer data to estimate the grade [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0140&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;28&lt;/a&gt;] or by using IMUs on the foot/shoe to estimate inclination for each step [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636218300110#bib0095&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;19&lt;/a&gt;]. Given the location of the sensors, the algorithms discussed in this paper could be corrected using a barometer.&lt;/p&gt;
-&lt;h2 id=&#34;-1others&#34;&gt;-1.Others&lt;/h2&gt;
-&lt;h3 id=&#34;特征工程参考&#34;&gt;特征工程参考&lt;/h3&gt;
-&lt;h4 id=&#34;machine-learning-algorithms-can-classify-outdoor-terrain-types-during-running-using-accelerometry-data&#34;&gt;Machine learning algorithms can classify outdoor terrain types during running using accelerometry data&lt;/h4&gt;
-&lt;h3 id=&#34;无关变量的影响&#34;&gt;无关变量的影响&lt;/h3&gt;
-&lt;h4 id=&#34;detection-of-age-and-gender-differences-in-walking-using-mobile-wearable-sensors&#34;&gt;Detection of age and gender differences in walking using mobile wearable sensors&lt;/h4&gt;
-&lt;p&gt;使用移动可穿戴传感器检测步行中的年龄和性别差异&lt;/p&gt;
-&lt;h5 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h5&gt;
-&lt;p&gt;An interaction was present between gender and age group (p = 0.034) with the older females being younger than the older males (Female: 66.21 ± 5.29, Male: 71.00 ± 5.64) while there was no gender difference in age for the younger group (Female: 22.89 ± 3.14, Male: 21.64 ± 2.62). Gender had a significant impact on height and weight with men being taller (Male: 1.78 ± 0.07, Female: 1.68 ± 0.05, p &amp;lt; 0.001) and heavier (Male: 75.16 ± 9.47, Female: 67.79 ± 11.54, p = 0.009). The vGRF, LR and impulse **(**normalized to body weight, BW) for each condition along with the standard error of the mean, the Bland-Altman bias and LOA, and the ICC results are presented in &lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636221001399#tbl0010&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Table 2&lt;/a&gt;. The ICC values for all variables for all conditions were classified as excellent. The Bland-Altman plots are shown in &lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636221001399#fig0005&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Fig. 1&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/1-s2.0-S0966636221001399-gr1.jpg&#34; alt=&#34;Bland-Altman&#34;  /&gt;&lt;/p&gt;
-&lt;h3 id=&#34;a-systematic-review-of-gait-analysis-methods-based-on-inertial-sensors-and-adaptive-algorithms&#34;&gt;A systematic review of gait analysis methods based on inertial sensors and adaptive algorithms&lt;/h3&gt;
-&lt;p&gt;inertial measurement units (IMUs) consisting of gyroscopes, accelerometers, and magnetometers or parts of it to determine kinematic data&lt;/p&gt;
-&lt;p&gt;通过研究评估的方式证明了IMU系统可以获取步态运动学参数&lt;/p&gt;
-&lt;h3 id=&#34;adaptive-method-for-real-time-gait-phase-detection-based-on-ground-contact-forces&#34;&gt;Adaptive method for real-time gait phase detection based on ground contact forces&lt;/h3&gt;
-&lt;p&gt;(Motion phases during walking are characterized by the gait phases, and &lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S0966636214007450#bib0005&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;strong&gt;each gait phase has a unique ground contact force (GCF) pattern&lt;/strong&gt; &lt;/a&gt;.)&lt;/p&gt;
 </description>
         </item>
         
