@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head><meta charset='utf-8'>
+    <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='这是一段文字，我想跳转到这里。
 ⏬
 ⏬
@@ -28,9 +27,17 @@
 ⏬
 我实现了跳转。
 &amp;lt;a id=&amp;#34;series&amp;#34;&amp;gt;&amp;lt;/a&amp;gt;这是一段文字，我想跳转到这里。 ⏬ ⏬ ⏬ &amp;lt;a class=&amp;#34;link&amp;#34; href=&amp;#34;#series&amp;#34;&amp;gt;我实现了跳转。&amp;lt;/a&amp;gt; ">
-</head>
-
-<body class="article-page keep-sidebar">
+    </head>
+    <body class="
+    article-page 
+">
+        <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+        <script>addBackToTop({
+            diameter: 56,
+            cornerOffset: 35,
+            backgroundColor: 'ddd',
+            textColor: '#ddd'
+        })</script>
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -47,13 +54,18 @@
         if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
             
 
-            document.body.dataset.scheme = 'dark';
+            document.documentElement.dataset.scheme = 'dark';
         } else {
-            document.body.dataset.scheme = 'light';
+            document.documentElement.dataset.scheme = 'light';
         }
     })();
-</script><div
-        class="container main-container flex on-phone--column extended ">
+</script>
+<div class="container main-container flex 
+    
+        on-phone--column extended
+    
+">
+    
         <aside class="sidebar left-sidebar sticky">
     <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
         <span class="hamburger-box">
@@ -69,7 +81,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu911cf87b738465eac3058d27e079f2ed_224006_300x0_resize_box_2.png" width="300"
+                        <img src="/img/avatar_hu911cf87b738465eac3058d27e079f2ed_224006_300x0_resize_box_3.png" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -203,7 +215,8 @@
     </ol>
 </aside>
 
-        <main class="main full-width">
+    
+<main class="main full-width">
     <article class="main-article">
     <header class="article-header">
 
@@ -241,7 +254,7 @@
 <p>⏬</p>
 <p>⏬</p>
 <p><a class="link" href="#series">我实现了跳转。</a></p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;series&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>这是一段文字，我想跳转到这里。
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;series&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>这是一段文字，我想跳转到这里。
 
 ⏬
 
@@ -296,7 +309,80 @@
 </script>
     
 </article>
+    
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/posts/before-taking-a-recording/">
+        
+        
 
+        <div class="article-details">
+            <h2 class="article-title">Before Taking A Recording</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/f-scan/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">F-Scan</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/hugo-html-tips/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Hugo HTML Tips</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/menu/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Menu</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/hugo-guide/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Hugo Guide</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
      
         
     <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css" />
@@ -319,7 +405,6 @@
                         repo: "blog-repos",
                         clientId: "ac393ff5fd371a96eda1",
                         clientSecret: "e9c2b32500e90b7d0e374ecf8481b97819b8012c",
-                        perPage: 5
                     },
                 },
             }),
@@ -419,15 +504,11 @@
                 href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
             >
 
-        </main>
-    </div>
-    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
-    <script>addBackToTop({
-            diameter: 56,
-            backgroundColor: 'ddd',
-            textColor: '#ddd'
-        })</script>
-    <script 
+            </main>
+    
+
+        </div>
+        <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
                 defer="false"
                 >
@@ -444,6 +525,5 @@
     }());
 </script>
 
-</body>
-
+    </body>
 </html>

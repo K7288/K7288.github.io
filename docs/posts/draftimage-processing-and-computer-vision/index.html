@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head><meta charset='utf-8'>
+    <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='参考书目 Digital Image Processing by Rafael C. Gonzalez, Richard E. Woods, 3rd Edition
  第一章 数字图像的采集方式以及特性  1.1 图像概述 1.2 图像数字化  1.2.1图像数字化——采样  一维连续信号的采样 二维连续图像信号的采样  二维Nyquist条件 亚采样     1.2.2图像数字化——量化   1.3 数字图像基本要素  1.3.1基本要素 1.3.2图像质量 1.3.3图像颜色：红、绿、蓝三基色 1.3.4图像的描述：灰度/黑白/彩色图像、链表、拓扑结构、距离 1.3.5图像的矩阵特性：距离、邻域、临接、连通 1.3.6图像文件格式   1.4 数字图像处理意义及内容 1.5 数字图像处理系统及应用  1.5.1数字图像特性：图像/显示分辨率/打印机分辨率 像素深度 位面数量 1.5.2数字图像处理系统     第二章 数字图像预处理方法  2.1 灰度化  2.1.1灰度化主要方法 2.1.2图像二值化  1.全局二值化 2.'><title>(Draft)Image Processing and Computer Vision</title>
 
@@ -16,9 +15,17 @@
 <meta name="twitter:title" content="(Draft)Image Processing and Computer Vision">
 <meta name="twitter:description" content="参考书目 Digital Image Processing by Rafael C. Gonzalez, Richard E. Woods, 3rd Edition
  第一章 数字图像的采集方式以及特性  1.1 图像概述 1.2 图像数字化  1.2.1图像数字化——采样  一维连续信号的采样 二维连续图像信号的采样  二维Nyquist条件 亚采样     1.2.2图像数字化——量化   1.3 数字图像基本要素  1.3.1基本要素 1.3.2图像质量 1.3.3图像颜色：红、绿、蓝三基色 1.3.4图像的描述：灰度/黑白/彩色图像、链表、拓扑结构、距离 1.3.5图像的矩阵特性：距离、邻域、临接、连通 1.3.6图像文件格式   1.4 数字图像处理意义及内容 1.5 数字图像处理系统及应用  1.5.1数字图像特性：图像/显示分辨率/打印机分辨率 像素深度 位面数量 1.5.2数字图像处理系统     第二章 数字图像预处理方法  2.1 灰度化  2.1.1灰度化主要方法 2.1.2图像二值化  1.全局二值化 2.">
-</head>
-
-<body class="article-page keep-sidebar">
+    </head>
+    <body class="
+    article-page has-toc
+">
+        <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+        <script>addBackToTop({
+            diameter: 56,
+            cornerOffset: 35,
+            backgroundColor: 'ddd',
+            textColor: '#ddd'
+        })</script>
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -35,163 +42,32 @@
         if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
             
 
-            document.body.dataset.scheme = 'dark';
+            document.documentElement.dataset.scheme = 'dark';
         } else {
-            document.body.dataset.scheme = 'light';
+            document.documentElement.dataset.scheme = 'light';
         }
     })();
-</script><div
-        class="container main-container flex on-phone--column extended ">
-        <aside class="sidebar left-sidebar sticky">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
-
-    <header class="site-info">
-        
-            <figure class="site-avatar">
-                
-                    
-                    
-                    
-                        
-                        <img src="/img/avatar_hu911cf87b738465eac3058d27e079f2ed_224006_300x0_resize_box_2.png" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
-
-                
-                    <span class="emoji">🍥</span>
-                
-            </figure>
-        
-        <h1 class="site-name"><a href="https://K7288.github.io">K7288</a></h1>
-        <h2 class="site-description"></h2>
-    </header>
-
-    <ol class="menu" id="main-menu">
-        
-        
-        
-
-        <li >
-            <a href='/'>
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="https://K7288.github.io" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="5 12 3 12 12 3 21 12 19 12" />
-  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+  <polyline points="15 6 9 12 15 18" />
 </svg>
 
 
 
-                
-                <span>Home</span>
+                <span></span>
             </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/about'>
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="7" r="4" />
-  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-</svg>
-
-
-
-                
-                <span>About</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/archives'>
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <rect x="3" y="4" width="18" height="4" rx="2" />
-  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
-  <line x1="10" y1="12" x2="14" y2="12" />
-</svg>
-
-
-
-                
-                <span>Posts</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/search'>
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-                
-                <span>Search</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/tags'>
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
-  <circle cx="9" cy="9" r="2" />
-</svg>
-
-
-
-                
-                <span>Tags</span>
-            </a>
-        </li>
-        
-
-        
-            <li id="dark-mode-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                <span>Dark Mode</span>
-            </li>
-        
-    </ol>
-</aside>
-
-        <main class="main full-width">
+        </div>
+    
+<main class="main full-width">
     <article class="main-article">
     <header class="article-header">
 
@@ -1992,7 +1868,13 @@ C表示压缩，在transition层设一个参数𝜃来减小特征图个数</p>
 </script>
     
 </article>
+    
+    <aside class="related-contents--wrapper">
+    
+    
+</aside>
 
+     
      
         
     <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css" />
@@ -2015,7 +1897,6 @@ C表示压缩，在transition层设一个参数𝜃来减小特征图个数</p>
                         repo: "blog-repos",
                         clientId: "ac393ff5fd371a96eda1",
                         clientSecret: "e9c2b32500e90b7d0e374ecf8481b97819b8012c",
-                        perPage: 5
                     },
                 },
             }),
@@ -2115,15 +1996,464 @@ C表示压缩，在transition层设一个参数𝜃来减小特征图个数</p>
                 href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
             >
 
-        </main>
-    </div>
-    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
-    <script>addBackToTop({
-            diameter: 56,
-            backgroundColor: 'ddd',
-            textColor: '#ddd'
-        })</script>
-    <script 
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#11-图像概述">1.1 图像概述</a></li>
+    <li><a href="#12-图像数字化">1.2 图像数字化</a>
+      <ol>
+        <li><a href="#121图像数字化采样">1.2.1图像数字化——采样</a>
+          <ol>
+            <li><a href="#一维连续信号的采样">一维连续信号的采样</a></li>
+            <li><a href="#二维连续图像信号的采样">二维连续图像信号的采样</a>
+              <ol>
+                <li><a href="#二维nyquist条件">二维Nyquist条件</a></li>
+                <li><a href="#亚采样">亚采样</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li><a href="#122图像数字化量化">1.2.2图像数字化——量化</a></li>
+      </ol>
+    </li>
+    <li><a href="#13-数字图像基本要素">1.3 数字图像基本要素</a>
+      <ol>
+        <li><a href="#131基本要素">1.3.1基本要素</a></li>
+        <li><a href="#132图像质量">1.3.2图像质量</a></li>
+        <li><a href="#133图像颜色红绿蓝三基色">1.3.3图像颜色：红、绿、蓝三基色</a></li>
+        <li><a href="#134图像的描述灰度黑白彩色图像链表拓扑结构距离">1.3.4图像的描述：灰度/黑白/彩色图像、链表、拓扑结构、距离</a></li>
+        <li><a href="#135图像的矩阵特性距离邻域临接连通">1.3.5图像的矩阵特性：距离、邻域、临接、连通</a></li>
+        <li><a href="#136图像文件格式">1.3.6图像文件格式</a></li>
+      </ol>
+    </li>
+    <li><a href="#14-数字图像处理意义及内容">1.4 数字图像处理意义及内容</a></li>
+    <li><a href="#15-数字图像处理系统及应用">1.5 数字图像处理系统及应用</a>
+      <ol>
+        <li><a href="#151数字图像特性图像显示分辨率打印机分辨率-像素深度-位面数量">1.5.1数字图像特性：图像/显示分辨率/打印机分辨率 像素深度 位面数量</a></li>
+        <li><a href="#152数字图像处理系统">1.5.2数字图像处理系统</a></li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li><a href="#21-灰度化">2.1 灰度化</a>
+      <ol>
+        <li><a href="#211灰度化主要方法">2.1.1灰度化主要方法</a></li>
+        <li><a href="#212图像二值化">2.1.2图像二值化</a>
+          <ol>
+            <li><a href="#1全局二值化">1.全局二值化</a></li>
+            <li><a href="#2局部二值化">2.局部二值化</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#22图像噪声">2.2图像噪声</a>
+      <ol>
+        <li><a href="#221分类">2.2.1分类</a>
+          <ol>
+            <li><a href="#2211基于统计后的概率密度函数的噪声分类及其消除方式">2.2.1.1基于统计后的概率密度函数的噪声分类及其消除方式</a></li>
+          </ol>
+        </li>
+        <li><a href="#222图像过滤噪声-空间域滤波-频率域滤波-形态学运算">2.2.2图像过滤噪声 空间域滤波 频率域滤波 形态学运算</a>
+          <ol>
+            <li><a href="#中值滤波器">中值滤波器</a></li>
+            <li><a href="#超限中值滤波法">超限中值滤波法</a></li>
+            <li><a href="#均值滤波邻域平均法">均值滤波/邻域平均法</a></li>
+            <li><a href="#超限邻域平均法">超限邻域平均法</a></li>
+            <li><a href="#高斯滤波">高斯滤波</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li><a href="#31-图像增强概述">3.1 图像增强概述</a>
+      <ol>
+        <li><a href="#311-定义">3.1.1 定义</a></li>
+        <li><a href="#312-应用">3.1.2 应用</a></li>
+      </ol>
+    </li>
+    <li><a href="#32-图像增强方法">3.2 图像增强方法</a></li>
+    <li><a href="#33-灰度变换点运算">3.3 灰度变换/点运算</a>
+      <ol>
+        <li><a href="#331线性灰度变换">3.3.1线性灰度变换</a>
+          <ol>
+            <li><a href="#加常数">加常数</a></li>
+            <li><a href="#图像反转反色">图像反转（反色）</a></li>
+            <li><a href="#乘常数">乘常数</a></li>
+            <li><a href="#一般形式">一般形式</a></li>
+          </ol>
+        </li>
+        <li><a href="#332-分段线性灰度变换">3.3.2 分段线性灰度变换</a>
+          <ol>
+            <li><a href="#对比度拉伸拓展">对比度拉伸/拓展</a></li>
+            <li><a href="#削波">削波</a></li>
+            <li><a href="#阈值化">阈值化</a></li>
+            <li><a href="#灰度级分层灰度窗口变换灰度切分">灰度级分层/灰度窗口变换/灰度切分</a></li>
+            <li><a href="#位图切割比特平面分层">位图切割/比特平面分层</a></li>
+          </ol>
+        </li>
+        <li><a href="#333-非线性灰度变换">3.3.3 非线性灰度变换</a>
+          <ol>
+            <li><a href="#指数函数变换">指数函数变换</a></li>
+            <li><a href="#对数函数变换">对数函数变换</a></li>
+            <li><a href="#幂函数变换伽马变换">幂函数变换/伽马变换</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#34-基于直方图的图像增强">3.4 基于直方图的图像增强</a>
+      <ol>
+        <li><a href="#341-灰度直方图简称直方图">3.4.1 灰度直方图（简称直方图）</a></li>
+        <li><a href="#342-直方图均衡化">3.4.2 直方图均衡化</a>
+          <ol>
+            <li><a href="#直方图均衡化灰度变换函数的条件">直方图均衡化灰度变换函数的条件</a></li>
+            <li><a href="#直方图均衡化步骤">直方图均衡化步骤</a></li>
+            <li><a href="#缺点">缺点</a></li>
+          </ol>
+        </li>
+        <li><a href="#343-直方图匹配规定化">3.4.3 直方图匹配/规定化</a>
+          <ol>
+            <li><a href="#算法设计">算法设计</a>
+              <ol>
+                <li><a href="#连续灰度级情况">连续灰度级情况</a></li>
+                <li><a href="#离散灰度级情况">离散灰度级情况</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li><a href="#344-基于直方图统计特性的增强局部增强">3.4.4 基于直方图统计特性的增强/局部增强</a>
+          <ol>
+            <li>
+              <ol>
+                <li><a href="#直方图统计特性">直方图统计特性</a></li>
+                <li><a href="#局部增强">局部增强</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#35-彩色图像增强">3.5 彩色图像增强</a>
+      <ol>
+        <li><a href="#351-彩色模型颜色空间">3.5.1 彩色模型（颜色空间）</a>
+          <ol>
+            <li><a href="#rgb">RGB</a></li>
+            <li><a href="#hsi-色调饱和度亮度">HSI (色调、饱和度、亮度）</a></li>
+            <li><a href="#yuv">YUV</a></li>
+            <li><a href="#ycbcr">YCbCr</a></li>
+            <li><a href="#彩色空间转换">彩色空间转换</a></li>
+          </ol>
+        </li>
+        <li><a href="#352-颜色平衡">3.5.2 颜色平衡</a></li>
+        <li><a href="#353-伪彩色增强">3.5.3 伪彩色增强</a></li>
+      </ol>
+    </li>
+    <li><a href="#36-空域滤波">3.6 空域滤波</a>
+      <ol>
+        <li><a href="#361-线性系统响应卷积理论">3.6.1 线性系统响应：卷积理论</a></li>
+        <li><a href="#362-空域滤波及滤波器">3.6.2 空域滤波及滤波器</a>
+          <ol>
+            <li><a href="#线性滤波器">线性滤波器</a></li>
+            <li><a href="#非线性滤波器">非线性滤波器</a></li>
+          </ol>
+        </li>
+        <li><a href="#363-平滑低通滤波器">3.6.3 平滑/低通滤波器</a></li>
+        <li><a href="#364-中值滤波器">3.6.4 中值滤波器</a></li>
+        <li><a href="#365-锐化高通滤波器">3.6.5 锐化/高通滤波器</a>
+          <ol>
+            <li><a href="#2滤波器模板系数的设计">2.滤波器模板系数的设计</a></li>
+            <li><a href="#3滤波器效果">3.滤波器效果</a></li>
+            <li><a href="#4高增益滤波">4.高增益滤波</a></li>
+            <li><a href="#5微分滤波器-数字函数的微分梯度拉普拉斯算子">5.微分滤波器 数字函数的微分、梯度、拉普拉斯算子</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#37-频域增强">3.7 频域增强</a>
+      <ol>
+        <li><a href="#371-频域增强原理">3.7.1 频域增强原理</a>
+          <ol>
+            <li><a href="#频域增强步骤">频域增强步骤</a></li>
+            <li><a href="#相对空域滤波的优势">相对空域滤波的优势</a></li>
+          </ol>
+        </li>
+        <li><a href="#372-同态滤波器">3.7.2 同态滤波器</a>
+          <ol>
+            <li><a href="#原理">原理</a></li>
+            <li><a href="#算法">算法</a></li>
+          </ol>
+        </li>
+        <li><a href="#373低通滤波">3.7.3低通滤波</a>
+          <ol>
+            <li><a href="#理想圆形低通滤波ilpf">理想圆形低通滤波ILPF</a></li>
+            <li><a href="#butterworth低通滤波器-blpf">Butterworth低通滤波器 BLPF</a></li>
+            <li><a href="#指数低通滤波器elpf">指数低通滤波器(ELPF)</a></li>
+            <li><a href="#高斯低通滤波器glpf">高斯低通滤波器(GLPF)</a></li>
+            <li><a href="#梯形低通滤波器tlpf">梯形低通滤波器(TLPF)</a></li>
+          </ol>
+        </li>
+        <li><a href="#374高通滤波">3.7.4高通滤波</a></li>
+        <li><a href="#375从频域规范产生空域模板">3.7.5从频域规范产生空域模板</a></li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li><a href="#41-空域变换">4.1 空域变换</a>
+      <ol>
+        <li><a href="#411-图像像素级运算">4.1.1 图像像素级运算</a>
+          <ol>
+            <li><a href="#点运算">点运算</a>
+              <ol>
+                <li><a href="#线性点运算">线性点运算</a></li>
+                <li><a href="#非线性点运算">非线性点运算</a></li>
+              </ol>
+            </li>
+            <li><a href="#代数运算-针对两幅图像">代数运算 （针对两幅图像）</a></li>
+            <li><a href="#逻辑运算">逻辑运算</a>
+              <ol>
+                <li><a href="#求反">求反</a></li>
+                <li><a href="#与">与</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li><a href="#412-几何变换">4.1.2 几何变换</a>
+          <ol>
+            <li><a href="#基本方式多项式变换透视变换">基本方式：多项式变换、透视变换</a></li>
+            <li><a href="#平移变换">平移变换</a></li>
+            <li><a href="#镜像变换水平镜像垂直镜像">镜像变换：水平镜像、垂直镜像</a></li>
+            <li><a href="#拉伸缩放变换">拉伸/缩放变换</a></li>
+            <li><a href="#旋转变换">旋转变换</a></li>
+            <li><a href="#错切变换">错切变换</a></li>
+            <li><a href="#伪仿射变换双线性几何变换">伪仿射变换——双线性几何变换</a></li>
+            <li><a href="#任意变形变换非线性几何变换">任意变形变换——非线性几何变换</a></li>
+            <li><a href="#基本几何变换的特征">基本几何变换的特征</a></li>
+            <li><a href="#离散几何变换的计算问题">离散几何变换的计算问题</a></li>
+          </ol>
+        </li>
+        <li><a href="#412-灰度插值">4.1.2 灰度插值</a>
+          <ol>
+            <li><a href="#最近邻插值法">最近邻插值法</a></li>
+            <li><a href="#双线性插值法">双线性插值法</a></li>
+            <li><a href="#双线性插值法一阶插值">双线性插值法（一阶插值）</a></li>
+            <li><a href="#最佳插值函数">最佳插值函数</a></li>
+            <li><a href="#高阶插值">高阶插值</a></li>
+            <li><a href="#三次卷积插值算法">三次卷积插值算法</a></li>
+            <li><a href="#内插方法选择">内插方法选择</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#42-频域变换">4.2 频域变换</a>
+      <ol>
+        <li><a href="#421-频域变换概述">4.2.1 频域变换概述</a>
+          <ol>
+            <li><a href="#卷积">卷积</a></li>
+            <li><a href="#相关函数">相关函数</a></li>
+            <li><a href="#正交变换">正交变换</a></li>
+            <li><a href="#可进行图像变换的基本条件正交完备">可进行图像变换的基本条件：正交、完备</a></li>
+          </ol>
+        </li>
+        <li><a href="#422-傅立叶变换">4.2.2 傅立叶变换</a>
+          <ol>
+            <li><a href="#调谐信号欧拉公式">调谐信号(欧拉公式)</a></li>
+            <li><a href="#傅立叶积分">傅立叶积分</a></li>
+            <li><a href="#一维傅立叶变换">一维傅立叶变换</a></li>
+            <li><a href="#一维离散傅立叶变换">一维离散傅立叶变换</a></li>
+            <li><a href="#二维傅立叶变换">二维傅立叶变换</a></li>
+            <li><a href="#二维离散傅立叶变换">二维离散傅立叶变换</a></li>
+            <li><a href="#傅立叶变换的性质">傅立叶变换的性质</a>
+              <ol>
+                <li><a href="#1-线性性质加法定理">1. 线性性质（加法定理）</a></li>
+                <li><a href="#2-比例性质相似性定理">2. 比例性质（相似性定理）：</a></li>
+                <li><a href="#3-可分离性">3. 可分离性：</a></li>
+                <li><a href="#4-空间位移性">4. 空间位移性</a></li>
+                <li><a href="#5-频移性">5. 频移性</a></li>
+                <li><a href="#6-周期性">6. 周期性</a></li>
+                <li><a href="#7-共轭对称性">7. 共轭对称性</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li><a href="#423-快速傅立叶变换-见复印件">4.2.3 快速傅立叶变换 见复印件</a></li>
+        <li><a href="#424-离散余弦变换">4.2.4 离散余弦变换</a></li>
+        <li><a href="#425-沃尔什哈达玛变换">4.2.5 沃尔什—哈达玛变换</a></li>
+        <li><a href="#426-小波变换">4.2.6 小波变换</a></li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li><a href="#51-图像压缩概述">5.1 图像压缩概述</a></li>
+    <li><a href="#52-无损压缩">5.2 无损压缩</a>
+      <ol>
+        <li><a href="#熵编码-霍夫曼编码-huffman">熵编码 霍夫曼编码 (Huffman</a></li>
+        <li><a href="#熵编码-算术编码哈夫曼编码的改进">熵编码 算术编码：哈夫曼编码的改进</a></li>
+        <li><a href="#基于字典的编码-dictionary">基于字典的编码 (dictionary</a></li>
+        <li><a href="#行程编码-run-length-encoding">行程编码 Run Length Encoding</a></li>
+        <li><a href="#lzw-编码方式">LZW 编码方式</a></li>
+      </ol>
+    </li>
+    <li><a href="#53-有损压缩">5.3 有损压缩</a>
+      <ol>
+        <li><a href="#预测编码">预测编码</a>
+          <ol>
+            <li><a href="#dpcm-differential-pulse-code-modulation-编码">DPCM (Differential Pulse Code Modulation) 编码</a></li>
+            <li><a href="#dm-delta-modulation-编码">DM Delta Modulation 编码</a></li>
+          </ol>
+        </li>
+        <li><a href="#变换编码">变换编码</a>
+          <ol>
+            <li><a href="#dct-变换编码">DCT 变换编码</a></li>
+            <li><a href="#变换编码-1">变换编码</a></li>
+            <li><a href="#小波变换编码">小波变换编码</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#65-图像分割基于边缘检测的方法">6.5 图像分割——基于边缘检测的方法</a>
+      <ol>
+        <li><a href="#背景知识-见复印件">背景知识 见复印件</a></li>
+        <li><a href="#边缘检测-见复印件">边缘检测 见复印件</a>
+          <ol>
+            <li><a href="#原理-见复印件">原理 见复印件</a></li>
+            <li><a href="#边缘检测算子-见复印件">边缘检测算子 见复印件</a></li>
+          </ol>
+        </li>
+        <li><a href="#霍夫变换-见复印件">霍夫变换 见复印件</a>
+          <ol>
+            <li><a href="#基本原理-见复印件">基本原理 见复印件</a></li>
+            <li><a href="#算法实现-见复印件">算法实现 见复印件</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li><a href="#61--图像分割基本介绍">6.1  图像分割基本介绍</a></li>
+    <li><a href="#62-边缘检测">6.2 边缘检测</a></li>
+    <li><a href="#63--阈值分割法">6.3  阈值分割法</a>
+      <ol>
+        <li><a href="#631-阈值分割原理">6.3.1 阈值分割原理</a></li>
+        <li><a href="#632-阈值处理">6.3.2 阈值处理</a>
+          <ol>
+            <li><a href="#6321-基本全局阈值处理">6.3.2.1 基本全局阈值处理</a></li>
+            <li><a href="#6322-otus方法的全局阈值处理类间最大方差法">6.3.2.2 Otus方法的全局阈值处理/类间最大方差法</a>
+              <ol>
+                <li><a href="#otus算法实现流程">Otus算法实现流程</a></li>
+                <li><a href="#otus方法类间方差公式推导">Otus方法类间方差公式推导</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li><a href="#633-改进">6.3.3 改进</a>
+          <ol>
+            <li><a href="#a-图像平滑改进">a 图像平滑改进</a></li>
+            <li><a href="#b-边缘改进">b 边缘改进</a></li>
+            <li><a href="#c-可变阈值处理">c 可变阈值处理</a>
+              <ol>
+                <li><a href="#i-基于局部图像性质">(i) 基于局部图像性质</a></li>
+                <li><a href="#ii-基于移动平均">(ii) 基于移动平均</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#64-区域分割法">6.4 区域分割法</a>
+      <ol>
+        <li><a href="#641-区域生长-bottom-up">6.4.1 区域生长 Bottom-up</a></li>
+        <li><a href="#642-区域分离与聚合-up-down">6.4.2 区域分离与聚合 Up-down</a></li>
+        <li><a href="#643-空间聚类k均值聚类">6.4.3 空间聚类/K均值聚类</a></li>
+        <li><a href="#644-超像素的区域分割">6.4.4 超像素的区域分割</a>
+          <ol>
+            <li><a href="#基本思想">基本思想</a></li>
+            <li><a href="#slic-超像素算法">SLIC 超像素算法</a></li>
+            <li><a href="#具体步骤">具体步骤</a></li>
+            <li><a href="#优点">优点</a></li>
+            <li><a href="#总结">总结</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li><a href="#71-背景知识">7.1 背景知识</a></li>
+    <li><a href="#72-边界预处理">7.2 边界预处理</a>
+      <ol>
+        <li><a href="#721-区域骨架抽取-见复印件">7.2.1 区域骨架抽取 见复印件</a></li>
+      </ol>
+    </li>
+    <li><a href="#73-特征描述子">7.3 特征描述子</a>
+      <ol>
+        <li><a href="#731-边界特征描述子-见复印件">7.3.1 边界特征描述子 见复印件</a></li>
+        <li><a href="#732-区域特征描述子">7.3.2 区域特征描述子</a>
+          <ol>
+            <li><a href="#7321-基本描述子-见复印件">7.3.2.1 基本描述子 见复印件</a></li>
+            <li><a href="#7322-纹理描述基于直方图基于统计方法基于谱方法">7.3.2.2 纹理描述(基于直方图、基于统计方法、基于谱方法)</a></li>
+          </ol>
+        </li>
+        <li><a href="#733-特征描述子的主分量">7.3.3 特征描述子的主分量</a></li>
+      </ol>
+    </li>
+    <li><a href="#74尺度不变特征变换-sift-scale-invariant-feature-transform-见复印件">7.4尺度不变特征变换 SIFT Scale-invariant feature transform 见复印件</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#91-原型匹配模式分类">9.1 原型匹配模式分类</a>
+      <ol>
+        <li><a href="#最小距离分类器">最小距离分类器</a></li>
+      </ol>
+    </li>
+    <li><a href="#92-最优贝叶斯统计分类器">9.2 最优（贝叶斯）统计分类器</a>
+      <ol>
+        <li><a href="#贝叶斯决策函数">贝叶斯决策函数</a></li>
+      </ol>
+    </li>
+    <li><a href="#93-神经网络分类">9.3 神经网络分类</a>
+      <ol>
+        <li><a href="#lenet">LeNet</a></li>
+        <li><a href="#vgg16">VGG16</a></li>
+        <li><a href="#wide-resnets">Wide ResNets</a></li>
+        <li><a href="#resnext">ResNeXt</a></li>
+        <li><a href="#densenet">DenseNet</a></li>
+        <li><a href="#densenet-bc">DenseNet-BC</a></li>
+        <li><a href="#squeeze-and-excitation-networks-senet">Squeeze-and-Excitation Networks (SENet)</a></li>
+        <li><a href="#mobilenet">MobileNet</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
                 defer="false"
                 >
@@ -2140,6 +2470,5 @@ C表示压缩，在transition层设一个参数𝜃来减小特征图个数</p>
     }());
 </script>
 
-</body>
-
+    </body>
 </html>

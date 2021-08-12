@@ -6,7 +6,42 @@
     <description>Recent content in Literature Notes on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/literature-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/literature-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Origami Pneumatic Exoskeleton</title>
+      <link>https://K7288.github.io/posts/origami-pnumatic-exoskeleton/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/origami-pnumatic-exoskeleton/</guid>
+      <description>Origami Pneumatic Exoskeleton
+Previous work  西北工业大学 Jing Fang*2 #1 #2 the knee joint 南方科技大学 刘思聪 王峥 wrist                            An Inflatable and Foldable Knee Exosuit Based on Intelligent Management of Biomechanical Energy Research object An inflatable, foldable and variable stiffness knee exosuit and an intelligent control profile for it</description>
+    </item>
+    
+    <item>
+      <title>IPS for Validation</title>
+      <link>https://K7288.github.io/posts/ips-for-validation/</link>
+      <pubDate>Mon, 02 Aug 2021 00:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/ips-for-validation/</guid>
+      <description>Detection of gait events using an F-Scan in-shoe pressure measurement system  对F-Scan® system准确性的讨论 Methods &amp;amp; Results   KT的阈值选取 一些验证指标  Detection of gait events using an F-Scan in-shoe pressure measurement system 比较了force-based detection (FD，软件自带)和area-based method (AD) ；kinetic detection(KT，使用force platforms的数据)作为validation
+对F-Scan® system准确性的讨论 Several studies have evaluated the accuracy and reliability of force and pressure measurements using the F-Scan® system and reached different conclusions. While some authors concluded that F-Scan demonstrated good to excellent reliability in measuring plantar pressures [11], others concluded that the system was not entirely suitable for accurate and repeatable absolute pressure measurements [12], [13], [14] or that the system could be used only in a sample large enough as to allow the detection of the real effect of the treatment [15].</description>
+    </item>
+    
+    <item>
+      <title>Reviews of Gait Event/Phase Detection Methods</title>
+      <link>https://K7288.github.io/posts/reviews-of-gait-eventphase-detection-methods/</link>
+      <pubDate>Mon, 02 Aug 2021 00:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/reviews-of-gait-eventphase-detection-methods/</guid>
+      <description>gait event detection 检索关键词: gait event detection，限定2015及以后123456
+Rueterbories et al. [26] Review of sensor configurations and placements, and a brief review of gait detection methods
+Perez-Ibarra et al. [27] Brief review comparing gait event detection methods, sensors used, placement of sensors and subjects involved
+Panebianco et al. [18] Rule-based methods
+gait phase detection 检索Author Keywords &amp;ldquo;gait phase detection&amp;rdquo;
+event detection 检索Author Keywords &amp;ldquo;event detection&amp;rdquo;
+gait event detection 检索Author Keywords &amp;ldquo;gait event detection&amp;rdquo;</description>
+    </item>
+    
     <item>
       <title>Phase Portraits</title>
       <link>https://K7288.github.io/posts/phase-portrait/</link>
@@ -155,7 +190,9 @@ Experimental Protocol
 Representative diagram
 the integrated design
 cognitive effort
-methodology</description>
+methodology
+prototype
+Sensory Information</description>
     </item>
     
     <item>

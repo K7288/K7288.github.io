@@ -6,7 +6,345 @@
         <description>Recent content on K7288</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Fri, 16 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Origami patterns</title>
+        <link>https://K7288.github.io/posts/origami-patterns/</link>
+        <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://K7288.github.io/posts/origami-patterns/</guid>
+        <description>&lt;p&gt;Yoshimura&lt;/p&gt;
+&lt;p&gt;Miura-ori&lt;/p&gt;
+&lt;p&gt;diagnoal&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Origami Pneumatic Exoskeleton</title>
+        <link>https://K7288.github.io/posts/origami-pnumatic-exoskeleton/</link>
+        <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://K7288.github.io/posts/origami-pnumatic-exoskeleton/</guid>
+        <description>&lt;p&gt;Origami Pneumatic Exoskeleton&lt;/p&gt;
+&lt;h2 id=&#34;previous-work&#34;&gt;Previous work&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;西北工业大学 Jing Fang*2 &lt;a class=&#34;link&#34; href=&#34;#an-inflatable-and-foldable-knee-exosuit-based-on-intelligent-management-of-biomechanical-energy&#34; &gt;#1&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;#novel-accordion-inspired-foldable-pneumatic-actuators-for-knee-assistive-devices&#34; &gt;#2&lt;/a&gt; the knee joint&lt;/li&gt;
+&lt;li&gt;南方科技大学 刘思聪 王峥 wrist&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;an-inflatable-and-foldable-knee-exosuit-based-on-intelligent-management-of-biomechanical-energy&#34;&gt;An Inflatable and Foldable Knee Exosuit Based on Intelligent Management of Biomechanical Energy&lt;/h2&gt;
+&lt;h3 id=&#34;research-object&#34;&gt;Research object&lt;/h3&gt;
+&lt;p&gt;An inflatable, foldable and variable stiffness knee exosuit and an intelligent control profile for it&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Biomechanical energy harvesting: Humans are a rich source of energy. An average-sized person
+stores as much energy in fat as a 1000-kg battery&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;methods&#34;&gt;Methods&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;a large amount of negative power that is marked by K1, K2 and K3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;assets/image-20210806140539308.png&#34; alt=&#34;image-20210806140539308&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Intelligent Energy Management Profile&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;quasi-stiffness to characterize the spring-like behavior of knee joint.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;assets/image-20210806140817591.png&#34; alt=&#34;image-20210806140817591&#34; style=&#34;zoom:53%;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;通过与膝关节平行增加一个变刚度弹簧，并根据图3这六个点上（根据步态周期划分）调整其刚度，可以收集和再利用人体的生物机械能，节省行走过程中消耗的体力。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DESIGN AND FABRICATION&lt;/p&gt;
+&lt;p&gt;热塑性聚氨酯(TPU)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;assets/image-20210806105450817.png&#34; alt=&#34;image-20210806105450817&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;novel-accordion-inspired-foldable-pneumatic-actuators-for-knee-assistive-devices&#34;&gt;Novel Accordion-Inspired Foldable Pneumatic Actuators for Knee Assistive Devices&lt;/h2&gt;
+&lt;h3 id=&#34;methods-1&#34;&gt;Methods&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Biomechanics and design requirements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210806151335187.png&#34; alt=&#34;image-20210806151335187&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;​	能推出膝关节外骨骼需要提供的角度以及力矩（康复型的需要小一点）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;设计 （同上篇）the geometry of FPBAs also ensures that their &lt;strong&gt;internal&lt;/strong&gt;
+&lt;strong&gt;airflow is always unobstructed at any angle&lt;/strong&gt;, which avoids the
+airflow restriction problem for single-chamber actuators at extreme bending angles.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;虚功原理推出输出力矩（volume/angle relationships和内部压强的函数） $\tau=\left(\frac{P_{0} \cdot V_{0}\left(\theta_{0}\right)}{V(\theta)}-P_{a t m}\right) \cdot \frac{\mathrm{d} V(\theta)}{\mathrm{d}  \theta}$&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;assets/image-20210806153740685.png&#34; alt=&#34;image-20210806153740685&#34; style=&#34;zoom:33%;&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;控制：不同的辅助动作给不同的恒压&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;assets/image-20210806155605797.png&#34; alt=&#34;image-20210806155605797&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;img src=&#34;assets/image-20210806170617002.png&#34; alt=&#34;image-20210806170617002&#34; style=&#34;zoom:40%;&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;origami-structured-actuating-modules-for-upper-limb-support&#34;&gt;Origami-Structured Actuating Modules for Upper Limb Support&lt;/h2&gt;
+&lt;p&gt;题目 关键词 摘要 结论 图表 引言 结果和讨论 实验&lt;/p&gt;
+&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+&lt;p&gt;a layered manufacturing process for a durable pattern-embedded sheet, which is applicable to the construction of any origami-structured SPAs, 2) an analytical model of the exerted force and bending angle, as well as a design optimization, and 3) experimental verification of the exerted force and upper limb motion assistance offered by the actuating module when used as a wearable system.&lt;/p&gt;
+&lt;h3 id=&#34;research-question&#34;&gt;Research question&lt;/h3&gt;
+&lt;h3 id=&#34;introduction-1&#34;&gt;Introduction&lt;/h3&gt;
+&lt;h3 id=&#34;methods-2&#34;&gt;Methods&lt;/h3&gt;
+&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;
+&lt;h3 id=&#34;highlights&#34;&gt;Highlights&lt;/h3&gt;
+&lt;h3 id=&#34;limitsfurther-work&#34;&gt;Limits/Further Work&lt;/h3&gt;
+&lt;h3 id=&#34;thoughtscomments&#34;&gt;Thoughts/Comments&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;怎么用充气实现弯曲？&lt;/p&gt;
+&lt;p&gt;好像是结构自身的特点？是未充满气就是弯曲吗？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;可以实现twist吗？看实验图片是有的（手向斜前侧伸出），但是介绍Yoshimura的时候没说twist这样会不会有问题？&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;a-compact-soft-robotic-wrist-brace-with-origami-actuators&#34;&gt;A Compact Soft Robotic Wrist Brace With Origami Actuators&lt;/h2&gt;
+&lt;p&gt;SOA(soft origami actuator)&lt;/p&gt;
+&lt;h3 id=&#34;materials&#34;&gt;Materials&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;synergistic actuation approach 协同驱动&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210810143810899.png&#34; alt=&#34;image-20210810143810899&#34;  /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;soft-on-soft&lt;/p&gt;
+&lt;p&gt;锚点使得soft actuator的output linear deformation and force in axial direction重整为consecutive bending&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Yoshimura pattern&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;small elastic constant in the axial direction;&lt;/li&gt;
+&lt;li&gt;simplicity of elementary facets&lt;/li&gt;
+&lt;li&gt;intrinsically high circumferential bending rigidity&lt;/li&gt;
+&lt;li&gt;The hexagon facets effectively eliminate the extruding vertices formed by the triangular facets of the standard Yoshimura pattern; thus, the potential stress concentration at the vertices was avoided.六边形切面有效地消除了标准Yoshimura三角形切面所形成的挤压顶点;从而避免了顶点处潜在的应力集中。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;methods-3&#34;&gt;Methods&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;整体简化成一个并联机构(a parallel mechanism with four soft actuators) 2-DOF的运动简化成绕x/y轴的转动，通过D-H方法可以得到末端位置&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;assets/image-20210810152312429.png&#34; alt=&#34;image-20210810152312429&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;不同load下的位移-压强关系可测定&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A cascaded control strategy (a motion-control outer loop and multichannel pressure-control inner loops for each SOA)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210810142215509.png&#34; alt=&#34;a cascaded control strategy&#34;  /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The outer loop, controlled by the high-level controller, used pressure feedback information from each actuator to obtain the overall device motion estimation and then compared with the desired motion mapped from the different control commands (flexion/extension, ulnar/radial deviation, and engagement signal). The resultant pressure commands from the high-level controller were then relayed to the low-level controllers, each regulating one soft origami actuator accordingly.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;del&gt;没有讲是怎么配合人的&lt;/del&gt; 其实讲了，因为是康复型不是增强型所以只要输入上层指令&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;According to Flores et al. (2014), the average maximal torque generated by the wrist of a healthy individual in radial/ulnar deviation is 1.3 Nm. As shown in Figure 7F, the force generated from proposed SR brace in radial/ulnar deviation was around 6 N; thus, considering the length of the 2-actuator unit of 128 mm, the torque generated by the SR brace reached up to 0.76 Nm, which is about &lt;strong&gt;58% of the max torque of human wrist&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;题目 关键词 摘要 结论 图表 引言 结果和讨论 实验&lt;/p&gt;
+&lt;h3 id=&#34;research-question-1&#34;&gt;Research question&lt;/h3&gt;
+&lt;h3 id=&#34;introduction-2&#34;&gt;Introduction&lt;/h3&gt;
+&lt;h3 id=&#34;methods-4&#34;&gt;Methods&lt;/h3&gt;
+&lt;h3 id=&#34;results-1&#34;&gt;Results&lt;/h3&gt;
+&lt;h3 id=&#34;highlights-1&#34;&gt;Highlights&lt;/h3&gt;
+&lt;h3 id=&#34;limitsfurther-work-1&#34;&gt;Limits/Further Work&lt;/h3&gt;
+&lt;h3 id=&#34;thoughtscomments-1&#34;&gt;Thoughts/Comments&lt;/h3&gt;
+&lt;p&gt;题目 关键词 摘要 结论 图表 引言 结果和讨论 实验&lt;/p&gt;
+&lt;h3 id=&#34;research-question-2&#34;&gt;Research question&lt;/h3&gt;
+&lt;h3 id=&#34;introduction-3&#34;&gt;Introduction&lt;/h3&gt;
+&lt;h3 id=&#34;methods-5&#34;&gt;Methods&lt;/h3&gt;
+&lt;h3 id=&#34;results-2&#34;&gt;Results&lt;/h3&gt;
+&lt;h3 id=&#34;highlights-2&#34;&gt;Highlights&lt;/h3&gt;
+&lt;h3 id=&#34;limitsfurther-work-2&#34;&gt;Limits/Further Work&lt;/h3&gt;
+&lt;h3 id=&#34;thoughtscomments-2&#34;&gt;Thoughts/Comments&lt;/h3&gt;
+</description>
+        </item>
+        <item>
+        <title>IPS for Validation</title>
+        <link>https://K7288.github.io/posts/ips-for-validation/</link>
+        <pubDate>Mon, 02 Aug 2021 00:52:44 +0800</pubDate>
+        
+        <guid>https://K7288.github.io/posts/ips-for-validation/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#detection-of-gait-events-using-an-f-scan-in-shoe-pressure-measurement-system&#34; &gt;Detection of gait events using an F-Scan in-shoe pressure measurement system&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%af%b9f-scan-system%e5%87%86%e7%a1%ae%e6%80%a7%e7%9a%84%e8%ae%a8%e8%ae%ba&#34; &gt;对F-Scan® system准确性的讨论&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#methods--results&#34; &gt;Methods &amp;amp; Results&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#kt%e7%9a%84%e9%98%88%e5%80%bc%e9%80%89%e5%8f%96&#34; &gt;KT的阈值选取&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e4%b8%80%e4%ba%9b%e9%aa%8c%e8%af%81%e6%8c%87%e6%a0%87&#34; &gt;一些验证指标&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;detection-of-gait-events-using-an-f-scan-in-shoe-pressure-measurement-system&#34;&gt;Detection of gait events using an F-Scan in-shoe pressure measurement system&lt;/h2&gt;
+&lt;p&gt;比较了force-based detection (FD，软件自带)和area-based method (AD) ；kinetic detection(KT，&lt;strong&gt;使用force platforms的数据&lt;/strong&gt;)作为validation&lt;/p&gt;
+&lt;h3 id=&#34;对f-scan-system准确性的讨论&#34;&gt;对F-Scan® system准确性的讨论&lt;/h3&gt;
+&lt;p&gt;Several studies have evaluated the accuracy and reliability of force and pressure measurements using the F-Scan® system and reached different conclusions. While some authors concluded that F-Scan demonstrated good to excellent reliability in measuring plantar pressures [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib11&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;11]&lt;/a&gt;, others concluded that the system was not entirely suitable for accurate and repeatable absolute pressure measurements [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib12&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;12]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib13&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;13]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib14&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;14]&lt;/a&gt; or that the system could be used only in a sample large enough as to allow the detection of the real effect of the treatment [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib15&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;15]&lt;/a&gt;. Other studies suggested that errors could be greatly minimized by adequate preparation and use of the system [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib16&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;16]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib17&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;17]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib18&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;18]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib19&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;19]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib20&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;20]&lt;/a&gt;. These and similar studies show that the system could provide valuable information but care should be taken when measuring absolute values of force or pressure.&lt;/p&gt;
+&lt;p&gt;[&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib16&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;16]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib17&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;17]&lt;/a&gt;建议subject先走10min保证温度+适应，所以可以先穿上鞋再贴IMU&lt;/p&gt;
+&lt;h3 id=&#34;methods--results&#34;&gt;Methods &amp;amp; Results&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;#kt%e7%9a%84%e9%98%88%e5%80%bc%e9%80%89%e5%8f%96&#34; &gt;KT&lt;/a&gt;&lt;/strong&gt; 10N threshold&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;FD&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$\text{force threshold}= \text{minimum}+(\text{maximum}-\text{minimum})\times \frac{10}{100}$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;​AD&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$\text {area threshold}=\mathrm{ALS} \mathrm{w}+(\mathrm{ALSt}-\mathrm{ALSw}) \times \frac{5}{100}$​​&lt;/p&gt;
+&lt;p&gt;统计load area，出现频率最高的小面积($&amp;lt; 2000 \text{mm}^2$​)就是$\text{area loaded during swing (ALSw)}$​，($&amp;gt;2000 \text{mm}^2$​​) 的up to the maximum area (b) was used to find the $\text{area loaded during stance (ALSt)}$&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/1-s2.0-S096663620800043X-gr1.jpg&#34; style=&#34;zoom:67%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;5 set by visually inspecting&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;statistical analysis&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A 2 (insoles sets: 1 and 2) × 2 (time differences with respect to the gold standard for methods FD and AD) mixed design analysis of variance (ANOVA) was used for the analysis, with time differences serving as the within subjects factor.&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The results of the statistical test for IC showed that there was a significant effect for the methods factor, &lt;em&gt;F&lt;/em&gt; (1, 8) = 348.5, &lt;em&gt;p&lt;/em&gt; &amp;lt; 0.01. The effect of the insoles sets was not significant, &lt;em&gt;F&lt;/em&gt; (1, 8) = 0.35, &lt;em&gt;p&lt;/em&gt; &amp;gt; 0.05, and the interaction of insoles sets and methods was also not significant, &lt;em&gt;F&lt;/em&gt; (1, 8) = 5.1, &lt;em&gt;p&lt;/em&gt; &amp;gt; 0.05.&lt;/p&gt;
+&lt;p&gt;For FO, the statistical test also showed a significant effect for the detection methods, &lt;em&gt;F&lt;/em&gt; (1, 8) = 600.2, &lt;em&gt;p&lt;/em&gt; &amp;lt; 0.01. The effect of the insoles sets was not significant, &lt;em&gt;F&lt;/em&gt; (1, 8) = 0.77, &lt;em&gt;p&lt;/em&gt; &amp;gt; 0.05, and the interaction of insoles sets and methods was also not significant, &lt;em&gt;F&lt;/em&gt; (1, 8) = 11.1, &lt;em&gt;p&lt;/em&gt; &amp;gt; 0.05.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/1-s2.0-S096663620800043X-gr2.jpg&#34; style=&#34;zoom: 67%;&#34; /&gt;&lt;img src=&#34;https://K7288.github.io/assets/1-s2.0-S096663620800043X-gr3.jpg&#34; style=&#34;zoom: 67%;&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;kt的阈值选取&#34;&gt;KT的阈值选取&lt;/h2&gt;
+&lt;p&gt;直接用阈值最好是使用测力板&amp;quot;gold standards&amp;quot;，但也可以用insole pressure sensor&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;IPSs are often considered as an alternative to force plates in validation studies due to several advantages including cost factor, wearability, and unconstrained movement that allows natural gait in both indoor and outdoor environments.&lt;/p&gt;
+&lt;p&gt;Despite these advantages, there are some constraints to consider. IPSs are typically placed inside the shoe and are thus subject to pressure between it and the foot, which can lead to non-zero pressure readings even when the foot is in swing phase. Although IPSs are comparable to force plates when it comes to estimation of temporal features, using them for real-time ground reaction force estimation is not recommended since it takes a considerably longer time to reach the set value compared to a force plate.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Different thresholds algorithms proposed: a fixed threshold for both events of zero [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib24&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;24]&lt;/a&gt;, 2.5 N [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib25&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;25]&lt;/a&gt; and 10 N [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib8&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;8]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib9&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;9]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib26&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;26]&lt;/a&gt;, a combination of 10 N for IC and 5 N for FO [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib10&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;10]&lt;/a&gt;, [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib27&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;27]&lt;/a&gt;, a proportion of body weight [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib28&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;28]&lt;/a&gt; or a threshold equal to two standard deviations above the mean unloaded baseline [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib7&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;7]&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;GRF thresholds of 10 N, 15 N, and 2% of the maximum vertical GRF(high agreement between the different force thresholds (R2 value &amp;gt;0.99))&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;three different thresholds, i.e., 5 N, 10 N, and 50 N 不同阈值之间有差别&lt;/li&gt;
+&lt;li&gt;IC and TO events were the 10 N and 25 N thresholds&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;HO and TO: 30% of the maximum; &lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;39% of the maximum FSR value (on a rising edge)&lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;一些验证指标&#34;&gt;一些验证指标&lt;/h2&gt;
+&lt;p&gt;误差，误差分布 accuracy (precision, recall, F1-score) and timing agreement (Bland-Altman method)&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Prasanth, H., Caban, M., Keller, U., Courtine, G., Ijspeert, A., Vallery, H., &amp;amp; von Zitzewitz, J. (2021). Wearable sensor-based real-time gait detection: A systematic review. Sensors, 21(8)&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Rosa M.S. Visscher, Sailee Sansgiri, Marie Freslier, Jaap Harlaar, Reinald Brunner, William R. Taylor, Navrag B. Singh, Towards validation and standardization of automatic gait event identification algorithms for use in paediatric pathological populations, Gait &amp;amp; Posture, Volume 86, 2021, Pages 64-69, ISSN 0966-6362, &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/j.gaitpost.2021.02.031&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/j.gaitpost.2021.02.031&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;J.P. Hunter, R.N. Marshall, P.J. McNair &lt;strong&gt;Relationships between ground reaction force impulse and kinematics of sprint-running acceleration&lt;/strong&gt; Journal of Applied Biomechanics, 21 (1) (2005), pp. 31-43&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;E. Bergamini, P. Picerno, H. Pillet, F. Natta, P. Thoreux &lt;strong&gt;Estimation of temporal parameters during sprint running using a trunk-mounted inertial measurement unit&lt;/strong&gt; J. Biomech., 45 (2012), pp. 1123-1126&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Mo, S.; Chow, D.H.K. Accuracy of Three Methods in Gait Event Detection during Overground Running. &lt;em&gt;Gait Posture&lt;/em&gt; &lt;strong&gt;2018&lt;/strong&gt;, &lt;em&gt;59&lt;/em&gt;, 93–98.&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;J. Figueiredo, P. Félix, L. Costa, J. C. Moreno and C. P. Santos, &amp;ldquo;Gait Event Detection in Controlled and Real-Life Situations: Repeated Measures From Healthy Subjects,&amp;rdquo; in IEEE Transactions on Neural Systems and Rehabilitation Engineering, vol. 26, no. 10, pp. 1945-1956, Oct. 2018, doi: 10.1109/TNSRE.2018.2868094.&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Hanlon M and Anderson R 2009 Real-time gait event detection using wearable sensors &lt;em&gt;Gait Posture&lt;/em&gt; &lt;strong&gt;30&lt;/strong&gt; 523–7&amp;#160;&lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+        </item>
+        <item>
+        <title>Reviews of Gait Event/Phase Detection Methods</title>
+        <link>https://K7288.github.io/posts/reviews-of-gait-eventphase-detection-methods/</link>
+        <pubDate>Mon, 02 Aug 2021 00:52:44 +0800</pubDate>
+        
+        <guid>https://K7288.github.io/posts/reviews-of-gait-eventphase-detection-methods/</guid>
+        <description>&lt;h2 id=&#34;gait-event-detection&#34;&gt;gait event detection&lt;/h2&gt;
+&lt;p&gt;检索关键词: gait event detection，限定2015及以后&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Rueterbories et al. [26] Review of sensor configurations and placements, and a brief
+review of gait detection methods&lt;/p&gt;
+&lt;p&gt;Perez-Ibarra et al. [27] Brief review comparing gait event detection methods, sensors used, placement of sensors and subjects involved&lt;/p&gt;
+&lt;p&gt;Panebianco et al. [18] Rule-based methods&lt;/p&gt;
+&lt;h2 id=&#34;gait-phase-detection&#34;&gt;gait phase detection&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.webofscience.com/wos/alldb/summary/57226eff-c2ae-4eb3-91bd-e96594eab295-02dc6d49/date-descending/1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;检索Author Keywords &amp;ldquo;gait phase detection&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;event-detection&#34;&gt;event detection&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.webofscience.com/wos/alldb/summary/da435c9d-241f-46b7-be7b-4230ef82c979-02dc6d7b/date-descending/1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;检索Author Keywords &amp;ldquo;event detection&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;gait-event-detection-1&#34;&gt;gait event detection&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.webofscience.com/wos/alldb/summary/11caf6e3-d842-4474-a033-08c1df7ab6c6-02e490df/date-descending/1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;检索Author Keywords &amp;ldquo;gait event detection&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Taborri, J., Palermo, E., Rossi, S., &amp;amp; Cappa, P. (2016). Gait partitioning methods: A systematic review. Sensors (Switzerland), 16(1). &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.3390/s16010066&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.3390/s16010066&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Caldas, R., Mundt, M., Potthast, W., Buarque de Lima Neto, F., &amp;amp; Markert, B. (2017). A systematic review of gait analysis methods based on inertial sensors and adaptive algorithms. Gait and Posture, 57, 204–210. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/j.gaitpost.2017.06.019&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/j.gaitpost.2017.06.019&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Pacini Panebianco, G., Bisi, M. C., Stagni, R., &amp;amp; Fantozzi, S. (2018). Analysis of the performance of 17 algorithms from a systematic review: Influence of sensor position, analysed variable and computational approach in gait timing estimation from IMU measurements. Gait and Posture, 66, 76–82. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/j.gaitpost.2018.08.025B&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/j.gaitpost.2018.08.025B&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;enson, L. C., Clermont, C. A., Bošnjak, E., &amp;amp; Ferber, R. (2018). The use of wearable devices for walking and running gait analysis outside of the lab: A systematic review. Gait &amp;amp; Posture, 63, 124–138. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/J.GAITPOST.2018.04.047P&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/J.GAITPOST.2018.04.047P&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;rasanth, H., Caban, M., Keller, U., Courtine, G., Ijspeert, A., Vallery, H., &amp;amp; von Zitzewitz, J. (2021). Wearable sensor-based real-time gait detection: A systematic review. Sensors, 21(8). &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.3390/s21082727&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.3390/s21082727&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Celik, Y., Stuart, S., Woo, W. L., &amp;amp; Godfrey, A. (2021). Gait analysis in neurological populations: Progression in the use of wearables. Medical Engineering &amp;amp; Physics, 87, 9–29. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/J.MEDENGPHY.2020.11.005&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/J.MEDENGPHY.2020.11.005&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+        </item>
+        <item>
         <title>Phase Portraits</title>
         <link>https://K7288.github.io/posts/phase-portrait/</link>
         <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>
@@ -746,9 +1084,9 @@ If $ \Delta F_{Y F}&amp;gt;0 $ and $ \Delta F_{Y F} \leq 0 $ and $ F_{Y B}&amp;g
 &lt;p&gt;calculation&lt;/p&gt;
 &lt;p&gt;$r=[\delta\ \varepsilon\ 0]$  is a vector on the ground and $ \rho(\delta, \varepsilon) $ is the vertical force acted on unit area at point $ r$. So the sum of vertical force is like $f_{z}=\int_{s} \rho(\delta, \varepsilon) d S$&lt;/p&gt;
 &lt;p&gt;torque at  $p=\left[p_{x}\ p_{y}\ 0\right]$  is  $\tau_{n}(p) $.&lt;/p&gt;
-&lt;p&gt;$\begin{aligned}
-\tau_{nx} &amp;amp;=\int_{S}(\delta-p_{x}) \rho(\delta, \varepsilon) d S  \\
-\tau_{ny} &amp;amp;=\int_{S}(\varepsilon-p_{y}) \rho(\delta, \varepsilon) d S  \\
+&lt;p&gt;$\begin{aligned} 
+\tau_{nx} &amp;amp;=\int_{S}(\delta-p_{x}) \rho(\delta, \varepsilon) d S  \\ 
+\tau_{ny} &amp;amp;=\int_{S}(\varepsilon-p_{y}) \rho(\delta, \varepsilon) d S  \\ 
 \tau_{nz} &amp;amp;=0
 \end{aligned}$&lt;/p&gt;
 &lt;p&gt;At ZMP  $\tau_{n x}=0, \tau_{n y}=0$ , we can get&lt;/p&gt;
@@ -799,7 +1137,7 @@ p_{x} &amp;amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\
 &lt;p&gt;⏬&lt;/p&gt;
 &lt;p&gt;⏬&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#series&#34;&gt;我实现了跳转。&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;series&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;这是一段文字，我想跳转到这里。
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;series&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;这是一段文字，我想跳转到这里。
 
 ⏬
 
@@ -1071,6 +1409,8 @@ p_{x} &amp;amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\
 &lt;p&gt;the integrated design&lt;/p&gt;
 &lt;p&gt;cognitive effort&lt;/p&gt;
 &lt;p&gt;methodology&lt;/p&gt;
+&lt;p&gt;prototype&lt;/p&gt;
+&lt;p&gt;Sensory Information&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -1178,7 +1518,7 @@ the collaborator&amp;rsquo;s intention by learning the meaning of the collaborat
 &lt;p&gt;the intention of the collaborator is identified through online prediction.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;In order to verify the validity of the RBFNN method in this paper, the robot’s contact point speed and interaction force are analyzed by comparing with the corresponding experimental parameters values from the adaptive impedance control algorithm.
+&lt;p&gt;In order to verify the validity of the RBFNN method in this paper, the robot’s contact point speed and interaction force are analyzed by comparing with the corresponding experimental parameters values from the adaptive impedance control algorithm. 
 &lt;img src=&#34;https://K7288.github.io/assets/4141269.fig.002.svg&#34; align=&#34;center&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -1227,7 +1567,8 @@ motions have equal Froude numbers  $u^2 /gh$ (Duncan1953).&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;（针对不同物种）size does not affect mass-specific mechanical cost of transport (Alexander and Jayes, 1983). The known shape differences among modern humans are, however, sufficiently large to account for much of the observed variation in metabolic energy expenditure and we expect this to be the case for any group that is of similar size but different shape. Unfortunately, we currently do not have a simple method to control or adjust for size–shape differences in individuals that are not geometrically similar. Musculoskeletal modeling is the only method that accounts for both size and shape. Those shape differences that are “reasonably close” at the mouse-to-elephant level may become “grossly different” for within-species energetic comparisons.目前尚没有一种简单的方法来控制或调整几何上不相似的个体的大小-形状差异。&lt;/p&gt;
 &lt;h1 id=&#34;the-energetics-of-human-walking-is-froude-number-fr-useful-for-meta--bolic-comparisons&#34;&gt;The energetics of human walking: Is Froude number (Fr) useful for meta- bolic comparisons?&lt;/h1&gt;
-&lt;p&gt;Kramer PA, Sarton-Miller I. The energetics of human walking: Is Froude number (Fr) useful for meta- bolic comparisons? Gait &amp;amp; Posture. 2008; 27(2):209–215. &lt;a href=&#34;https://doi.org/10.1016/j.gaitpost.2007.03.009&#34;&gt;https://doi.org/10.1016/j.gaitpost.2007.03.009&lt;/a&gt; PMID: 17459708&lt;/p&gt;
+&lt;p&gt;Kramer PA, Sarton-Miller I. The energetics of human walking: Is Froude number (Fr) useful for meta- bolic comparisons? Gait &amp;amp; Posture. 2008; 27(2):209–215. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/j.gaitpost.2007.03.009&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/j.gaitpost.2007.03.009&lt;/a&gt; PMID: 17459708&lt;/p&gt;
 &lt;p&gt;回归分析，速度、速度平方、Fr或LiMb的预测能力没有显著差异，所以Fr和LiMb都不能补偿腿长的影响。腿的长度确实影响行走的人的能量消耗&lt;/p&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
@@ -3319,16 +3660,20 @@ Upon comparing nested model Akaike information criterion (AIC) values, the lowes
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Bowden MG, Balasubramanian CK, Neptune RR, Kautz SA. Anterior-Posterior Ground Reaction Forces as a Measure of Paretic Leg Contribution in Hemiparetic Walking. Stroke. 2006; 37:872–877. &lt;a href=&#34;https://doi.org/10.1161/01.STR.0000204063.75779.8d&#34;&gt;https://doi.org/10.1161/01.STR.0000204063.75779.8d&lt;/a&gt; PMID: 16456121&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Bowden MG, Balasubramanian CK, Neptune RR, Kautz SA. Anterior-Posterior Ground Reaction Forces as a Measure of Paretic Leg Contribution in Hemiparetic Walking. Stroke. 2006; 37:872–877. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1161/01.STR.0000204063.75779.8d&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1161/01.STR.0000204063.75779.8d&lt;/a&gt; PMID: 16456121&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Peterson CL, Cheng J, Kautz SA, Neptune RR. Leg extension is an important predictor of paretic leg propulsion in hemiparetic walking. Gait &amp;amp; Posture. 2010; 32(4):451–456. &lt;a href=&#34;https://doi.org/10.1016/j.gaitpost.2010.06.014&#34;&gt;https://doi.org/10.1016/j.gaitpost.2010.06.014&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Peterson CL, Cheng J, Kautz SA, Neptune RR. Leg extension is an important predictor of paretic leg propulsion in hemiparetic walking. Gait &amp;amp; Posture. 2010; 32(4):451–456. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/j.gaitpost.2010.06.014&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/j.gaitpost.2010.06.014&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Kramer PA, Sarton-Miller I. The energetics of human walking: Is Froude number (Fr) useful for meta- bolic comparisons? Gait &amp;amp; Posture. 2008; 27(2):209–215. &lt;a href=&#34;https://doi.org/10.1016/j.gaitpost.2007.03.009&#34;&gt;https://doi.org/10.1016/j.gaitpost.2007.03.009&lt;/a&gt; PMID: 17459708; Alexander R. The gaits of bipedal and quadrupedal animals. The International Journal of Robotics Research. 1984;.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Kramer PA, Sarton-Miller I. The energetics of human walking: Is Froude number (Fr) useful for meta- bolic comparisons? Gait &amp;amp; Posture. 2008; 27(2):209–215. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/j.gaitpost.2007.03.009&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/j.gaitpost.2007.03.009&lt;/a&gt; PMID: 17459708; Alexander R. The gaits of bipedal and quadrupedal animals. The International Journal of Robotics Research. 1984;.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Pataky TC, Vanrenterghem J, Robinson MA. The probability of false positives in zero-dimensional analyses of one-dimensional kinematic, force and EMG trajectories. Journal of Biomechanics. 2016; 49 (9):1468–1476. &lt;a href=&#34;https://doi.org/10.1016/j.jbiomech.2016.03.032&#34;&gt;https://doi.org/10.1016/j.jbiomech.2016.03.032&lt;/a&gt; PMID: 27067363&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pataky TC, Vanrenterghem J, Robinson MA. The probability of false positives in zero-dimensional analyses of one-dimensional kinematic, force and EMG trajectories. Journal of Biomechanics. 2016; 49 (9):1468–1476. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/j.jbiomech.2016.03.032&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/j.jbiomech.2016.03.032&lt;/a&gt; PMID: 27067363&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -3838,13 +4183,13 @@ $$&lt;/p&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;$$
-\begin{aligned}
+\begin{aligned} 
 C_{n+1, t+1}-C_{n, t} &amp;amp;=\frac{2}{n+1}+\frac{2}{n}+\cdots+\frac{2}{t+2}
-+C_{t+1, t+1}-C_{t, t} \\
-&amp;amp;=2\left(H_{n+1}-H_{t+1}\right)+2-2 /(t+1)
++C_{t+1, t+1}-C_{t, t} \\ 
+&amp;amp;=2\left(H_{n+1}-H_{t+1}\right)+2-2 /(t+1) 
 \end{aligned}
 $$&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Latex&#34; data-lang=&#34;Latex&#34;&gt;&lt;span class=&#34;k&#34;&gt;\begin&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;aligned&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; 
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Latex&#34; data-lang=&#34;Latex&#34;&gt;&lt;span class=&#34;k&#34;&gt;\begin&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;aligned&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; 
 C&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;n+1, t+1&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;-C&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;n, t&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;&amp;amp;&lt;/span&gt;=&lt;span class=&#34;k&#34;&gt;\frac&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;2&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;n+1&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;+&lt;span class=&#34;k&#34;&gt;\frac&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;2&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;n&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;+&lt;span class=&#34;k&#34;&gt;\cdots&lt;/span&gt;+&lt;span class=&#34;k&#34;&gt;\frac&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;2&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;t+2&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
 +C&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;t+1, t+1&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;-C&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;t, t&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\\\\&lt;/span&gt; 
 &lt;span class=&#34;nb&#34;&gt;&amp;amp;&lt;/span&gt;=2&lt;span class=&#34;k&#34;&gt;\left&lt;/span&gt;(H&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;n+1&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;-H&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;t+1&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\right&lt;/span&gt;)+2-2 /(t+1) 
@@ -3859,7 +4204,7 @@ C&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;n+1, t+1&lt;span class=&#34;nb&#3
 \begin{cases}\begin{array}{l}
 \theta_{i}(t-j)^{\prime}=\frac{1}{3} \Sigma_{1}^{-1} \theta_{i}(t-j),\\ a_{i}(t-j)^{\prime}=\frac{1}{3} \sum_{1}^{-1} a_{i}(t-j), i=\{r h,l h, r k, l k\}\\w_{i}(t-j)^{\prime}=\frac{1}{3} \Sigma_{1}^{-1} w_{i}(t-j)\end{array}\end{cases}
 $$&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;k&#34;&gt;\begin&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;cases&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\begin&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;array&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;l&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;k&#34;&gt;\begin&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;cases&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\begin&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;array&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;l&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
 &lt;span class=&#34;k&#34;&gt;\theta&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;i&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;(t-j)&lt;span class=&#34;nb&#34;&gt;^{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\prime&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;=&lt;span class=&#34;k&#34;&gt;\frac&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;13&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\Sigma&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;1&lt;span class=&#34;nb&#34;&gt;}^{&lt;/span&gt;-1&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\theta&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;i&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;(t-j),&lt;span class=&#34;k&#34;&gt;\\\\&lt;/span&gt; a&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;i&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;(t-j)&lt;span class=&#34;nb&#34;&gt;^{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\prime&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;=&lt;span class=&#34;k&#34;&gt;\frac&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;1&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;3&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\sum&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;1&lt;span class=&#34;nb&#34;&gt;}^{&lt;/span&gt;-1&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; a&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;i&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;(t-j), i=&lt;span class=&#34;k&#34;&gt;\\&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;r h,l h, r k, l k&lt;span class=&#34;k&#34;&gt;\\&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\\\\&lt;/span&gt;w&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;i&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;(t-j)&lt;span class=&#34;nb&#34;&gt;^{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\prime&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;=&lt;span class=&#34;k&#34;&gt;\frac&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;1&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;3&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\Sigma&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;1&lt;span class=&#34;nb&#34;&gt;}^{&lt;/span&gt;-1&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; w&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;i&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;(t-j)&lt;span class=&#34;k&#34;&gt;\end&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;array&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\end&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;cases&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;\begin{array}&lt;/code&gt;和&lt;code&gt;\end{array}&lt;/code&gt;之间不能换行😅&lt;/p&gt;
 &lt;p&gt;大括号只能用&lt;code&gt;\begin{cases}&lt;/code&gt; &lt;code&gt;\end{cases}&lt;/code&gt;实现了&lt;/p&gt;

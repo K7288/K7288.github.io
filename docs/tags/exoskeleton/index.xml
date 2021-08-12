@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exoskeleton on K7288</title>
+    <link>https://K7288.github.io/tags/exoskeleton/</link>
+    <description>Recent content in Exoskeleton on K7288</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 05 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/tags/exoskeleton/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Origami Pneumatic Exoskeleton</title>
+      <link>https://K7288.github.io/posts/origami-pnumatic-exoskeleton/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/origami-pnumatic-exoskeleton/</guid>
+      <description>Origami Pneumatic Exoskeleton
+Previous work  西北工业大学 Jing Fang*2 #1 #2 the knee joint 南方科技大学 刘思聪 王峥 wrist                            An Inflatable and Foldable Knee Exosuit Based on Intelligent Management of Biomechanical Energy Research object An inflatable, foldable and variable stiffness knee exosuit and an intelligent control profile for it</description>
+    </item>
+    
+  </channel>
+</rss>
