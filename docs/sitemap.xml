@@ -71,9 +71,6 @@
     <loc>https://K7288.github.io/categories/control/</loc>
     <lastmod>2021-07-08T14:29:01+08:00</lastmod>
   </url><url>
-    <loc>https://K7288.github.io/categories/intention-recognition/</loc>
-    <lastmod>2021-07-08T14:29:01+08:00</lastmod>
-  </url><url>
     <loc>https://K7288.github.io/posts/a-novel-motion-intention-recognition-approach-for-soft-exoskeleton-via-imu/</loc>
     <lastmod>2021-07-08T09:05:01+08:00</lastmod>
   </url><url>
@@ -84,9 +81,6 @@
     <lastmod>2021-07-07T14:00:00+08:00</lastmod>
   </url><url>
     <loc>https://K7288.github.io/posts/intention-detection-and-gait-recognition_idgr_system-for-gait-assessment-a-pilot-study/</loc>
-    <lastmod>2021-07-06T22:52:44+08:00</lastmod>
-  </url><url>
-    <loc>https://K7288.github.io/categories/intention-regconition/</loc>
     <lastmod>2021-07-06T22:52:44+08:00</lastmod>
   </url><url>
     <loc>https://K7288.github.io/posts/a-lower-limb-exoskeleton-based-on-recognition-of-lower-limb-walking-intention/</loc>
@@ -149,16 +143,10 @@
     <loc>https://K7288.github.io/tags/computer-vision/</loc>
     <lastmod>2021-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://K7288.github.io/categories/computer-vision/</loc>
-    <lastmod>2021-05-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://K7288.github.io/categories/course-notes/</loc>
     <lastmod>2021-05-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://K7288.github.io/tags/image-processing/</loc>
-    <lastmod>2021-05-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://K7288.github.io/categories/image-processing/</loc>
     <lastmod>2021-05-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/</loc>
@@ -206,5 +194,7 @@
     <loc>https://K7288.github.io/about/</loc>
   </url><url>
     <loc>https://K7288.github.io/search/</loc>
+  </url><url>
+    <loc>https://K7288.github.io/categories/seminar/</loc>
   </url>
 </urlset>
