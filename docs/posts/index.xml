@@ -44,13 +44,10 @@ Previous work  西北工业大学 Jing Fang*2 #1 #2 the knee joint 南方科技�
       <pubDate>Mon, 02 Aug 2021 00:52:44 +0800</pubDate>
       
       <guid>https://K7288.github.io/posts/reviews-of-gait-eventphase-detection-methods/</guid>
-      <description>gait event detection 检索关键词: gait event detection，限定2015及以后123456
-Rueterbories et al. [26] Review of sensor configurations and placements, and a brief review of gait detection methods
-Perez-Ibarra et al. [27] Brief review comparing gait event detection methods, sensors used, placement of sensors and subjects involved
-Panebianco et al. [18] Rule-based methods
-gait phase detection 检索Author Keywords &amp;ldquo;gait phase detection&amp;rdquo;
-event detection 检索Author Keywords &amp;ldquo;event detection&amp;rdquo;
-gait event detection 检索Author Keywords &amp;ldquo;gait event detection&amp;rdquo;</description>
+      <description>Strategy1 &amp;amp; Yield  Search Strategy
+  Scopus, Google Scholar, and PubMed databases were used to perform a literature search on the topic of gait phase partitioning.
+  The electronic search was conducted in September 2015.
+  Keywords included: gait events, gait phases, and their combinations with the words: partitioning, detection, classification, and recognition. In addition, wildcard symbols, such as hyphens or inverted commas, were used to consider all possible variations of root words.</description>
     </item>
     
     <item>
@@ -317,7 +314,19 @@ hugo采用goldmark作为默认渲染器，需要在config中开启
       
       <guid>https://K7288.github.io/posts/draftimage-processing-and-computer-vision/</guid>
       <description>参考书目 Digital Image Processing by Rafael C. Gonzalez, Richard E. Woods, 3rd Edition
- 第一章 数字图像的采集方式以及特性  1.1 图像概述 1.2 图像数字化  1.2.1图像数字化——采样  一维连续信号的采样 二维连续图像信号的采样  二维Nyquist条件 亚采样     1.2.2图像数字化——量化   1.3 数字图像基本要素  1.3.1基本要素 1.3.2图像质量 1.3.3图像颜色：红、绿、蓝三基色 1.3.4图像的描述：灰度/黑白/彩色图像、链表、拓扑结构、距离 1.3.5图像的矩阵特性：距离、邻域、临接、连通 1.3.6图像文件格式   1.4 数字图像处理意义及内容 1.5 数字图像处理系统及应用  1.5.1数字图像特性：图像/显示分辨率/打印机分辨率 像素深度 位面数量 1.5.2数字图像处理系统     第二章 数字图像预处理方法  2.1 灰度化  2.1.1灰度化主要方法 2.1.2图像二值化  1.全局二值化 2.</description>
+第一章 数字图像的采集方式以及特性 1.1 图像概述 图像是一个二维亮度函数；
+模拟图像：一幅活动、彩色、立体的图像——$I=f(x,y,z,λ,t)$，三维空间+波谱上+时间上连续，想象中的虚拟图像
+数字图像：数字图像是由模拟图象数字化得到的，以像素为基本元素、可以用数字计算机或数字电路存储和处理的图像。
+把一幅图画分割成如图所示的一个个小区域（像素），并将各小区域灰度用整数来表示，形成一幅点阵式的数字图像。它包括采样和量化两个过程。像素的位置和灰度就是像素的属性。
+1.2 图像数字化 图像数字化:将模拟图像经过离散化之后，得到用数字表示的图像。
+一幅模拟图像的坐标及幅度都是连续的，为了把它转换为数字形式，必须对坐标和幅度都作离散化操作。数字化坐标值称为采样，它确定了图像的空间分辨率；数字化幅度值称为量化，它确定了图像的幅度分辨率。
+1.2.1图像数字化——采样 （1）图像的采样：将在空间上连续的图像转换成离散的采样点（即像素）集的操作
+z=f(x,y), x∈[0,a], y∈[0,b], z∈[0,c] $\rightarrow$ z=f(x,y), x=0,1,…,N-1,y=0,1,…,M-1, z=0,1,…,L-1
+采样间隔太小，则增大数据量；太大，则会发生信息的混叠，导致细节无法辨认。
+一维连续信号的采样 在工程中的许多信号，实际上都是连续信号，或者称为连续时间函数，记为x(t)，t的取值是从$-\infty$ 连续变化到$+ \infty $ 。但是，用计算机处理这些信号，必须首先对连续信号进行采样，即按一定的时间间隔Ts进行取值： $$ 𝑥_𝑑 (𝑛)=𝑥(𝑛𝑇_𝑠) , 𝑛=…−1,0,1… $$ $T_s$为采样间隔，$ x_d (n)$为离散信号或时间序列
+连续信号x(t)和频谱X(f)的具体关系为： $$ X(f)=\int _{−\infty}^\infty x(t)e^{−j2\pi ft} dt\\\\x(t)=\int _{−\infty}^\infty X(f)e^{j2\pi ft} df $$
+一维空间采样的Nyquist条件：$X(f)$有截频$ f_c$，即当$|f|≥ f_c$时, $X(f)=0$；$T_s≤\frac{1}{2f_c}$ 或$2f_c≤f_s$
+如果信号不是有限带宽信号，采样频率或采样间隔不满足Nyquist条件，就会产生混叠现象。</description>
     </item>
     
     <item>
