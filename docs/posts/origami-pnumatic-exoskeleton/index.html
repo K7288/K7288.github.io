@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Origami Pneumatic Exoskeleton
-Previous work  西北工业大学 Jing Fang*2 #1 #2 the knee joint 南方科技大学 刘思聪 王峥 wrist                            An Inflatable and Foldable Knee Exosuit Based on Intelligent Management of Biomechanical Energy Research object An inflatable, foldable and variable stiffness knee exosuit and an intelligent control profile for it'><title>Origami Pneumatic Exoskeleton</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='(Origami) Pneumatic Exoskeleton
+Summary of previous work    Author Origami pattern Joint Prototype 研究阶段     Bio-Robotics and Control (BiRC) Laboratory，UNIST, Korea Yoshimura pattern shoulder  1.设计 2.建模（输出力关于弯曲角度等的表达式）3. 实验验证对支撑能力/输出力矩的仿真结果   南方科技大学 刘思聪 王峥 Variated Yoshimura with trapezoid facets. wrist  1. 设计 2. 运动学建模 3. 级联控制（未详细阐述，使用之前合作的工作） 4. 实验验证控制性能以及不同负载下的运动范围   西北工业大学 Jing Fang*2 #1 #2 / (Accordion/Fan) knee  1. 设计 2. 建模（输出力矩的闭式表达式）3. 实验验证机械性能及辅助效果 4. 控制（满足对特定动作的支持）   Yang, Hee Doo / (Artificial muscle) elbow'><title>(Origami) Pneumatic Exoskeleton</title>
 
 <link rel='canonical' href='https://K7288.github.io/posts/origami-pnumatic-exoskeleton/'>
 
-<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Origami Pneumatic Exoskeleton'>
-<meta property='og:description' content='Origami Pneumatic Exoskeleton
-Previous work  西北工业大学 Jing Fang*2 #1 #2 the knee joint 南方科技大学 刘思聪 王峥 wrist                            An Inflatable and Foldable Knee Exosuit Based on Intelligent Management of Biomechanical Energy Research object An inflatable, foldable and variable stiffness knee exosuit and an intelligent control profile for it'>
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='(Origami) Pneumatic Exoskeleton'>
+<meta property='og:description' content='(Origami) Pneumatic Exoskeleton
+Summary of previous work    Author Origami pattern Joint Prototype 研究阶段     Bio-Robotics and Control (BiRC) Laboratory，UNIST, Korea Yoshimura pattern shoulder  1.设计 2.建模（输出力关于弯曲角度等的表达式）3. 实验验证对支撑能力/输出力矩的仿真结果   南方科技大学 刘思聪 王峥 Variated Yoshimura with trapezoid facets. wrist  1. 设计 2. 运动学建模 3. 级联控制（未详细阐述，使用之前合作的工作） 4. 实验验证控制性能以及不同负载下的运动范围   西北工业大学 Jing Fang*2 #1 #2 / (Accordion/Fan) knee  1. 设计 2. 建模（输出力矩的闭式表达式）3. 实验验证机械性能及辅助效果 4. 控制（满足对特定动作的支持）   Yang, Hee Doo / (Artificial muscle) elbow'>
 <meta property='og:url' content='https://K7288.github.io/posts/origami-pnumatic-exoskeleton/'>
 <meta property='og:site_name' content='K7288'>
 <meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Exoskeleton' /><meta property='article:tag' content='Origami' /><meta property='article:published_time' content='2021-08-05T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-05T00:00:00&#43;00:00'/>
-<meta name="twitter:title" content="Origami Pneumatic Exoskeleton">
-<meta name="twitter:description" content="Origami Pneumatic Exoskeleton
-Previous work  西北工业大学 Jing Fang*2 #1 #2 the knee joint 南方科技大学 刘思聪 王峥 wrist                            An Inflatable and Foldable Knee Exosuit Based on Intelligent Management of Biomechanical Energy Research object An inflatable, foldable and variable stiffness knee exosuit and an intelligent control profile for it">
+<meta name="twitter:title" content="(Origami) Pneumatic Exoskeleton">
+<meta name="twitter:description" content="(Origami) Pneumatic Exoskeleton
+Summary of previous work    Author Origami pattern Joint Prototype 研究阶段     Bio-Robotics and Control (BiRC) Laboratory，UNIST, Korea Yoshimura pattern shoulder  1.设计 2.建模（输出力关于弯曲角度等的表达式）3. 实验验证对支撑能力/输出力矩的仿真结果   南方科技大学 刘思聪 王峥 Variated Yoshimura with trapezoid facets. wrist  1. 设计 2. 运动学建模 3. 级联控制（未详细阐述，使用之前合作的工作） 4. 实验验证控制性能以及不同负载下的运动范围   西北工业大学 Jing Fang*2 #1 #2 / (Accordion/Fan) knee  1. 设计 2. 建模（输出力矩的闭式表达式）3. 实验验证机械性能及辅助效果 4. 控制（满足对特定动作的支持）   Yang, Hee Doo / (Artificial muscle) elbow">
     </head>
     <body class="
     article-page has-toc
@@ -85,7 +85,7 @@ Previous work  西北工业大学 Jing Fang*2 #1 #2 the knee joint 南方科技�
     
 
     <h2 class="article-title">
-        <a href="/posts/origami-pnumatic-exoskeleton/">Origami Pneumatic Exoskeleton</a>
+        <a href="/posts/origami-pnumatic-exoskeleton/">(Origami) Pneumatic Exoskeleton</a>
     </h2>
 
     <footer class="article-time">
@@ -102,35 +102,48 @@ Previous work  西北工业大学 Jing Fang*2 #1 #2 the knee joint 南方科技�
 </header>
 
     <section class="article-content">
-    <p>Origami Pneumatic Exoskeleton</p>
-<h2 id="previous-work">Previous work</h2>
-<ul>
-<li>西北工业大学 Jing Fang*2 <a class="link" href="#an-inflatable-and-foldable-knee-exosuit-based-on-intelligent-management-of-biomechanical-energy" >#1</a> <a class="link" href="#novel-accordion-inspired-foldable-pneumatic-actuators-for-knee-assistive-devices" >#2</a> the knee joint</li>
-<li>南方科技大学 刘思聪 王峥 wrist</li>
-</ul>
+    <p>(Origami)  Pneumatic Exoskeleton</p>
+<h2 id="summary-of-previous-work">Summary of previous work</h2>
 <table>
 <thead>
 <tr>
-<th></th>
-<th></th>
-<th></th>
+<th>Author</th>
+<th>Origami pattern</th>
+<th>Joint</th>
+<th>Prototype</th>
+<th>研究阶段</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td><a class="link" href="http://birc.unist.ac.kr/research_Soft_RG.html"  target="_blank" rel="noopener"
+    >Bio-Robotics and Control (BiRC) Laboratory</a>，UNIST, Korea</td>
+<td>Yoshimura pattern</td>
+<td>shoulder</td>
+<td><img src="/assets/image-20210815195705244.png" alt="image-20210815195705244"  /></td>
+<td>1.设计 2.建模（输出力关于弯曲角度等的表达式）3. 实验验证对支撑能力/输出力矩的仿真结果</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td>南方科技大学 <a class="link" href="https://www.sustech.edu.cn/zh/facultys/liusicong.html"  target="_blank" rel="noopener"
+    >刘思聪</a> 王峥</td>
+<td>Variated Yoshimura with trapezoid facets.</td>
+<td>wrist</td>
+<td><img src="/assets/image-20210815191948720.png" alt="image-20210815191948720"  /></td>
+<td>1. 设计 2. 运动学建模 3. 级联控制（未详细阐述，使用之前合作的工作） 4. 实验验证控制性能以及不同负载下的运动范围</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td>西北工业大学 Jing Fang*2 <a class="link" href="#an-inflatable-and-foldable-knee-exosuit-based-on-intelligent-management-of-biomechanical-energy" >#1</a> <a class="link" href="#novel-accordion-inspired-foldable-pneumatic-actuators-for-knee-assistive-devices" >#2</a></td>
+<td>/ (Accordion/Fan)</td>
+<td>knee</td>
+<td><img src="/assets/image-20210815192240865.png" alt="image-20210815192240865"  /></td>
+<td>1. 设计 2. 建模（输出力矩的闭式表达式）3. 实验验证机械性能及辅助效果 4. 控制（满足对特定动作的支持）</td>
+</tr>
+<tr>
+<td>Yang, Hee Doo</td>
+<td>/ (Artificial muscle)</td>
+<td>elbow<br><br/><br/><br/><br/><br/><br/><br/><br/>hip</td>
+<td><img src="/assets/image-20210815201246157.png" alt="image-20210815201246157"  /><img src="/assets/image-20210815201508892.png" alt="image-20210815201508892"  /></td>
+<td>1. 设计 2. 建模（输出力关于压强、体积的表达式）3. 实验验证模型以及辅助效果（未涉及控制，实验的加压阶段手动进行）</td>
 </tr>
 </tbody>
 </table>
@@ -146,14 +159,14 @@ stores as much energy in fat as a 1000-kg battery</li>
 <ul>
 <li>a large amount of negative power that is marked by K1, K2 and K3</li>
 </ul>
-<p><img src="assets/image-20210806140539308.png" alt="image-20210806140539308" style="zoom:50%;" /></p>
+<p><img src="/assets/image-20210806140539308.png" alt="image-20210806140539308" style="zoom:50%;" /></p>
 <ul>
 <li>
 <p>Intelligent Energy Management Profile</p>
 <ul>
 <li>
 <p>quasi-stiffness to characterize the spring-like behavior of knee joint.</p>
-<p><img src="assets/image-20210806140817591.png" alt="image-20210806140817591" style="zoom:53%;" /></p>
+<p><img src="/assets/image-20210806140817591.png" alt="image-20210806140817591" style="zoom:53%;" /></p>
 </li>
 <li>
 <p>通过与膝关节平行增加一个变刚度弹簧，并根据图3这六个点上（根据步态周期划分）调整其刚度，可以收集和再利用人体的生物机械能，节省行走过程中消耗的体力。</p>
@@ -165,7 +178,7 @@ stores as much energy in fat as a 1000-kg battery</li>
 <p>热塑性聚氨酯(TPU)</p>
 </li>
 </ul>
-<p><img src="assets/image-20210806105450817.png" alt="image-20210806105450817" style="zoom:50%;" /></p>
+<p><img src="/assets/image-20210806105450817.png" alt="image-20210806105450817" style="zoom:50%;" /></p>
 <h2 id="novel-accordion-inspired-foldable-pneumatic-actuators-for-knee-assistive-devices">Novel Accordion-Inspired Foldable Pneumatic Actuators for Knee Assistive Devices</h2>
 <h3 id="methods-1">Methods</h3>
 <ul>
@@ -181,31 +194,26 @@ airflow restriction problem for single-chamber actuators at extreme bending angl
 </li>
 <li>
 <p>虚功原理推出输出力矩（volume/angle relationships和内部压强的函数） $\tau=\left(\frac{P_{0} \cdot V_{0}\left(\theta_{0}\right)}{V(\theta)}-P_{a t m}\right) \cdot \frac{\mathrm{d} V(\theta)}{\mathrm{d}  \theta}$</p>
-<p><img src="assets/image-20210806153740685.png" alt="image-20210806153740685" style="zoom:33%;" /></p>
+<p><img src="/assets/image-20210806153740685.png" alt="image-20210806153740685" style="zoom:33%;" /></p>
 </li>
 <li>
 <p>控制：不同的辅助动作给不同的恒压</p>
 </li>
 </ul>
-<p><img src="assets/image-20210806155605797.png" alt="image-20210806155605797" style="zoom:50%;" /><img src="assets/image-20210806170617002.png" alt="image-20210806170617002" style="zoom:40%;" /></p>
-<h2 id="origami-structured-actuating-modules-for-upper-limb-support">Origami-Structured Actuating Modules for Upper Limb Support</h2>
-<p>题目 关键词 摘要 结论 图表 引言 结果和讨论 实验</p>
-<h3 id="summary">Summary</h3>
-<p>a layered manufacturing process for a durable pattern-embedded sheet, which is applicable to the construction of any origami-structured SPAs, 2) an analytical model of the exerted force and bending angle, as well as a design optimization, and 3) experimental verification of the exerted force and upper limb motion assistance offered by the actuating module when used as a wearable system.</p>
-<h3 id="research-question">Research question</h3>
-<h3 id="introduction-1">Introduction</h3>
-<h3 id="methods-2">Methods</h3>
-<h3 id="results">Results</h3>
-<h3 id="highlights">Highlights</h3>
+<p><img src="/assets/image-20210806155605797.png" alt="image-20210806155605797" style="zoom:50%;" /><img src="/assets/image-20210806170617002.png" alt="image-20210806170617002" style="zoom:40%;" /></p>
 <h3 id="limitsfurther-work">Limits/Further Work</h3>
+<p>只使用a miniature pump，后续可以采用innovative pneumatic supply sources, such as a passive pump mounted on shoes, a high- pressure air bottle, and a high-power compressor.</p>
+<p>目前只对指定动作</p>
+<h2 id="origami-structured-actuating-modules-for-upper-limb-support">Origami-Structured Actuating Modules for Upper Limb Support</h2>
 <h3 id="thoughtscomments">Thoughts/Comments</h3>
 <ol>
 <li>
-<p>怎么用充气实现弯曲？</p>
-<p>好像是结构自身的特点？是未充满气就是弯曲吗？</p>
+<p>怎么用充气实现弯曲？好像是结构自身的特点？是未充满气就是弯曲吗？</p>
+<p>不是的，直接把近体侧attached，他们不需要直线运动的功能</p>
 </li>
 <li>
-<p>可以实现twist吗？看实验图片是有的（手向斜前侧伸出），但是介绍Yoshimura的时候没说twist这样会不会有问题？</p>
+<p><del>可以实现twist吗？看实验图片是有的（手向斜前侧伸出），但是介绍Yoshimura的时候没说twist这样会不会有问题？</del></p>
+<p>后来想了一下，这种不叫twist</p>
 </li>
 </ol>
 <h2 id="a-compact-soft-robotic-wrist-brace-with-origami-actuators">A Compact Soft Robotic Wrist Brace With Origami Actuators</h2>
@@ -225,46 +233,54 @@ airflow restriction problem for single-chamber actuators at extreme bending angl
 <li>
 <p>Yoshimura pattern</p>
 <ul>
-<li>small elastic constant in the axial direction;</li>
-<li>simplicity of elementary facets</li>
-<li>intrinsically high circumferential bending rigidity</li>
-<li>The hexagon facets effectively eliminate the extruding vertices formed by the triangular facets of the standard Yoshimura pattern; thus, the potential stress concentration at the vertices was avoided.六边形切面有效地消除了标准Yoshimura三角形切面所形成的挤压顶点;从而避免了顶点处潜在的应力集中。</li>
+<li>
+<p>small elastic constant in the axial direction;</p>
+</li>
+<li>
+<p>simplicity of elementary facets</p>
+</li>
+<li>
+<p>intrinsically high circumferential bending rigidity</p>
+</li>
+<li>
+<p>The hexagon facets effectively eliminate the extruding vertices formed by the triangular facets of the standard Yoshimura pattern; thus, the potential stress concentration at the vertices was avoided.采用四边形facet，形成六边形切面，有效地消除了标准Yoshimura三角形切面所形成的挤压顶点;从而避免了顶点处潜在的应力集中。</p>
+<p><img src="/assets/image-20210815191751148.png" alt="image-20210815191751148" style="zoom:33%;" /></p>
+</li>
 </ul>
 </li>
 </ul>
-<h3 id="methods-3">Methods</h3>
+<h3 id="methods-2">Methods</h3>
 <ol>
 <li>
 <p>整体简化成一个并联机构(a parallel mechanism with four soft actuators) 2-DOF的运动简化成绕x/y轴的转动，通过D-H方法可以得到末端位置</p>
-<p><img src="assets/image-20210810152312429.png" alt="image-20210810152312429" style="zoom:50%;" /></p>
+<p><img src="/assets/image-20210810152312429.png" alt="image-20210810152312429" style="zoom:50%;" /></p>
 <p>不同load下的位移-压强关系可测定</p>
 </li>
 <li>
 <p>A cascaded control strategy (a motion-control outer loop and multichannel pressure-control inner loops for each SOA)</p>
 <p><img src="/assets/image-20210810142215509.png" alt="a cascaded control strategy"  /></p>
 <blockquote>
-<p>The outer loop, controlled by the high-level controller, used pressure feedback information from each actuator to obtain the overall device motion estimation and then compared with the desired motion mapped from the different control commands (flexion/extension, ulnar/radial deviation, and engagement signal). The resultant pressure commands from the high-level controller were then relayed to the low-level controllers, each regulating one soft origami actuator accordingly.</p>
+<p>The outer loop, controlled by the high-level controller, used <strong>pressure feedback information</strong> (motion filter) from each actuator to obtain the overall device motion estimation and then compared with the desired motion mapped from the different control commands (flexion/extension, ulnar/radial deviation, and engagement signal). The resultant pressure commands from the high-level controller were then relayed to the low-level controllers, each regulating one soft origami actuator accordingly.</p>
 </blockquote>
 <p><del>没有讲是怎么配合人的</del> 其实讲了，因为是康复型不是增强型所以只要输入上层指令</p>
 </li>
 </ol>
 <p>According to Flores et al. (2014), the average maximal torque generated by the wrist of a healthy individual in radial/ulnar deviation is 1.3 Nm. As shown in Figure 7F, the force generated from proposed SR brace in radial/ulnar deviation was around 6 N; thus, considering the length of the 2-actuator unit of 128 mm, the torque generated by the SR brace reached up to 0.76 Nm, which is about <strong>58% of the max torque of human wrist</strong>.</p>
-<p>题目 关键词 摘要 结论 图表 引言 结果和讨论 实验</p>
-<h3 id="research-question-1">Research question</h3>
-<h3 id="introduction-2">Introduction</h3>
-<h3 id="methods-4">Methods</h3>
-<h3 id="results-1">Results</h3>
-<h3 id="highlights-1">Highlights</h3>
-<h3 id="limitsfurther-work-1">Limits/Further Work</h3>
-<h3 id="thoughtscomments-1">Thoughts/Comments</h3>
-<p>题目 关键词 摘要 结论 图表 引言 结果和讨论 实验</p>
-<h3 id="research-question-2">Research question</h3>
-<h3 id="introduction-3">Introduction</h3>
-<h3 id="methods-5">Methods</h3>
-<h3 id="results-2">Results</h3>
-<h3 id="highlights-2">Highlights</h3>
-<h3 id="limitsfurther-work-2">Limits/Further Work</h3>
-<h3 id="thoughtscomments-2">Thoughts/Comments</h3>
+<h2 id="modeling-and-analysis-of-a-high-displacement-pneumatic-artificial-muscle-with-integrated-sensing">Modeling and Analysis of a High-Displacement Pneumatic Artificial Muscle With Integrated Sensing</h2>
+<table>
+<thead>
+<tr>
+<th><img src="/assets/image-20210815212511267.png" alt="image-20210815212511267"  /></th>
+<th><img src="/assets/image-20210815212533250.png" alt="image-20210815212533250"  /></th>
+</tr>
+</thead>
+</table>
+<h2 id="a-soft-inflatable-wearable-robot-for-hip-abductor-assistance-design-and-preliminary-assessment">A Soft Inflatable Wearable Robot for Hip Abductor Assistance: Design and Preliminary Assessment</h2>
+<p><img src="/assets/image-20210815213353465.png" alt="image-20210815213353465"  /></p>
+<p>Actuation principles; A) a schematic figure of the hip abduction actuator (HAA). The angle  ($\alpha$)  is the current actuator angle (deformed), and the angle  ($\theta$)  is the pattern angle as the maximum unfolding angle (equilibrium). The actuator is folded when deflation  ($\alpha \approx 0$) , and then the actuator exerts torque while attempting to inflate to the pattern angle due to force equilibrium when inflation; B) a theoretical torque profile related to the different actuator angle  ($\alpha$​​) ; C) a simplified diagram of the HAA, the support beams, and the pelvis system. The support beams react against the femur (fixed) to provide torque from the HAA to the pelvis.</p>
+<p>未涉及控制，实验的加压阶段手动进行</p>
+<h2 id="an-untethered-electro-pneumatic-exosuit-for-gait-assistance-of-people-with-foot-drop">An Untethered Electro-Pneumatic Exosuit for Gait Assistance of People With Foot Drop</h2>
+<p>没看出来哪里origami；论文格式图片很糊，没有细看</p>
 
 </section>
 
@@ -408,7 +424,7 @@ airflow restriction problem for single-chamber actuators at extreme bending angl
         render: (h) =>
             h("Vssue", {
                 props: {
-                    title: "Origami Pneumatic Exoskeleton",
+                    title: "(Origami) Pneumatic Exoskeleton",
                     options: {
                         proxy: (url) => "https://cors-anywhere.azm.workers.dev/" + url,
                         owner: "K7288",
@@ -535,7 +551,7 @@ airflow restriction problem for single-chamber actuators at extreme bending angl
                 <div class="widget--toc">
                     <nav id="TableOfContents">
   <ol>
-    <li><a href="#previous-work">Previous work</a></li>
+    <li><a href="#summary-of-previous-work">Summary of previous work</a></li>
     <li><a href="#an-inflatable-and-foldable-knee-exosuit-based-on-intelligent-management-of-biomechanical-energy">An Inflatable and Foldable Knee Exosuit Based on Intelligent Management of Biomechanical Energy</a>
       <ol>
         <li><a href="#research-object">Research object</a></li>
@@ -546,40 +562,23 @@ airflow restriction problem for single-chamber actuators at extreme bending angl
     <li><a href="#novel-accordion-inspired-foldable-pneumatic-actuators-for-knee-assistive-devices">Novel Accordion-Inspired Foldable Pneumatic Actuators for Knee Assistive Devices</a>
       <ol>
         <li><a href="#methods-1">Methods</a></li>
+        <li><a href="#limitsfurther-work">Limits/Further Work</a></li>
       </ol>
     </li>
     <li><a href="#origami-structured-actuating-modules-for-upper-limb-support">Origami-Structured Actuating Modules for Upper Limb Support</a>
       <ol>
-        <li><a href="#summary">Summary</a></li>
-        <li><a href="#research-question">Research question</a></li>
-        <li><a href="#introduction-1">Introduction</a></li>
-        <li><a href="#methods-2">Methods</a></li>
-        <li><a href="#results">Results</a></li>
-        <li><a href="#highlights">Highlights</a></li>
-        <li><a href="#limitsfurther-work">Limits/Further Work</a></li>
         <li><a href="#thoughtscomments">Thoughts/Comments</a></li>
       </ol>
     </li>
     <li><a href="#a-compact-soft-robotic-wrist-brace-with-origami-actuators">A Compact Soft Robotic Wrist Brace With Origami Actuators</a>
       <ol>
         <li><a href="#materials">Materials</a></li>
-        <li><a href="#methods-3">Methods</a></li>
-        <li><a href="#research-question-1">Research question</a></li>
-        <li><a href="#introduction-2">Introduction</a></li>
-        <li><a href="#methods-4">Methods</a></li>
-        <li><a href="#results-1">Results</a></li>
-        <li><a href="#highlights-1">Highlights</a></li>
-        <li><a href="#limitsfurther-work-1">Limits/Further Work</a></li>
-        <li><a href="#thoughtscomments-1">Thoughts/Comments</a></li>
-        <li><a href="#research-question-2">Research question</a></li>
-        <li><a href="#introduction-3">Introduction</a></li>
-        <li><a href="#methods-5">Methods</a></li>
-        <li><a href="#results-2">Results</a></li>
-        <li><a href="#highlights-2">Highlights</a></li>
-        <li><a href="#limitsfurther-work-2">Limits/Further Work</a></li>
-        <li><a href="#thoughtscomments-2">Thoughts/Comments</a></li>
+        <li><a href="#methods-2">Methods</a></li>
       </ol>
     </li>
+    <li><a href="#modeling-and-analysis-of-a-high-displacement-pneumatic-artificial-muscle-with-integrated-sensing">Modeling and Analysis of a High-Displacement Pneumatic Artificial Muscle With Integrated Sensing</a></li>
+    <li><a href="#a-soft-inflatable-wearable-robot-for-hip-abductor-assistance-design-and-preliminary-assessment">A Soft Inflatable Wearable Robot for Hip Abductor Assistance: Design and Preliminary Assessment</a></li>
+    <li><a href="#an-untethered-electro-pneumatic-exosuit-for-gait-assistance-of-people-with-foot-drop">An Untethered Electro-Pneumatic Exosuit for Gait Assistance of People With Foot Drop</a></li>
   </ol>
 </nav>
                 </div>
