@@ -6,22 +6,40 @@
     <description>Recent content in Categories on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Origami</title>
-      <link>https://K7288.github.io/categories/origami/</link>
-      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      <title>Exoskeleton</title>
+      <link>https://K7288.github.io/categories/exoskeleton/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://K7288.github.io/categories/origami/</guid>
+      <guid>https://K7288.github.io/categories/exoskeleton/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Literature Notes</title>
       <link>https://K7288.github.io/categories/literature-notes/</link>
-      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://K7288.github.io/categories/literature-notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robotics</title>
+      <link>https://K7288.github.io/categories/robotics/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/categories/robotics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Origami</title>
+      <link>https://K7288.github.io/categories/origami/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/categories/origami/</guid>
       <description></description>
     </item>
     
@@ -67,15 +85,6 @@
       <pubDate>Thu, 08 Jul 2021 14:29:01 +0800</pubDate>
       
       <guid>https://K7288.github.io/categories/control/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Robotics</title>
-      <link>https://K7288.github.io/categories/robotics/</link>
-      <pubDate>Tue, 06 Jul 2021 13:52:44 +0800</pubDate>
-      
-      <guid>https://K7288.github.io/categories/robotics/</guid>
       <description></description>
     </item>
     
