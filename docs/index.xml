@@ -560,17 +560,7 @@ airflow restriction problem for single-chamber actuators at extreme bending angl
         <pubDate>Mon, 02 Aug 2021 00:52:44 +0800</pubDate>
         
         <guid>https://K7288.github.io/posts/ips-for-validation/</guid>
-        <description>&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#detection-of-gait-events-using-an-f-scan-in-shoe-pressure-measurement-system&#34; &gt;Detection of gait events using an F-Scan in-shoe pressure measurement system&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%af%b9f-scan-system%e5%87%86%e7%a1%ae%e6%80%a7%e7%9a%84%e8%ae%a8%e8%ae%ba&#34; &gt;对F-Scan® system准确性的讨论&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#methods--results&#34; &gt;Methods &amp;amp; Results&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#kt%e7%9a%84%e9%98%88%e5%80%bc%e9%80%89%e5%8f%96&#34; &gt;KT的阈值选取&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#%e4%b8%80%e4%ba%9b%e9%aa%8c%e8%af%81%e6%8c%87%e6%a0%87&#34; &gt;一些验证指标&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;detection-of-gait-events-using-an-f-scan-in-shoe-pressure-measurement-system&#34;&gt;Detection of gait events using an F-Scan in-shoe pressure measurement system&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;detection-of-gait-events-using-an-f-scan-in-shoe-pressure-measurement-system&#34;&gt;Detection of gait events using an F-Scan in-shoe pressure measurement system&lt;/h2&gt;
 &lt;p&gt;比较了force-based detection (FD，软件自带)和area-based method (AD) ；kinetic detection(KT，&lt;strong&gt;使用force platforms的数据&lt;/strong&gt;)作为validation&lt;/p&gt;
 &lt;h3 id=&#34;对f-scan-system准确性的讨论&#34;&gt;对F-Scan® system准确性的讨论&lt;/h3&gt;
 &lt;p&gt;Several studies have evaluated the accuracy and reliability of force and pressure measurements using the F-Scan® system and reached different conclusions. While some authors concluded that F-Scan demonstrated good to excellent reliability in measuring plantar pressures [&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/pii/S096663620800043X?via%3Dihub#bib11&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
