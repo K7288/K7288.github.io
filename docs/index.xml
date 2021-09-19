@@ -6,7 +6,233 @@
         <description>Recent content on K7288</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 31 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Human walking in the real world Interactions between terrain type, gait parameters, and energy expenditure</title>
+        <link>https://K7288.github.io/posts/human-walking-in-the-real-world-interactions-between-terrain-type-gait-parameters-and-energy-expenditure/</link>
+        <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://K7288.github.io/posts/human-walking-in-the-real-world-interactions-between-terrain-type-gait-parameters-and-energy-expenditure/</guid>
+        <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;用统计学方法分析了不同地形对选取的步态参数、步态参数的variability以及代谢耗能的影响&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;影响是否有统计学意义；正相关/负相关；一点点直观的原因解释&lt;/li&gt;
+&lt;li&gt;步态参数的相关性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;步态参数及其variability与代谢耗能的相关性（线性回归、统计分析）&lt;/p&gt;
+&lt;p&gt;步态参数预估代谢耗能 （principal components regression (PCR) ； partial least squares regression (PLSR)和单因素回归）&lt;/p&gt;
+&lt;h2 id=&#34;research-question&#34;&gt;Research question&lt;/h2&gt;
+&lt;p&gt;how foot paths change with terrain, and how they
+relate to the energetic cost of walking.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;foot path refers to the foot’s translation in three dimensions during a single swing phase, starting from the previous stance phase and including the ending stance phase, when the foot is stationary.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Effects of ground terrain: the elevation change over a step, average stride length and width, mid-swing(higher on the uneven terrain), foot placement for stabilizing adjustments $\Rightarrow$ energy expenditure&lt;/p&gt;
+&lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
+&lt;h3 id=&#34;实验&#34;&gt;实验&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/journal.pone.0228682.g001&amp;amp;type=large&#34; alt=&#34;Fig 1&#34;  /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Fig 1. Measurement of foot paths and energy expenditure on outdoor terrain. Subjects walked on different terrains while wearing a portable respirometry system, a global positioning system (GPS) device, and one inertial measurement unit (IMU) per foot. Sample data from one subject show traces for walking speed and elevation from GPS, rates of oxygen consumption and carbon dioxide production, and angular velocity and translational acceleration vs. time. Terrains included Sidewalk, Gravel, Grass, Woodchip, and Dirt, along with transitions between them (gray lines, not analyzed). Walking speed was loosely regulated via GPS (average speeds listed); terrain segments were selected to avoid large net changes in elevation during trials.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;数据处理&#34;&gt;数据处理&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;last 3min / 8min的steady-state数据；为了reduce the amount of data只用左脚的数据&lt;/li&gt;
+&lt;li&gt;对IMU数据积分两次得到foot path（inertial drift reduced by correcting the velocities during stance to zero）&lt;/li&gt;
+&lt;li&gt;normalization: body mass $M$, standing leg length $L$ (defined as floor to greater trochanter), and gravitational acceleration $g$ as base units. stride distances were normalized by $L$, and net metabolic power [28] by $Mg^{1.5}L^{0.5}$ (average 0.90 m, 1893 W across subjects&lt;/li&gt;
+&lt;li&gt;repeated-measures ANOVA tests $\Rightarrow$ terrain conditions affected energy expenditure and gait parameters&lt;/li&gt;
+&lt;li&gt;linear regression for each variable individually. The latter included a separate offset constant for each individual, included in the fit, with overall goodness of fit therefore evaluated with an adjusted $R^2 \Rightarrow$ correlation between energy expenditure and the gait parameter&lt;/li&gt;
+&lt;li&gt;principal components analysis (PCA) and linear discriminant analysis (LDA)  $\Rightarrow$ reduction ofdimensionality within the data&lt;/li&gt;
+&lt;li&gt;principal components regression (PCR) and partial least squares regression (PLSR)  $\Rightarrow$ using stride measures to predict metabolic rate&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;各个参数差异不大但是有统计学意义&lt;/p&gt;
+&lt;p&gt;While the average gait pattern changed little, &lt;strong&gt;variability in most of the gait measures&lt;/strong&gt; examined showed &lt;strong&gt;high dependence on terrain&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The most notable sensitivities were for variability in stride height, stride width, virtual clearance, and lateral swing motion. Variability could result directly from the unevenness of ground, or from controlled adjustments made to stabilize balance, which is thought to be passively unstable in the lateral direction [22,23]. Active stabilization is achieved in part through lateral foot placement [23,31–34]. Uneven ground appears to disrupt gait to a substantial degree, and would be expected to require substantial active stabilization. Aggregating these various contributions, the overall effect is that uneven ground leads to uneven foot motion and uneven steps.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;the preferred stride length vs. speed relationship remained fairly intact across different terrains.&lt;/p&gt;
+&lt;p&gt;more challenging terrain caused increases in virtual ground clearance and in the variability of most measures&lt;/p&gt;
+&lt;p&gt;considerable interdependency among measures, as revealed by dimensionality reduction techniques&lt;/p&gt;
+&lt;h2 id=&#34;limitsfurther-work&#34;&gt;Limits/Further Work&lt;/h2&gt;
+&lt;p&gt;Our foot path estimation relies on the foot being nearly stationary at some point during stance, which may not occur for every stride on softer terrains such as Woodchips. This&lt;/p&gt;
+&lt;h2 id=&#34;thoughtscomments&#34;&gt;Thoughts/Comments&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;variability的差异也成了分析的因素，这点之前没想到&lt;/p&gt;
+&lt;p&gt;但是不知道这个RMS是怎么算的，其中的均值是所有subject在这个地形的mean还是这个subject的？此处这个RMS的定义和传统的均方根（平方和除以加和样本数再开方）不太一样&lt;code&gt;We report average and root-mean-square (RMS, equivalent to standard deviation) variability&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;而且这样是不是基本也只能分析用了？或者走几步统计？不知道能不能在线&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对inter-subject differences的处理&lt;/p&gt;
+&lt;p&gt;做代谢线性回归的时候每个人有不同的offset&lt;/p&gt;
+&lt;p&gt;那这样$\text{Ind } R^2$是怎么算的？A：见$R^2$的定义，offset变了就是$f_i$变了，正常算就行&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PCA怎么计算这个成分包含的all data variability？就是特征值除以特征值的和吗？A：是&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;补充知识&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Coefficient of determination $R^2$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;${\displaystyle SS_{\text{res}}=\sum _{i}(y_{i}-f_{i})^{2}=\sum _{i}e_{i}^{2},}$&lt;/li&gt;
+&lt;li&gt;${\displaystyle SS_{\text{tot}}=\sum _{i}(y_{i}-{\bar {y}})^{2}}$&lt;/li&gt;
+&lt;li&gt;${\displaystyle R^{2}=1-{SS_{\rm {res}} \over SS_{\rm {tot}}},}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Adjusted $R^2$ (one common notation is ${\displaystyle {\bar {R}}^{2}}$, pronounced &amp;ldquo;R bar squared&amp;rdquo;; another is ${\displaystyle R_{\text{adj}}^{2}}$)&lt;/p&gt;
+&lt;p&gt;${\displaystyle {\bar {R}}^{2}=1-(1-R^{2}){n-1 \over n-p-1}}$, where $p$ is the total number of explanatory variables in the model (not including the constant term), and $n$ is the sample size.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>方差分析ANOVA</title>
+        <link>https://K7288.github.io/posts/%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90anova/</link>
+        <pubDate>Wed, 25 Aug 2021 00:52:44 +0800</pubDate>
+        
+        <guid>https://K7288.github.io/posts/%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90anova/</guid>
+        <description>&lt;h2 id=&#34;单因素方差分析-one-way-anova&#34;&gt;单因素方差分析 One Way ANOVA&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mp.weixin.qq.com/s?__biz=MzI2OTQyMzc5MA==&amp;amp;mid=2247487180&amp;amp;idx=1&amp;amp;sn=63c669d70d52b00ba5c9d9b1527e216d&amp;amp;chksm=eae1cb0ddd96421bcde0477cf6955eea06a71cf808b2c93e498342dd5dd65169e6064504c163&amp;amp;scene=21#wechat_redirect&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;单因素方差分析SPSS教程 &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如果单因素方差分析显示差异具有统计学意义（&lt;em&gt;P&lt;/em&gt;&amp;lt;0.05），表示不是所有组的总体均数均相等（至少有一组均数不同于另一组）。如果&lt;em&gt;P&lt;/em&gt;&amp;gt;0.05，则表示各组间均数差异无统计学意义。&lt;/p&gt;
+&lt;h3 id=&#34;2种适用的研究设计&#34;&gt;2种适用的研究设计&lt;/h3&gt;
+&lt;p&gt;1）判断3个及以上独立的组间均数是否存在差异；&lt;/p&gt;
+&lt;p&gt;2）判断前后变化的差值是否存在差异。&lt;/p&gt;
+&lt;h3 id=&#34;6个假设&#34;&gt;6个假设&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;假设1&lt;/strong&gt;：因变量为连续变量；&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;假设2&lt;/strong&gt;：有一个包含2个及以上分类、且组别间相互独立的自变量；&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;假设3&lt;/strong&gt;：每组间和组内的观测值相互独立；&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;假设4&lt;/strong&gt;：每组内没有明显异常值；&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;假设5&lt;/strong&gt;：每组内因变量符合正态分布；&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;假设6&lt;/strong&gt;：进行方差齐性检验，观察每组的方差是否相等。&lt;/p&gt;
+&lt;h3 id=&#34;整体流程&#34;&gt;整体流程&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/640.webp&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;假设验证&#34;&gt;假设验证&lt;/h3&gt;
+&lt;h4 id=&#34;假设4每组内没有明显异常值&#34;&gt;假设4：每组内没有明显异常值&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Boxplots&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210825140543222.png&#34; alt=&#34;image-20210825140543222&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210825140659370.png&#34; alt=&#34;image-20210825140659370&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如果存在多个异常值，应先把最极端的异常值去掉后，重新检查异常值情况&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;异常值的处理方法&#34;&gt;异常值的处理方法：&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;(1) 保留异常值：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1）采用非参数Kruskal-Wallis H检验；&lt;/p&gt;
+&lt;p&gt;2）用非最极端的值来代替极端异常值（如用第二大的值代替）；&lt;/p&gt;
+&lt;p&gt;3）因变量转换成其他形式；&lt;/p&gt;
+&lt;p&gt;4）将异常值纳入分析，并坚信其对结果不会产生实质影响。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(2) 剔除异常值：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;直接删除异常值很简单，但却是没有办法的办法。当我们需要删掉异常值时，应报告异常值大小及其对结果的影响，最好分别报告删除异常值前后的结果。而且，应该考虑有异常值的个体是否符合研究的纳入标准。如果其不属于合格的研究对象，应将其剔除，否则会影响结果的推论。&lt;/p&gt;
+&lt;h4 id=&#34;假设5每组内因变量符合正态分布&#34;&gt;假设5：每组内因变量符合正态分布&lt;/h4&gt;
+&lt;p&gt;Shapiro-Wilk正态性检验、偏度和峰度值、直方图等&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果样本量较小（&amp;lt;50），并且对正态Q-Q图或其他图形方法的结果诠释不够有把握，推荐采用Shapiro-Wilk检验。每组自变量都会有一个Shapiro-Wilk正态性检验结果；如果样本量大于50，推荐使用正态Q-Q图等图形方法进行正态判断，因为当样本量较大时，Shapiro-Wilk检验会把稍稍偏离正态分布的数据也标记为有统计学差异，即数据不服从正态分布。&lt;/p&gt;
+&lt;p&gt;boxplot选择“带检验的正态图”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/6401.webp&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;如果数据符合正态分布，显著性水平（蓝框中的Sig.）应该大于0.05。Shapiro-Wilk检验的无效假设是数据服从正态分布，备择假设是数据不服从正态分布。因此，如果拒绝无效假设（&lt;em&gt;P&lt;/em&gt;&amp;lt;0.05），表示数据不服从正态分布；如果不能拒绝无效假设，则不能认为数据不服从正态分布。&lt;/p&gt;
+&lt;h5 id=&#34;不服从正态分布的处理方法&#34;&gt;不服从正态分布的处理方法&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;(1)&lt;/strong&gt; 数据转换：对转换后呈正态分布的数据进行单因素方差分析。当各组因变量的分布形状相同时，正态转换才有可能成功。对于一些常见的分布，有特定的转换形式，但是对于转换后数据的结果解释可能比较复杂。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(2)&lt;/strong&gt; 使用非参数检验：可以使用Kruskal-Wallis H检验等非参数检验方法，但是要注意Kruskal-Wallis H检验和单因素方差分析的无效假设和备择假设不太一致。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(3)&lt;/strong&gt; 直接进行分析：由于单因素方差分析对于偏离正态分布比较稳健，尤其是在各组样本量相等或近似相等的情况下，而且非正态分布实质上并不影响犯I型错误的概率。因此可以直接进行检验，但是结果中仍需报告对正态分布的偏离。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(4)&lt;/strong&gt; 检验结果的比较：将转换后和未转换的原始数据分别进行单因素方差分析，如果二者结论相同，则再对未转换的原始数据进行分析。&lt;/p&gt;
+&lt;h4 id=&#34;假设6进行方差齐性检验观察每组的方差是否相等&#34;&gt;假设6：进行方差齐性检验，观察每组的方差是否相等&lt;/h4&gt;
+&lt;h3 id=&#34;spss操作&#34;&gt;SPSS操作&lt;/h3&gt;
+&lt;h4 id=&#34;单因素方差分析oneway-procedure事后两两比较post-hoc-test&#34;&gt;&lt;strong&gt;单因素方差分析（ONEWAY procedure）→事后两两比较（post hoc test）&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;(1)&lt;/strong&gt; 点击Analyze &amp;gt; Compare Means &amp;gt; One-Way ANOVA：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/6402.webp&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;出现One-Way ANOVA对话框：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/6403.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(2)&lt;/strong&gt; 把因变量coping_stress送入Dependent List框中，自变量group送入Factor框中：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/6404.webp&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(3)&lt;/strong&gt; 点击Options，出现One-Way ANOVA: Options对话框：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/6405.webp&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(4)&lt;/strong&gt; 在Statistics模块勾选Descriptive，Homogeneity of variance test和Welch，同时勾选Means plot：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/6406.webp&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(5)&lt;/strong&gt; 点击Continue，返回One-Way ANOVA对话框。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(6)&lt;/strong&gt; 点击Post Hoc，出现One-Way ANOVA: Post Hoc Multiple Comparisons对话框：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/6407.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;对话框根据方差齐性检验的假设是否满足，分为2个主要区域：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/6408.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(7)&lt;/strong&gt; 在Equal Variances Assumed模块内勾选Tukey，在Equal Variances Not Assumed模块内勾选Games-Howell：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/6409.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(注)&lt;/strong&gt; 在Equal Variances Assumed模块内SPSS提供了许多两两比较的方法。例如，LSD法为“最小显著差数法”，是在无校正的前提下，在不同组间进行多次两个独立样本t检验；Bonferroni法是比较流行的方法，同LSD法类似在多组间进行两个独立样本t检验，但是采用了Bonferroni法进行校正。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(8)&lt;/strong&gt; 可以在Significance level框中修改显著性水平的大小（系统默认为0.05，表示当&lt;em&gt;P&lt;/em&gt;&amp;lt;0.05时差异具有统计学意义，可以将其数值修改为0.01）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(9)&lt;/strong&gt; 点击Continue，返回One-Way ANOVA对话框。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(10)&lt;/strong&gt; 点击OK，输出结果。&lt;/p&gt;
+&lt;h4 id=&#34;一般线性模型glm-procedure求效应量偏η2&#34;&gt;&lt;strong&gt;一般线性模型（GLM procedure）求效应量（偏η2）&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;(1)&lt;/strong&gt; 点击Analyze &amp;gt; General Linear Model &amp;gt; Univariate&amp;hellip;：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/64010.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;出现Univariate对话框：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/64011.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(2)&lt;/strong&gt; 把因变量coping_stress送入Dependent List框中，自变量group送入Fixed Factor(s)框中：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/64012.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(3)&lt;/strong&gt; 点击Options&amp;hellip;，出现 Univariate: Options对话框：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/64013.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(4)&lt;/strong&gt; 在Display模块内勾选Estimates of effect size：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/64014.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(5)&lt;/strong&gt; 点击Continue，返回Univariate对话框。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(6)&lt;/strong&gt; 点击OK，输出结果。&lt;/p&gt;
+&lt;h4 id=&#34;一般线性模型glm-procedure自定义组间比较custom-contrasts&#34;&gt;&lt;strong&gt;一般线性模型（GLM procedure）→自定义组间比较（custom contrasts）&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;如果&lt;strong&gt;只关心特定组别间的差异&lt;/strong&gt;，你需要知道如何进行自定义比较（custom contrasts），以及如何对多重比较结果进行调整，这就要用到SPSS软件中的Syntax Editor窗口编写相应程序语句。当满足方差齐性条件时，推荐采用GLM程序进行自定义组间比较。&lt;/p&gt;
+&lt;p&gt;前2步操作同“&lt;strong&gt;2. 一般线性模型（GLM procedure）求效应量（偏η2）&lt;/strong&gt;”的前2步操作，这里不再赘述。接下来：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(1)&lt;/strong&gt; 点击Paste，出现IBM SPSS Statistics Syntax Editor窗口：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/64017.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(2)&lt;/strong&gt; 在 /PRINT 和 /CRITERIA两行中间，输入 /LMATRIX = group  -1  1  0  0：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/64018.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;/LMATRIX= 旨在告诉SPSS我们要做一个自定义假设；group表示将要进行比较的自变量组别；-1  1  0  0表示要进行比较的系数，系数的顺序和SPSS里输入的组别顺序有关：这里从左到右（-1  1  0  0）分别对应着久坐组、“低”、“中”和“高”体力活动组，表示将“低”体力活动组与久坐组进行比较。&lt;/p&gt;
+&lt;p&gt;**(注)**自定义比较包括了简单比较（simple contrasts）和复合比较（complex contrasts）。简单比较为只比较自变量某两个组别间的差异，需要建立线性比较函数（linear contrast，φ）。它包含一系列系数和每个组别对应的均数，系数取值只能为1，-1，0。我们把要比较的两组的系数分别赋值为1和-1，其他不比较的组别系数赋值为0。&lt;/p&gt;
+&lt;p&gt;本例中久坐组系数为-1，“低”体力活动组系数为1，其他组别均为0，则是要比较久坐组和“低”体力活动组的CWWS得分差异，看二者的平均CWWS得分差值是否为0（用“低”体力活动组得分减去久坐组得分，即系数为1的组别减去系数为-1的组别，以系数为-1的组别为参照组，系数赋值的正负与研究设计和研究假设有关）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(3)&lt;/strong&gt; 用/LMATRIX指令增加另外2种比较：&lt;/p&gt;
+&lt;p&gt;/LMATRIX = group -1  1/3  1/3  1/3&lt;/p&gt;
+&lt;p&gt;/LMATRIX = group -1/2  -1/2  1/2  1/2&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/64019.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;**(注)**复合比较为比较自变量超过2个组别的组合间的差异，如比较B组与C、D两组的组合间的差异，或C、D两组间的组合与A、D两组间组合的差异。同样采用线性比较函数的方法，某组合的系数赋值为1或-1除以组合内的组数，但是要保证要比较的组间组合与另一组（组合）的所有系数加起来为0，系数赋值的正负与研究设计和研究假设有关。&lt;/p&gt;
+&lt;p&gt;本例中，/LMATRIX = group -1  1/3  1/3  1/3表示“低”、“中”和“高”体力活动组的组合整体与久坐组CWWS得分差异的比较，/LMATRIX = group -1/2  -1/2  1/2  1/2表示“中”和“高”体力活动组的组合与“低”体力活动组和久坐组组合的比较。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(4)&lt;/strong&gt; 多重比较的校正&lt;/p&gt;
+&lt;p&gt;接下来，我们需要校正显著性水平（α），通常也可以校正每次比较的&lt;em&gt;P&lt;/em&gt;值和可信区间，得到调整后&lt;em&gt;P&lt;/em&gt;值和联合可信区间（simultaneous confidence intervals）。我们首先采用Bonferroni方法对显著性水平α进行校正，公式如下：&lt;/p&gt;
+&lt;p&gt;调整后α=调整前α ÷ 比较的次数&lt;/p&gt;
+&lt;p&gt;本例中我们需要进行3次比较，则调整后α=0.05÷3=0.01667。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(5)&lt;/strong&gt; 箭头标注处为SPSS软件默认的显著性水平α=0.05：&lt;/p&gt;
+&lt;p&gt;/CRITERIA=ALPHA(.05)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/64020.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(6)&lt;/strong&gt; 我们将其改为调整后的显著性水平α=0.1667：&lt;/p&gt;
+&lt;p&gt;/CRITERIA=ALPHA(.01667)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/64021.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(7)&lt;/strong&gt; 在菜单栏点击Run &amp;gt; All：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/64022.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;单因素方差分析oneway-procedure自定义组间比较custom-contrasts&#34;&gt;&lt;strong&gt;单因素方差分析（ONEWAY procedure）→自定义组间比较（custom contrasts）&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;虽然ONEWAY程序有很多缺点，但却是&lt;strong&gt;不满足方差齐性条件时&lt;/strong&gt;唯一可用的方法。前2步操作同“&lt;strong&gt;1. 单因素方差分析（ONEWAY procedure）→两两比较（post hoc test）&lt;/strong&gt;”的前2步操作，这里不再赘述。接下来：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(1)&lt;/strong&gt; 点击Contrasts，出现 One-Way ANOVA: Contrasts对话框：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/64023.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(2)&lt;/strong&gt; 在Coefficients模块中输入第一组比较（如-1 1 0 0）的第一个系数，点击Add：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/64024.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(3)&lt;/strong&gt; 在Coefficients模块中输入第一组比较（如-1 1 0 0）的其他系数，点击Add：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/64026.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(4)&lt;/strong&gt; 点击Next，输入新的自定义比较组，此时下图中红框区域内将变为 –Contrast 2 of 2–：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/64027.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(5)&lt;/strong&gt; 按照之前的方式输入第二个比较组（如-1 1/3 1/3 1/3）：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/64028.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;**注：**Coefficients模块中无法输入分数，最多只能输入3位小数的数值来代替。因此本例中输入0.333代替1/3，但是由于最后总和不等于1（0.333×3=0.999），因此我们将在后面的第（9）（10）步中进行调整。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(6)&lt;/strong&gt; 继续点击Next，输入新的自定义比较组，此时下图中红框区域内将变为 –Contrast 3 of 3–：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/64029.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(7)&lt;/strong&gt; 按照之前的方式输入第三个比较组（如-1/2 -1/2 1/2 1/2）：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/64030.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(8)&lt;/strong&gt; 点击Continue，返回One-Way ANOVA对话框。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(9)&lt;/strong&gt; 点击Paste，进入IBM SPSS Statistics Syntax Editor窗口：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/64031.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(10)&lt;/strong&gt; 手动增加小数位数，如把小数位数从3位改为10位（0.333改为0.3333333333）：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/64016.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(11)&lt;/strong&gt; 在菜单栏中点击Run &amp;gt; All：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/64015.png&#34; alt=&#34;Image&#34;  /&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>外骨骼综述</title>
         <link>https://K7288.github.io/posts/%E5%A4%96%E9%AA%A8%E9%AA%BC%E7%BB%BC%E8%BF%B0/</link>
         <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
@@ -368,6 +594,170 @@ or less range of motion) $\Rightarrow$ uncomfortable &amp;amp; larger metabolic 
 </description>
         </item>
         <item>
+        <title>Review of terrain classification</title>
+        <link>https://K7288.github.io/posts/review-of-terrain-classification/</link>
+        <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://K7288.github.io/posts/review-of-terrain-classification/</guid>
+        <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Author&lt;/th&gt;
+&lt;th&gt;Title&lt;/th&gt;
+&lt;th&gt;Sensor&lt;/th&gt;
+&lt;th&gt;Terrain&lt;/th&gt;
+&lt;th&gt;Method&lt;/th&gt;
+&lt;th&gt;Online/Offline&lt;/th&gt;
+&lt;th&gt;Accuracy&lt;/th&gt;
+&lt;th&gt;Comments&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Daniel B. Kowalsky, John R. Rebula, Lauro V. Ojeda&lt;/td&gt;
+&lt;td&gt;Human walking in the real world: Interactions between terrain type, gait parameters, and energy expenditure&lt;/td&gt;
+&lt;td&gt;a global positioning system (GPS) device, and one inertial measurement unit (IMU) per foot&lt;/td&gt;
+&lt;td&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210906164039761.png&#34; alt=&#34;image-20210906164039761&#34;  /&gt;&lt;br&gt;&lt;strong&gt;5&lt;/strong&gt;: Sidewalk, Dirt, Gravel, Grass, and Woodchips&lt;/td&gt;
+&lt;td&gt;LDA&lt;br&gt;features: (mean, RMS)virtual clearance, stride height, stride length, lateral swing, speed; (RMS)stride width&lt;/td&gt;
+&lt;td&gt;Offline&lt;/td&gt;
+&lt;td&gt;45/50&lt;/td&gt;
+&lt;td&gt;主要是统计学分析；用了variability的variability作为特征；涉及了一点降维&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;What Lies Beneath One’s Feet? Terrain Classification Using Inertial Data of Human Walk&lt;/td&gt;
+&lt;td&gt;IMU (chest and lower back)&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;6&lt;/strong&gt;: carpet, concrete floor, grass, asphalt, soil, and tile&lt;/td&gt;
+&lt;td&gt;RF SVM&lt;br&gt;94 tempo-spectral features, of which 110 features were computed from the time domain (T) and 84 features were computed from the frequency domain (F).&lt;img src=&#34;https://K7288.github.io/assets/applsci-09-03099-i001.png&#34; alt=&#34;Applsci 09 03099 i001&#34;  /&gt;&lt;/td&gt;
+&lt;td&gt;Offline&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;就是提特征丢进分类器里&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;文献中的一些其他总结&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Category&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Year&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Sensor&lt;/th&gt;
+&lt;th&gt;Classifier&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Anastrasirichai [&lt;a class=&#34;link&#34; href=&#34;https://www.mdpi.com/2076-3417/9/15/3099/htm#B11-applsci-09-03099&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;11&lt;/a&gt;]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Vision&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2015&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Camera&lt;/td&gt;
+&lt;td&gt;SVM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Dornik [&lt;a class=&#34;link&#34; href=&#34;https://www.mdpi.com/2076-3417/9/15/3099/htm#B6-applsci-09-03099&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;6&lt;/a&gt;]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Vision&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2017&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Camera&lt;/td&gt;
+&lt;td&gt;Random Forest&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Ma et al. [&lt;a class=&#34;link&#34; href=&#34;https://www.mdpi.com/2076-3417/9/15/3099/htm#B9-applsci-09-03099&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;9&lt;/a&gt;]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Vision&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2017&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Camera&lt;/td&gt;
+&lt;td&gt;SRC&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Christie et al. [&lt;a class=&#34;link&#34; href=&#34;https://www.mdpi.com/2076-3417/9/15/3099/htm#B22-applsci-09-03099&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;22&lt;/a&gt;]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Acoustic&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2016&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Microphone&lt;/td&gt;
+&lt;td&gt;SVM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Valada et al. [&lt;a class=&#34;link&#34; href=&#34;https://www.mdpi.com/2076-3417/9/15/3099/htm#B15-applsci-09-03099&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;15&lt;/a&gt;]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Acoustic&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2018&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Microphone&lt;/td&gt;
+&lt;td&gt;Deep Learning&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Ojeda [&lt;a class=&#34;link&#34; href=&#34;https://www.mdpi.com/2076-3417/9/15/3099/htm#B13-applsci-09-03099&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;13&lt;/a&gt;]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Robotics&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2006&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;IMU, Motor&lt;/td&gt;
+&lt;td&gt;ANN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Giguere et al. [&lt;a class=&#34;link&#34; href=&#34;https://www.mdpi.com/2076-3417/9/15/3099/htm#B4-applsci-09-03099&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;4&lt;/a&gt;]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Robotics&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2011&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Tactile&lt;/td&gt;
+&lt;td&gt;ANN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Wu et al. [&lt;a class=&#34;link&#34; href=&#34;https://www.mdpi.com/2076-3417/9/15/3099/htm#B3-applsci-09-03099&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;3&lt;/a&gt;]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Robotics&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2016&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Tactile&lt;/td&gt;
+&lt;td&gt;SVM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Manduchi et al. [&lt;a class=&#34;link&#34; href=&#34;https://www.mdpi.com/2076-3417/9/15/3099/htm#B1-applsci-09-03099&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;1&lt;/a&gt;]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Autonomous off-road driving&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2005&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Ladar &amp;amp; Camera&lt;/td&gt;
+&lt;td&gt;Gaussian Process&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Lu et al. [&lt;a class=&#34;link&#34; href=&#34;https://www.mdpi.com/2076-3417/9/15/3099/htm#B20-applsci-09-03099&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;20&lt;/a&gt;]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Autonomous off-road driving&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2009&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Laser&lt;/td&gt;
+&lt;td&gt;PNN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Hu et al. [&lt;a class=&#34;link&#34; href=&#34;https://www.mdpi.com/2076-3417/9/15/3099/htm#B33-applsci-09-03099&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;33&lt;/a&gt;]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Human Gait&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2018&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;IMU&lt;/td&gt;
+&lt;td&gt;LSTM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Diaz et al. [&lt;a class=&#34;link&#34; href=&#34;https://www.mdpi.com/2076-3417/9/15/3099/htm#B34-applsci-09-03099&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;34&lt;/a&gt;]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Human Gait&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2018&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Camera, IMU&lt;/td&gt;
+&lt;td&gt;BoW model&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        <item>
         <title>(Origami) Pneumatic Exoskeleton</title>
         <link>https://K7288.github.io/posts/origami-pnumatic-exoskeleton/</link>
         <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
@@ -705,6 +1095,7 @@ airflow restriction problem for single-chamber actuators at extreme bending angl
 &lt;p&gt;见&amp;quot;J. Perry, J.M. Burnfield, Gait Analysis: Normal and Pathological Function(2nd ed.), SLACK Incorporated (2010)&amp;ldquo;以及&amp;quot;Michael W. Whittle, An Introduction to Gait Analysis, 4th Ed. (2007)&amp;rdquo; （&lt;a class=&#34;link&#34; href=&#34;https://K7288.github.io/posts/gait-analysis-fundamentals/#gait-analysis-three-basic-approaches3&#34; &gt;之前的笔记&lt;/a&gt;）&lt;/p&gt;
 &lt;p&gt;此外，一些工作里有不同的划分方式&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://K7288.github.io/assets/image-20210813200345964.png&#34; alt=&#34;image-20210813200345964&#34;  /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;heading&#34;&gt;&lt;/h2&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
@@ -1805,6 +2196,16 @@ p_{x} &amp;amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\
 &lt;p&gt;methodology&lt;/p&gt;
 &lt;p&gt;prototype&lt;/p&gt;
 &lt;p&gt;Sensory Information&lt;/p&gt;
+&lt;p&gt;one representative subject&lt;/p&gt;
+&lt;p&gt;energy per unit distance and weight&lt;/p&gt;
+&lt;p&gt;across-subject means&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Bars denote across-subject means; error bars denote standard deviation across subjects (N= 10).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;个体差异 within-trial variations; inter-subject differences&lt;/p&gt;
+&lt;p&gt;拟合 For goodness of fit, the top four correlates were xxx,xxx&lt;/p&gt;
+&lt;p&gt;统计学分析 Participants also expended varying amounts of energy as a function of terrain (Fig 4, top). Net metabolic rate E_ met
+varied with terrain type for groupwise (repeated measures ANOVA, P = 7.1e-11) and for most pair-wise comparisons (post hoc paired t-tests, P &amp;lt; 0.05), with the greatest difference (27%) found between Woodchips and Sidewalk. The only non-significant comparisons were Dirt vs. Sidewalk, Gravel vs. Dirt, and Grass vs. Gravel (P &amp;lt; 0.05).&lt;/p&gt;
 </description>
         </item>
         <item>

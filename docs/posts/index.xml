@@ -6,7 +6,58 @@
     <description>Recent content in Posts on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Human walking in the real world Interactions between terrain type, gait parameters, and energy expenditure</title>
+      <link>https://K7288.github.io/posts/human-walking-in-the-real-world-interactions-between-terrain-type-gait-parameters-and-energy-expenditure/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/human-walking-in-the-real-world-interactions-between-terrain-type-gait-parameters-and-energy-expenditure/</guid>
+      <description>Summary 用统计学方法分析了不同地形对选取的步态参数、步态参数的variability以及代谢耗能的影响
+ 影响是否有统计学意义；正相关/负相关；一点点直观的原因解释 步态参数的相关性  步态参数及其variability与代谢耗能的相关性（线性回归、统计分析）
+步态参数预估代谢耗能 （principal components regression (PCR) ； partial least squares regression (PLSR)和单因素回归）
+Research question how foot paths change with terrain, and how they relate to the energetic cost of walking.
+ foot path refers to the foot’s translation in three dimensions during a single swing phase, starting from the previous stance phase and including the ending stance phase, when the foot is stationary.
+ Introduction Effects of ground terrain: the elevation change over a step, average stride length and width, mid-swing(higher on the uneven terrain), foot placement for stabilizing adjustments $\Rightarrow$ energy expenditure</description>
+    </item>
+    
+    <item>
+      <title>方差分析ANOVA</title>
+      <link>https://K7288.github.io/posts/%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90anova/</link>
+      <pubDate>Wed, 25 Aug 2021 00:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90anova/</guid>
+      <description>单因素方差分析 One Way ANOVA 单因素方差分析SPSS教程 
+如果单因素方差分析显示差异具有统计学意义（P&amp;lt;0.05），表示不是所有组的总体均数均相等（至少有一组均数不同于另一组）。如果P&amp;gt;0.05，则表示各组间均数差异无统计学意义。
+2种适用的研究设计 1）判断3个及以上独立的组间均数是否存在差异；
+2）判断前后变化的差值是否存在差异。
+6个假设 假设1：因变量为连续变量；
+假设2：有一个包含2个及以上分类、且组别间相互独立的自变量；
+假设3：每组间和组内的观测值相互独立；
+假设4：每组内没有明显异常值；
+假设5：每组内因变量符合正态分布；
+假设6：进行方差齐性检验，观察每组的方差是否相等。
+整体流程 假设验证 假设4：每组内没有明显异常值   Boxplots
+如果存在多个异常值，应先把最极端的异常值去掉后，重新检查异常值情况。
+  异常值的处理方法： (1) 保留异常值：
+1）采用非参数Kruskal-Wallis H检验；
+2）用非最极端的值来代替极端异常值（如用第二大的值代替）；
+3）因变量转换成其他形式；
+4）将异常值纳入分析，并坚信其对结果不会产生实质影响。
+(2) 剔除异常值：
+直接删除异常值很简单，但却是没有办法的办法。当我们需要删掉异常值时，应报告异常值大小及其对结果的影响，最好分别报告删除异常值前后的结果。而且，应该考虑有异常值的个体是否符合研究的纳入标准。如果其不属于合格的研究对象，应将其剔除，否则会影响结果的推论。
+假设5：每组内因变量符合正态分布 Shapiro-Wilk正态性检验、偏度和峰度值、直方图等
+ 如果样本量较小（&amp;lt;50），并且对正态Q-Q图或其他图形方法的结果诠释不够有把握，推荐采用Shapiro-Wilk检验。每组自变量都会有一个Shapiro-Wilk正态性检验结果；如果样本量大于50，推荐使用正态Q-Q图等图形方法进行正态判断，因为当样本量较大时，Shapiro-Wilk检验会把稍稍偏离正态分布的数据也标记为有统计学差异，即数据不服从正态分布。
+boxplot选择“带检验的正态图”
+ 如果数据符合正态分布，显著性水平（蓝框中的Sig.）应该大于0.05。Shapiro-Wilk检验的无效假设是数据服从正态分布，备择假设是数据不服从正态分布。因此，如果拒绝无效假设（P&amp;lt;0.05），表示数据不服从正态分布；如果不能拒绝无效假设，则不能认为数据不服从正态分布。
+不服从正态分布的处理方法 (1) 数据转换：对转换后呈正态分布的数据进行单因素方差分析。当各组因变量的分布形状相同时，正态转换才有可能成功。对于一些常见的分布，有特定的转换形式，但是对于转换后数据的结果解释可能比较复杂。
+(2) 使用非参数检验：可以使用Kruskal-Wallis H检验等非参数检验方法，但是要注意Kruskal-Wallis H检验和单因素方差分析的无效假设和备择假设不太一致。
+(3) 直接进行分析：由于单因素方差分析对于偏离正态分布比较稳健，尤其是在各组样本量相等或近似相等的情况下，而且非正态分布实质上并不影响犯I型错误的概率。因此可以直接进行检验，但是结果中仍需报告对正态分布的偏离。
+(4) 检验结果的比较：将转换后和未转换的原始数据分别进行单因素方差分析，如果二者结论相同，则再对未转换的原始数据进行分析。
+假设6：进行方差齐性检验，观察每组的方差是否相等 SPSS操作 单因素方差分析（ONEWAY procedure）→事后两两比较（post hoc test） (1) 点击Analyze &amp;gt; Compare Means &amp;gt; One-Way ANOVA：
+出现One-Way ANOVA对话框：</description>
+    </item>
+    
     <item>
       <title>外骨骼综述</title>
       <link>https://K7288.github.io/posts/%E5%A4%96%E9%AA%A8%E9%AA%BC%E7%BB%BC%E8%BF%B0/</link>
@@ -26,6 +77,16 @@
       <description>Yoshimura
 Miura-ori
 diagnoal</description>
+    </item>
+    
+    <item>
+      <title>Review of terrain classification</title>
+      <link>https://K7288.github.io/posts/review-of-terrain-classification/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/review-of-terrain-classification/</guid>
+      <description>Author Title Sensor Terrain Method Online/Offline Accuracy Comments     Daniel B. Kowalsky, John R. Rebula, Lauro V. Ojeda Human walking in the real world: Interactions between terrain type, gait parameters, and energy expenditure a global positioning system (GPS) device, and one inertial measurement unit (IMU) per foot 5: Sidewalk, Dirt, Gravel, Grass, and Woodchips LDA
+features: (mean, RMS)virtual clearance, stride height, stride length, lateral swing, speed; (RMS)stride width Offline 45/50 主要是统计学分析；用了variability的variability作为特征；涉及了一点降维    What Lies Beneath One’s Feet?</description>
     </item>
     
     <item>
@@ -242,7 +303,14 @@ the integrated design
 cognitive effort
 methodology
 prototype
-Sensory Information</description>
+Sensory Information
+one representative subject
+energy per unit distance and weight
+across-subject means
+ Bars denote across-subject means; error bars denote standard deviation across subjects (N= 10).
+ 个体差异 within-trial variations; inter-subject differences
+拟合 For goodness of fit, the top four correlates were xxx,xxx
+统计学分析 Participants also expended varying amounts of energy as a function of terrain (Fig 4, top).</description>
     </item>
     
     <item>
