@@ -6,7 +6,112 @@
         <description>Recent content on K7288</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Tue, 31 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 11 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>生成树状目录</title>
+        <link>https://K7288.github.io/posts/%E7%94%9F%E6%88%90%E6%A0%91%E7%8A%B6%E7%9B%AE%E5%BD%95/</link>
+        <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://K7288.github.io/posts/%E7%94%9F%E6%88%90%E6%A0%91%E7%8A%B6%E7%9B%AE%E5%BD%95/</guid>
+        <description>&lt;h2 id=&#34;windows自带&#34;&gt;Windows自带&lt;/h2&gt;
+&lt;p&gt;tree&lt;/p&gt;
+&lt;h2 id=&#34;基于node的tree-node-cli&#34;&gt;基于node的tree-node-cli&lt;/h2&gt;
+&lt;h3 id=&#34;nodejs安装&#34;&gt;nodejs安装&lt;/h3&gt;
+&lt;p&gt;安装地址 &lt;a class=&#34;link&#34; href=&#34;https://nodejs.org/zh-cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Node.js (nodejs.org)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;安装tree-node-cli&#34;&gt;安装tree-node-cli&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;npm install -g tree-node-cli 
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;使用&#34;&gt;使用&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;treee -L 3 -I &amp;quot;node_modules|.git&amp;quot; -a --dirs-first &amp;gt; tree.md
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;windows用户需要用&lt;strong&gt;treee&lt;/strong&gt;代替tree，避免和系统的tree命令冲突。 &lt;code&gt;treee&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;指定路径的级别为3级。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-L 3&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;忽略文件夹（正则表达式匹配，.git会匹配到.gitignore）&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-I &amp;quot;node_modules|.idea|objects|.git&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;显示所有文件（默认前缀有&amp;quot;.&amp;ldquo;的不会显示，例如&amp;rdquo;.electron-vue&amp;quot;）&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-a&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;目录在前，文件在后（默认是字母排序，和idea显示的顺序不一致）。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;--dirs-first&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;保存树状结构到tree.md&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;gt; tree.md&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;完整选项&#34;&gt;完整选项&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;-V, --version             输出版本号
+-a, --all-files           打印所有文件，包括隐藏文件
+--dirs-first              目录在前，文件在后
+-d, --dirs-only           仅列出目录
+-I, --exclude [patterns]  排除与模式匹配的文件。用 | 隔开,用双引号包裹。 例如 “node_modules|.git”
+-L, --max-depth &amp;lt;n&amp;gt;       目录树的最大显示深度
+-r, --reverse             按反向字母顺序对输出进行排序
+-F, --trailing-slash      为目录添加&#39;/&#39;
+-h, --help                输出用法信息
+&lt;/code&gt;&lt;/pre&gt;</description>
+        </item>
+        <item>
+        <title>sEMG信号采集及处理</title>
+        <link>https://K7288.github.io/posts/semg%E4%BF%A1%E5%8F%B7%E9%87%87%E9%9B%86%E5%8F%8A%E5%A4%84%E7%90%86/</link>
+        <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://K7288.github.io/posts/semg%E4%BF%A1%E5%8F%B7%E9%87%87%E9%9B%86%E5%8F%8A%E5%A4%84%E7%90%86/</guid>
+        <description>&lt;h2 id=&#34;semg-sensors&#34;&gt;sEMG sensors&lt;/h2&gt;
+&lt;h3 id=&#34;size&#34;&gt;Size&lt;/h3&gt;
+&lt;p&gt;the size of the electrodes in the direction of the muscle fibers is max. 10mm.&lt;/p&gt;
+&lt;h3 id=&#34;inter-electrode-distance&#34;&gt;Inter electrode distance&lt;/h3&gt;
+&lt;p&gt;(for sensors restrict to bipolar sensors only) &amp;lsquo;Inter electrode distance&amp;rsquo; defined as the centre to centre distance between the conductive area&amp;rsquo;s of 2 bipolar electrodes.
+20 mm. / not exceed 1/4 of the muscle fibre length(for relatively small muscles; In this way unstable recordings, due to tendon and motor endplate effects can be avoided.)&lt;/p&gt;
+&lt;h3 id=&#34;sensor-construction&#34;&gt;Sensor construction&lt;/h3&gt;
+&lt;p&gt;(defined as: the (mechanical) construction which is used to integrate the electrodes, the cables and (if applicable) the pre-amplifier.) a construction with fixed inter electrode distance, built from light weight material. Cables need to be fixed using (double sided) tape or elastic band in such a manner that pulling artefacts can be avoided.
+If in fast dynamic contractions the sensor construction causes too much (movement) artefacts (due to inertia of the construction), SENIAM recommends to fix the inter electrode distance using (double sided) tape or rings.&lt;/p&gt;
+&lt;h2 id=&#34;信号采集&#34;&gt;信号采集&lt;/h2&gt;
+&lt;h3 id=&#34;skin-preparation&#34;&gt;Skin preparation&lt;/h3&gt;
+&lt;p&gt;1️⃣ shave the patient
+2️⃣ clean the skin with &lt;strong&gt;alcohol&lt;/strong&gt; and allow the alcohol to vaporise&lt;/p&gt;
+&lt;h3 id=&#34;positioning-the-patient-in-starting-posture&#34;&gt;Positioning the patient in starting posture&lt;/h3&gt;
+&lt;p&gt;the posture of the patient (sitting, lying, prone, etc…) as well as the position and orientation of the body segment at which the electrode will be placed.&lt;/p&gt;
+&lt;h3 id=&#34;determination-of-sensor-location&#34;&gt;Determination of sensor location&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;With respect to the longitudinal location of the sensor on the muscle SENIAM recommends to place the sensor halfway the (most) distal motor endplate zone and the distal tendon.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;With respect to the transversal location of the sensor on the muscle SENIAM recommends to place the sensor at the surface away from the &amp;lsquo;edge&amp;rsquo; with other subdivisions or muscles so that the geometrical distance of the muscle to these subdivisions and other muscles is maximised.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;soleus比目鱼肌&#34;&gt;Soleus比目鱼肌&lt;/h4&gt;
+&lt;h4 id=&#34;tibialis-anterior胫前肌&#34;&gt;Tibialis anterior胫前肌&lt;/h4&gt;
+&lt;p&gt;Support the leg just above the ankle joint with the ankle joint in dorsiflexion and the foot in inversion without extension of the great toe.&lt;/p&gt;
+&lt;h3 id=&#34;placement-and-fixation&#34;&gt;Placement and fixation&lt;/h3&gt;
+&lt;h4 id=&#34;inter-electrode-distance-1&#34;&gt;Inter electrode distance&lt;/h4&gt;
+&lt;p&gt;见上节&lt;a class=&#34;link&#34; href=&#34;#semg-sensors&#34; &gt;Inter electrode distance&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;orientation-of-electrodes&#34;&gt;Orientation of electrodes&lt;/h4&gt;
+&lt;p&gt;&amp;lsquo;Electrode orientation&amp;rsquo; is defined as the position of the line between the 2 bipolar electrodes with respect to the direction of the muscle fibres.
+SENIAM recommends that the bipolar SEMG electrodes should be placed around the recommended sensor location with the orientation parallel to the muscle fibres.&lt;/p&gt;
+&lt;h4 id=&#34;fixation-on-the-skin&#34;&gt;Fixation on the skin&lt;/h4&gt;
+&lt;p&gt;SENIAM recommends to use elastic band or (double sided) tape / rings for the fixation of the electrodes(construction) and cables to the skin in such a way that the electrodes are properly fixed to the skin, movement is not hindered and cables are not pulling the electrodes(construction).&lt;/p&gt;
+&lt;h4 id=&#34;location-of-the-reference-electrode&#34;&gt;Location of the reference electrode&lt;/h4&gt;
+&lt;p&gt;Depending on the application SENIAM recommends to use the wrist, the proc. spin. of C7 or the ankle as the standard location of the reference electrode.&lt;/p&gt;
+&lt;h4 id=&#34;testing-of-the-connection&#34;&gt;Testing of the connection&lt;/h4&gt;
+&lt;p&gt;The clinical tests which are described are generally accepted muscle tests which guarantee (under normal circumstances) activity of the tested muscle. The clinical test has to be started from the starting posture described in the SENIAM recommendations for sensor locations and has to be performed according to the recommendations. The clinical tests described are &lt;strong&gt;not &amp;lsquo;selective&amp;rsquo; contractions&lt;/strong&gt; in which only the desired muscle is active and all other muscles are inactive.&lt;/p&gt;
+&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;/h2&gt;
+&lt;p&gt;[1] &lt;a class=&#34;link&#34; href=&#34;http://www.seniam.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;The SENIAM project&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Human walking in the real world Interactions between terrain type, gait parameters, and energy expenditure</title>
         <link>https://K7288.github.io/posts/human-walking-in-the-real-world-interactions-between-terrain-type-gait-parameters-and-energy-expenditure/</link>
         <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>

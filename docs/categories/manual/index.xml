@@ -6,7 +6,29 @@
     <description>Recent content in Manual on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 09 Jul 2021 22:00:09 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/manual/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/manual/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>生成树状目录</title>
+      <link>https://K7288.github.io/posts/%E7%94%9F%E6%88%90%E6%A0%91%E7%8A%B6%E7%9B%AE%E5%BD%95/</link>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/%E7%94%9F%E6%88%90%E6%A0%91%E7%8A%B6%E7%9B%AE%E5%BD%95/</guid>
+      <description>Windows自带 tree
+基于node的tree-node-cli nodejs安装 安装地址 Node.js (nodejs.org)
+安装tree-node-cli npm install -g tree-node-cli 使用 treee -L 3 -I &amp;quot;node_modules|.git&amp;quot; -a --dirs-first &amp;gt; tree.md   windows用户需要用treee代替tree，避免和系统的tree命令冲突。 treee
+  指定路径的级别为3级。
+-L 3
+  忽略文件夹（正则表达式匹配，.git会匹配到.gitignore）
+-I &amp;quot;node_modules|.idea|objects|.git&amp;quot;
+  显示所有文件（默认前缀有&amp;quot;.&amp;ldquo;的不会显示，例如&amp;rdquo;.electron-vue&amp;quot;）
+-a
+  目录在前，文件在后（默认是字母排序，和idea显示的顺序不一致）。
+--dirs-first
+  保存树状结构到tree.md
+&amp;gt; tree.md
+   完整选项 -V, --version 输出版本号-a, --all-files 打印所有文件，包括隐藏文件--dirs-first 目录在前，文件在后-d, --dirs-only 仅列出目录-I, --exclude [patterns] 排除与模式匹配的文件。用 | 隔开,用双引号包裹。 例如 “node_modules|.</description>
+    </item>
+    
     <item>
       <title>FScan: Before Taking A Recording</title>
       <link>https://K7288.github.io/posts/before-taking-a-recording/</link>

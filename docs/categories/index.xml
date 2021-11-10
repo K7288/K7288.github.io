@@ -6,7 +6,34 @@
     <description>Recent content in Categories on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 31 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manual</title>
+      <link>https://K7288.github.io/categories/manual/</link>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/categories/manual/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Experiment</title>
+      <link>https://K7288.github.io/categories/experiment/</link>
+      <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/categories/experiment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sensor</title>
+      <link>https://K7288.github.io/categories/sensor/</link>
+      <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/categories/sensor/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Literature Notes</title>
       <link>https://K7288.github.io/categories/literature-notes/</link>
@@ -67,24 +94,6 @@
       <pubDate>Fri, 09 Jul 2021 22:00:09 +0800</pubDate>
       
       <guid>https://K7288.github.io/categories/hardware/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Manual</title>
-      <link>https://K7288.github.io/categories/manual/</link>
-      <pubDate>Fri, 09 Jul 2021 22:00:09 +0800</pubDate>
-      
-      <guid>https://K7288.github.io/categories/manual/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sensor</title>
-      <link>https://K7288.github.io/categories/sensor/</link>
-      <pubDate>Fri, 09 Jul 2021 22:00:09 +0800</pubDate>
-      
-      <guid>https://K7288.github.io/categories/sensor/</guid>
       <description></description>
     </item>
     
