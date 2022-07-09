@@ -6,7 +6,72 @@
     <description>Recent content in Literature Notes on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/literature-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/literature-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Human walking in the real world Interactions between terrain type, gait parameters, and energy expenditure</title>
+      <link>https://K7288.github.io/posts/human-walking-in-the-real-world-interactions-between-terrain-type-gait-parameters-and-energy-expenditure/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/human-walking-in-the-real-world-interactions-between-terrain-type-gait-parameters-and-energy-expenditure/</guid>
+      <description>Summary 用统计学方法分析了不同地形对选取的步态参数、步态参数的variability以及代谢耗能的影响
+ 影响是否有统计学意义；正相关/负相关；一点点直观的原因解释 步态参数的相关性  步态参数及其variability与代谢耗能的相关性（线性回归、统计分析）
+步态参数预估代谢耗能 （principal components regression (PCR) ； partial least squares regression (PLSR)和单因素回归）
+Research question how foot paths change with terrain, and how they relate to the energetic cost of walking.
+ foot path refers to the foot’s translation in three dimensions during a single swing phase, starting from the previous stance phase and including the ending stance phase, when the foot is stationary.
+ Introduction Effects of ground terrain: the elevation change over a step, average stride length and width, mid-swing(higher on the uneven terrain), foot placement for stabilizing adjustments $\Rightarrow$ energy expenditure</description>
+    </item>
+    
+    <item>
+      <title>外骨骼综述</title>
+      <link>https://K7288.github.io/posts/%E5%A4%96%E9%AA%A8%E9%AA%BC%E7%BB%BC%E8%BF%B0/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/%E5%A4%96%E9%AA%A8%E9%AA%BC%E7%BB%BC%E8%BF%B0/</guid>
+      <description>Lower limb exoskeleton systems-overview1    Category Control(mostly) Actuator(mostly) Wearer     Assistive High precision; Predefined trajectories triggered by the user’s moving intention
+($\Rightarrow$ Intention Estimation + Trajectories Generating) DC motor patients permanently lose the ability to walk   Rehabilitation Predefined; Impedance control; Adjusting itself based on patient feedback. high-power density rehabilitating patients to regain mobility   Augmentation admittance/impedance control; positive feedback sensitivity amplification control, Inaccurate but high power/weight ratio actuators (series elastic actuators (SEA) and pneumatic actuators) healthy individuals    Assistive Intention Estimation ​   Direct</description>
+    </item>
+    
+    <item>
+      <title>Review of terrain analysis / terrain classification</title>
+      <link>https://K7288.github.io/posts/review-of-terrain-classification/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/review-of-terrain-classification/</guid>
+      <description>Author Title  Sensor Terrain  Method  Online/Offline Accuracy Comments      Surface effects on dynamic stability and loading during outdoor running using wireless trunk accelerometry accelerometer over L3 spinous process of the trunk three outdoor training surfaces (concrete road, synthetic track and woodchip trail) 1.Dynamic postural stability (tri-axial acceleration root mean square (RMS) ratio, step and stride regularity, sample entropy), dynamic loading (impact and breaking peak amplitudes and median frequencies), as well as spatio-temporal running gait measures (step frequency, stance time) were derived from trunk accelerations</description>
+    </item>
+    
+    <item>
+      <title>(Origami) Pneumatic Exoskeleton</title>
+      <link>https://K7288.github.io/posts/origami-pnumatic-exoskeleton/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/origami-pnumatic-exoskeleton/</guid>
+      <description>(Origami) Pneumatic Exoskeleton
+Summary of previous work    Author Origami pattern Joint Prototype 研究阶段     Bio-Robotics and Control (BiRC) Laboratory，UNIST, Korea Yoshimura pattern shoulder  1.设计 2.建模（输出力关于弯曲角度等的表达式）3. 实验验证对支撑能力/输出力矩的仿真结果   南方科技大学 刘思聪 王峥 Variated Yoshimura with trapezoid facets. wrist  1. 设计 2. 运动学建模 3. 级联控制（未详细阐述，使用之前合作的工作） 4. 实验验证控制性能以及不同负载下的运动范围   西北工业大学 Jing Fang*2 #1 #2 / (Accordion/Fan) knee  1. 设计 2. 建模（输出力矩的闭式表达式）3. 实验验证机械性能及辅助效果 4. 控制（满足对特定动作的支持）   Yang, Hee Doo / (Artificial muscle) elbow</description>
+    </item>
+    
+    <item>
+      <title>IPS for Validation</title>
+      <link>https://K7288.github.io/posts/ips-for-validation/</link>
+      <pubDate>Mon, 02 Aug 2021 00:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/ips-for-validation/</guid>
+      <description>Detection of gait events using an F-Scan in-shoe pressure measurement system 比较了force-based detection (FD，软件自带)和area-based method (AD) ；kinetic detection(KT，使用force platforms的数据)作为validation
+对F-Scan® system准确性的讨论 Several studies have evaluated the accuracy and reliability of force and pressure measurements using the F-Scan® system and reached different conclusions. While some authors concluded that F-Scan demonstrated good to excellent reliability in measuring plantar pressures [11], others concluded that the system was not entirely suitable for accurate and repeatable absolute pressure measurements [12], [13], [14] or that the system could be used only in a sample large enough as to allow the detection of the real effect of the treatment [15].</description>
+    </item>
+    
+    <item>
+      <title>Reviews of Gait Event/Phase Detection Methods</title>
+      <link>https://K7288.github.io/posts/reviews-of-gait-eventphase-detection-methods/</link>
+      <pubDate>Mon, 02 Aug 2021 00:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/reviews-of-gait-eventphase-detection-methods/</guid>
+      <description>Strategy1 &amp;amp; Yield  Search Strategy
+  Scopus, Google Scholar, and PubMed databases were used to perform a literature search on the topic of gait phase partitioning.
+  The electronic search was conducted in September 2015.
+  Keywords included: gait events, gait phases, and their combinations with the words: partitioning, detection, classification, and recognition. In addition, wildcard symbols, such as hyphens or inverted commas, were used to consider all possible variations of root words.</description>
+    </item>
+    
     <item>
       <title>Phase Portraits</title>
       <link>https://K7288.github.io/posts/phase-portrait/</link>
@@ -155,7 +220,16 @@ Experimental Protocol
 Representative diagram
 the integrated design
 cognitive effort
-methodology</description>
+methodology
+prototype
+Sensory Information
+one representative subject
+energy per unit distance and weight
+across-subject means
+ Bars denote across-subject means; error bars denote standard deviation across subjects (N= 10).
+ 个体差异 within-trial variations; inter-subject differences
+拟合 For goodness of fit, the top four correlates were xxx,xxx
+统计学分析 Participants also expended varying amounts of energy as a function of terrain (Fig 4, top).</description>
     </item>
     
     <item>
@@ -238,20 +312,6 @@ Methods   采样：健侧大腿、小腿惯性测量单元于摆动相前期所�
 Highlights 减少了传感器的数量及种类, 降低 了特征向量的维数降低了算法复杂度且避免了滞后性问题, 用加速度、 角速度及膝关节角三个参数共同对人体下肢运动的运动学特点进行表征。
 在特征的提取上, 将FDA方法与统计方法相结合, 弥补了仅提取统计特征的不稳定性问题。
 Limits/Further Work 对于13种动作的识别率有待提高, 后期工作会集中于对类间相似性相对较强较难区分的动作进行分类, 如: 下楼与下坡, 走到下楼 与走到下坡等.</description>
-    </item>
-    
-    <item>
-      <title>论文3篇泛读 1-&gt;measurement可靠性(方法比较奇怪或者没有) 2/3-&gt;步态参数拟合</title>
-      <link>https://K7288.github.io/posts/measurement%E5%8F%AF%E9%9D%A0%E6%80%A7%E6%96%B9%E6%B3%95%E6%AF%94%E8%BE%83%E5%A5%87%E6%80%AA%E6%88%96%E8%80%85%E6%B2%A1%E6%9C%89-%E6%AD%A5%E6%80%81%E5%8F%82%E6%95%B0%E6%8B%9F%E5%90%88/</link>
-      <pubDate>Sat, 01 May 2021 11:37:16 +0800</pubDate>
-      
-      <guid>https://K7288.github.io/posts/measurement%E5%8F%AF%E9%9D%A0%E6%80%A7%E6%96%B9%E6%B3%95%E6%AF%94%E8%BE%83%E5%A5%87%E6%80%AA%E6%88%96%E8%80%85%E6%B2%A1%E6%9C%89-%E6%AD%A5%E6%80%81%E5%8F%82%E6%95%B0%E6%8B%9F%E5%90%88/</guid>
-      <description>因为不熟悉心相关研究问题，之前做笔记的次数也少，这几篇Literature Notes结构不够清晰，而且过长，下次注意。
-三篇文献与选题的关联性差强人意，之后留意/请教一下如何有效查找文献。
-1. Reliability of centre of pressure, plantar pressure, and plantar-flexion isometric strength measures: A systematic review COP PP PFisom 三种步态控制measurement 的可靠性
-方法：对三个数据库实验进行同行评估 ICC
-Background Centre of pressure (COP), plantar pressure (PP), and plantar-flexion isometric strength (PFisom) are often examined in relation to postural control and gait.
-Research question Our aim was to systematically review and quality appraise articles addressing the reliability of COP and PP measures in static stance and PFisom measures.</description>
     </item>
     
   </channel>

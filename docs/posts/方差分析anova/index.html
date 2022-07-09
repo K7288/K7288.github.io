@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='单因素方差分析 One Way ANOVA 单因素方差分析SPSS教程 
+如果单因素方差分析显示差异具有统计学意义（P&amp;lt;0.05），表示不是所有组的总体均数均相等（至少有一组均数不同于另一组）。如果P&amp;gt;0.05，则表示各组间均数差异无统计学意义。
+2种适用的研究设计 1）判断3个及以上独立的组间均数是否存在差异；
+2）判断前后变化的差值是否存在差异。
+6个假设 假设1：因变量为连续变量；
+假设2：有一个包含2个及以上分类、且组别间相互独立的自变量；
+假设3：每组间和组内的观测值相互独立；
+假设4：每组内没有明显异常值；
+假设5：每组内因变量符合正态分布；
+假设6：进行方差齐性检验，观察每组的方差是否相等。
+整体流程 假设验证 假设4：每组内没有明显异常值   Boxplots
+如果存在多个异常值，应先把最极端的异常值去掉后，重新检查异常值情况。
+  异常值的处理方法： (1) 保留异常值：
+1）采用非参数Kruskal-Wallis H检验；
+2）用非最极端的值来代替极端异常值（如用第二大的值代替）；
+3）因变量转换成其他形式；
+4）将异常值纳入分析，并坚信其对结果不会产生实质影响。
+(2) 剔除异常值：
+直接删除异常值很简单，但却是没有办法的办法。当我们需要删掉异常值时，应报告异常值大小及其对结果的影响，最好分别报告删除异常值前后的结果。而且，应该考虑有异常值的个体是否符合研究的纳入标准。如果其不属于合格的研究对象，应将其剔除，否则会影响结果的推论。
+假设5：每组内因变量符合正态分布 Shapiro-Wilk正态性检验、偏度和峰度值、直方图等
+ 如果样本量较小（&amp;lt;50），并且对正态Q-Q图或其他图形方法的结果诠释不够有把握，推荐采用Shapiro-Wilk检验。每组自变量都会有一个Shapiro-Wilk正态性检验结果；如果样本量大于50，推荐使用正态Q-Q图等图形方法进行正态判断，因为当样本量较大时，Shapiro-Wilk检验会把稍稍偏离正态分布的数据也标记为有统计学差异，即数据不服从正态分布。
+boxplot选择“带检验的正态图”
+ 如果数据符合正态分布，显著性水平（蓝框中的Sig.）应该大于0.05。Shapiro-Wilk检验的无效假设是数据服从正态分布，备择假设是数据不服从正态分布。因此，如果拒绝无效假设（P&amp;lt;0.05），表示数据不服从正态分布；如果不能拒绝无效假设，则不能认为数据不服从正态分布。
+不服从正态分布的处理方法 (1) 数据转换：对转换后呈正态分布的数据进行单因素方差分析。当各组因变量的分布形状相同时，正态转换才有可能成功。对于一些常见的分布，有特定的转换形式，但是对于转换后数据的结果解释可能比较复杂。
+(2) 使用非参数检验：可以使用Kruskal-Wallis H检验等非参数检验方法，但是要注意Kruskal-Wallis H检验和单因素方差分析的无效假设和备择假设不太一致。
+(3) 直接进行分析：由于单因素方差分析对于偏离正态分布比较稳健，尤其是在各组样本量相等或近似相等的情况下，而且非正态分布实质上并不影响犯I型错误的概率。因此可以直接进行检验，但是结果中仍需报告对正态分布的偏离。
+(4) 检验结果的比较：将转换后和未转换的原始数据分别进行单因素方差分析，如果二者结论相同，则再对未转换的原始数据进行分析。
+假设6：进行方差齐性检验，观察每组的方差是否相等 SPSS操作 单因素方差分析（ONEWAY procedure）→事后两两比较（post hoc test） (1) 点击Analyze &amp;gt; Compare Means &amp;gt; One-Way ANOVA：
+出现One-Way ANOVA对话框：'><title>方差分析ANOVA</title>
+
+<link rel='canonical' href='https://K7288.github.io/posts/%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90anova/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='方差分析ANOVA'>
+<meta property='og:description' content='单因素方差分析 One Way ANOVA 单因素方差分析SPSS教程 
+如果单因素方差分析显示差异具有统计学意义（P&amp;lt;0.05），表示不是所有组的总体均数均相等（至少有一组均数不同于另一组）。如果P&amp;gt;0.05，则表示各组间均数差异无统计学意义。
+2种适用的研究设计 1）判断3个及以上独立的组间均数是否存在差异；
+2）判断前后变化的差值是否存在差异。
+6个假设 假设1：因变量为连续变量；
+假设2：有一个包含2个及以上分类、且组别间相互独立的自变量；
+假设3：每组间和组内的观测值相互独立；
+假设4：每组内没有明显异常值；
+假设5：每组内因变量符合正态分布；
+假设6：进行方差齐性检验，观察每组的方差是否相等。
+整体流程 假设验证 假设4：每组内没有明显异常值   Boxplots
+如果存在多个异常值，应先把最极端的异常值去掉后，重新检查异常值情况。
+  异常值的处理方法： (1) 保留异常值：
+1）采用非参数Kruskal-Wallis H检验；
+2）用非最极端的值来代替极端异常值（如用第二大的值代替）；
+3）因变量转换成其他形式；
+4）将异常值纳入分析，并坚信其对结果不会产生实质影响。
+(2) 剔除异常值：
+直接删除异常值很简单，但却是没有办法的办法。当我们需要删掉异常值时，应报告异常值大小及其对结果的影响，最好分别报告删除异常值前后的结果。而且，应该考虑有异常值的个体是否符合研究的纳入标准。如果其不属于合格的研究对象，应将其剔除，否则会影响结果的推论。
+假设5：每组内因变量符合正态分布 Shapiro-Wilk正态性检验、偏度和峰度值、直方图等
+ 如果样本量较小（&amp;lt;50），并且对正态Q-Q图或其他图形方法的结果诠释不够有把握，推荐采用Shapiro-Wilk检验。每组自变量都会有一个Shapiro-Wilk正态性检验结果；如果样本量大于50，推荐使用正态Q-Q图等图形方法进行正态判断，因为当样本量较大时，Shapiro-Wilk检验会把稍稍偏离正态分布的数据也标记为有统计学差异，即数据不服从正态分布。
+boxplot选择“带检验的正态图”
+ 如果数据符合正态分布，显著性水平（蓝框中的Sig.）应该大于0.05。Shapiro-Wilk检验的无效假设是数据服从正态分布，备择假设是数据不服从正态分布。因此，如果拒绝无效假设（P&amp;lt;0.05），表示数据不服从正态分布；如果不能拒绝无效假设，则不能认为数据不服从正态分布。
+不服从正态分布的处理方法 (1) 数据转换：对转换后呈正态分布的数据进行单因素方差分析。当各组因变量的分布形状相同时，正态转换才有可能成功。对于一些常见的分布，有特定的转换形式，但是对于转换后数据的结果解释可能比较复杂。
+(2) 使用非参数检验：可以使用Kruskal-Wallis H检验等非参数检验方法，但是要注意Kruskal-Wallis H检验和单因素方差分析的无效假设和备择假设不太一致。
+(3) 直接进行分析：由于单因素方差分析对于偏离正态分布比较稳健，尤其是在各组样本量相等或近似相等的情况下，而且非正态分布实质上并不影响犯I型错误的概率。因此可以直接进行检验，但是结果中仍需报告对正态分布的偏离。
+(4) 检验结果的比较：将转换后和未转换的原始数据分别进行单因素方差分析，如果二者结论相同，则再对未转换的原始数据进行分析。
+假设6：进行方差齐性检验，观察每组的方差是否相等 SPSS操作 单因素方差分析（ONEWAY procedure）→事后两两比较（post hoc test） (1) 点击Analyze &amp;gt; Compare Means &amp;gt; One-Way ANOVA：
+出现One-Way ANOVA对话框：'>
+<meta property='og:url' content='https://K7288.github.io/posts/%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90anova/'>
+<meta property='og:site_name' content='K7288'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2021-08-25T00:52:44&#43;08:00'/><meta property='article:modified_time' content='2021-08-25T00:52:44&#43;08:00'/>
+<meta name="twitter:title" content="方差分析ANOVA">
+<meta name="twitter:description" content="单因素方差分析 One Way ANOVA 单因素方差分析SPSS教程 
+如果单因素方差分析显示差异具有统计学意义（P&amp;lt;0.05），表示不是所有组的总体均数均相等（至少有一组均数不同于另一组）。如果P&amp;gt;0.05，则表示各组间均数差异无统计学意义。
+2种适用的研究设计 1）判断3个及以上独立的组间均数是否存在差异；
+2）判断前后变化的差值是否存在差异。
+6个假设 假设1：因变量为连续变量；
+假设2：有一个包含2个及以上分类、且组别间相互独立的自变量；
+假设3：每组间和组内的观测值相互独立；
+假设4：每组内没有明显异常值；
+假设5：每组内因变量符合正态分布；
+假设6：进行方差齐性检验，观察每组的方差是否相等。
+整体流程 假设验证 假设4：每组内没有明显异常值   Boxplots
+如果存在多个异常值，应先把最极端的异常值去掉后，重新检查异常值情况。
+  异常值的处理方法： (1) 保留异常值：
+1）采用非参数Kruskal-Wallis H检验；
+2）用非最极端的值来代替极端异常值（如用第二大的值代替）；
+3）因变量转换成其他形式；
+4）将异常值纳入分析，并坚信其对结果不会产生实质影响。
+(2) 剔除异常值：
+直接删除异常值很简单，但却是没有办法的办法。当我们需要删掉异常值时，应报告异常值大小及其对结果的影响，最好分别报告删除异常值前后的结果。而且，应该考虑有异常值的个体是否符合研究的纳入标准。如果其不属于合格的研究对象，应将其剔除，否则会影响结果的推论。
+假设5：每组内因变量符合正态分布 Shapiro-Wilk正态性检验、偏度和峰度值、直方图等
+ 如果样本量较小（&amp;lt;50），并且对正态Q-Q图或其他图形方法的结果诠释不够有把握，推荐采用Shapiro-Wilk检验。每组自变量都会有一个Shapiro-Wilk正态性检验结果；如果样本量大于50，推荐使用正态Q-Q图等图形方法进行正态判断，因为当样本量较大时，Shapiro-Wilk检验会把稍稍偏离正态分布的数据也标记为有统计学差异，即数据不服从正态分布。
+boxplot选择“带检验的正态图”
+ 如果数据符合正态分布，显著性水平（蓝框中的Sig.）应该大于0.05。Shapiro-Wilk检验的无效假设是数据服从正态分布，备择假设是数据不服从正态分布。因此，如果拒绝无效假设（P&amp;lt;0.05），表示数据不服从正态分布；如果不能拒绝无效假设，则不能认为数据不服从正态分布。
+不服从正态分布的处理方法 (1) 数据转换：对转换后呈正态分布的数据进行单因素方差分析。当各组因变量的分布形状相同时，正态转换才有可能成功。对于一些常见的分布，有特定的转换形式，但是对于转换后数据的结果解释可能比较复杂。
+(2) 使用非参数检验：可以使用Kruskal-Wallis H检验等非参数检验方法，但是要注意Kruskal-Wallis H检验和单因素方差分析的无效假设和备择假设不太一致。
+(3) 直接进行分析：由于单因素方差分析对于偏离正态分布比较稳健，尤其是在各组样本量相等或近似相等的情况下，而且非正态分布实质上并不影响犯I型错误的概率。因此可以直接进行检验，但是结果中仍需报告对正态分布的偏离。
+(4) 检验结果的比较：将转换后和未转换的原始数据分别进行单因素方差分析，如果二者结论相同，则再对未转换的原始数据进行分析。
+假设6：进行方差齐性检验，观察每组的方差是否相等 SPSS操作 单因素方差分析（ONEWAY procedure）→事后两两比较（post hoc test） (1) 点击Analyze &amp;gt; Compare Means &amp;gt; One-Way ANOVA：
+出现One-Way ANOVA对话框：">
+    </head>
+    <body class="
+    article-page has-toc
+">
+        <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+        <script>addBackToTop({
+            diameter: 56,
+            cornerOffset: 35,
+            backgroundColor: 'ddd',
+            textColor: '#ddd'
+        })</script>
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="https://K7288.github.io" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                <span></span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/statistics/" >
+                Statistics
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90anova/">方差分析ANOVA</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">2021-08-25</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h2 id="单因素方差分析-one-way-anova">单因素方差分析 One Way ANOVA</h2>
+<p><a class="link" href="https://mp.weixin.qq.com/s?__biz=MzI2OTQyMzc5MA==&amp;mid=2247487180&amp;idx=1&amp;sn=63c669d70d52b00ba5c9d9b1527e216d&amp;chksm=eae1cb0ddd96421bcde0477cf6955eea06a71cf808b2c93e498342dd5dd65169e6064504c163&amp;scene=21#wechat_redirect"  target="_blank" rel="noopener"
+    >单因素方差分析SPSS教程 </a></p>
+<p>如果单因素方差分析显示差异具有统计学意义（<em>P</em>&lt;0.05），表示不是所有组的总体均数均相等（至少有一组均数不同于另一组）。如果<em>P</em>&gt;0.05，则表示各组间均数差异无统计学意义。</p>
+<h3 id="2种适用的研究设计">2种适用的研究设计</h3>
+<p>1）判断3个及以上独立的组间均数是否存在差异；</p>
+<p>2）判断前后变化的差值是否存在差异。</p>
+<h3 id="6个假设">6个假设</h3>
+<p><strong>假设1</strong>：因变量为连续变量；</p>
+<p><strong>假设2</strong>：有一个包含2个及以上分类、且组别间相互独立的自变量；</p>
+<p><strong>假设3</strong>：每组间和组内的观测值相互独立；</p>
+<p><strong>假设4</strong>：每组内没有明显异常值；</p>
+<p><strong>假设5</strong>：每组内因变量符合正态分布；</p>
+<p><strong>假设6</strong>：进行方差齐性检验，观察每组的方差是否相等。</p>
+<h3 id="整体流程">整体流程</h3>
+<p><img src="/assets/640.webp" alt="Image"  /></p>
+<h3 id="假设验证">假设验证</h3>
+<h4 id="假设4每组内没有明显异常值">假设4：每组内没有明显异常值</h4>
+<ul>
+<li>
+<p>Boxplots</p>
+<p><img src="/assets/image-20210825140543222.png" alt="image-20210825140543222"  /></p>
+<p><img src="/assets/image-20210825140659370.png" alt="image-20210825140659370"  /></p>
+<p><strong>如果存在多个异常值，应先把最极端的异常值去掉后，重新检查异常值情况</strong>。</p>
+</li>
+</ul>
+<h5 id="异常值的处理方法">异常值的处理方法：</h5>
+<p><strong>(1) 保留异常值：</strong></p>
+<p>1）采用非参数Kruskal-Wallis H检验；</p>
+<p>2）用非最极端的值来代替极端异常值（如用第二大的值代替）；</p>
+<p>3）因变量转换成其他形式；</p>
+<p>4）将异常值纳入分析，并坚信其对结果不会产生实质影响。</p>
+<p><strong>(2) 剔除异常值：</strong></p>
+<p>直接删除异常值很简单，但却是没有办法的办法。当我们需要删掉异常值时，应报告异常值大小及其对结果的影响，最好分别报告删除异常值前后的结果。而且，应该考虑有异常值的个体是否符合研究的纳入标准。如果其不属于合格的研究对象，应将其剔除，否则会影响结果的推论。</p>
+<h4 id="假设5每组内因变量符合正态分布">假设5：每组内因变量符合正态分布</h4>
+<p>Shapiro-Wilk正态性检验、偏度和峰度值、直方图等</p>
+<blockquote>
+<p>如果样本量较小（&lt;50），并且对正态Q-Q图或其他图形方法的结果诠释不够有把握，推荐采用Shapiro-Wilk检验。每组自变量都会有一个Shapiro-Wilk正态性检验结果；如果样本量大于50，推荐使用正态Q-Q图等图形方法进行正态判断，因为当样本量较大时，Shapiro-Wilk检验会把稍稍偏离正态分布的数据也标记为有统计学差异，即数据不服从正态分布。</p>
+<p>boxplot选择“带检验的正态图”</p>
+</blockquote>
+<p><img src="/assets/6401.webp" alt="Image"  /></p>
+<p>如果数据符合正态分布，显著性水平（蓝框中的Sig.）应该大于0.05。Shapiro-Wilk检验的无效假设是数据服从正态分布，备择假设是数据不服从正态分布。因此，如果拒绝无效假设（<em>P</em>&lt;0.05），表示数据不服从正态分布；如果不能拒绝无效假设，则不能认为数据不服从正态分布。</p>
+<h5 id="不服从正态分布的处理方法">不服从正态分布的处理方法</h5>
+<p><strong>(1)</strong> 数据转换：对转换后呈正态分布的数据进行单因素方差分析。当各组因变量的分布形状相同时，正态转换才有可能成功。对于一些常见的分布，有特定的转换形式，但是对于转换后数据的结果解释可能比较复杂。</p>
+<p><strong>(2)</strong> 使用非参数检验：可以使用Kruskal-Wallis H检验等非参数检验方法，但是要注意Kruskal-Wallis H检验和单因素方差分析的无效假设和备择假设不太一致。</p>
+<p><strong>(3)</strong> 直接进行分析：由于单因素方差分析对于偏离正态分布比较稳健，尤其是在各组样本量相等或近似相等的情况下，而且非正态分布实质上并不影响犯I型错误的概率。因此可以直接进行检验，但是结果中仍需报告对正态分布的偏离。</p>
+<p><strong>(4)</strong> 检验结果的比较：将转换后和未转换的原始数据分别进行单因素方差分析，如果二者结论相同，则再对未转换的原始数据进行分析。</p>
+<h4 id="假设6进行方差齐性检验观察每组的方差是否相等">假设6：进行方差齐性检验，观察每组的方差是否相等</h4>
+<h3 id="spss操作">SPSS操作</h3>
+<h4 id="单因素方差分析oneway-procedure事后两两比较post-hoc-test"><strong>单因素方差分析（ONEWAY procedure）→事后两两比较（post hoc test）</strong></h4>
+<p><strong>(1)</strong> 点击Analyze &gt; Compare Means &gt; One-Way ANOVA：</p>
+<p><img src="/assets/6402.webp" alt="Image"  /></p>
+<p>出现One-Way ANOVA对话框：</p>
+<p><img src="/assets/6403.png" alt="Image"  /></p>
+<p><strong>(2)</strong> 把因变量coping_stress送入Dependent List框中，自变量group送入Factor框中：</p>
+<p><img src="/assets/6404.webp" alt="Image"  /></p>
+<p><strong>(3)</strong> 点击Options，出现One-Way ANOVA: Options对话框：</p>
+<p><img src="/assets/6405.webp" alt="Image"  /></p>
+<p><strong>(4)</strong> 在Statistics模块勾选Descriptive，Homogeneity of variance test和Welch，同时勾选Means plot：</p>
+<p><img src="/assets/6406.webp" alt="Image"  /></p>
+<p><strong>(5)</strong> 点击Continue，返回One-Way ANOVA对话框。</p>
+<p><strong>(6)</strong> 点击Post Hoc，出现One-Way ANOVA: Post Hoc Multiple Comparisons对话框：</p>
+<p><img src="/assets/6407.png" alt="Image"  /></p>
+<p>对话框根据方差齐性检验的假设是否满足，分为2个主要区域：</p>
+<p><img src="/assets/6408.png" alt="Image"  /></p>
+<p><strong>(7)</strong> 在Equal Variances Assumed模块内勾选Tukey，在Equal Variances Not Assumed模块内勾选Games-Howell：</p>
+<p><img src="/assets/6409.png" alt="Image"  /></p>
+<p><strong>(注)</strong> 在Equal Variances Assumed模块内SPSS提供了许多两两比较的方法。例如，LSD法为“最小显著差数法”，是在无校正的前提下，在不同组间进行多次两个独立样本t检验；Bonferroni法是比较流行的方法，同LSD法类似在多组间进行两个独立样本t检验，但是采用了Bonferroni法进行校正。</p>
+<p><strong>(8)</strong> 可以在Significance level框中修改显著性水平的大小（系统默认为0.05，表示当<em>P</em>&lt;0.05时差异具有统计学意义，可以将其数值修改为0.01）。</p>
+<p><strong>(9)</strong> 点击Continue，返回One-Way ANOVA对话框。</p>
+<p><strong>(10)</strong> 点击OK，输出结果。</p>
+<h4 id="一般线性模型glm-procedure求效应量偏η2"><strong>一般线性模型（GLM procedure）求效应量（偏η2）</strong></h4>
+<p><strong>(1)</strong> 点击Analyze &gt; General Linear Model &gt; Univariate&hellip;：</p>
+<p><img src="/assets/64010.png" alt="Image"  /></p>
+<p>出现Univariate对话框：</p>
+<p><img src="/assets/64011.png" alt="Image"  /></p>
+<p><strong>(2)</strong> 把因变量coping_stress送入Dependent List框中，自变量group送入Fixed Factor(s)框中：</p>
+<p><img src="/assets/64012.png" alt="Image"  /></p>
+<p><strong>(3)</strong> 点击Options&hellip;，出现 Univariate: Options对话框：</p>
+<p><img src="/assets/64013.png" alt="Image"  /></p>
+<p><strong>(4)</strong> 在Display模块内勾选Estimates of effect size：</p>
+<p><img src="/assets/64014.png" alt="Image"  /></p>
+<p><strong>(5)</strong> 点击Continue，返回Univariate对话框。</p>
+<p><strong>(6)</strong> 点击OK，输出结果。</p>
+<h4 id="一般线性模型glm-procedure自定义组间比较custom-contrasts"><strong>一般线性模型（GLM procedure）→自定义组间比较（custom contrasts）</strong></h4>
+<p>如果<strong>只关心特定组别间的差异</strong>，你需要知道如何进行自定义比较（custom contrasts），以及如何对多重比较结果进行调整，这就要用到SPSS软件中的Syntax Editor窗口编写相应程序语句。当满足方差齐性条件时，推荐采用GLM程序进行自定义组间比较。</p>
+<p>前2步操作同“<strong>2. 一般线性模型（GLM procedure）求效应量（偏η2）</strong>”的前2步操作，这里不再赘述。接下来：</p>
+<p><strong>(1)</strong> 点击Paste，出现IBM SPSS Statistics Syntax Editor窗口：</p>
+<p><img src="/assets/64017.png" alt="Image"  /></p>
+<p><strong>(2)</strong> 在 /PRINT 和 /CRITERIA两行中间，输入 /LMATRIX = group  -1  1  0  0：</p>
+<p><img src="/assets/64018.png" alt="Image"  /></p>
+<p>/LMATRIX= 旨在告诉SPSS我们要做一个自定义假设；group表示将要进行比较的自变量组别；-1  1  0  0表示要进行比较的系数，系数的顺序和SPSS里输入的组别顺序有关：这里从左到右（-1  1  0  0）分别对应着久坐组、“低”、“中”和“高”体力活动组，表示将“低”体力活动组与久坐组进行比较。</p>
+<p>**(注)**自定义比较包括了简单比较（simple contrasts）和复合比较（complex contrasts）。简单比较为只比较自变量某两个组别间的差异，需要建立线性比较函数（linear contrast，φ）。它包含一系列系数和每个组别对应的均数，系数取值只能为1，-1，0。我们把要比较的两组的系数分别赋值为1和-1，其他不比较的组别系数赋值为0。</p>
+<p>本例中久坐组系数为-1，“低”体力活动组系数为1，其他组别均为0，则是要比较久坐组和“低”体力活动组的CWWS得分差异，看二者的平均CWWS得分差值是否为0（用“低”体力活动组得分减去久坐组得分，即系数为1的组别减去系数为-1的组别，以系数为-1的组别为参照组，系数赋值的正负与研究设计和研究假设有关）。</p>
+<p><strong>(3)</strong> 用/LMATRIX指令增加另外2种比较：</p>
+<p>/LMATRIX = group -1  1/3  1/3  1/3</p>
+<p>/LMATRIX = group -1/2  -1/2  1/2  1/2</p>
+<p><img src="/assets/64019.png" alt="Image"  /></p>
+<p>**(注)**复合比较为比较自变量超过2个组别的组合间的差异，如比较B组与C、D两组的组合间的差异，或C、D两组间的组合与A、D两组间组合的差异。同样采用线性比较函数的方法，某组合的系数赋值为1或-1除以组合内的组数，但是要保证要比较的组间组合与另一组（组合）的所有系数加起来为0，系数赋值的正负与研究设计和研究假设有关。</p>
+<p>本例中，/LMATRIX = group -1  1/3  1/3  1/3表示“低”、“中”和“高”体力活动组的组合整体与久坐组CWWS得分差异的比较，/LMATRIX = group -1/2  -1/2  1/2  1/2表示“中”和“高”体力活动组的组合与“低”体力活动组和久坐组组合的比较。</p>
+<p><strong>(4)</strong> 多重比较的校正</p>
+<p>接下来，我们需要校正显著性水平（α），通常也可以校正每次比较的<em>P</em>值和可信区间，得到调整后<em>P</em>值和联合可信区间（simultaneous confidence intervals）。我们首先采用Bonferroni方法对显著性水平α进行校正，公式如下：</p>
+<p>调整后α=调整前α ÷ 比较的次数</p>
+<p>本例中我们需要进行3次比较，则调整后α=0.05÷3=0.01667。</p>
+<p><strong>(5)</strong> 箭头标注处为SPSS软件默认的显著性水平α=0.05：</p>
+<p>/CRITERIA=ALPHA(.05)</p>
+<p><img src="/assets/64020.png" alt="Image"  /></p>
+<p><strong>(6)</strong> 我们将其改为调整后的显著性水平α=0.1667：</p>
+<p>/CRITERIA=ALPHA(.01667)</p>
+<p><img src="/assets/64021.png" alt="Image"  /></p>
+<p><strong>(7)</strong> 在菜单栏点击Run &gt; All：</p>
+<p><img src="/assets/64022.png" alt="Image"  /></p>
+<h4 id="单因素方差分析oneway-procedure自定义组间比较custom-contrasts"><strong>单因素方差分析（ONEWAY procedure）→自定义组间比较（custom contrasts）</strong></h4>
+<p>虽然ONEWAY程序有很多缺点，但却是<strong>不满足方差齐性条件时</strong>唯一可用的方法。前2步操作同“<strong>1. 单因素方差分析（ONEWAY procedure）→两两比较（post hoc test）</strong>”的前2步操作，这里不再赘述。接下来：</p>
+<p><strong>(1)</strong> 点击Contrasts，出现 One-Way ANOVA: Contrasts对话框：</p>
+<p><img src="/assets/64023.png" alt="Image"  /></p>
+<p><strong>(2)</strong> 在Coefficients模块中输入第一组比较（如-1 1 0 0）的第一个系数，点击Add：</p>
+<p><img src="/assets/64024.png" alt="Image"  /></p>
+<p><strong>(3)</strong> 在Coefficients模块中输入第一组比较（如-1 1 0 0）的其他系数，点击Add：</p>
+<p><img src="/assets/64026.png" alt="Image"  /></p>
+<p><strong>(4)</strong> 点击Next，输入新的自定义比较组，此时下图中红框区域内将变为 –Contrast 2 of 2–：</p>
+<p><img src="/assets/64027.png" alt="Image"  /></p>
+<p><strong>(5)</strong> 按照之前的方式输入第二个比较组（如-1 1/3 1/3 1/3）：</p>
+<p><img src="/assets/64028.png" alt="Image"  /></p>
+<p>**注：**Coefficients模块中无法输入分数，最多只能输入3位小数的数值来代替。因此本例中输入0.333代替1/3，但是由于最后总和不等于1（0.333×3=0.999），因此我们将在后面的第（9）（10）步中进行调整。</p>
+<p><strong>(6)</strong> 继续点击Next，输入新的自定义比较组，此时下图中红框区域内将变为 –Contrast 3 of 3–：</p>
+<p><img src="/assets/64029.png" alt="Image"  /></p>
+<p><strong>(7)</strong> 按照之前的方式输入第三个比较组（如-1/2 -1/2 1/2 1/2）：</p>
+<p><img src="/assets/64030.png" alt="Image"  /></p>
+<p><strong>(8)</strong> 点击Continue，返回One-Way ANOVA对话框。</p>
+<p><strong>(9)</strong> 点击Paste，进入IBM SPSS Statistics Syntax Editor窗口：</p>
+<p><img src="/assets/64031.png" alt="Image"  /></p>
+<p><strong>(10)</strong> 手动增加小数位数，如把小数位数从3位改为10位（0.333改为0.3333333333）：</p>
+<p><img src="/assets/64016.png" alt="Image"  /></p>
+<p><strong>(11)</strong> 在菜单栏中点击Run &gt; All：</p>
+<p><img src="/assets/64015.png" alt="Image"  /></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+    
+    <aside class="related-contents--wrapper">
+    
+    
+</aside>
+
+     
+     
+        
+    <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css" />
+
+<div id="vssue"></div>
+
+<script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+<script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
+
+<script>
+    new Vue({
+        el: "#vssue",
+        render: (h) =>
+            h("Vssue", {
+                props: {
+                    title: "方差分析ANOVA",
+                    options: {
+                        proxy: (url) => "https://cors-anywhere.azm.workers.dev/" + url,
+                        owner: "K7288",
+                        repo: "blog-repos",
+                        clientId: "ac393ff5fd371a96eda1",
+                        clientSecret: "e9c2b32500e90b7d0e374ecf8481b97819b8012c",
+                    },
+                },
+            }),
+    });
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2021 - 
+        
+        2022 K7288
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#单因素方差分析-one-way-anova">单因素方差分析 One Way ANOVA</a>
+      <ol>
+        <li><a href="#2种适用的研究设计">2种适用的研究设计</a></li>
+        <li><a href="#6个假设">6个假设</a></li>
+        <li><a href="#整体流程">整体流程</a></li>
+        <li><a href="#假设验证">假设验证</a>
+          <ol>
+            <li><a href="#假设4每组内没有明显异常值">假设4：每组内没有明显异常值</a>
+              <ol>
+                <li><a href="#异常值的处理方法">异常值的处理方法：</a></li>
+              </ol>
+            </li>
+            <li><a href="#假设5每组内因变量符合正态分布">假设5：每组内因变量符合正态分布</a>
+              <ol>
+                <li><a href="#不服从正态分布的处理方法">不服从正态分布的处理方法</a></li>
+              </ol>
+            </li>
+            <li><a href="#假设6进行方差齐性检验观察每组的方差是否相等">假设6：进行方差齐性检验，观察每组的方差是否相等</a></li>
+          </ol>
+        </li>
+        <li><a href="#spss操作">SPSS操作</a>
+          <ol>
+            <li><a href="#单因素方差分析oneway-procedure事后两两比较post-hoc-test"><strong>单因素方差分析（ONEWAY procedure）→事后两两比较（post hoc test）</strong></a></li>
+            <li><a href="#一般线性模型glm-procedure求效应量偏η2"><strong>一般线性模型（GLM procedure）求效应量（偏η2）</strong></a></li>
+            <li><a href="#一般线性模型glm-procedure自定义组间比较custom-contrasts"><strong>一般线性模型（GLM procedure）→自定义组间比较（custom contrasts）</strong></a></li>
+            <li><a href="#单因素方差分析oneway-procedure自定义组间比较custom-contrasts"><strong>单因素方差分析（ONEWAY procedure）→自定义组间比较（custom contrasts）</strong></a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

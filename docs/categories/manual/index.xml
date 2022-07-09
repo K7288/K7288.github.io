@@ -6,14 +6,47 @@
     <description>Recent content in Manual on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 09 Jul 2021 22:00:09 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/manual/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/manual/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Before Taking A Recording</title>
+      <title>Install and Configure VNC on Ubuntu 20.04</title>
+      <link>https://K7288.github.io/posts/install-and-configure-vnc-on-ubuntu-20.04/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/install-and-configure-vnc-on-ubuntu-20.04/</guid>
+      <description>sudo apt-get update#sudo apt-get install --reinstall ubuntu-desktop gnome-panel gnome-settings-daemon metacity nautilus gnome-terminalsudo apt-get install ubuntu-desktop gnome-panel gnome-settings-daemon metacity nautilus gnome-terminalysudo apt-get updatesudo apt-get upgradeInstalling Desktop Environment
+sudo apt updatesudo apt install xfce4 xfce4-goodiesInstalling VNC Server
+sudo apt install tigervnc-standalone-servernano ~/.vnc/xstartup#!/bin/sh# Uncomment the following two lines for normal desktop:export XKL_XMODMAP_DISABLE=1unset SESSION_MANAGER# exec /etc/X11/xinit/xinitrcunset DBUS_SESSION_BUS_ADDRESSgnome-panel &amp;amp;gnmoe-settings-daemon &amp;amp;metacity &amp;amp;nautilus &amp;amp;gnome-terminal &amp;amp;#!</description>
+    </item>
+    
+    <item>
+      <title>生成树状目录</title>
+      <link>https://K7288.github.io/posts/%E7%94%9F%E6%88%90%E6%A0%91%E7%8A%B6%E7%9B%AE%E5%BD%95/</link>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/%E7%94%9F%E6%88%90%E6%A0%91%E7%8A%B6%E7%9B%AE%E5%BD%95/</guid>
+      <description>Windows自带 tree
+基于node的tree-node-cli nodejs安装 安装地址 Node.js (nodejs.org)
+安装tree-node-cli npm install -g tree-node-cli 使用 treee -L 3 -I &amp;quot;node_modules|.git&amp;quot; -a --dirs-first &amp;gt; tree.md   windows用户需要用treee代替tree，避免和系统的tree命令冲突。 treee
+  指定路径的级别为3级。
+-L 3
+  忽略文件夹（正则表达式匹配，.git会匹配到.gitignore）
+-I &amp;quot;node_modules|.idea|objects|.git&amp;quot;
+  显示所有文件（默认前缀有&amp;quot;.&amp;ldquo;的不会显示，例如&amp;rdquo;.electron-vue&amp;quot;）
+-a
+  目录在前，文件在后（默认是字母排序，和idea显示的顺序不一致）。
+--dirs-first
+  保存树状结构到tree.md
+&amp;gt; tree.md
+   完整选项 -V, --version 输出版本号-a, --all-files 打印所有文件，包括隐藏文件--dirs-first 目录在前，文件在后-d, --dirs-only 仅列出目录-I, --exclude [patterns] 排除与模式匹配的文件。用 | 隔开,用双引号包裹。 例如 “node_modules|.</description>
+    </item>
+    
+    <item>
+      <title>FScan: Before Taking A Recording</title>
       <link>https://K7288.github.io/posts/before-taking-a-recording/</link>
       <pubDate>Fri, 09 Jul 2021 22:00:09 +0800</pubDate>
       
       <guid>https://K7288.github.io/posts/before-taking-a-recording/</guid>
-      <description>Before Taking A Recording * means &amp;ldquo;optinal&amp;rdquo;; 此处的定义和步骤均参考Tekscan的F-Scan User Manual
+      <description>FScan: Before Taking A Recording * means &amp;ldquo;optinal&amp;rdquo;; 此处的定义和步骤均参考Tekscan的F-Scan User Manual
 Preparing the Patient trim the sensor; set up the testing area; set up the system hardware; weigh the patient; outfit the patient.
 *Zeroing the Sensor 当整个实验过程中鞋垫上始终有额外压力时使用；类似称重的去皮；
 *Equilibration 在鞋垫上放置均匀重物；
@@ -72,7 +105,7 @@ Extended Calibration 是点校准的延伸；默认开启；在两个均采用�
       <guid>https://K7288.github.io/posts/hugo-html-tips/</guid>
       <description>  原生html支持
 hugo采用goldmark作为默认渲染器，需要在config中开启
-   markup: goldmark: renderer: unsafe: true html 图片需要绝对路径，形式如下：  &amp;lt;img src=&amp;quot;/assets/image-20210416142714352.png&amp;quot; alt=&amp;quot;image-20210416142714352&amp;quot; style=&amp;quot;zoom:33%;&amp;quot; /&amp;gt; 而不能是src=&amp;quot;assets\ 所以也不太支持网络图片&amp;hellip;&amp;hellip;
+  markup: goldmark: renderer: unsafe: true html 图片需要绝对路径，形式如下：  &amp;lt;img src=&amp;#34;/assets/image-20210416142714352.png&amp;#34; alt=&amp;#34;image-20210416142714352&amp;#34; style=&amp;#34;zoom:33%;&amp;#34; /&amp;gt; 而不能是src=&amp;quot;assets\ 所以也不太支持网络图片&amp;hellip;&amp;hellip;
 ****好像不能出现。  </description>
     </item>
     
@@ -101,8 +134,8 @@ hugo采用goldmark作为默认渲染器，需要在config中开启
       <guid>https://K7288.github.io/posts/hugo-guide/</guid>
       <description>About Contents Add Some Content hugo new post/**.md
 The newly created content file will start with something like this:
---- title: &amp;quot;**&amp;quot; date: 2019-03-26T08:47:11+01:00 draft: true --- Drafts do not get deployed; once you finish a post, update the header of the post to say draft: false. More info here.
---- title: &amp;quot;Hugo Guide&amp;quot; date: 2021-05-01T08:47:11+01:00 categories: [&amp;quot;Manual&amp;quot;] tags: [&amp;quot;Hugo&amp;quot;, &amp;quot;GitHub&amp;quot;] draft: false --- Add pictures
+--- title: &amp;#34;**&amp;#34; date: 2019-03-26T08:47:11+01:00 draft: true --- Drafts do not get deployed; once you finish a post, update the header of the post to say draft: false. More info here.
+--- title: &amp;#34;Hugo Guide&amp;#34; date: 2021-05-01T08:47:11+01:00 categories: [&amp;#34;Manual&amp;#34;] tags: [&amp;#34;Hugo&amp;#34;, &amp;#34;GitHub&amp;#34;] draft: false --- Add pictures
 /post/xxx.jpg
 is actually baseURL/post/xxx.jpg</description>
     </item>

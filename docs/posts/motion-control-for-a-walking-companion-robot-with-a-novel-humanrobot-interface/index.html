@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head><meta charset='utf-8'>
+    <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Motion control for a walking companion robot with a novel human–robot interface
 Research question A walking companion robot is presented for rehabilitation from dyskinesia of lower limbs and its motion control algorithms.
 A new human– robot interface (HRI) adopts one-axis force sensor and potentiometer connector to detect the motion of the user with the common motions classified into two elemental motion states.
@@ -16,15 +15,23 @@ A new human– robot interface (HRI) adopts one-axis force sensor and potentiome
 mathematical model-based control method and force control method $\Leftarrow$ distinction of motion states'>
 <meta property='og:url' content='https://K7288.github.io/posts/motion-control-for-a-walking-companion-robot-with-a-novel-humanrobot-interface/'>
 <meta property='og:site_name' content='K7288'>
-<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2021-07-07T14:00:00&#43;08:00'/><meta property='article:modified_time' content='2021-07-07T14:00:00&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Intention Recognition' /><meta property='article:published_time' content='2021-07-07T14:00:00&#43;08:00'/><meta property='article:modified_time' content='2021-07-07T14:00:00&#43;08:00'/>
 <meta name="twitter:title" content="Motion control for a walking companion robot with a novel human–robot interface">
 <meta name="twitter:description" content="Motion control for a walking companion robot with a novel human–robot interface
 Research question A walking companion robot is presented for rehabilitation from dyskinesia of lower limbs and its motion control algorithms.
 A new human– robot interface (HRI) adopts one-axis force sensor and potentiometer connector to detect the motion of the user with the common motions classified into two elemental motion states.
 mathematical model-based control method and force control method $\Leftarrow$ distinction of motion states">
-</head>
-
-<body class="article-page keep-sidebar">
+    </head>
+    <body class="
+    article-page has-toc
+">
+        <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+        <script>addBackToTop({
+            diameter: 56,
+            cornerOffset: 35,
+            backgroundColor: 'ddd',
+            textColor: '#ddd'
+        })</script>
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -41,51 +48,21 @@ mathematical model-based control method and force control method $\Leftarrow$ di
         if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
             
 
-            document.body.dataset.scheme = 'dark';
+            document.documentElement.dataset.scheme = 'dark';
         } else {
-            document.body.dataset.scheme = 'light';
+            document.documentElement.dataset.scheme = 'light';
         }
     })();
-</script><div
-        class="container main-container flex on-phone--column extended ">
-        <aside class="sidebar left-sidebar sticky">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
-
-    <header class="site-info">
-        
-            <figure class="site-avatar">
-                
-                    
-                    
-                    
-                        
-                        <img src="/img/avatar_hu911cf87b738465eac3058d27e079f2ed_224006_300x0_resize_box_2.png" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
-
-                
-                    <span class="emoji">🍥</span>
-                
-            </figure>
-        
-        <h1 class="site-name"><a href="https://K7288.github.io">K7288</a></h1>
-        <h2 class="site-description"></h2>
-    </header>
-
-    <ol class="menu" id="main-menu">
-        
-        
-        
-
-        <li >
-            <a href='/'>
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="https://K7288.github.io" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <polyline points="5 12 3 12 12 3 21 12 19 12" />
   <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
@@ -94,110 +71,11 @@ mathematical model-based control method and force control method $\Leftarrow$ di
 
 
 
-                
-                <span>Home</span>
+                <span></span>
             </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/about'>
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="7" r="4" />
-  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-</svg>
-
-
-
-                
-                <span>About</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/archives'>
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <rect x="3" y="4" width="18" height="4" rx="2" />
-  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
-  <line x1="10" y1="12" x2="14" y2="12" />
-</svg>
-
-
-
-                
-                <span>Posts</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/search'>
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-                
-                <span>Search</span>
-            </a>
-        </li>
-        
-        
-
-        <li >
-            <a href='/tags'>
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
-  <circle cx="9" cy="9" r="2" />
-</svg>
-
-
-
-                
-                <span>Tags</span>
-            </a>
-        </li>
-        
-
-        
-            <li id="dark-mode-toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                <span>Dark Mode</span>
-            </li>
-        
-    </ol>
-</aside>
-
-        <main class="main full-width">
+        </div>
+    
+<main class="main full-width">
     <article class="main-article">
     <header class="article-header">
 
@@ -213,8 +91,8 @@ mathematical model-based control method and force control method $\Leftarrow$ di
                 Control
             </a>
         
-            <a href="/categories/intention-recognition/" >
-                Intention Recognition
+            <a href="/categories/gait-analysis/" >
+                Gait Analysis
             </a>
         
     </header>
@@ -287,6 +165,12 @@ If $ \Delta F_{Y F}&gt;0 $ and $ \Delta F_{Y F} \leq 0 $ and $ F_{Y B}&gt;F_{Y F
 
     <footer class="article-footer">
     
+    <section class="article-tags">
+        
+            <a href="/tags/intention-recognition/">Intention Recognition</a>
+        
+    </section>
+
 
     
     <section class="article-copyright">
@@ -327,7 +211,80 @@ If $ \Delta F_{Y F}&gt;0 $ and $ \Delta F_{Y F} \leq 0 $ and $ F_{Y B}&gt;F_{Y F
 </script>
     
 </article>
+    
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/posts/ips-for-validation/">
+        
+        
 
+        <div class="article-details">
+            <h2 class="article-title">IPS for Validation</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/reviews-of-gait-eventphase-detection-methods/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Reviews of Gait Event/Phase Detection Methods</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/a-real-time-stability-control-method-through-semg-interface-for-lower-extremity-rehabilitation-exoskeletons/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">A Real-Time Stability Control Method Through sEMG Interface for Lower Extremity Rehabilitation Exoskeletons</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/a-novel-motion-intention-recognition-approach-for-soft-exoskeleton-via-imu/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">A novel motion intention recognition approach for soft exoskeleton via IMU</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/daily-locomotion-recognition-and-prediction-a-kinematic-data-based-machine-learning-approach/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Daily Locomotion Recognition and Prediction: A Kinematic Data-Based Machine Learning Approach</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
      
         
     <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css" />
@@ -350,7 +307,6 @@ If $ \Delta F_{Y F}&gt;0 $ and $ \Delta F_{Y F} \leq 0 $ and $ F_{Y B}&gt;F_{Y F
                         repo: "blog-repos",
                         clientId: "ac393ff5fd371a96eda1",
                         clientSecret: "e9c2b32500e90b7d0e374ecf8481b97819b8012c",
-                        perPage: 5
                     },
                 },
             }),
@@ -363,7 +319,9 @@ If $ \Delta F_{Y F}&gt;0 $ and $ \Delta F_{Y F} \leq 0 $ and $ F_{Y B}&gt;F_{Y F
     <section class="copyright">
         &copy; 
         
-        2021 K7288
+            2021 - 
+        
+        2022 K7288
     </section>
     
     <section class="powerby">
@@ -450,15 +408,47 @@ If $ \Delta F_{Y F}&gt;0 $ and $ \Delta F_{Y F} \leq 0 $ and $ F_{Y B}&gt;F_{Y F
                 href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
             >
 
-        </main>
-    </div>
-    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
-    <script>addBackToTop({
-            diameter: 56,
-            backgroundColor: 'ddd',
-            textColor: '#ddd'
-        })</script>
-    <script 
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#research-question">Research question</a></li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#methods">Methods</a>
+      <ol>
+        <li><a href="#recognition-of-elemental-motion-state">Recognition of elemental motion state</a></li>
+        <li><a href="#mathematical-model-based-control-method">Mathematical model-based control method</a></li>
+        <li><a href="#fc-method">FC method</a></li>
+        <li><a href="#stability-analysis">Stability analysis</a></li>
+      </ol>
+    </li>
+    <li><a href="#thoughtscomments">Thoughts/Comments</a></li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
                 defer="false"
                 >
@@ -475,6 +465,5 @@ If $ \Delta F_{Y F}&gt;0 $ and $ \Delta F_{Y F} \leq 0 $ and $ F_{Y B}&gt;F_{Y F
     }());
 </script>
 
-</body>
-
+    </body>
 </html>

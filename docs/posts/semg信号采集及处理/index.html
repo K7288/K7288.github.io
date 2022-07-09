@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='sEMG sensors Size the size of the electrodes in the direction of the muscle fibers is max. 10mm.
+Inter electrode distance (for sensors restrict to bipolar sensors only) &amp;lsquo;Inter electrode distance&amp;rsquo; defined as the centre to centre distance between the conductive area&amp;rsquo;s of 2 bipolar electrodes. 20 mm. / not exceed 1/4 of the muscle fibre length(for relatively small muscles; In this way unstable recordings, due to tendon and motor endplate effects can be avoided.'><title>sEMG信号采集及处理</title>
+
+<link rel='canonical' href='https://K7288.github.io/posts/semg%E4%BF%A1%E5%8F%B7%E9%87%87%E9%9B%86%E5%8F%8A%E5%A4%84%E7%90%86/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='sEMG信号采集及处理'>
+<meta property='og:description' content='sEMG sensors Size the size of the electrodes in the direction of the muscle fibers is max. 10mm.
+Inter electrode distance (for sensors restrict to bipolar sensors only) &amp;lsquo;Inter electrode distance&amp;rsquo; defined as the centre to centre distance between the conductive area&amp;rsquo;s of 2 bipolar electrodes. 20 mm. / not exceed 1/4 of the muscle fibre length(for relatively small muscles; In this way unstable recordings, due to tendon and motor endplate effects can be avoided.'>
+<meta property='og:url' content='https://K7288.github.io/posts/semg%E4%BF%A1%E5%8F%B7%E9%87%87%E9%9B%86%E5%8F%8A%E5%A4%84%E7%90%86/'>
+<meta property='og:site_name' content='K7288'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2021-09-11T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-09-11T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="sEMG信号采集及处理">
+<meta name="twitter:description" content="sEMG sensors Size the size of the electrodes in the direction of the muscle fibers is max. 10mm.
+Inter electrode distance (for sensors restrict to bipolar sensors only) &amp;lsquo;Inter electrode distance&amp;rsquo; defined as the centre to centre distance between the conductive area&amp;rsquo;s of 2 bipolar electrodes. 20 mm. / not exceed 1/4 of the muscle fibre length(for relatively small muscles; In this way unstable recordings, due to tendon and motor endplate effects can be avoided.">
+    </head>
+    <body class="
+    article-page has-toc
+">
+        <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+        <script>addBackToTop({
+            diameter: 56,
+            cornerOffset: 35,
+            backgroundColor: 'ddd',
+            textColor: '#ddd'
+        })</script>
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="https://K7288.github.io" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                <span></span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/sensor/" >
+                Sensor
+            </a>
+        
+            <a href="/categories/experiment/" >
+                Experiment
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/semg%E4%BF%A1%E5%8F%B7%E9%87%87%E9%9B%86%E5%8F%8A%E5%A4%84%E7%90%86/">sEMG信号采集及处理</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">2021-09-11</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h2 id="semg-sensors">sEMG sensors</h2>
+<h3 id="size">Size</h3>
+<p>the size of the electrodes in the direction of the muscle fibers is max. 10mm.</p>
+<h3 id="inter-electrode-distance">Inter electrode distance</h3>
+<p>(for sensors restrict to bipolar sensors only) &lsquo;Inter electrode distance&rsquo; defined as the centre to centre distance between the conductive area&rsquo;s of 2 bipolar electrodes.
+20 mm. / not exceed 1/4 of the muscle fibre length(for relatively small muscles; In this way unstable recordings, due to tendon and motor endplate effects can be avoided.)</p>
+<h3 id="sensor-construction">Sensor construction</h3>
+<p>(defined as: the (mechanical) construction which is used to integrate the electrodes, the cables and (if applicable) the pre-amplifier.) a construction with fixed inter electrode distance, built from light weight material. Cables need to be fixed using (double sided) tape or elastic band in such a manner that pulling artefacts can be avoided.
+If in fast dynamic contractions the sensor construction causes too much (movement) artefacts (due to inertia of the construction), SENIAM recommends to fix the inter electrode distance using (double sided) tape or rings.</p>
+<h2 id="信号采集">信号采集</h2>
+<h3 id="skin-preparation">Skin preparation</h3>
+<p>1️⃣ shave the patient
+2️⃣ clean the skin with <strong>alcohol</strong> and allow the alcohol to vaporise</p>
+<h3 id="positioning-the-patient-in-starting-posture">Positioning the patient in starting posture</h3>
+<p>the posture of the patient (sitting, lying, prone, etc…) as well as the position and orientation of the body segment at which the electrode will be placed.</p>
+<h3 id="determination-of-sensor-location">Determination of sensor location</h3>
+<ul>
+<li>
+<p>With respect to the longitudinal location of the sensor on the muscle SENIAM recommends to place the sensor halfway the (most) distal motor endplate zone and the distal tendon.</p>
+</li>
+<li>
+<p>With respect to the transversal location of the sensor on the muscle SENIAM recommends to place the sensor at the surface away from the &lsquo;edge&rsquo; with other subdivisions or muscles so that the geometrical distance of the muscle to these subdivisions and other muscles is maximised.</p>
+</li>
+</ul>
+<h4 id="soleus比目鱼肌">Soleus比目鱼肌</h4>
+<h4 id="tibialis-anterior胫前肌">Tibialis anterior胫前肌</h4>
+<p>Support the leg just above the ankle joint with the ankle joint in dorsiflexion and the foot in inversion without extension of the great toe.</p>
+<h3 id="placement-and-fixation">Placement and fixation</h3>
+<h4 id="inter-electrode-distance-1">Inter electrode distance</h4>
+<p>见上节<a class="link" href="#semg-sensors" >Inter electrode distance</a></p>
+<h4 id="orientation-of-electrodes">Orientation of electrodes</h4>
+<p>&lsquo;Electrode orientation&rsquo; is defined as the position of the line between the 2 bipolar electrodes with respect to the direction of the muscle fibres.
+SENIAM recommends that the bipolar SEMG electrodes should be placed around the recommended sensor location with the orientation parallel to the muscle fibres.</p>
+<h4 id="fixation-on-the-skin">Fixation on the skin</h4>
+<p>SENIAM recommends to use elastic band or (double sided) tape / rings for the fixation of the electrodes(construction) and cables to the skin in such a way that the electrodes are properly fixed to the skin, movement is not hindered and cables are not pulling the electrodes(construction).</p>
+<h4 id="location-of-the-reference-electrode">Location of the reference electrode</h4>
+<p>Depending on the application SENIAM recommends to use the wrist, the proc. spin. of C7 or the ankle as the standard location of the reference electrode.</p>
+<h4 id="testing-of-the-connection">Testing of the connection</h4>
+<p>The clinical tests which are described are generally accepted muscle tests which guarantee (under normal circumstances) activity of the tested muscle. The clinical test has to be started from the starting posture described in the SENIAM recommendations for sensor locations and has to be performed according to the recommendations. The clinical tests described are <strong>not &lsquo;selective&rsquo; contractions</strong> in which only the desired muscle is active and all other muscles are inactive.</p>
+<h2 id="reference">Reference</h2>
+<p>[1] <a class="link" href="http://www.seniam.org/"  target="_blank" rel="noopener"
+    >The SENIAM project</a></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+    
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/posts/before-taking-a-recording/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">FScan: Before Taking A Recording</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+     
+        
+    <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css" />
+
+<div id="vssue"></div>
+
+<script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+<script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
+
+<script>
+    new Vue({
+        el: "#vssue",
+        render: (h) =>
+            h("Vssue", {
+                props: {
+                    title: "sEMG信号采集及处理",
+                    options: {
+                        proxy: (url) => "https://cors-anywhere.azm.workers.dev/" + url,
+                        owner: "K7288",
+                        repo: "blog-repos",
+                        clientId: "ac393ff5fd371a96eda1",
+                        clientSecret: "e9c2b32500e90b7d0e374ecf8481b97819b8012c",
+                    },
+                },
+            }),
+    });
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2021 - 
+        
+        2022 K7288
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#semg-sensors">sEMG sensors</a>
+      <ol>
+        <li><a href="#size">Size</a></li>
+        <li><a href="#inter-electrode-distance">Inter electrode distance</a></li>
+        <li><a href="#sensor-construction">Sensor construction</a></li>
+      </ol>
+    </li>
+    <li><a href="#信号采集">信号采集</a>
+      <ol>
+        <li><a href="#skin-preparation">Skin preparation</a></li>
+        <li><a href="#positioning-the-patient-in-starting-posture">Positioning the patient in starting posture</a></li>
+        <li><a href="#determination-of-sensor-location">Determination of sensor location</a>
+          <ol>
+            <li><a href="#soleus比目鱼肌">Soleus比目鱼肌</a></li>
+            <li><a href="#tibialis-anterior胫前肌">Tibialis anterior胫前肌</a></li>
+          </ol>
+        </li>
+        <li><a href="#placement-and-fixation">Placement and fixation</a>
+          <ol>
+            <li><a href="#inter-electrode-distance-1">Inter electrode distance</a></li>
+            <li><a href="#orientation-of-electrodes">Orientation of electrodes</a></li>
+            <li><a href="#fixation-on-the-skin">Fixation on the skin</a></li>
+            <li><a href="#location-of-the-reference-electrode">Location of the reference electrode</a></li>
+            <li><a href="#testing-of-the-connection">Testing of the connection</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#reference">Reference</a></li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

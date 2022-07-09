@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='(Origami) Pneumatic Exoskeleton
+Summary of previous work    Author Origami pattern Joint Prototype 研究阶段     Bio-Robotics and Control (BiRC) Laboratory，UNIST, Korea Yoshimura pattern shoulder  1.设计 2.建模（输出力关于弯曲角度等的表达式）3. 实验验证对支撑能力/输出力矩的仿真结果   南方科技大学 刘思聪 王峥 Variated Yoshimura with trapezoid facets. wrist  1. 设计 2. 运动学建模 3. 级联控制（未详细阐述，使用之前合作的工作） 4. 实验验证控制性能以及不同负载下的运动范围   西北工业大学 Jing Fang*2 #1 #2 / (Accordion/Fan) knee  1. 设计 2. 建模（输出力矩的闭式表达式）3. 实验验证机械性能及辅助效果 4. 控制（满足对特定动作的支持）   Yang, Hee Doo / (Artificial muscle) elbow'><title>(Origami) Pneumatic Exoskeleton</title>
+
+<link rel='canonical' href='https://K7288.github.io/posts/origami-pnumatic-exoskeleton/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='(Origami) Pneumatic Exoskeleton'>
+<meta property='og:description' content='(Origami) Pneumatic Exoskeleton
+Summary of previous work    Author Origami pattern Joint Prototype 研究阶段     Bio-Robotics and Control (BiRC) Laboratory，UNIST, Korea Yoshimura pattern shoulder  1.设计 2.建模（输出力关于弯曲角度等的表达式）3. 实验验证对支撑能力/输出力矩的仿真结果   南方科技大学 刘思聪 王峥 Variated Yoshimura with trapezoid facets. wrist  1. 设计 2. 运动学建模 3. 级联控制（未详细阐述，使用之前合作的工作） 4. 实验验证控制性能以及不同负载下的运动范围   西北工业大学 Jing Fang*2 #1 #2 / (Accordion/Fan) knee  1. 设计 2. 建模（输出力矩的闭式表达式）3. 实验验证机械性能及辅助效果 4. 控制（满足对特定动作的支持）   Yang, Hee Doo / (Artificial muscle) elbow'>
+<meta property='og:url' content='https://K7288.github.io/posts/origami-pnumatic-exoskeleton/'>
+<meta property='og:site_name' content='K7288'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Exoskeleton' /><meta property='article:tag' content='Origami' /><meta property='article:published_time' content='2021-08-05T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-05T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="(Origami) Pneumatic Exoskeleton">
+<meta name="twitter:description" content="(Origami) Pneumatic Exoskeleton
+Summary of previous work    Author Origami pattern Joint Prototype 研究阶段     Bio-Robotics and Control (BiRC) Laboratory，UNIST, Korea Yoshimura pattern shoulder  1.设计 2.建模（输出力关于弯曲角度等的表达式）3. 实验验证对支撑能力/输出力矩的仿真结果   南方科技大学 刘思聪 王峥 Variated Yoshimura with trapezoid facets. wrist  1. 设计 2. 运动学建模 3. 级联控制（未详细阐述，使用之前合作的工作） 4. 实验验证控制性能以及不同负载下的运动范围   西北工业大学 Jing Fang*2 #1 #2 / (Accordion/Fan) knee  1. 设计 2. 建模（输出力矩的闭式表达式）3. 实验验证机械性能及辅助效果 4. 控制（满足对特定动作的支持）   Yang, Hee Doo / (Artificial muscle) elbow">
+    </head>
+    <body class="
+    article-page has-toc
+">
+        <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+        <script>addBackToTop({
+            diameter: 56,
+            cornerOffset: 35,
+            backgroundColor: 'ddd',
+            textColor: '#ddd'
+        })</script>
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="https://K7288.github.io" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                <span></span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/literature-notes/" >
+                Literature Notes
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/origami-pnumatic-exoskeleton/">(Origami) Pneumatic Exoskeleton</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">2021-08-05</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <p>(Origami)  Pneumatic Exoskeleton</p>
+<h2 id="summary-of-previous-work">Summary of previous work</h2>
+<table>
+<thead>
+<tr>
+<th>Author</th>
+<th>Origami pattern</th>
+<th>Joint</th>
+<th>Prototype</th>
+<th>研究阶段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="link" href="http://birc.unist.ac.kr/research_Soft_RG.html"  target="_blank" rel="noopener"
+    >Bio-Robotics and Control (BiRC) Laboratory</a>，UNIST, Korea</td>
+<td>Yoshimura pattern</td>
+<td>shoulder</td>
+<td><img src="/assets/image-20210815195705244.png" alt="image-20210815195705244"  /></td>
+<td>1.设计 2.建模（输出力关于弯曲角度等的表达式）3. 实验验证对支撑能力/输出力矩的仿真结果</td>
+</tr>
+<tr>
+<td>南方科技大学 <a class="link" href="https://www.sustech.edu.cn/zh/facultys/liusicong.html"  target="_blank" rel="noopener"
+    >刘思聪</a> 王峥</td>
+<td>Variated Yoshimura with trapezoid facets.</td>
+<td>wrist</td>
+<td><img src="/assets/image-20210815191948720.png" alt="image-20210815191948720"  /></td>
+<td>1. 设计 2. 运动学建模 3. 级联控制（未详细阐述，使用之前合作的工作） 4. 实验验证控制性能以及不同负载下的运动范围</td>
+</tr>
+<tr>
+<td>西北工业大学 Jing Fang*2 <a class="link" href="#an-inflatable-and-foldable-knee-exosuit-based-on-intelligent-management-of-biomechanical-energy" >#1</a> <a class="link" href="#novel-accordion-inspired-foldable-pneumatic-actuators-for-knee-assistive-devices" >#2</a></td>
+<td>/ (Accordion/Fan)</td>
+<td>knee</td>
+<td><img src="/assets/image-20210815192240865.png" alt="image-20210815192240865"  /></td>
+<td>1. 设计 2. 建模（输出力矩的闭式表达式）3. 实验验证机械性能及辅助效果 4. 控制（满足对特定动作的支持）</td>
+</tr>
+<tr>
+<td>Yang, Hee Doo</td>
+<td>/ (Artificial muscle)</td>
+<td>elbow<br><br/><br/><br/><br/><br/><br/><br/><br/>hip</td>
+<td><img src="/assets/image-20210815201246157.png" alt="image-20210815201246157"  /><img src="/assets/image-20210815201508892.png" alt="image-20210815201508892"  /></td>
+<td>1. 设计 2. 建模（输出力关于压强、体积的表达式）3. 实验验证模型以及辅助效果（未涉及控制，实验的加压阶段手动进行）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="an-inflatable-and-foldable-knee-exosuit-based-on-intelligent-management-of-biomechanical-energy">An Inflatable and Foldable Knee Exosuit Based on Intelligent Management of Biomechanical Energy</h2>
+<h3 id="research-object">Research object</h3>
+<p>An inflatable, foldable and variable stiffness knee exosuit and an intelligent control profile for it</p>
+<h3 id="introduction">Introduction</h3>
+<ul>
+<li>Biomechanical energy harvesting: Humans are a rich source of energy. An average-sized person
+stores as much energy in fat as a 1000-kg battery</li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li>a large amount of negative power that is marked by K1, K2 and K3</li>
+</ul>
+<p><img src="/assets/image-20210806140539308.png" alt="image-20210806140539308" style="zoom:50%;" /></p>
+<ul>
+<li>
+<p>Intelligent Energy Management Profile</p>
+<ul>
+<li>
+<p>quasi-stiffness to characterize the spring-like behavior of knee joint.</p>
+<p><img src="/assets/image-20210806140817591.png" alt="image-20210806140817591" style="zoom:53%;" /></p>
+</li>
+<li>
+<p>通过与膝关节平行增加一个变刚度弹簧，并根据图3这六个点上（根据步态周期划分）调整其刚度，可以收集和再利用人体的生物机械能，节省行走过程中消耗的体力。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>DESIGN AND FABRICATION</p>
+<p>热塑性聚氨酯(TPU)</p>
+</li>
+</ul>
+<p><img src="/assets/image-20210806105450817.png" alt="image-20210806105450817" style="zoom:50%;" /></p>
+<h2 id="novel-accordion-inspired-foldable-pneumatic-actuators-for-knee-assistive-devices">Novel Accordion-Inspired Foldable Pneumatic Actuators for Knee Assistive Devices</h2>
+<h3 id="methods-1">Methods</h3>
+<ul>
+<li>Biomechanics and design requirements</li>
+</ul>
+<p><img src="/assets/image-20210806151335187.png" alt="image-20210806151335187"  /></p>
+<p>​	能推出膝关节外骨骼需要提供的角度以及力矩（康复型的需要小一点）</p>
+<ul>
+<li>
+<p>设计 （同上篇）the geometry of FPBAs also ensures that their <strong>internal</strong>
+<strong>airflow is always unobstructed at any angle</strong>, which avoids the
+airflow restriction problem for single-chamber actuators at extreme bending angles.</p>
+</li>
+<li>
+<p>虚功原理推出输出力矩（volume/angle relationships和内部压强的函数） $\tau=\left(\frac{P_{0} \cdot V_{0}\left(\theta_{0}\right)}{V(\theta)}-P_{a t m}\right) \cdot \frac{\mathrm{d} V(\theta)}{\mathrm{d}  \theta}$</p>
+<p><img src="/assets/image-20210806153740685.png" alt="image-20210806153740685" style="zoom:33%;" /></p>
+</li>
+<li>
+<p>控制：不同的辅助动作给不同的恒压</p>
+</li>
+</ul>
+<p><img src="/assets/image-20210806155605797.png" alt="image-20210806155605797" style="zoom:50%;" /><img src="/assets/image-20210806170617002.png" alt="image-20210806170617002" style="zoom:40%;" /></p>
+<h3 id="limitsfurther-work">Limits/Further Work</h3>
+<p>只使用a miniature pump，后续可以采用innovative pneumatic supply sources, such as a passive pump mounted on shoes, a high- pressure air bottle, and a high-power compressor.</p>
+<p>目前只对指定动作</p>
+<h2 id="origami-structured-actuating-modules-for-upper-limb-support">Origami-Structured Actuating Modules for Upper Limb Support</h2>
+<h3 id="thoughtscomments">Thoughts/Comments</h3>
+<ol>
+<li>
+<p>怎么用充气实现弯曲？好像是结构自身的特点？是未充满气就是弯曲吗？</p>
+<p>不是的，直接把近体侧attached，他们不需要直线运动的功能</p>
+</li>
+<li>
+<p><del>可以实现twist吗？看实验图片是有的（手向斜前侧伸出），但是介绍Yoshimura的时候没说twist这样会不会有问题？</del></p>
+<p>后来想了一下，这种不叫twist</p>
+</li>
+</ol>
+<h2 id="a-compact-soft-robotic-wrist-brace-with-origami-actuators">A Compact Soft Robotic Wrist Brace With Origami Actuators</h2>
+<p>SOA(soft origami actuator)</p>
+<h3 id="materials">Materials</h3>
+<ul>
+<li>
+<p>synergistic actuation approach 协同驱动</p>
+<ul>
+<li><img src="/assets/image-20210810143810899.png" alt="image-20210810143810899"  /></li>
+</ul>
+</li>
+<li>
+<p>soft-on-soft</p>
+<p>锚点使得soft actuator的output linear deformation and force in axial direction重整为consecutive bending</p>
+</li>
+<li>
+<p>Yoshimura pattern</p>
+<ul>
+<li>
+<p>small elastic constant in the axial direction;</p>
+</li>
+<li>
+<p>simplicity of elementary facets</p>
+</li>
+<li>
+<p>intrinsically high circumferential bending rigidity</p>
+</li>
+<li>
+<p>The hexagon facets effectively eliminate the extruding vertices formed by the triangular facets of the standard Yoshimura pattern; thus, the potential stress concentration at the vertices was avoided.采用四边形facet，形成六边形切面，有效地消除了标准Yoshimura三角形切面所形成的挤压顶点;从而避免了顶点处潜在的应力集中。</p>
+<p><img src="/assets/image-20210815191751148.png" alt="image-20210815191751148" style="zoom:33%;" /></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="methods-2">Methods</h3>
+<ol>
+<li>
+<p>整体简化成一个并联机构(a parallel mechanism with four soft actuators) 2-DOF的运动简化成绕x/y轴的转动，通过D-H方法可以得到末端位置</p>
+<p><img src="/assets/image-20210810152312429.png" alt="image-20210810152312429" style="zoom:50%;" /></p>
+<p>不同load下的位移-压强关系可测定</p>
+</li>
+<li>
+<p>A cascaded control strategy (a motion-control outer loop and multichannel pressure-control inner loops for each SOA)</p>
+<p><img src="/assets/image-20210810142215509.png" alt="a cascaded control strategy"  /></p>
+<blockquote>
+<p>The outer loop, controlled by the high-level controller, used <strong>pressure feedback information</strong> (motion filter) from each actuator to obtain the overall device motion estimation and then compared with the desired motion mapped from the different control commands (flexion/extension, ulnar/radial deviation, and engagement signal). The resultant pressure commands from the high-level controller were then relayed to the low-level controllers, each regulating one soft origami actuator accordingly.</p>
+</blockquote>
+<p><del>没有讲是怎么配合人的</del> 其实讲了，因为是康复型不是增强型所以只要输入上层指令</p>
+</li>
+</ol>
+<p>According to Flores et al. (2014), the average maximal torque generated by the wrist of a healthy individual in radial/ulnar deviation is 1.3 Nm. As shown in Figure 7F, the force generated from proposed SR brace in radial/ulnar deviation was around 6 N; thus, considering the length of the 2-actuator unit of 128 mm, the torque generated by the SR brace reached up to 0.76 Nm, which is about <strong>58% of the max torque of human wrist</strong>.</p>
+<h2 id="modeling-and-analysis-of-a-high-displacement-pneumatic-artificial-muscle-with-integrated-sensing">Modeling and Analysis of a High-Displacement Pneumatic Artificial Muscle With Integrated Sensing</h2>
+<table>
+<thead>
+<tr>
+<th><img src="/assets/image-20210815212511267.png" alt="image-20210815212511267"  /></th>
+<th><img src="/assets/image-20210815212533250.png" alt="image-20210815212533250"  /></th>
+</tr>
+</thead>
+</table>
+<h2 id="a-soft-inflatable-wearable-robot-for-hip-abductor-assistance-design-and-preliminary-assessment">A Soft Inflatable Wearable Robot for Hip Abductor Assistance: Design and Preliminary Assessment</h2>
+<p><img src="/assets/image-20210815213353465.png" alt="image-20210815213353465"  /></p>
+<p>Actuation principles; A) a schematic figure of the hip abduction actuator (HAA). The angle  ($\alpha$)  is the current actuator angle (deformed), and the angle  ($\theta$)  is the pattern angle as the maximum unfolding angle (equilibrium). The actuator is folded when deflation  ($\alpha \approx 0$) , and then the actuator exerts torque while attempting to inflate to the pattern angle due to force equilibrium when inflation; B) a theoretical torque profile related to the different actuator angle  ($\alpha$​​) ; C) a simplified diagram of the HAA, the support beams, and the pelvis system. The support beams react against the femur (fixed) to provide torque from the HAA to the pelvis.</p>
+<p>未涉及控制，实验的加压阶段手动进行</p>
+<h2 id="an-untethered-electro-pneumatic-exosuit-for-gait-assistance-of-people-with-foot-drop">An Untethered Electro-Pneumatic Exosuit for Gait Assistance of People With Foot Drop</h2>
+<p>没看出来哪里origami；论文格式图片很糊，没有细看</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/exoskeleton/">Exoskeleton</a>
+        
+            <a href="/tags/origami/">Origami</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+    
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/posts/human-walking-in-the-real-world-interactions-between-terrain-type-gait-parameters-and-energy-expenditure/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Human walking in the real world Interactions between terrain type, gait parameters, and energy expenditure</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/%E5%A4%96%E9%AA%A8%E9%AA%BC%E7%BB%BC%E8%BF%B0/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">外骨骼综述</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/review-of-terrain-classification/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Review of terrain analysis / terrain classification</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/ips-for-validation/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">IPS for Validation</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/reviews-of-gait-eventphase-detection-methods/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Reviews of Gait Event/Phase Detection Methods</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+     
+        
+    <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css" />
+
+<div id="vssue"></div>
+
+<script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+<script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
+
+<script>
+    new Vue({
+        el: "#vssue",
+        render: (h) =>
+            h("Vssue", {
+                props: {
+                    title: "(Origami) Pneumatic Exoskeleton",
+                    options: {
+                        proxy: (url) => "https://cors-anywhere.azm.workers.dev/" + url,
+                        owner: "K7288",
+                        repo: "blog-repos",
+                        clientId: "ac393ff5fd371a96eda1",
+                        clientSecret: "e9c2b32500e90b7d0e374ecf8481b97819b8012c",
+                    },
+                },
+            }),
+    });
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2021 - 
+        
+        2022 K7288
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#summary-of-previous-work">Summary of previous work</a></li>
+    <li><a href="#an-inflatable-and-foldable-knee-exosuit-based-on-intelligent-management-of-biomechanical-energy">An Inflatable and Foldable Knee Exosuit Based on Intelligent Management of Biomechanical Energy</a>
+      <ol>
+        <li><a href="#research-object">Research object</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#methods">Methods</a></li>
+      </ol>
+    </li>
+    <li><a href="#novel-accordion-inspired-foldable-pneumatic-actuators-for-knee-assistive-devices">Novel Accordion-Inspired Foldable Pneumatic Actuators for Knee Assistive Devices</a>
+      <ol>
+        <li><a href="#methods-1">Methods</a></li>
+        <li><a href="#limitsfurther-work">Limits/Further Work</a></li>
+      </ol>
+    </li>
+    <li><a href="#origami-structured-actuating-modules-for-upper-limb-support">Origami-Structured Actuating Modules for Upper Limb Support</a>
+      <ol>
+        <li><a href="#thoughtscomments">Thoughts/Comments</a></li>
+      </ol>
+    </li>
+    <li><a href="#a-compact-soft-robotic-wrist-brace-with-origami-actuators">A Compact Soft Robotic Wrist Brace With Origami Actuators</a>
+      <ol>
+        <li><a href="#materials">Materials</a></li>
+        <li><a href="#methods-2">Methods</a></li>
+      </ol>
+    </li>
+    <li><a href="#modeling-and-analysis-of-a-high-displacement-pneumatic-artificial-muscle-with-integrated-sensing">Modeling and Analysis of a High-Displacement Pneumatic Artificial Muscle With Integrated Sensing</a></li>
+    <li><a href="#a-soft-inflatable-wearable-robot-for-hip-abductor-assistance-design-and-preliminary-assessment">A Soft Inflatable Wearable Robot for Hip Abductor Assistance: Design and Preliminary Assessment</a></li>
+    <li><a href="#an-untethered-electro-pneumatic-exosuit-for-gait-assistance-of-people-with-foot-drop">An Untethered Electro-Pneumatic Exosuit for Gait Assistance of People With Foot Drop</a></li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

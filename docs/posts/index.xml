@@ -6,7 +6,173 @@
     <description>Recent content in Posts on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install and Configure VNC on Ubuntu 20.04</title>
+      <link>https://K7288.github.io/posts/install-and-configure-vnc-on-ubuntu-20.04/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/install-and-configure-vnc-on-ubuntu-20.04/</guid>
+      <description>sudo apt-get update#sudo apt-get install --reinstall ubuntu-desktop gnome-panel gnome-settings-daemon metacity nautilus gnome-terminalsudo apt-get install ubuntu-desktop gnome-panel gnome-settings-daemon metacity nautilus gnome-terminalysudo apt-get updatesudo apt-get upgradeInstalling Desktop Environment
+sudo apt updatesudo apt install xfce4 xfce4-goodiesInstalling VNC Server
+sudo apt install tigervnc-standalone-servernano ~/.vnc/xstartup#!/bin/sh# Uncomment the following two lines for normal desktop:export XKL_XMODMAP_DISABLE=1unset SESSION_MANAGER# exec /etc/X11/xinit/xinitrcunset DBUS_SESSION_BUS_ADDRESSgnome-panel &amp;amp;gnmoe-settings-daemon &amp;amp;metacity &amp;amp;nautilus &amp;amp;gnome-terminal &amp;amp;#!</description>
+    </item>
+    
+    <item>
+      <title>Angular Kinematics</title>
+      <link>https://K7288.github.io/posts/angular-kinematics/</link>
+      <pubDate>Sun, 30 Jan 2022 10:35:13 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/angular-kinematics/</guid>
+      <description>Definition of Anatomical Joint Angles Each joint has a reference frame in the proximal and distal segments    Joint Proximal segment Distal segment     hip pelvis thigh   knee thigh calf   ankle calf foot    Joint angles are defined as a rotation of the distal segment relative to the proximal segment.
+ Flexion and extension (plus dorsiflexion and plantar flexion) take place about the mediolateral axis of the proximal segment (i.</description>
+    </item>
+    
+    <item>
+      <title>生成树状目录</title>
+      <link>https://K7288.github.io/posts/%E7%94%9F%E6%88%90%E6%A0%91%E7%8A%B6%E7%9B%AE%E5%BD%95/</link>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/%E7%94%9F%E6%88%90%E6%A0%91%E7%8A%B6%E7%9B%AE%E5%BD%95/</guid>
+      <description>Windows自带 tree
+基于node的tree-node-cli nodejs安装 安装地址 Node.js (nodejs.org)
+安装tree-node-cli npm install -g tree-node-cli 使用 treee -L 3 -I &amp;quot;node_modules|.git&amp;quot; -a --dirs-first &amp;gt; tree.md   windows用户需要用treee代替tree，避免和系统的tree命令冲突。 treee
+  指定路径的级别为3级。
+-L 3
+  忽略文件夹（正则表达式匹配，.git会匹配到.gitignore）
+-I &amp;quot;node_modules|.idea|objects|.git&amp;quot;
+  显示所有文件（默认前缀有&amp;quot;.&amp;ldquo;的不会显示，例如&amp;rdquo;.electron-vue&amp;quot;）
+-a
+  目录在前，文件在后（默认是字母排序，和idea显示的顺序不一致）。
+--dirs-first
+  保存树状结构到tree.md
+&amp;gt; tree.md
+   完整选项 -V, --version 输出版本号-a, --all-files 打印所有文件，包括隐藏文件--dirs-first 目录在前，文件在后-d, --dirs-only 仅列出目录-I, --exclude [patterns] 排除与模式匹配的文件。用 | 隔开,用双引号包裹。 例如 “node_modules|.</description>
+    </item>
+    
+    <item>
+      <title>sEMG信号采集及处理</title>
+      <link>https://K7288.github.io/posts/semg%E4%BF%A1%E5%8F%B7%E9%87%87%E9%9B%86%E5%8F%8A%E5%A4%84%E7%90%86/</link>
+      <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/semg%E4%BF%A1%E5%8F%B7%E9%87%87%E9%9B%86%E5%8F%8A%E5%A4%84%E7%90%86/</guid>
+      <description>sEMG sensors Size the size of the electrodes in the direction of the muscle fibers is max. 10mm.
+Inter electrode distance (for sensors restrict to bipolar sensors only) &amp;lsquo;Inter electrode distance&amp;rsquo; defined as the centre to centre distance between the conductive area&amp;rsquo;s of 2 bipolar electrodes. 20 mm. / not exceed 1/4 of the muscle fibre length(for relatively small muscles; In this way unstable recordings, due to tendon and motor endplate effects can be avoided.</description>
+    </item>
+    
+    <item>
+      <title>Human walking in the real world Interactions between terrain type, gait parameters, and energy expenditure</title>
+      <link>https://K7288.github.io/posts/human-walking-in-the-real-world-interactions-between-terrain-type-gait-parameters-and-energy-expenditure/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/human-walking-in-the-real-world-interactions-between-terrain-type-gait-parameters-and-energy-expenditure/</guid>
+      <description>Summary 用统计学方法分析了不同地形对选取的步态参数、步态参数的variability以及代谢耗能的影响
+ 影响是否有统计学意义；正相关/负相关；一点点直观的原因解释 步态参数的相关性  步态参数及其variability与代谢耗能的相关性（线性回归、统计分析）
+步态参数预估代谢耗能 （principal components regression (PCR) ； partial least squares regression (PLSR)和单因素回归）
+Research question how foot paths change with terrain, and how they relate to the energetic cost of walking.
+ foot path refers to the foot’s translation in three dimensions during a single swing phase, starting from the previous stance phase and including the ending stance phase, when the foot is stationary.
+ Introduction Effects of ground terrain: the elevation change over a step, average stride length and width, mid-swing(higher on the uneven terrain), foot placement for stabilizing adjustments $\Rightarrow$ energy expenditure</description>
+    </item>
+    
+    <item>
+      <title>方差分析ANOVA</title>
+      <link>https://K7288.github.io/posts/%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90anova/</link>
+      <pubDate>Wed, 25 Aug 2021 00:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/%E6%96%B9%E5%B7%AE%E5%88%86%E6%9E%90anova/</guid>
+      <description>单因素方差分析 One Way ANOVA 单因素方差分析SPSS教程 
+如果单因素方差分析显示差异具有统计学意义（P&amp;lt;0.05），表示不是所有组的总体均数均相等（至少有一组均数不同于另一组）。如果P&amp;gt;0.05，则表示各组间均数差异无统计学意义。
+2种适用的研究设计 1）判断3个及以上独立的组间均数是否存在差异；
+2）判断前后变化的差值是否存在差异。
+6个假设 假设1：因变量为连续变量；
+假设2：有一个包含2个及以上分类、且组别间相互独立的自变量；
+假设3：每组间和组内的观测值相互独立；
+假设4：每组内没有明显异常值；
+假设5：每组内因变量符合正态分布；
+假设6：进行方差齐性检验，观察每组的方差是否相等。
+整体流程 假设验证 假设4：每组内没有明显异常值   Boxplots
+如果存在多个异常值，应先把最极端的异常值去掉后，重新检查异常值情况。
+  异常值的处理方法： (1) 保留异常值：
+1）采用非参数Kruskal-Wallis H检验；
+2）用非最极端的值来代替极端异常值（如用第二大的值代替）；
+3）因变量转换成其他形式；
+4）将异常值纳入分析，并坚信其对结果不会产生实质影响。
+(2) 剔除异常值：
+直接删除异常值很简单，但却是没有办法的办法。当我们需要删掉异常值时，应报告异常值大小及其对结果的影响，最好分别报告删除异常值前后的结果。而且，应该考虑有异常值的个体是否符合研究的纳入标准。如果其不属于合格的研究对象，应将其剔除，否则会影响结果的推论。
+假设5：每组内因变量符合正态分布 Shapiro-Wilk正态性检验、偏度和峰度值、直方图等
+ 如果样本量较小（&amp;lt;50），并且对正态Q-Q图或其他图形方法的结果诠释不够有把握，推荐采用Shapiro-Wilk检验。每组自变量都会有一个Shapiro-Wilk正态性检验结果；如果样本量大于50，推荐使用正态Q-Q图等图形方法进行正态判断，因为当样本量较大时，Shapiro-Wilk检验会把稍稍偏离正态分布的数据也标记为有统计学差异，即数据不服从正态分布。
+boxplot选择“带检验的正态图”
+ 如果数据符合正态分布，显著性水平（蓝框中的Sig.）应该大于0.05。Shapiro-Wilk检验的无效假设是数据服从正态分布，备择假设是数据不服从正态分布。因此，如果拒绝无效假设（P&amp;lt;0.05），表示数据不服从正态分布；如果不能拒绝无效假设，则不能认为数据不服从正态分布。
+不服从正态分布的处理方法 (1) 数据转换：对转换后呈正态分布的数据进行单因素方差分析。当各组因变量的分布形状相同时，正态转换才有可能成功。对于一些常见的分布，有特定的转换形式，但是对于转换后数据的结果解释可能比较复杂。
+(2) 使用非参数检验：可以使用Kruskal-Wallis H检验等非参数检验方法，但是要注意Kruskal-Wallis H检验和单因素方差分析的无效假设和备择假设不太一致。
+(3) 直接进行分析：由于单因素方差分析对于偏离正态分布比较稳健，尤其是在各组样本量相等或近似相等的情况下，而且非正态分布实质上并不影响犯I型错误的概率。因此可以直接进行检验，但是结果中仍需报告对正态分布的偏离。
+(4) 检验结果的比较：将转换后和未转换的原始数据分别进行单因素方差分析，如果二者结论相同，则再对未转换的原始数据进行分析。
+假设6：进行方差齐性检验，观察每组的方差是否相等 SPSS操作 单因素方差分析（ONEWAY procedure）→事后两两比较（post hoc test） (1) 点击Analyze &amp;gt; Compare Means &amp;gt; One-Way ANOVA：
+出现One-Way ANOVA对话框：</description>
+    </item>
+    
+    <item>
+      <title>外骨骼综述</title>
+      <link>https://K7288.github.io/posts/%E5%A4%96%E9%AA%A8%E9%AA%BC%E7%BB%BC%E8%BF%B0/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/%E5%A4%96%E9%AA%A8%E9%AA%BC%E7%BB%BC%E8%BF%B0/</guid>
+      <description>Lower limb exoskeleton systems-overview1    Category Control(mostly) Actuator(mostly) Wearer     Assistive High precision; Predefined trajectories triggered by the user’s moving intention
+($\Rightarrow$ Intention Estimation + Trajectories Generating) DC motor patients permanently lose the ability to walk   Rehabilitation Predefined; Impedance control; Adjusting itself based on patient feedback. high-power density rehabilitating patients to regain mobility   Augmentation admittance/impedance control; positive feedback sensitivity amplification control, Inaccurate but high power/weight ratio actuators (series elastic actuators (SEA) and pneumatic actuators) healthy individuals    Assistive Intention Estimation ​   Direct</description>
+    </item>
+    
+    <item>
+      <title>Origami patterns</title>
+      <link>https://K7288.github.io/posts/origami-patterns/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/origami-patterns/</guid>
+      <description>Yoshimura
+Miura-ori
+diagnoal</description>
+    </item>
+    
+    <item>
+      <title>Review of terrain analysis / terrain classification</title>
+      <link>https://K7288.github.io/posts/review-of-terrain-classification/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/review-of-terrain-classification/</guid>
+      <description>Author Title  Sensor Terrain  Method  Online/Offline Accuracy Comments      Surface effects on dynamic stability and loading during outdoor running using wireless trunk accelerometry accelerometer over L3 spinous process of the trunk three outdoor training surfaces (concrete road, synthetic track and woodchip trail) 1.Dynamic postural stability (tri-axial acceleration root mean square (RMS) ratio, step and stride regularity, sample entropy), dynamic loading (impact and breaking peak amplitudes and median frequencies), as well as spatio-temporal running gait measures (step frequency, stance time) were derived from trunk accelerations</description>
+    </item>
+    
+    <item>
+      <title>(Origami) Pneumatic Exoskeleton</title>
+      <link>https://K7288.github.io/posts/origami-pnumatic-exoskeleton/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/origami-pnumatic-exoskeleton/</guid>
+      <description>(Origami) Pneumatic Exoskeleton
+Summary of previous work    Author Origami pattern Joint Prototype 研究阶段     Bio-Robotics and Control (BiRC) Laboratory，UNIST, Korea Yoshimura pattern shoulder  1.设计 2.建模（输出力关于弯曲角度等的表达式）3. 实验验证对支撑能力/输出力矩的仿真结果   南方科技大学 刘思聪 王峥 Variated Yoshimura with trapezoid facets. wrist  1. 设计 2. 运动学建模 3. 级联控制（未详细阐述，使用之前合作的工作） 4. 实验验证控制性能以及不同负载下的运动范围   西北工业大学 Jing Fang*2 #1 #2 / (Accordion/Fan) knee  1. 设计 2. 建模（输出力矩的闭式表达式）3. 实验验证机械性能及辅助效果 4. 控制（满足对特定动作的支持）   Yang, Hee Doo / (Artificial muscle) elbow</description>
+    </item>
+    
+    <item>
+      <title>IPS for Validation</title>
+      <link>https://K7288.github.io/posts/ips-for-validation/</link>
+      <pubDate>Mon, 02 Aug 2021 00:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/ips-for-validation/</guid>
+      <description>Detection of gait events using an F-Scan in-shoe pressure measurement system 比较了force-based detection (FD，软件自带)和area-based method (AD) ；kinetic detection(KT，使用force platforms的数据)作为validation
+对F-Scan® system准确性的讨论 Several studies have evaluated the accuracy and reliability of force and pressure measurements using the F-Scan® system and reached different conclusions. While some authors concluded that F-Scan demonstrated good to excellent reliability in measuring plantar pressures [11], others concluded that the system was not entirely suitable for accurate and repeatable absolute pressure measurements [12], [13], [14] or that the system could be used only in a sample large enough as to allow the detection of the real effect of the treatment [15].</description>
+    </item>
+    
+    <item>
+      <title>Reviews of Gait Event/Phase Detection Methods</title>
+      <link>https://K7288.github.io/posts/reviews-of-gait-eventphase-detection-methods/</link>
+      <pubDate>Mon, 02 Aug 2021 00:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/reviews-of-gait-eventphase-detection-methods/</guid>
+      <description>Strategy1 &amp;amp; Yield  Search Strategy
+  Scopus, Google Scholar, and PubMed databases were used to perform a literature search on the topic of gait phase partitioning.
+  The electronic search was conducted in September 2015.
+  Keywords included: gait events, gait phases, and their combinations with the words: partitioning, detection, classification, and recognition. In addition, wildcard symbols, such as hyphens or inverted commas, were used to consider all possible variations of root words.</description>
+    </item>
+    
     <item>
       <title>Phase Portraits</title>
       <link>https://K7288.github.io/posts/phase-portrait/</link>
@@ -26,12 +192,12 @@
     </item>
     
     <item>
-      <title>Before Taking A Recording</title>
+      <title>FScan: Before Taking A Recording</title>
       <link>https://K7288.github.io/posts/before-taking-a-recording/</link>
       <pubDate>Fri, 09 Jul 2021 22:00:09 +0800</pubDate>
       
       <guid>https://K7288.github.io/posts/before-taking-a-recording/</guid>
-      <description>Before Taking A Recording * means &amp;ldquo;optinal&amp;rdquo;; 此处的定义和步骤均参考Tekscan的F-Scan User Manual
+      <description>FScan: Before Taking A Recording * means &amp;ldquo;optinal&amp;rdquo;; 此处的定义和步骤均参考Tekscan的F-Scan User Manual
 Preparing the Patient trim the sensor; set up the testing area; set up the system hardware; weigh the patient; outfit the patient.
 *Zeroing the Sensor 当整个实验过程中鞋垫上始终有额外压力时使用；类似称重的去皮；
 *Equilibration 在鞋垫上放置均匀重物；
@@ -187,7 +353,16 @@ Experimental Protocol
 Representative diagram
 the integrated design
 cognitive effort
-methodology</description>
+methodology
+prototype
+Sensory Information
+one representative subject
+energy per unit distance and weight
+across-subject means
+ Bars denote across-subject means; error bars denote standard deviation across subjects (N= 10).
+ 个体差异 within-trial variations; inter-subject differences
+拟合 For goodness of fit, the top four correlates were xxx,xxx
+统计学分析 Participants also expended varying amounts of energy as a function of terrain (Fig 4, top).</description>
     </item>
     
     <item>
@@ -258,7 +433,7 @@ Research Problem description of the gaits of two- and four-legged animals and so
       <guid>https://K7288.github.io/posts/hugo-html-tips/</guid>
       <description>  原生html支持
 hugo采用goldmark作为默认渲染器，需要在config中开启
-   markup: goldmark: renderer: unsafe: true html 图片需要绝对路径，形式如下：  &amp;lt;img src=&amp;quot;/assets/image-20210416142714352.png&amp;quot; alt=&amp;quot;image-20210416142714352&amp;quot; style=&amp;quot;zoom:33%;&amp;quot; /&amp;gt; 而不能是src=&amp;quot;assets\ 所以也不太支持网络图片&amp;hellip;&amp;hellip;
+  markup: goldmark: renderer: unsafe: true html 图片需要绝对路径，形式如下：  &amp;lt;img src=&amp;#34;/assets/image-20210416142714352.png&amp;#34; alt=&amp;#34;image-20210416142714352&amp;#34; style=&amp;#34;zoom:33%;&amp;#34; /&amp;gt; 而不能是src=&amp;quot;assets\ 所以也不太支持网络图片&amp;hellip;&amp;hellip;
 ****好像不能出现。  </description>
     </item>
     
@@ -269,7 +444,20 @@ hugo采用goldmark作为默认渲染器，需要在config中开启
       
       <guid>https://K7288.github.io/posts/draftimage-processing-and-computer-vision/</guid>
       <description>参考书目 Digital Image Processing by Rafael C. Gonzalez, Richard E. Woods, 3rd Edition
- 第一章 数字图像的采集方式以及特性  1.1 图像概述 1.2 图像数字化  1.2.1图像数字化——采样  一维连续信号的采样 二维连续图像信号的采样  二维Nyquist条件 亚采样     1.2.2图像数字化——量化   1.3 数字图像基本要素  1.3.1基本要素 1.3.2图像质量 1.3.3图像颜色：红、绿、蓝三基色 1.3.4图像的描述：灰度/黑白/彩色图像、链表、拓扑结构、距离 1.3.5图像的矩阵特性：距离、邻域、临接、连通 1.3.6图像文件格式   1.4 数字图像处理意义及内容 1.5 数字图像处理系统及应用  1.5.1数字图像特性：图像/显示分辨率/打印机分辨率 像素深度 位面数量 1.5.2数字图像处理系统     第二章 数字图像预处理方法  2.1 灰度化  2.1.1灰度化主要方法 2.1.2图像二值化  1.全局二值化 2.</description>
+第一章 数字图像的采集方式以及特性 1.1 图像概述 图像是一个二维亮度函数；
+模拟图像：一幅活动、彩色、立体的图像——$I=f(x,y,z,λ,t)$，三维空间+波谱上+时间上连续，想象中的虚拟图像
+数字图像：数字图像是由模拟图象数字化得到的，以像素为基本元素、可以用数字计算机或数字电路存储和处理的图像。
+把一幅图画分割成如图所示的一个个小区域（像素），并将各小区域灰度用整数来表示，形成一幅点阵式的数字图像。它包括采样和量化两个过程。像素的位置和灰度就是像素的属性。
+图像数字化 图像数字化:将模拟图像经过离散化之后，得到用数字表示的图像。
+一幅模拟图像的坐标及幅度都是连续的，为了把它转换为数字形式，必须对坐标和幅度都作离散化操作。数字化坐标值称为采样，它确定了图像的空间分辨率；数字化幅度值称为量化，它确定了图像的幅度分辨率。
+1.2.1图像数字化——采样 （1）图像的采样：将在空间上连续的图像转换成离散的采样点（即像素）集的操作
+z=f(x,y), x∈[0,a], y∈[0,b], z∈[0,c] $\rightarrow$ z=f(x,y), x=0,1,…,N-1,y=0,1,…,M-1, z=0,1,…,L-1
+采样间隔太小，则增大数据量；太大，则会发生信息的混叠，导致细节无法辨认。
+一维连续信号的采样 在工程中的许多信号，实际上都是连续信号，或者称为连续时间函数，记为x(t)，t的取值是从$-\infty$ 连续变化到$+ \infty $ 。但是，用计算机处理这些信号，必须首先对连续信号进行采样，即按一定的时间间隔Ts进行取值： $$ 𝑥_𝑑 (𝑛)=𝑥(𝑛𝑇_𝑠) , 𝑛=…−1,0,1… $$ $T_s$为采样间隔，$ x_d (n)$为离散信号或时间序列
+连续信号x(t)和频谱X(f)的具体关系为： $$ X(f)=\int _{−\infty}^\infty x(t)e^{−j2\pi ft} dt\\\\x(t)=\int _{−\infty}^\infty X(f)e^{j2\pi ft} df $$
+一维空间采样的Nyquist条件：$X(f)$有截频$ f_c$，即当$|f|≥ f_c$时, $X(f)=0$；$T_s≤\frac{1}{2f_c}$ 或$2f_c≤f_s$
+如果信号不是有限带宽信号，采样频率或采样间隔不满足Nyquist条件，就会产生混叠现象。
+在满足Nyquist条件下，从离散信号$x(nT_s)$可恢复连续信号$x(t)$ $$ x(t)=\Sigma_{n=−\infty}^{+\infty}x(nT_s)sinc(\frac{\pi}{T_s} (t-nT_s)) $$</description>
     </item>
     
     <item>
@@ -367,8 +555,8 @@ Three of these focus on the specific events that constitute the act of walking.
       <guid>https://K7288.github.io/posts/hugo-guide/</guid>
       <description>About Contents Add Some Content hugo new post/**.md
 The newly created content file will start with something like this:
---- title: &amp;quot;**&amp;quot; date: 2019-03-26T08:47:11+01:00 draft: true --- Drafts do not get deployed; once you finish a post, update the header of the post to say draft: false. More info here.
---- title: &amp;quot;Hugo Guide&amp;quot; date: 2021-05-01T08:47:11+01:00 categories: [&amp;quot;Manual&amp;quot;] tags: [&amp;quot;Hugo&amp;quot;, &amp;quot;GitHub&amp;quot;] draft: false --- Add pictures
+--- title: &amp;#34;**&amp;#34; date: 2019-03-26T08:47:11+01:00 draft: true --- Drafts do not get deployed; once you finish a post, update the header of the post to say draft: false. More info here.
+--- title: &amp;#34;Hugo Guide&amp;#34; date: 2021-05-01T08:47:11+01:00 categories: [&amp;#34;Manual&amp;#34;] tags: [&amp;#34;Hugo&amp;#34;, &amp;#34;GitHub&amp;#34;] draft: false --- Add pictures
 /post/xxx.jpg
 is actually baseURL/post/xxx.jpg</description>
     </item>
@@ -387,20 +575,6 @@ is actually baseURL/post/xxx.jpg</description>
 不支持\left[，\right)等
   $$ \begin{cases}\begin{array}{l} \theta_{i}(t-j)^{\prime}=\frac{1}{3} \Sigma_{1}^{-1} \theta_{i}(t-j),\\ a_{i}(t-j)^{\prime}=\frac{1}{3} \sum_{1}^{-1} a_{i}(t-j), i=\{r h,l h, r k, l k\}\\w_{i}(t-j)^{\prime}=\frac{1}{3} \Sigma_{1}^{-1} w_{i}(t-j)\end{array}\end{cases} $$
 \begin{cases}\begin{array}{l} \theta_{i}(t-j)^{\prime}=\frac{13} \Sigma_{1}^{-1} \theta_{i}(t-j),\\\\ a_{i}(t-j)^{\prime}=\frac{1}{3} \sum_{1}^{-1} a_{i}(t-j), i=\\{r h,l h, r k, l k\\}\\\\w_{i}(t-j)^{\prime}=\frac{1}{3} \Sigma_{1}^{-1} w_{i}(t-j)\end{array}\end{cases} \begin{array}和\end{array}之间不能换行😅</description>
-    </item>
-    
-    <item>
-      <title>论文3篇泛读 1-&gt;measurement可靠性(方法比较奇怪或者没有) 2/3-&gt;步态参数拟合</title>
-      <link>https://K7288.github.io/posts/measurement%E5%8F%AF%E9%9D%A0%E6%80%A7%E6%96%B9%E6%B3%95%E6%AF%94%E8%BE%83%E5%A5%87%E6%80%AA%E6%88%96%E8%80%85%E6%B2%A1%E6%9C%89-%E6%AD%A5%E6%80%81%E5%8F%82%E6%95%B0%E6%8B%9F%E5%90%88/</link>
-      <pubDate>Sat, 01 May 2021 11:37:16 +0800</pubDate>
-      
-      <guid>https://K7288.github.io/posts/measurement%E5%8F%AF%E9%9D%A0%E6%80%A7%E6%96%B9%E6%B3%95%E6%AF%94%E8%BE%83%E5%A5%87%E6%80%AA%E6%88%96%E8%80%85%E6%B2%A1%E6%9C%89-%E6%AD%A5%E6%80%81%E5%8F%82%E6%95%B0%E6%8B%9F%E5%90%88/</guid>
-      <description>因为不熟悉心相关研究问题，之前做笔记的次数也少，这几篇Literature Notes结构不够清晰，而且过长，下次注意。
-三篇文献与选题的关联性差强人意，之后留意/请教一下如何有效查找文献。
-1. Reliability of centre of pressure, plantar pressure, and plantar-flexion isometric strength measures: A systematic review COP PP PFisom 三种步态控制measurement 的可靠性
-方法：对三个数据库实验进行同行评估 ICC
-Background Centre of pressure (COP), plantar pressure (PP), and plantar-flexion isometric strength (PFisom) are often examined in relation to postural control and gait.
-Research question Our aim was to systematically review and quality appraise articles addressing the reliability of COP and PP measures in static stance and PFisom measures.</description>
     </item>
     
   </channel>

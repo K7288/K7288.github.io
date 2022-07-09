@@ -32,8 +32,8 @@
       <guid>https://K7288.github.io/posts/hugo-guide/</guid>
       <description>About Contents Add Some Content hugo new post/**.md
 The newly created content file will start with something like this:
---- title: &amp;quot;**&amp;quot; date: 2019-03-26T08:47:11+01:00 draft: true --- Drafts do not get deployed; once you finish a post, update the header of the post to say draft: false. More info here.
---- title: &amp;quot;Hugo Guide&amp;quot; date: 2021-05-01T08:47:11+01:00 categories: [&amp;quot;Manual&amp;quot;] tags: [&amp;quot;Hugo&amp;quot;, &amp;quot;GitHub&amp;quot;] draft: false --- Add pictures
+--- title: &amp;#34;**&amp;#34; date: 2019-03-26T08:47:11+01:00 draft: true --- Drafts do not get deployed; once you finish a post, update the header of the post to say draft: false. More info here.
+--- title: &amp;#34;Hugo Guide&amp;#34; date: 2021-05-01T08:47:11+01:00 categories: [&amp;#34;Manual&amp;#34;] tags: [&amp;#34;Hugo&amp;#34;, &amp;#34;GitHub&amp;#34;] draft: false --- Add pictures
 /post/xxx.jpg
 is actually baseURL/post/xxx.jpg</description>
     </item>

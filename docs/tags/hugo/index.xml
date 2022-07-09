@@ -15,7 +15,7 @@
       <guid>https://K7288.github.io/posts/hugo-html-tips/</guid>
       <description>  原生html支持
 hugo采用goldmark作为默认渲染器，需要在config中开启
-   markup: goldmark: renderer: unsafe: true html 图片需要绝对路径，形式如下：  &amp;lt;img src=&amp;quot;/assets/image-20210416142714352.png&amp;quot; alt=&amp;quot;image-20210416142714352&amp;quot; style=&amp;quot;zoom:33%;&amp;quot; /&amp;gt; 而不能是src=&amp;quot;assets\ 所以也不太支持网络图片&amp;hellip;&amp;hellip;
+  markup: goldmark: renderer: unsafe: true html 图片需要绝对路径，形式如下：  &amp;lt;img src=&amp;#34;/assets/image-20210416142714352.png&amp;#34; alt=&amp;#34;image-20210416142714352&amp;#34; style=&amp;#34;zoom:33%;&amp;#34; /&amp;gt; 而不能是src=&amp;quot;assets\ 所以也不太支持网络图片&amp;hellip;&amp;hellip;
 ****好像不能出现。  </description>
     </item>
     
@@ -27,8 +27,8 @@ hugo采用goldmark作为默认渲染器，需要在config中开启
       <guid>https://K7288.github.io/posts/hugo-guide/</guid>
       <description>About Contents Add Some Content hugo new post/**.md
 The newly created content file will start with something like this:
---- title: &amp;quot;**&amp;quot; date: 2019-03-26T08:47:11+01:00 draft: true --- Drafts do not get deployed; once you finish a post, update the header of the post to say draft: false. More info here.
---- title: &amp;quot;Hugo Guide&amp;quot; date: 2021-05-01T08:47:11+01:00 categories: [&amp;quot;Manual&amp;quot;] tags: [&amp;quot;Hugo&amp;quot;, &amp;quot;GitHub&amp;quot;] draft: false --- Add pictures
+--- title: &amp;#34;**&amp;#34; date: 2019-03-26T08:47:11+01:00 draft: true --- Drafts do not get deployed; once you finish a post, update the header of the post to say draft: false. More info here.
+--- title: &amp;#34;Hugo Guide&amp;#34; date: 2021-05-01T08:47:11+01:00 categories: [&amp;#34;Manual&amp;#34;] tags: [&amp;#34;Hugo&amp;#34;, &amp;#34;GitHub&amp;#34;] draft: false --- Add pictures
 /post/xxx.jpg
 is actually baseURL/post/xxx.jpg</description>
     </item>

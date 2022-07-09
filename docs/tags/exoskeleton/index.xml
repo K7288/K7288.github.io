@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exoskeleton on K7288</title>
+    <link>https://K7288.github.io/tags/exoskeleton/</link>
+    <description>Recent content in Exoskeleton on K7288</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 05 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/tags/exoskeleton/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>(Origami) Pneumatic Exoskeleton</title>
+      <link>https://K7288.github.io/posts/origami-pnumatic-exoskeleton/</link>
+      <pubDate>Thu, 05 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/origami-pnumatic-exoskeleton/</guid>
+      <description>(Origami) Pneumatic Exoskeleton
+Summary of previous work    Author Origami pattern Joint Prototype 研究阶段     Bio-Robotics and Control (BiRC) Laboratory，UNIST, Korea Yoshimura pattern shoulder  1.设计 2.建模（输出力关于弯曲角度等的表达式）3. 实验验证对支撑能力/输出力矩的仿真结果   南方科技大学 刘思聪 王峥 Variated Yoshimura with trapezoid facets. wrist  1. 设计 2. 运动学建模 3. 级联控制（未详细阐述，使用之前合作的工作） 4. 实验验证控制性能以及不同负载下的运动范围   西北工业大学 Jing Fang*2 #1 #2 / (Accordion/Fan) knee  1. 设计 2. 建模（输出力矩的闭式表达式）3. 实验验证机械性能及辅助效果 4. 控制（满足对特定动作的支持）   Yang, Hee Doo / (Artificial muscle) elbow</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,14 +6,24 @@
     <description>Recent content in Sensor on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 09 Jul 2021 22:00:09 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/sensor/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/sensor/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Before Taking A Recording</title>
+      <title>sEMG信号采集及处理</title>
+      <link>https://K7288.github.io/posts/semg%E4%BF%A1%E5%8F%B7%E9%87%87%E9%9B%86%E5%8F%8A%E5%A4%84%E7%90%86/</link>
+      <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/semg%E4%BF%A1%E5%8F%B7%E9%87%87%E9%9B%86%E5%8F%8A%E5%A4%84%E7%90%86/</guid>
+      <description>sEMG sensors Size the size of the electrodes in the direction of the muscle fibers is max. 10mm.
+Inter electrode distance (for sensors restrict to bipolar sensors only) &amp;lsquo;Inter electrode distance&amp;rsquo; defined as the centre to centre distance between the conductive area&amp;rsquo;s of 2 bipolar electrodes. 20 mm. / not exceed 1/4 of the muscle fibre length(for relatively small muscles; In this way unstable recordings, due to tendon and motor endplate effects can be avoided.</description>
+    </item>
+    
+    <item>
+      <title>FScan: Before Taking A Recording</title>
       <link>https://K7288.github.io/posts/before-taking-a-recording/</link>
       <pubDate>Fri, 09 Jul 2021 22:00:09 +0800</pubDate>
       
       <guid>https://K7288.github.io/posts/before-taking-a-recording/</guid>
-      <description>Before Taking A Recording * means &amp;ldquo;optinal&amp;rdquo;; 此处的定义和步骤均参考Tekscan的F-Scan User Manual
+      <description>FScan: Before Taking A Recording * means &amp;ldquo;optinal&amp;rdquo;; 此处的定义和步骤均参考Tekscan的F-Scan User Manual
 Preparing the Patient trim the sensor; set up the testing area; set up the system hardware; weigh the patient; outfit the patient.
 *Zeroing the Sensor 当整个实验过程中鞋垫上始终有额外压力时使用；类似称重的去皮；
 *Equilibration 在鞋垫上放置均匀重物；

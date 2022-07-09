@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Windows自带 tree
+基于node的tree-node-cli nodejs安装 安装地址 Node.js (nodejs.org)
+安装tree-node-cli npm install -g tree-node-cli 使用 treee -L 3 -I &amp;quot;node_modules|.git&amp;quot; -a --dirs-first &amp;gt; tree.md   windows用户需要用treee代替tree，避免和系统的tree命令冲突。 treee
+  指定路径的级别为3级。
+-L 3
+  忽略文件夹（正则表达式匹配，.git会匹配到.gitignore）
+-I &amp;quot;node_modules|.idea|objects|.git&amp;quot;
+  显示所有文件（默认前缀有&amp;quot;.&amp;ldquo;的不会显示，例如&amp;rdquo;.electron-vue&amp;quot;）
+-a
+  目录在前，文件在后（默认是字母排序，和idea显示的顺序不一致）。
+--dirs-first
+  保存树状结构到tree.md
+&amp;gt; tree.md
+   完整选项 -V, --version 输出版本号-a, --all-files 打印所有文件，包括隐藏文件--dirs-first 目录在前，文件在后-d, --dirs-only 仅列出目录-I, --exclude [patterns] 排除与模式匹配的文件。用 | 隔开,用双引号包裹。 例如 “node_modules|.'><title>生成树状目录</title>
+
+<link rel='canonical' href='https://K7288.github.io/posts/%E7%94%9F%E6%88%90%E6%A0%91%E7%8A%B6%E7%9B%AE%E5%BD%95/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='生成树状目录'>
+<meta property='og:description' content='Windows自带 tree
+基于node的tree-node-cli nodejs安装 安装地址 Node.js (nodejs.org)
+安装tree-node-cli npm install -g tree-node-cli 使用 treee -L 3 -I &amp;quot;node_modules|.git&amp;quot; -a --dirs-first &amp;gt; tree.md   windows用户需要用treee代替tree，避免和系统的tree命令冲突。 treee
+  指定路径的级别为3级。
+-L 3
+  忽略文件夹（正则表达式匹配，.git会匹配到.gitignore）
+-I &amp;quot;node_modules|.idea|objects|.git&amp;quot;
+  显示所有文件（默认前缀有&amp;quot;.&amp;ldquo;的不会显示，例如&amp;rdquo;.electron-vue&amp;quot;）
+-a
+  目录在前，文件在后（默认是字母排序，和idea显示的顺序不一致）。
+--dirs-first
+  保存树状结构到tree.md
+&amp;gt; tree.md
+   完整选项 -V, --version 输出版本号-a, --all-files 打印所有文件，包括隐藏文件--dirs-first 目录在前，文件在后-d, --dirs-only 仅列出目录-I, --exclude [patterns] 排除与模式匹配的文件。用 | 隔开,用双引号包裹。 例如 “node_modules|.'>
+<meta property='og:url' content='https://K7288.github.io/posts/%E7%94%9F%E6%88%90%E6%A0%91%E7%8A%B6%E7%9B%AE%E5%BD%95/'>
+<meta property='og:site_name' content='K7288'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2021-10-11T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-10-11T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="生成树状目录">
+<meta name="twitter:description" content="Windows自带 tree
+基于node的tree-node-cli nodejs安装 安装地址 Node.js (nodejs.org)
+安装tree-node-cli npm install -g tree-node-cli 使用 treee -L 3 -I &amp;quot;node_modules|.git&amp;quot; -a --dirs-first &amp;gt; tree.md   windows用户需要用treee代替tree，避免和系统的tree命令冲突。 treee
+  指定路径的级别为3级。
+-L 3
+  忽略文件夹（正则表达式匹配，.git会匹配到.gitignore）
+-I &amp;quot;node_modules|.idea|objects|.git&amp;quot;
+  显示所有文件（默认前缀有&amp;quot;.&amp;ldquo;的不会显示，例如&amp;rdquo;.electron-vue&amp;quot;）
+-a
+  目录在前，文件在后（默认是字母排序，和idea显示的顺序不一致）。
+--dirs-first
+  保存树状结构到tree.md
+&amp;gt; tree.md
+   完整选项 -V, --version 输出版本号-a, --all-files 打印所有文件，包括隐藏文件--dirs-first 目录在前，文件在后-d, --dirs-only 仅列出目录-I, --exclude [patterns] 排除与模式匹配的文件。用 | 隔开,用双引号包裹。 例如 “node_modules|.">
+    </head>
+    <body class="
+    article-page has-toc
+">
+        <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+        <script>addBackToTop({
+            diameter: 56,
+            cornerOffset: 35,
+            backgroundColor: 'ddd',
+            textColor: '#ddd'
+        })</script>
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="https://K7288.github.io" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                <span></span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/manual/" >
+                Manual
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/%E7%94%9F%E6%88%90%E6%A0%91%E7%8A%B6%E7%9B%AE%E5%BD%95/">生成树状目录</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">2021-10-11</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h2 id="windows自带">Windows自带</h2>
+<p>tree</p>
+<h2 id="基于node的tree-node-cli">基于node的tree-node-cli</h2>
+<h3 id="nodejs安装">nodejs安装</h3>
+<p>安装地址 <a class="link" href="https://nodejs.org/zh-cn/"  target="_blank" rel="noopener"
+    >Node.js (nodejs.org)</a></p>
+<h3 id="安装tree-node-cli">安装tree-node-cli</h3>
+<pre><code>npm install -g tree-node-cli 
+</code></pre><h3 id="使用">使用</h3>
+<pre><code>treee -L 3 -I &quot;node_modules|.git&quot; -a --dirs-first &gt; tree.md
+</code></pre><blockquote>
+<ul>
+<li>
+<p>windows用户需要用<strong>treee</strong>代替tree，避免和系统的tree命令冲突。 <code>treee</code></p>
+</li>
+<li>
+<p>指定路径的级别为3级。</p>
+<p><code>-L 3</code></p>
+</li>
+<li>
+<p>忽略文件夹（正则表达式匹配，.git会匹配到.gitignore）</p>
+<p><code>-I &quot;node_modules|.idea|objects|.git&quot;</code></p>
+</li>
+<li>
+<p>显示所有文件（默认前缀有&quot;.&ldquo;的不会显示，例如&rdquo;.electron-vue&quot;）</p>
+<p><code>-a</code></p>
+</li>
+<li>
+<p>目录在前，文件在后（默认是字母排序，和idea显示的顺序不一致）。</p>
+<p><code>--dirs-first</code></p>
+</li>
+<li>
+<p>保存树状结构到tree.md</p>
+<p><code>&gt; tree.md</code></p>
+</li>
+</ul>
+</blockquote>
+<h3 id="完整选项">完整选项</h3>
+<pre><code>-V, --version             输出版本号
+-a, --all-files           打印所有文件，包括隐藏文件
+--dirs-first              目录在前，文件在后
+-d, --dirs-only           仅列出目录
+-I, --exclude [patterns]  排除与模式匹配的文件。用 | 隔开,用双引号包裹。 例如 “node_modules|.git”
+-L, --max-depth &lt;n&gt;       目录树的最大显示深度
+-r, --reverse             按反向字母顺序对输出进行排序
+-F, --trailing-slash      为目录添加'/'
+-h, --help                输出用法信息
+</code></pre>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+    
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/posts/install-and-configure-vnc-on-ubuntu-20.04/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Install and Configure VNC on Ubuntu 20.04</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/before-taking-a-recording/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">FScan: Before Taking A Recording</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/%E9%A1%B5%E5%86%85%E8%B7%B3%E8%BD%AC/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">页内跳转</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/f-scan/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">F-Scan</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/hugo-html-tips/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Hugo HTML Tips</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+     
+        
+    <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css" />
+
+<div id="vssue"></div>
+
+<script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+<script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
+
+<script>
+    new Vue({
+        el: "#vssue",
+        render: (h) =>
+            h("Vssue", {
+                props: {
+                    title: "生成树状目录",
+                    options: {
+                        proxy: (url) => "https://cors-anywhere.azm.workers.dev/" + url,
+                        owner: "K7288",
+                        repo: "blog-repos",
+                        clientId: "ac393ff5fd371a96eda1",
+                        clientSecret: "e9c2b32500e90b7d0e374ecf8481b97819b8012c",
+                    },
+                },
+            }),
+    });
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2021 - 
+        
+        2022 K7288
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#windows自带">Windows自带</a></li>
+    <li><a href="#基于node的tree-node-cli">基于node的tree-node-cli</a>
+      <ol>
+        <li><a href="#nodejs安装">nodejs安装</a></li>
+        <li><a href="#安装tree-node-cli">安装tree-node-cli</a></li>
+        <li><a href="#使用">使用</a></li>
+        <li><a href="#完整选项">完整选项</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
