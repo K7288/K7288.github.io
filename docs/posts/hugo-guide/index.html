@@ -117,14 +117,14 @@ is actually baseURL/post/xxx.jpg">
     <h2 id="about-contents">About Contents</h2>
 <p><strong>Add Some Content</strong> <code>hugo new post/**.md</code></p>
 <p>The newly created content file will start with something like this:</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">---
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">---
 title: &#34;**&#34;
 date: 2019-03-26T08:47:11+01:00
 draft: true
 ---
 </code></pre></div><p>Drafts do not get deployed; once you finish a post, update the header of the post to say <code>draft: false</code>. More info <a class="link" href="https://gohugo.io/getting-started/usage/#draft-future-and-expired-content"  target="_blank" rel="noopener"
     >here</a>.</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">---
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">---
 title: &#34;Hugo Guide&#34;
 date: 2021-05-01T08:47:11+01:00
 categories: [&#34;Manual&#34;]
@@ -135,13 +135,13 @@ draft: false
 <p><code>/post/xxx.jpg</code></p>
 <p>is actually <code>baseURL/post/xxx.jpg</code></p>
 <p>Put the picture as below</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">.
 └── static
     └── post
         └── xxx.jpg
 </code></pre></div><h2 id="customize-the-theme">Customize the Theme</h2>
 <p><strong>Start the Hugo server</strong></p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">▶ hugo server -D
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">▶ hugo server -D
 
                    | EN
 +------------------+----+
@@ -165,14 +165,14 @@ Press Ctrl+C to stop
 </code></pre></div><p>Navigate to your new site at http://localhost:1313/.</p>
 <p><strong>Site Configuration</strong></p>
 <p>Open up <code>config.toml</code> in a text editor:</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">baseURL = &#34;http://K7288.github.io&#34;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">baseURL = &#34;http://K7288.github.io&#34;
 languageCode = &#34;en-us&#34;
 title = &#34;K7288&#34;
 theme = &#34;stack&#34;
 </code></pre></div><p><strong>For further theme customization, see <a class="link" href="https://gohugo.io/themes/customizing/"  target="_blank" rel="noopener"
     >Customize a Theme</a>.</strong></p>
 <h2 id="build-static-pages">Build static pages</h2>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">hugo -D
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">hugo -D
 </code></pre></div><p>Output will be in <code>./public/</code> directory by default (<code>-d</code>/<code>--destination</code> flag to change it, or set <code>publishdir</code> in the config file).</p>
 <p>See Also</p>
 <ul>
@@ -285,24 +285,24 @@ theme = &#34;stack&#34;
                 
                     
 <article class="">
-    <a href="/posts/install-and-configure-vnc-on-ubuntu-20.04/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Install and Configure VNC on Ubuntu 20.04</h2>
-        </div>
-    </a>
-</article>
-                
-                    
-<article class="">
     <a href="/posts/%E7%94%9F%E6%88%90%E6%A0%91%E7%8A%B6%E7%9B%AE%E5%BD%95/">
         
         
 
         <div class="article-details">
             <h2 class="article-title">生成树状目录</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/before-taking-a-recording/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">FScan: Before Taking A Recording</h2>
         </div>
     </a>
 </article>

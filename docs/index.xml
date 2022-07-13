@@ -6,140 +6,7 @@
         <description>Recent content on K7288</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Fri, 01 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Install and Configure VNC on Ubuntu 20.04</title>
-        <link>https://K7288.github.io/posts/install-and-configure-vnc-on-ubuntu-20.04/</link>
-        <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://K7288.github.io/posts/install-and-configure-vnc-on-ubuntu-20.04/</guid>
-        <description>&lt;pre&gt;&lt;code&gt;sudo apt-get update
-#sudo apt-get install --reinstall ubuntu-desktop gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal
-sudo apt-get install ubuntu-desktop gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal
-y
-sudo apt-get update
-sudo apt-get upgrade
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Installing Desktop Environment&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo apt update
-sudo apt install xfce4 xfce4-goodies
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Installing VNC Server&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo apt install tigervnc-standalone-server
-&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;nano ~/.vnc/xstartup
-&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;#!/bin/sh
- 
-# Uncomment the following two lines for normal desktop:
-export XKL_XMODMAP_DISABLE=1
-unset SESSION_MANAGER
-# exec /etc/X11/xinit/xinitrc
-unset DBUS_SESSION_BUS_ADDRESS
- 
-gnome-panel &amp;amp;
-gnmoe-settings-daemon &amp;amp;
-metacity &amp;amp;
-nautilus &amp;amp;
-gnome-terminal &amp;amp;
-#! /bin/sh
-
-#[ - x /etc/vnc/xstartup ] &amp;amp;&amp;amp; exec /etc/vnc/xstartup
-#[ - r $HOME/.Xresources ] &amp;amp;&amp;amp; xrdb $HOME/.Xresources
-#xsetroot -solid grey
-#x-window-manager &amp;amp;
-#gnome-session &amp;amp;
-#gnome-panel &amp;amp;
-#gnome-settings-daemon &amp;amp;
-#metacity &amp;amp;
-#nautilus &amp;amp;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;chmod u+x ~/.vnc/xstartup
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Configuring VNC Access&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;vncpasswd
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ssh -L 59000:localhost:5901 -C -N -l featurize workspace.featurize.cn -p 10416&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Angular Kinematics</title>
-        <link>https://K7288.github.io/posts/angular-kinematics/</link>
-        <pubDate>Sun, 30 Jan 2022 10:35:13 +0800</pubDate>
-        
-        <guid>https://K7288.github.io/posts/angular-kinematics/</guid>
-        <description>&lt;h2 id=&#34;definition-of-anatomical-joint-angles&#34;&gt;Definition of Anatomical Joint Angles&lt;/h2&gt;
-&lt;p&gt;Each joint has a reference frame in
-the proximal and distal segments &lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Joint&lt;/th&gt;
-&lt;th&gt;Proximal segment&lt;/th&gt;
-&lt;th&gt;Distal segment&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;hip&lt;/td&gt;
-&lt;td&gt;pelvis&lt;/td&gt;
-&lt;td&gt;thigh&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;knee&lt;/td&gt;
-&lt;td&gt;thigh&lt;/td&gt;
-&lt;td&gt;calf&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;ankle&lt;/td&gt;
-&lt;td&gt;calf&lt;/td&gt;
-&lt;td&gt;foot&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;Joint angles are defined as a rotation of the distal segment relative to the
-proximal segment.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Flexion and extension (plus dorsiflexion and plantar flexion) take place
-about the mediolateral axis of the proximal segment (i.e., the z axes in
-Figure 3.10)&lt;/li&gt;
-&lt;li&gt;Internal and external rotation take place about the longitudinal axis of
-the distal segment (i.e., the x axes in Figure 3.10).&lt;/li&gt;
-&lt;li&gt;Abduction and adduction take place about a &lt;strong&gt;floating&lt;/strong&gt; axis that is at right
-angles to both the flexion/extension and internal/external rotation axes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;基本语法&#34;&gt;基本语法&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;[&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;提示语&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;](#&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;目标内容&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;注意事项&#34;&gt;注意事项&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;若标题是英文，在&lt;code&gt;(#&amp;lt;目标内容&amp;gt;)&lt;/code&gt;中需要小写&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#a-subtitle-just-for-test&#34; &gt;例如&lt;/a&gt; &lt;code&gt;[例如](#a-subtitle-just-for-test)&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;若标题中出现空格，需要用&lt;code&gt;-&lt;/code&gt;连接&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#%e6%b5%8b%e8%af%95-a-a&#34; &gt;例如&lt;/a&gt; &lt;code&gt;[例如](#测试-a-a)&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;(#&amp;lt;目标内容&amp;gt;)&lt;/code&gt;中不能出现半角点(即英文中的句号)&lt;code&gt;.&lt;/code&gt;，似乎也不支持其他标点，&lt;code&gt;(#&amp;lt;目标内容&amp;gt;)&lt;/code&gt;中需要将标点删除&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#%e6%b5%8b%e8%af%95%e4%b8%80%e4%b8%aa%e6%b5%8b%e8%af%95&#34; &gt;测试:一个测试&lt;/a&gt; &lt;code&gt;[测试:一个测试](#测试一个测试)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#1%e6%b5%8b%e8%af%95&#34; &gt;1.测试&lt;/a&gt; &lt;code&gt;[1.测试](#1测试)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#%e6%b5%8b%e8%af%95%e6%b5%8b%e8%af%95&#34; &gt;测试——测试&lt;/a&gt; &lt;code&gt;[测试——测试](#测试测试)&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;a-subtitle-just-for-test&#34;&gt;A subtitle just for test&lt;/h3&gt;
-&lt;h3 id=&#34;测试-a-a&#34;&gt;测试 a A&lt;/h3&gt;
-&lt;h4 id=&#34;测试测试&#34;&gt;测试——测试&lt;/h4&gt;
-&lt;h4 id=&#34;测试一个测试&#34;&gt;测试:一个测试&lt;/h4&gt;
-&lt;h3 id=&#34;1测试&#34;&gt;1.测试&lt;/h3&gt;
-&lt;h2 id=&#34;目录实现&#34;&gt;目录实现&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;VS code插件 Markdown All in One
-&lt;ul&gt;
-&lt;li&gt;ctrl+shift+p&lt;/li&gt;
-&lt;li&gt;Markdown All in One: Create Table of Contents&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;TOD0 实现侧边目录&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;😂 已经出现了对“测”的完型崩坏&lt;/p&gt;
-</description>
-        </item>
-        <item>
+        <lastBuildDate>Mon, 11 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>生成树状目录</title>
         <link>https://K7288.github.io/posts/%E7%94%9F%E6%88%90%E6%A0%91%E7%8A%B6%E7%9B%AE%E5%BD%95/</link>
         <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
@@ -766,43 +633,55 @@ or less range of motion) $\Rightarrow$ uncomfortable &amp;amp; larger metabolic 
 &lt;p&gt;Wearable Robotics: Systems and Applications&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;G.S. Sawicki, D.P. Ferris, Mechanics and energetics of level walking with powered ankle exoskeletons, J. Exp. Biol. 211 (2008) 1402-1413. Available from: &lt;a href=&#34;https://doi.org/10.1242/jeb.009241&#34;&gt;https://doi.org/10.1242/jeb.009241&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;G.S. Sawicki, D.P. Ferris, Mechanics and energetics of level walking with powered ankle exoskeletons, J. Exp. Biol. 211 (2008) 1402-1413. Available from: &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1242/jeb.009241&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1242/jeb.009241&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;G.S. Sawicki, D.P. Ferris, Powered ankle exoskeletons reveal the metabolic cost of plantar flexor mechanical work during walking with longer steps at constant step frequency, J. Exp. Biol. 212 (2009) 21-31. Available from: &lt;a href=&#34;https://doi.org/10.1242/jeb.017269&#34;&gt;https://doi.org/10.1242/jeb.017269&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;G.S. Sawicki, D.P. Ferris, Powered ankle exoskeletons reveal the metabolic cost of plantar flexor mechanical work during walking with longer steps at constant step frequency, J. Exp. Biol. 212 (2009) 21-31. Available from: &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1242/jeb.017269&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1242/jeb.017269&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;R. Alo, F. Bottiglione, G. Mantriota, Artificial knee joints actuators with energy recovery capabilities: a comparison of performance, J. Robot (2016). Available from: &lt;a href=&#34;https://doi.org/10.1155/2016/4802474&#34;&gt;https://doi.org/10.1155/2016/4802474&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;R. Alo, F. Bottiglione, G. Mantriota, Artificial knee joints actuators with energy recovery capabilities: a comparison of performance, J. Robot (2016). Available from: &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1155/2016/4802474&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1155/2016/4802474&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;P. Malcolm, W. Derave, S. Galle, D. DeClercq, A simple exoskeleton that assists plantarflexion can reduce the metabolic cost of human walking, PLoS. One 8 (2013) e56137. Available from: &lt;a href=&#34;https://doi.org/10.1371/journal.pone.0056137&#34;&gt;https://doi.org/10.1371/journal.pone.0056137&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;P. Malcolm, W. Derave, S. Galle, D. DeClercq, A simple exoskeleton that assists plantarflexion can reduce the metabolic cost of human walking, PLoS. One 8 (2013) e56137. Available from: &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1371/journal.pone.0056137&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1371/journal.pone.0056137&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;A.M. Oymagil, J.K. Hitt, T. Sugar, J. Fleeger, Control of a regenerative braking powered ankle foot orthosis, in: 2007 IEEE 10th Int. Conf. Rehabil. Robot., 2007, pp. 28-34. Available from: &lt;a href=&#34;https://doi.org/10.1109/ICORR.2007.4428402&#34;&gt;https://doi.org/10.1109/ICORR.2007.4428402&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A.M. Oymagil, J.K. Hitt, T. Sugar, J. Fleeger, Control of a regenerative braking powered ankle foot orthosis, in: 2007 IEEE 10th Int. Conf. Rehabil. Robot., 2007, pp. 28-34. Available from: &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1109/ICORR.2007.4428402&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1109/ICORR.2007.4428402&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;S.H. Collins, M.B. Wiggin, G.S. Sawicki, Reducing the energy cost of human walking using an unpowered exoskeleton, Nature 522 (2015) 212. Available from: &lt;a href=&#34;https://doi.org/10.1038/nature14288&#34;&gt;https://doi.org/10.1038/nature14288&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;S.H. Collins, M.B. Wiggin, G.S. Sawicki, Reducing the energy cost of human walking using an unpowered exoskeleton, Nature 522 (2015) 212. Available from: &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1038/nature14288&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1038/nature14288&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:8&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;E. Rogers, P. Polygerinos, S. Allen, F.A. Panizzolo, C.J. Walsh, D.P. Holland, A quasi-passive knee exoskeleton to assist during descent, in: J. GonzalezVargas, J. Ibanez, J.L. Contreras Vidal, H. Van Der Kooij, J.L. Pons (Eds.), Wearable Robot. Challenges Trends, 2017, pp. 6367. Available from: https:// doi.org/10.1007/978-3-319-46532-6_11.&amp;#160;&lt;a href=&#34;#fnref:8&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:9&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Y. Yamada, G. Endo, E.F. Fukushima, Pneumatic walking assistive device for use over long period, Adv. Robot. 28 (2014) 1253-1264. Available from: &lt;a href=&#34;https://doi.org/10.1080/01691864.2014.920722&#34;&gt;https://doi.org/10.1080/01691864.2014.920722&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:9&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Y. Yamada, G. Endo, E.F. Fukushima, Pneumatic walking assistive device for use over long period, Adv. Robot. 28 (2014) 1253-1264. Available from: &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1080/01691864.2014.920722&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1080/01691864.2014.920722&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:9&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:10&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;L. Flynn, J. Geeroms, R. Jimenez-Fabian, B. Vanderborght, N. Vitiello, D. Lefeber, Ankle-knee prosthesis with active ankle and energy transfer: development of the CYBERLEGs Alpha-Prosthesis, Rob. Auton. Syst. 73 (2015) 4-15. Available from: &lt;a href=&#34;https://doi.org/10.1016/j.robot.2014.12.013&#34;&gt;https://doi.org/10.1016/j.robot.2014.12.013&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:10&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;L. Flynn, J. Geeroms, R. Jimenez-Fabian, B. Vanderborght, N. Vitiello, D. Lefeber, Ankle-knee prosthesis with active ankle and energy transfer: development of the CYBERLEGs Alpha-Prosthesis, Rob. Auton. Syst. 73 (2015) 4-15. Available from: &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/j.robot.2014.12.013&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/j.robot.2014.12.013&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:10&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:11&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;A.J. van denBogert, Exotendons for assistance of human locomotion, Biomed. Eng. Online. 2 (2003) 17. Available from: &lt;a href=&#34;https://doi.org/10.1186/1475-925X-2-17&#34;&gt;https://doi.org/10.1186/1475-925X-2-17&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:11&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A.J. van denBogert, Exotendons for assistance of human locomotion, Biomed. Eng. Online. 2 (2003) 17. Available from: &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1186/1475-925X-2-17&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1186/1475-925X-2-17&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:11&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:12&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;W. vanDijk, H. VanderKooij, XPED2: a passive exoskeleton with artificial tendons, IEEE Robot. Autom. Mag. 21 (2014) 56-61. Available from: &lt;a href=&#34;https://doi.org/10.1109/MRA.2014.2360309&#34;&gt;https://doi.org/10.1109/MRA.2014.2360309&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:12&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;W. vanDijk, H. VanderKooij, XPED2: a passive exoskeleton with artificial tendons, IEEE Robot. Autom. Mag. 21 (2014) 56-61. Available from: &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1109/MRA.2014.2360309&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1109/MRA.2014.2360309&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:12&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:13&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;G. Belforte, L. Gastaldi, M. Sorli, Pneumatic active gait orthosis, Mechatronics. 11 (2001) 301323. Available from: &lt;a href=&#34;https://doi.org/10.1016/S0957-4158(00)00017-9&#34;&gt;https://doi.org/10.1016/S0957-4158(00)00017-9&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:13&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;G. Belforte, L. Gastaldi, M. Sorli, Pneumatic active gait orthosis, Mechatronics. 11 (2001) 301323. Available from: &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/S0957-4158%2800%2900017-9&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/S0957-4158(00)00017-9&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:13&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:14&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;A. Messina, N.I. Giannoccaro, A. Gentile, Experimenting and modelling the dynamics of pneumatic actuators controlled by the pulse width modulation (PWM) technique, Mechatronics 15 (2005) 859881. Available from: &lt;a href=&#34;https://doi.org/10.1016/J.MECHATRONICS.2005.01.003&#34;&gt;https://doi.org/10.1016/J.MECHATRONICS.2005.01.003&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:14&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A. Messina, N.I. Giannoccaro, A. Gentile, Experimenting and modelling the dynamics of pneumatic actuators controlled by the pulse width modulation (PWM) technique, Mechatronics 15 (2005) 859881. Available from: &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/J.MECHATRONICS.2005.01.003&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/J.MECHATRONICS.2005.01.003&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:14&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -820,7 +699,7 @@ or less range of motion) $\Rightarrow$ uncomfortable &amp;amp; larger metabolic 
 </description>
         </item>
         <item>
-        <title>Review of terrain analysis / terrain classification</title>
+        <title>Review of terrain classification</title>
         <link>https://K7288.github.io/posts/review-of-terrain-classification/</link>
         <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
         
@@ -829,36 +708,16 @@ or less range of motion) $\Rightarrow$ uncomfortable &amp;amp; larger metabolic 
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;Author&lt;/th&gt;
-&lt;th&gt;Title        &lt;div style=&#34;width:150px&#34;&gt;&lt;/th&gt;
+&lt;th&gt;Title&lt;/th&gt;
 &lt;th&gt;Sensor&lt;/th&gt;
-&lt;th&gt;Terrain    &lt;div style=&#34;width:150px&#34;&gt;&lt;/th&gt;
-&lt;th&gt;Method &lt;div style=&#34;width:250px&#34;&gt;&lt;/th&gt;
+&lt;th&gt;Terrain&lt;/th&gt;
+&lt;th&gt;Method&lt;/th&gt;
 &lt;th&gt;Online/Offline&lt;/th&gt;
 &lt;th&gt;Accuracy&lt;/th&gt;
 &lt;th&gt;Comments&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;Surface effects on dynamic stability and loading during outdoor running using wireless trunk accelerometry&lt;/td&gt;
-&lt;td&gt;accelerometer over L3 spinous process of the trunk&lt;/td&gt;
-&lt;td&gt;three outdoor training surfaces (concrete road, synthetic track and woodchip trail)&lt;/td&gt;
-&lt;td&gt;1.Dynamic postural stability (tri-axial acceleration root mean square (RMS) ratio, step and stride regularity, sample entropy), dynamic loading (impact and breaking peak amplitudes and median frequencies), as well as spatio-temporal running gait measures (step frequency, stance time) were derived from trunk accelerations&lt;br&gt;2.generalized estimating equations (GEE) analysis&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;P.Ippersiel, V.Shah, P.C.Dixon&lt;/td&gt;
-&lt;td&gt;The impact of outdoor walking surfaces on lower-limb coordination and variability during gait in healthy adults&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;flat (paved sidewalk); &lt;strong&gt;irregular&lt;/strong&gt; (cobblestone, grass); sloped (slope-up, slope-down); and banked (banked-right, banked-left) surfaces&lt;/td&gt;
-&lt;td&gt;CRP analysis determined inter-joint coordination and variability using MARP and DP, respectively. One-way repeated measures ANOVAs tested surface effects. Post-hoc Bonferroni adjusted surface comparisons were assessed.&lt;/td&gt;
-&lt;td&gt;Offline&lt;/td&gt;
-&lt;td&gt;主要是统计学分析；用了variability的variability作为特征；涉及了一点降维&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Daniel B. Kowalsky, John R. Rebula, Lauro V. Ojeda&lt;/td&gt;
 &lt;td&gt;Human walking in the real world: Interactions between terrain type, gait parameters, and energy expenditure&lt;/td&gt;
@@ -1262,7 +1121,8 @@ airflow restriction problem for single-chamber actuators at extreme bending angl
 &lt;p&gt;Prasanth, H., Caban, M., Keller, U., Courtine, G., Ijspeert, A., Vallery, H., &amp;amp; von Zitzewitz, J. (2021). Wearable sensor-based real-time gait detection: A systematic review. Sensors, 21(8)&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Rosa M.S. Visscher, Sailee Sansgiri, Marie Freslier, Jaap Harlaar, Reinald Brunner, William R. Taylor, Navrag B. Singh, Towards validation and standardization of automatic gait event identification algorithms for use in paediatric pathological populations, Gait &amp;amp; Posture, Volume 86, 2021, Pages 64-69, ISSN 0966-6362, &lt;a href=&#34;https://doi.org/10.1016/j.gaitpost.2021.02.031&#34;&gt;https://doi.org/10.1016/j.gaitpost.2021.02.031&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Rosa M.S. Visscher, Sailee Sansgiri, Marie Freslier, Jaap Harlaar, Reinald Brunner, William R. Taylor, Navrag B. Singh, Towards validation and standardization of automatic gait event identification algorithms for use in paediatric pathological populations, Gait &amp;amp; Posture, Volume 86, 2021, Pages 64-69, ISSN 0966-6362, &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/j.gaitpost.2021.02.031&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/j.gaitpost.2021.02.031&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
 &lt;p&gt;J.P. Hunter, R.N. Marshall, P.J. McNair &lt;strong&gt;Relationships between ground reaction force impulse and kinematics of sprint-running acceleration&lt;/strong&gt; Journal of Applied Biomechanics, 21 (1) (2005), pp. 31-43&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
@@ -1345,22 +1205,28 @@ airflow restriction problem for single-chamber actuators at extreme bending angl
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Taborri, J., Palermo, E., Rossi, S., &amp;amp; Cappa, P. (2016). Gait partitioning methods: A systematic review. Sensors (Switzerland), 16(1). &lt;a href=&#34;https://doi.org/10.3390/s16010066&#34;&gt;https://doi.org/10.3390/s16010066&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Taborri, J., Palermo, E., Rossi, S., &amp;amp; Cappa, P. (2016). Gait partitioning methods: A systematic review. Sensors (Switzerland), 16(1). &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.3390/s16010066&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.3390/s16010066&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Caldas, R., Mundt, M., Potthast, W., Buarque de Lima Neto, F., &amp;amp; Markert, B. (2017). A systematic review of gait analysis methods based on inertial sensors and adaptive algorithms. Gait and Posture, 57, 204–210. &lt;a href=&#34;https://doi.org/10.1016/j.gaitpost.2017.06.019&#34;&gt;https://doi.org/10.1016/j.gaitpost.2017.06.019&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Caldas, R., Mundt, M., Potthast, W., Buarque de Lima Neto, F., &amp;amp; Markert, B. (2017). A systematic review of gait analysis methods based on inertial sensors and adaptive algorithms. Gait and Posture, 57, 204–210. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/j.gaitpost.2017.06.019&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/j.gaitpost.2017.06.019&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Pacini Panebianco, G., Bisi, M. C., Stagni, R., &amp;amp; Fantozzi, S. (2018). Analysis of the performance of 17 algorithms from a systematic review: Influence of sensor position, analysed variable and computational approach in gait timing estimation from IMU measurements. Gait and Posture, 66, 76–82. &lt;a href=&#34;https://doi.org/10.1016/j.gaitpost.2018.08.025B&#34;&gt;https://doi.org/10.1016/j.gaitpost.2018.08.025B&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pacini Panebianco, G., Bisi, M. C., Stagni, R., &amp;amp; Fantozzi, S. (2018). Analysis of the performance of 17 algorithms from a systematic review: Influence of sensor position, analysed variable and computational approach in gait timing estimation from IMU measurements. Gait and Posture, 66, 76–82. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/j.gaitpost.2018.08.025B&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/j.gaitpost.2018.08.025B&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;enson, L. C., Clermont, C. A., Bošnjak, E., &amp;amp; Ferber, R. (2018). The use of wearable devices for walking and running gait analysis outside of the lab: A systematic review. Gait &amp;amp; Posture, 63, 124–138. &lt;a href=&#34;https://doi.org/10.1016/J.GAITPOST.2018.04.047P&#34;&gt;https://doi.org/10.1016/J.GAITPOST.2018.04.047P&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;enson, L. C., Clermont, C. A., Bošnjak, E., &amp;amp; Ferber, R. (2018). The use of wearable devices for walking and running gait analysis outside of the lab: A systematic review. Gait &amp;amp; Posture, 63, 124–138. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/J.GAITPOST.2018.04.047P&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/J.GAITPOST.2018.04.047P&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;rasanth, H., Caban, M., Keller, U., Courtine, G., Ijspeert, A., Vallery, H., &amp;amp; von Zitzewitz, J. (2021). Wearable sensor-based real-time gait detection: A systematic review. Sensors, 21(8). &lt;a href=&#34;https://doi.org/10.3390/s21082727&#34;&gt;https://doi.org/10.3390/s21082727&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;rasanth, H., Caban, M., Keller, U., Courtine, G., Ijspeert, A., Vallery, H., &amp;amp; von Zitzewitz, J. (2021). Wearable sensor-based real-time gait detection: A systematic review. Sensors, 21(8). &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.3390/s21082727&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.3390/s21082727&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Celik, Y., Stuart, S., Woo, W. L., &amp;amp; Godfrey, A. (2021). Gait analysis in neurological populations: Progression in the use of wearables. Medical Engineering &amp;amp; Physics, 87, 9–29. &lt;a href=&#34;https://doi.org/10.1016/J.MEDENGPHY.2020.11.005&#34;&gt;https://doi.org/10.1016/J.MEDENGPHY.2020.11.005&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Celik, Y., Stuart, S., Woo, W. L., &amp;amp; Godfrey, A. (2021). Gait analysis in neurological populations: Progression in the use of wearables. Medical Engineering &amp;amp; Physics, 87, 9–29. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/J.MEDENGPHY.2020.11.005&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/J.MEDENGPHY.2020.11.005&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -2159,7 +2025,7 @@ p_{x} &amp;amp;=\frac{\int_{S} \delta \rho(\delta, \varepsilon)}{\int_{S} \rho(\
 &lt;p&gt;⏬&lt;/p&gt;
 &lt;p&gt;⏬&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#series&#34;&gt;我实现了跳转。&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;series&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;这是一段文字，我想跳转到这里。
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;series&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;这是一段文字，我想跳转到这里。
 
 ⏬
 
@@ -2601,7 +2467,8 @@ motions have equal Froude numbers  $u^2 /gh$ (Duncan1953).&lt;/p&gt;
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;（针对不同物种）size does not affect mass-specific mechanical cost of transport (Alexander and Jayes, 1983). The known shape differences among modern humans are, however, sufficiently large to account for much of the observed variation in metabolic energy expenditure and we expect this to be the case for any group that is of similar size but different shape. Unfortunately, we currently do not have a simple method to control or adjust for size–shape differences in individuals that are not geometrically similar. Musculoskeletal modeling is the only method that accounts for both size and shape. Those shape differences that are “reasonably close” at the mouse-to-elephant level may become “grossly different” for within-species energetic comparisons.目前尚没有一种简单的方法来控制或调整几何上不相似的个体的大小-形状差异。&lt;/p&gt;
 &lt;h1 id=&#34;the-energetics-of-human-walking-is-froude-number-fr-useful-for-meta--bolic-comparisons&#34;&gt;The energetics of human walking: Is Froude number (Fr) useful for meta- bolic comparisons?&lt;/h1&gt;
-&lt;p&gt;Kramer PA, Sarton-Miller I. The energetics of human walking: Is Froude number (Fr) useful for meta- bolic comparisons? Gait &amp;amp; Posture. 2008; 27(2):209–215. &lt;a href=&#34;https://doi.org/10.1016/j.gaitpost.2007.03.009&#34;&gt;https://doi.org/10.1016/j.gaitpost.2007.03.009&lt;/a&gt; PMID: 17459708&lt;/p&gt;
+&lt;p&gt;Kramer PA, Sarton-Miller I. The energetics of human walking: Is Froude number (Fr) useful for meta- bolic comparisons? Gait &amp;amp; Posture. 2008; 27(2):209–215. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/j.gaitpost.2007.03.009&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/j.gaitpost.2007.03.009&lt;/a&gt; PMID: 17459708&lt;/p&gt;
 &lt;p&gt;回归分析，速度、速度平方、Fr或LiMb的预测能力没有显著差异，所以Fr和LiMb都不能补偿腿长的影响。腿的长度确实影响行走的人的能量消耗&lt;/p&gt;
 &lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
@@ -2663,7 +2530,7 @@ motions have equal Froude numbers  $u^2 /gh$ (Duncan1953).&lt;/p&gt;
 &lt;p&gt;hugo采用goldmark作为默认渲染器，需要在config中开启&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;   markup:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;   markup:
     goldmark:
         renderer:
             unsafe: true
@@ -2671,7 +2538,7 @@ motions have equal Froude numbers  $u^2 /gh$ (Duncan1953).&lt;/p&gt;
 &lt;li&gt;html
 图片需要绝对路径，形式如下：&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-HTML&#34; data-lang=&#34;HTML&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/assets/image-20210416142714352.png&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;alt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;image-20210416142714352&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;zoom:33%;&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-HTML&#34; data-lang=&#34;HTML&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/assets/image-20210416142714352.png&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;alt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;image-20210416142714352&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;zoom:33%;&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;而不能是&lt;code&gt;src=&amp;quot;assets\&lt;/code&gt;
 所以也不太支持网络图片&amp;hellip;&amp;hellip;&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
@@ -4256,16 +4123,20 @@ Upon comparing nested model Akaike information criterion (AIC) values, the lowes
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Bowden MG, Balasubramanian CK, Neptune RR, Kautz SA. Anterior-Posterior Ground Reaction Forces as a Measure of Paretic Leg Contribution in Hemiparetic Walking. Stroke. 2006; 37:872–877. &lt;a href=&#34;https://doi.org/10.1161/01.STR.0000204063.75779.8d&#34;&gt;https://doi.org/10.1161/01.STR.0000204063.75779.8d&lt;/a&gt; PMID: 16456121&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Bowden MG, Balasubramanian CK, Neptune RR, Kautz SA. Anterior-Posterior Ground Reaction Forces as a Measure of Paretic Leg Contribution in Hemiparetic Walking. Stroke. 2006; 37:872–877. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1161/01.STR.0000204063.75779.8d&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1161/01.STR.0000204063.75779.8d&lt;/a&gt; PMID: 16456121&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Peterson CL, Cheng J, Kautz SA, Neptune RR. Leg extension is an important predictor of paretic leg propulsion in hemiparetic walking. Gait &amp;amp; Posture. 2010; 32(4):451–456. &lt;a href=&#34;https://doi.org/10.1016/j.gaitpost.2010.06.014&#34;&gt;https://doi.org/10.1016/j.gaitpost.2010.06.014&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Peterson CL, Cheng J, Kautz SA, Neptune RR. Leg extension is an important predictor of paretic leg propulsion in hemiparetic walking. Gait &amp;amp; Posture. 2010; 32(4):451–456. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/j.gaitpost.2010.06.014&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/j.gaitpost.2010.06.014&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Kramer PA, Sarton-Miller I. The energetics of human walking: Is Froude number (Fr) useful for meta- bolic comparisons? Gait &amp;amp; Posture. 2008; 27(2):209–215. &lt;a href=&#34;https://doi.org/10.1016/j.gaitpost.2007.03.009&#34;&gt;https://doi.org/10.1016/j.gaitpost.2007.03.009&lt;/a&gt; PMID: 17459708; Alexander R. The gaits of bipedal and quadrupedal animals. The International Journal of Robotics Research. 1984;.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Kramer PA, Sarton-Miller I. The energetics of human walking: Is Froude number (Fr) useful for meta- bolic comparisons? Gait &amp;amp; Posture. 2008; 27(2):209–215. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/j.gaitpost.2007.03.009&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/j.gaitpost.2007.03.009&lt;/a&gt; PMID: 17459708; Alexander R. The gaits of bipedal and quadrupedal animals. The International Journal of Robotics Research. 1984;.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;Pataky TC, Vanrenterghem J, Robinson MA. The probability of false positives in zero-dimensional analyses of one-dimensional kinematic, force and EMG trajectories. Journal of Biomechanics. 2016; 49 (9):1468–1476. &lt;a href=&#34;https://doi.org/10.1016/j.jbiomech.2016.03.032&#34;&gt;https://doi.org/10.1016/j.jbiomech.2016.03.032&lt;/a&gt; PMID: 27067363&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pataky TC, Vanrenterghem J, Robinson MA. The probability of false positives in zero-dimensional analyses of one-dimensional kinematic, force and EMG trajectories. Journal of Biomechanics. 2016; 49 (9):1468–1476. &lt;a class=&#34;link&#34; href=&#34;https://doi.org/10.1016/j.jbiomech.2016.03.032&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://doi.org/10.1016/j.jbiomech.2016.03.032&lt;/a&gt; PMID: 27067363&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -4296,7 +4167,7 @@ Upon comparing nested model Akaike information criterion (AIC) values, the lowes
 &lt;/ul&gt;
 &lt;h2 id=&#34;实现页内跳转&#34;&gt;实现页内跳转&lt;/h2&gt;
 &lt;h3 id=&#34;基本语法&#34;&gt;基本语法&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;[&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;提示语&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;](#&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;目标内容&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;[&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;提示语&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;](#&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;目标内容&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;注意事项&#34;&gt;注意事项&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -4847,14 +4718,14 @@ Age&lt;/p&gt;
         <description>&lt;h2 id=&#34;about-contents&#34;&gt;About Contents&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Add Some Content&lt;/strong&gt; &lt;code&gt;hugo new post/**.md&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;The newly created content file will start with something like this:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;---
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;---
 title: &amp;#34;**&amp;#34;
 date: 2019-03-26T08:47:11+01:00
 draft: true
 ---
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Drafts do not get deployed; once you finish a post, update the header of the post to say &lt;code&gt;draft: false&lt;/code&gt;. More info &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/usage/#draft-future-and-expired-content&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;---
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;---
 title: &amp;#34;Hugo Guide&amp;#34;
 date: 2021-05-01T08:47:11+01:00
 categories: [&amp;#34;Manual&amp;#34;]
@@ -4865,13 +4736,13 @@ draft: false
 &lt;p&gt;&lt;code&gt;/post/xxx.jpg&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;is actually &lt;code&gt;baseURL/post/xxx.jpg&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Put the picture as below&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;.
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;.
 └── static
     └── post
         └── xxx.jpg
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;customize-the-theme&#34;&gt;Customize the Theme&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Start the Hugo server&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;▶ hugo server -D
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;▶ hugo server -D
 
                    | EN
 +------------------+----+
@@ -4895,14 +4766,14 @@ Press Ctrl+C to stop
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Navigate to your new site at http://localhost:1313/.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Site Configuration&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Open up &lt;code&gt;config.toml&lt;/code&gt; in a text editor:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;baseURL = &amp;#34;http://K7288.github.io&amp;#34;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;baseURL = &amp;#34;http://K7288.github.io&amp;#34;
 languageCode = &amp;#34;en-us&amp;#34;
 title = &amp;#34;K7288&amp;#34;
 theme = &amp;#34;stack&amp;#34;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;For further theme customization, see &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/themes/customizing/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Customize a Theme&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;build-static-pages&#34;&gt;Build static pages&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;hugo -D
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;hugo -D
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output will be in &lt;code&gt;./public/&lt;/code&gt; directory by default (&lt;code&gt;-d&lt;/code&gt;/&lt;code&gt;--destination&lt;/code&gt; flag to change it, or set &lt;code&gt;publishdir&lt;/code&gt; in the config file).&lt;/p&gt;
 &lt;p&gt;See Also&lt;/p&gt;
 &lt;ul&gt;
@@ -4945,7 +4816,7 @@ C_{n+1, t+1}-C_{n, t} &amp;amp;=\frac{2}{n+1}+\frac{2}{n}+\cdots+\frac{2}{t+2}
 &amp;amp;=2\left(H_{n+1}-H_{t+1}\right)+2-2 /(t+1) 
 \end{aligned}
 $$&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Latex&#34; data-lang=&#34;Latex&#34;&gt;&lt;span class=&#34;k&#34;&gt;\begin&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;aligned&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; 
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Latex&#34; data-lang=&#34;Latex&#34;&gt;&lt;span class=&#34;k&#34;&gt;\begin&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;aligned&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; 
 C&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;n+1, t+1&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;-C&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;n, t&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;&amp;amp;&lt;/span&gt;=&lt;span class=&#34;k&#34;&gt;\frac&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;2&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;n+1&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;+&lt;span class=&#34;k&#34;&gt;\frac&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;2&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;n&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;+&lt;span class=&#34;k&#34;&gt;\cdots&lt;/span&gt;+&lt;span class=&#34;k&#34;&gt;\frac&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;2&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;t+2&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
 +C&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;t+1, t+1&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;-C&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;t, t&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\\\\&lt;/span&gt; 
 &lt;span class=&#34;nb&#34;&gt;&amp;amp;&lt;/span&gt;=2&lt;span class=&#34;k&#34;&gt;\left&lt;/span&gt;(H&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;n+1&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;-H&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;t+1&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\right&lt;/span&gt;)+2-2 /(t+1) 
@@ -4960,7 +4831,7 @@ C&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;n+1, t+1&lt;span class=&#34;nb&#3
 \begin{cases}\begin{array}{l}
 \theta_{i}(t-j)^{\prime}=\frac{1}{3} \Sigma_{1}^{-1} \theta_{i}(t-j),\\ a_{i}(t-j)^{\prime}=\frac{1}{3} \sum_{1}^{-1} a_{i}(t-j), i=\{r h,l h, r k, l k\}\\w_{i}(t-j)^{\prime}=\frac{1}{3} \Sigma_{1}^{-1} w_{i}(t-j)\end{array}\end{cases}
 $$&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;k&#34;&gt;\begin&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;cases&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\begin&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;array&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;l&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;k&#34;&gt;\begin&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;cases&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\begin&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;array&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;l&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
 &lt;span class=&#34;k&#34;&gt;\theta&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;i&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;(t-j)&lt;span class=&#34;nb&#34;&gt;^{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\prime&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;=&lt;span class=&#34;k&#34;&gt;\frac&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;13&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\Sigma&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;1&lt;span class=&#34;nb&#34;&gt;}^{&lt;/span&gt;-1&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\theta&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;i&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;(t-j),&lt;span class=&#34;k&#34;&gt;\\\\&lt;/span&gt; a&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;i&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;(t-j)&lt;span class=&#34;nb&#34;&gt;^{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\prime&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;=&lt;span class=&#34;k&#34;&gt;\frac&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;1&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;3&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\sum&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;1&lt;span class=&#34;nb&#34;&gt;}^{&lt;/span&gt;-1&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; a&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;i&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;(t-j), i=&lt;span class=&#34;k&#34;&gt;\\&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;r h,l h, r k, l k&lt;span class=&#34;k&#34;&gt;\\&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\\\\&lt;/span&gt;w&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;i&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;(t-j)&lt;span class=&#34;nb&#34;&gt;^{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\prime&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;=&lt;span class=&#34;k&#34;&gt;\frac&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;1&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;3&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;\Sigma&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;1&lt;span class=&#34;nb&#34;&gt;}^{&lt;/span&gt;-1&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt; w&lt;span class=&#34;nb&#34;&gt;_{&lt;/span&gt;i&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;(t-j)&lt;span class=&#34;k&#34;&gt;\end&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;array&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;\end&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;cases&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;\begin{array}&lt;/code&gt;和&lt;code&gt;\end{array}&lt;/code&gt;之间不能换行😅&lt;/p&gt;
 &lt;p&gt;大括号只能用&lt;code&gt;\begin{cases}&lt;/code&gt; &lt;code&gt;\end{cases}&lt;/code&gt;实现了&lt;/p&gt;

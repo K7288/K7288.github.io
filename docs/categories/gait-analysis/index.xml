@@ -6,24 +6,15 @@
     <description>Recent content in Gait Analysis on K7288</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 30 Jan 2022 10:35:13 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/gait-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/gait-analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Angular Kinematics</title>
-      <link>https://K7288.github.io/posts/angular-kinematics/</link>
-      <pubDate>Sun, 30 Jan 2022 10:35:13 +0800</pubDate>
-      
-      <guid>https://K7288.github.io/posts/angular-kinematics/</guid>
-      <description>Definition of Anatomical Joint Angles Each joint has a reference frame in the proximal and distal segments    Joint Proximal segment Distal segment     hip pelvis thigh   knee thigh calf   ankle calf foot    Joint angles are defined as a rotation of the distal segment relative to the proximal segment.
- Flexion and extension (plus dorsiflexion and plantar flexion) take place about the mediolateral axis of the proximal segment (i.</description>
-    </item>
-    
-    <item>
-      <title>Review of terrain analysis / terrain classification</title>
+      <title>Review of terrain classification</title>
       <link>https://K7288.github.io/posts/review-of-terrain-classification/</link>
       <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://K7288.github.io/posts/review-of-terrain-classification/</guid>
-      <description>Author Title  Sensor Terrain  Method  Online/Offline Accuracy Comments      Surface effects on dynamic stability and loading during outdoor running using wireless trunk accelerometry accelerometer over L3 spinous process of the trunk three outdoor training surfaces (concrete road, synthetic track and woodchip trail) 1.Dynamic postural stability (tri-axial acceleration root mean square (RMS) ratio, step and stride regularity, sample entropy), dynamic loading (impact and breaking peak amplitudes and median frequencies), as well as spatio-temporal running gait measures (step frequency, stance time) were derived from trunk accelerations</description>
+      <description>Author Title Sensor Terrain Method Online/Offline Accuracy Comments     Daniel B. Kowalsky, John R. Rebula, Lauro V. Ojeda Human walking in the real world: Interactions between terrain type, gait parameters, and energy expenditure a global positioning system (GPS) device, and one inertial measurement unit (IMU) per foot 5: Sidewalk, Dirt, Gravel, Grass, and Woodchips LDA
+features: (mean, RMS)virtual clearance, stride height, stride length, lateral swing, speed; (RMS)stride width Offline 45/50 主要是统计学分析；用了variability的variability作为特征；涉及了一点降维    What Lies Beneath One’s Feet?</description>
     </item>
     
     <item>
