@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Course Notes on K7288</title>
+    <link>https://K7288.github.io/categories/course-notes/</link>
+    <description>Recent content in Course Notes on K7288</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 18 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/course-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>(Draft)Image Processing and Computer Vision</title>
+      <link>https://K7288.github.io/posts/draftimage-processing-and-computer-vision/</link>
+      <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/draftimage-processing-and-computer-vision/</guid>
+      <description>参考书目 Digital Image Processing by Rafael C. Gonzalez, Richard E. Woods, 3rd Edition
+第一章 数字图像的采集方式以及特性 1.1 图像概述 图像是一个二维亮度函数；
+模拟图像：一幅活动、彩色、立体的图像——$I=f(x,y,z,λ,t)$，三维空间+波谱上+时间上连续，想象中的虚拟图像
+数字图像：数字图像是由模拟图象数字化得到的，以像素为基本元素、可以用数字计算机或数字电路存储和处理的图像。
+把一幅图画分割成如图所示的一个个小区域（像素），并将各小区域灰度用整数来表示，形成一幅点阵式的数字图像。它包括采样和量化两个过程。像素的位置和灰度就是像素的属性。
+图像数字化 图像数字化:将模拟图像经过离散化之后，得到用数字表示的图像。
+一幅模拟图像的坐标及幅度都是连续的，为了把它转换为数字形式，必须对坐标和幅度都作离散化操作。数字化坐标值称为采样，它确定了图像的空间分辨率；数字化幅度值称为量化，它确定了图像的幅度分辨率。
+1.2.1图像数字化——采样 （1）图像的采样：将在空间上连续的图像转换成离散的采样点（即像素）集的操作
+z=f(x,y), x∈[0,a], y∈[0,b], z∈[0,c] $\rightarrow$ z=f(x,y), x=0,1,…,N-1,y=0,1,…,M-1, z=0,1,…,L-1
+采样间隔太小，则增大数据量；太大，则会发生信息的混叠，导致细节无法辨认。
+一维连续信号的采样 在工程中的许多信号，实际上都是连续信号，或者称为连续时间函数，记为x(t)，t的取值是从$-\infty$ 连续变化到$+ \infty $ 。但是，用计算机处理这些信号，必须首先对连续信号进行采样，即按一定的时间间隔Ts进行取值： $$ 𝑥_𝑑 (𝑛)=𝑥(𝑛𝑇_𝑠) , 𝑛=…−1,0,1… $$ $T_s$为采样间隔，$ x_d (n)$为离散信号或时间序列
+连续信号x(t)和频谱X(f)的具体关系为： $$ X(f)=\int _{−\infty}^\infty x(t)e^{−j2\pi ft} dt\\\\x(t)=\int _{−\infty}^\infty X(f)e^{j2\pi ft} df $$
+一维空间采样的Nyquist条件：$X(f)$有截频$ f_c$，即当$|f|≥ f_c$时, $X(f)=0$；$T_s≤\frac{1}{2f_c}$ 或$2f_c≤f_s$
+如果信号不是有限带宽信号，采样频率或采样间隔不满足Nyquist条件，就会产生混叠现象。
+在满足Nyquist条件下，从离散信号$x(nT_s)$可恢复连续信号$x(t)$ $$ x(t)=\Sigma_{n=−\infty}^{+\infty}x(nT_s)sinc(\frac{\pi}{T_s} (t-nT_s)) $$</description>
+    </item>
+    
+  </channel>
+</rss>

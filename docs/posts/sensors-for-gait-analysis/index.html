@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Sensors for Gait Analysis  Sensors for Gait Analysis  Sensors  Inertial Measurement Units  Sensor placement  Preference in literature (inter- and intra=) Segments to choose   Filter Application   Insole pressure sensors      Sensors    Distribution of studies based on the type of wearable sensors used Distribution of studies based on the type of sensors used for ground-truth validation of IMU-based gait analysis.'><title>Sensors for Gait Analysis</title>
+
+<link rel='canonical' href='https://K7288.github.io/posts/sensors-for-gait-analysis/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Sensors for Gait Analysis'>
+<meta property='og:description' content='Sensors for Gait Analysis  Sensors for Gait Analysis  Sensors  Inertial Measurement Units  Sensor placement  Preference in literature (inter- and intra=) Segments to choose   Filter Application   Insole pressure sensors      Sensors    Distribution of studies based on the type of wearable sensors used Distribution of studies based on the type of sensors used for ground-truth validation of IMU-based gait analysis.'>
+<meta property='og:url' content='https://K7288.github.io/posts/sensors-for-gait-analysis/'>
+<meta property='og:site_name' content='K7288'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2021-07-16T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-07-16T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="Sensors for Gait Analysis">
+<meta name="twitter:description" content="Sensors for Gait Analysis  Sensors for Gait Analysis  Sensors  Inertial Measurement Units  Sensor placement  Preference in literature (inter- and intra=) Segments to choose   Filter Application   Insole pressure sensors      Sensors    Distribution of studies based on the type of wearable sensors used Distribution of studies based on the type of sensors used for ground-truth validation of IMU-based gait analysis.">
+    </head>
+    <body class="
+    article-page has-toc
+">
+        <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+        <script>addBackToTop({
+            diameter: 56,
+            cornerOffset: 35,
+            backgroundColor: 'ddd',
+            textColor: '#ddd'
+        })</script>
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="https://K7288.github.io" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                <span></span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/gait-analysis/" >
+                Gait Analysis
+            </a>
+        
+            <a href="/categories/literature-notes/" >
+                Literature Notes
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/sensors-for-gait-analysis/">Sensors for Gait Analysis</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">2021-07-16</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h1 id="sensors-for-gait-analysis">Sensors for Gait Analysis</h1>
+<ul>
+<li><a class="link" href="#sensors-for-gait-analysis" >Sensors for Gait Analysis</a>
+<ul>
+<li><a class="link" href="#sensors" >Sensors</a>
+<ul>
+<li><a class="link" href="#inertial-measurement-units" >Inertial Measurement Units</a>
+<ul>
+<li><a class="link" href="#sensor-placement" >Sensor placement</a>
+<ul>
+<li><a class="link" href="#preference-in-literature" >Preference in literature</a></li>
+<li><a class="link" href="#inter--and-intra-segments-to-choose" >(inter- and intra=) Segments to choose</a></li>
+</ul>
+</li>
+<li><a class="link" href="#filter" >Filter</a></li>
+<li><a class="link" href="#application" >Application</a></li>
+</ul>
+</li>
+<li><a class="link" href="#insole-pressure-sensors" >Insole pressure sensors</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="sensors">Sensors</h2>
+<table>
+<thead>
+<tr>
+<th><div style="width:30 0px">Distribution of studies based on the type of wearable sensors used</div></th>
+<th><div style="width:300px">Distribution of studies based on the type of sensors used for <code>ground-truth validation of IMU</code>-based gait analysis. Absolute number of studies in each category is listed within parentheses.</div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/assets/sensors-21-02727-g005_2.jpg" style="zoom:30%;" /></td>
+<td><img src="/assets/sensors-21-02727-g005_3.jpg" style="zoom:30%;" /></td>
+</tr>
+</tbody>
+</table>
+<p><em>IMU—inertial measurement unit, IPS—insole pressure sensor, EMG—electromyography sensor.</em></p>
+<blockquote>
+<p>Only 11% of studies using a rule-based method required the placement of more than one IMU per leg, in contrast to 53% of machine learning approaches. This means applications using the rule-based methods typically require a less complex sensor setup, which would be preferable to the end-user. Furthermore, in 84% of studies using rule-based methods, the approach could be used independently for one leg or the other, compared to 47% for machine learning.</p>
+</blockquote>
+<div style="page-break-after:always;"></div>
+<h3 id="inertial-measurement-units">Inertial Measurement Units</h3>
+<h4 id="sensor-placement">Sensor placement</h4>
+<h5 id="preference-in-literature">Preference in literature</h5>
+<blockquote>
+<p>Number of studies using inertial measurement units (IMUs) that placed the sensor(s) on specific anatomical locations. Single placement contains studies where sensor(s) were placed only in one anatomical location. Placement combinations’ columns indicate studies where sensor(s) were placed in more than one location. Each relevant location is marked by a shaded cell and the number of studies using this combination is indicated at the bottom of the column. The total indicates the sum of studies where the sensor(s) were placed on that given anatomical location.</p>
+</blockquote>
+<p><img src="https://www.mdpi.com/sensors/sensors-21-02727/article_deploy/html/images/sensors-21-02727-g006.png" style="zoom:50%;" /></p>
+<h5 id="inter--and-intra-segments-to-choose">(inter- and intra=) Segments to choose</h5>
+<p>Foot</p>
+<ul>
+<li>Li et al., 2016<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>: compared IMU signals from the thigh, the shank and the foot, based on the <u>stability of “energy of acceleration”</u> which is the norm of raw acceleration minus gravity</li>
+<li>Jasiewicz et al., 2006<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>: significantly more accuracy in <u>gait event detection</u> methods</li>
+<li>Taborri et al., 2014<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>: better accuracy of a HMM-based classifier for <u>gait event detection</u> when using data of the foot.</li>
+<li>Wenger, N. et al., 2015<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>: <u>neuro-behavioral experiments</u> suggesting that limb endpoints are the primary variables used to coordinate locomotion in animals and humans</li>
+</ul>
+<p>Shank</p>
+<ul>
+<li>Bejarano et al., 2013<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>: the root mean square error between each cycle (as well as the average)</li>
+</ul>
+<p>Irrelevant (in some tasks)</p>
+<ul>
+<li>Mazilu et al., 2012<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>: in the context of freezing of gait</li>
+</ul>
+<p>Intra-segment</p>
+<p>​	mount/socket; Anwary et al.<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>: the medial arch followed by the Achilles tendon(also the centre point of foot length; location 1 🔽); based on accuracy of extracted features: Number of Strides, Distance, Speed, Stride Length, Stride Period, Stance Length, Stance Period, Swing Length, Swing Period and ratio of stance and swing</p>
+<p><img src="https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/7361/8299495/8246577/yu2-2786587-large.gif" style="zoom:50%;" /></p>
+<h4 id="filter">Filter</h4>
+<blockquote>
+<p>39 out of 69 studies at least used a preprocessing filter, 31 of which used a low-pass filter among which 15 used the Butterworth low-pass filter. Note that preprocessing filters add to the latency in data processing, which is undesirable in a real-time system.</p>
+</blockquote>
+<h4 id="application">Application</h4>
+<p><a class="link" href="https://k7288.github.io/assets/image-20210716105523059.png"  target="_blank" rel="noopener"
+    ><img src="/assets/image-20210716105523059.png" alt="image-20210716105523059"  /></a></p>
+<h3 id="insole-pressure-sensors">Insole pressure sensors</h3>
+<p>Only six out of 28 studies related to IPS used any sort of preprocessing/filtering. Instead, these studies relied directly on the raw signal from the IPS, likely contributing to shorter latency, an advantage when it comes to real-time systems.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Li, F.; Liu, G.; Liu, J.; Chen, X.; Ma, X. 3D Tracking via Shoe Sensing. <em>Sensors</em> <strong>2016</strong>, <em>16</em>, 1809. [<a class="link" href="https://scholar.google.com/scholar_lookup?title=3D&#43;Tracking&#43;via&#43;Shoe&#43;Sensing&amp;author=Li,&#43;F.&amp;author=Liu,&#43;G.&amp;author=Liu,&#43;J.&amp;author=Chen,&#43;X.&amp;author=Ma,&#43;X.&amp;publication_year=2016&amp;journal=Sensors&amp;volume=16&amp;pages=1809&amp;doi=10.3390/s16111809"  target="_blank" rel="noopener"
+    >Google Scholar</a>] [<a class="link" href="https://doi.org/10.3390/s16111809"  target="_blank" rel="noopener"
+    >CrossRef</a>]&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Jasiewicz, J.M.; Allum, J.H.; Middleton, J.W.; Barriskill, A.; Condie, P.; Purcell, B.; Li, R.C.T. Gait event detection using linear accelerometers or angular velocity transducers in able-bodied and spinal-cord injured individuals. <em>Gait Posture</em> <strong>2006</strong>, <em>24</em>, 502–509. [<a class="link" href="https://scholar.google.com/scholar_lookup?title=Gait&#43;event&#43;detection&#43;using&#43;linear&#43;accelerometers&#43;or&#43;angular&#43;velocity&#43;transducers&#43;in&#43;able-bodied&#43;and&#43;spinal-cord&#43;injured&#43;individuals&amp;author=Jasiewicz,&#43;J.M.&amp;author=Allum,&#43;J.H.&amp;author=Middleton,&#43;J.W.&amp;author=Barriskill,&#43;A.&amp;author=Condie,&#43;P.&amp;author=Purcell,&#43;B.&amp;author=Li,&#43;R.C.T.&amp;publication_year=2006&amp;journal=Gait&#43;Posture&amp;volume=24&amp;pages=502%e2%80%93509&amp;doi=10.1016/j.gaitpost.2005.12.017"  target="_blank" rel="noopener"
+    >Google Scholar</a>] [<a class="link" href="https://doi.org/10.1016/j.gaitpost.2005.12.017"  target="_blank" rel="noopener"
+    >CrossRef</a>]&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Taborri, J.; Rossi, S.; Palermo, E.; Patanè, F.; Cappa, P. A novel HMM distributed classifier for the detection of gait phases by means of a wearable inertial sensor network. <em>Sensors</em> <strong>2014</strong>, <em>14</em>, 16212–16234. [<a class="link" href="https://scholar.google.com/scholar_lookup?title=A&#43;novel&#43;HMM&#43;distributed&#43;classifier&#43;for&#43;the&#43;detection&#43;of&#43;gait&#43;phases&#43;by&#43;means&#43;of&#43;a&#43;wearable&#43;inertial&#43;sensor&#43;network&amp;author=Taborri,&#43;J.&amp;author=Rossi,&#43;S.&amp;author=Palermo,&#43;E.&amp;author=Patan%c3%a8,&#43;F.&amp;author=Cappa,&#43;P.&amp;publication_year=2014&amp;journal=Sensors&amp;volume=14&amp;pages=16212%e2%80%9316234&amp;doi=10.3390/s140916212"  target="_blank" rel="noopener"
+    >Google Scholar</a>] [<a class="link" href="https://doi.org/10.3390/s140916212"  target="_blank" rel="noopener"
+    >CrossRef</a>]&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Wenger, N.; Moraud, E.M.; Raspopovic, S.; Bonizzato, M.; DiGiovanna, J.; Musienko, P.; Morari, M.; Micera, S.; Courtine, G. Closed-loop neuromodulation of spinal sensorimotor circuits controls refined locomotion after complete spinal cord injury. <em>Sci. Transl. Med.</em> <strong>2014</strong>, <em>6</em>, 255ra133. [<a class="link" href="https://scholar.google.com/scholar_lookup?title=Closed-loop&#43;neuromodulation&#43;of&#43;spinal&#43;sensorimotor&#43;circuits&#43;controls&#43;refined&#43;locomotion&#43;after&#43;complete&#43;spinal&#43;cord&#43;injury&amp;author=Wenger,&#43;N.&amp;author=Moraud,&#43;E.M.&amp;author=Raspopovic,&#43;S.&amp;author=Bonizzato,&#43;M.&amp;author=DiGiovanna,&#43;J.&amp;author=Musienko,&#43;P.&amp;author=Morari,&#43;M.&amp;author=Micera,&#43;S.&amp;author=Courtine,&#43;G.&amp;publication_year=2014&amp;journal=Sci.&#43;Transl.&#43;Med.&amp;volume=6&amp;pages=255ra133&amp;doi=10.1126/scitranslmed.3008325"  target="_blank" rel="noopener"
+    >Google Scholar</a>] [<a class="link" href="https://doi.org/10.1126/scitranslmed.3008325"  target="_blank" rel="noopener"
+    >CrossRef</a>]&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>Bejarano, N.C.; Ambrosini, E.; Pedrocchi, A.; Ferrigno, G.; Monticone, M.; Ferrante, S. An adaptive real-time algorithm to detect gait events using inertial sensors. In Proceedings of the XIII Mediterranean Conference on Medical and Biological Engineering and Computing 2013, Seville, Spain, 25–28 September 2013; pp. 1799–1802. [<a class="link" href="https://scholar.google.com/scholar_lookup?title=An&#43;adaptive&#43;real-time&#43;algorithm&#43;to&#43;detect&#43;gait&#43;events&#43;using&#43;inertial&#43;sensors&amp;conference=Proceedings&#43;of&#43;the&#43;XIII&#43;Mediterranean&#43;Conference&#43;on&#43;Medical&#43;and&#43;Biological&#43;Engineering&#43;and&#43;Computing&#43;2013&amp;author=Bejarano,&#43;N.C.&amp;author=Ambrosini,&#43;E.&amp;author=Pedrocchi,&#43;A.&amp;author=Ferrigno,&#43;G.&amp;author=Monticone,&#43;M.&amp;author=Ferrante,&#43;S.&amp;publication_year=2013&amp;pages=1799%e2%80%931802&amp;doi=10.1007/978-3-319-00846-2_444"  target="_blank" rel="noopener"
+    >Google Scholar</a>] [<a class="link" href="https://doi.org/10.1007/978-3-319-00846-2_444"  target="_blank" rel="noopener"
+    >CrossRef</a>]&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>Mazilu, S.; Hardegger, M.; Zhu, Z.; Roggen, D.; Troster, G.; Plotnik, M.; Hausdorff, J.M. Online detection of freezing of gait with smartphones and machine learning techniques. In Proceedings of the 2012 6th International Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth), San Diego, CA, USA, 21–24 May 2012; pp. 123–130. [<a class="link" href="https://scholar.google.com/scholar_lookup?title=Online&#43;detection&#43;of&#43;freezing&#43;of&#43;gait&#43;with&#43;smartphones&#43;and&#43;machine&#43;learning&#43;techniques&amp;conference=Proceedings&#43;of&#43;the&#43;2012&#43;6th&#43;International&#43;Conference&#43;on&#43;Pervasive&#43;Computing&#43;Technologies&#43;for&#43;Healthcare&#43;%28PervasiveHealth%29&amp;author=Mazilu,&#43;S.&amp;author=Hardegger,&#43;M.&amp;author=Zhu,&#43;Z.&amp;author=Roggen,&#43;D.&amp;author=Troster,&#43;G.&amp;author=Plotnik,&#43;M.&amp;author=Hausdorff,&#43;J.M.&amp;publication_year=2012&amp;pages=123%e2%80%93130"  target="_blank" rel="noopener"
+    >Google Scholar</a>]&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>Anwary, A.R.; Yu, H.; Vassallo, M. Optimal foot location for placing wearable IMU sensors and automatic feature extraction for gait analysis. <em>IEEE Sens. J.</em> <strong>2017</strong>, <em>18</em>, 2555–2567. [<a class="link" href="https://scholar.google.com/scholar_lookup?title=Optimal&#43;foot&#43;location&#43;for&#43;placing&#43;wearable&#43;IMU&#43;sensors&#43;and&#43;automatic&#43;feature&#43;extraction&#43;for&#43;gait&#43;analysis&amp;author=Anwary,&#43;A.R.&amp;author=Yu,&#43;H.&amp;author=Vassallo,&#43;M.&amp;publication_year=2017&amp;journal=IEEE&#43;Sens.&#43;J.&amp;volume=18&amp;pages=2555%e2%80%932567&amp;doi=10.1109/JSEN.2017.2786587"  target="_blank" rel="noopener"
+    >Google Scholar</a>] [<a class="link" href="https://doi.org/10.1109/JSEN.2017.2786587"  target="_blank" rel="noopener"
+    >CrossRef</a>]&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+    
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/posts/review-of-terrain-classification/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Review of terrain analysis / terrain classification</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/ips-for-validation/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">IPS for Validation</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/reviews-of-gait-eventphase-detection-methods/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Reviews of Gait Event/Phase Detection Methods</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/phase-portrait/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Phase Portraits</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/a-novel-motion-intention-recognition-approach-for-soft-exoskeleton-via-imu/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">A novel motion intention recognition approach for soft exoskeleton via IMU</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+     
+        
+    <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css" />
+
+<div id="vssue"></div>
+
+<script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+<script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
+
+<script>
+    new Vue({
+        el: "#vssue",
+        render: (h) =>
+            h("Vssue", {
+                props: {
+                    title: "Sensors for Gait Analysis",
+                    options: {
+                        proxy: (url) => "https://cors-anywhere.azm.workers.dev/" + url,
+                        owner: "K7288",
+                        repo: "blog-repos",
+                        clientId: "ac393ff5fd371a96eda1",
+                        clientSecret: "e9c2b32500e90b7d0e374ecf8481b97819b8012c",
+                    },
+                },
+            }),
+    });
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2021 - 
+        
+        2023 K7288
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#sensors">Sensors</a>
+      <ol>
+        <li><a href="#inertial-measurement-units">Inertial Measurement Units</a>
+          <ol>
+            <li><a href="#sensor-placement">Sensor placement</a>
+              <ol>
+                <li><a href="#preference-in-literature">Preference in literature</a></li>
+                <li><a href="#inter--and-intra-segments-to-choose">(inter- and intra=) Segments to choose</a></li>
+              </ol>
+            </li>
+            <li><a href="#filter">Filter</a></li>
+            <li><a href="#application">Application</a></li>
+          </ol>
+        </li>
+        <li><a href="#insole-pressure-sensors">Insole pressure sensors</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

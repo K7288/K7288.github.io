@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robotics on K7288</title>
+    <link>https://K7288.github.io/categories/robotics/</link>
+    <description>Recent content in Robotics on K7288</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/robotics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>外骨骼综述</title>
+      <link>https://K7288.github.io/posts/%E5%A4%96%E9%AA%A8%E9%AA%BC%E7%BB%BC%E8%BF%B0/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/%E5%A4%96%E9%AA%A8%E9%AA%BC%E7%BB%BC%E8%BF%B0/</guid>
+      <description>Lower limb exoskeleton systems-overview1    Category Control(mostly) Actuator(mostly) Wearer     Assistive High precision; Predefined trajectories triggered by the user’s moving intention
+($\Rightarrow$ Intention Estimation + Trajectories Generating) DC motor patients permanently lose the ability to walk   Rehabilitation Predefined; Impedance control; Adjusting itself based on patient feedback. high-power density rehabilitating patients to regain mobility   Augmentation admittance/impedance control; positive feedback sensitivity amplification control, Inaccurate but high power/weight ratio actuators (series elastic actuators (SEA) and pneumatic actuators) healthy individuals    Assistive Intention Estimation ​   Direct</description>
+    </item>
+    
+    <item>
+      <title>Intention Recgonition for Exoskeleton</title>
+      <link>https://K7288.github.io/posts/intention-recognition-for-exoskeleton/</link>
+      <pubDate>Tue, 06 Jul 2021 13:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/intention-recognition-for-exoskeleton/</guid>
+      <description>Intention Recgonition for Exoskeleton
+intention定义: walk/stand
+assistance exoskeleton system   支持4种state: L swing, R swing, Double stance(L), Double stance(R)
+  control
+  Methods online SVM; features: ZMP(Zero Moment Point), IMU
+  ZMP
+  concept: The distributed floor reaction force can be replaced by a single force R acts on ZMP.
+  ZMP can be obtained from ground reaction force (GRF) measurement or inverse dynamics of system.</description>
+    </item>
+    
+    <item>
+      <title>Multi-sensor based human motion intention recognition algorithm for walking-aid robot</title>
+      <link>https://K7288.github.io/posts/multi-sensor-based-human-motion-intention-recognition-algorithm-for-walking-aid-robot/</link>
+      <pubDate>Sun, 04 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/multi-sensor-based-human-motion-intention-recognition-algorithm-for-walking-aid-robot/</guid>
+      <description>Multi-sensor based human motion intention recognition algorithm for walking-aid robot
+intention定义：velocity; 这里表征为一个自定概念IM
+Research question A multi-sensor(force sensors and LRF; for both lower and upper limbs) based human motion intention recognition algorithm for walking-aid robot.
+Introduction  assistive rehabilitation robots: PAMM, Walking Helper, HAL, Omni RT Walker-II (ORTW-II) 简略说了一些human motion estimation methods  Methods  Sensors: push-pull force sensors and LRF(Laser Range Finder)    LRF: Range Segmentation, Identification of Circle, Leg detection, Intention detection</description>
+    </item>
+    
+    <item>
+      <title>Terms</title>
+      <link>https://K7288.github.io/posts/terms/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/terms/</guid>
+      <description>Terms Definition     inertia matrix    damping matrix    stiffness matrix    centripetal and Coriolis matrix    Cartesian coordinate    mass-damper-spring model    impedance control    admittance control 导纳控制    push-off impulse time    transition function    adaptive frequency oscillators    one-way ANOVA    two-way ANOVA    a neural interface    linear discriminant analysis    drift(signal/integral/zero/integral/temperature drift)    a rigid body 刚体    time-varying, adaptive compensation term, manifold, coarse/fine-grained level granularity, an inertial frame, oscillator, denominator,</description>
+    </item>
+    
+    <item>
+      <title>A review of human activity recognition methods</title>
+      <link>https://K7288.github.io/posts/a-review-of-human-activity-recognition-methods/</link>
+      <pubDate>Thu, 01 Jul 2021 00:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/a-review-of-human-activity-recognition-methods/</guid>
+      <description>A review of human activity recognition methods
+Recognizing human activities from video sequences or still images
+intention定义: activity; 一个描述性词
+Usually, the terms “activity” and “behavior” are used interchangeably in the literature (Castellano et al., 2007; Song et al., 2012a). In this survey, we differentiate between these two terms in the sense that the term “activity” is used to describe a sequence of actions that correspond to specific body motion. On the other hand, the term “behavior” is used to characterize both activities and events that are associated with gestures, emotional states, facial expressions, and auditory cues of a single person.</description>
+    </item>
+    
+    <item>
+      <title>Intention Recognition in Physical Human-Robot Interaction Based on Radial Basis Function Neural Network</title>
+      <link>https://K7288.github.io/posts/intention-recognition-in-physical-human-robot-interaction-based-on-radial-basis-function-neural-network/</link>
+      <pubDate>Tue, 29 Jun 2021 20:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/intention-recognition-in-physical-human-robot-interaction-based-on-radial-basis-function-neural-network/</guid>
+      <description>Intention Recognition in Physical Human-Robot Interaction Based on Radial Basis Function Neural Network
+intention定义：velocity+trajectory; 只涉及到一个接触点
+Research question a method based on radial basis function neural network (RBFNN) model is presented to identify the motion intention of collaborator.
+Here, the human intention is defined as the desired velocity in human limb model, of which the estimation is obtained in real time based on interaction force and the contact point movement characteristics (current position and velocity of the robot) by the trained RBFNN model.</description>
+    </item>
+    
+    <item>
+      <title>Froude Numbers</title>
+      <link>https://K7288.github.io/posts/froude-numbers/</link>
+      <pubDate>Sat, 22 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/froude-numbers/</guid>
+      <description>The Gaits of Bipedal and Quadrupedal Animals Alexander R. The gaits of bipedal and quadrupedal animals. The International Journal of Robotics Research. 1984;
+mammals of different sizes tend to move in dynamically similar fashion whenever their Froude numbers $u^2 /gh$ are equal: here u is speed, g is the acceleration of free fall, and h is the height of the hip joint from the ground.
+Research Problem description of the gaits of two- and four-legged animals and some of the important optimization criteria(e.</description>
+    </item>
+    
+    <item>
+      <title>The effect of stride length on lower extremity joint kinetics at various gait speeds</title>
+      <link>https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/</link>
+      <pubDate>Sun, 16 May 2021 10:44:02 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/</guid>
+      <description>The effect of stride length on lower extremity joint kinetics at various gait speeds
+ Research question Concepts Notations Background Materials and Methods  Data analysis  1. 数据处理 2. Protocol validation 3. Continuum analysis  main effect analysis SL   4. Torque pulse approximation     Results  Protocol validation Continuum analysis Torque pulse approximation   Conclusion Limits/Further Work Thoughts/Comments  Research question In this study, we investigated how sagittal plane joint moments are affected by a factorial modulation of two important gait parameters: gait speed and stride length.</description>
+    </item>
+    
+    <item>
+      <title>步速估计综述整理</title>
+      <link>https://K7288.github.io/posts/%E6%AD%A5%E9%80%9F%E4%BC%B0%E8%AE%A1%E7%BB%BC%E8%BF%B0%E6%95%B4%E7%90%86/</link>
+      <pubDate>Wed, 12 May 2021 22:17:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/%E6%AD%A5%E9%80%9F%E4%BC%B0%E8%AE%A1%E7%BB%BC%E8%BF%B0%E6%95%B4%E7%90%86/</guid>
+      <description>Toward Pervasive Gait Analysis With Wearable Sensors: A Systematic Review Abstract 对当前的定量步态分析技术进行系统的综述，并提出关键指标，来评估现有的通过可穿戴传感器提取步态特征的方法。它旨在突出这一快速发展的研究领域中的关键进展，并概述研究和临床应用的潜在未来方向。
+SECTION III. Methods for Extracting Relevant Gait Features From Wearable Sensors A.文献检索
+B. Kinematics
+Kinematic information is a well-established set of gait measures in biomechanical analysis.
+从惯性传感器获取运动学信息似乎很直观，但是要获得关于人体运动学的准确空间信息仍然很困难：全局失准和integration drift
+C.时序特征
+D.利用惯性传感器的步速提取
+Laudanski et al. [104] reviewed the current research (16 papers in total) on gait speed estimation using inertial sensors, classifying the current gait speed estimation model into three categories: abstraction model (i.</description>
+    </item>
+    
+    <item>
+      <title>基于几何与物理特征融合的智能下肢假肢运动意图识别</title>
+      <link>https://K7288.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%87%A0%E4%BD%95%E4%B8%8E%E7%89%A9%E7%90%86%E7%89%B9%E5%BE%81%E8%9E%8D%E5%90%88%E7%9A%84%E6%99%BA%E8%83%BD%E4%B8%8B%E8%82%A2%E5%81%87%E8%82%A2%E8%BF%90%E5%8A%A8%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/</link>
+      <pubDate>Wed, 12 May 2021 20:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/%E5%9F%BA%E4%BA%8E%E5%87%A0%E4%BD%95%E4%B8%8E%E7%89%A9%E7%90%86%E7%89%B9%E5%BE%81%E8%9E%8D%E5%90%88%E7%9A%84%E6%99%BA%E8%83%BD%E4%B8%8B%E8%82%A2%E5%81%87%E8%82%A2%E8%BF%90%E5%8A%A8%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/</guid>
+      <description>基于几何与物理特征融合的智能下肢假肢运动意图识别Movement intention recognition of intelligent lower limb prosthesis based on the fusion of geometric and physical features
+intention定义—locomotion modes 5类稳态模式: 平地行走、上楼、下楼、上坡和 下坡，8类转换模式
+Research question 将关节角表示的几何特征与加速度、角速度表示的物理特征有机融合并应用于智能下肢假肢的运动意图识别
+Introduction 传统的意图识别方法所用传感器数量及种类较多, 特征向量维数偏高, 统计特征对短时样本具有不稳定性（在1.3 特征选择与提取有公式证明）。related work没有结合几何和物理。
+Methods   采样：健侧大腿、小腿惯性测量单元于摆动相前期所产生的运动时序数据作为样本；
+  数据处理：移动平均滤波器滤波去噪
+  特征提取：
+ 几何特征：根据两个传感器的加速度、角速度计算一维的膝关节角，FDA方法提取最值斜率 物理特征：加速度、角速度的均值、方差  均值、方差、最值斜率融合构成25维的特征基构建特征向量
+  SVM分类
+  Results 13种日常行为进行分类。实验结果：对5类稳态模式: 平地行走、上楼、下楼、上坡和 下坡的识别率达到96.9%, 对8类转换模式的识别率达到97.1%, 对13 种模式的识别率为94.3%。
+Highlights 减少了传感器的数量及种类, 降低 了特征向量的维数降低了算法复杂度且避免了滞后性问题, 用加速度、 角速度及膝关节角三个参数共同对人体下肢运动的运动学特点进行表征。
+在特征的提取上, 将FDA方法与统计方法相结合, 弥补了仅提取统计特征的不稳定性问题。
+Limits/Further Work 对于13种动作的识别率有待提高, 后期工作会集中于对类间相似性相对较强较难区分的动作进行分类, 如: 下楼与下坡, 走到下楼 与走到下坡等.</description>
+    </item>
+    
+    <item>
+      <title>Gait Analysis Systems</title>
+      <link>https://K7288.github.io/posts/gait-analysis-systems/</link>
+      <pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/gait-analysis-systems/</guid>
+      <description>&amp;ldquo;Section Four - Gait Analysis Systems&amp;rdquo; from Gait Analysis: Normal and Pathological Function1
+Basically, there are 5 measurement systems.
+Three of these focus on the specific events that constitute the act of walking.
+行走各个阶段
+ Motion analysis defines the magnitude and timing of individual joint action. Dynamic electromyography iden­tifies the period and relative intensity of muscle function. Force plate recordings display the functional demands being experienced during the weight-bearing period.  The two remaining gait analysis technics summarize the effects of the person&amp;rsquo;s gait mechanics.</description>
+    </item>
+    
+    <item>
+      <title>Gait Analysis Fundamentals</title>
+      <link>https://K7288.github.io/posts/gait-analysis-fundamentals/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/gait-analysis-fundamentals/</guid>
+      <description>Gait analysis 步态分析简述1 Factors and parameters 影响步态的因素 The gait analysis is modulated or modified by many factors, and changes in the normal gait pattern can be transient or permanent. The factors can be of various types:
+ Extrinsic: such as terrain, footwear, clothing, cargo Intrinsic: sex, weight, height, age, etc. Physical: such as weight, height, physique Psychological: personality type, emotions Physiological: anthropometric characteristics, i.e., measurements and proportions of body Pathological: for example trauma, neurological diseases, musculoskeletal anomalies, psychiatric disorders  Parameters 描述步态的参数 The parameters taken into account for the gait analysis are as follows:</description>
+    </item>
+    
+  </channel>
+</rss>

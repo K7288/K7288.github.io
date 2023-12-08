@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Activity Recognition on K7288</title>
+    <link>https://K7288.github.io/tags/activity-recognition/</link>
+    <description>Recent content in Activity Recognition on K7288</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 01 Jul 2021 00:52:44 +0800</lastBuildDate><atom:link href="https://K7288.github.io/tags/activity-recognition/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A review of human activity recognition methods</title>
+      <link>https://K7288.github.io/posts/a-review-of-human-activity-recognition-methods/</link>
+      <pubDate>Thu, 01 Jul 2021 00:52:44 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/a-review-of-human-activity-recognition-methods/</guid>
+      <description>A review of human activity recognition methods
+Recognizing human activities from video sequences or still images
+intention定义: activity; 一个描述性词
+Usually, the terms “activity” and “behavior” are used interchangeably in the literature (Castellano et al., 2007; Song et al., 2012a). In this survey, we differentiate between these two terms in the sense that the term “activity” is used to describe a sequence of actions that correspond to specific body motion. On the other hand, the term “behavior” is used to characterize both activities and events that are associated with gestures, emotional states, facial expressions, and auditory cues of a single person.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Toward Pervasive Gait Analysis With Wearable Sensors: A Systematic Review Abstract 对当前的定量步态分析技术进行系统的综述，并提出关键指标，来评估现有的通过可穿戴传感器提取步态特征的方法。它旨在突出这一快速发展的研究领域中的关键进展，并概述研究和临床应用的潜在未来方向。
+SECTION III. Methods for Extracting Relevant Gait Features From Wearable Sensors A.文献检索
+B. Kinematics
+Kinematic information is a well-established set of gait measures in biomechanical analysis.
+从惯性传感器获取运动学信息似乎很直观，但是要获得关于人体运动学的准确空间信息仍然很困难：全局失准和integration drift
+C.时序特征
+D.利用惯性传感器的步速提取
+Laudanski et al. [104] reviewed the current research (16 papers in total) on gait speed estimation using inertial sensors, classifying the current gait speed estimation model into three categories: abstraction model (i.'><title>步速估计综述整理</title>
+
+<link rel='canonical' href='https://K7288.github.io/posts/%E6%AD%A5%E9%80%9F%E4%BC%B0%E8%AE%A1%E7%BB%BC%E8%BF%B0%E6%95%B4%E7%90%86/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='步速估计综述整理'>
+<meta property='og:description' content='Toward Pervasive Gait Analysis With Wearable Sensors: A Systematic Review Abstract 对当前的定量步态分析技术进行系统的综述，并提出关键指标，来评估现有的通过可穿戴传感器提取步态特征的方法。它旨在突出这一快速发展的研究领域中的关键进展，并概述研究和临床应用的潜在未来方向。
+SECTION III. Methods for Extracting Relevant Gait Features From Wearable Sensors A.文献检索
+B. Kinematics
+Kinematic information is a well-established set of gait measures in biomechanical analysis.
+从惯性传感器获取运动学信息似乎很直观，但是要获得关于人体运动学的准确空间信息仍然很困难：全局失准和integration drift
+C.时序特征
+D.利用惯性传感器的步速提取
+Laudanski et al. [104] reviewed the current research (16 papers in total) on gait speed estimation using inertial sensors, classifying the current gait speed estimation model into three categories: abstraction model (i.'>
+<meta property='og:url' content='https://K7288.github.io/posts/%E6%AD%A5%E9%80%9F%E4%BC%B0%E8%AE%A1%E7%BB%BC%E8%BF%B0%E6%95%B4%E7%90%86/'>
+<meta property='og:site_name' content='K7288'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Gait Analysis' /><meta property='article:tag' content='望道' /><meta property='article:tag' content='特征提取' /><meta property='article:published_time' content='2021-05-12T22:17:44&#43;08:00'/><meta property='article:modified_time' content='2021-05-12T22:17:44&#43;08:00'/>
+<meta name="twitter:title" content="步速估计综述整理">
+<meta name="twitter:description" content="Toward Pervasive Gait Analysis With Wearable Sensors: A Systematic Review Abstract 对当前的定量步态分析技术进行系统的综述，并提出关键指标，来评估现有的通过可穿戴传感器提取步态特征的方法。它旨在突出这一快速发展的研究领域中的关键进展，并概述研究和临床应用的潜在未来方向。
+SECTION III. Methods for Extracting Relevant Gait Features From Wearable Sensors A.文献检索
+B. Kinematics
+Kinematic information is a well-established set of gait measures in biomechanical analysis.
+从惯性传感器获取运动学信息似乎很直观，但是要获得关于人体运动学的准确空间信息仍然很困难：全局失准和integration drift
+C.时序特征
+D.利用惯性传感器的步速提取
+Laudanski et al. [104] reviewed the current research (16 papers in total) on gait speed estimation using inertial sensors, classifying the current gait speed estimation model into three categories: abstraction model (i.">
+    </head>
+    <body class="
+    article-page has-toc
+">
+        <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+        <script>addBackToTop({
+            diameter: 56,
+            cornerOffset: 35,
+            backgroundColor: 'ddd',
+            textColor: '#ddd'
+        })</script>
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="https://K7288.github.io" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                <span></span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/robotics/" >
+                Robotics
+            </a>
+        
+            <a href="/categories/literature-notes/" >
+                Literature Notes
+            </a>
+        
+            <a href="/categories/gait-analysis/" >
+                Gait Analysis
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/%E6%AD%A5%E9%80%9F%E4%BC%B0%E8%AE%A1%E7%BB%BC%E8%BF%B0%E6%95%B4%E7%90%86/">步速估计综述整理</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">2021-05-12</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h2 id="toward-pervasive-gait-analysis-with-wearable-sensors-a-systematic-review">Toward Pervasive Gait Analysis With Wearable Sensors: A Systematic Review</h2>
+<h3 id="abstract">Abstract</h3>
+<p>对当前的定量步态分析技术进行系统的综述，并提出关键指标，来评估<strong>现有的通过可穿戴传感器提取步态特征的方法</strong>。它旨在突出这一快速发展的研究领域中的关键进展，并概述研究和临床应用的潜在未来方向。</p>
+<h3 id="section-iii-methods-for-extracting-relevant-gait-features-from-wearable-sensors">SECTION III. Methods for Extracting Relevant Gait Features From Wearable Sensors</h3>
+<p>A.文献检索</p>
+<p>B. Kinematics</p>
+<p>Kinematic information is a well-established set of gait measures in biomechanical analysis.</p>
+<p>从惯性传感器获取运动学信息似乎很直观，但是要获得关于人体运动学的准确空间信息仍然很困难：全局失准和integration drift</p>
+<p>C.时序特征</p>
+<p><strong>D.利用惯性传感器的步速提取</strong></p>
+<p>Laudanski <em>et al.</em> [104] reviewed the current research (16 papers in total) on gait speed estimation using inertial sensors, classifying the current gait speed estimation model into three categories: abstraction model (i.e., machine learning approach), human gait model, and numerical integration, shown in Fig. 5.</p>
+<p><strong>TODO</strong>S. Chen and J. Lach, &ldquo;Nonlinear feature for gait speed estimation using inertial sensors&rdquo;, <em>Proc. 8th Int. Conf. Body Area Netw.</em>, pp. 185-188, 2013.利用了生物力学提出了新的特征，自动特征选择算法</p>
+<p><img src="/assets/chen5-2608720-large.gif" alt="img"  /></p>
+<p>E. Novel Features Extracted Using Nonlinear Analysis Techniques 步态稳定性和步态复杂性等</p>
+<p>F. Kinetics and Muscle Activity</p>
+<p>从惯性传感器提取步态特征</p>
+<p><img src="/assets/chen7-2608720-large.gif" alt="img"  /></p>
+<p>从鞋垫压力传感器和EMG传感器提取步态特征</p>
+<p><img src="/assets/chen8-2608720-large.gif" alt="img"  /></p>
+<h2 id="step-length-estimation-methods-based-on-inertial-sensors-a-review">Step Length Estimation Methods Based on Inertial Sensors: A Review</h2>
+<p>//根据Perry经典的阶段模型，利用传感器的时序信号可以进行步态周期的划分，可以估算出步频，使得步速可以推导出步幅。</p>
+<p>由此步速和步幅/步长的估算类似。</p>
+<h2 id="deep-learning-for-monitoring-of-human-gait-a-review">Deep Learning for Monitoring of Human Gait: A Review</h2>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/gait-analysis/">Gait Analysis</a>
+        
+            <a href="/tags/%E6%9C%9B%E9%81%93/">望道</a>
+        
+            <a href="/tags/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/">特征提取</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+    
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">The effect of stride length on lower extremity joint kinetics at various gait speeds</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/%E5%9F%BA%E4%BA%8E%E5%87%A0%E4%BD%95%E4%B8%8E%E7%89%A9%E7%90%86%E7%89%B9%E5%BE%81%E8%9E%8D%E5%90%88%E7%9A%84%E6%99%BA%E8%83%BD%E4%B8%8B%E8%82%A2%E5%81%87%E8%82%A2%E8%BF%90%E5%8A%A8%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">基于几何与物理特征融合的智能下肢假肢运动意图识别</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/froude-numbers/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Froude Numbers</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/intention-recognition-for-exoskeleton/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Intention Recgonition for Exoskeleton</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/gait-analysis-systems/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Gait Analysis Systems</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+     
+        
+    <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css" />
+
+<div id="vssue"></div>
+
+<script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+<script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
+
+<script>
+    new Vue({
+        el: "#vssue",
+        render: (h) =>
+            h("Vssue", {
+                props: {
+                    title: "步速估计综述整理",
+                    options: {
+                        proxy: (url) => "https://cors-anywhere.azm.workers.dev/" + url,
+                        owner: "K7288",
+                        repo: "blog-repos",
+                        clientId: "ac393ff5fd371a96eda1",
+                        clientSecret: "e9c2b32500e90b7d0e374ecf8481b97819b8012c",
+                    },
+                },
+            }),
+    });
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2021 - 
+        
+        2023 K7288
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#toward-pervasive-gait-analysis-with-wearable-sensors-a-systematic-review">Toward Pervasive Gait Analysis With Wearable Sensors: A Systematic Review</a>
+      <ol>
+        <li><a href="#abstract">Abstract</a></li>
+        <li><a href="#section-iii-methods-for-extracting-relevant-gait-features-from-wearable-sensors">SECTION III. Methods for Extracting Relevant Gait Features From Wearable Sensors</a></li>
+      </ol>
+    </li>
+    <li><a href="#step-length-estimation-methods-based-on-inertial-sensors-a-review">Step Length Estimation Methods Based on Inertial Sensors: A Review</a></li>
+    <li><a href="#deep-learning-for-monitoring-of-human-gait-a-review">Deep Learning for Monitoring of Human Gait: A Review</a></li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

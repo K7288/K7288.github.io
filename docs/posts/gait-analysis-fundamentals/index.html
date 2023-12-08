@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Gait analysis 步态分析简述1 Factors and parameters 影响步态的因素 The gait analysis is modulated or modified by many factors, and changes in the normal gait pattern can be transient or permanent. The factors can be of various types:
+ Extrinsic: such as terrain, footwear, clothing, cargo Intrinsic: sex, weight, height, age, etc. Physical: such as weight, height, physique Psychological: personality type, emotions Physiological: anthropometric characteristics, i.e., measurements and proportions of body Pathological: for example trauma, neurological diseases, musculoskeletal anomalies, psychiatric disorders  Parameters 描述步态的参数 The parameters taken into account for the gait analysis are as follows:'><title>Gait Analysis Fundamentals</title>
+
+<link rel='canonical' href='https://K7288.github.io/posts/gait-analysis-fundamentals/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Gait Analysis Fundamentals'>
+<meta property='og:description' content='Gait analysis 步态分析简述1 Factors and parameters 影响步态的因素 The gait analysis is modulated or modified by many factors, and changes in the normal gait pattern can be transient or permanent. The factors can be of various types:
+ Extrinsic: such as terrain, footwear, clothing, cargo Intrinsic: sex, weight, height, age, etc. Physical: such as weight, height, physique Psychological: personality type, emotions Physiological: anthropometric characteristics, i.e., measurements and proportions of body Pathological: for example trauma, neurological diseases, musculoskeletal anomalies, psychiatric disorders  Parameters 描述步态的参数 The parameters taken into account for the gait analysis are as follows:'>
+<meta property='og:url' content='https://K7288.github.io/posts/gait-analysis-fundamentals/'>
+<meta property='og:site_name' content='K7288'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Gait Analysis' /><meta property='article:published_time' content='2021-05-05T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-15T16:43:03&#43;08:00'/>
+<meta name="twitter:title" content="Gait Analysis Fundamentals">
+<meta name="twitter:description" content="Gait analysis 步态分析简述1 Factors and parameters 影响步态的因素 The gait analysis is modulated or modified by many factors, and changes in the normal gait pattern can be transient or permanent. The factors can be of various types:
+ Extrinsic: such as terrain, footwear, clothing, cargo Intrinsic: sex, weight, height, age, etc. Physical: such as weight, height, physique Psychological: personality type, emotions Physiological: anthropometric characteristics, i.e., measurements and proportions of body Pathological: for example trauma, neurological diseases, musculoskeletal anomalies, psychiatric disorders  Parameters 描述步态的参数 The parameters taken into account for the gait analysis are as follows:">
+    </head>
+    <body class="
+    article-page has-toc
+">
+        <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+        <script>addBackToTop({
+            diameter: 56,
+            cornerOffset: 35,
+            backgroundColor: 'ddd',
+            textColor: '#ddd'
+        })</script>
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="https://K7288.github.io" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                <span></span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/robotics/" >
+                Robotics
+            </a>
+        
+            <a href="/categories/notes/" >
+                Notes
+            </a>
+        
+            <a href="/categories/gait-analysis/" >
+                Gait Analysis
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/gait-analysis-fundamentals/">Gait Analysis Fundamentals</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">2021-05-05</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h2 id="gait-analysis-步态分析简述1">Gait analysis 步态分析简述<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h2>
+<h3 id="factors-and-parameters-影响步态的因素">Factors and parameters 影响步态的因素</h3>
+<p>The gait analysis is modulated or modified by many factors, and changes in the normal gait pattern can be transient or permanent. The factors can be of various types:</p>
+<ul>
+<li>Extrinsic: such as terrain, footwear, clothing, cargo</li>
+<li>Intrinsic: sex, weight, height, age, etc.</li>
+<li>Physical: such as weight, height, physique</li>
+<li>Psychological: personality type, emotions</li>
+<li>Physiological: anthropometric characteristics, i.e., measurements and proportions of body</li>
+<li>Pathological: for example trauma, neurological diseases, musculoskeletal anomalies, psychiatric disorders</li>
+</ul>
+<h3 id="parameters-描述步态的参数">Parameters 描述步态的参数</h3>
+<p>The parameters taken into account for the gait analysis are as follows:</p>
+<ul>
+<li>
+<p>Step length 步长</p>
+</li>
+<li>
+<p>Stride length 步幅</p>
+</li>
+<li>
+<p>Cadence 节奏(Step rate; xx steps per minute)</p>
+</li>
+<li>
+<p>Speed</p>
+</li>
+<li>
+<p>Dynamic base</p>
+</li>
+<li>
+<p>Progression line 渐进线</p>
+</li>
+<li>
+<p>Foot angle</p>
+</li>
+<li>
+<p>Hip angle</p>
+</li>
+<li>
+<p>Squat performance</p>
+</li>
+</ul>
+<h3 id="gait-parameters一种分类2">gait parameters：一种分类<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></h3>
+<h4 id="joint-angles">Joint angles</h4>
+<h4 id="gait-eventsgait-phases">Gait events/Gait phases</h4>
+<p>initial and end contact(most common)
+(IC) initial contact; (LR) loading response; (MS) mid stance; (TS) terminal stance; (PS) pre-swing; (EC) end contact; (SW) swing</p>
+<h4 id="spatiotemporal-parameters">Spatiotemporal parameters</h4>
+<p>Stride Time , Step time, Stance time, Gait velocity, Cadence, Stride symmetry</p>
+<h2 id="basic-sciences--anatomy-physiology-and-biomechanics">Basic sciences – anatomy, physiology and biomechanics</h2>
+<h3 id="anatomy">Anatomy</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Term</th>
+<th>Figure</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>directions<br><br/><br/><br/><br/><br/><br/><br/><br/><br/>reference planes</td>
+<td>anterior posterior<br>superior inferior(<em>cephalad</em>: towards the head and <em>caudad</em>: towards the ‘tail’ )<br/>left right<br/><br/>Medial 中间的 Lateral 侧向的<br/>Proximal 近端的  Distal 远端的<br/>Superficial  Deep<br><br/>sagittal plane: <u>any</u> plane which divides part of the body into right and left portions; the median plane is the midline sagittal plane.<br>frontal plane/coronal plane<br>transverse plane/horizontal plane</td>
+<td><img src="/assets/image-20210814101819770.png" alt="image-20210814101819770"  /></td>
+<td></td>
+</tr>
+<tr>
+<td>movements</td>
+<td>Flexion 弯曲/屈曲 extension 伸张 in the sagittal plane<br/>Abduction 外展 and adduction 内收 in the frontal plane <br/>Internal/medial and external/lateral rotation in the transverse plane<br><br>Ankle<br/>dorsiflexion 背屈 and plantarflexion 跖屈<br/><br/>Varus 内翻 and valgus 外翻: an angulation of a joint towards or away from the midline(膝内翻 blow legs; 膝外翻 knock knees)<br>Pronation 内转 and supination 外转: rotations about the long axis of the forearm or foot; pronation of both hands brings the thumbs together, supination brings the little fingers together<br>Inversion of the feet brings the soles together; eversion causes the soles to point away from the midline.<br/></td>
+<td><img src="/assets/image-20210814104803567.png" alt="image-20210814104803567"  /><img src="/assets/image-20210814104822712.png" alt="image-20210814104822712"  /></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="gait-analysis-three-basic-approaches3">Gait Analysis: three basic approaches<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></h2>
+<p>The simplest system subdivides the cycle accord­ing to the variations in reciprocal floor contact by the two feet. A second method uses the time and distance qualities of the stride. The third approach identifies the functional significance of the events within the gait cycle and designates these intervals as the functional phases of gait.</p>
+<h3 id="gait-cycle-gc">Gait cycle (GC)</h3>
+<p>One gait cycle (a single sequence of these functions by one limb) can be divided into two phases, <strong>stance</strong> (<strong>ST</strong>) and <strong>swing</strong> (<strong>SW</strong>), which can be subdivided into <strong>5 and 3 phases</strong>, respectively.</p>
+<p><strong>Stance</strong> is the term used to designate the entire period during which <strong>the foot is on the ground</strong>. Stance begins with initial contact.</p>
+<ul>
+<li>
+<p><strong>IC</strong> initial contact 对于没有某一类型行走障碍的人来说就是 <strong>HS</strong> heel strike.</p>
+</li>
+<li>
+<p>Subdivided into <strong>3 intervals according to the sequence of floor contact by the two feet</strong>. (根据两腿所在的运动相划分，与phase不同)</p>
+<ul>
+<li>Both the start and end of stance involve a period of bilateral foot contact with the floor (double stance; <strong>term &ldquo;support&rdquo; is avoided for an unequal sharing of body weight by the two feet</strong>), while the middle portion of stance has one foot contact.</li>
+<li>Initial double stance/Loading response(10%) begins the gait cycle. It is the time both feet are on the floor after IC.</li>
+<li>Single limb support(40%) begins when the opposite foot is lifted for swing. (<strong>所以Swing和Single limb support占比相同</strong>)</li>
+<li>Terminal double stance(10%) begins with floor contact by the other foot (contralateral initial contact) and continues until the original stance limb is lifted for swing (ipsilateral toe-off).</li>
+</ul>
+<p><img src="/assets/image-20210510082609418.png" alt="image-20210510082609418"  /></p>
+<p><img src="/assets/image-20210813202051514.png" alt="image-20210813202051514"  /></p>
+</li>
+</ul>
+<p><strong>Swing</strong> applies to the time <strong>the foot is in the air for limb advancement</strong>. Swing begins as the foot is lifted from the floor (toe-off).</p>
+<p><img src="/assets/image-20210510082507492.png" alt="image-20210510082507492"  /></p>
+<h4 id="gait-cycle--speed">Gait Cycle ＆ Speed</h4>
+<ol>
+<li>
+<p><strong>total stance and swing times和速度负相关</strong>；The <strong>change</strong> in stance and swing times becomes <strong>progressively greater as speed slows</strong>.</p>
+</li>
+<li>
+<p>Subdivisions of stance : <strong>速度与Single stance interval/Swing占比正相关</strong>；<strong>curvilinear</strong> pattern of change.</p>
+</li>
+</ol>
+<p>Having an interval when both feet are in contact with the ground for the limbs to exchange their support roles is a basic characteristic of walking. When double stance is omitted, the person has entered the running mode of locomotion.</p>
+<h3 id="stride-and-step">Stride and Step</h3>
+<p><strong>Stride</strong> is the equivalent of a gait cycle. It is based on the actions of <strong>one limb</strong>.The duration of a stride is the interval between two sequential initial floor contacts by the same limb (i.e., right IC and the next right IC).</p>
+<p><strong>Step</strong> refers to the <strong>timing between the two limbs</strong>. There are two steps in each stride (or gait cycle). At the midpoint of one stride the other foot contacts the ground to begin its next stance period. The interval between an initial contact by each foot is a step (i.e., left and then right). The same offset in timing will be repeated in reciprocal fashion throughout the walk.</p>
+<p><img src="/assets/image-20210510085622226.png" alt="image-20210510085622226"  /></p>
+<h3 id="gait-phases">Gait Phases</h3>
+<h4 id="gait-events">Gait events</h4>
+<ol>
+<li><strong>IC</strong> Initial contact 对于没有某一类型行走障碍的人来说就是 <strong>HS</strong> heel strike.</li>
+<li><strong>OT</strong> Opposite toe off</li>
+<li><strong>HO/HR</strong> Heel rise/off</li>
+<li><strong>OI</strong> Opposite initial contact</li>
+<li><strong>TO</strong> Toe off</li>
+<li><strong>FA</strong> Feet adjacent</li>
+<li><strong>TV</strong> Tibia vertical</li>
+</ol>
+<p>&hellip;(FO foot off, FF foot flat)</p>
+<h4 id="tasks">Tasks</h4>
+<p>The phases of gait also provide a means for correlating the simultaneous actions of the individual joints into patterns of total limb function.  联系关节模式和运动</p>
+<blockquote>
+<p>Each of the eight gait phases has a functional objective and a critical pattern of selective synergistic motion to accomplish this goal.</p>
+</blockquote>
+<p><strong>Weight acceptance (WA)</strong> begins the stance period and uses the first two gait phases (<strong>IC</strong> initial contact and <strong>LR</strong> loading response).</p>
+<p><strong>Single limb support  (SLS)</strong> continues stance with the next two phases of gait (<strong>MSt</strong> mid stance and <strong>TSt</strong> terminal stance).</p>
+<p><strong>Limb advancement(LA)</strong> begins in the final phase of stance (pre-swing) and then continues through the three phases of swing (<strong>ISw</strong> initial swing,<strong>MSw</strong> midswing and <strong>TSw</strong> terminal swing).</p>
+<p><img src="/assets/image-20210510090047998.png" alt="image-20210510090047998"  /></p>
+<h4 id="7-gait-phases">7 gait phases</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Stance</th>
+<th style="text-align:center">Swing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Loading response<br>Mid-stance<br/>Terminal stance<br/>Pre-swing</td>
+<td style="text-align:center">Initial swing<br/>Mid-swing<br/>Terminal swing</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Phase</th>
+<th style="text-align:center">Term</th>
+<th style="text-align:center">Interval</th>
+<th style="text-align:center">Figure(the reference limb shaded)</th>
+<th style="text-align:center">Beginning &amp; ending events</th>
+<th style="text-align:center">Phase of the other leg</th>
+<th>movements of joints</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">Initial Contact (IC)</td>
+<td style="text-align:center">0-2%</td>
+<td style="text-align:center"><img src="/assets/image-20210814100252165.png" alt="image-20210814100252165"  /></td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">end of TSt</td>
+<td>hip flexed; knee extended; ankle  dorsiflexed to neutral.</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Loading response (LR)</td>
+<td style="text-align:center">0-10%</td>
+<td style="text-align:center"><img src="/assets/image-20210814095235166.png" alt="image-20210814095235166"  /></td>
+<td style="text-align:center">IC &amp; (contralateral)TO/OT</td>
+<td style="text-align:center">PSw</td>
+<td>knee flexed with the heel as a rocker for shock absorption. Ankle plantar flexion limits the heel rocker by forefoot contact with the floor.</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">Mid-stance (MSt)</td>
+<td style="text-align:center">10-30%</td>
+<td style="text-align:center"><img src="/assets/image-20210814113204808.png" alt="image-20210814113204808"  /></td>
+<td style="text-align:center">OT &amp; <strong>HR</strong></td>
+<td style="text-align:center">ISw &amp; early MSw</td>
+<td>the limb advances over the stationary foot by ankle dorsifiexion (ankle rocker) while the knee and hip extend.</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">Terminal stance (TSt)</td>
+<td style="text-align:center">30-50%</td>
+<td style="text-align:center"><img src="/assets/image-20210814113224324.png" alt="image-20210814113224324"  /></td>
+<td style="text-align:center">HR &amp; (contralateral)IC/OI</td>
+<td style="text-align:center">late MSw &amp; TSw</td>
+<td>the heel rises and the Iimb advances over the forefoot rocker. The knee increases its extension and then just begins to flex slightly.Increased hip extension puts the Iimb in a more trailing position.</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">Pre-swing (PSw)</td>
+<td style="text-align:center">50-60%</td>
+<td style="text-align:center"><img src="/assets/image-20210814113443337.png" alt="image-20210814113443337"  /></td>
+<td style="text-align:center">OI &amp; TO</td>
+<td style="text-align:center">LR</td>
+<td>The reference limb responds with increased ankle plantar flexion. greater knee flexion and loss of hip extension.</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">Initial swing (ISw)</td>
+<td style="text-align:center">60-73%</td>
+<td style="text-align:center"><img src="/assets/image-20210814113452228.png" alt="image-20210814113452228"  /></td>
+<td style="text-align:center">TO &amp; FA</td>
+<td style="text-align:center">early MSt</td>
+<td>The foot is lifted and limb advanced by hip flexion and increased knee flexion. The ankle only partially dorsiflexes.</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">Mid-swing (MSw)</td>
+<td style="text-align:center">73-87%</td>
+<td style="text-align:center"><img src="/assets/image-20210814113501863.png" alt="image-20210814113501863"  /></td>
+<td style="text-align:center">FA &amp; TV</td>
+<td style="text-align:center">late MSt &amp; early TSt</td>
+<td>Advaneement of the limb anterior to the body weight line is gained by further hip flexion. The knee is allowed to extend in response to gravity while the ankle continues dorsiflexing to neutral.</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">Terminal swing (TSw)</td>
+<td style="text-align:center">87-100%</td>
+<td style="text-align:center"><img src="/assets/image-20210814113510052.png" alt="image-20210814113510052"  /></td>
+<td style="text-align:center">TV &amp; IC</td>
+<td style="text-align:center">late TSt</td>
+<td>limb advancement is completed by knee extension. The hip maintains its earlier flexion. and the ankle remains dorsiflexed to neutral.</td>
+</tr>
+</tbody>
+</table>
+<p><img src="/assets/image-20210813201955698.png" alt="image-20210813201955698"  /><img src="/assets/GAIT.jpg" alt="GAIT"  /></p>
+<h3 id="basic-functions">Basic Functions</h3>
+<p>上身passenger 下面locomotor（涉及11个关节）</p>
+<h4 id="locomotor-functions">Locomotor Functions</h4>
+<ol>
+<li>Propulsion</li>
+<li>Stance Stability</li>
+<li>Shock Absorption</li>
+<li>Energy Conservation</li>
+</ol>
+<p>不同的function对应的重心位置和关节角（TODO 以及肌肉工作）不同，随phase的变化也不同，详见此书<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>p19-p47</p>
+<h2 id="normal-gait">Normal Gait</h2>
+<blockquote>
+<p><strong>(A)</strong> Sagittal plane joint angles (degrees) <strong>(B)</strong> Sagittal plane internal joint moments (newton-meters per kilogram body mass) <strong>(C)</strong> Sagittal plane joint powers (watts per kilogram body mass) <strong>(D)</strong> Typical activity of major muscle groups during a single gait cycle of right hip (flexion positive), knee (flexion positive) and ankle (dorsiflexion positive).</p>
+<p>IC = initial contact; OT = opposite toe off; HR = heel rise; OI = opposite initial contact; TO = toe off; FA = feet adjacent; TV = tibia vertical.</p>
+</blockquote>
+<p><img src="/assets/image-20210815084415341.png" alt="A"  /><img src="/assets/image-20210815084442748.png" alt="B"  /><img src="/assets/image-20210815084459739.png" alt="C"  /><img src="/assets/image-20210815084516379.png" alt="D"  /></p>
+<p>Perry的书中对每一个关节以及每一个步态相具体的motion以及力矩、肌肉控制都有很详细的阐述，有时间再看一下（TODO 同时确定检测肌肉&amp;各个肌肉意义）</p>
+<p>GRF与Phases</p>
+<p><img src="/assets/image-20210815101823065.png" alt="image-20210815101823065"  /></p>
+<p><del>以及另一本书的说法</del><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>，但是我觉得没有下面这么理想化</p>
+<p>根据实际数据看也不是这样的（实际数据LR在第一个峰值前已经完成，第一个峰值处应是FF foot flat（toe开始受力）；</p>
+<p>谷值是FA；第二个峰值过约3%是对侧的IC）</p>
+<p><img src="https://ars.els-cdn.com/content/image/1-s2.0-S0966636217310093-gr2.jpg" alt="Fig. 2"  /></p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a class="link" href="https://en.wikipedia.org/wiki/Gait_analysis#Markerless_gait_capture"  target="_blank" rel="noopener"
+    >Gait analysis wikipedia</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p><a class="link" href="https://www.sciencedirect.com/science/article/pii/S0966636217302424"  target="_blank" rel="noopener"
+    >Rafael Caldas, Marion Mundt, Wolfgang Potthast, Fernando Buarque de Lima Neto, Bernd Markert,A systematic review of gait analysis methods based on inertial sensors and adaptive algorithms,Gait &amp; Posture,Volume 57,,2017</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>J. Perry, J.M. Burnfield, Gait Analysis: Normal and Pathological Function(2nd ed.), SLACK Incorporated (2010)&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>E. Ayyappa, Normal human locomotion, part 2: motion, ground-reaction force and muscle activity, J. Prosthet. Orthot. (1996), p.9&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/gait-analysis/">Gait Analysis</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    <section class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span class="article-time--modified">
+            Last updated on 2021-08-15 16:43 CST
+        </span>
+    </section></footer>
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+    
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/posts/gait-analysis-systems/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Gait Analysis Systems</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/froude-numbers/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Froude Numbers</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/the-effect-of-stride-length-on-lower-extremity-joint-kinetics-at-various-gait-speeds/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">The effect of stride length on lower extremity joint kinetics at various gait speeds</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/%E6%AD%A5%E9%80%9F%E4%BC%B0%E8%AE%A1%E7%BB%BC%E8%BF%B0%E6%95%B4%E7%90%86/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">步速估计综述整理</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/%E5%9F%BA%E4%BA%8E%E5%87%A0%E4%BD%95%E4%B8%8E%E7%89%A9%E7%90%86%E7%89%B9%E5%BE%81%E8%9E%8D%E5%90%88%E7%9A%84%E6%99%BA%E8%83%BD%E4%B8%8B%E8%82%A2%E5%81%87%E8%82%A2%E8%BF%90%E5%8A%A8%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">基于几何与物理特征融合的智能下肢假肢运动意图识别</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+     
+        
+    <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css" />
+
+<div id="vssue"></div>
+
+<script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+<script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
+
+<script>
+    new Vue({
+        el: "#vssue",
+        render: (h) =>
+            h("Vssue", {
+                props: {
+                    title: "Gait Analysis Fundamentals",
+                    options: {
+                        proxy: (url) => "https://cors-anywhere.azm.workers.dev/" + url,
+                        owner: "K7288",
+                        repo: "blog-repos",
+                        clientId: "ac393ff5fd371a96eda1",
+                        clientSecret: "e9c2b32500e90b7d0e374ecf8481b97819b8012c",
+                    },
+                },
+            }),
+    });
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2021 - 
+        
+        2023 K7288
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#gait-analysis-步态分析简述1">Gait analysis 步态分析简述</a>
+      <ol>
+        <li><a href="#factors-and-parameters-影响步态的因素">Factors and parameters 影响步态的因素</a></li>
+        <li><a href="#parameters-描述步态的参数">Parameters 描述步态的参数</a></li>
+        <li><a href="#gait-parameters一种分类2">gait parameters：一种分类</a>
+          <ol>
+            <li><a href="#joint-angles">Joint angles</a></li>
+            <li><a href="#gait-eventsgait-phases">Gait events/Gait phases</a></li>
+            <li><a href="#spatiotemporal-parameters">Spatiotemporal parameters</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#basic-sciences--anatomy-physiology-and-biomechanics">Basic sciences – anatomy, physiology and biomechanics</a>
+      <ol>
+        <li><a href="#anatomy">Anatomy</a></li>
+      </ol>
+    </li>
+    <li><a href="#gait-analysis-three-basic-approaches3">Gait Analysis: three basic approaches</a>
+      <ol>
+        <li><a href="#gait-cycle-gc">Gait cycle (GC)</a>
+          <ol>
+            <li><a href="#gait-cycle--speed">Gait Cycle ＆ Speed</a></li>
+          </ol>
+        </li>
+        <li><a href="#stride-and-step">Stride and Step</a></li>
+        <li><a href="#gait-phases">Gait Phases</a>
+          <ol>
+            <li><a href="#gait-events">Gait events</a></li>
+            <li><a href="#tasks">Tasks</a></li>
+            <li><a href="#7-gait-phases">7 gait phases</a></li>
+          </ol>
+        </li>
+        <li><a href="#basic-functions">Basic Functions</a>
+          <ol>
+            <li><a href="#locomotor-functions">Locomotor Functions</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#normal-gait">Normal Gait</a></li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

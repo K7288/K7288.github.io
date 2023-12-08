@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Control on K7288</title>
+    <link>https://K7288.github.io/categories/control/</link>
+    <description>Recent content in Control on K7288</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 08 Jul 2021 14:29:01 +0800</lastBuildDate><atom:link href="https://K7288.github.io/categories/control/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Real-Time Stability Control Method Through sEMG Interface for Lower Extremity Rehabilitation Exoskeletons</title>
+      <link>https://K7288.github.io/posts/a-real-time-stability-control-method-through-semg-interface-for-lower-extremity-rehabilitation-exoskeletons/</link>
+      <pubDate>Thu, 08 Jul 2021 14:29:01 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/a-real-time-stability-control-method-through-semg-interface-for-lower-extremity-rehabilitation-exoskeletons/</guid>
+      <description>A Real-Time Stability Control Method Through sEMG Interface for Lower Extremity Rehabilitation Exoskeletons
+intention定义: walk/stride across/stop state
+Research question  analysis of gait planning based on a human kinematics model and real-time motion stability based on the zero-moment point (ZMP). a neural interface based on sEMG to achieve motion intention recognition and muscle fatigue estimation. to verify the stability of human–exoskeleton system and ergonomic effects of the proposed gait switching method by organized experiments.</description>
+    </item>
+    
+    <item>
+      <title>Motion control for a walking companion robot with a novel human–robot interface</title>
+      <link>https://K7288.github.io/posts/motion-control-for-a-walking-companion-robot-with-a-novel-humanrobot-interface/</link>
+      <pubDate>Wed, 07 Jul 2021 14:00:00 +0800</pubDate>
+      
+      <guid>https://K7288.github.io/posts/motion-control-for-a-walking-companion-robot-with-a-novel-humanrobot-interface/</guid>
+      <description>Motion control for a walking companion robot with a novel human–robot interface
+Research question A walking companion robot is presented for rehabilitation from dyskinesia of lower limbs and its motion control algorithms.
+A new human– robot interface (HRI) adopts one-axis force sensor and potentiometer connector to detect the motion of the user with the common motions classified into two elemental motion states.
+mathematical model-based control method and force control method $\Leftarrow$ distinction of motion states</description>
+    </item>
+    
+  </channel>
+</rss>

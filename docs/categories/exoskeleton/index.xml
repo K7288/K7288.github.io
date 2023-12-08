@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>exoskeleton on K7288</title>
+    <link>https://K7288.github.io/categories/exoskeleton/</link>
+    <description>Recent content in exoskeleton on K7288</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 17 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://K7288.github.io/categories/exoskeleton/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>外骨骼综述</title>
+      <link>https://K7288.github.io/posts/%E5%A4%96%E9%AA%A8%E9%AA%BC%E7%BB%BC%E8%BF%B0/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://K7288.github.io/posts/%E5%A4%96%E9%AA%A8%E9%AA%BC%E7%BB%BC%E8%BF%B0/</guid>
+      <description>Lower limb exoskeleton systems-overview1    Category Control(mostly) Actuator(mostly) Wearer     Assistive High precision; Predefined trajectories triggered by the user’s moving intention
+($\Rightarrow$ Intention Estimation + Trajectories Generating) DC motor patients permanently lose the ability to walk   Rehabilitation Predefined; Impedance control; Adjusting itself based on patient feedback. high-power density rehabilitating patients to regain mobility   Augmentation admittance/impedance control; positive feedback sensitivity amplification control, Inaccurate but high power/weight ratio actuators (series elastic actuators (SEA) and pneumatic actuators) healthy individuals    Assistive Intention Estimation ​   Direct</description>
+    </item>
+    
+  </channel>
+</rss>

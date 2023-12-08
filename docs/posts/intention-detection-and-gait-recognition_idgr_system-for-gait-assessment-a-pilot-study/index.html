@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study
+intention定义: standing still(stationary), walking or ascending the stairs
+Hardware sensors: ADXL345 (an accelerometer; in pelvis unit) and four FSRs (two in each foot for heel and toe respectively)
+Algorithm   gait adaptation: detect in which phase of the gait cycle the subject is
+  adaptive frequency oscillators (AFO) $\Leftarrow$ Since the human gait cycle is periodic, the acceleration signals obtained from the pelvis unit is also periodic in nature.'><title>Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study</title>
+
+<link rel='canonical' href='https://K7288.github.io/posts/intention-detection-and-gait-recognition_idgr_system-for-gait-assessment-a-pilot-study/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study'>
+<meta property='og:description' content='Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study
+intention定义: standing still(stationary), walking or ascending the stairs
+Hardware sensors: ADXL345 (an accelerometer; in pelvis unit) and four FSRs (two in each foot for heel and toe respectively)
+Algorithm   gait adaptation: detect in which phase of the gait cycle the subject is
+  adaptive frequency oscillators (AFO) $\Leftarrow$ Since the human gait cycle is periodic, the acceleration signals obtained from the pelvis unit is also periodic in nature.'>
+<meta property='og:url' content='https://K7288.github.io/posts/intention-detection-and-gait-recognition_idgr_system-for-gait-assessment-a-pilot-study/'>
+<meta property='og:site_name' content='K7288'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:tag' content='Intention Recognition' /><meta property='article:published_time' content='2021-07-06T22:52:44&#43;08:00'/><meta property='article:modified_time' content='2021-07-06T22:52:44&#43;08:00'/>
+<meta name="twitter:title" content="Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study">
+<meta name="twitter:description" content="Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study
+intention定义: standing still(stationary), walking or ascending the stairs
+Hardware sensors: ADXL345 (an accelerometer; in pelvis unit) and four FSRs (two in each foot for heel and toe respectively)
+Algorithm   gait adaptation: detect in which phase of the gait cycle the subject is
+  adaptive frequency oscillators (AFO) $\Leftarrow$ Since the human gait cycle is periodic, the acceleration signals obtained from the pelvis unit is also periodic in nature.">
+    </head>
+    <body class="
+    article-page has-toc
+">
+        <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+        <script>addBackToTop({
+            diameter: 56,
+            cornerOffset: 35,
+            backgroundColor: 'ddd',
+            textColor: '#ddd'
+        })</script>
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="https://K7288.github.io" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                <span></span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/literature-notes/" >
+                Literature Notes
+            </a>
+        
+            <a href="/categories/gait-analysis/" >
+                Gait Analysis
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/intention-detection-and-gait-recognition_idgr_system-for-gait-assessment-a-pilot-study/">Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">2021-07-06</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <p>Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study</p>
+<p>intention定义: standing still(stationary), walking or ascending the stairs</p>
+<h2 id="hardware">Hardware</h2>
+<p>sensors: ADXL345 (an accelerometer; in pelvis unit) and four FSRs (two in each foot for heel and toe respectively)</p>
+<p><img src="/assets/image-20210707085802763.png" alt="image-20210707085802763" style="zoom:40%;" /></p>
+<h2 id="algorithm">Algorithm</h2>
+<ul>
+<li>
+<p>gait adaptation: detect in which phase of the gait cycle the subject is</p>
+<ul>
+<li>
+<p>adaptive frequency oscillators (AFO) $\Leftarrow$ Since the human gait cycle is periodic, the <strong>acceleration</strong> signals obtained from the pelvis unit is also <strong>periodic</strong> in nature.</p>
+<img src="/assets/image-20210707090629072.png" alt="image-20210707090629072" style="zoom:35%;" align="right"/>
+<ul>
+<li>$\epsilon$: the coupling strength</li>
+<li>$\nu$: amplitude-learning factor</li>
+<li>$f_{\min }$: initial frequency value</li>
+<li>a set of three oscillators  ($\mathrm{M}=3$)  to generate a learning signal,  $\hat{\theta} $, with the vertical acceleration of ADXL345 as the teaching signal,  $\theta_{d}$ .</li>
+<li>The Y matrix of order ($2 \mathrm{M}+2 \times 1$)  describes the state of the oscillator at any given instant of time.</li>
+<li>$ \phi_{i}$ and $\alpha_{i}  $ are the phase and amplitude of the  $i^{t h}$  oscillator, respectively.</li>
+<li>$ \omega$  is the fundamental angular frequency of the oscillator</li>
+<li>$ \beta $ sets the offset of the learned signal.</li>
+<li>$ \dot{\theta} $: estimated rate of change of learning signal, which plays a significant role in the classification of gait patterns.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a id="gait_detection"></a>gait event detection (GED): detect the heel strike (HS) and toe-offs (TO) of each foot.</p>
+<p>1️⃣ calibration(store maximum &amp; minimum);2️⃣ max-min normalization;3️⃣ the previous normalized value of the heel FSR less than a specified upper limit (UL) and the current normalized value is greater than UL $\Rightarrow$ a heel strike (normalized value of the toe FSR greater than a specified lower limit (LL) and the current normalized value is less than LL $\Rightarrow$ a toe off)</p>
+<p>A good estimate for gait event detection is obtained when the UL and LL is taken to be 80% and 20%.</p>
+<p>With the knowledge of HS, TO and $\phi_{1}$ of the first oscillator, we calculate the phase,  $\phi_{G C}$, of the gait cycle of each foot **in percentage**. When $ \phi_{G C} $ is plotted with other temporal data of the gait cycle, it gives us the information about the subject&rsquo;s state at each gait phase. The **stance time** of the gait cycle is calculated as the time duration from the HS of one foot to the TO of the same foot whereas the **swing time** is the time between the TO of one foot to the HS of the same foot.</p>
+</li>
+<li>
+<p>gait pattern classification: without machine learning techniques: rule-based</p>
+<p><img src="/assets/image-20210707105303376.png" alt="image-20210707105303376" style="zoom:50%;" /></p>
+<p>$a c c_{c a l i b}$和 $diff_{\text {calib }}$通过1分钟的校准得到</p>
+</li>
+</ul>
+<h2 id="results">Results</h2>
+<p><img src="/assets/image-20210707111045296.png" alt="image-20210707111045296"  /></p>
+<p><img src="/assets/image-20210707111756100.png" alt="image-20210707111756100" style="zoom:57%;" /></p>
+<p>There is an offset between the heel strikes detected by the IDGR and VICON system which is carried forward throughout the plot, see fig. 4. This offset occurs because the gait events detected in IDGR and the motion capture system is due to the kinetics at the FSR and kinematics of the heel and toe trajectories with respect to the sacrum, respectively. Therefore, the heel strike detected by the VICON system occurs before those of the IDGR system.</p>
+<h2 id="thoughtscomments">Thoughts/Comments</h2>
+<ul>
+<li>
+<p><a class="link" href="#gait_detection">校准，通过力传感器检测步态event，确定stance time和swing time</a></p>
+</li>
+<li>
+<p>TODO Several works have classified gait pattern using machine learning methods like the random forest [25], support vector machines (SVM) [26] or using spectral feature analysis like the Gaussian Mixture Model [27].</p>
+<p>[25] Casale, P., Pujol, O., &amp; Radeva, P. (2011, June). Human activity recognition from accelerometer data using a wearable device. In Iberian Conference on Pattern Recognition and Image Analysis (pp. 289-296). Springer, Berlin, Heidelberg.
+[26] Prasertsung, P., &amp; Horanont, T. (2016, December). A classification of accelerometer data to differentiate pedestrian state. In 2016 International Computer Science and Engineering Conference (ICSEC) (pp. 1-5). IEEE.
+[27] Ibrahim, R. K., Ambikairajah, E., Celler, B., Lovell, N. H., &amp; Kilmartin, L. (2008). Gait patterns classification using spectral features.</p>
+</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/intention-recognition/">Intention Recognition</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+    
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/posts/ips-for-validation/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">IPS for Validation</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/reviews-of-gait-eventphase-detection-methods/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Reviews of Gait Event/Phase Detection Methods</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/a-novel-motion-intention-recognition-approach-for-soft-exoskeleton-via-imu/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">A novel motion intention recognition approach for soft exoskeleton via IMU</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/daily-locomotion-recognition-and-prediction-a-kinematic-data-based-machine-learning-approach/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Daily Locomotion Recognition and Prediction: A Kinematic Data-Based Machine Learning Approach</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/motion-control-for-a-walking-companion-robot-with-a-novel-humanrobot-interface/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Motion control for a walking companion robot with a novel human–robot interface</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+     
+        
+    <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css" />
+
+<div id="vssue"></div>
+
+<script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+<script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
+
+<script>
+    new Vue({
+        el: "#vssue",
+        render: (h) =>
+            h("Vssue", {
+                props: {
+                    title: "Intention Detection and Gait Recognition (IDGR) System for Gait Assessment: A Pilot Study",
+                    options: {
+                        proxy: (url) => "https://cors-anywhere.azm.workers.dev/" + url,
+                        owner: "K7288",
+                        repo: "blog-repos",
+                        clientId: "ac393ff5fd371a96eda1",
+                        clientSecret: "e9c2b32500e90b7d0e374ecf8481b97819b8012c",
+                    },
+                },
+            }),
+    });
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2021 - 
+        
+        2023 K7288
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#hardware">Hardware</a></li>
+    <li><a href="#algorithm">Algorithm</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#thoughtscomments">Thoughts/Comments</a></li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

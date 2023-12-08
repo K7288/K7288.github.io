@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Studies using phase portraits    Authors and year Axes Task     Holgate et al. 2009 Tibia angle &amp;amp; tibia scaled angular velocity Continuous gait phase estimation   Villarreal et al.,2017 Thigh angle &amp;amp; its derivative(estimated thigh velocity) Continuous gait phase estimation   Quintero et al.,2017 Thigh angle &amp;amp; its derivative(estimated thigh velocity) Continuous gait phase estimation; gait speed estimation(as a byproduct)   Quintero et al.'><title>Phase Portraits</title>
+
+<link rel='canonical' href='https://K7288.github.io/posts/phase-portrait/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Phase Portraits'>
+<meta property='og:description' content='Studies using phase portraits    Authors and year Axes Task     Holgate et al. 2009 Tibia angle &amp;amp; tibia scaled angular velocity Continuous gait phase estimation   Villarreal et al.,2017 Thigh angle &amp;amp; its derivative(estimated thigh velocity) Continuous gait phase estimation   Quintero et al.,2017 Thigh angle &amp;amp; its derivative(estimated thigh velocity) Continuous gait phase estimation; gait speed estimation(as a byproduct)   Quintero et al.'>
+<meta property='og:url' content='https://K7288.github.io/posts/phase-portrait/'>
+<meta property='og:site_name' content='K7288'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2021-07-16T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-07-16T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="Phase Portraits">
+<meta name="twitter:description" content="Studies using phase portraits    Authors and year Axes Task     Holgate et al. 2009 Tibia angle &amp;amp; tibia scaled angular velocity Continuous gait phase estimation   Villarreal et al.,2017 Thigh angle &amp;amp; its derivative(estimated thigh velocity) Continuous gait phase estimation   Quintero et al.,2017 Thigh angle &amp;amp; its derivative(estimated thigh velocity) Continuous gait phase estimation; gait speed estimation(as a byproduct)   Quintero et al.">
+    </head>
+    <body class="
+    article-page has-toc
+">
+        <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+        <script>addBackToTop({
+            diameter: 56,
+            cornerOffset: 35,
+            backgroundColor: 'ddd',
+            textColor: '#ddd'
+        })</script>
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="https://K7288.github.io" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                <span></span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/gait-analysis/" >
+                Gait Analysis
+            </a>
+        
+            <a href="/categories/literature-notes/" >
+                Literature Notes
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/phase-portrait/">Phase Portraits</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">2021-07-16</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h2 id="studies-using-phase-portraits">Studies using phase portraits</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Authors and year</th>
+<th style="text-align:center">Axes</th>
+<th style="text-align:center">Task</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a class="link" href="#holgate-et-al2009" >Holgate et al. 2009</a></td>
+<td style="text-align:center">Tibia angle &amp; tibia scaled angular velocity</td>
+<td style="text-align:center">Continuous gait phase estimation</td>
+</tr>
+<tr>
+<td style="text-align:center"><a class="link" href="#villarreal-et-al2017" >Villarreal et al.,2017</a></td>
+<td style="text-align:center">Thigh angle &amp; its derivative(estimated thigh velocity)</td>
+<td style="text-align:center">Continuous gait phase estimation</td>
+</tr>
+<tr>
+<td style="text-align:center"><a class="link" href="#quintero-et-al2017" >Quintero et al.,2017</a></td>
+<td style="text-align:center">Thigh angle &amp; its derivative(estimated thigh velocity)</td>
+<td style="text-align:center">Continuous gait phase estimation; gait speed estimation(as a byproduct)</td>
+</tr>
+<tr>
+<td style="text-align:center"><a class="link" href="#quintero-et-al2018" >Quintero et al. 2018</a></td>
+<td style="text-align:center">Thigh angle &amp; its integral</td>
+<td style="text-align:center">Continuous gait phase estimation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="holgate-et-al2009">Holgate et al.,2009</h2>
+<p>Holgate et al.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>: The polar angle between the <strong>tibia angle</strong> and its <strong>scaled angular velocity</strong> has an invertible relationship with the gait phase and is not subject-dependent.</p>
+<p><img src="/assets/5152565-fig-4-source-large.gif" style="zoom:60%;" /></p>
+<p>Tibia angular velocity multiplied by a scaling factor versus tibia angle. The closer the curve is to the origin, the shorter the stride length. Polar angle $\Phi$ represents the progression around the curve based on gait percent. $r$ is the polar radius and is related to the stride length of the particular curve.</p>
+<p><img src="/assets/5152565-fig-3-source-large.gif" alt="img" style="zoom:60%;" /></p>
+<p>Tibia angle profile for able bodied human gait. Each curve represents a different stride length. The closer the curve is to the zero degree axis, the shorter the stride length.</p>
+<h2 id="villarreal-et-al2017">Villarreal et al.,2017</h2>
+<p>The phase portrait was scaled by a factor estimated by the ratio of difference in maximum phase angle and minimum phase angle to the difference in the first derivative of the same, so as to improve the monotonicity and linearity. These properties were further improved by filtering, at the expense of some delay. <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<p><img src="/assets/gregg2-2569019-large.gif" alt=""  /></p>
+<h2 id="quintero-et-al2017">Quintero et al.,2017</h2>
+<blockquote>
+<p>The raw thigh orbit (raw) compared to the interpolated filtered, shifted/scaled thigh orbit (interp + shift/scale) in the phase plane for 20 continuous strides at 3 mph. Applying the shift and scale algorithm produces a circular orbit shape, in contrast to the raw non-circular orbit.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
+</blockquote>
+<p><img src="/assets/8062565-fig-4-source-large.gif" style="zoom:120%; "  /></p>
+<blockquote>
+<p>The phase portrait of $\dot\theta_y(t)$ vs. $θ_x(t)$ across various treadmill speeds (1–9 mph) each having 20 consecutive gait strides. The polar radius $r$ can be correlated to the subject&rsquo;s gait speed. speeds &lt; 4mph produced a circular orbit from 0 to 2$\pi$ (i.e., 0% to 100% gait cycle). At 5 mph, the subject transitioned from fast walking to running, where more forceful ground impacts can be observed in the IMU measurements due to the flight phase. this produced a non-circular form after impact with intersection of other orbits at different speeds, as shown in the first quadrant for 5–6 mph.</p>
+</blockquote>
+<p><img src="/assets/8062565-fig-6-source-small.gif" alt=""  /></p>
+<h2 id="quintero-et-al2018">Quintero et al.,2018</h2>
+<p>Quintero et al.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>: <strong>thigh angular position</strong> and its corresponding <strong>integral</strong> to form a well-defined thigh orbit.</p>
+<p>A phase angle $ \vartheta (t) $ is computed by utilizing thigh angular position $\phi(t)$ and its integral $\Phi(t)=\int ^t_0\phi(τ)dτ $in the following way:
+$$
+\vartheta (t) =\mathrm{atan2}((\Phi (t) + \Gamma)z, (\phi (t) +\gamma)) 
+$$
+where the scale factor z, the thigh angle shift γ, and the thigh integral shift Γ are given by
+$$
+z= \frac{|\phi _{\rm max} - \phi _{\rm min}|}{|\Phi _{\rm max} - \Phi _{\rm min}|}, \gamma = -(\frac{\phi _{\rm max} + \phi _{\rm min}}{2}), \ \ \Gamma = -(\frac{\Phi _{\rm max} + \Phi _{\rm min}}{2}).
+$$</p>
+<blockquote>
+<p>Phase plane of the thigh angle ϕ(t) vs. its integral Φ(t) during prosthetic leg experiments (see Section IV). The phase plane has been scaled by z and shifted by (γ,Γ) to achieve a circular orbit across the stride, which improves the linearity of the phase variable ϑ(t).</p>
+</blockquote>
+<p><img src="/assets/gregg3-2794536-large.gif" alt="img" style="zoom:60%;" /></p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>M. A. Holgate, T. G. Sugar, and A. W. Bohler, “A novel control algorithm for wearable robotics using phase plane invariants,” in 2009 IEEE International Conference on Robotics and Automation, pp. 3845–3850, Kobe, Japan, 2009.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>D. J. Villarreal, H. A. Poonawala and R. D. Gregg, &ldquo;A Robust Parameterization of Human Gait Patterns Across Phase-Shifting Perturbations,&rdquo; in <em>IEEE Transactions on Neural Systems and Rehabilitation Engineering</em>, vol. 25, no. 3, pp. 265-278, March 2017, doi: 10.1109/TNSRE.2016.2569019.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>D. Quintero, D. J. Lambert, D. J. Villarreal and R. D. Gregg, &ldquo;Real-Time continuous gait phase and speed estimation from a single sensor,&rdquo; <em>2017 IEEE Conference on Control Technology and Applications (CCTA)</em>, 2017, pp. 847-852, doi: 10.1109/CCTA.2017.8062565.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>D. Quintero, D. J. Villarreal, D. J. Lambert, S. Kapp, and R. D. Gregg, “Continuous-phase control of a powered knee-ankle prosthesis: amputee experiments across speeds and inclines,” IEEE Transactions on Robotics, vol. 34, no. 3, pp. 686–701, 2018.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+    
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/posts/review-of-terrain-classification/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Review of terrain analysis / terrain classification</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/ips-for-validation/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">IPS for Validation</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/reviews-of-gait-eventphase-detection-methods/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Reviews of Gait Event/Phase Detection Methods</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/sensors-for-gait-analysis/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Sensors for Gait Analysis</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/posts/a-novel-motion-intention-recognition-approach-for-soft-exoskeleton-via-imu/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">A novel motion intention recognition approach for soft exoskeleton via IMU</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+     
+        
+    <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css" />
+
+<div id="vssue"></div>
+
+<script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+<script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
+
+<script>
+    new Vue({
+        el: "#vssue",
+        render: (h) =>
+            h("Vssue", {
+                props: {
+                    title: "Phase Portraits",
+                    options: {
+                        proxy: (url) => "https://cors-anywhere.azm.workers.dev/" + url,
+                        owner: "K7288",
+                        repo: "blog-repos",
+                        clientId: "ac393ff5fd371a96eda1",
+                        clientSecret: "e9c2b32500e90b7d0e374ecf8481b97819b8012c",
+                    },
+                },
+            }),
+    });
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2021 - 
+        
+        2023 K7288
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#studies-using-phase-portraits">Studies using phase portraits</a></li>
+    <li><a href="#holgate-et-al2009">Holgate et al.,2009</a></li>
+    <li><a href="#villarreal-et-al2017">Villarreal et al.,2017</a></li>
+    <li><a href="#quintero-et-al2017">Quintero et al.,2017</a></li>
+    <li><a href="#quintero-et-al2018">Quintero et al.,2018</a></li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
