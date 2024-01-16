@@ -4892,11 +4892,17 @@ head, neck, trunk and arms
 &lt;p&gt;不同的function对应的重心位置和关节角（TODO 以及肌肉工作）不同，随phase的变化也不同，详见此书&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;p19-p47&lt;/p&gt;
 &lt;h4 id=&#34;stability&#34;&gt;Stability&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;beginning of stance&lt;/li&gt;
+&lt;li&gt;beginning of stance
+&lt;ul&gt;
 &lt;li&gt;the body vector anterior to the hip and posterior to the knee&lt;/li&gt;
 &lt;li&gt;A flexion torque is created at both joints, necessitating active extensor muscle response to restrain the fali of body weight.&lt;/li&gt;
-&lt;li&gt;During mid stance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;During mid stance
+&lt;ul&gt;
 &lt;li&gt;the body advances to a position over the supporting foot. This reduces the flexion torques to zero.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Continued advancement of the body over the supporting foot gradualiy introduces passive extension at the hip and knee. At the same time body weight moves ahead of the ankle and thus introduces a new area of postural instability. Now active control by the plantar flexor muscles is needed to restrain the forward fall of body weight.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;propulsion&#34;&gt;Propulsion&lt;/h4&gt;
@@ -4923,7 +4929,7 @@ head, neck, trunk and arms
 &lt;/li&gt;
 &lt;li&gt;Forefoot rocker
 &lt;ul&gt;
-&lt;li&gt;Middle stance
+&lt;li&gt;Middle stance 
 &lt;img src=&#34;https://K7288.github.io/assets/forefoot_rocker.png&#34; alt=&#34;Forefoot rocker&#34;  /&gt;
 &lt;ul&gt;
 &lt;li&gt;Progression is accelerated as body weight falls beyond the area of foot support.&lt;/li&gt;
